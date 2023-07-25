@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: auto;
+}
+
+@font-face {
+  font-family: "nova";
+  src: url("../../public/fonts/._UnivaNova-Bold.ttf");
+  src: url("../../public/fonts/._UnivaNova-Hairline.ttf");
+  src: url("../../public/fonts/._UnivaNova-Heavy.ttf");
+  src: url("../../public/fonts/._UnivaNova-Light.ttf");
+  src: url("../../public/fonts/._UnivaNova-Regular.ttf");
+  src: url("../../public/fonts/._UnivaNova-SemiBold.ttf");
+  src: url("../../public/fonts/._UnivaNova-Thin.ttf");
+  src: url("../../public/fonts/._UnivaNova-Italic.ttf");
+
+  font-weight: 400;
+  font-style: normal;
+}
+
+.border2 {
+  border: 1px solid red;
+}
+
+.p_r {
+  padding-right: 36px;
+  padding-left: 36px;
+}
+
+.nova {
+  font-family: nova, sans-serif;
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* *************SERVICES PAGE ******* */
+.method_bg {
+  background-image: url(../../public/services/method.svg);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.hero_bg {
+  background-image: url(../../public/services/hero.svg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.blend {
+  mix-blend-mode: hard-light;
+}
+
+.simple_bg {
+  background-image: url(../../public/services/simple.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.laptop_footer_bg {
+  background-image: url(../../public/services/laptop_footer.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
