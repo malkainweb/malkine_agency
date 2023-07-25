@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
-import canada_loca from "../../../../public/fotter/canada_loca.svg";
-import usa_loca from "../../../../public/fotter/usa_loca.svg";
+import canada_loca from "../../../../public/fotter/canada_loca.png";
+import usa_loca from "../../../../public/fotter/usa_loca.png";
 import Link from "next/link";
 
 const Footer = () => {

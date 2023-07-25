@@ -48,14 +48,14 @@ body {
 
 /* *************SERVICES PAGE ******* */
 .method_bg {
-  background-image: url(../../public/services/method.svg);
+  background-image: url(../../public/services/method.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .hero_bg {
-  background-image: url(../../public/services/hero.svg);
+  background-image: url(../../public/services/hero.png);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;

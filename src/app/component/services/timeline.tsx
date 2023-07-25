@@ -2,8 +2,8 @@
 
 import Image from "next/image";
 import React from "react";
-import timeline_top from "../../../../public/services/timeline_mak.svg";
-import timeline_mak from "../../../../public/services/timeline_top.svg";
+import timeline_top from "../../../../public/services/timeline_mak.png";
+import timeline_mak from "../../../../public/services/timeline_top.png";
 
 const Timeline = () => {
   return (
