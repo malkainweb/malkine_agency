@@ -78,3 +78,50 @@ body {
   background-position: center center;
   background-repeat: no-repeat;
 }
+
+.timeline_right {
+  background-image: url(../../public/services/timeline_mak.png);
+  background-size: cover;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+
+.timeline_top {
+  background-image: url(../../public/services/timeline_top.png);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+.port_text {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.port_wrap {
+  transition: 0.4s ease-in;
+  border: 1px solid black;
+}
+.port_wrap:hover {
+  background-color: black;
+}
+.port_first_text {
+  color: #7f7f7f;
+  font-family: nova;
+  font-size: 16px;
+}
+.port_wrap:hover .port_text {
+  color: white;
+}
+.port_ctn {
+  border: 1px solid black;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: red;
+  height: 40px;
+  width: 40px;
+}
+.port_wrap:hover .port_ctn {
+  border: 2px solid white;
+}

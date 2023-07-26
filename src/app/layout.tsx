@@ -1,4 +1,5 @@
 import "./globals.css";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 

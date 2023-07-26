@@ -6,6 +6,7 @@ import Simple from "./component/services/simple";
 import Laptop_on_footer from "./component/services/laptopon_footer";
 import Work_ethics from "./component/services/work_ethics";
 import Footer from "./component/fotter/footer";
+import Portfolio from "./component/services/portfolio";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <Timeline />
       <Work_ethics />
       <Simple />
+      <Portfolio />
       <Laptop_on_footer />
       <Footer />
     </div>

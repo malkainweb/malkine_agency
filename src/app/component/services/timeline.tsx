@@ -10,8 +10,8 @@ const Timeline = () => {
     <>
       <div className="py-[20px] w-full flex h-[900px] justify-center ">
         <div className="w-full h-full  flex flex-col justify-center">
-          <div className="h-[40%] w-full  overflow-hidden">
-            <Image src={timeline_top} alt="makline img" className="w-full" />
+          <div className="h-[40%] w-full  overflow-hidden timeline_right">
+            {/* <Image src={timeline_top} alt="makline img" className="w-full" /> */}
           </div>
           <div className="h-[60%] w-full  flex flex-col text-white bg-black justify-around pl-[65px]">
             <p className="text-[#808080] text-[42px] nova">Timeline</p>
@@ -30,8 +30,8 @@ const Timeline = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-full overflow-hidden">
-          <Image src={timeline_mak} alt="makline img" className="w-full" />
+        <div className="w-full h-full overflow-hidden timeline_top">
+          {/* <Image src={timeline_mak} alt="makline img" className="w-full" /> */}
         </div>
       </div>
     </>
