@@ -7,6 +7,7 @@ import Laptop_on_footer from "./component/services/laptopon_footer";
 import Work_ethics from "./component/services/work_ethics";
 import Footer from "./component/fotter/footer";
 import Portfolio from "./component/services/portfolio";
+import Mission from "./component/services/mission";
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
       <Work_ethics />
       <Simple />
       <Portfolio />
+      <Mission />
       <Laptop_on_footer />
       <Footer />
     </div>
