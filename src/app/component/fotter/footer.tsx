@@ -17,7 +17,7 @@ const Footer = () => {
             unparalleled heights.
           </p>
           {/* the second part of the footer */}
-          <div className="w-full  h-auto flex justify-between  gap-[200px] items-center">
+          <div className="w-full  h-auto flex justify-between  items-center ">
             {/* locations */}
             <div className="  flex flex-col  h-auto gap-[25px] w-full inter">
               <p className="inter font-[500] text-[24px] capitalize text-white">
@@ -82,8 +82,8 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className=" p-[28.15px] w-full rounded-[35.19px] bg-[#121212] flex justify-between gap-[40px]  capitalize  ">
-              <div className="flex flex-col gap-[10px] w-fit     h-auto  text-[#E4E4E4] text-[16px] font-[400]">
+            <div className=" p-[28.15px] w-fit rounded-[35.19px] bg-[#121212]  flex justify-between gap-[40px]  capitalize  ">
+              <div className="flex flex-col gap-[10px] mr-[50px] w-fit     h-auto  text-[#E4E4E4] text-[16px] font-[400]">
                 <p className="text-[22px] text-white nova font-[700]">
                   Discover
                 </p>
