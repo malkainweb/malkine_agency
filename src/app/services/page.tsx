@@ -9,7 +9,7 @@ import Simple from "../component/services/simple";
 import Work_ethics from "../component/services/work_ethics";
 import Timeline from "../component/services/timeline";
 
-export default function Home() {
+export default function Services() {
   return (
     <div className="">
       <Hero_services />
