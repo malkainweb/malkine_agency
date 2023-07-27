@@ -45,6 +45,19 @@ body {
 .inter {
   font-family: "Inter", sans-serif;
 }
+.hand_bg {
+  background-image: url(../../public/home/hand_bg.webp);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+
+/* .home_service {
+  background-image: url(../../public/home/home_service.webp);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+} */
 
 /* *************SERVICES PAGE ******* */
 .method_bg {

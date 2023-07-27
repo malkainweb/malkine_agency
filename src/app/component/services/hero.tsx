@@ -24,7 +24,7 @@ const Hero_services = () => {
               <br /> brands - building <br />
               insightful strategy
             </h1>
-            <button className="nova w-fit  text-[16px] font[900]text-white rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white">
+            <button className="nova w-fit  text-[16px] font[900]text-white rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]">
               Work with us <i className="bi bi-arrow-right"></i>
             </button>
           </div>

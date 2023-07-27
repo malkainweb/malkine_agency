@@ -1,25 +1,19 @@
+"use client";
+
 import Image from "next/image";
-import Method from "./component/services/method";
-import Hero_services from "./component/services/hero";
-import Timeline from "./component/services/timeline";
-import Simple from "./component/services/simple";
-import Laptop_on_footer from "./component/services/laptopon_footer";
-import Work_ethics from "./component/services/work_ethics";
+import Client_logo from "./component/home/client_logo";
 import Footer from "./component/fotter/footer";
-import Portfolio from "./component/services/portfolio";
-import Mission from "./component/services/mission";
+import Hands from "./component/home/hand";
+import Home_hero from "./component/home/hero";
+import { useState } from "react";
 
 export default function Home() {
+  const [general, setgeneral] = useState("");
   return (
-    <div className="">
-      <Hero_services />
-      <Method />
-      <Timeline />
-      <Work_ethics />
-      <Simple />
-      <Portfolio />
-      <Mission />
-      <Laptop_on_footer />
+    <div className="w-full h-auto bg-black ">
+      {/* <Client_logo /> */}
+      <Home_hero setgeneral={setgeneral} />
+      <Hands general={general} />
       <Footer />
     </div>
   );
