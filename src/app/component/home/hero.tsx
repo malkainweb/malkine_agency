@@ -23,11 +23,11 @@ const Home_hero = (props: any) => {
   useEffect(() => {
     // console.log(scrollPosition);
     const check = scrollPosition / 100;
-    const newtime = scrollPosition / 150;
+    const newtime = scrollPosition / 300;
     if (scrollPosition >= 100) {
       setdisplay("absolute");
     }
-    if (time >= 7) {
+    if (time >= 3) {
       setdisplay("fixed");
       // settop(scrollPosition / 6 + "px");
     }
@@ -36,16 +36,21 @@ const Home_hero = (props: any) => {
     //   setdisplay("fixed");
     // }
 
-    if (time >= 10) {
+    if (time >= 7) {
       settop(top);
+      settime(7);
     }
-    if (scrollPosition >= 2300) {
+
+    if (time <= 8) {
+      settime(newtime);
+    }
+    if (scrollPosition >= 2800) {
       setdisplay("absolute");
       setbottom("200px");
       settop("");
     }
 
-    if (scrollPosition <= 2300) {
+    if (scrollPosition <= 2800) {
       setdisplay("fixed");
       settop("120px");
     }
@@ -90,7 +95,7 @@ const Home_hero = (props: any) => {
   return (
     <>
       <div className="w-full h-auto">
-        <div className="w-full h-[2800px] relative  flex justify-center  ">
+        <div className="w-full h-[3000px] relative  flex justify-center  ">
           <div
             className=" w-[80%]    h-[400px]"
             style={{ top: top, bottom: bottom, position: display }}
@@ -98,7 +103,7 @@ const Home_hero = (props: any) => {
             <div className="w-full h-full relative  pt-[30.25%]   ">
               <ReactPlayer
                 controls={false}
-                url="home/laptop.MP4"
+                url="home/laptop.webm"
                 width="100%"
                 height="100%"
                 onReady={(player) => {
