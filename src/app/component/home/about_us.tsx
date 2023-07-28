@@ -21,7 +21,7 @@ const Home_about_us = () => {
 
           {/* now the text */}
           <div className="w-fit flex-col gap-[20px] border2">
-            <div className="text-[25px]">
+            <div className="text-[20px] nova">
               <p className="text-end pl-[120px]">
                 {" "}
                 <span>Malkain Designs</span> ut elit volutpat aliquam. Sit sit
@@ -33,6 +33,11 @@ const Home_about_us = () => {
                 erat quisque. Donec quisque orci vestibulum <br />
                 suspendisse auctor. Amet elementum facilisis imperdiet
               </p>
+            </div>
+            <div className="w-full flex gap-[15px] nova">
+              <p>goals</p>
+              <div className="w-[150px] h-[1px] bg-black"></div>
+              <p>cREATING USER FRIENDLY ,HIGH AESTHETICS DESIGNS</p>
             </div>
           </div>
         </div>

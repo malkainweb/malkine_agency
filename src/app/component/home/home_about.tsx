@@ -35,6 +35,7 @@ const Home_about = () => {
                   <div
                     className="w-full flex items-end p-[10px] border-[2px] border-[#ABABAB] border-opacity-[30%] rounded-[40px] "
                     style={{ height: e.width }}
+                    key={index}
                   >
                     <div className="flex justify-between uppercase  text-[25px] inter font-medium w-full items-end py-[10px]">
                       <p className="inter font-medium">
@@ -56,6 +57,7 @@ const Home_about = () => {
                   <div
                     className="w-full flex items-end p-[10px] border-[2px] border-[#ABABAB] border-opacity-[30%] rounded-[40px] "
                     style={{ height: e.width }}
+                    key={index}
                   >
                     <div className="flex justify-between uppercase  text-[25px] inter font-medium w-full items-end py-[10px]">
                       <p className="inter font-medium">
