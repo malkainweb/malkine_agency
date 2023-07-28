@@ -14,6 +14,7 @@ import Header from "./component/navigation/header";
 import Aim from "./component/home/our_aim";
 import Home_mission from "./component/home/home_mission";
 import Home_gallery from "./component/home/home_gallery";
+import Home_portfolio from "./component/home/home_portfolio";
 
 export default function Home() {
   const [general, setgeneral] = useState("");
@@ -27,6 +28,7 @@ export default function Home() {
       <Before_client_logo />
       <Hands general={general} />
       <Home_about_us />
+      <Home_portfolio />
       <Aim />
       <Home_mission />
       <Home_gallery />

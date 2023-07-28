@@ -15,7 +15,7 @@ const Aim = () => {
                 <span
                   className="underline  underline-offset-4  decoration-[#D01717] "
                   style={{
-                    textUnderlineOffset: "20  px",
+                    textUnderlineOffset: "20px",
                   }}
                 >
                   innovative
