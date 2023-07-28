@@ -9,7 +9,7 @@ const Home_hero = (props: any) => {
   const { setgeneral } = props;
   const [top, settop] = useState("120px");
   const [bottom, setbottom] = useState("");
-  const [display, setdisplay] = useState("absolute ");
+  const [display, setdisplay] = useState<any>("absolute ");
   const [time, settime] = useState(0);
 
   const [scrollPosition, setScrollPosition] = useState(0);

@@ -104,6 +104,21 @@ body {
     translate: 0px -1190px;
   }
 }
+
+/* this is for the second home about  */
+.home_about_img {
+  background-image: url(../../public/home/home_about_img.webp);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+/* this is for the aim  */
+.aim {
+  background-image: url(../../public/home/aim.webp);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+}
 /* .home_service {
   background-image: url(../../public/home/home_service.webp);
   background-size: cover;
