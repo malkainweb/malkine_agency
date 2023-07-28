@@ -72,13 +72,13 @@ body {
   animation-name: home_left;
   animation-duration: 15s;
   animation-iteration-count: infinite;
-  transition: 3s ease;
+  transition: 1s ease;
 }
 .home_about_right {
   animation-name: home_right;
-  animation-duration: 10s;
+  animation-duration: 15s;
   animation-iteration-count: infinite;
-  transition: 3s ease;
+  transition: 1s ease;
   translate: 0px -1190px;
 }
 
@@ -116,7 +116,7 @@ body {
 .aim {
   background-image: url(../../public/home/aim.webp);
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
   background-repeat: no-repeat;
 }
 /* .home_service {

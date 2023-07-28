@@ -5,17 +5,24 @@ import React from "react";
 const Aim = () => {
   return (
     <>
-      <div className="w-full  h-auto border2 p_r rounded-[10px]">
-        <div className="w-full border flex items-start pt-[30px] aim relative h-[500px]">
-          <div className="flex flex-col gap-[10px] text-white">
-            <p className="nova text-[20px] text-[#D01717] ">OUR AIM</p>
-            <h3 className="text-[50px] nova font-bold">
-              We provide user centered <br />{" "}
-              <span className="underline underline-offset-3 underline-[#D01717] underline-[4px]">
-                innovative
-              </span>{" "}
-              and creative designs.
-            </h3>
+      <div className="w-full  h-auto  bg-white ">
+        <div className="w-full h-auto aim p_r rounded-[20px] bg-black">
+          <div className="w-full  flex items-start pt-[60px]  relative h-[700px]">
+            <div className="flex flex-col gap-[10px] text-white">
+              <p className="nova text-[20px] text-[#D01717] ">OUR AIM</p>
+              <h3 className="text-[50px] h-fit nova font-bold">
+                We provide user centered <br />{" "}
+                <span
+                  className="underline  underline-offset-4  decoration-[#D01717] "
+                  style={{
+                    textUnderlineOffset: "20  px",
+                  }}
+                >
+                  innovative
+                </span>{" "}
+                and creative designs.
+              </h3>
+            </div>
           </div>
         </div>
       </div>
