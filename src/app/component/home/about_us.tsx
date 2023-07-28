@@ -15,22 +15,25 @@ const Home_about_us = () => {
         </div>
 
         {/* body of the about section */}
-        <div className="w-full border2 h-auto flex justify-between">
+        <div className="w-full border2 items-end gap-[50px] h-auto flex justify-between">
           {/* image */}
-          <div className="w-[200px] h-[300px] border2"></div>
+          <div className="w-[200px]  h-[200px] border2"></div>
 
           {/* now the text */}
           <div className="w-fit flex-col gap-[20px] border2">
-            <p className="   nova">
-              {" "}
-              <span className="w-[200px]  h-[1px] items-center inline-flex"></span>
-              <span>Malkain Designs </span> Lorem ipsum dolor sit, amet
-              consectetur adipisicing elit. Odit tempore nemo, fugit ab
-              reprehenderit accusantium hic, blanditiis optio ducimus
-              praesentium, beatae neque di gnissimos. Modi corporis quo labore
-              officia officiis. Exce pturi asperiores molestias quo doloribus
-              aliquid. Ut, exer citationem blanditiis? Mollitia, neque.
-            </p>
+            <div className="text-[25px]">
+              <p className="text-end pl-[120px]">
+                {" "}
+                <span>Malkain Designs</span> ut elit volutpat aliquam. Sit sit
+                sed te
+              </p>
+              <p className="text-start">
+                Lorem ipsum dolor sit amet consectetur. Elit dui nulla <br />{" "}
+                gravida volutpat eget tortor proin. Posuere porttitor <br /> sed
+                erat quisque. Donec quisque orci vestibulum <br />
+                suspendisse auctor. Amet elementum facilisis imperdiet
+              </p>
+            </div>
           </div>
         </div>
       </div>
