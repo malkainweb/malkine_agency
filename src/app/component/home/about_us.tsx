@@ -23,15 +23,13 @@ const Home_about_us = () => {
           <div className="w-fit flex-col gap-[20px] border2">
             <p className="   nova">
               {" "}
-            <span className="w-[200px] border2 h-[1px] inline-flex"></span>
-              <span>Malkain Designs </span>{" "}
-              
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit
-                tempore nemo, fugit ab reprehenderit accusantium hic, blanditiis
-                optio ducimus praesentium, beatae neque di gnissimos. Modi
-                corporis quo labore officia officiis. Exce pturi asperiores
-                molestias quo doloribus aliquid. Ut, exer citationem blanditiis?
-                Mollitia, neque.
+              <span className="w-[200px]  h-[1px] items-center inline-flex"></span>
+              <span>Malkain Designs </span> Lorem ipsum dolor sit, amet
+              consectetur adipisicing elit. Odit tempore nemo, fugit ab
+              reprehenderit accusantium hic, blanditiis optio ducimus
+              praesentium, beatae neque di gnissimos. Modi corporis quo labore
+              officia officiis. Exce pturi asperiores molestias quo doloribus
+              aliquid. Ut, exer citationem blanditiis? Mollitia, neque.
             </p>
           </div>
         </div>
