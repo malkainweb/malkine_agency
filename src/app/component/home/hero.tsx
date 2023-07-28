@@ -3,12 +3,13 @@
 import { useInView } from "framer-motion";
 import ReactPlayer from "react-player";
 import React, { useState, useEffect, useRef } from "react";
+import Header from "../navigation/header";
 
 const Home_hero = (props: any) => {
   const { setgeneral } = props;
-  const [top, settop] = useState("80px");
+  const [top, settop] = useState("120px");
   const [bottom, setbottom] = useState("");
-  const [display, setdisplay] = useState("absolute");
+  const [display, setdisplay] = useState("absolute ");
   const [time, settime] = useState(0);
 
   const [scrollPosition, setScrollPosition] = useState(0);
@@ -16,27 +17,45 @@ const Home_hero = (props: any) => {
     const position = window.scrollY;
     setScrollPosition(position);
     setgeneral(position);
-    if (position >= 500) {
-      setdisplay("fixed");
-      settop(position / 6 + "px");
-    }
-    if (position <= 500) {
-      settop("80px");
-      setdisplay("fixed");
-    }
-    if (position >= 1800) {
-      console.log("jhjhkhikhkj");
-      setdisplay("absolute");
-      setbottom("100px");
-      settop("");
-    }
+    // position >= 500
   };
 
   useEffect(() => {
     // console.log(scrollPosition);
     const check = scrollPosition / 100;
-    const newtime = scrollPosition / 100;
-    if (newtime < 8) {
+    const newtime = scrollPosition / 150;
+    if (scrollPosition >= 100) {
+      setdisplay("absolute");
+    }
+    if (time >= 7) {
+      setdisplay("fixed");
+      // settop(scrollPosition / 6 + "px");
+    }
+    // if (scrollPosition <= 500) {
+    //   settop("80px");
+    //   setdisplay("fixed");
+    // }
+
+    if (time >= 10) {
+      settop(top);
+    }
+    if (scrollPosition >= 2300) {
+      setdisplay("absolute");
+      setbottom("200px");
+      settop("");
+    }
+
+    if (scrollPosition <= 2300) {
+      setdisplay("fixed");
+      settop("120px");
+    }
+
+    // if (time >= 16) {
+    //   setdisplay("absolute");
+    //   setbottom("100px");
+    //   settop("");
+    // }
+    if (newtime < 16) {
       settime(newtime);
     }
   }, [scrollPosition]);
@@ -71,9 +90,9 @@ const Home_hero = (props: any) => {
   return (
     <>
       <div className="w-full h-auto">
-        <div className="w-full h-[2500px] relative  flex justify-center  ">
+        <div className="w-full h-[2800px] relative  flex justify-center  ">
           <div
-            className=" w-[80%]   h-[300px]"
+            className=" w-[80%]    h-[400px]"
             style={{ top: top, bottom: bottom, position: display }}
           >
             <div className="w-full h-full relative  pt-[30.25%]   ">
@@ -94,10 +113,6 @@ const Home_hero = (props: any) => {
                 src="home/laptop.MP4"
                 className="border2 w-full h-full"
               ></video> */}
-
-              <button className="p-[70px]" onClick={seek}>
-                seek me oh
-              </button>
             </div>
           </div>
         </div>

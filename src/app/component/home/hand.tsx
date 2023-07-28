@@ -128,15 +128,36 @@ const Hands = (props: any) => {
         /> */}
       {/* </div> */}
 
-      <div className="py-[50px] w-full h-auto p_r" ref={outref}>
-        <div className="w-full  h-[700px]  relative">
+      <div className="py-[50px] w-full h-auto p_r bg-white" ref={outref}>
+        <div className="w-full flex items-end pb-[100px]  h-[700px] home_service  relative">
           <Image
             src={aeroplane_malkaine}
             alt="aeroplan malkaine"
-            className="w-full h-full "
+            className="w-full absolute top-0 left-0 h-full "
           />
+
+          <div className=" items-center z-[10] text-white w-full flex justify-between p_r">
+            <div className="flex flex-col gap-[5px] w-fit">
+              <p className="text-[45px] inter font-medium">2023</p>
+              <p className="uppercase nova text-[12px]">malkain, newyork</p>
+            </div>
+            {/* Services we offer */}
+            <div className="flex flex-col gap-[10px] text-[12px]  w-fit uppercasep nova">
+              <p className="text-[45px]">Services we offer </p>
+              <div className="flex gap-[5px]">
+                <div className="flex items-center  h-fit gap-[5px]">
+                  <p className="uppercase ">our working system </p>
+                  <div className="w-[100px] h-[1px] bg-white"></div>
+                </div>
+                <p className="uppercase">
+                  Lets help take off your next project <br /> from end to end
+                  covering from <br /> research down to deployment
+                </p>
+              </div>
+            </div>
+          </div>
           <button
-            className="nova absolute bottom-0 left-[50%] text-[15px] font[900]text-white rounded-[39px] px-[30px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]"
+            className="nova absolute bottom-[3px] left-[50%] text-[15px] font[900]text-white rounded-[39px] px-[30px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]"
             style={{ transform: "translateX(-50%)" }}
           >
             Work with us <i className="bi bi-arrow-right"></i>

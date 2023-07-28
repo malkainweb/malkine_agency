@@ -52,10 +52,62 @@ body {
   background-repeat: no-repeat;
 }
 
+.before_client_logo {
+  background-image: url(../../public/home/before_logo.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.home_about {
+  background-image: url(../../public/home/about.webp);
+  background-size: cover;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+/* for the about section */
+
+.home_about_left {
+  animation-name: home_left;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  transition: 3s ease;
+}
+.home_about_right {
+  animation-name: home_right;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  transition: 3s ease;
+  translate: 0px -1190px;
+}
+
+@keyframes home_left {
+  0% {
+    translate: 0px 0px;
+  }
+  50% {
+    translate: 0px -1190px;
+  }
+  100% {
+    translate: 0px 0px;
+  }
+}
+@keyframes home_right {
+  0% {
+    translate: 0px -1190px;
+  }
+  50% {
+    translate: 0px 0px;
+  }
+  100% {
+    translate: 0px -1190px;
+  }
+}
 /* .home_service {
   background-image: url(../../public/home/home_service.webp);
   background-size: cover;
-  background-position: top center;
+  background-position: bottom center;
   background-repeat: no-repeat;
 } */
 
