@@ -126,6 +126,13 @@ body {
   background-repeat: no-repeat;
 } */
 
+/* for the portfolio data  */
+.port_gen {
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+}
+
 /* *************SERVICES PAGE ******* */
 .method_bg {
   background-image: url(../../public/services/method.png);
