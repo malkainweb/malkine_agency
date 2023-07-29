@@ -147,14 +147,14 @@ input[type="number"] {
 
 /* *************SERVICES PAGE ******* */
 .method_bg {
-  background-image: url(../../public/services/method.png);
+  background-image: url(../../public/services/method.webp);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .hero_bg {
-  background-image: url(../../public/services/hero.png);
+  background-image: url(../../public/services/hero.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -165,28 +165,28 @@ input[type="number"] {
 }
 
 .simple_bg {
-  background-image: url(../../public/services/simple.png);
+  background-image: url(../../public/services/simple.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .laptop_footer_bg {
-  background-image: url(../../public/services/laptop_footer.png);
+  background-image: url(../../public/services/laptop_footer.webp);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 .timeline_right {
-  background-image: url(../../public/services/timeline_mak.png);
+  background-image: url(../../public/services/timeline_mak.webp);
   background-size: cover;
   background-position: top right;
   background-repeat: no-repeat;
 }
 
 .timeline_top {
-  background-image: url(../../public/services/timeline_top.png);
+  background-image: url(../../public/services/timeline_top.webp);
   background-size: cover;
   background-position: top center;
   background-repeat: no-repeat;
