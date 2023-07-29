@@ -10,10 +10,12 @@ const Header_transparant = () => {
   return (
     <>
       <nav className="w-full  h-[120px]  flex  p_r  items-center justify-between bg-transparent">
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
         {/* nav menus */}
         <div className="w-[495px] h-[57px] nova rounded-[40px]  flex justify-around items-center text-[black] capitalize bg-[#CED7D7] font-[200] text-[16px]">
-          <Link href="#" className="hover:text-[#afafaf]">
+          <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
           <Link href="#" className="hover:text-[#afafaf]">
@@ -22,7 +24,7 @@ const Header_transparant = () => {
           <Link href="#" className="hover:text-[#afafaf]">
             reviews
           </Link>
-          <Link href="#" className="hover:text-[#afafaf]">
+          <Link href="contact" className="hover:text-[#afafaf]">
             contact us
           </Link>
         </div>
