@@ -105,7 +105,7 @@ const Team = () => {
                     <p className="nova text-[24px] text-[red] font-[500]">
                       Skills
                     </p>
-                    <div className="flex gap-[10px] nova items-center">
+                    <div className="flex flex-wrap gap-[10px] nova items-center">
                       {main.skill.map((a: any, m: any) => {
                         return (
                           <p
