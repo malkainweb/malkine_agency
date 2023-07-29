@@ -25,11 +25,11 @@ const Work_system = () => {
           </div>
 
           {/* body */}
-          <div className="w-full flex flex-wrap justify-between items-center">
+          <div className="w-full flex flex-wrap justify-around items-center">
             {system.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[20%]   items-center flex flex-col gap-[20px]"
+                  className="w-[15%]   items-center flex flex-col  gap-[20px]"
                   key={index}
                 >
                   <Image src={e.img} alt={e.txt} className="" />

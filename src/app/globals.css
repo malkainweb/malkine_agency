@@ -28,17 +28,26 @@ input[type="number"] {
 
 @font-face {
   font-family: "nova";
-  src: url("../../public/fonts/._UnivaNova-Bold.ttf");
-  src: url("../../public/fonts/._UnivaNova-Hairline.ttf");
-  src: url("../../public/fonts/._UnivaNova-Heavy.ttf");
-  src: url("../../public/fonts/._UnivaNova-Light.ttf");
-  src: url("../../public/fonts/._UnivaNova-Regular.ttf");
-  src: url("../../public/fonts/._UnivaNova-SemiBold.ttf");
-  src: url("../../public/fonts/._UnivaNova-Thin.ttf");
-  src: url("../../public/fonts/._UnivaNova-Italic.ttf");
 
-  font-weight: 400;
+  src: url("../../public/fonts/UnivaNova-Hairline.ttf");
+  src: url("../../public/fonts/UnivaNova-Heavy.ttf");
+  src: url("../../public/fonts/UnivaNova-Light.ttf");
+
+  src: url("../../public/fonts/UnivaNova-SemiBold.ttf");
+  /* src: url("../../public/fonts/UnivaNova-Italic.ttf"); */
+
+  src: url("../../public/fonts/UnivaNova-Thin.ttf");
+  src: url("../../public/fonts/UnivaNova-Italic.ttf");
+  src: url("../../public/fonts/UnivaNova-Bold.ttf");
+  src: url("../../public/fonts/UnivaNova-Regular.ttf");
+
+  font-weight: 500;
   font-style: normal;
+}
+
+@font-face {
+  font-family: novabold;
+  src: url("../../public/fonts/UnivaNova-Medium.ttf");
 }
 
 .border2 {
@@ -52,6 +61,10 @@ input[type="number"] {
 
 .nova {
   font-family: nova, sans-serif;
+}
+
+.novabold {
+  font-family: novabold, sans-serif;
 }
 
 .inter {

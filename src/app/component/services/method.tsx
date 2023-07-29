@@ -10,7 +10,7 @@ const Method = () => {
             <p className="text-[24px] nova font-[900] text-[#D01717] capitalize">
               method
             </p>
-            <h1 className="nova w-full font-[500] text-black text-[60px] capitalize">
+            <h1 className="novabold w-full font-[500] text-black text-[60px] capitalize">
               We offer an end to end project system
             </h1>
           </div>

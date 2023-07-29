@@ -17,9 +17,14 @@ const Hero_services = () => {
           /> */}
           <Header_transparant />
 
-          <div className="w-full flex flex-col gap-[18px]  blend px-[77px]">
-            <p className="nova text-[24px] font-[900]  text-white ">Services</p>
-            <h1 className="nova text-[40px] font-[light]">
+          <div className="w-full flex flex-col gap-[15px]   blend px-[77px]">
+            <p className="nova  text-[24px] font-[900]  text-[#dcdcdc] ">
+              Services
+            </p>
+            <h1
+              className="novabold  text-[40px] text-[#232323] "
+              style={{ lineHeight: "48px" }}
+            >
               We are a creative <br /> agency working with
               <br /> brands - building <br />
               insightful strategy
