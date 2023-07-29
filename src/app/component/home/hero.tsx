@@ -23,8 +23,8 @@ const Home_hero = (props: any) => {
   useEffect(() => {
     // console.log(scrollPosition);
     const check = scrollPosition / 100;
-    const newtime = scrollPosition / 300;
-    if (scrollPosition >= 100) {
+    const newtime = scrollPosition / 100;
+    if (scrollPosition >= 50) {
       setdisplay("absolute");
     }
     if (time >= 3) {
@@ -38,12 +38,12 @@ const Home_hero = (props: any) => {
 
     if (time >= 7) {
       settop(top);
-      settime(7);
+      // settime(7);
     }
 
-    if (time <= 8) {
-      settime(newtime);
-    }
+    // if (time <= 8) {
+    //   settime(newtime);
+    // }
     if (scrollPosition >= 2800) {
       setdisplay("absolute");
       setbottom("200px");
@@ -100,9 +100,10 @@ const Home_hero = (props: any) => {
             className=" w-[80%]    h-[400px]"
             style={{ top: top, bottom: bottom, position: display }}
           >
-            <div className="w-full h-full relative  pt-[30.25%]   ">
+            <div className="w-full h-full relative border2 pl-[70%] pt-[30.25%]   ">
               <ReactPlayer
                 controls={false}
+                className="border2"
                 url="home/laptop.webm"
                 width="100%"
                 height="100%"
@@ -110,7 +111,7 @@ const Home_hero = (props: any) => {
                   player.seekTo(time, "seconds");
                 }}
                 ref={ref}
-                playing={true}
+                // playing={false}
                 style={{ position: "absolute", top: "0", left: "0" }}
               />
 

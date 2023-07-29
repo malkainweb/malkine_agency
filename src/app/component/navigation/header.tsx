@@ -9,10 +9,10 @@ import Image from "next/image";
 const Header = () => {
   return (
     <>
-      <nav className="w-full  h-[120px]  flex  p_r  items-center justify-between bg-black">
+      <nav className="w-full  h-[120px]  flex  p_r  items-center justify-between bg-transparent">
         <Logo />
         {/* nav menus */}
-        <div className="w-[495px] h-[57px] nova rounded-[40px]  flex justify-around items-center text-white capitalize bg-[#141414] font-[200] text-[16px]">
+        <div className="w-[495px] h-[57px] nova rounded-[40px]  flex justify-around items-center text-white capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[16px]">
           <Link href="#" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -27,7 +27,7 @@ const Header = () => {
           </Link>
         </div>
         {/* menu icons */}
-        <div className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-[#141414]">
+        <div className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-[#FFFFFF] bg-opacity-[17%] ">
           <Image src={ham} alt="hamburger" className="w-full h-auto" />
         </div>
       </nav>

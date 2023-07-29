@@ -30,7 +30,7 @@ const Work_ethics = () => {
         <div className="w-full  flex h-auto">
           <div className="h-[280px] relative w-full flex justify-center  px-[35px]  flex-col capitalize">
             {/* absolute items */}
-            <div className="w-[90%] h-[1px] bg-black absolute top-0 left-[5%] text-center"></div>
+            <div className="w-[80%] h-[1px] bg-black absolute top-0 left-[10%] text-center"></div>
             <div className="w-[1px] h-[85%] bg-black absolute right-0 bottom-0"></div>
             <p className="nova font-[900] text-[40px]">232</p>
             <p className="text-[25px] font-[400] inter italic ">
@@ -40,7 +40,7 @@ const Work_ethics = () => {
           </div>
           <div className="h-[280px] relative w-full flex justify-center  px-[35px]  flex-col capitalize">
             {/* absolute items */}
-            <div className="w-[90%] h-[1px] bg-black absolute top-0 left-[5%] text-center"></div>
+            <div className="w-[80%] h-[1px] bg-black absolute top-0 left-[10%] text-center"></div>
             <div className="w-[1px] h-[85%] bg-black absolute right-0 bottom-0"></div>
             <p className="nova font-[900] text-[40px]">34</p>
             <p className="text-[25px] font-[400] inter italic ">
@@ -50,7 +50,7 @@ const Work_ethics = () => {
           </div>
           <div className="h-[280px] relative w-full flex justify-center  px-[35px]  flex-col capitalize">
             {/* absolute items */}
-            <div className="w-[90%] h-[1px] bg-black absolute top-0 left-[5%] text-center"></div>
+            <div className="w-[80%] h-[1px] bg-black absolute top-0 left-[10%] text-center"></div>
             <div className="w-[1px] h-[85%] bg-black absolute right-0 bottom-0"></div>
             <p className="nova font-[900] text-[40px]">89</p>
             <p className="text-[25px] font-[400] inter italic ">
@@ -60,8 +60,8 @@ const Work_ethics = () => {
           </div>
           <div className="h-[280px] relative w-full flex justify-center  px-[35px]  flex-col capitalize">
             {/* absolute items */}
-            <div className="w-[90%] h-[1px] bg-black absolute top-0 left-[5%] text-center"></div>
-            <div className="w-[1px] h-[85%] bg-black absolute right-0 bottom-0"></div>
+            <div className="w-[80%] h-[1px] bg-black absolute top-0 left-[10%] text-center"></div>
+
             <p className="nova font-[900] text-[40px]">212</p>
             <p className="text-[25px] font-[400] inter italic ">
               redesigned <br />
