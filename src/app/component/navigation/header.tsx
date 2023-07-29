@@ -18,11 +18,11 @@ const Header = () => {
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
-          <Link href="#" className="hover:text-[#afafaf]">
-            cases
+          <Link href="services" className="hover:text-[#afafaf]">
+            services
           </Link>
-          <Link href="#" className="hover:text-[#afafaf]">
-            reviews
+          <Link href="works" className="hover:text-[#afafaf]">
+            our works
           </Link>
           <Link href="contact" className="hover:text-[#afafaf]">
             contact us
