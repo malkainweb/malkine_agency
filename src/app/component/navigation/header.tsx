@@ -9,12 +9,12 @@ import Image from "next/image";
 const Header = () => {
   return (
     <>
-      <nav className="w-full  h-[120px]  flex  p_r  items-center justify-between bg-transparent">
+      <nav className="w-full  h-[150px]  flex  p_r  items-center justify-between bg-transparent">
         <Link href="/">
           <Logo />
         </Link>
         {/* nav menus */}
-        <div className="w-[495px] h-[57px] nova rounded-[40px]  flex justify-around items-center text-white capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[16px]">
+        <div className="w-[495px] h-[57px] novabold rounded-[40px]  flex justify-around items-center text-white capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[16px]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>

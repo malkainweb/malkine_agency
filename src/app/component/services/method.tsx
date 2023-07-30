@@ -1,10 +1,22 @@
 "use client";
 
-import React from "react";
+import Image from "next/image";
+import React, { useState } from "react";
+import top_arrow from "../../../../public/services/top.webp";
+import bottom_arrow from "../../../../public/services/bottom.webp";
+import left_arrow from "../../../../public/services/left.webp";
+import right_arrow from "../../../../public/services/right.webp";
 const Method = () => {
+  const [meth, setmeth] = useState([
+    ["Research"],
+    ["Design"],
+    ["User Testing"],
+  ]);
+  const [meth2, setmeth2] = useState(["Developement ", "Deployment"]);
+
   return (
     <>
-      <div className="w-full px-[100px] pt-[60px] pb-[80px]  flex flex-col gap-[80px]">
+      <div className="w-full px-[100px] py-[50px] flex flex-col gap-[50px]">
         <div className="w-full  flex justify-between items-center">
           <div className="flex flex-col gap-[12px] w-full ">
             <p className="text-[24px] nova font-[900] text-[#D01717] capitalize">
@@ -30,25 +42,83 @@ const Method = () => {
         {/* the diagrmas */}
         {/*  */}
 
-        <div className="w-full">
-          <div className="flex justify-center capitalize text-[20px] nova font-[700]">
-            <div className="w-[25vw] h-[25vw] flex justify-center items-center method_bg ">
-              Research
-            </div>
-            <div className="w-[25vw] h-[25vw] flex justify-center items-center method_bg ">
-              Design
-            </div>
-            <div className="w-[25vw] h-[25vw] flex justify-center items-center method_bg ">
-              User testing
-            </div>
+        <div className="w-full flex flex-col ">
+          <div className="flex justify-center gap-[50px] capitalize text-[20px] nova ">
+            {meth.map((e: any, index: any) => {
+              return (
+                <div className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative">
+                  <Image
+                    src={top_arrow}
+                    alt="top_arrow"
+                    className="absolute w-[100px] h-fit top-[15px] left-[50%]"
+                    style={{ transform: "translateX(-50%)" }}
+                  />
+                  <Image
+                    src={right_arrow}
+                    alt="right arrow"
+                    className="absolute w-[12px] h-fit right-[15px] top-[50%]"
+                    style={{ transform: "translateY(-50%)" }}
+                  />
+                  <Image
+                    src={bottom_arrow}
+                    alt="bottom_arrow"
+                    className="absolute w-[100px] h-fit bottom-[15px] left-[50%]"
+                    style={{ transform: "translateX(-50%)" }}
+                  />
+                  <Image
+                    src={left_arrow}
+                    alt="left_arrow"
+                    className="absolute w-[15px] h-fit left-[15px] top-[50%]"
+                    style={{ transform: "translateY(-50%)" }}
+                  />
+                  <div
+                    className="h-full w-full flex justify-center font-[700] items-center nova rounded-[100%] "
+                    style={{ border: "30px solid #DAD6D3 " }}
+                  >
+                    <p className="text-[25px]"> {e} </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
-          <div className="flex justify-center capitalize text-[20px] nova font-[700]">
-            <div className="w-[25vw] h-[25vw] flex justify-center items-center method_bg ">
-              Development
-            </div>
-            <div className="w-[25vw] h-[25vw] flex justify-center items-center method_bg ">
-              Deployment
-            </div>
+
+          <div className="flex justify-center capitalize gap-[50px] text-[20px] nova font-[700]">
+            {meth2.map((e: any, index: any) => {
+              return (
+                <div className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative">
+                  <Image
+                    src={top_arrow}
+                    alt="top_arrow"
+                    className="absolute w-[100px] h-fit top-[15px] left-[50%]"
+                    style={{ transform: "translateX(-50%)" }}
+                  />
+                  <Image
+                    src={right_arrow}
+                    alt="right arrow"
+                    className="absolute w-[12px] h-fit right-[15px] top-[50%]"
+                    style={{ transform: "translateY(-50%)" }}
+                  />
+                  <Image
+                    src={bottom_arrow}
+                    alt="bottom_arrow"
+                    className="absolute w-[100px] h-fit bottom-[15px] left-[50%]"
+                    style={{ transform: "translateX(-50%)" }}
+                  />
+                  <Image
+                    src={left_arrow}
+                    alt="left_arrow"
+                    className="absolute w-[15px] h-fit left-[15px] top-[50%]"
+                    style={{ transform: "translateY(-50%)" }}
+                  />
+                  <div
+                    className="h-full w-full flex justify-center font-[700] items-center nova rounded-[100%] "
+                    style={{ border: "30px solid #DAD6D3 " }}
+                  >
+                    <p className="text-[25px]"> {e} </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
