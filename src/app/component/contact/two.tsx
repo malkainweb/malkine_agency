@@ -87,7 +87,8 @@ const Two = (props: any) => {
               value={budget}
             >
               <option style={{}} value="" disabled selected hidden>
-                What's your budget ? <span className="text-[#D01717] ">*</span>
+                What{"'"}s your budget ?{" "}
+                <span className="text-[#D01717] ">*</span>
               </option>
               <option style={{ color: "white" }} value="2k - 10k">
                 2k - 10k
