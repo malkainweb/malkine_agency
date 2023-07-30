@@ -24,7 +24,7 @@ const Footer = () => {
                 Our Locations
               </p>
               {/* now actual locations */}
-              <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[16px]">
+              <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
                 <div className="w-[137px] h-auto">
                   <Image
                     src={canada_loca}
@@ -34,7 +34,7 @@ const Footer = () => {
                 </div>
                 <div className="w-[1px] h-[77px] bg-[#838383]"></div>
                 <div className="flex flex-col gap-[5px]">
-                  <p className="inter text-[20px] font-[700] capitalize text-white">
+                  <p className="inter text-[18px] font-[700] capitalize text-white">
                     canada
                   </p>
                   <p className="text-[white]">
@@ -52,7 +52,7 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[16px]">
+              <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
                 <div className="w-[137px] h-auto">
                   <Image
                     src={usa_loca}
@@ -62,8 +62,8 @@ const Footer = () => {
                 </div>
                 <div className="w-[1px] h-[77px] bg-[#838383]"></div>
                 <div className="flex flex-col gap-[5px]">
-                  <p className="inter text-[20px] font-[700] capitalize text-white">
-                    canada
+                  <p className="inter text-[18px] font-[700] capitalize text-white">
+                    USA
                   </p>
                   <p className="text-[white]">
                     <span className="text-[#838383]">Address</span> 32D
@@ -82,9 +82,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className=" p-[28.15px] w-fit rounded-[35.19px] bg-[#121212]  flex justify-between gap-[40px]  capitalize  ">
-              <div className="flex flex-col gap-[10px] mr-[50px] w-fit     h-auto  text-[#E4E4E4] text-[16px] font-[400]">
-                <p className="text-[22px] text-white nova font-[700]">
+            <div className=" p-[28.15px] min-w-fit  rounded-[35.19px] bg-[#121212]  flex justify-between   capitalize  ">
+              <div className="flex flex-col gap-[10px] mr-[80px] w-full  h-auto  text-[#E4E4E4] text-[14px] font-[400]">
+                <p className="text-[20px] text-white nova font-[700]">
                   Discover
                 </p>
                 <Link href="#" className="hover:text-white">
@@ -107,18 +107,18 @@ const Footer = () => {
                 </Link>
               </div>
               {/* mail us and folllow us section */}
-              <div className="w-fit flex flex-col justify-between items-end   ">
-                <div className="h-full w-fit gap-[40px]  flex justify-between">
-                  <div className="flex flex-col gap-[10px] w-full h-auto  text-[#E4E4E4] text-[16px] font-[400]">
-                    <p className="text-[22px] text-white nova font-[700]">
+              <div className="min-w-fit flex flex-col justify-between items-end   ">
+                <div className="h-full w-full gap-[40px]  flex justify-between">
+                  <div className="flex flex-col gap-[10px] w-full h-auto  text-[#E4E4E4] text-[14px] font-[400]">
+                    <p className="text-[20px] text-white nova font-[700]">
                       Mail Us
                     </p>
                     <Link href="#" className="hover:text-white">
                       support@malkain.com
                     </Link>
                   </div>
-                  <div className="flex flex-col gap-[10px] w-full h-auto  text-[#E4E4E4] text-[16px] font-[400]">
-                    <p className="text-[22px] text-white nova font-[700]">
+                  <div className="flex flex-col gap-[10px] min-w-fit h-auto  text-[#E4E4E4] text-[14px] font-[400]">
+                    <p className="text-[20px] w-full text-white nova font-[700] text-center">
                       Follow Us
                     </p>
                     <Link href="#" className="hover:text-white">

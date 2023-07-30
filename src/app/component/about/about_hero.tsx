@@ -10,7 +10,7 @@ import img3 from "../../../../public/about/hero3.webp";
 const About_hero = () => {
   return (
     <>
-      <div className="w-full h-[750px] py-[50px] relative  bg-white">
+      <div className="w-full h-[700px] py-[50px] relative  bg-white">
         {/* the floating images start */}
 
         <Image
@@ -37,7 +37,7 @@ const About_hero = () => {
           style={{ transform: "translateX(-50%)" }}
           src={chess}
           alt="chess board"
-          className="w-[70%] absolute left-[50%] bottom-[-30%]"
+          className="w-[70%] absolute left-[50%] bottom-[-35%]"
         />
         <div className="w-full flex-col h-auto flex justify-center items-center gap-[20px]">
           <h1 className="text-[#424242] text-[80px] text-center novabold font-bold leading-[100px]">
