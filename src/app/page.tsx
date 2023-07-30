@@ -21,7 +21,7 @@ export default function Home() {
   return (
     <div className="w-full h-auto bg-black ">
       {/* <Client_logo /> */}
-      <Header />
+      {/* <Header /> */}
       <Home_hero setgeneral={setgeneral} />
       <Home_Team />
       <Home_about />

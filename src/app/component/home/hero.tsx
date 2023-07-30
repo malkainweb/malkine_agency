@@ -94,14 +94,28 @@ const Home_hero = (props: any) => {
   //   };
   return (
     <>
-      <div className="w-full h-auto">
-        <div className="w-full h-[3000px] relative  flex justify-center  ">
-          <div
-            className=" w-[80%]    h-[400px]"
+      {/* <div className="w-full h-auto"> */}
+      {/* <div className="w-full h-[3000px] relative  flex justify-center  "> */}
+      {/* <div
+            className=" "
             style={{ top: top, bottom: bottom, position: display }}
-          >
-            <div className="w-full h-full relative border2 pl-[70%] pt-[30.25%]   ">
-              <ReactPlayer
+          > */}
+      <video
+        src="home/laptop.webm"
+        id="vid"
+        className="w-full "
+        preload={"auto"}
+        controls
+        loop
+        onLoadStart={() => {
+          console.log("onLoadStart", new Date());
+        }}
+        onLoad={() => {
+          console.log("onLoad", new Date());
+        }}
+      ></video>
+      {/* <div className="w-full h-full relative border2 pl-[70%] pt-[30.25%]   "> */}
+      {/* <ReactPlayer
                 controls={false}
                 className="border2"
                 url="home/laptop.webm"
@@ -113,16 +127,16 @@ const Home_hero = (props: any) => {
                 ref={ref}
                 // playing={false}
                 style={{ position: "absolute", top: "0", left: "0" }}
-              />
+              /> */}
 
-              {/* <video
+      {/* <video
                 src="home/laptop.MP4"
                 className="border2 w-full h-full"
               ></video> */}
-            </div>
-          </div>
+      {/* </div> */}
+      {/* </div>/
         </div>
-      </div>
+      </div> */}
     </>
   );
 };
