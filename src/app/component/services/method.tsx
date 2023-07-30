@@ -46,7 +46,10 @@ const Method = () => {
           <div className="flex justify-center gap-[50px] capitalize text-[20px] nova ">
             {meth.map((e: any, index: any) => {
               return (
-                <div className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative">
+                <div
+                  className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative"
+                  key={index}
+                >
                   <Image
                     src={top_arrow}
                     alt="top_arrow"
@@ -85,7 +88,10 @@ const Method = () => {
           <div className="flex justify-center capitalize gap-[50px] text-[20px] nova font-[700]">
             {meth2.map((e: any, index: any) => {
               return (
-                <div className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative">
+                <div
+                  className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative"
+                  key={index}
+                >
                   <Image
                     src={top_arrow}
                     alt="top_arrow"

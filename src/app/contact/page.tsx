@@ -25,7 +25,7 @@ export default function Contact() {
         ) : (
           <p className="pt-[20px]">
             {" "}
-            Let's start a project <br /> together.{" "}
+            Let{"'"}s start a project <br /> together.{" "}
           </p>
         )}
       </div>
