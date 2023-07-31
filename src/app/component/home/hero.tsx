@@ -18,6 +18,7 @@ const Home_hero = () => {
   const [bottom, setbottom] = useState<any>("");
   const [position, setposition] = useState<any>("sticky");
   const [top, settop] = useState<any>("0px");
+
   const { scrollY } = useScroll();
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
@@ -28,7 +29,7 @@ const Home_hero = () => {
     // Map x from these values:
     [0, check],
     // Into these values:
-    [0, 7.8],
+    [0, 16],
   );
 
   const width = typeof window !== "undefined" ? window.innerWidth : 0; // Access window object only on the client-side
@@ -74,7 +75,7 @@ const Home_hero = () => {
         className="w-full h-[140vw] bg-black  "
         animate={{ position: "relative" }}
       >
-        <motion.video
+        {/* <motion.video
           src="home/laptop.webm"
           id="vid"
           className="w-full "
@@ -90,7 +91,51 @@ const Home_hero = () => {
           onLoad={() => {
             console.log("onLoad", new Date());
           }}
-        ></motion.video>
+        ></motion.video> */}
+
+        {/* <div
+        style={{
+          position: "relative",
+          paddingTop: "56.25%",
+          width: "100vw",
+          height: 0,
+        }}
+      >
+        <ReactPlayer
+          url="home/laptop.webm"
+          style={{
+            position: "absolute",
+            top: 0,
+            left: 0,
+            width: "100%",
+            height: "100%",
+          }}
+          controls
+        />
+      </div> */}
+
+        <div
+          style={{
+            position: "sticky",
+            top: "0",
+            width: "100%",
+            height: "0",
+            paddingBottom: "56.25%",
+            zIndex: 1, // (Optional) Set a higher z-index value if needed to make the video player appear above other elements while scrolling
+          }}
+        >
+          <ReactPlayer
+            url="home/laptop5.webm" // Replace with the actual video URL
+            width="100%"
+            height="100%"
+            style={{ position: "absolute", top: "0", left: "0" }}
+            onReady={(e) => {
+              e.seekTo(oldcheck, "seconds");
+              // console.log("ready");
+            }}
+            preload="auto"
+          />
+        </div>
       </motion.div>
     </>
   );
