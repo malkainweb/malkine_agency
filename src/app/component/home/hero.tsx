@@ -29,7 +29,7 @@ const Home_hero = () => {
     // Map x from these values:
     [0, check],
     // Into these values:
-    [0, 16],
+    [0, 7.8],
   );
 
   const width = typeof window !== "undefined" ? window.innerWidth : 0; // Access window object only on the client-side
@@ -72,7 +72,7 @@ const Home_hero = () => {
   return (
     <>
       <motion.div
-        className="w-full h-[140vw] bg-black  "
+        className="w-full h-[120vw] bg-black  "
         animate={{ position: "relative" }}
       >
         {/* <motion.video
@@ -125,7 +125,7 @@ const Home_hero = () => {
           }}
         >
           <ReactPlayer
-            url="home/laptop5.webm" // Replace with the actual video URL
+            url="home/laptop4.mp4" // Replace with the actual video URL
             width="100%"
             height="100%"
             style={{ position: "absolute", top: "0", left: "0" }}

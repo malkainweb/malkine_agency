@@ -87,7 +87,7 @@ input[type="number"] {
 .home_about {
   background-image: url(../../public/home/about.webp);
   background-size: cover;
-  background-position: center bottom;
+  background-position: bottom right;
   background-repeat: no-repeat;
 }
 

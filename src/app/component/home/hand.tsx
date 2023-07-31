@@ -61,7 +61,7 @@ const Hands = (props: any) => {
 
   return (
     <>
-      <div className="w-full  p_r py-[90px]  h-auto" ref={ref}>
+      <div className="w-full  p_r pt-[90px] pb-[120px] h-auto" ref={ref}>
         <div className="w-full h-[600px]  relative flex flex-col gap-[70px]">
           <div className="flex z-[2] flex-col text-white nova text-[40px]">
             <p className="font-[700]">Our Top</p>
@@ -103,8 +103,8 @@ const Hands = (props: any) => {
       {/*  */}
 
       {/*  */}
-      {/* <div className="w-ful h-[1500px]  relative overflow-hidden hand_bg"> */}
-      {/* <Image
+      <div className="w-ful h-[2100px]  relative  hand_bg">
+        {/* <Image
           src={hand_left}
           alt="work image"
           className="absolute w-[37%] h-full top-0 left-0 "
@@ -115,21 +115,21 @@ const Hands = (props: any) => {
           className="absolute w-[37%] h-full top-0 right-0 "
         /> */}
 
-      {/* <Image
+        <Image
           src={hand_middle}
           alt="work image"
           className=" w-[600px]  h-[100vh] transition delay-[2s]"
           style={{
-            position: check,
-            left: "calc(50% - 180px)",
-            bottom: bottom,
-            top: top,
+            position: "sticky",
+            left: "55%",
+            transform: " translateX(-50%)",
+            top: "0px",
           }}
-        /> */}
-      {/* </div> */}
+        />
+      </div>
 
       <div className="py-[50px] w-full h-auto p_r bg-white" ref={outref}>
-        <div className="w-full flex items-end pb-[100px]  h-[700px] home_service  relative">
+        <div className="w-full flex items-end pb-[100px]  h-[800px] home_service  relative">
           <Image
             src={aeroplane_malkaine}
             alt="aeroplan malkaine"

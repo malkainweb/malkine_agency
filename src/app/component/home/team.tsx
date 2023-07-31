@@ -7,7 +7,7 @@ import location from "../../../../public/home/location.webp";
 const Home_Team = () => {
   return (
     <>
-      <div className="w-full bg-white h-auto  p_r py-[70px] flex justify-between gap-[20px] items-center ">
+      <div className="w-full bg-white h-auto  p_r py-[50px] flex justify-between gap-[20px] items-center ">
         <div className="flex w-full h-[200px] rounded-[30px] bg-[#F1F1F1]  flex-col p-[20px] justify-between">
           <div className="w-full flex justify-between nova ">
             <p className="text-[55px] ">34</p>
@@ -15,7 +15,7 @@ const Home_Team = () => {
               Team
             </p>
           </div>
-          <p className="text-[30px]">Total Employess</p>
+          <p className="text-[26px]">Total Employess</p>
         </div>
 
         <div className="flex w-full h-[200px] rounded-[30px] bg-[#F1F1F1]  flex-col p-[20px] justify-between">
@@ -29,7 +29,7 @@ const Home_Team = () => {
               />
             </div>
           </div>
-          <p className="text-[30px]">Locations</p>
+          <p className="text-[26px]">Locations</p>
         </div>
 
         <div className="flex w-full h-[200px] rounded-[30px] bg-[#D01717] border2 flex-col p-[20px] justify-between text-white">
@@ -39,7 +39,7 @@ const Home_Team = () => {
               PROJECTS
             </p>
           </div>
-          <p className="text-[30px]">Total projects yealy</p>
+          <p className="text-[26px]">Total projects yealy</p>
         </div>
 
         {/* <div className="flex w-full h-[200px] rounded-[30px] bg-[#F1F1F1] border2 flex-col p-[20px] justify-between">
