@@ -15,6 +15,7 @@ import Aim from "./component/home/our_aim";
 import Home_mission from "./component/home/home_mission";
 import Home_gallery from "./component/home/home_gallery";
 import Home_portfolio from "./component/home/home_portfolio";
+import Highlight from "./component/home/highlight";
 
 export default function Home() {
   const [general, setgeneral] = useState("");
@@ -23,6 +24,7 @@ export default function Home() {
       {/* <Client_logo /> */}
       <Header />
       <Home_hero />
+      <Highlight />
       <Home_Team />
       <Home_about />
       <Before_client_logo />

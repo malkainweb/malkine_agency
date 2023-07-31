@@ -43,11 +43,6 @@ const Home_hero = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     console.log("Page scroll: ", latest);
-    // if (latest >= 170 && latest < 1107) {
-    //   setposition("sticky");
-    //   settop("0px");
-    //   setbottom("");
-    // }
   });
   useMotionValueEvent(opacity, "change", (latest) => {
     console.log("Page value: ", latest);
@@ -132,6 +127,12 @@ const Home_hero = () => {
             onReady={(e) => {
               e.seekTo(oldcheck, "seconds");
               // console.log("ready");
+            }}
+            onBufferEnd={() => {
+              console.log("ened loading");
+            }}
+            onBuffer={() => {
+              console.log("working");
             }}
             preload="auto"
           />
