@@ -31,7 +31,7 @@ const Home_hero = () => {
     [0, 7.8],
   );
 
-  const width = window.innerWidth;
+  const width = typeof window !== "undefined" ? window.innerWidth : 0; // Access window object only on the client-side
   const newwidth = 0.4 * width;
 
   // set the new width
@@ -79,6 +79,8 @@ const Home_hero = () => {
           id="vid"
           className="w-full "
           ref={videoRef}
+          muted
+          playsInline
           preload={"auto"}
           style={{ position: "sticky", top: "0px" }}
           loop

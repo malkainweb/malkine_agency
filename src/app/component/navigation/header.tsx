@@ -9,7 +9,7 @@ import Image from "next/image";
 const Header = () => {
   return (
     <>
-      <nav className="w-full  h-[150px]  flex  p_r  items-center justify-between bg-transparent">
+      <nav className="w-full  h-[150px]  flex  p_r  items-center justify-between bg-transparent ">
         <Link href="/">
           <Logo />
         </Link>
