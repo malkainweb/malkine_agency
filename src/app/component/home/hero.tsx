@@ -21,6 +21,7 @@ const Home_hero = () => {
   const { scrollY } = useScroll();
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
+  const scrollDelay = 100;
   // console.log(scrollY);
   const opacity = useTransform(
     scrollY,
@@ -52,11 +53,21 @@ const Home_hero = () => {
     setoldcheck(latest);
   });
   // Seek the video forward when the 'check' state changes
+  let timeoutId: NodeJS.Timeout;
   useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.currentTime = oldcheck;
+    if (videoRef.current && Number.isFinite(oldcheck)) {
+      clearTimeout(timeoutId); // Clear any previous timeout
+      timeoutId = setTimeout(() => {
+        if (videoRef.current) {
+          videoRef.current.currentTime = oldcheck;
+        }
+      }, scrollDelay);
     }
-  }, [oldcheck]);
+
+    return () => {
+      clearTimeout(timeoutId); // Clear the timeout on component unmount
+    };
+  }, [oldcheck, scrollDelay]);
   return (
     <>
       <motion.div
