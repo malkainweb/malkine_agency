@@ -22,7 +22,7 @@ export default function Home() {
     <div className="w-full h-auto bg-black ">
       {/* <Client_logo /> */}
       {/* <Header /> */}
-      <Home_hero setgeneral={setgeneral} />
+      <Home_hero />
       <Home_Team />
       <Home_about />
       <Before_client_logo />
