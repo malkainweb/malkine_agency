@@ -15,10 +15,11 @@ import {
  */
 const ContentLine = (props: any) => {
   const { content } = props;
-  const contentRef = useRef<HTMLSpanElement>(null);
+  const contentRef = useRef(null);
 
   const { scrollYProgress } = useScroll({
     target: contentRef,
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     offset: ["end center", "start start"],
   });
 
