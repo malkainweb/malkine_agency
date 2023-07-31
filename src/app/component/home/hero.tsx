@@ -22,7 +22,6 @@ const Home_hero = () => {
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
   // console.log(scrollY);
-  const videosha = document.getElementById("vid");
   const opacity = useTransform(
     scrollY,
     // Map x from these values:
