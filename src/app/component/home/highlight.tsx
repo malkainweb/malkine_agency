@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, createRef } from "react";
 import {
   motion,
   useScroll,
@@ -15,7 +15,8 @@ import {
  */
 const ContentLine = (props: any) => {
   const { content } = props;
-  const contentRef = useRef(null);
+  // const contentRef = useRef(null);
+  const contentRef = createRef<HTMLSpanElement>();
 
   const { scrollYProgress } = useScroll({
     target: contentRef,
@@ -23,6 +24,7 @@ const ContentLine = (props: any) => {
     offset: ["end center", "start start"],
   });
 
+  // console.log(scrollY);
   const scrollValue = useTransform(scrollYProgress, [0, 0.01], ["100%", "0%"]);
   const clipPathVal = useMotionTemplate`inset(0% ${scrollValue} 0% 0%)`;
 
@@ -90,6 +92,9 @@ const Highlight = () => {
             <ContentLine key={index} content={item} />
           ))}
         </p>
+        <button className="novabold  text-[20px] font[900] text-white rounded-[39px] px-[50px] py-[16px] bg-[red] text-white hover:bg-[#920808]">
+          Work with us <i className="bi bi-arrow-right"></i>
+        </button>
       </div>
     </div>
   );

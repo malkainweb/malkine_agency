@@ -30,20 +30,19 @@ const Home_gallery = () => {
         <div className="w-full overflow-hidden h-[600px] relative  bg-[#FAFAFA]  p_r">
           {gall.map((e: any, i: any) => {
             return (
-              <>
-                <div
-                  className="w-[160px] h-[160px]   rounded-[100%] absolute"
-                  style={{
-                    backgroundImage: `url(${e.link})`,
-                    backgroundPosition: "top center",
-                    backgroundSize: "cover",
-                    backgroundRepeat: "no-repeat",
-                    top: e.height,
-                    left: e.left,
-                    right: e.right,
-                  }}
-                ></div>
-              </>
+              <div
+                className="w-[160px] h-[160px]   rounded-[100%] absolute"
+                style={{
+                  backgroundImage: `url(${e.link})`,
+                  backgroundPosition: "top center",
+                  backgroundSize: "cover",
+                  backgroundRepeat: "no-repeat",
+                  top: e.height,
+                  left: e.left,
+                  right: e.right,
+                }}
+                key={i}
+              ></div>
             );
           })}
         </div>

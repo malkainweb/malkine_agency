@@ -26,39 +26,6 @@ const Hands = (props: any) => {
   //
   //
 
-  useEffect(() => {
-    console.log("logo is in view " + isInView);
-  }, [isInView]);
-  useEffect(() => {
-    console.log("plane is in view " + isoutview);
-  }, [isoutview]);
-
-  useEffect(() => {
-    if (isInView == false) {
-      setcheck("fixed");
-      setbottom("");
-      settop("0");
-      return;
-    } else if (isInView) {
-      setcheck("absolute");
-      settop("0");
-      setbottom("");
-    }
-  }, [general]);
-  //
-  useEffect(() => {
-    if (isoutview) {
-      setcheck("absolute");
-      setbottom("0px");
-      settop("");
-      // settop("");
-    } else if (!isoutview) {
-      setcheck("fixed");
-      settop("0");
-      setbottom("0");
-    }
-  }, [general]);
-
   return (
     <>
       <div className="w-full  p_r pt-[90px] pb-[120px] h-auto" ref={ref}>

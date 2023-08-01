@@ -1,5 +1,6 @@
 import "./globals.css";
 import "./style.css";
+import "./global_loader.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className="hide_now">{children}</body>
     </html>
   );
 }
