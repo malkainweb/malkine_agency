@@ -19,16 +19,21 @@ import Highlight from "./component/home/highlight";
 import Review from "./component/home/review";
 import Preloader from "./component/preloader";
 import Home_Header from "./component/navigation/home_header";
+import Menu from "./component/menu";
 
 export default function Home() {
   const [loader, setloader] = useState(true);
+  const [menu, setmenu] = useState(true);
+  const [left, setleft] = useState("100%");
+  const [right, setright] = useState("-100%");
+  const [height, setheight] = useState("0px");
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
-    }, 1000);
+    }, 2000);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -36,9 +41,17 @@ export default function Home() {
   return (
     <>
       {loader ? <Preloader /> : null}
+      <Menu
+        setleft={setleft}
+        left={left}
+        height={height}
+        setheight={setheight}
+        setright={setright}
+        right={right}
+      />
       <div className="w-full h-auto bg-black ">
         {/* <Client_logo /> */}
-        <Home_Header />
+        <Home_Header setleft={setleft} setright={setright} />
         <Home_hero />
         <Highlight />
         <Home_Team />

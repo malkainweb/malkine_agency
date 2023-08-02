@@ -5,7 +5,9 @@ import Header_transparant from "../navigation/header_transparant";
 import hero from "../../../../public/services/hero.svg";
 import Image from "next/image";
 
-const Hero_services = () => {
+const Hero_services = (props: any) => {
+  const { setleft, setright } = props;
+
   return (
     <>
       <div className="w-full py-[30px] p_r h-[1400px] ">
@@ -15,7 +17,7 @@ const Hero_services = () => {
             alt="hero img"
             className="w-full h-full absolute top-0  left-0 z-[1]"
           /> */}
-          <Header_transparant />
+          <Header_transparant setleft={setleft} setright={setright} />
 
           <div className="w-full flex flex-col gap-[15px]   blend px-[77px]">
             <p className="nova  text-[24px] font-[900]  text-[#dcdcdc] ">

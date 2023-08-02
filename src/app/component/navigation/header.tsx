@@ -6,7 +6,9 @@ import ham from "../../../../public/nav_icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
-const Header = () => {
+const Header = (props: any) => {
+  const { setleft, setright } = props;
+
   return (
     <>
       <nav className="w-full   z-[999]   h-[120px]  flex  p_r  items-center justify-between bg-transparent ">
@@ -29,7 +31,13 @@ const Header = () => {
           </Link>
         </div>
         {/* menu icons */}
-        <div className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-[#FFFFFF] bg-opacity-[17%]  backdrop-blur-[100px]">
+        <div
+          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-[#FFFFFF] bg-opacity-[17%]  backdrop-blur-[100px] cursor-pointer hover:bg-[#c7c5c5]"
+          onClick={() => {
+            setleft("0");
+            setright("0");
+          }}
+        >
           <Image src={ham} alt="hamburger" className="w-full h-auto" />
         </div>
       </nav>

@@ -7,7 +7,9 @@ import Link from "next/link";
 import Image from "next/image";
 import Logo_black from "../logo_black";
 
-const Header_black = () => {
+const Header_black = (props: any) => {
+  const { setleft, setright } = props;
+
   return (
     <>
       <nav className="w-full  h-[150px]  flex  p_r  items-center justify-between bg-white">
@@ -31,7 +33,13 @@ const Header_black = () => {
           </Link>
         </div>
         {/* menu icons */}
-        <div className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-black bg-opacity-[17%] ">
+        <div
+          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-black bg-opacity-[17%]  cursor-pointer hover:bg-[#c7c5c5]"
+          onClick={() => {
+            setleft("0");
+            setright("0");
+          }}
+        >
           <Image src={ham} alt="hamburger" className="w-full h-auto" />
         </div>
       </nav>

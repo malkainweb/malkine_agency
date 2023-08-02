@@ -17,8 +17,8 @@ body {
   width: 100%;
   height: auto;
   /* overflow-x: hidden; */
-  contain: paint;
-  /* overflow: clip; */
+  /* contain: paint; */
+  overflow-x: clip;
 }
 
 /* Chrome, Safari, Edge, Opera */

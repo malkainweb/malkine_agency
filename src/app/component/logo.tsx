@@ -8,7 +8,7 @@ const Logo = () => {
   return (
     <>
       <div className="w-[95px] h-[95px]  ">
-        <Image src={logo} alt="logo" className="w-full h-full" />
+        <Image src={logo} alt="logo" className="w-full h-fit" />
       </div>
     </>
   );
