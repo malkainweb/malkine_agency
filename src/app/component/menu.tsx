@@ -92,7 +92,7 @@ const Menu = (props: any) => {
 
           <div className="w-auto h-full flex flex-col  text-white novabold">
             <p className="text-[20px] text-[#9E9E9E] pb-[5px]">Navigation</p>
-            <div className="w-full h-full flex flex-col gap-[20px] ">
+            <div className="w-full h-full flex flex-col justify-between  ">
               {menu_arr.map((e: any, index: any) => {
                 return (
                   <div className="flex items-center gap-[5px]" key={index}>
