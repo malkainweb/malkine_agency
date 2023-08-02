@@ -70,7 +70,10 @@ const Hands = (props: any) => {
       {/*  */}
 
       {/*  */}
-      <div className="w-ful h-[2100px]  relative  hand_bg">
+      <div
+        className="w-ful h-[2100px]   flex hand_bg"
+        style={{ alignItems: "flex-start" }}
+      >
         {/* <Image
           src={hand_left}
           alt="work image"
@@ -81,18 +84,30 @@ const Hands = (props: any) => {
           alt="work image"
           className="absolute w-[37%] h-full top-0 right-0 "
         /> */}
-
-        <Image
-          src={hand_middle}
-          alt="work image"
-          className=" w-[45vw]  h-[100vh] transition delay-[2s]"
+        <div
+          className="flex  justify-center  w-fit items-center h-auto "
           style={{
             position: "sticky",
             left: "50%",
+            alignSelf: "flex-end",
             transform: " translateX(-50%)",
-            top: "0px",
+            bottom: "0px",
           }}
-        />
+        >
+          <Image
+            src={hand_middle}
+            alt="work image"
+            className=" w-[45vw]  h-[100vh] transition delay-[2s]"
+            style={
+              {
+                // position: "sticky",
+                // left: "50%",
+                // transform: " translateX(-50%)",
+                // bottom: "0px",
+              }
+            }
+          />
+        </div>
       </div>
 
       <div className="py-[50px] w-full h-auto p_r bg-white" ref={outref}>
