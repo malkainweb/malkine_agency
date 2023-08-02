@@ -85,10 +85,10 @@ const Hands = (props: any) => {
         <Image
           src={hand_middle}
           alt="work image"
-          className=" w-[600px]  h-[100vh] transition delay-[2s]"
+          className=" w-[45vw]  h-[100vh] transition delay-[2s]"
           style={{
             position: "sticky",
-            left: "55%",
+            left: "50%",
             transform: " translateX(-50%)",
             top: "0px",
           }}
