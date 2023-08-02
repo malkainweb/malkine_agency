@@ -134,7 +134,7 @@ const Home_hero = () => {
               WebkitTextFillColor: "transparent",
               zIndex: "1",
 
-              transition: "1s ease",
+              transition: "0.5s ease",
             }}
           >
             Design
@@ -147,7 +147,7 @@ const Home_hero = () => {
             style={{
               opacity: c_opacity,
               transform: animate_des,
-              transition: "1s ease",
+              transition: "0.5s ease",
               height: display_des,
             }}
           />
@@ -157,7 +157,7 @@ const Home_hero = () => {
             alt="laptop black"
             style={{
               transform: animate_des,
-              transition: "1s ease",
+              transition: "0.5s ease",
               height: display_des,
             }}
           />
@@ -167,7 +167,7 @@ const Home_hero = () => {
             alt="laptop black"
             style={{
               transform: animate_tab,
-              transition: "1s ease",
+              transition: "0.5s ease",
               height: display_tab,
             }}
           />
@@ -177,7 +177,7 @@ const Home_hero = () => {
             alt="laptop black"
             style={{
               transform: animate_phone,
-              transition: "1s ease",
+              transition: "0.5s ease",
               height: display_phone,
             }}
           />
@@ -191,7 +191,7 @@ const Home_hero = () => {
               WebkitBackgroundClip: "text",
               WebkitTextFillColor: "transparent",
               transform: animate_company,
-              transition: "1s ease",
+              transition: "0.5s ease",
               height: display_company,
             }}
           >
