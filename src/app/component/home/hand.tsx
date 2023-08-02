@@ -91,13 +91,13 @@ const Hands = (props: any) => {
             left: "50%",
             alignSelf: "flex-end",
             transform: " translateX(-50%)",
-            bottom: "0px",
+            bottom: "-50px",
           }}
         >
           <Image
             src={hand_middle}
             alt="work image"
-            className=" w-[45vw]  h-[100vh] transition delay-[2s]"
+            className=" w-[45vw]  h-fit transition delay-[2s]"
             style={
               {
                 // position: "sticky",
