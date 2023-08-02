@@ -7,8 +7,8 @@ import Work_system from "../component/works/work_system";
 import Menu from "../component/menu";
 
 export default function Contact() {
-  const [left, setleft] = useState("100%");
-  const [right, setright] = useState("-100%");
+  const [left, setleft] = useState("200vh");
+  const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
 
   return (

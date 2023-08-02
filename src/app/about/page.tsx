@@ -9,8 +9,8 @@ import Menu from "../component/menu";
 import { useState } from "react";
 
 export default function About() {
-  const [left, setleft] = useState("100%");
-  const [right, setright] = useState("-100%");
+  const [left, setleft] = useState("200vh");
+  const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
   return (
     <>

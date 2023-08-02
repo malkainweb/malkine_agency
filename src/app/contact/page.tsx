@@ -19,8 +19,8 @@ export default function Contact() {
   const [hear_us, sethear_us] = useState("");
 
   // this is for the menu
-  const [left, setleft] = useState("100%");
-  const [right, setright] = useState("-100%");
+  const [left, setleft] = useState("1200vh");
+  const [right, setright] = useState("-1200vh");
   const [height, setheight] = useState("0px");
   return (
     <>

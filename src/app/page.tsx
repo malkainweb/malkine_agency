@@ -24,8 +24,8 @@ import Menu from "./component/menu";
 export default function Home() {
   const [loader, setloader] = useState(true);
   const [menu, setmenu] = useState(true);
-  const [left, setleft] = useState("100%");
-  const [right, setright] = useState("-100%");
+  const [left, setleft] = useState("200vh");
+  const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
 
   useEffect(() => {
