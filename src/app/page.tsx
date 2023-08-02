@@ -18,6 +18,7 @@ import Home_portfolio from "./component/home/home_portfolio";
 import Highlight from "./component/home/highlight";
 import Review from "./component/home/review";
 import Preloader from "./component/preloader";
+import Home_Header from "./component/navigation/home_header";
 
 export default function Home() {
   const [loader, setloader] = useState(true);
@@ -27,7 +28,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
-    }, 2000);
+    }, 1000);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
@@ -37,8 +38,8 @@ export default function Home() {
       {loader ? <Preloader /> : null}
       <div className="w-full h-auto bg-black ">
         {/* <Client_logo /> */}
-        <Header />
-        <Home_hero setloader={setloader} />
+        <Home_Header />
+        <Home_hero />
         <Highlight />
         <Home_Team />
         <Home_about />

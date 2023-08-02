@@ -20,7 +20,7 @@ const ContentLine = (props: any) => {
 
   const { scrollYProgress } = useScroll({
     target: contentRef,
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+    // @ts-ignore
     offset: ["end center", "start start"],
   });
 

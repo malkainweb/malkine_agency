@@ -28,7 +28,8 @@ body {
   justify-content: center;
   /* padding: 100px 100px 100px 100px; */
   height: auto;
-  font-family: novabold;
+  font-family: Helvetica;
+  font-weight: 700;
   font-size: 50px;
 }
 .dav {

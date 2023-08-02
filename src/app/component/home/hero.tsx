@@ -1,5 +1,6 @@
 "use client";
 
+import { useEffect, useState, useRef } from "react";
 import {
   useInView,
   useTransform,
@@ -9,108 +10,196 @@ import {
   useMotionValueEvent,
 } from "framer-motion";
 import ReactPlayer from "react-player";
-import React, { useState, useEffect, useRef } from "react";
-import Header from "../navigation/header";
+import Image from "next/image";
+import laptop_black from "../../../../public/home/black_laptop.webp";
+import on_black from "../../../../public/home/on_laptop.webp";
+import tab from "../../../../public/home/tab.webp";
+import phone from "../../../../public/home/phone.webp";
 
-const Home_hero = (props: any) => {
-  const { setloader } = props;
+const Home_hero = () => {
   const [check, setcheck] = useState<any>();
-  const [oldcheck, setoldcheck] = useState<any>(7.8);
-  const [isBuffering, setIsBuffering] = useState(true);
+  const [color, setcolor] = useState<any>("#101010");
+  const [animate_text, setanimate_text] = useState("translateX(250%)");
+  const [c_opacity, setc_opacity] = useState<any>(1);
+  const [animate_des, setanimate_des] = useState("translateX(0)");
+  const [animate_tab, setanimate_tab] = useState("translateX(250%)");
+  const [display_des, setdisplay_des] = useState("auto");
+  const [animate_phone, setanimate_phone] = useState("translateX(250%)");
+  const [display_phone, setdisplay_phone] = useState("0px");
+  const [display_tab, setdisplay_tab] = useState("0px");
+  const [animate_company, setanimate_company] = useState("translateX(250%)");
+  const [display_company, setdisplay_company] = useState("0px");
+
   const { scrollY } = useScroll();
 
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const scrollDelay = 100;
+  // console.log(scrollY);
   const opacity = useTransform(
     scrollY,
     // Map x from these values:
-    [0, check],
+    [0, 300],
     // Into these values:
-    [0, 7.8],
+    [1, 0],
   );
-  // useEffect(() => {
-  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
-  const width = globalThis.innerWidth; // Access window object only on the client-side
 
-  const windowSize = useRef(
-    window ? [window.innerWidth, window.innerHeight] : [],
-  );
-  // const width = windowSize.current[0];
-  const newwidth = 0.4 * width;
-
-  // set the new width
-  useEffect(() => {
-    setcheck(newwidth + 500);
-    return;
-  }, [newwidth]);
-
-  useMotionValueEvent(scrollY, "change", (latest) => {});
-  useMotionValueEvent(opacity, "change", (latest) => {
-    setoldcheck(latest);
-  });
-  // Seek the video forward when the 'check' state changes
-  let timeoutId: NodeJS.Timeout;
-  useEffect(() => {
-    if (videoRef.current && Number.isFinite(oldcheck)) {
-      clearTimeout(timeoutId); // Clear any previous timeout
-      timeoutId = setTimeout(() => {
-        if (videoRef.current) {
-          videoRef.current.currentTime = oldcheck;
-        }
-      }, scrollDelay);
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log("Page scroll: ", latest);
+    if (latest >= 300) {
+      setcolor("black");
+      setanimate_text("translateX(-50%)");
+    } else if (latest <= 300) {
+      setcolor("#101010");
+      setanimate_text("translateX(250%)");
     }
 
-    return () => {
-      clearTimeout(timeoutId); // Clear the timeout on component unmount
-    };
-  }, [oldcheck, scrollDelay]);
+    if (latest >= 500) {
+      setdisplay_tab("auto");
 
-  const handleBufferEnd = () => {
-    // setloader(false);
-    console.log("buffering is ended" + isBuffering);
-  };
+      setanimate_des("translateX(-250%)");
+      setanimate_text("translateX(-250%)");
+      setanimate_tab("translateX(0%)");
+      setdisplay_des("0px");
+      setdisplay_phone("0px");
+      setanimate_phone("translateX(250%)");
+    } else if (latest <= 500) {
+      setdisplay_tab("0px");
+      setanimate_des("translateX(0)");
+      setdisplay_des("auto");
+      setanimate_company("0px");
+      setanimate_company("translateX(250%)");
+      setanimate_tab("translateX(250%)");
+      // setanimate_text("translateX(-50%)");
+    }
+    if (latest >= 750) {
+      setdisplay_tab("0px");
+      setanimate_tab("translateX(-250%)");
+      setdisplay_phone("auto");
+      setanimate_phone("translateX(0%)");
+    } else if (latest <= 750 && latest > 500) {
+      setanimate_phone("translateX(250%)");
+      setdisplay_phone("0");
+      setdisplay_tab("auto");
+      setanimate_tab("translateX(0px)");
+    }
+
+    if (latest >= 1000) {
+      setdisplay_phone("0px");
+      setanimate_phone("translateX(-250%)");
+      setdisplay_company("auto");
+      setanimate_company("translateX(0%)");
+    } else if (latest <= 1000 && latest > 750) {
+      setanimate_company("translateX(250%)");
+      setdisplay_company("0");
+
+      setdisplay_phone("auto");
+      setanimate_phone("translateX(0px)");
+    }
+  });
+  useMotionValueEvent(opacity, "change", (latest) => {
+    console.log("Page value: ", latest);
+    setc_opacity(latest);
+  });
+
   return (
     <>
+      {" "}
       <motion.div
-        className="w-full h-[120vw] bg-black  "
-        animate={{ position: "relative" }}
+        className="w-full  h-[2100px] py-[100px] flex flex-col items-center "
+        animate={{ backgroundColor: color }}
+        transition={{ duration: 0.1 }}
       >
-        <div
+        <p className="text-[50px] font-[helvetica] text-center text-white font-[700] ">
+          The best way to predict the <br /> future is to reinvent it
+        </p>
+
+        <motion.div
+          className="w-auto h-[100vh] flex flex-col"
           style={{
+            y: -30,
+            zIndex: 1,
             position: "sticky",
-            top: "0",
-            width: "100%",
-            height: "0",
-            paddingBottom: "56.25%",
-            zIndex: 1, // (Optional) Set a higher z-index value if needed to make the video player appear above other elements while scrolling
+            top: "200px",
+            opacity: 1,
           }}
         >
-          <ReactPlayer
-            url="home/laptop4.mp4" // Replace with the actual video URL
-            width="100%"
-            controls={false}
-            muted
-            height="100%"
-            style={{ position: "absolute", top: "0", left: "0" }}
-            onReady={(e) => {
-              setIsBuffering(false);
+          <motion.p
+            className="text-[200px] absolute top-[-200px] font-[helvetica] font-[700] left-[50%] "
+            animate={{ transform: animate_text }}
+            // transition={{duration: 1}}
+            style={{
+              background:
+                "linear-gradient(180deg, #17A4D0 0%, rgba(0, 0, 0, 0.97) 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              zIndex: "1",
 
-              e.seekTo(oldcheck, "seconds");
-              // e.setState({ played: 7 });
+              transition: "1s ease",
             }}
-            // onProgress={handleBufferEnd}
-            // onBuffer={() => {
-            //   setIsBuffering(true); // Buffering has started
-            //   console.log("Video is buffering...");
-            // }}
-
-            // // playing={isBuffering}
-            playing={isBuffering}
-            // preload={"auto"}
+          >
+            Design
+          </motion.p>
+          {/* <div className="w-[600px] h-fit relative top-0 left-0"> */}
+          <Image
+            src={laptop_black}
+            className="w-[700px] h-fit absolute z-[50] top-0 left-0"
+            alt="laptop black"
+            style={{
+              opacity: c_opacity,
+              transform: animate_des,
+              transition: "1s ease",
+              height: display_des,
+            }}
           />
-        </div>
+          <Image
+            src={on_black}
+            className="w-[700px] h-fit absoulute  z-[45] top-0 left-0"
+            alt="laptop black"
+            style={{
+              transform: animate_des,
+              transition: "1s ease",
+              height: display_des,
+            }}
+          />
+          <Image
+            src={tab}
+            className="w-[700px] h-fit absoulute  z-[45]  top-0 left-0"
+            alt="laptop black"
+            style={{
+              transform: animate_tab,
+              transition: "1s ease",
+              height: display_tab,
+            }}
+          />
+          <Image
+            src={phone}
+            className="w-[700px] h-fit absoulute  z-[45]  top-0 left-0"
+            alt="laptop black"
+            style={{
+              transform: animate_phone,
+              transition: "1s ease",
+              height: display_phone,
+            }}
+          />
+
+          <p
+            className="nova w-[700px] text-[150px] mt-[100px] font-[helvetica] font-[700] absoulute  z-[45]  top-0 left-0"
+            style={{
+              background:
+                "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",
+              backgroundClip: "text",
+              WebkitBackgroundClip: "text",
+              WebkitTextFillColor: "transparent",
+              transform: animate_company,
+              transition: "1s ease",
+              height: display_company,
+            }}
+          >
+            MALKINE
+          </p>
+
+          {/* </div> */}
+        </motion.div>
       </motion.div>
     </>
   );
