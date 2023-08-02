@@ -23,10 +23,11 @@ export default function Home() {
   const [loader, setloader] = useState(true);
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
-    }, 3000);
+    }, 2000);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

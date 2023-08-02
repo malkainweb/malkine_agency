@@ -90,21 +90,24 @@ const Home_hero = (props: any) => {
           <ReactPlayer
             url="home/laptop4.mp4" // Replace with the actual video URL
             width="100%"
-            // cont rols
+            controls={false}
+            muted
             height="100%"
             style={{ position: "absolute", top: "0", left: "0" }}
             onReady={(e) => {
+              setIsBuffering(false);
+
               e.seekTo(oldcheck, "seconds");
-              // setIsBuffering(false);
+              // e.setState({ played: 7 });
             }}
-            onProgress={handleBufferEnd}
+            // onProgress={handleBufferEnd}
             // onBuffer={() => {
             //   setIsBuffering(true); // Buffering has started
             //   console.log("Video is buffering...");
             // }}
-            // // onBuffer={handleBufferEnd}
+
             // // playing={isBuffering}
-            // playing={true}
+            playing={isBuffering}
             // preload={"auto"}
           />
         </div>
