@@ -13,6 +13,10 @@
   overflow: hidden;
 }
 
+html {
+  overflow-x: clip;
+}
+
 body {
   width: 100%;
   height: auto;
