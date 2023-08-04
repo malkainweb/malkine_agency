@@ -10,12 +10,12 @@ const Home_Header = (props: any) => {
   const { setleft, setright } = props;
   return (
     <>
-      <nav className="w-full   z-[99]   h-[120px]  flex  p_r  items-center justify-between bg-[#101010] ">
+      <nav className="w-full fixed  z-[99]   h-[150px]  flex  p_r  items-center justify-between bg-transparent ">
         <Link href="/" className="">
           <Logo />
         </Link>
         {/* nav menus */}
-        <div className="w-[495px] h-[57px] novabold rounded-[40px]  flex justify-around items-center text-white capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[16px] backdrop-blur-[200px]">
+        <div className="w-[470px] h-[50px] novabold rounded-[50px]  flex justify-center  gap-[30px]  items-center text-white capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
