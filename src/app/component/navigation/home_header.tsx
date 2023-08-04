@@ -10,7 +10,7 @@ const Home_Header = (props: any) => {
   const { setleft, setright } = props;
   return (
     <>
-      <nav className="w-full fixed  z-[99]   h-[150px]  flex  p_r  items-center justify-between bg-transparent ">
+      <nav className="w-full fixed  z-[99]   h-[150px]  flex  p_r  items-center justify-between bg-transparent">
         <Link href="/" className="">
           <Logo />
         </Link>

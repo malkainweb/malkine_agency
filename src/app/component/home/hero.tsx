@@ -104,11 +104,11 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className="w-full  h-[2100px] py-[100px] flex flex-col items-center "
+        className="w-full  h-[2100px] pt-[170px] pb-[100px] flex flex-col items-center "
         animate={{ backgroundColor: color }}
         transition={{ duration: 0.1 }}
       >
-        <p className="text-[50px] font-[helvetica] text-center text-white font-[700] ">
+        <p className="text-[65px] novabold text-center text-white font-[500] ">
           The best way to predict the <br /> future is to reinvent it
         </p>
 
@@ -118,7 +118,7 @@ const Home_hero = () => {
             y: -30,
             zIndex: 1,
             position: "sticky",
-            top: "200px",
+            top: "300px",
             opacity: 1,
           }}
         >
