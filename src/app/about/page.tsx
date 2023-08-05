@@ -22,8 +22,9 @@ export default function About() {
         setright={setright}
         right={right}
       />
-      <div className="w-full h-auto bg-black">
-        <Header_black setright={setright} setleft={setleft} />
+      <Header_black setright={setright} setleft={setleft} />
+
+      <div className="w-full h-auto  pt-[150px] ">
         <About_hero />
         <Team />
         <Footer />

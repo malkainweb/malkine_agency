@@ -12,13 +12,13 @@ const Header_black = (props: any) => {
 
   return (
     <>
-      <nav className="w-full  h-[150px]  flex  p_r  items-center justify-between bg-white">
+      <nav className="w-full  h-[150px] fixed z-[99] flex  p_r  items-center justify-between bg-transparent">
         <Link href="/">
           <Logo_black />
         </Link>
 
         {/* nav menus */}
-        <div className="w-[495px] h-[57px] novabold rounded-[40px]  flex justify-around items-center text-black capitalize bg-black  bg-opacity-[17%] font-[200] text-[16px]">
+        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-center gap-[30px] items-center text-black capitalize bg-black  bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -34,7 +34,7 @@ const Header_black = (props: any) => {
         </div>
         {/* menu icons */}
         <div
-          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-black bg-opacity-[17%]  cursor-pointer hover:bg-[#c7c5c5]"
+          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-black bg-opacity-[17%]  cursor-pointer hover:bg-[#c7c5c5] backdrop-blur-[25px]"
           onClick={() => {
             setleft("0");
             setright("0");

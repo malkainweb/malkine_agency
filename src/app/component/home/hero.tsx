@@ -49,14 +49,14 @@ const Home_hero = () => {
       setanimate_text("translateX(-50%)");
     } else if (latest <= 300) {
       setcolor("#101010");
-      setanimate_text("translateX(250%)");
+      setanimate_text("translateX(350%)");
     }
 
     if (latest >= 500) {
       setdisplay_tab("auto");
 
       setanimate_des("translateX(-250%)");
-      setanimate_text("translateX(-250%)");
+      setanimate_text("translateX(-350%)");
       setanimate_tab("translateX(0%)");
       setdisplay_des("0px");
       setdisplay_phone("0px");
@@ -104,7 +104,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className="w-full  h-[2100px] pt-[170px] pb-[100px] flex flex-col items-center "
+        className="w-full  h-[2300px] pt-[170px] pb-[100px] flex flex-col items-center "
         animate={{ backgroundColor: color }}
         transition={{ duration: 0.1 }}
       >
@@ -118,7 +118,7 @@ const Home_hero = () => {
             y: -30,
             zIndex: 1,
             position: "sticky",
-            top: "300px",
+            top: "250px",
             opacity: 1,
           }}
         >

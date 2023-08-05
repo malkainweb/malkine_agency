@@ -10,12 +10,12 @@ const Header_transparant = (props: any) => {
   const { setleft, setright } = props;
   return (
     <>
-      <nav className="w-full  h-[150px]  flex  p_r  items-center justify-between bg-transparent">
+      <nav className="w-full   h-[150px] fixed  z-[99] top-0 left-0  flex  p_r  items-center justify-between bg-transparent">
         <Link href="/">
           <Logo />
         </Link>
         {/* nav menus */}
-        <div className="w-[495px] h-[57px] novabold rounded-[40px]  flex justify-around items-center text-[black] capitalize bg-[#CED7D7] font-[200] text-[16px]">
+        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-around items-center text-[black] capitalize bg-[#CED7D7] font-[200] text-[14px] backdrop-blur-[25px] bg-opacity-[37%]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -31,7 +31,7 @@ const Header_transparant = (props: any) => {
         </div>
         {/* menu icons */}
         <div
-          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-[#CED7D7]  cursor-pointer hover:bg-[#c7c5c5]"
+          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-[#CED7D7] bg-opacity-[37%]  cursor-pointer hover:bg-[#c7c5c5] backdrop-blur-[25px]"
           onClick={() => {
             setleft("0");
             setright("0");

@@ -10,7 +10,6 @@ import Home_Team from "./component/home/team";
 import Before_client_logo from "./component/home/before_client_logo";
 import Home_about from "./component/home/home_about";
 import Home_about_us from "./component/home/about_us";
-import Header from "./component/navigation/header";
 import Aim from "./component/home/our_aim";
 import Home_mission from "./component/home/home_mission";
 import Home_gallery from "./component/home/home_gallery";

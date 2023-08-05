@@ -19,7 +19,7 @@ const Hero_services = (props: any) => {
           /> */}
           <Header_transparant setleft={setleft} setright={setright} />
 
-          <div className="w-full flex flex-col gap-[15px]   blend px-[77px]">
+          <div className="w-full flex flex-col gap-[15px] pt-[180px]   blend px-[77px]">
             <p className="nova  text-[24px] font-[900]  text-[#dcdcdc] ">
               Services
             </p>

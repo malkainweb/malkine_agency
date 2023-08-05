@@ -37,7 +37,7 @@ const About_hero = () => {
           style={{ transform: "translateX(-50%)" }}
           src={chess}
           alt="chess board"
-          className="w-[70%] absolute left-[50%] bottom-[-35%]"
+          className="w-[70%] absolute left-[50%] bottom-[-300px]"
         />
         <div className="w-full flex-col h-auto flex justify-center items-center gap-[20px]">
           <h1 className="text-[#424242] text-[80px] text-center novabold font-bold leading-[100px]">

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Header from "../component/navigation/header";
+import Home_Header from "../component/navigation/home_header";
 import Footer from "../component/fotter/footer";
 import Top_works from "../component/works/top_works";
 import Work_system from "../component/works/work_system";
@@ -21,11 +21,13 @@ export default function Contact() {
         setright={setright}
         right={right}
       />
-      <div className="w-full h-auto bg-[#1A1A1A] ">
-        <Header setleft={setleft} setright={setright} />
-        <Top_works />
-        <Work_system />
-        <Footer />
+      <div className="w-full h-auto  bg-[#1A1A1A] ">
+        <Home_Header setleft={setleft} setright={setright} />
+        <div className="w-full pt-[100px]">
+          <Top_works />
+          <Work_system />
+          <Footer />
+        </div>
       </div>
     </>
   );

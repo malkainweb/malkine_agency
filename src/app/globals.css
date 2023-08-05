@@ -25,6 +25,8 @@ body {
   overflow-x: clip;
 }
 
+/* styling for the input eflements on the contact page  */
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {

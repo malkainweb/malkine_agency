@@ -22,27 +22,27 @@ const Menu = (props: any) => {
     {
       txt: "Our Services",
       no: "02",
-      link: "services",
+      link: "/services",
     },
     {
       txt: "About Us",
       no: "03",
-      link: "about",
+      link: "/about",
     },
     {
       txt: "Portfolio",
       no: "04",
-      link: "portfolio",
+      link: "/portfolio",
     },
     {
       txt: "Reviews",
       no: "05",
-      link: "Reviews",
+      link: "/Reviews",
     },
     {
       txt: "Contact Us",
       no: "06",
-      link: "contact",
+      link: "/contact",
     },
   ]);
 
@@ -62,21 +62,14 @@ const Menu = (props: any) => {
           animate={{ y: left, backgroundColor: "#D01717", opacity: 1 }}
           initial={{ y: "100%", opacity: 0.7 }}
           transition={{ duration: 0.7 }}
-          className="min-h-[100vh]  w-[30vw] px-[25px] py-[40px] flex justify-between flex-col"
+          className="min-h-[100vh]  w-[30vw] px-[40px] py-[80px] flex justify-between flex-col"
         >
           <Link href="/">
             <Logo />
           </Link>
 
           <div className="w-full flex flex-col gap-[15px]">
-            <div className="w-full flex items-center gap-[10px]">
-              <Image src={rev} alt="review" className="w-[70px] h-fit" />
-              <div className="w-full flex flex-col gap-[10px]">
-                <Image src={star} alt="review" className="w-[70px] h-fit" />
-                <p className="novabold text-white text-[20px]">Gold reviews</p>
-              </div>
-            </div>
-            <p className="novabold text-[20px] text-[#BFBFBF]">
+            <p className="novabold text-[25px] text-[#BFBFBF]">
               Lets help bring your amazing <br />
               idea to life
             </p>
@@ -86,13 +79,13 @@ const Menu = (props: any) => {
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
           initial={{ y: "-100%", opacity: 0.7 }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh]  w-[70vw] px-[40px] pt-[30px] pb-[20px] flex justify-between"
+          className="h-[100vh]  w-[70vw] px-[70px] py-[50px] pb-[20px] flex justify-between"
         >
           {/* the first flex with the big options */}
 
           <div className="w-auto h-full flex flex-col  text-white novabold">
-            <p className="text-[20px] text-[#9E9E9E] pb-[5px]">Navigation</p>
-            <div className="w-full h-full flex flex-col justify-between  ">
+            <p className="text-[20px] text-[#9E9E9E] ">Navigation</p>
+            <div className="w-full h-full flex flex-col justify-center gap-[20px]  ">
               {menu_arr.map((e: any, index: any) => {
                 return (
                   <div className="flex items-center gap-[5px]" key={index}>
@@ -108,12 +101,11 @@ const Menu = (props: any) => {
                   </div>
                 );
               })}
-              <div className="w-full h-[4px] rounded-[45px] bg-[#DB4F4F]"></div>
             </div>
           </div>
 
           {/* the second flex with the small small options */}
-          <div className=" w-fit h-full flex flex-col justify-between ">
+          <div className=" w-fit h-full flex pb-[30px] flex-col justify-between ">
             <div className="flex gap-[20px] items-center">
               <Link
                 href="/"

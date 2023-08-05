@@ -2,7 +2,7 @@
 import { useState } from "react";
 import One from "../component/contact/one";
 import Success from "../component/contact/success";
-import Header from "../component/navigation/header";
+import Home_Header from "../component/navigation/home_header";
 import Footer from "../component/fotter/footer";
 import Two from "../component/contact/two";
 import Menu from "../component/menu";
@@ -32,9 +32,9 @@ export default function Contact() {
         setright={setright}
         right={right}
       />
-      <div className="w-full h-auto bg-[#1A1A1A] ">
-        <Header setright={setright} setleft={setleft} />
-        <div className="w-full flex justify-center nova text-[50px] text-[#D9D9D9]  text-center">
+      <div className="w-full h-auto  bg-[#1A1A1A] ">
+        <Home_Header setright={setright} setleft={setleft} />
+        <div className="w-full pt-[150px] flex justify-center nova text-[50px] text-[#D9D9D9]  text-center">
           {step == 3 ? (
             ""
           ) : (
