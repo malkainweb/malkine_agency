@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import agile from "../../../../public/home/about.webp";
+import Image from "next/image";
 
 const Home_about = () => {
   const [arr, setarr] = useState([
@@ -14,8 +16,13 @@ const Home_about = () => {
   return (
     <>
       <div className="w-full  h-[700px] p_r rounded-[20px] flex justify-between gap-[15px] py-[60px]">
-        <div className="w-full  home_about flex items-end">
-          <div className=" flex flex-col gap-[20px] h-auto w-full">
+        <div className="w-full  home_abou relative  flex items-end">
+          {/* the background image  */}
+
+          <div className="w-full h-full absolute top-0 left-0 overflow-clip">
+            <Image src={agile} alt="agile image" className="w-[full] h-full" />
+          </div>
+          <div className=" flex flex-col z-[20] gap-[20px] h-auto w-full">
             <h3 className="px-[20px] py-[10px] border-white border rounded-[20px] text-white w-fit">
               About Us
             </h3>

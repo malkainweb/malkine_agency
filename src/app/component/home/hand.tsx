@@ -59,7 +59,8 @@ const Hands = (props: any) => {
           <Image
             src={client_logo}
             alt="clients logo"
-            className="z-[1] w-[80%] h-fit absolute bottom-0 right-[10%]"
+            className="z-[1] w-[60%]  h-fit absolute bottom-0 left-[50%]"
+            style={{ transform: "translateX(-50%)" }}
           />
         </div>
       </div>
