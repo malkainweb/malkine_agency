@@ -62,17 +62,19 @@ const Menu = (props: any) => {
           animate={{ y: left, backgroundColor: "#D01717", opacity: 1 }}
           initial={{ y: "100%", opacity: 0.7 }}
           transition={{ duration: 0.7 }}
-          className="min-h-[100vh]  w-[30vw] px-[40px] py-[80px] flex justify-between flex-col"
+          className="h-[100vh]  w-[30vw] px-[40px] py-[80px] flex items-center"
         >
-          <Link href="/">
-            <Logo />
-          </Link>
+          <div className="h-[600px] w-full flex justify-between flex-col">
+            <Link href="/">
+              <Logo />
+            </Link>
 
-          <div className="w-full flex flex-col gap-[15px]">
-            <p className="novabold text-[25px] text-[#BFBFBF]">
-              Lets help bring your amazing <br />
-              idea to life
-            </p>
+            <div className="w-full flex flex-col gap-[15px]">
+              <p className="novabold text-[25px] text-[#BFBFBF]">
+                Lets help bring your amazing <br />
+                idea to life
+              </p>
+            </div>
           </div>
         </motion.div>
 
@@ -82,9 +84,9 @@ const Menu = (props: any) => {
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
           initial={{ y: "-100%", opacity: 0.7 }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh]  w-[70vw] px-[70px] py-[50px] pb-[20px] justify-center items-center"
+          className="h-[100vh]  w-[70vw] px-[70px] py-[50px] pb-[20px] flex justify-center items-center"
         >
-          <div className="flex justify-between w-full h-full">
+          <div className="flex justify-between w-full h-full  items-center ">
             {/* the first flex with the big options */}
 
             <div className="w-auto h-[600px] gap-[30px] flex flex-col justify-between  text-white novabold">
