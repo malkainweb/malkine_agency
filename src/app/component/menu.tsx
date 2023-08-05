@@ -75,6 +75,9 @@ const Menu = (props: any) => {
             </p>
           </div>
         </motion.div>
+
+        {/* second section begins here  */}
+
         <motion.div
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
           initial={{ y: "-100%", opacity: 0.7 }}
@@ -83,7 +86,7 @@ const Menu = (props: any) => {
         >
           {/* the first flex with the big options */}
 
-          <div className="w-auto h-full flex flex-col  text-white novabold">
+          <div className="w-auto h-[600px]  flex flex-col  text-white novabold">
             <p className="text-[20px] text-[#9E9E9E] ">Navigation</p>
             <div className="w-full h-full flex flex-col justify-center gap-[20px]  ">
               {menu_arr.map((e: any, index: any) => {
@@ -105,7 +108,7 @@ const Menu = (props: any) => {
           </div>
 
           {/* the second flex with the small small options */}
-          <div className=" w-fit h-full flex pb-[30px] flex-col justify-between ">
+          <div className=" w-fit h-[600px] flex  flex-col justify-between ">
             <div className="flex gap-[20px] items-center">
               <Link
                 href="/"

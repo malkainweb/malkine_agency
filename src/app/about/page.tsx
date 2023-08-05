@@ -27,6 +27,8 @@ export default function About() {
       <div className="w-full h-auto  pt-[150px] ">
         <About_hero />
         <Team />
+      </div>
+      <div className="bg-black">
         <Footer />
       </div>
     </>
