@@ -86,9 +86,9 @@ const Menu = (props: any) => {
         >
           {/* the first flex with the big options */}
 
-          <div className="w-auto h-[600px]  flex flex-col  text-white novabold">
+          <div className="w-auto h-[600px] gap-[30px] flex flex-col justify-between  text-white novabold">
             <p className="text-[20px] text-[#9E9E9E] ">Navigation</p>
-            <div className="w-full h-full flex flex-col justify-center gap-[20px]  ">
+            <div className="w-full h-full flex flex-col justify-between    ">
               {menu_arr.map((e: any, index: any) => {
                 return (
                   <div className="flex items-center gap-[5px]" key={index}>
@@ -108,7 +108,7 @@ const Menu = (props: any) => {
           </div>
 
           {/* the second flex with the small small options */}
-          <div className=" w-fit h-[600px] flex  flex-col justify-between ">
+          <div className=" w-fit h-[600px] flex  flex-col  justify-between ">
             <div className="flex gap-[20px] items-center">
               <Link
                 href="/"
