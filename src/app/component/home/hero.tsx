@@ -140,7 +140,7 @@ const Home_hero = () => {
           {/* <div className="w-[600px] h-fit relative top-0 left-0"> */}
           <Image
             src={laptop_black}
-            className="w-[46.6vw] h-fit absolute z-[50] top-0 left-0"
+            className="w-[50vw] h-fit absolute z-[50] top-0 left-0"
             alt="laptop black"
             style={{
               opacity: c_opacity,
@@ -152,7 +152,7 @@ const Home_hero = () => {
           <Image
             placeholder="blur"
             src={on_black}
-            className="w-[46.6vw] h-fit absoulute  z-[45] top-0 left-0"
+            className="w-[50vw] h-fit absoulute  z-[45] top-0 left-0"
             alt="laptop black"
             style={{
               transform: animate_des,
