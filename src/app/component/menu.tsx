@@ -63,7 +63,7 @@ const Menu = (props: any) => {
           animate={{ y: left, backgroundColor: "#D01717", opacity: 1 }}
           initial={{ y: "100%", opacity: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh]  w-[30vw] px-[40px] py-[80px] flex items-center"
+          className="h-[100vh]  w-[30vw] px-[2.6vw] py-[5.3vw] flex items-center"
         >
           <div className=" h-[40vw] w-full flex justify-between flex-col">
             <Link href="/">
@@ -90,7 +90,7 @@ const Menu = (props: any) => {
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
           initial={{ y: "-100%", opacity: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh]  w-[70vw] px-[70px] py-[50px] pb-[20px] flex justify-center items-center"
+          className="h-[100vh]  w-[70vw] px-[4.6vw] py-[3.125vw] pb-[20px] flex justify-center items-center"
         >
           <div className="flex justify-between w-full h-full  items-center ">
             {/* the first flex with the big options */}
@@ -128,7 +128,7 @@ const Menu = (props: any) => {
                   Become a client
                 </Link>
                 <i
-                  className="bi bi-x-lg py-[0.75vw] px-[1vw] text-[1.6vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] cursor-pointer hover:bg-[#B1A2A2] text-white"
+                  className="bi bi-x-lg py-[0.75vw] px-[1.2vw] text-[1.6vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] cursor-pointer hover:bg-[#B1A2A2] text-white"
                   onClick={handleCancel}
                 ></i>
               </div>
