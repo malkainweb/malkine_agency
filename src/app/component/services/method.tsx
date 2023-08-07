@@ -47,28 +47,32 @@ const Method = () => {
             {meth.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative"
+                  className="w-[18vw] h-[18vw]  flex justify-center rounded-[100%] items-center relative"
                   key={index}
                 >
                   <Image
+                    placeholder="blur"
                     src={top_arrow}
                     alt="top_arrow"
                     className="absolute w-[100px] h-fit top-[15px] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    placeholder="blur"
                     src={right_arrow}
                     alt="right arrow"
                     className="absolute w-[12px] h-fit right-[15px] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <Image
+                    placeholder="blur"
                     src={bottom_arrow}
                     alt="bottom_arrow"
                     className="absolute w-[100px] h-fit bottom-[15px] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    placeholder="blur"
                     src={left_arrow}
                     alt="left_arrow"
                     className="absolute w-[15px] h-fit left-[15px] top-[50%]"
@@ -89,28 +93,32 @@ const Method = () => {
             {meth2.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[250px] h-[250px]  flex justify-center rounded-[100%] items-center relative"
+                  className="w-[18vw] h-[18vw]  flex justify-center rounded-[100%] items-center relative"
                   key={index}
                 >
                   <Image
+                    placeholder="blur"
                     src={top_arrow}
                     alt="top_arrow"
                     className="absolute w-[100px] h-fit top-[15px] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    placeholder="blur"
                     src={right_arrow}
                     alt="right arrow"
                     className="absolute w-[12px] h-fit right-[15px] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <Image
+                    placeholder="blur"
                     src={bottom_arrow}
                     alt="bottom_arrow"
                     className="absolute w-[100px] h-fit bottom-[15px] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    placeholder="blur"
                     src={left_arrow}
                     alt="left_arrow"
                     className="absolute w-[15px] h-fit left-[15px] top-[50%]"

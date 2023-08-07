@@ -23,6 +23,7 @@ const Home_gallery = () => {
     <>
       <div className="w-full h-auto py-[50px] relative bg-white ">
         <Image
+          placeholder="blur"
           src={home_gallery}
           alt="gallery"
           className="abosulute w-full h-full top-0 right-[0]"

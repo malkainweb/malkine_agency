@@ -14,30 +14,35 @@ const About_hero = () => {
         {/* the floating images start */}
 
         <Image
+          placeholder="blur"
           style={{ transform: "translateX(-50%)" }}
           src={img1}
           alt="chess board"
-          className="w-[100px] absolute left-[50%] top-[10px]"
+          className="w-[7vw] absolute left-[50%] top-[10px]"
         />
         <Image
+          placeholder="blur"
           //   style={{ transform: "translateX(-50%)" }}
           src={img2}
           alt="chess board"
-          className="w-[200px] absolute left-[70px] top-[150px]"
+          className="w-[14vw] absolute left-[70px] top-[150px]"
         />
         <Image
+          placeholder="blur"
           //   style={{ transform: "translateX(-50%)" }}
           src={img3}
           alt="chess board"
-          className="w-[200px] absolute right-[70px] top-[200px]"
+          className="w-[14vw] absolute right-[70px] top-[200px]"
         />
 
         {/* the floating images end  */}
         <Image
+          placeholder="blur"
           style={{ transform: "translateX(-50%)" }}
           src={chess}
+          priority
           alt="chess board"
-          className="w-[70%] absolute left-[50%] bottom-[-300px]"
+          className="w-[70%] absolute left-[50%] bottom-[-250px]"
         />
         <div className="w-full flex-col h-auto flex justify-center items-center gap-[20px]">
           <h1 className="text-[#424242] text-[80px] text-center novabold font-bold leading-[100px]">

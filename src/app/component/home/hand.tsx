@@ -45,6 +45,7 @@ const Hands = (props: any) => {
             <div className="flex text-white ">
               <div className="w-[60px] h-full  text-[red] font-[900] text-[40px] justify-center flex">
                 <Image
+                  placeholder="blur"
                   src={add_logo}
                   alt="start logo"
                   className=" w-[20px] h-fit "
@@ -57,6 +58,7 @@ const Hands = (props: any) => {
             </div>
           </div>
           <Image
+            placeholder="blur"
             src={client_logo}
             alt="clients logo"
             className="z-[1] w-[60%]  h-fit absolute bottom-0 left-[50%]"
@@ -96,6 +98,7 @@ const Hands = (props: any) => {
           }}
         >
           <Image
+            placeholder="blur"
             src={hand_middle}
             alt="work image"
             className=" w-[45vw]  h-fit transition delay-[2s]"
@@ -114,6 +117,7 @@ const Hands = (props: any) => {
       <div className="py-[50px] w-full h-auto p_r bg-white" ref={outref}>
         <div className="w-full flex items-end pb-[100px]  h-[800px] home_service  relative">
           <Image
+            placeholder="blur"
             src={aeroplane_malkaine}
             alt="aeroplan malkaine"
             className="w-full absolute top-0 left-0 h-full "

@@ -27,6 +27,7 @@ const Footer = () => {
               <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
                 <div className="w-[137px] h-auto">
                   <Image
+                    placeholder="blur"
                     src={canada_loca}
                     alt="canada location"
                     className="w-full h-auto"
@@ -55,6 +56,7 @@ const Footer = () => {
               <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
                 <div className="w-[137px] h-auto">
                   <Image
+                    placeholder="blur"
                     src={usa_loca}
                     alt="canada location"
                     className="w-full h-auto"

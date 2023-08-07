@@ -87,6 +87,8 @@ const Team = () => {
               >
                 <div className="w-[25%] h-full ">
                   <Image
+                    placeholder="blur"
+                    priority
                     src={main.img}
                     className="w-full h-full"
                     alt="team members"

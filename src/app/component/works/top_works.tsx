@@ -14,7 +14,12 @@ const Top_works = () => {
             </p>
             <h1 className="text-[40px] text-white">Our Works</h1>
           </div>
-          <Image src={main} alt="our works logo" className="w-[50%] h-fit " />
+          <Image
+            placeholder="blur"
+            src={main}
+            alt="our works logo"
+            className="w-[50%] h-fit "
+          />
         </div>
       </div>
     </>

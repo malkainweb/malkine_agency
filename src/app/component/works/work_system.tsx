@@ -32,7 +32,12 @@ const Work_system = () => {
                   className="w-[15%]   items-center flex flex-col  gap-[20px]"
                   key={index}
                 >
-                  <Image src={e.img} alt={e.txt} className="" />
+                  <Image
+                    placeholder="blur"
+                    src={e.img}
+                    alt={e.txt}
+                    className=""
+                  />
                   <p className="text-[20px] text-center uppercase text-white nova">
                     {e.txt}
                   </p>

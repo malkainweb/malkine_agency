@@ -2,7 +2,7 @@
 
 import React from "react";
 import Logo from "../logo";
-import ham from "../../../../public/nav_icon.svg";
+import ham from "../../../../public/navIcon.webp";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ const Home_Header = (props: any) => {
           <Logo />
         </Link>
         {/* nav menus */}
-        <div className="w-[470px] h-[50px] novabold rounded-[50px]  flex justify-center  gap-[30px]  items-center text-white capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
+        <div className="w-[470px] h-[50px] novabold rounded-[50px]  flex justify-center  gap-[30px]  items-center text-[#D01717] capitalize bg-[#FFFFFF] bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -37,7 +37,12 @@ const Home_Header = (props: any) => {
             setright("0");
           }}
         >
-          <Image src={ham} alt="hamburger" className="w-full h-auto" />
+          <Image
+            src={ham}
+            placeholder="blur"
+            alt="hamburger"
+            className="w-full h-auto"
+          />
         </div>
       </nav>
     </>

@@ -73,7 +73,7 @@ const One = (props: any) => {
                 setphone(e.target.value);
               }}
               placeholder="Your phone number"
-              type="number"
+              type="text"
               value={phone}
               className="w-full bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[5px] px-[10px]  ease-in-out border-white focus:border-b-white"
             />

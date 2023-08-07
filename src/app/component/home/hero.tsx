@@ -152,6 +152,7 @@ const Home_hero = () => {
             }}
           />
           <Image
+            placeholder="blur"
             src={on_black}
             className="w-[700px] h-fit absoulute  z-[45] top-0 left-0"
             alt="laptop black"
@@ -162,6 +163,7 @@ const Home_hero = () => {
             }}
           />
           <Image
+            placeholder="blur"
             src={tab}
             className="w-[700px] h-fit absoulute  z-[45]  top-0 left-0"
             alt="laptop black"
@@ -172,6 +174,7 @@ const Home_hero = () => {
             }}
           />
           <Image
+            placeholder="blur"
             src={phone}
             className="w-[700px] h-fit absoulute  z-[45]  top-0 left-0"
             alt="laptop black"

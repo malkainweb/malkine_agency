@@ -10,7 +10,7 @@ const Hero_services = (props: any) => {
 
   return (
     <>
-      <div className="w-full py-[30px] p_r h-[1400px] ">
+      <div className="w-full py-[30px] p_r h-[120vw] ">
         <div className="w-full flex flex-col rounded-[50px] gap-[150px] h-full  hero_bg">
           {/* <Image
             src={hero}

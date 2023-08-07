@@ -2,7 +2,7 @@
 
 import React from "react";
 import Logo from "../logo";
-import black_nav_icon from "../../../../public/black_nav_icon.svg";
+import black_nav_icon from "../../../../public/navIcon.webp";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -15,7 +15,7 @@ const Header_transparant = (props: any) => {
           <Logo />
         </Link>
         {/* nav menus */}
-        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-around items-center text-[black] capitalize bg-[#CED7D7] font-[200] text-[14px] backdrop-blur-[25px] bg-opacity-[37%]">
+        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-around items-center  capitalize bg-[#CED7D7] font-[200] text-[14px] backdrop-blur-[25px] text-[#D01717] bg-opacity-[37%]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -39,6 +39,7 @@ const Header_transparant = (props: any) => {
         >
           <Image
             src={black_nav_icon}
+            placeholder="blur"
             alt="hamburger"
             className="w-full h-auto"
           />

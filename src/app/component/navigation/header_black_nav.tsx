@@ -2,7 +2,7 @@
 
 import React from "react";
 import Logo from "../logo";
-import ham from "../../../../public/black_nav_icon.svg";
+import ham from "../../../../public/navIcon.webp";
 import Link from "next/link";
 import Image from "next/image";
 import Logo_black from "../logo_black";
@@ -18,7 +18,7 @@ const Header_black = (props: any) => {
         </Link>
 
         {/* nav menus */}
-        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-center gap-[30px] items-center text-black capitalize bg-black  bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
+        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-center gap-[30px] items-center text-[#D01717] capitalize bg-black  bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -40,7 +40,12 @@ const Header_black = (props: any) => {
             setright("0");
           }}
         >
-          <Image src={ham} alt="hamburger" className="w-full h-auto" />
+          <Image
+            src={ham}
+            placeholder="blur"
+            alt="hamburger"
+            className="w-full h-auto"
+          />
         </div>
       </nav>
     </>

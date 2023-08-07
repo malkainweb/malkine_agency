@@ -8,6 +8,7 @@ import Image from "next/image";
 import rev from "../../../public/menu/rev.webp";
 import star from "../../../public/menu/star.webp";
 import { useState } from "react";
+import Menu_Logo from "./menu_logo";
 
 const Menu = (props: any) => {
   const { setleft, left, setright, right, height, setheight } = props;
@@ -55,18 +56,18 @@ const Menu = (props: any) => {
   return (
     <>
       <div
-        className="w-auto border fixed z-[109] top-0 left-0  flex "
+        className="w-auto  fixed z-[109] top-0 left-0  flex "
         style={{ height: height }}
       >
         <motion.div
           animate={{ y: left, backgroundColor: "#D01717", opacity: 1 }}
-          initial={{ y: "100%", opacity: 0.7 }}
+          initial={{ y: "100%", opacity: 0.2 }}
           transition={{ duration: 0.7 }}
           className="h-[100vh]  w-[30vw] px-[40px] py-[80px] flex items-center"
         >
           <div className="h-[600px] w-full flex justify-between flex-col">
             <Link href="/">
-              <Logo />
+              <Menu_Logo />
             </Link>
 
             <div className="w-full flex flex-col gap-[15px]">
@@ -82,7 +83,7 @@ const Menu = (props: any) => {
 
         <motion.div
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
-          initial={{ y: "-100%", opacity: 0.7 }}
+          initial={{ y: "-100%", opacity: 0.2 }}
           transition={{ duration: 0.7 }}
           className="h-[100vh]  w-[70vw] px-[70px] py-[50px] pb-[20px] flex justify-center items-center"
         >
