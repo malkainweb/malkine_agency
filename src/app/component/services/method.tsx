@@ -43,7 +43,7 @@ const Method = () => {
         {/*  */}
 
         <div className="w-full flex flex-col ">
-          <div className="flex justify-center gap-[50px] capitalize text-[20px] nova ">
+          <div className="flex justify-center gap-[3.3vw] capitalize text-[20px] nova ">
             {meth.map((e: any, index: any) => {
               return (
                 <div
@@ -54,42 +54,42 @@ const Method = () => {
                     placeholder="blur"
                     src={top_arrow}
                     alt="top_arrow"
-                    className="absolute w-[100px] h-fit top-[15px] left-[50%]"
+                    className="absolute w-[6.6vw] h-fit top-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
                     placeholder="blur"
                     src={right_arrow}
                     alt="right arrow"
-                    className="absolute w-[12px] h-fit right-[15px] top-[50%]"
+                    className="absolute w-[0.8vw] h-fit right-[0.8vw] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <Image
                     placeholder="blur"
                     src={bottom_arrow}
                     alt="bottom_arrow"
-                    className="absolute w-[100px] h-fit bottom-[15px] left-[50%]"
+                    className="absolute w-[6.6vw] h-fit bottom-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
                     placeholder="blur"
                     src={left_arrow}
                     alt="left_arrow"
-                    className="absolute w-[15px] h-fit left-[15px] top-[50%]"
+                    className="absolute w-[1vw] h-fit left-[0.8vw] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <div
                     className="h-full w-full flex justify-center font-[700] items-center nova rounded-[100%] "
-                    style={{ border: "30px solid #DAD6D3 " }}
+                    style={{ border: "2vw solid #DAD6D3 " }}
                   >
-                    <p className="text-[25px]"> {e} </p>
+                    <p className="text-[1.6vw]"> {e} </p>
                   </div>
                 </div>
               );
             })}
           </div>
 
-          <div className="flex justify-center capitalize gap-[50px] text-[20px] nova font-[700]">
+          <div className="flex justify-center capitalize gap-[3.3vw] text-[20px] nova font-[700]">
             {meth2.map((e: any, index: any) => {
               return (
                 <div
@@ -100,35 +100,35 @@ const Method = () => {
                     placeholder="blur"
                     src={top_arrow}
                     alt="top_arrow"
-                    className="absolute w-[100px] h-fit top-[15px] left-[50%]"
+                    className="absolute w-[6.6vw] h-fit top-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
                     placeholder="blur"
                     src={right_arrow}
                     alt="right arrow"
-                    className="absolute w-[12px] h-fit right-[15px] top-[50%]"
+                    className="absolute w-[0.8vw] h-fit right-[0.8vw] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <Image
                     placeholder="blur"
                     src={bottom_arrow}
                     alt="bottom_arrow"
-                    className="absolute w-[100px] h-fit bottom-[15px] left-[50%]"
+                    className="absolute w-[6.6vw] h-fit bottom-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
                     placeholder="blur"
                     src={left_arrow}
                     alt="left_arrow"
-                    className="absolute w-[15px] h-fit left-[15px] top-[50%]"
+                    className="absolute w-[1vw] h-fit left-[0.8vw] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <div
                     className="h-full w-full flex justify-center font-[700] items-center nova rounded-[100%] "
-                    style={{ border: "30px solid #DAD6D3 " }}
+                    style={{ border: "2vw solid #DAD6D3 " }}
                   >
-                    <p className="text-[25px]"> {e} </p>
+                    <p className="text-[1.6vw]"> {e} </p>
                   </div>
                 </div>
               );

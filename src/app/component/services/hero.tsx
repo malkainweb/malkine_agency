@@ -10,7 +10,7 @@ const Hero_services = (props: any) => {
 
   return (
     <>
-      <div className="w-full py-[30px] p_r h-[120vw] ">
+      <div className="w-full py-[0.8vw] px-[0.8vw] h-[120vw] ">
         <div className="w-full flex flex-col rounded-[50px] gap-[150px] h-full  hero_bg">
           {/* <Image
             src={hero}
@@ -19,7 +19,7 @@ const Hero_services = (props: any) => {
           /> */}
           <Header_transparant setleft={setleft} setright={setright} />
 
-          <div className="w-full flex flex-col gap-[15px] pt-[180px]   blend px-[77px]">
+          <div className="w-full flex flex-col gap-[1.7vw] pt-[180px]   blend px-[77px]">
             <p className="nova  text-[24px] font-[900]  text-[#dcdcdc] ">
               Services
             </p>
@@ -27,8 +27,8 @@ const Hero_services = (props: any) => {
               className="novabold  text-[40px] text-[#232323] "
               style={{ lineHeight: "48px" }}
             >
-              We are a creative <br /> agency working with
-              <br /> brands - building <br />
+              We are a creative agency <br /> working with brands - building{" "}
+              <br />
               insightful strategy
             </h1>
             <button className="nova w-fit  text-[16px] font[900]text-white rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]">

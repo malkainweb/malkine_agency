@@ -90,7 +90,7 @@ const Menu = (props: any) => {
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
           initial={{ y: "-100%", opacity: 0.2 }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh]  w-[70vw] px-[4.6vw] py-[3.125vw] pb-[20px] flex justify-center items-center"
+          className="h-[100vh]  w-[70vw] px-[2.6vw] py-[5.3vw]  flex justify-center items-center"
         >
           <div className="flex justify-between w-full h-full  items-center ">
             {/* the first flex with the big options */}
