@@ -18,6 +18,8 @@ export default function Services() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
+  const [opacity, setopacity] = useState(0.2);
+
   return (
     <>
       <Menu
@@ -27,9 +29,15 @@ export default function Services() {
         setheight={setheight}
         setright={setright}
         right={right}
+        opacity={opacity}
+        setopacity={setopacity}
       />
       <div className="">
-        <Hero_services setright={setright} setleft={setleft} />
+        <Hero_services
+          setright={setright}
+          setleft={setleft}
+          setopacity={setopacity}
+        />
         <Method />
         <Timeline />
         <Work_ethics />

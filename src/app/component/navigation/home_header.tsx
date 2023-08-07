@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Home_Header = (props: any) => {
-  const { setleft, setright } = props;
+  const { setleft, setright, setopacity } = props;
   return (
     <>
       <nav className="w-full fixed  z-[99]   h-[150px]  flex  p_r  items-center justify-between bg-transparent">
@@ -35,6 +35,7 @@ const Home_Header = (props: any) => {
           onClick={() => {
             setleft("0");
             setright("0");
+            setopacity(1);
           }}
         >
           <Image

@@ -7,7 +7,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 const Header_transparant = (props: any) => {
-  const { setleft, setright } = props;
+  const { setleft, setright, setopacity } = props;
   return (
     <>
       <nav className="w-full   h-[150px] fixed  z-[99] top-0 left-0  flex  p_r  items-center justify-between bg-transparent">
@@ -35,6 +35,7 @@ const Header_transparant = (props: any) => {
           onClick={() => {
             setleft("0");
             setright("0");
+            setopacity(1);
           }}
         >
           <Image

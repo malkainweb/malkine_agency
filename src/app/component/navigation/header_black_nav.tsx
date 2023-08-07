@@ -8,7 +8,7 @@ import Image from "next/image";
 import Logo_black from "../logo_black";
 
 const Header_black = (props: any) => {
-  const { setleft, setright } = props;
+  const { setleft, setright, setopacity } = props;
 
   return (
     <>
@@ -38,6 +38,7 @@ const Header_black = (props: any) => {
           onClick={() => {
             setleft("0");
             setright("0");
+            setopacity(1);
           }}
         >
           <Image

@@ -11,7 +11,16 @@ import { useState } from "react";
 import Menu_Logo from "./menu_logo";
 
 const Menu = (props: any) => {
-  const { setleft, left, setright, right, height, setheight } = props;
+  const {
+    setleft,
+    left,
+    setright,
+    right,
+    height,
+    setheight,
+    opacity,
+    setopacity,
+  } = props;
   const pathname = usePathname();
 
   const [menu_arr, setmenu_arr] = useState([
@@ -51,6 +60,7 @@ const Menu = (props: any) => {
     setleft("100%");
     setright("-100%");
     setheight("0px");
+    setopacity(0.2);
   };
 
   return (
@@ -60,8 +70,8 @@ const Menu = (props: any) => {
         style={{ height: height }}
       >
         <motion.div
-          animate={{ y: left, backgroundColor: "#D01717", opacity: 1 }}
-          initial={{ y: "100%", opacity: 0.2 }}
+          animate={{ y: left, backgroundColor: "#D01717", opacity: opacity }}
+          initial={{ y: "100%" }}
           transition={{ duration: 0.7 }}
           className="h-[100vh]  w-[30vw] px-[2.6vw] py-[5.3vw] flex items-center"
         >
@@ -87,8 +97,8 @@ const Menu = (props: any) => {
         {/* second section begins here  */}
 
         <motion.div
-          animate={{ y: right, backgroundColor: "#0C0C0C", opacity: 1 }}
-          initial={{ y: "-100%", opacity: 0.2 }}
+          animate={{ y: right, backgroundColor: "#0C0C0C", opacity: opacity }}
+          initial={{ y: "-100%" }}
           transition={{ duration: 0.7 }}
           className="h-[100vh]  w-[70vw] px-[2.6vw] py-[5.3vw]  flex justify-center items-center"
         >
@@ -109,7 +119,7 @@ const Menu = (props: any) => {
                       >
                         {e.txt}
                       </p>
-                      <p className="text-[#9E9E9E] text-[20px]  h-fit">
+                      <p className="text-[#9E9E9E] text-[1.3vw]  h-fit">
                         {e.no}
                       </p>
                     </div>

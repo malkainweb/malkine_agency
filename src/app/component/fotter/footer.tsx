@@ -4,6 +4,8 @@ import Image from "next/image";
 import React from "react";
 import canada_loca from "../../../../public/fotter/canada_loca.webp";
 import usa_loca from "../../../../public/fotter/usa_loca.webp";
+import usa_loca_red from "../../../../public/fotter/usa_loca_red.webp";
+import canada_loca_red from "../../../../public/fotter/canada_loca_red.webp";
 import Link from "next/link";
 
 const Footer = () => {
@@ -24,13 +26,19 @@ const Footer = () => {
                 Our Locations
               </p>
               {/* now actual locations */}
-              <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
-                <div className="w-[137px] h-auto">
+              <div className="w-auto h-auto   flex gap-[32px] justify-start items-end text-[14px]">
+                <div className="w-[137px] h-[8vw]  relative ">
                   <Image
                     placeholder="blur"
                     src={canada_loca}
                     alt="canada location"
-                    className="w-full h-auto"
+                    className="w-full h-auto absolute z-[40] bottom-0 left-0 "
+                  />
+                  <Image
+                    placeholder="blur"
+                    src={canada_loca_red}
+                    alt="canada location"
+                    className="w-full h-auto transistion opacity-0 duration-[0.7s] hover:opacity-[1] absolute z-[50] bottom-0 left-0"
                   />
                 </div>
                 <div className="w-[1px] h-[77px] bg-[#838383]"></div>
@@ -54,12 +62,19 @@ const Footer = () => {
                 </div>
               </div>
               <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
-                <div className="w-[137px] h-auto">
+                <div className="w-[137px] h-[8vw]  relative h-auto">
                   <Image
                     placeholder="blur"
                     src={usa_loca}
                     alt="canada location"
-                    className="w-full h-auto"
+                    className="w-full h-auto absolute  z-[40] bottom-0 left-0"
+                  />
+                  <Image
+                    placeholder="blur"
+                    src={usa_loca_red}
+                    alt="canada location"
+                    className="w-full h-auto absolute bottom-[-5px] transistion  opacity-0 duration-[0.7s] hover:opacity-[1] z-[50] bottom-0 left-[1px]
+"
                   />
                 </div>
                 <div className="w-[1px] h-[77px] bg-[#838383]"></div>

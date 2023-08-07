@@ -10,6 +10,7 @@ export default function Contact() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
+  const [opacity, setopacity] = useState(0.2);
 
   return (
     <>
@@ -20,9 +21,15 @@ export default function Contact() {
         setheight={setheight}
         setright={setright}
         right={right}
+        opacity={opacity}
+        setopacity={setopacity}
       />
       <div className="w-full h-auto  bg-[#1A1A1A] ">
-        <Home_Header setleft={setleft} setright={setright} />
+        <Home_Header
+          setleft={setleft}
+          setright={setright}
+          setopacity={setopacity}
+        />
         <div className="w-full pt-[100px]">
           <Top_works />
           <Work_system />

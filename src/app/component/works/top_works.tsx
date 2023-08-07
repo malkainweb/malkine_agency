@@ -1,26 +1,48 @@
 "use client";
 
 import Image from "next/image";
+import { useState } from "react";
 import main from "../../../../public/works/main.webp";
 
 const Top_works = () => {
+  const [svg, setsvg] = useState([
+    {
+      bg: "grey",
+      txt: "emma",
+      top: "0px",
+      left: "0px",
+      right: "",
+    },
+    {
+      bg: "grey",
+      txt: "emma",
+      top: "0px",
+      left: "0px",
+      right: "",
+    },
+    {
+      bg: "grey",
+      txt: "emma",
+      top: "0px",
+      left: "0px",
+      right: "",
+    },
+  ]);
   return (
     <>
-      <div className="w-full h-auto p_r py-[100px]">
-        <div className="w-full h-auto justify-center flex gap-[50px] relative">
-          <div className="w-auto  nova ">
-            <p className="inter text-[24px] text-white text-opacity-[50%]">
-              Works
-            </p>
-            <h1 className="text-[40px] text-white">Our Works</h1>
-          </div>
-          <Image
-            placeholder="blur"
-            src={main}
-            alt="our works logo"
-            className="w-[50%] h-fit "
-          />
-        </div>
+      <div className="w-full h-[200px]"></div>
+      <div className="w-[750px] border2 relative h-[1000px] ">
+        <div className="h-[250px] w-[1px] bg-white absolute top-[10px] left-[48px] z-[10]"></div>
+        {svg.map((e: any, index: any) => {
+          return (
+            <div
+              className="w-[100px] z-[30] h-[100px] absolute rounded-[100%] bg-[#393939] flex justify-center items-center text-white font-[helvetica] text-[13px]"
+              key={index}
+            >
+              {e.txt}
+            </div>
+          );
+        })}
       </div>
     </>
   );

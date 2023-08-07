@@ -26,6 +26,7 @@ export default function Home() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
+  const [opacity, setopacity] = useState(0.2);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -47,10 +48,16 @@ export default function Home() {
         setheight={setheight}
         setright={setright}
         right={right}
+        opacity={opacity}
+        setopacity={setopacity}
       />
       <div className="w-full h-auto bg-black ">
         {/* <Client_logo /> */}
-        <Home_Header setleft={setleft} setright={setright} />
+        <Home_Header
+          setleft={setleft}
+          setright={setright}
+          setopacity={setopacity}
+        />
         <Home_hero />
         <Highlight />
         <Home_Team />

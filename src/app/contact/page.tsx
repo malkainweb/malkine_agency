@@ -17,6 +17,7 @@ export default function Contact() {
   const [interest, setinterest] = useState("");
   const [budget, setbudget] = useState("");
   const [hear_us, sethear_us] = useState("");
+  const [opacity, setopacity] = useState(0.2);
 
   // this is for the menu
   const [left, setleft] = useState("1200vh");
@@ -31,9 +32,15 @@ export default function Contact() {
         setheight={setheight}
         setright={setright}
         right={right}
+        opacity={opacity}
+        setopacity={setopacity}
       />
       <div className="w-full h-auto  bg-[#1A1A1A] ">
-        <Home_Header setright={setright} setleft={setleft} />
+        <Home_Header
+          setright={setright}
+          setleft={setleft}
+          setopacity={setopacity}
+        />
         <div className="w-full pt-[150px] flex justify-center nova text-[50px] text-[#D9D9D9]  text-center">
           {step == 3 ? (
             ""

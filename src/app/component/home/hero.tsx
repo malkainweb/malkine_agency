@@ -22,12 +22,12 @@ const Home_hero = () => {
   const [animate_text, setanimate_text] = useState("translateX(100vw)");
   const [c_opacity, setc_opacity] = useState<any>(1);
   const [animate_des, setanimate_des] = useState("translateX(0)");
-  const [animate_tab, setanimate_tab] = useState("translateX(100vw)");
+  const [animate_tab, setanimate_tab] = useState("translateX(250%)");
   const [display_des, setdisplay_des] = useState("auto");
-  const [animate_phone, setanimate_phone] = useState("translateX(100vw)");
+  const [animate_phone, setanimate_phone] = useState("translateX(250%)");
   const [display_phone, setdisplay_phone] = useState("0px");
   const [display_tab, setdisplay_tab] = useState("0px");
-  const [animate_company, setanimate_company] = useState("translateX(100vw)");
+  const [animate_company, setanimate_company] = useState("translateX(250%)");
   const [display_company, setdisplay_company] = useState("0px");
 
   const { scrollY } = useScroll();
@@ -37,13 +37,12 @@ const Home_hero = () => {
   const opacity = useTransform(
     scrollY,
     // Map x from these values:
-    [0, 300],
+    [0, 400],
     // Into these values:
     [1, 0],
   );
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log("Page scroll: ", latest);
     if (latest >= 300) {
       setcolor("black");
       setanimate_text("translateX(-50%)");
@@ -54,8 +53,9 @@ const Home_hero = () => {
 
     if (latest >= 500) {
       setdisplay_tab("auto");
+
+      setanimate_des("translateX(-100vw)");
       setanimate_text("translateX(-100vw)");
-      setanimate_des("translateX(-250%)");
       setanimate_tab("translateX(0%)");
       setdisplay_des("0px");
       setdisplay_phone("0px");
@@ -95,7 +95,6 @@ const Home_hero = () => {
     }
   });
   useMotionValueEvent(opacity, "change", (latest) => {
-    console.log("Page value: ", latest);
     setc_opacity(latest);
   });
 
@@ -103,7 +102,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className="w-full  h-[153.3vw] pt-[170px] pb-[100px] flex flex-col items-center "
+        className="w-full  h-[153.3vw] pt-[11.3vw] pb-[100px] flex flex-col items-center "
         animate={{ backgroundColor: color }}
         transition={{ duration: 0.1 }}
       >

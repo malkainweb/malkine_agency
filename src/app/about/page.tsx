@@ -12,6 +12,8 @@ export default function About() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
+  const [opacity, setopacity] = useState(0.2);
+
   return (
     <>
       <Menu
@@ -21,8 +23,14 @@ export default function About() {
         setheight={setheight}
         setright={setright}
         right={right}
+        opacity={opacity}
+        setopacity={setopacity}
       />
-      <Header_black setright={setright} setleft={setleft} />
+      <Header_black
+        setright={setright}
+        setleft={setleft}
+        setopacity={setopacity}
+      />
 
       <div className="w-full h-auto  pt-[150px] ">
         <About_hero />
