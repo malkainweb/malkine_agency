@@ -29,7 +29,7 @@ const Hands = (props: any) => {
   return (
     <>
       <div className="w-full  p_r pt-[90px] pb-[120px] h-auto" ref={ref}>
-        <div className="w-full h-[600px]  relative flex flex-col gap-[70px]">
+        <div className="w-full h-[40vw]  relative flex flex-col gap-[70px]">
           <div className="flex z-[2] flex-col text-white nova text-[40px]">
             <p className="font-[700]">Our Top</p>
             <p className=" px-[70px]  italic font-light">Client Logos</p>
@@ -74,7 +74,7 @@ const Hands = (props: any) => {
 
       {/*  */}
       <div
-        className="w-ful h-[2100px]   flex hand_bg"
+        className="w-full h-[140vw]   flex hand_bg"
         style={{ alignItems: "flex-start" }}
       >
         {/* <Image
@@ -115,7 +115,7 @@ const Hands = (props: any) => {
       </div>
 
       <div className="py-[50px] w-full h-auto p_r bg-white" ref={outref}>
-        <div className="w-full flex items-end pb-[100px]  h-[800px] home_service  relative">
+        <div className="w-full flex items-end pb-[100px]  h-[53.3vw] home_service  relative">
           <Image
             placeholder="blur"
             src={aeroplane_malkaine}

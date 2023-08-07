@@ -66,7 +66,7 @@ const Team = () => {
 
   return (
     <>
-      <div className="w-full h-auto flex flex-col bg-black gap-[50px] pt-[350px] pb-[100px] p_r">
+      <div className="w-full h-auto flex flex-col bg-black gap-[50px] pt-[23.3vw] pb-[100px] p_r">
         {/* first section */}
         <div className="flex flex-col justify-center items-center gap-[20px]">
           <h1 className="nova text-[64px] text-white">Our vision</h1>
@@ -81,33 +81,34 @@ const Team = () => {
         <div className="w-full h-auto flex flex-wrap justify-between gap-[50px] ">
           {team.map((main: any, index: any) => {
             return (
+              // h-[500px]
               <div
-                className="bg-white rounded-[10px] px-[50px] py-[70px] w-[48%] h-[500px]  flex justify-between items-center"
+                className="bg-white rounded-[10px] px-[3.3vw] py-[4.6vw] w-[48%] h-auto  flex justify-between items-center gap-[3vw]"
                 key={index}
               >
-                <div className="w-[25%] h-full ">
+                <div className="w-auto h-[24vw] flex  justify-center items-center ">
                   <Image
                     placeholder="blur"
                     priority
                     src={main.img}
-                    className="w-full h-full"
+                    className="w-fit h-full"
                     alt="team members"
                   />
                 </div>
                 {/* the clients imformaiton */}
-                <div className="flex flex-col justify-between w-[70%]  h-full">
-                  <div className="flex flex-col gap-[10px]">
+                <div className="flex flex-col justify-between w-full  h-full">
+                  <div className="flex flex-col gap-[0.66vw]">
                     <h1 className="font-[700] nova text-[35px] capitalize">
                       {main.name}
                     </h1>
                     <p className="text-[18px] ">{main.des}</p>
                   </div>
                   {/* skilss section */}
-                  <div className="flex flex-col gap-[10px]">
+                  <div className="flex flex-col gap-[0.66vw]">
                     <p className="nova text-[24px] text-[red] font-[500]">
                       Skills
                     </p>
-                    <div className="flex flex-wrap gap-[10px] nova items-center">
+                    <div className="flex flex-wrap gap-[0.66vw] nova items-center">
                       {main.skill.map((a: any, m: any) => {
                         return (
                           <p

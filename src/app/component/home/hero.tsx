@@ -19,15 +19,15 @@ import phone from "../../../../public/home/phone.webp";
 const Home_hero = () => {
   const [check, setcheck] = useState<any>();
   const [color, setcolor] = useState<any>("#101010");
-  const [animate_text, setanimate_text] = useState("translateX(250%)");
+  const [animate_text, setanimate_text] = useState("translateX(100vw)");
   const [c_opacity, setc_opacity] = useState<any>(1);
   const [animate_des, setanimate_des] = useState("translateX(0)");
-  const [animate_tab, setanimate_tab] = useState("translateX(250%)");
+  const [animate_tab, setanimate_tab] = useState("translateX(100vw)");
   const [display_des, setdisplay_des] = useState("auto");
-  const [animate_phone, setanimate_phone] = useState("translateX(250%)");
+  const [animate_phone, setanimate_phone] = useState("translateX(100vw)");
   const [display_phone, setdisplay_phone] = useState("0px");
   const [display_tab, setdisplay_tab] = useState("0px");
-  const [animate_company, setanimate_company] = useState("translateX(250%)");
+  const [animate_company, setanimate_company] = useState("translateX(100vw)");
   const [display_company, setdisplay_company] = useState("0px");
 
   const { scrollY } = useScroll();
@@ -49,14 +49,13 @@ const Home_hero = () => {
       setanimate_text("translateX(-50%)");
     } else if (latest <= 300) {
       setcolor("#101010");
-      setanimate_text("translateX(350%)");
+      setanimate_text("translateX(100vw)");
     }
 
     if (latest >= 500) {
       setdisplay_tab("auto");
-
+      setanimate_text("translateX(-100vw)");
       setanimate_des("translateX(-250%)");
-      setanimate_text("translateX(-350%)");
       setanimate_tab("translateX(0%)");
       setdisplay_des("0px");
       setdisplay_phone("0px");
@@ -104,7 +103,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className="w-full  h-[2300px] pt-[170px] pb-[100px] flex flex-col items-center "
+        className="w-full  h-[153.3vw] pt-[170px] pb-[100px] flex flex-col items-center "
         animate={{ backgroundColor: color }}
         transition={{ duration: 0.1 }}
       >

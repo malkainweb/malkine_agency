@@ -10,7 +10,7 @@ import img3 from "../../../../public/about/hero3.webp";
 const About_hero = () => {
   return (
     <>
-      <div className="w-full h-[700px] py-[50px] relative  bg-white">
+      <div className="w-full h-[46.6vw] py-[50px] relative  bg-white">
         {/* the floating images start */}
 
         <Image
@@ -42,7 +42,7 @@ const About_hero = () => {
           src={chess}
           priority
           alt="chess board"
-          className="w-[70%] absolute left-[50%] bottom-[-250px]"
+          className="w-[70vw] absolute left-[50%] bottom-[-16.6vw]"
         />
         <div className="w-full flex-col h-auto flex justify-center items-center gap-[20px]">
           <h1 className="text-[#424242] text-[80px] text-center novabold font-bold leading-[100px]">

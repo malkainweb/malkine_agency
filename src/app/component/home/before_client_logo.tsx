@@ -3,7 +3,7 @@
 const Before_client_logo = () => {
   return (
     <div className="w-full bg-white py-[30px] p_r">
-      <div className="w-full h-[600px] rounded-[40px] before_client_logo flex flex-col justify-end py-[50px] px-[40px]">
+      <div className="w-full h-[41vw] rounded-[40px] before_client_logo flex flex-col justify-end py-[50px] px-[40px]">
         <div className=" flex flex-col gap-[20px] text-white ">
           <p className="text-[16px] font-medium">
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos{" "}

@@ -5,9 +5,9 @@ import React from "react";
 const Home_mission = () => {
   return (
     <>
-      <div className="w-full bg-white p_r  h-auto flex flex-col gap-[20px] py-[50px]">
+      <div className="w-full bg-white p_r  h-auto flex  flex-col gap-[1.3vw] py-[50px]">
         {/* heading */}
-        <div className="flex items-center gap-[20px] nova">
+        <div className="flex items-center  gap-[20px] nova">
           <h1 className="nova text-[50px] ">Our Mission</h1>
           <button className="border h-fit bg-transparent border-black px-[20px] rounded-[10px] py-[10px] text-[15px]">
             Read More
@@ -15,14 +15,14 @@ const Home_mission = () => {
         </div>
 
         {/* body of the about section */}
-        <div className="w-full  items-end gap-[150px] h-auto flex justify-start ">
+        <div className="w-full  items-end gap-[150px] h-auto flex justify-center ">
           {/* image */}
-          <div className="w-[100px] h-[200px]"></div>
+          <div className="w-[6.6vw] h-[full]"></div>
 
           {/* now the text */}
           <div className="w-fit flex-col flex gap-[30px] ">
             <div className="text-[28px] inter">
-              <p className="pl-[200px]">
+              <p className="pl-[13.3vw]">
                 {" "}
                 <span className="font-[900]">Malkain Designs</span> ut elit
                 volutpat aliquam. Sit sit sed te

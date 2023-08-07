@@ -18,7 +18,7 @@ const Home_portfolio = () => {
         <div className="w-full flex justify-between h-auto">
           <div className="h-auto   flex flex-col  w-[27%]">
             <div
-              className=" rounded-[12px]  port_gen w-full relative h-[300px] "
+              className=" rounded-[12px]  port_gen w-full relative h-[20vw] "
               style={{ backgroundImage: "url(/home/port1.webp)" }}
             >
               <div className="pl-[10px] absolute rounded-l-[12px] top-[-5px] right-0 pb-[10px]  pt-[5px] bg-white">
@@ -41,7 +41,7 @@ const Home_portfolio = () => {
           </div>
           <div className="h-auto   flex flex-col  w-[40%]">
             <div
-              className=" rounded-[12px]  port_gen w-full relative h-[300px] "
+              className=" rounded-[12px]  port_gen w-full relative h-[20vw] "
               style={{ backgroundImage: "url(/home/port2.webp)" }}
             >
               <div className="pl-[10px] absolute rounded-l-[12px] top-[-5px] right-0 pb-[10px]  pt-[5px] bg-white">
@@ -64,7 +64,7 @@ const Home_portfolio = () => {
           </div>
           <div className="h-auto   flex flex-col  w-[27%]">
             <div
-              className=" rounded-[12px]  port_gen w-full relative h-[300px] "
+              className=" rounded-[12px]  port_gen w-full relative h-[20vw] "
               style={{
                 backgroundImage: "url(/home/port3.webp)",
               }}

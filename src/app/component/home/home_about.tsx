@@ -6,25 +6,25 @@ import Image from "next/image";
 
 const Home_about = () => {
   const [arr, setarr] = useState([
-    { text1: "ui/ux", text2: "design", width: "350px" },
-    { text1: "brand", text2: "development", width: "200px" },
-    { text1: "wordpress ", text2: "development", width: "200px" },
-    { text1: "Web ", text2: "development", width: "350px" },
-    { text1: "Creative ", text2: "designing", width: "350px" },
-    { text1: "site", text2: "redeisgn", width: "200px" },
+    { text1: "ui/ux", text2: "design", width: "24.3vw" },
+    { text1: "brand", text2: "development", width: "17vw" },
+    { text1: "wordpress ", text2: "development", width: "17vw" },
+    { text1: "Web ", text2: "development", width: "24.3vw" },
+    { text1: "Creative ", text2: "designing", width: "24.3vw" },
+    { text1: "site", text2: "redeisgn", width: "17vw" },
   ]);
   return (
     <>
-      <div className="w-full  h-[700px] p_r rounded-[20px] flex justify-between gap-[15px] py-[60px]">
-        <div className="w-full  home_abou relative  flex items-end">
+      <div className="w-full  h-[46.6vw] p_r rounded-[20px]  flex justify-between gap-[15px] py-[60px]">
+        <div className="w-full  home_abou relative  flex items-end overflow-clip">
           {/* the background image  */}
 
-          <div className="w-full h-full absolute top-0 left-0 overflow-clip">
+          <div className="w-full h-full absolute top-[-100px] left-0 ">
             <Image
               placeholder="blur"
               src={agile}
               alt="agile image"
-              className="w-[full] h-full"
+              className="w-full h-[120%]"
             />
           </div>
           <div className=" flex flex-col z-[20] gap-[20px] h-auto w-full">

@@ -7,7 +7,7 @@ const Aim = () => {
     <>
       <div className="w-full  h-auto  bg-white ">
         <div className="w-full h-auto aim p_r rounded-[20px] bg-black">
-          <div className="w-full  flex items-start pt-[60px]  relative h-[700px]">
+          <div className="w-full  flex items-start pt-[60px]  relative h-[46.6vw]">
             <div className="flex flex-col gap-[10px] text-white">
               <p className="nova text-[20px] text-[#D01717] ">OUR AIM</p>
               <h3 className="text-[50px] h-fit nova font-bold">
