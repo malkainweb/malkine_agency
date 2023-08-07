@@ -106,7 +106,7 @@ const Home_hero = () => {
         animate={{ backgroundColor: color }}
         transition={{ duration: 0.1 }}
       >
-        <p className="text-[4.3vw] novabold text-center text-white font-[500] ">
+        <p className="text-[4.3vw] novabold text-center text-white font-[500] leading-[100%]">
           The best way to predict the <br /> future is to reinvent it
         </p>
 
