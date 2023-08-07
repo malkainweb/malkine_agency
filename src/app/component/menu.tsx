@@ -3,8 +3,8 @@
 import { motion } from "framer-motion";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Logo from "./logo";
 import Image from "next/image";
+import logo from "../../../public/logo.webp";
 import rev from "../../../public/menu/rev.webp";
 import star from "../../../public/menu/star.webp";
 import { useState } from "react";
@@ -65,13 +65,18 @@ const Menu = (props: any) => {
           transition={{ duration: 0.7 }}
           className="h-[100vh]  w-[30vw] px-[40px] py-[80px] flex items-center"
         >
-          <div className="h-[600px] w-full flex justify-between flex-col">
+          <div className=" h-[40vw] w-full flex justify-between flex-col">
             <Link href="/">
-              <Menu_Logo />
+              <Image
+                src={logo}
+                alt="menu image"
+                placeholder="blur"
+                className="w-[8vw] h-fit"
+              />
             </Link>
 
             <div className="w-full flex flex-col gap-[15px]">
-              <p className="novabold text-[25px] text-[#BFBFBF]">
+              <p className="novabold text-[1.66vw] text-[#BFBFBF]">
                 Lets help bring your amazing <br />
                 idea to life
               </p>
@@ -90,14 +95,14 @@ const Menu = (props: any) => {
           <div className="flex justify-between w-full h-full  items-center ">
             {/* the first flex with the big options */}
 
-            <div className="w-auto h-[600px] gap-[30px] flex flex-col justify-between  text-white novabold">
-              <p className="text-[20px] text-[#9E9E9E] ">Navigation</p>
+            <div className="w-auto h-[40vw] gap-[30px] flex flex-col justify-between  text-white novabold">
+              <p className="text-[1.3vw] text-[#9E9E9E] ">Navigation</p>
               <div className="w-full h-full flex flex-col justify-between    ">
                 {menu_arr.map((e: any, index: any) => {
                   return (
                     <div className="flex items-center gap-[5px]" key={index}>
                       <p
-                        className="novabold capitalize text-[70px]  leading-[100%] cursor-pointer hover:text-[#CD6464] transition duration-[1]"
+                        className="novabold capitalize text-[4.6vw]  leading-[100%] cursor-pointer hover:text-[#CD6464] transition duration-[1]"
                         style={{
                           color: e.link == pathname ? "#D01717" : "",
                         }}
@@ -114,29 +119,29 @@ const Menu = (props: any) => {
             </div>
 
             {/* the second flex with the small small options */}
-            <div className=" w-fit h-[600px] flex  flex-col  justify-between ">
+            <div className=" w-fit  h-[40vw] flex  flex-col  justify-between ">
               <div className="flex gap-[20px] items-center">
                 <Link
                   href="/"
-                  className="nova hover:bg-[#CDCCCC] transition-all text-[20px] text-[#4B4B4B] bg-[#F3F3F3] py-[10px] px-[20px] rounded-[45px]"
+                  className="nova hover:bg-[#CDCCCC] transition-all text-[1.33vw] text-[#4B4B4B] bg-[#F3F3F3] py-[0.75vw] px-[1.3vw] rounded-[45px]"
                 >
                   Become a client
                 </Link>
                 <i
-                  className="bi bi-x-lg py-[10px] px-[15px] text-[25px] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] cursor-pointer hover:bg-[#B1A2A2] text-white"
+                  className="bi bi-x-lg py-[0.75vw] px-[1vw] text-[1.6vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] cursor-pointer hover:bg-[#B1A2A2] text-white"
                   onClick={handleCancel}
                 ></i>
               </div>
 
               <div className="flex w-auto gap-[10px] items-center">
                 <div className="flex flex-col gap-[15px] novabold">
-                  <p className="text-[18px] text-[#FFFFFF]">
+                  <p className="text-[1.2vw] text-[#FFFFFF]">
                     Support@rancroft.com <i className="bi bi-clipboard"></i>
                   </p>
-                  <p className="text-[16px] text-[#9E9E9E]">
+                  <p className="text-[1.06vw] text-[#9E9E9E]">
                     Privacy policy&Cookies
                   </p>
-                  <p className="text-[12px] text-[#9E9E9E]">
+                  <p className="text-[0.8vw] text-[#9E9E9E]">
                     <i className="bi bi-c-circle"></i>Rancroft2023
                   </p>
                 </div>
@@ -144,8 +149,8 @@ const Menu = (props: any) => {
                 {/* the gloabal and exclamation mark
                  */}
                 <div className="w-auto flex flex-col gap-[10px]">
-                  <i className="bi bi-globe2 py-[5px] px-[10px] text-[15px] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white"></i>
-                  <i className="bi bi-exclamation-lg py-[5px] px-[10px] text-[15px] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white"></i>
+                  <i className="bi bi-globe2 py-[5px] px-[10px] text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white"></i>
+                  <i className="bi bi-exclamation-lg py-[5px] px-[10px] text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white"></i>
                 </div>
               </div>
             </div>
