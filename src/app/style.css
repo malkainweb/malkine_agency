@@ -30,7 +30,6 @@ body {
   height: auto;
   font-family: Helvetica;
   font-weight: 700;
-  font-size: 50px;
 }
 .dav {
   display: inline-flex;
@@ -42,7 +41,7 @@ body {
   justify-content: center;
   height: auto;
   font-family: Helvetica;
-  font-size: 64px;
+  font-size: 4.2vw;
 }
 .text-container {
   position: relative;

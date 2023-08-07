@@ -132,7 +132,7 @@ const Home_hero = () => {
               WebkitTextFillColor: "transparent",
               zIndex: "1",
 
-              transition: "0.5s ease",
+              transition: "5.5s ease",
             }}
           >
             Design
