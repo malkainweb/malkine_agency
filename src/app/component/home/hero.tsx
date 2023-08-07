@@ -163,7 +163,7 @@ const Home_hero = () => {
           <Image
             placeholder="blur"
             src={tab}
-            className="w-[46.6vw] h-fit absoulute  z-[45]  top-0 left-0"
+            className="w-[50vw] h-fit absoulute  z-[45]  top-0 left-0"
             alt="laptop black"
             style={{
               transform: animate_tab,
@@ -174,7 +174,7 @@ const Home_hero = () => {
           <Image
             placeholder="blur"
             src={phone}
-            className="w-[46.6vw] h-fit absoulute  z-[45]  top-0 left-0"
+            className="w-[50vw] h-fit absoulute  z-[45]  top-0 left-0"
             alt="laptop black"
             style={{
               transform: animate_phone,
@@ -184,7 +184,7 @@ const Home_hero = () => {
           />
 
           <p
-            className="nova w-[46.6vw] text-[10vw] mt-[6.6vw] font-[helvetica] font-[700] absoulute  z-[45]  top-0 left-0"
+            className="nova w-[50vw] text-[10vw] mt-[6.6vw] font-[helvetica] font-[700] absoulute  z-[45]  top-0 left-0"
             style={{
               background:
                 "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",
