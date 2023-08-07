@@ -37,21 +37,21 @@ const Home_hero = () => {
   const opacity = useTransform(
     scrollY,
     // Map x from these values:
-    [0, 400],
+    [0, 600],
     // Into these values:
     [1, 0],
   );
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest >= 300) {
+    if (latest >= 500) {
       setcolor("black");
       setanimate_text("translateX(-50%)");
-    } else if (latest <= 300) {
+    } else if (latest <= 500) {
       setcolor("#101010");
       setanimate_text("translateX(100vw)");
     }
 
-    if (latest >= 500) {
+    if (latest >= 600) {
       setdisplay_tab("auto");
 
       setanimate_des("translateX(-100vw)");
@@ -60,7 +60,7 @@ const Home_hero = () => {
       setdisplay_des("0px");
       setdisplay_phone("0px");
       setanimate_phone("translateX(250%)");
-    } else if (latest <= 500) {
+    } else if (latest <= 600) {
       setdisplay_tab("0px");
       setanimate_des("translateX(0)");
       setdisplay_des("auto");
@@ -69,24 +69,24 @@ const Home_hero = () => {
       setanimate_tab("translateX(250%)");
       // setanimate_text("translateX(-50%)");
     }
-    if (latest >= 750) {
+    if (latest >= 850) {
       setdisplay_tab("0px");
       setanimate_tab("translateX(-250%)");
       setdisplay_phone("auto");
       setanimate_phone("translateX(0%)");
-    } else if (latest <= 750 && latest > 500) {
+    } else if (latest <= 850 && latest > 600) {
       setanimate_phone("translateX(250%)");
       setdisplay_phone("0");
       setdisplay_tab("auto");
       setanimate_tab("translateX(0px)");
     }
 
-    if (latest >= 1000) {
+    if (latest >= 1100) {
       setdisplay_phone("0px");
       setanimate_phone("translateX(-250%)");
       setdisplay_company("auto");
       setanimate_company("translateX(0%)");
-    } else if (latest <= 1000 && latest > 750) {
+    } else if (latest <= 1100 && latest > 850) {
       setanimate_company("translateX(250%)");
       setdisplay_company("0");
 
@@ -102,11 +102,11 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className="w-full  h-[153.3vw] pt-[11.3vw] pb-[100px] flex flex-col items-center "
+        className="w-full  h-[153.3vw] pt-[11.3vw] pb-[6.6vw] flex flex-col items-center "
         animate={{ backgroundColor: color }}
         transition={{ duration: 0.1 }}
       >
-        <p className="text-[65px] novabold text-center text-white font-[500] ">
+        <p className="text-[4.3vw] novabold text-center text-white font-[500] ">
           The best way to predict the <br /> future is to reinvent it
         </p>
 
@@ -116,12 +116,12 @@ const Home_hero = () => {
             y: -30,
             zIndex: 1,
             position: "sticky",
-            top: "250px",
+            top: "16.6vw",
             opacity: 1,
           }}
         >
           <motion.p
-            className="text-[200px] absolute top-[-200px] font-[helvetica] font-[700] left-[50%] "
+            className="text-[13.3vw] absolute top-[-13.3vw] font-[helvetica] font-[700] left-[50%] "
             animate={{ transform: animate_text }}
             // transition={{duration: 1}}
             style={{
@@ -140,7 +140,7 @@ const Home_hero = () => {
           {/* <div className="w-[600px] h-fit relative top-0 left-0"> */}
           <Image
             src={laptop_black}
-            className="w-[700px] h-fit absolute z-[50] top-0 left-0"
+            className="w-[46.6vw] h-fit absolute z-[50] top-0 left-0"
             alt="laptop black"
             style={{
               opacity: c_opacity,
@@ -152,7 +152,7 @@ const Home_hero = () => {
           <Image
             placeholder="blur"
             src={on_black}
-            className="w-[700px] h-fit absoulute  z-[45] top-0 left-0"
+            className="w-[46.6vw] h-fit absoulute  z-[45] top-0 left-0"
             alt="laptop black"
             style={{
               transform: animate_des,
@@ -163,7 +163,7 @@ const Home_hero = () => {
           <Image
             placeholder="blur"
             src={tab}
-            className="w-[700px] h-fit absoulute  z-[45]  top-0 left-0"
+            className="w-[46.6vw] h-fit absoulute  z-[45]  top-0 left-0"
             alt="laptop black"
             style={{
               transform: animate_tab,
@@ -174,7 +174,7 @@ const Home_hero = () => {
           <Image
             placeholder="blur"
             src={phone}
-            className="w-[700px] h-fit absoulute  z-[45]  top-0 left-0"
+            className="w-[46.6vw] h-fit absoulute  z-[45]  top-0 left-0"
             alt="laptop black"
             style={{
               transform: animate_phone,
@@ -184,7 +184,7 @@ const Home_hero = () => {
           />
 
           <p
-            className="nova w-[700px] text-[150px] mt-[100px] font-[helvetica] font-[700] absoulute  z-[45]  top-0 left-0"
+            className="nova w-[46.6vw] text-[10vw] mt-[6.6vw] font-[helvetica] font-[700] absoulute  z-[45]  top-0 left-0"
             style={{
               background:
                 "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",
