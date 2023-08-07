@@ -21,7 +21,7 @@ body {
 .inner {
   display: inline-flex;
   gap: 10px;
-  width: 60vw;
+  width: 62vw;
   line-height: 1;
   flex-wrap: wrap;
   text-align: center;
@@ -42,7 +42,7 @@ body {
   justify-content: center;
   height: auto;
   font-family: Helvetica;
-  font-size: 60px;
+  font-size: 64px;
 }
 .text-container {
   position: relative;
