@@ -44,9 +44,8 @@ const Home_hero = () => {
   );
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(calcwidth);
     // check for the first animation of te text
-    if (latest >= calcwidth / 4.2) {
+    if (latest >= calcwidth / 5) {
       setanimate_text("translateX(-50%)");
     }
     if (latest >= calcwidth / 10) {
@@ -57,8 +56,8 @@ const Home_hero = () => {
     }
 
     if (latest >= calcwidth / 4) {
-      setanimate_text("translateX(-150vw)");
       setgeneral("-100vw");
+      setanimate_text("translateX(-150vw)");
     } else if (latest <= calcwidth / 4 && latest >= calcwidth / 5) {
       setgeneral("0vw");
     }
@@ -128,27 +127,27 @@ const Home_hero = () => {
               <Image
                 placeholder="blur"
                 src={tab}
-                className="w-[50vw] h-fit"
+                className="w-[63vw] h-fit"
                 alt="laptop black"
               />
             </motion.div>
             <motion.div
               className="w-[100vw] flex justify-center "
-              animate={{ y: "-5vw" }}
+              animate={{ y: "-8vw" }}
             >
               <Image
                 placeholder="blur"
                 src={phone}
-                className="w-[50vw] h-fit"
+                className="w-[63vw] h-fit"
                 alt="laptop black"
               />
             </motion.div>
             <motion.div
               className="w-[100vw] flex justify-center "
-              animate={{ y: "-5vw" }}
+              animate={{ y: "-8vw" }}
             >
               <p
-                className="  text-[15vw] mt-[5vw] font-[helvetica] font-[700] "
+                className="  text-[18vw] mt-[5vw] font-[helvetica] font-[700] "
                 style={{
                   background:
                     "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",

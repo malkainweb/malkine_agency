@@ -257,3 +257,13 @@ input[type="number"] {
 .port_wrap:hover .port_ctn {
   border: 2px solid white;
 }
+
+/* ********************THIS IS FOR TH WORKS PAGE SHA  *******************/
+
+.works:hover {
+  background-color: #d01717;
+}
+
+.emma {
+  background-color: blue;
+}
