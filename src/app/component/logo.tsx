@@ -7,7 +7,7 @@ import logo from "../../../public/logo.webp";
 const Logo = () => {
   return (
     <>
-      <div className="w-[95px] h-[95px]  ">
+      <div className="w-[6.3vw] h-[6.3vw]  ">
         <Image priority src={logo} alt="logo" className="w-full h-fit" />
       </div>
     </>
