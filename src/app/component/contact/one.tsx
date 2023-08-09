@@ -33,7 +33,7 @@ const One = (props: any) => {
   return (
     <>
       {/* JUST FOR THE PURPOSE OF KEEPING THE FOOTER FISWX WE IMPLEMENT THE DIV BELOW  */}
-      <div className="   min-h-[50vw]">
+      <div className="   min-h-[60vw]">
         <div className="w-full h-auto flex justify-center items-center px-[20vw] py-[3.3vw]">
           <motion.div
             initial={{ opacity: 0 }}
