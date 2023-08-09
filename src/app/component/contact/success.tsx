@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import success from "../../../../public/contact/success.webp";
+import success from "../../../../public/contact/success.svg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect } from "react";
