@@ -13,12 +13,12 @@ const Header_black = (props: any) => {
 
   return (
     <>
-      <nav className="w-full  h-[150px] fixed z-[99] flex  p_r  items-center justify-between bg-transparent">
+      <nav className="w-full  h-[10vw] fixed z-[99] flex  p_r  items-center justify-between bg-transparent">
         <Link href="/">{white == 1 ? <Logo_black /> : <Logo />}</Link>
 
         {/* nav menus */}
         <div
-          className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-center gap-[30px] items-center  capitalize bg-black  bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]"
+          className="w-[31.3vw] h-[3.33vw] novabold rounded-[3.33vw]   flex justify-center gap-[2vw] items-center  capitalize bg-black  bg-opacity-[17%] font-[200] text-[0.93vw] backdrop-blur-[25px]"
           style={{ color: white == 1 ? "black" : "white" }}
         >
           <Link href="about" className="hover:text-[#afafaf]">
@@ -36,7 +36,7 @@ const Header_black = (props: any) => {
         </div>
         {/* menu icons */}
         <div
-          className="w-[57px] p-[15px] flex justify-center items-center h-[57px]  rounded-[100%] bg-black bg-opacity-[17%]  cursor-pointer hover:bg-[#c7c5c5] backdrop-blur-[25px]"
+          className="w-[3.8vw] p-[1vw] flex justify-center items-center h-[3.8vw]  rounded-[100%] bg-black bg-opacity-[17%]  cursor-pointer hover:bg-[#c7c5c5] backdrop-blur-[25px]"
           onClick={() => {
             setleft("0");
             setright("0");

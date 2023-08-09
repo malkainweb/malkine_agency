@@ -66,11 +66,11 @@ const Team = () => {
 
   return (
     <>
-      <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] pb-[100px] p_r">
+      <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] pb-[6.7vw] p_r">
         {/* first section */}
-        <div className="flex flex-col justify-center items-center gap-[20px]">
-          <h1 className="nova text-[64px] text-white">Our vision</h1>
-          <p className="text-[#c3c2c2] text-[20px] text-center nova font-[300]">
+        <div className="flex flex-col justify-center items-center gap-[1.33vw]">
+          <h1 className="nova text-[4.27vw] text-white">Our vision</h1>
+          <p className="text-[#c3c2c2] text-[1.33vw] text-center nova font-[300]">
             <span className="font-[700] text-white"> Our team</span> works hard
             to create profound design asethetics that <br />
             are well crafted . We explore and push boundaries
@@ -78,12 +78,11 @@ const Team = () => {
         </div>
 
         {/* second section */}
-        <div className="w-full h-auto flex flex-wrap justify-between gap-[50px] ">
+        <div className="w-full h-auto flex flex-wrap justify-between gap-[3.33vw] ">
           {team.map((main: any, index: any) => {
             return (
-              // h-[500px]
               <div
-                className="bg-white rounded-[10px] px-[3.3vw] py-[4.6vw] w-[48%] h-auto  flex justify-between items-center gap-[3vw]"
+                className="bg-white rounded-[0.7vw] px-[3.3vw] py-[4.6vw] w-[48%] h-auto  flex justify-between items-center gap-[3vw]"
                 key={index}
               >
                 <div className="w-auto h-[24vw] flex  justify-center items-center ">
@@ -97,21 +96,21 @@ const Team = () => {
                 {/* the clients imformaiton */}
                 <div className="flex flex-col justify-between w-full  h-full">
                   <div className="flex flex-col gap-[0.66vw]">
-                    <h1 className="font-[700] nova text-[35px] capitalize">
+                    <h1 className="font-[700] nova text-[2.33vw] capitalize">
                       {main.name}
                     </h1>
-                    <p className="text-[18px] ">{main.des}</p>
+                    <p className="text-[1.2vw] ">{main.des}</p>
                   </div>
                   {/* skilss section */}
                   <div className="flex flex-col gap-[0.66vw]">
-                    <p className="nova text-[24px] text-[red] font-[500]">
+                    <p className="nova text-[1.6vw] text-[red] font-[500]">
                       Skills
                     </p>
                     <div className="flex flex-wrap gap-[0.66vw] nova items-center">
                       {main.skill.map((a: any, m: any) => {
                         return (
                           <p
-                            className="border-black border rounded-[24px] text-[12px]  py-[10px] px-[16px] uppercase"
+                            className="border-black border rounded-[1.6vw] text-[0.8vw]  py-[0.7vw] px-[1.07vw] uppercase"
                             key={m}
                           >
                             {a}
