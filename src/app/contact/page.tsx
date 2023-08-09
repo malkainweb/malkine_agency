@@ -41,11 +41,11 @@ export default function Contact() {
           setleft={setleft}
           setopacity={setopacity}
         />
-        <div className="w-full pt-[150px] flex justify-center nova text-[50px] text-[#D9D9D9]  text-center">
+        <div className="w-full pt-[10vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
           {step == 3 ? (
             ""
           ) : (
-            <p className="pt-[20px]">
+            <p className="pt-[1.33vw]">
               {" "}
               Let{"'"}s start a project <br /> together.{" "}
             </p>

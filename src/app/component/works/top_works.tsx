@@ -204,7 +204,7 @@ const Top_works = () => {
     <>
       <div className="w-full h-auto flex flex-col gap-[2vw] ">
         <div className="w-full h-auto">
-          <h1 className="novabold text-[3.5vw] px-[150px] text-white font-medium">
+          <h1 className="novabold text-[3.5vw] px-[10vw] text-white font-medium">
             Our Works{" "}
           </h1>
         </div>

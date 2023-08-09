@@ -16,12 +16,12 @@ const Work_system = () => {
   ]);
   return (
     <>
-      <div className="w-full  p_r pt-[50px] pb-[400px]">
-        <div className="w-full flex flex-col gap-[100px]">
+      <div className="w-full  p_r pt-[3.3vw] pb-[26.7vw]">
+        <div className="w-full flex flex-col gap-[6.7vw]">
           {/* heading */}
-          <div className="w-full flex flex-col justify-center items-center gap-[20px] text-white">
-            <h3 className="text-[40px]">Work System </h3>
-            <div className="w-[50%] h-[0.5px] bg-white"></div>
+          <div className="w-full flex flex-col justify-center items-center gap-[1.3vw] text-white">
+            <h3 className="text-[2.7vw]">Work System </h3>
+            <div className="w-[50%] h-[0.03vw] bg-white"></div>
           </div>
 
           {/* body */}
@@ -29,7 +29,7 @@ const Work_system = () => {
             {system.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[10vw] h-full justify-between    items-center flex flex-col "
+                  className="w-[10vw] h-full justify-between   items-center flex flex-col "
                   key={index}
                 >
                   <Image
@@ -38,7 +38,7 @@ const Work_system = () => {
                     alt={e.txt}
                     className="w-full h-fit "
                   />
-                  <p className="text-[20px] text-center uppercase text-white nova">
+                  <p className="text-[1.3vw] text-center uppercase text-white nova">
                     {e.txt}
                   </p>
                 </div>

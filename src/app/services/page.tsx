@@ -29,11 +29,10 @@ export default function Services() {
   const second = width * 1.8;
   const third = width * 2.4;
   const fourth = width * 2.85;
-  const finish = fourth + width * 0.4;
+  const fifth = fourth + width * 0.4;
+  const six = width * 4.1;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    // console.log(third);
-    // console.log(latest);
     if (latest >= first) {
       setwhite(1);
     } else if (latest <= first) {
@@ -50,8 +49,11 @@ export default function Services() {
     if (latest >= fourth) {
       setwhite(0);
     }
-    if (latest >= finish) {
+    if (latest >= fifth) {
       setwhite(1);
+    }
+    if (latest >= six) {
+      setwhite(0);
     }
   });
 
