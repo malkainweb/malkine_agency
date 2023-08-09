@@ -92,7 +92,7 @@ const Highlight = () => {
             <ContentLine key={index} content={item} />
           ))}
         </p>
-        <button className="  text-[20px] h-auto font[900]  rounded-[39px] px-[50px] py-[16px] bg-[red] text-white hover:bg-[#920808]">
+        <button className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[red] text-white hover:bg-[#920808]">
           Work with us <i className="bi bi-arrow-right"></i>
         </button>
       </div>

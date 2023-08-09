@@ -6,11 +6,11 @@ import Image from "next/image";
 
 const Home_about = () => {
   const [arr, setarr] = useState([
-    { text1: "ui/ux", text2: "design", width: "24.3vw" },
+    { text1: "ui/ux", text2: "design", width: "17VW" },
     { text1: "brand", text2: "development", width: "17vw" },
     { text1: "wordpress ", text2: "development", width: "17vw" },
-    { text1: "Web ", text2: "development", width: "24.3vw" },
-    { text1: "Creative ", text2: "designing", width: "24.3vw" },
+    { text1: "Web ", text2: "development", width: "17VW" },
+    { text1: "Creative ", text2: "designing", width: "17VW" },
     { text1: "site", text2: "redeisgn", width: "17vw" },
   ]);
   return (
