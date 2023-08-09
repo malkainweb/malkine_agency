@@ -41,7 +41,7 @@ const Header_transparant = (props: any) => {
             priority
             src={black_nav_icon}
             alt="hamburger"
-            className="w-full h-fit"
+            className="w-[100vw] h-auto"
           />
         </div>
       </nav>
