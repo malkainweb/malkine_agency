@@ -75,13 +75,13 @@ const Menu = (props: any) => {
           transition={{ duration: 0.7 }}
           className="h-[100vh]  w-[30vw] px-[2.6vw] py-[5.3vw] flex items-center"
         >
-          <div className=" h-[40vw] w-full flex justify-between flex-col">
+          <div className=" h-[40vw] relative w-full flex justify-between flex-col">
             <Link href="/">
               <Image
                 priority
                 src={logo}
                 alt="menu image"
-                className="w-[8vw] absolute  top-[2vw] h-fit"
+                className="w-[8vw] absolute top-[-1.7vw]  h-fit"
               />
             </Link>
 
@@ -149,7 +149,7 @@ const Menu = (props: any) => {
                     Support@rancroft.com <i className="bi bi-clipboard"></i>
                   </p>
                   <p className="text-[1.06vw] text-[#9E9E9E]">
-                    Privacy policy&Cookies
+                    Privacy policy & Cookies
                   </p>
                   <p className="text-[0.8vw] text-[#9E9E9E]">
                     <i className="bi bi-c-circle"></i>Rancroft2023

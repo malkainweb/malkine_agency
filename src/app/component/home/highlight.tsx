@@ -85,18 +85,23 @@ const Highlight = () => {
   //     "world around us",
   //   ];
   return (
-    <div className="outer">
-      <div className="inner">
-        <p className="dav">
-          {content.map((item: any, index: any) => (
-            <ContentLine key={index} content={item} />
-          ))}
-        </p>
-        <button className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[red] text-white hover:bg-[#920808]">
+    <>
+      {" "}
+      <div className="outer ">
+        <div className="inner">
+          <p className="dav">
+            {content.map((item: any, index: any) => (
+              <ContentLine key={index} content={item} />
+            ))}
+          </p>
+        </div>
+      </div>
+      <div className="w-full flex justify-center pb-[6.7vw]">
+        <button className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]">
           Work with us <i className="bi bi-arrow-right"></i>
         </button>
       </div>
-    </div>
+    </>
   );
 };
 
