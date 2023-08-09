@@ -124,19 +124,13 @@ const Home_hero = () => {
               className="w-[100vw] flex justify-center "
               animate={{ y: "-8vw" }}
             >
-              <Image
-                placeholder="blur"
-                src={tab}
-                className="w-[63vw] h-fit"
-                alt="laptop black"
-              />
+              <Image src={tab} className="w-[63vw] h-fit" alt="laptop black" />
             </motion.div>
             <motion.div
               className="w-[100vw] flex justify-center "
               animate={{ y: "-8vw" }}
             >
               <Image
-                placeholder="blur"
                 src={phone}
                 className="w-[63vw] h-fit"
                 alt="laptop black"

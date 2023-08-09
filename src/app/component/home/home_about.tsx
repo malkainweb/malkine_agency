@@ -20,12 +20,7 @@ const Home_about = () => {
           {/* the background image  */}
 
           <div className="w-full h-full absolute top-[-100px] left-0 ">
-            <Image
-              placeholder="blur"
-              src={agile}
-              alt="agile image"
-              className="w-full h-[120%]"
-            />
+            <Image src={agile} alt="agile image" className="w-full h-[120%]" />
           </div>
           <div className=" flex flex-col z-[20] gap-[20px] h-auto w-full">
             <h3 className="px-[20px] py-[10px] border-white border rounded-[20px] text-white w-fit">
