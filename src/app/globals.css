@@ -7,6 +7,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-appearance: none !important;
 }
 
 .hide_now {
@@ -26,9 +27,7 @@ body {
 }
 
 /* styling for the input eflements on the contact page  */
-select {
-  -webkit-appearance: none;
-}
+
 /* Chrome, Safari, Edge, Opera */
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -225,7 +224,7 @@ input[type="number"] {
   background-repeat: no-repeat;
 }
 .port_text {
-  font-size: 30px;
+  font-size: 2vw;
   font-weight: bold;
 }
 
@@ -239,7 +238,7 @@ input[type="number"] {
 .port_first_text {
   color: #7f7f7f;
   font-family: nova;
-  font-size: 16px;
+  font-size: 1.07vw;
 }
 .port_wrap:hover .port_text {
   color: white;
@@ -247,12 +246,13 @@ input[type="number"] {
 .port_ctn {
   border: 1px solid black;
   border-radius: 100%;
+  font-size: 1.6vw;
   display: flex;
   justify-content: center;
   align-items: center;
   color: red;
-  height: 40px;
-  width: 40px;
+  height: 2.7vw;
+  width: 2.7vw;
 }
 .port_wrap:hover .port_ctn {
   border: 2px solid white;

@@ -1,24 +1,26 @@
 "use client ";
 
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../logo";
-import ham from "../../../../public/navIcon.webp";
+import white_ham from "../../../../public/nav_icon.svg";
+import ham from "../../../../public/black_nav_icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 import Logo_black from "../logo_black";
 
 const Header_black = (props: any) => {
-  const { setleft, setright, setopacity } = props;
+  const { setleft, setright, setopacity, white } = props;
 
   return (
     <>
       <nav className="w-full  h-[150px] fixed z-[99] flex  p_r  items-center justify-between bg-transparent">
-        <Link href="/">
-          <Logo_black />
-        </Link>
+        <Link href="/">{white == 1 ? <Logo_black /> : <Logo />}</Link>
 
         {/* nav menus */}
-        <div className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-center gap-[30px] items-center text-[#D01717] capitalize bg-black  bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]">
+        <div
+          className="w-[470px] h-[50px] novabold rounded-[50px]   flex justify-center gap-[30px] items-center  capitalize bg-black  bg-opacity-[17%] font-[200] text-[14px] backdrop-blur-[25px]"
+          style={{ color: white == 1 ? "black" : "white" }}
+        >
           <Link href="about" className="hover:text-[#afafaf]">
             about us
           </Link>
@@ -41,7 +43,12 @@ const Header_black = (props: any) => {
             setopacity(1);
           }}
         >
-          <Image priority src={ham} alt="hamburger" className="w-full h-auto" />
+          <Image
+            priority
+            src={white == 1 ? ham : white_ham}
+            alt="hamburger"
+            className="w-full h-auto"
+          />
         </div>
       </nav>
     </>

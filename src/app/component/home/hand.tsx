@@ -77,16 +77,6 @@ const Hands = (props: any) => {
         className="w-full h-[140vw]   flex hand_bg"
         style={{ alignItems: "flex-start" }}
       >
-        {/* <Image  priority
-          src={hand_left}
-          alt="work image"
-          className="absolute w-[37%] h-full top-0 left-0 "
-        />
-        <Image  priority
-          src={hand_right}
-          alt="work image"
-          className="absolute w-[37%] h-full top-0 right-0 "
-        /> */}
         <div
           className="flex  justify-center  w-fit items-center h-auto "
           style={{
@@ -102,14 +92,6 @@ const Hands = (props: any) => {
             src={hand_middle}
             alt="work image"
             className=" w-[45vw]  h-fit transition delay-[2s]"
-            style={
-              {
-                // position: "sticky",
-                // left: "50%",
-                // transform: " translateX(-50%)",
-                // bottom: "0px",
-              }
-            }
           />
         </div>
       </div>

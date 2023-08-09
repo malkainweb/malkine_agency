@@ -7,12 +7,39 @@ import About_hero from "../component/about/about_hero";
 import Header_black from "../component/navigation/header_black_nav";
 import Menu from "../component/menu";
 import { useState } from "react";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function About() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
+  const [white, setwhite] = useState(1);
+
+  // this function below changes the headers as being used
+  const { scrollY } = useScroll();
+  const width = globalThis.innerWidth;
+  const first = width * 0.54;
+  const second = width * 0.9;
+  const third = width * 1.93;
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    // console.log(third);
+    // console.log(latest);
+
+    if (latest >= first) {
+      setwhite(0);
+    } else if (latest <= first) {
+      setwhite(1);
+    }
+
+    if (latest >= second) {
+      setwhite(1);
+    }
+    if (latest >= third) {
+      setwhite(0);
+    }
+  });
 
   return (
     <>
@@ -29,6 +56,7 @@ export default function About() {
       <Header_black
         setright={setright}
         setleft={setleft}
+        white={white}
         setopacity={setopacity}
       />
 

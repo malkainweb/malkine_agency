@@ -12,6 +12,7 @@ import Work_ethics from "../component/services/work_ethics";
 import Timeline from "../component/services/timeline";
 import Menu from "../component/menu";
 import { useState } from "react";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function Services() {
   // this is for the menu
@@ -19,6 +20,40 @@ export default function Services() {
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
+  const [white, setwhite] = useState(0);
+
+  // this function below changes the headers as being used
+  const { scrollY } = useScroll();
+  const width = globalThis.innerWidth;
+  const first = width * 1.13;
+  const second = width * 1.8;
+  const third = width * 2.4;
+  const fourth = width * 2.85;
+  const finish = fourth + width * 0.4;
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    // console.log(third);
+    // console.log(latest);
+    if (latest >= first) {
+      setwhite(1);
+    } else if (latest <= first) {
+      setwhite(0);
+    }
+
+    if (latest >= second) {
+      setwhite(0);
+    }
+
+    if (latest >= third) {
+      setwhite(1);
+    }
+    if (latest >= fourth) {
+      setwhite(0);
+    }
+    if (latest >= finish) {
+      setwhite(1);
+    }
+  });
 
   return (
     <>
@@ -37,6 +72,7 @@ export default function Services() {
           setright={setright}
           setleft={setleft}
           setopacity={setopacity}
+          white={white}
         />
         <Method />
         <Timeline />

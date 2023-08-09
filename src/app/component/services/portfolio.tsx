@@ -6,14 +6,14 @@ import React from "react";
 const Portfolio = () => {
   return (
     <>
-      <div className="w-full  px-[50px] h-auto py-[80px] flex flex-col gap-[20px]">
-        <p className="nova text-[30px] font-[500] pb-[20px]">
+      <div className="w-full  px-[3.3vw] h-auto py-[5.3vw] flex flex-col gap-[1.3vw]">
+        <p className="nova text-[2vw] font-[500] pb-[1.3vw]">
           LATEST ON PORFOLIO
         </p>
         <div className="flex   justify-between flex-wrap w-full h-auto">
           <Link
             href="#"
-            className="w-[49.5%]  port_wrap rounded-[10px]  cursor-pointer py-[30px] h-[23.3vw] px-[30px]"
+            className="w-[49.5%]  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-[10px] capitalize">
@@ -27,7 +27,7 @@ const Portfolio = () => {
           </Link>
           <Link
             href="#"
-            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[30px] h-[23.3vw] px-[30px]"
+            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-[10px] capitalize">
@@ -41,7 +41,7 @@ const Portfolio = () => {
           </Link>
           <Link
             href="#"
-            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[30px] h-[23.3vw] px-[30px]"
+            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-[10px] capitalize">
@@ -60,7 +60,7 @@ const Portfolio = () => {
           {" "}
           <Link
             href="#"
-            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[30px] h-[23.3vw] px-[30px]"
+            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-[10px] capitalize">
@@ -74,7 +74,7 @@ const Portfolio = () => {
           </Link>
           <Link
             href="#"
-            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[30px] h-[23.3vw] px-[30px]"
+            className="w-[24.6%]  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-[10px] capitalize">
@@ -88,7 +88,7 @@ const Portfolio = () => {
           </Link>
           <Link
             href="#"
-            className="w-[49.5%]  port_wrap rounded-[10px]  cursor-pointer py-[30px] h-[23.3vw] px-[30px]"
+            className="w-[49.5%]  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="flex flex-col gap-[10px] capitalize">

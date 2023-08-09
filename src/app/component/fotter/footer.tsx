@@ -11,9 +11,9 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="h-auto rounded-t-[70.3px] w-full bg-[#080808]">
-        <div className="w-full h-auto   px-[40px]  py-[40px] flex flex-col gap-[30px]">
-          <p className="text-[18px] inter text-[#E9E9E9]  font-[400]">
+      <div className="h-auto rounded-t-[4.8vw] w-full bg-[#080808]">
+        <div className="w-full h-auto   px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw]">
+          <p className="text-[1.2vw] inter text-[#E9E9E9]  font-[400]">
             We are the creative superheroes ready to <br />
             revolutionize your brand and propel it to <br />
             unparalleled heights.
@@ -21,13 +21,13 @@ const Footer = () => {
           {/* the second part of the footer */}
           <div className="w-full  h-auto flex justify-between  items-center ">
             {/* locations */}
-            <div className="  flex flex-col  h-auto gap-[25px] w-full inter">
-              <p className="inter font-[500] text-[24px] capitalize text-white">
+            <div className="  flex flex-col  h-auto gap-[1.7vw] w-full inter">
+              <p className="inter font-[500] text-[1.6vw] capitalize text-white">
                 Our Locations
               </p>
               {/* now actual locations */}
-              <div className="w-auto h-auto   flex gap-[32px] justify-start items-end text-[14px]">
-                <div className="w-[137px] h-[8vw]  relative ">
+              <div className="w-auto h-auto   flex gap-[2.13vw] justify-start items-end text-[0.93vw]">
+                <div className="w-[9.1vw] h-[8vw]  relative ">
                   <Image
                     priority
                     src={canada_loca}
@@ -41,9 +41,9 @@ const Footer = () => {
                     className="w-full h-auto transistion opacity-0 duration-[0.7s] hover:opacity-[1] absolute z-[50] bottom-0 left-0"
                   />
                 </div>
-                <div className="w-[1px] h-[77px] bg-[#838383]"></div>
-                <div className="flex flex-col gap-[5px]">
-                  <p className="inter text-[18px] font-[700] capitalize text-white">
+                <div className="w-[0.07vw] h-[5.13vw] bg-[#838383]"></div>
+                <div className="flex flex-col gap-[0.3vw]">
+                  <p className="inter text-[1.2vw] font-[700] capitalize text-white">
                     canada
                   </p>
                   <p className="text-[white]">
@@ -61,8 +61,8 @@ const Footer = () => {
                   </p>
                 </div>
               </div>
-              <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
-                <div className="w-[137px] h-[8vw]  relative h-auto">
+              <div className="w-auto h-auto flex gap-[2.13vw] justify-start items-end text-[0.93vw]">
+                <div className="w-[9.1vw] h-[8vw]  relative h-auto">
                   <Image
                     priority
                     src={usa_loca}
@@ -73,13 +73,13 @@ const Footer = () => {
                     priority
                     src={usa_loca_red}
                     alt="canada location"
-                    className="w-full h-auto absolute bottom-[-5px] transistion  opacity-0 duration-[0.7s] hover:opacity-[1] z-[50] bottom-0 left-[1px]
+                    className="w-full h-auto absolute bottom-[-0.3vw] transistion  opacity-0 duration-[0.7s] hover:opacity-[1] z-[50] bottom-0 left-[0.07vw]
 "
                   />
                 </div>
-                <div className="w-[1px] h-[77px] bg-[#838383]"></div>
-                <div className="flex flex-col gap-[5px]">
-                  <p className="inter text-[18px] font-[700] capitalize text-white">
+                <div className="w-[0.07vw] h-[5.13vw] bg-[#838383]"></div>
+                <div className="flex flex-col gap-[0.3vw]">
+                  <p className="inter text-[1.2vw] font-[700] capitalize text-white">
                     USA
                   </p>
                   <p className="text-[white]">
@@ -100,8 +100,8 @@ const Footer = () => {
             </div>
 
             <div className=" p-[28.15px] min-w-fit  rounded-[35.19px] bg-[#121212]  flex justify-between   capitalize  ">
-              <div className="flex flex-col gap-[10px] mr-[80px] w-full  h-auto  text-[#E4E4E4] text-[14px] font-[400]">
-                <p className="text-[20px] text-white nova font-[700]">
+              <div className="flex flex-col gap-[10px] mr-[5.3vw] w-full  h-auto  text-[#E4E4E4] text-[0.93vw] font-[400]">
+                <p className="text-[1.3vw] text-white nova font-[700]">
                   Discover
                 </p>
                 <Link href="#" className="hover:text-white">
@@ -125,17 +125,17 @@ const Footer = () => {
               </div>
               {/* mail us and folllow us section */}
               <div className="min-w-fit flex flex-col justify-between items-end   ">
-                <div className="h-full w-full gap-[40px]  flex justify-between">
-                  <div className="flex flex-col gap-[10px] w-full h-auto  text-[#E4E4E4] text-[14px] font-[400]">
-                    <p className="text-[20px] text-white nova font-[700]">
+                <div className="h-full w-full gap-[2.7vw]  flex justify-between">
+                  <div className="flex flex-col gap-[10px] w-full h-auto  text-[#E4E4E4] text-[0.93vw] font-[400]">
+                    <p className="text-[1.3vw] text-white nova font-[700]">
                       Mail Us
                     </p>
                     <Link href="#" className="hover:text-white">
                       support@malkain.com
                     </Link>
                   </div>
-                  <div className="flex flex-col gap-[10px] min-w-fit h-auto  text-[#E4E4E4] text-[14px] font-[400]">
-                    <p className="text-[20px] w-full text-white nova font-[700] text-center">
+                  <div className="flex flex-col gap-[10px] min-w-fit h-auto  text-[#E4E4E4] text-[0.93vw] font-[400]">
+                    <p className="text-[1.3vw] w-full text-white nova font-[700] text-center">
                       Follow Us
                     </p>
                     <Link href="#" className="hover:text-white">
@@ -151,7 +151,7 @@ const Footer = () => {
                 </div>
                 {/* ctn button */}
                 <div className="w-full h-auto flex justify-end">
-                  <button className="nova  text-[16px] font[900]text-white rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]">
+                  <button className="nova  text-[1.1vw] font[900]text-white rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]">
                     Work with us <i className="bi bi-arrow-right"></i>
                   </button>
                 </div>
@@ -159,14 +159,14 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="w-full h-[0.5px] bg-[#838383]"></div>
+        <div className="w-full h-[0.03vw] bg-[#838383]"></div>
         {/* the copyright section */}
-        <div className="w-full h-[32px]  px-[40px]  py-[40px] flex justify-between items-center ">
-          <p className="text-[#FFFFFF] inter font-[400] text-[12.32px]">
+        <div className="w-full h-[2.13vw]  px-[2.7vw]  py-[2.7vw] flex justify-between items-center ">
+          <p className="text-[#FFFFFF] inter font-[400] text-[0.821vw]">
             2023 Malkain. All right reserved.
           </p>
 
-          <div className="text-white capitalize text-[12.32px] flex gap-[21px]">
+          <div className="text-white capitalize text-[0.821vw] flex gap-[1.4vw]">
             <Link
               href="#"
               className="underline underline-offset-2  hover:text-[#cfcece]"

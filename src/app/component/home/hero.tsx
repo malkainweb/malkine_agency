@@ -1,15 +1,12 @@
 "use client";
 
-import { useEffect, useState, useRef } from "react";
+import { useState } from "react";
 import {
-  useInView,
   useTransform,
   motion,
-  useMotionValue,
   useScroll,
   useMotionValueEvent,
 } from "framer-motion";
-import ReactPlayer from "react-player";
 import Image from "next/image";
 import laptop_black from "../../../../public/home/black_laptop.webp";
 import on_black from "../../../../public/home/on_laptop.webp";
@@ -17,24 +14,14 @@ import tab from "../../../../public/home/tab.webp";
 import phone from "../../../../public/home/phone.webp";
 
 const Home_hero = () => {
-  const [check, setcheck] = useState<any>();
   const [color, setcolor] = useState<any>("white");
   const [animate_text, setanimate_text] = useState("translateX(50vw)");
   const [c_opacity, setc_opacity] = useState<any>(1);
-  const [animate_des, setanimate_des] = useState("translateX(0)");
-  const [animate_tab, setanimate_tab] = useState("translateX(250%)");
-  const [display_des, setdisplay_des] = useState("auto");
-  const [animate_phone, setanimate_phone] = useState("translateX(250%)");
-  const [display_phone, setdisplay_phone] = useState("0px");
-  const [display_tab, setdisplay_tab] = useState("0px");
-  const [animate_company, setanimate_company] = useState("translateX(250%)");
-  const [display_company, setdisplay_company] = useState("0px");
   const [general, setgeneral] = useState<any>("0vw");
   const { scrollY } = useScroll();
   const width = globalThis.innerWidth;
   const calcwidth = width * 2;
 
-  const videoRef = useRef<HTMLVideoElement | null>(null);
   const opacity = useTransform(
     scrollY,
     // Map x from these values:

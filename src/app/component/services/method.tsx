@@ -16,18 +16,18 @@ const Method = () => {
 
   return (
     <>
-      <div className="w-full px-[100px] py-[50px] flex flex-col gap-[50px]">
+      <div className="w-full px-[6.7vw] py-[3.3vw] flex flex-col gap-[3.3vw]">
         <div className="w-full  flex justify-between items-center">
-          <div className="flex flex-col gap-[12px] w-full ">
-            <p className="text-[24px] nova font-[900] text-[#D01717] capitalize">
+          <div className="flex flex-col gap-[0.8vw] w-full ">
+            <p className="text-[1.6vw] nova font-[900] text-[#D01717] capitalize">
               method
             </p>
-            <h1 className="novabold w-full font-[500] text-black text-[60px] capitalize">
+            <h1 className="novabold w-full font-[500] text-black text-[4vw] capitalize">
               We offer an end to end project system
             </h1>
           </div>
           <div className=" min-w-[40%] flex justify-end">
-            <p className="text-[20px] text-black nova font-[300]  ">
+            <p className="text-[1.4vw] text-black nova font-[300]  ">
               We offer a slue of different services <br /> which spans research,
               design, logos,
               <br /> development and deployment. We offer <br />

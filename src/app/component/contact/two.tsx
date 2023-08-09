@@ -38,7 +38,7 @@ const Two = (props: any) => {
   return (
     <>
       {/* JUST FOR THE PURPOSE OF KEEPING THE FOOTER FISWX WE IMPLEMENT THE DIV BELOW  */}
-      <div className="   h-[50vw]">
+      <div className="   min-h-[50vw]">
         <div className="w-full h-auto flex justify-center items-center px-[300px] py-[50px]">
           <motion.div
             initial={{ opacity: 0 }}
