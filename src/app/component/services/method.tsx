@@ -51,24 +51,28 @@ const Method = () => {
                   key={index}
                 >
                   <Image
+                    priority
                     src={top_arrow}
                     alt="top_arrow"
                     className="absolute w-[6.6vw] h-fit top-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    priority
                     src={right_arrow}
                     alt="right arrow"
                     className="absolute w-[0.8vw] h-fit right-[0.8vw] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <Image
+                    priority
                     src={bottom_arrow}
                     alt="bottom_arrow"
                     className="absolute w-[6.6vw] h-fit bottom-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    priority
                     src={left_arrow}
                     alt="left_arrow"
                     className="absolute w-[1vw] h-fit left-[0.8vw] top-[50%]"
@@ -93,24 +97,28 @@ const Method = () => {
                   key={index}
                 >
                   <Image
+                    priority
                     src={top_arrow}
                     alt="top_arrow"
                     className="absolute w-[6.6vw] h-fit top-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    priority
                     src={right_arrow}
                     alt="right arrow"
                     className="absolute w-[0.8vw] h-fit right-[0.8vw] top-[50%]"
                     style={{ transform: "translateY(-50%)" }}
                   />
                   <Image
+                    priority
                     src={bottom_arrow}
                     alt="bottom_arrow"
                     className="absolute w-[6.6vw] h-fit bottom-[0.8vw] left-[50%]"
                     style={{ transform: "translateX(-50%)" }}
                   />
                   <Image
+                    priority
                     src={left_arrow}
                     alt="left_arrow"
                     className="absolute w-[1vw] h-fit left-[0.8vw] top-[50%]"

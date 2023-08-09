@@ -23,6 +23,7 @@ const Home_Team = () => {
             <p className="text-[55px] ">02</p>
             <div className="w-[100px]   h-[60px]">
               <Image
+                priority
                 src={location}
                 alt="location img"
                 className="w-full h-full"

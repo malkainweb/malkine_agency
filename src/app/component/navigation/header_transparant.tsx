@@ -39,6 +39,7 @@ const Header_transparant = (props: any) => {
           }}
         >
           <Image
+            priority
             src={black_nav_icon}
             alt="hamburger"
             className="w-full h-auto"

@@ -32,7 +32,12 @@ const Work_system = () => {
                   className="w-[10vw] h-full justify-between    items-center flex flex-col "
                   key={index}
                 >
-                  <Image src={e.img} alt={e.txt} className="w-full h-fit " />
+                  <Image
+                    priority
+                    src={e.img}
+                    alt={e.txt}
+                    className="w-full h-fit "
+                  />
                   <p className="text-[20px] text-center uppercase text-white nova">
                     {e.txt}
                   </p>

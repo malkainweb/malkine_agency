@@ -1,9 +1,7 @@
 "use client";
 
-import React, { useState } from "react";
+import React from "react";
 import Header_transparant from "../navigation/header_transparant";
-import hero from "../../../../public/services/hero.svg";
-import Image from "next/image";
 
 const Hero_services = (props: any) => {
   const { setleft, setright, setopacity } = props;
@@ -12,11 +10,6 @@ const Hero_services = (props: any) => {
     <>
       <div className="w-full py-[0.8vw] px-[0.8vw] h-[120vw] ">
         <div className="w-full flex flex-col rounded-[50px] gap-[150px] h-full  hero_bg">
-          {/* <Image
-            src={hero}
-            alt="hero img"
-            className="w-full h-full absolute top-0  left-0 z-[1]"
-          /> */}
           <Header_transparant
             setleft={setleft}
             setright={setright}

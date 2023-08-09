@@ -29,11 +29,13 @@ const Footer = () => {
               <div className="w-auto h-auto   flex gap-[32px] justify-start items-end text-[14px]">
                 <div className="w-[137px] h-[8vw]  relative ">
                   <Image
+                    priority
                     src={canada_loca}
                     alt="canada location"
                     className="w-full h-auto absolute z-[40] bottom-0 left-0 "
                   />
                   <Image
+                    priority
                     src={canada_loca_red}
                     alt="canada location"
                     className="w-full h-auto transistion opacity-0 duration-[0.7s] hover:opacity-[1] absolute z-[50] bottom-0 left-0"
@@ -62,11 +64,13 @@ const Footer = () => {
               <div className="w-auto h-auto flex gap-[32px] justify-start items-end text-[14px]">
                 <div className="w-[137px] h-[8vw]  relative h-auto">
                   <Image
+                    priority
                     src={usa_loca}
                     alt="canada location"
                     className="w-full h-auto absolute  z-[40] bottom-0 left-0"
                   />
                   <Image
+                    priority
                     src={usa_loca_red}
                     alt="canada location"
                     className="w-full h-auto absolute bottom-[-5px] transistion  opacity-0 duration-[0.7s] hover:opacity-[1] z-[50] bottom-0 left-[1px]

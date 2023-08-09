@@ -77,7 +77,12 @@ const Menu = (props: any) => {
         >
           <div className=" h-[40vw] w-full flex justify-between flex-col">
             <Link href="/">
-              <Image src={logo} alt="menu image" className="w-[8vw] h-fit" />
+              <Image
+                priority
+                src={logo}
+                alt="menu image"
+                className="w-[8vw] h-fit"
+              />
             </Link>
 
             <div className="w-full flex flex-col gap-[15px]">

@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import main from "../../../../public/works/main.webp";
 import Link from "next/link";
