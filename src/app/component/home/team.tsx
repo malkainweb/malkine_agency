@@ -11,7 +11,7 @@ const Home_Team = () => {
         <div className="flex w-full h-[10.3vw] rounded-[2vw] bg-[#F1F1F1]  flex-col p-[1.25vw] justify-between">
           <div className="w-full flex justify-between nova ">
             <p className="text-[3.5vw] ">34</p>
-            <p className="py-[0.7vw] px-[1vw] bg-white rounded-[1.4vw] h-fit">
+            <p className="py-[0.7vw] px-[1vw] bg-white rounded-[1.4vw] h-fit text-[1.1vw]">
               Team
             </p>
           </div>
@@ -36,7 +36,7 @@ const Home_Team = () => {
         <div className="flex w-full h-[10.3vw] rounded-[2vw] bg-[#D01717] border2 flex-col p-[1.25vw] justify-between text-white">
           <div className="w-full flex justify-between nova ">
             <p className="text-[3.5vw] ">123</p>
-            <p className="py-[0.7vw] px-[1vw] bg-white bg-opacity-[26%] rounded-[1.4vw] h-fit">
+            <p className="py-[0.7vw] px-[1vw] bg-white bg-opacity-[26%] rounded-[1.4vw] h-fit text-[1.3vw]">
               PROJECTS
             </p>
           </div>
