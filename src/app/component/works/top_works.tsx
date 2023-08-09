@@ -204,38 +204,101 @@ const Top_works = () => {
     <>
       <div className="w-full h-auto flex flex-col gap-[2vw] ">
         <div className="w-full h-auto">
-          <h1 className="novabold text-[3.5vw] px-[10vw] text-white font-medium">
+          <h1 className="novabold text-[3.5vw] px-[6vw] text-white font-medium">
             Our Works{" "}
           </h1>
         </div>
         <div className="w-full h-auto flex justify-center">
           <div className="w-[53.3vw]  relative h-[70vw] ">
             {/* the first left div */}
-            <div className="h-[16.7vw] w-[0.03vw] bg-white bg-opacity-[30%] absolute top-[0.7vw] left-[3.3vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[16.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[0.7vw] left-[3.3vw] z-[10]"
+            ></div>
 
             {/* second dive on the section */}
-            <div className="h-[33.3vw] w-[0.03vw] bg-white bg-opacity-[30%] absolute top-[0.7vw] left-[11vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[33.3vw] w-[0.03vw] bg-opacity-[30%] absolute top-[0.7vw] left-[11vw] z-[10]"
+            ></div>
 
             {/* third sectio dive dive on the section */}
-            <div className="h-[0.03vw] w-[46.7vw] bg-white bg-opacity-[30%] absolute top-[18.7vw] left-[3.3vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[0.03vw] w-[46.7vw] bg-opacity-[30%] absolute top-[18.7vw] left-[3.3vw] z-[10]"
+            ></div>
 
             {/* fourth sectio dive dive on the section */}
-            <div className="h-[0.03vw] w-[33.3vw] bg-white bg-opacity-[30%] absolute top-[26.3vw] left-[10vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[0.03vw] w-[33.3vw] bg-opacity-[30%] absolute top-[26.3vw] left-[10vw] z-[10]"
+            ></div>
 
             {/* fifth sectio dive dive on the section */}
-            <div className="h-[0.03vw] w-[33.3vw] bg-white bg-opacity-[30%] absolute top-[34vw] left-[10vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[0.03vw] w-[33.3vw] bg-opacity-[30%] absolute top-[34vw] left-[10vw] z-[10]"
+            ></div>
 
             {/* sixth  dive on the section */}
-            <div className="h-[46.7vw] w-[0.03vw] bg-white bg-opacity-[30%] absolute top-[16.7vw] left-[18.7vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[46.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[18.7vw] z-[10]"
+            ></div>
 
             {/* seventh  dive on the section */}
-            <div className="h-[26.7vw] w-[0.03vw] bg-white bg-opacity-[30%] absolute top-[16.7vw] left-[26.3vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[26.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[26.3vw] z-[10]"
+            ></div>
 
             {/* eight  dive on the section */}
-            <div className="h-[20vw] w-[0.03vw] bg-white bg-opacity-[30%] absolute top-[16.7vw] left-[34vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[20vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[34vw] z-[10]"
+            ></div>
 
             {/* ninth  dive on the section */}
-            <div className="h-[20vw] w-[0.03vw] bg-white bg-opacity-[30%] absolute top-[16.7vw] left-[41.7vw] z-[10]"></div>
+            <div
+              style={{
+                border: "0.03vw solid white",
+                opacity: "0.3",
+                borderStyle: "dashed",
+              }}
+              className="h-[20vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[41.7vw] z-[10]"
+            ></div>
             {svg.map((e: any, index: any) => {
               return (
                 <Link

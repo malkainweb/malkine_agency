@@ -81,7 +81,7 @@ const Menu = (props: any) => {
                 priority
                 src={logo}
                 alt="menu image"
-                className="w-[8vw] h-fit"
+                className="w-[8vw] absolute  top-[2vw] h-fit"
               />
             </Link>
 
@@ -106,7 +106,7 @@ const Menu = (props: any) => {
             {/* the first flex with the big options */}
 
             <div className="w-auto h-[40vw] gap-[30px] flex flex-col justify-between  text-white novabold">
-              <p className="text-[1.3vw] text-[#9E9E9E] ">Navigation</p>
+              <p className="text-[1.3vw] text-[#9E9E9E]  opacity-0"> i</p>
               <div className="w-full h-full flex flex-col justify-between    ">
                 {menu_arr.map((e: any, index: any) => {
                   return (
