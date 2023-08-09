@@ -40,7 +40,6 @@ const Header_transparant = (props: any) => {
         >
           <Image
             src={black_nav_icon}
-            placeholder="blur"
             alt="hamburger"
             className="w-full h-auto"
           />

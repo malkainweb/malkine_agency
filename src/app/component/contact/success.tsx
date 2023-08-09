@@ -20,12 +20,7 @@ const Success = () => {
           transition={{ delay: 0, duration: 1.5 }}
           className="w-full flex h-auto flex-col py-[100px] justify-center items-center gap-[20px]"
         >
-          <Image
-            src={success}
-            placeholder="blur"
-            alt="sucees image"
-            className="w-[100px] h-fit"
-          />
+          <Image src={success} alt="sucees image" className="w-[100px] h-fit" />
           <p className="text-[40px] nova text-white text-center">
             Thank you! Your submission has <br /> been recieved
           </p>

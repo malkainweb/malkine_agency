@@ -88,7 +88,6 @@ const Team = () => {
               >
                 <div className="w-auto h-[24vw] flex  justify-center items-center ">
                   <Image
-                    placeholder="blur"
                     priority
                     src={main.img}
                     className="w-fit h-full"

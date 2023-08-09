@@ -8,12 +8,7 @@ const Logo_black = () => {
   return (
     <>
       <div className="w-[95px] h-[95px]  ">
-        <Image
-          // placeholder="blur"
-          src={logo}
-          alt="logo"
-          className="w-full h-fit"
-        />
+        <Image src={logo} alt="logo" className="w-full h-fit" />
       </div>
     </>
   );

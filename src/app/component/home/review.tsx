@@ -126,16 +126,10 @@ const Review = () => {
                   className="w-[22.4vw] rounded-[19px] bg-[#F6F6F6]  h-full flex flex-col px-[20px] justify-around"
                   key={index}
                 >
-                  <Image
-                    placeholder="blur"
-                    src={e.stars}
-                    alt="stars"
-                    className="w-[100px]"
-                  />
+                  <Image src={e.stars} alt="stars" className="w-[100px]" />
                   <p className="text-[20px]">{e.des}</p>
                   <div className="w-full flex justify-end ">
                     <Image
-                      placeholder="blur"
                       src={block_quote}
                       alt="block_quote"
                       className="h-fit w-[30px]"
@@ -144,7 +138,6 @@ const Review = () => {
                   <div className="w-full flex gap-[15px]">
                     <div className="w-[70px] h-[70px] rounded-[100%]">
                       <Image
-                        placeholder="blur"
                         src={e.profile_pic}
                         alt="avatar"
                         className="h-fit w-full"

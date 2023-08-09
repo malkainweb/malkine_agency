@@ -41,12 +41,7 @@ const Header_black = (props: any) => {
             setopacity(1);
           }}
         >
-          <Image
-            src={ham}
-            placeholder="blur"
-            alt="hamburger"
-            className="w-full h-auto"
-          />
+          <Image src={ham} alt="hamburger" className="w-full h-auto" />
         </div>
       </nav>
     </>

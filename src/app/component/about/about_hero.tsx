@@ -14,21 +14,18 @@ const About_hero = () => {
         {/* the floating images start */}
 
         <Image
-          placeholder="blur"
           style={{ transform: "translateX(-50%)" }}
           src={img1}
           alt="chess board"
           className="w-[7vw] absolute left-[50%] top-[10px]"
         />
         <Image
-          placeholder="blur"
           //   style={{ transform: "translateX(-50%)" }}
           src={img2}
           alt="chess board"
           className="w-[14vw] absolute left-[70px] top-[150px]"
         />
         <Image
-          placeholder="blur"
           //   style={{ transform: "translateX(-50%)" }}
           src={img3}
           alt="chess board"
@@ -37,7 +34,6 @@ const About_hero = () => {
 
         {/* the floating images end  */}
         <Image
-          placeholder="blur"
           style={{ transform: "translateX(-50%)" }}
           src={chess}
           priority
