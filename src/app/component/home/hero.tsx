@@ -107,12 +107,14 @@ const Home_hero = () => {
           >
             <div className="w-[100vw] h-fit  relative ">
               <Image
+                priority
                 src={laptop_black}
                 alt="black laptop"
                 className="w-[50vw] h-fit absolute z-[20] top-0 left-[50%]"
                 style={{ opacity: c_opacity, transform: "translateX(-50%)" }}
               />
               <Image
+                priority
                 src={on_black}
                 alt="black laptop"
                 className="w-[50vw] h-fit absolute z-[10] top-0 left-[50%]"
@@ -124,13 +126,19 @@ const Home_hero = () => {
               className="w-[100vw] flex justify-center "
               animate={{ y: "-8vw" }}
             >
-              <Image src={tab} className="w-[63vw] h-fit" alt="laptop black" />
+              <Image
+                priority
+                src={tab}
+                className="w-[63vw] h-fit"
+                alt="laptop black"
+              />
             </motion.div>
             <motion.div
               className="w-[100vw] flex justify-center "
               animate={{ y: "-8vw" }}
             >
               <Image
+                priority
                 src={phone}
                 className="w-[63vw] h-fit"
                 alt="laptop black"
