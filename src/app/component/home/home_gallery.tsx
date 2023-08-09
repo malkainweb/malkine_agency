@@ -8,7 +8,7 @@ import home_gallery from "../../../../public/home/home_gallery.webp";
 const Home_gallery = () => {
   const [gall, setgall] = useState([
     { link: "/home/2.webp", height: "0px", left: "0.6vw", right: "" },
-    { link: "/home/1.webp", height: "-20px", left: "13.3vw", right: "" },
+    { link: "/home/1.webp", height: "-1.33vw", left: "13.3vw", right: "" },
     { link: "/home/3.webp", height: "0px", left: "", right: "1.33vw" },
     { link: "/home/4.webp", height: "11.3vw", left: "13.3vw", right: "" },
     { link: "/home/5.webp", height: "11.3vw", left: "26.6vw", right: "" },
@@ -21,7 +21,7 @@ const Home_gallery = () => {
   ]);
   return (
     <>
-      <div className="w-full h-auto py-[50px] relative bg-white ">
+      <div className="w-full h-auto py-[3.33vw] relative bg-white ">
         <Image
           priority
           src={home_gallery}

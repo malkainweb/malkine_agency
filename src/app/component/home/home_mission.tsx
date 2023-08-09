@@ -5,23 +5,23 @@ import React from "react";
 const Home_mission = () => {
   return (
     <>
-      <div className="w-full bg-white p_r  h-auto flex  flex-col gap-[1.3vw] py-[50px]">
+      <div className="w-full bg-white p_r  h-auto flex  flex-col gap-[1.3vw] py-[3.33vw]">
         {/* heading */}
-        <div className="flex items-center  gap-[20px] nova">
-          <h1 className="nova text-[50px] ">Our Mission</h1>
-          <button className="border h-fit bg-transparent border-black px-[20px] rounded-[10px] py-[10px] text-[15px]">
+        <div className="flex items-center  gap-[1.33vw] nova">
+          <h1 className="nova text-[3.33vw] ">Our Mission</h1>
+          <button className="border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]">
             Read More
           </button>
         </div>
 
         {/* body of the about section */}
-        <div className="w-full  items-end gap-[150px] h-auto flex justify-center ">
+        <div className="w-full  items-end gap-[10vw] h-auto flex justify-center ">
           {/* image */}
           <div className="w-[6.6vw] h-[full]"></div>
 
           {/* now the text */}
-          <div className="w-fit flex-col flex gap-[30px] ">
-            <div className="text-[28px] inter">
+          <div className="w-fit flex-col flex gap-[2vw] ">
+            <div className="text-[1.87vw] inter">
               <p className="pl-[13.3vw]">
                 {" "}
                 <span className="font-[900]">Malkain Designs</span> ut elit
@@ -34,7 +34,7 @@ const Home_mission = () => {
                 suspendisse auctor. Amet elementum facilisis imperdiet
               </p>
             </div>
-            <div className="w-full text-[28px] inter ">
+            <div className="w-full text-[1.87vw] inter ">
               <p className="textstart">
                 {" "}
                 gravida volutpat eget tortor proin. Posuere porttitor sed erat

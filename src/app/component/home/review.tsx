@@ -110,11 +110,11 @@ const Review = () => {
   };
   return (
     <>
-      <div className="w-full p_r py-[50px] flex flex-col gap-[20px] justify-center items-center bg-white">
-        <h1 className="text-[50px] text-center novabold ">
+      <div className="w-full p_r py-[3.3vw] flex flex-col gap-[1.33vw] justify-center items-center bg-white">
+        <h1 className="text-[3.3vw] text-center novabold ">
           Our Client Reviews
         </h1>
-        <div className="w-full h-[400px] overflow-hidden relative">
+        <div className="w-full h-[26.7vw] overflow-hidden relative">
           <motion.div
             className="w-auto h-full  justify-center nova flex gap-[1vw] absolute overflow-hidden top-0 left-0"
             animate={{ x: go }}
@@ -123,26 +123,26 @@ const Review = () => {
             {info.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[22.4vw] rounded-[19px] bg-[#F6F6F6]  h-full flex flex-col px-[20px] justify-around"
+                  className="w-[22.4vw] rounded-[1.3vw] bg-[#F6F6F6]  h-full flex flex-col px-[1.33vw] justify-around"
                   key={index}
                 >
                   <Image
                     priority
                     src={e.stars}
                     alt="stars"
-                    className="w-[100px]"
+                    className="w-[6.7vw]"
                   />
-                  <p className="text-[20px]">{e.des}</p>
+                  <p className="text-[1.33vw]">{e.des}</p>
                   <div className="w-full flex justify-end ">
                     <Image
                       priority
                       src={block_quote}
                       alt="block_quote"
-                      className="h-fit w-[30px]"
+                      className="h-fit w-[2vw]"
                     />
                   </div>
-                  <div className="w-full flex gap-[15px]">
-                    <div className="w-[70px] h-[70px] rounded-[100%]">
+                  <div className="w-full flex gap-[1vw]">
+                    <div className="w-[4.7vw] h-[4.7vw] rounded-[100%]">
                       <Image
                         priority
                         src={e.profile_pic}
@@ -152,10 +152,10 @@ const Review = () => {
                     </div>
 
                     <div className="w-full">
-                      <p className="text-black novabold text-[20px] font-[500] capitalize">
+                      <p className="text-black novabold text-[1.33vw] font-[500] capitalize">
                         {e.name}
                       </p>
-                      <p className="text-[14px] text-[#AFAFAF] text-[16px]">
+                      <p className="text-[0.93vw] text-[#AFAFAF] ">
                         {e.position}
                       </p>
                     </div>
@@ -172,9 +172,9 @@ const Review = () => {
           </motion.div>
         </div>
 
-        <div className="w-[300px]  bg-[#F6F6F6] rounded-[15px] flex h-[12px]">
+        <div className="w-[20vw]  bg-[#F6F6F6] rounded-[1vw] flex h-[0.8vw]">
           <motion.div
-            className="w-full cursor-pointer rounded-[15px]"
+            className="w-full cursor-pointer rounded-[1vw]"
             transition={{ duration: 2 }}
             onClick={() => {
               change(1, "0vw");
@@ -182,7 +182,7 @@ const Review = () => {
             animate={{ backgroundColor: active == 1 ? "black" : "transparent" }}
           ></motion.div>
           <motion.div
-            className="w-full cursor-pointer rounded-[15px]"
+            className="w-full cursor-pointer rounded-[1vw]"
             transition={{ duration: 2 }}
             onClick={() => {
               change(0, "-93.5vw");
@@ -190,7 +190,7 @@ const Review = () => {
             animate={{ backgroundColor: active == 0 ? "black" : "transparent" }}
           ></motion.div>
           <motion.div
-            className="w-full cursor-pointer rounded-[15px]"
+            className="w-full cursor-pointer rounded-[1vw]"
             transition={{ duration: 2 }}
             onClick={() => {
               change(2, "-187vw");
