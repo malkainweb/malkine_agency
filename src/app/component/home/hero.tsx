@@ -122,7 +122,7 @@ const Home_hero = () => {
 
             <motion.div
               className="w-[100vw] flex justify-center "
-              animate={{ y: "-5vw" }}
+              animate={{ y: "-8vw" }}
             >
               <Image
                 placeholder="blur"

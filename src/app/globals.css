@@ -260,10 +260,18 @@ input[type="number"] {
 
 /* ********************THIS IS FOR TH WORKS PAGE SHA  *******************/
 
-.works:hover {
+/* .works:hover {
   background-color: #d01717;
+} */
+
+.top {
+  background-color: #393939;
 }
 
-.emma {
-  background-color: blue;
+.middle {
+  background-color: #222222;
+}
+
+.edges {
+  background-color: #7c1a1a;
 }

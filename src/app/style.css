@@ -20,22 +20,19 @@ body {
 
 .inner {
   display: inline-flex;
-  gap: 10px;
   width: 72vw;
-  line-height: 1;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
   /* padding: 100px 100px 100px 100px; */
   height: auto;
-
   font-weight: 700;
 }
 .dav {
   display: inline-flex;
   gap: 10px;
+  line-height: 70px;
   padding: 100px 0px;
-  line-height: 1;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
