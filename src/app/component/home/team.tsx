@@ -7,7 +7,7 @@ import location from "../../../../public/home/location.webp";
 const Home_Team = () => {
   return (
     <>
-      <div className="w-full bg-white h-auto  p_r py-[50px] flex justify-between gap-[1.25vw] items-center ">
+      <div className="w-full bg-white h-auto  p_r py-[3.3vw] flex justify-between gap-[1.25vw] items-center ">
         <div className="flex w-full h-[10.3vw] rounded-[2vw] bg-[#F1F1F1]  flex-col p-[1.25vw] justify-between">
           <div className="w-full flex justify-between nova ">
             <p className="text-[3.5vw] ">34</p>

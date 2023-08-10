@@ -123,29 +123,29 @@ input[type="number"] {
   animation-duration: 15s;
   animation-iteration-count: infinite;
   transition: 1s ease;
-  translate: 0px -1190px;
+  translate: 0px -79.3vw;
 }
 
 @keyframes home_left {
   0% {
-    translate: 0px 0px;
+    translate: 0vw 0vw;
   }
   50% {
-    translate: 0px -1190px;
+    translate: 0vw -79.3vw;
   }
   100% {
-    translate: 0px 0px;
+    translate: 0vw 0vw;
   }
 }
 @keyframes home_right {
   0% {
-    translate: 0px -1190px;
+    translate: 0vw -79.3vw;
   }
   50% {
-    translate: 0px 0px;
+    translate: 0vw 0vw;
   }
   100% {
-    translate: 0px -1190px;
+    translate: 0vw -79.3vw;
   }
 }
 
