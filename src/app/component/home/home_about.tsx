@@ -15,16 +15,16 @@ const Home_about = () => {
   ]);
   return (
     <>
-      <div className="w-full  h-[46.6vw] p_r rounded-[1.3vw]  flex justify-between gap-[1vw] py-[4vw]">
+      <div className="w-full  h-[50.6vw]  p_r rounded-[1.3vw]  flex justify-between gap-[1vw] py-[4vw]">
         <div className="w-full  home_abou relative  flex items-end overflow-clip">
           {/* the background image  */}
 
-          <div className="w-full h-full absolute top-[-3.9vw] left-0 ">
+          <div className="w-full h-full absolute top-[0px] left-0 ">
             <Image
               priority
               src={agile}
               alt="agile image"
-              className="w-full h-[110%]"
+              className="w-full h-[100%]"
             />
           </div>
           <div className=" flex flex-col z-[20] gap-[1.3vw] h-auto w-full">
