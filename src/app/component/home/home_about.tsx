@@ -19,12 +19,12 @@ const Home_about = () => {
         <div className="w-full  home_abou relative  flex items-end overflow-clip">
           {/* the background image  */}
 
-          <div className="w-full h-full absolute top-[-6.7vw] left-0 ">
+          <div className="w-full h-full absolute top-[-3.9vw] left-0 ">
             <Image
               priority
               src={agile}
               alt="agile image"
-              className="w-full h-[120%]"
+              className="w-full h-[110%]"
             />
           </div>
           <div className=" flex flex-col z-[20] gap-[1.3vw] h-auto w-full">
