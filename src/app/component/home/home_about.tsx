@@ -28,9 +28,7 @@ const Home_about = () => {
             />
           </div>
           <div className=" flex flex-col z-[20] gap-[1.3vw] h-auto w-full">
-            <h3 className="px-[1.3vw] py-[0.7vw] border-white border rounded-[1.3vw] text-white w-fit text-[1vw]">
-              About Us
-            </h3>
+            <h3 className="px-[1.3vw] py-[0.7vw]  rounded-[1.3vw] text-white w-fit text-[1vw]"></h3>
             <h1 className="text-[2vw] nova capitalize text-white ">
               We Remain <br /> agile and <br /> adaptable
             </h1>
