@@ -10,7 +10,19 @@ import aeroplane_malkaine from "../../../../public/home/home_service.webp";
 import hand_left from "../../../../public/home/hand_left.webp";
 import hand_right from "../../../../public/home/hand_right.webp";
 import hand_middle from "../../../../public/home/hand_middle.webp";
+import imag1 from "../../../../public/home/img1.png";
+import imag2 from "../../../../public/home/img2.png";
+import imag3 from "../../../../public/home/img3.png";
+import imag4 from "../../../../public/home/img4.png";
+import imag5 from "../../../../public/home/img5.png";
+import imag6 from "../../../../public/home/img6.png";
+import imag7 from "../../../../public/home/img7.png";
+import imag8 from "../../../../public/home/img8.png";
+import imag9 from "../../../../public/home/img9.png";
+import imag10 from "../../../../public/home/img10.png";
+import imag11 from "../../../../public/home/img11.png";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 // import { useInView } from "react-cool-inview";
 
 const Hands = (props: any) => {
@@ -22,6 +34,95 @@ const Hands = (props: any) => {
   const outref = useRef(null);
   const isoutview = useInView(outref);
   const isInView = useInView(ref);
+  const [c_logo, setc_logo] = useState([
+    {
+      img: imag1,
+      class: "home_edge",
+      bg: "home_black_bg",
+      top: "0px",
+      left: "52.2vw",
+      right: "0px",
+    },
+    {
+      img: imag2,
+      class: "home_edge",
+      bg: "home_black_bg",
+      top: "11.6vw",
+      left: "0px",
+      right: "0px",
+    },
+    {
+      img: imag3,
+
+      bg: "home_black_bg",
+      top: "11.6vw",
+      left: "11.6vw",
+      right: "0px",
+    },
+    {
+      img: imag4,
+
+      bg: "home_black_bg",
+      top: "11.6vw",
+      left: "23.2vw",
+      right: "0px",
+    },
+    {
+      img: imag5,
+
+      bg: "home_black_bg",
+      top: "11.6vw",
+      left: "34.8vw",
+      right: "0px",
+    },
+    {
+      img: imag6,
+
+      bg: "home_black_bg",
+      top: "11.6vw",
+      left: "46.4vw",
+      right: "0px",
+    },
+    {
+      img: imag7,
+
+      bg: "home_black_bg",
+      top: "11.6vw",
+      left: "58vw",
+      right: "0px",
+    },
+    {
+      img: imag10,
+
+      bg: "home_black_bg",
+      top: "23.2vw",
+      left: "34.8vw",
+      right: "0px",
+    },
+    {
+      img: imag11,
+
+      bg: "home_black_bg",
+      top: "23.2vw",
+      left: "46.4vw",
+      right: "0px",
+    },
+    {
+      img: imag9,
+      class: "home_edge",
+      bg: "home_black_bg",
+      top: "23.2vw",
+      left: "",
+      right: "0px",
+    },
+    {
+      img: imag10,
+      bg: "home_black_bg",
+      top: "23.2vw",
+      left: "",
+      right: "11.8vw",
+    },
+  ]);
 
   //
   //
@@ -29,7 +130,7 @@ const Hands = (props: any) => {
   return (
     <>
       <div className="w-full  p_r pt-[6vw] pb-[8vw] h-auto" ref={ref}>
-        <div className="w-full h-[40vw]  relative flex flex-col gap-[4.7vw]">
+        <div className="w-full h-[55vw]  relative flex flex-col gap-[4vw]">
           <div className="flex z-[2] flex-col text-white nova text-[2.7vw]">
             <p className="font-[700]">Our Top</p>
             <p className=" px-[4.7vw]  italic font-light">Client Logos</p>
@@ -57,8 +158,68 @@ const Hands = (props: any) => {
               </p>
             </div>
           </div>
-          <div className="border2 w-full h-auto">
+          <div className=" w-full h-[86.9vw] relative">
+            {/* this is the middle div */}
+            <div
+              className="w-[50vw] absolute left-[10vw] top-[16.95vw]"
+              style={{ border: "1px solid grey", borderStyle: "dashed" }}
+            ></div>
+
+            {/* this is for the long and short dive that connect below */}
+            <div
+              className="w-[50vw] absolute left-[40vw] top-[28.55vw]"
+              style={{ border: "1px solid grey", borderStyle: "dashed" }}
+            ></div>
+            {/* this is the first line out of the tow that exist on the divs */}
+            <div
+              className="h-[10vw] absolute left-[40.15vw] top-[16.95vw]"
+              style={{ border: "1px solid grey", borderStyle: "dashed" }}
+            ></div>
+            {/* this is the second div */}
+            <div
+              className="h-[10vw] absolute left-[51.75vw] top-[16.95vw]"
+              style={{ border: "1px solid grey", borderStyle: "dashed" }}
+            ></div>
+            {/* this is the first bent line  div */}
+            <div
+              className="h-[10vw] absolute left-[56vw] top-[4.8vw]"
+              style={{
+                border: "1px solid grey",
+                borderStyle: "dashed",
+                rotate: "30deg",
+              }}
+            ></div>
+            {/* this is the second bent line  div */}
+            <div
+              className="h-[30vw] absolute left-[68vw] top-[5.8vw]"
+              style={{
+                border: "1px solid grey",
+                borderStyle: "dashed",
+                rotate: "-38deg",
+              }}
+            ></div>
             {/* tomorrow i would work on this  */}
+            {c_logo.map((e: any, index: any) => {
+              return (
+                <Link
+                  href="/"
+                  key={index}
+                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw]`}
+                  style={{
+                    top: e.top,
+                    right: e.right,
+                    left: e.left,
+                    border: "0.05vw solid white",
+                  }}
+                >
+                  <Image
+                    src={e.img}
+                    alt={"client logos"}
+                    className="w-fit h-auto"
+                  />
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
