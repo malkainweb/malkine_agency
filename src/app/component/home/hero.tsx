@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   useTransform,
   motion,
@@ -19,6 +19,7 @@ const Home_hero = () => {
   const [c_opacity, setc_opacity] = useState<any>(1);
   const [general, setgeneral] = useState<any>("0vw");
   const { scrollY } = useScroll();
+  const [check, setcheck] = useState(1);
   const width = globalThis.innerWidth;
   const calcwidth = width * 2;
 
@@ -65,6 +66,13 @@ const Home_hero = () => {
     setc_opacity(latest);
   });
 
+  useEffect(() => {
+    setanimate_text("translateX(50vw)");
+    setgeneral("0vw ");
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       {" "}

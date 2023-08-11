@@ -57,13 +57,9 @@ const Hands = (props: any) => {
               </p>
             </div>
           </div>
-          <Image
-            priority
-            src={client_logo}
-            alt="clients logo"
-            className="z-[1] w-[60%]  h-fit absolute bottom-0 left-[50%]"
-            style={{ transform: "translateX(-50%)" }}
-          />
+          <div className="border2 w-full h-auto">
+            {/* tomorrow i would work on this  */}
+          </div>
         </div>
       </div>
       {/* logo is foound up  */}
