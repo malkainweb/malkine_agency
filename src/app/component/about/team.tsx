@@ -89,7 +89,7 @@ const Team = () => {
           {team.map((main: any, index: any) => {
             return (
               <div
-                className="bg-white rounded-[0.7vw] px-[3.3vw] py-[4.6vw] sm:w-[100%] w-[48%] h-auto  flex justify-between items-center gap-[3vw] sm:gap-[6vw]"
+                className="bg-white rounded-[0.7vw] sm:rounded-[2.5vw] px-[3.3vw] py-[4.6vw] sm:w-[100%] w-[48%] h-auto  flex justify-between items-center gap-[3vw] sm:gap-[6vw]"
                 key={index}
               >
                 <div className="w-auto h-[24vw] sm:w-[22vw] sm:h-fit flex  justify-center items-center ">
