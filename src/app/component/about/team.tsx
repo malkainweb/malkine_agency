@@ -66,51 +66,58 @@ const Team = () => {
 
   return (
     <>
-      <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] sm:pt-[40vw] pb-[6.7vw] p_r">
+      <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] sm:pt-[42vw] pb-[6.7vw] p_r">
         {/* first section */}
-        <div className="flex flex-col justify-center items-center gap-[1.33vw]">
-          <h1 className="nova text-[4.27vw] text-white">Our vision</h1>
-          <p className="text-[#c3c2c2] text-[1.33vw] text-center nova font-[300]">
+        <div className="flex flex-col justify-center items-center gap-[1.33vw] sm:gap-[6px]">
+          <h1 className="nova text-[4.27vw] sm:text-[8vw] text-white">
+            Our vision
+          </h1>
+          <p className="text-[#c3c2c2] text-[1.33vw] text-center nova font-[300] sm:hidden">
             <span className="font-[700] text-white"> Our team</span> works hard
             to create profound design asethetics that <br />
             are well crafted . We explore and push boundaries
           </p>
+          <p className="text-[#c3c2c2] hidden sm:block text-[3.5vw] text-center nova font-[300]">
+            <span className="font-[700] text-white"> Our team</span> works hard
+            to create profound design <br /> asethetics that are well crafted .
+            We explore and <br /> push boundaries
+          </p>
         </div>
 
         {/* second section */}
-        <div className="w-full h-auto flex flex-wrap justify-between gap-[3.33vw] ">
+        <div className="w-full h-auto flex flex-wrap justify-between gap-[3.33vw] sm:gap-[8vw]  ">
           {team.map((main: any, index: any) => {
             return (
               <div
-                className="bg-white rounded-[0.7vw] px-[3.3vw] py-[4.6vw] w-[48%] h-auto  flex justify-between items-center gap-[3vw]"
+                className="bg-white rounded-[0.7vw] px-[3.3vw] py-[4.6vw] sm:w-[100%] w-[48%] h-auto  flex justify-between items-center gap-[3vw] sm:gap-[6vw]"
                 key={index}
               >
-                <div className="w-auto h-[24vw] flex  justify-center items-center ">
+                <div className="w-auto h-[24vw] sm:w-[22vw] sm:h-fit flex  justify-center items-center ">
                   <Image
                     priority
                     src={main.img}
-                    className="w-fit h-full"
+                    className="w-fit h-full sm:h-fit sm:w-full"
                     alt="team members"
                   />
                 </div>
                 {/* the clients imformaiton */}
-                <div className="flex flex-col justify-between w-full  h-full">
+                <div className="flex flex-col justify-between w-full  h-full sm:gap-[21vw]">
                   <div className="flex flex-col gap-[0.66vw]">
-                    <h1 className="font-[700] nova text-[2.33vw] capitalize">
+                    <h1 className="font-[700] nova text-[2.33vw] sm:text-[4.5vw] capitalize">
                       {main.name}
                     </h1>
-                    <p className="text-[1.2vw] ">{main.des}</p>
+                    <p className="text-[1.2vw] sm:text-[3vw]">{main.des}</p>
                   </div>
                   {/* skilss section */}
                   <div className="flex flex-col gap-[0.66vw]">
-                    <p className="nova text-[1.6vw] text-[red] font-[500]">
+                    <p className="nova text-[1.6vw] sm:text-[4vw] text-[red] font-[500]">
                       Skills
                     </p>
-                    <div className="flex flex-wrap gap-[0.66vw] nova items-center">
+                    <div className="flex flex-wrap gap-[0.66vw] sm:gap-[2vw] nova items-center">
                       {main.skill.map((a: any, m: any) => {
                         return (
                           <p
-                            className="border-black border rounded-[1.6vw] text-[0.8vw]  py-[0.7vw] px-[1.07vw] uppercase"
+                            className="border-black border rounded-[1.6vw] sm:rounded-[6vw] text-[0.8vw] sm:text-[2.5vw] py-[0.7vw] px-[1.07vw] uppercase"
                             key={m}
                           >
                             {a}
