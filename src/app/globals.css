@@ -78,10 +78,18 @@ input[type="number"] {
   padding-left: 3vw;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 650px) {
   .p_r {
     padding-right: 3.75vw;
     padding-left: 3.75vw;
+  }
+
+  /* this is for the menu mobile */
+  .hide_menu {
+    display: none;
+    width: 0px;
+    position: absolute;
+    left: -50vw;
   }
 }
 
