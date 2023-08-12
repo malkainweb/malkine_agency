@@ -10,30 +10,24 @@ import aeroplane_malkaine from "../../../../public/home/home_service.webp";
 import hand_left from "../../../../public/home/hand_left.webp";
 import hand_right from "../../../../public/home/hand_right.webp";
 import hand_middle from "../../../../public/home/hand_middle.webp";
-import imag1 from "../../../../public/home/img1.png";
-import imag2 from "../../../../public/home/img2.png";
-import imag3 from "../../../../public/home/img3.png";
-import imag4 from "../../../../public/home/img4.png";
-import imag5 from "../../../../public/home/img5.png";
-import imag6 from "../../../../public/home/img6.png";
-import imag7 from "../../../../public/home/img7.png";
-import imag8 from "../../../../public/home/img8.png";
-import imag9 from "../../../../public/home/img9.png";
-import imag10 from "../../../../public/home/img10.png";
-import imag11 from "../../../../public/home/img11.png";
+import imag1 from "../../../../public/home/img1.webp";
+import imag2 from "../../../../public/home/img2.webp";
+import imag3 from "../../../../public/home/img3.webp";
+import imag4 from "../../../../public/home/img4.webp";
+import imag5 from "../../../../public/home/img5.webp";
+import imag6 from "../../../../public/home/img6.webp";
+import imag7 from "../../../../public/home/img7.webp";
+import imag9 from "../../../../public/home/img9.webp";
+import imag10 from "../../../../public/home/img10.webp";
+import imag11 from "../../../../public/home/img11.webp";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 // import { useInView } from "react-cool-inview";
 
 const Hands = (props: any) => {
-  const { general } = props;
-  const [check, setcheck] = useState("absolute");
-  const [bottom, setbottom] = useState("");
-  const [top, settop] = useState("0");
   const ref = useRef(null);
   const outref = useRef(null);
-  const isoutview = useInView(outref);
-  const isInView = useInView(ref);
+
   const [c_logo, setc_logo] = useState([
     {
       img: imag1,
@@ -132,7 +126,7 @@ const Hands = (props: any) => {
       <div className="w-full  p_r pt-[6vw] pb-[8vw] h-auto" ref={ref}>
         <div className="w-full h-[55vw]  relative flex flex-col gap-[4vw]">
           <div className="flex z-[2] flex-col text-white nova text-[2.7vw]">
-            <p className="font-[700]">Our Top</p>
+            <p className="font-[700] ">Our Top</p>
             <p className=" px-[4.7vw]  italic font-light">Client Logos</p>
           </div>
 
@@ -191,11 +185,11 @@ const Hands = (props: any) => {
             ></div>
             {/* this is the second bent line  div */}
             <div
-              className="h-[30vw] absolute left-[68vw] top-[5.8vw]"
+              className="h-[30vw] absolute left-[69vw] top-[5.8vw]"
               style={{
                 border: "1px solid grey",
                 borderStyle: "dashed",
-                rotate: "-38deg",
+                rotate: "-40deg",
               }}
             ></div>
             {/* tomorrow i would work on this  */}
@@ -204,12 +198,11 @@ const Hands = (props: any) => {
                 <Link
                   href="/"
                   key={index}
-                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw]`}
+                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw] border-[0.05vw] border-white hover:border-[0.05vw] hover:border-black`}
                   style={{
                     top: e.top,
                     right: e.right,
                     left: e.left,
-                    border: "0.05vw solid white",
                   }}
                 >
                   <Image

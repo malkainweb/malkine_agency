@@ -78,6 +78,13 @@ input[type="number"] {
   padding-left: 3vw;
 }
 
+@media screen and (max-width: 660px) {
+  .p_r {
+    padding-right: 3.75vw;
+    padding-left: 3.75vw;
+  }
+}
+
 .nova {
   font-family: nova, sans-serif;
 }

@@ -303,7 +303,7 @@ const Top_works = () => {
               return (
                 <Link
                   href="#"
-                  className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.87vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center`}
+                  className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.87vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
                   key={index}
                   style={{
                     top: e.top,
