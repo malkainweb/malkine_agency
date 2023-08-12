@@ -85,7 +85,7 @@ const Team = () => {
         </div>
 
         {/* second section */}
-        <div className="w-full h-auto flex flex-wrap justify-between gap-[3.33vw] sm:gap-[8vw]  ">
+        <div className="w-full h-auto flex sm:pb-[6vw] flex-wrap justify-between gap-[3.33vw] sm:gap-[8vw]  ">
           {team.map((main: any, index: any) => {
             return (
               <div
