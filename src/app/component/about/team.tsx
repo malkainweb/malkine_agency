@@ -66,7 +66,7 @@ const Team = () => {
 
   return (
     <>
-      <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] pb-[6.7vw] p_r">
+      <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] sm:pt-[40vw] pb-[6.7vw] p_r">
         {/* first section */}
         <div className="flex flex-col justify-center items-center gap-[1.33vw]">
           <h1 className="nova text-[4.27vw] text-white">Our vision</h1>

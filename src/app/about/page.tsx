@@ -60,7 +60,7 @@ export default function About() {
         setopacity={setopacity}
       />
 
-      <div className="w-full h-auto  pt-[150px] ">
+      <div className="w-full h-auto  pt-[10vw] sm:pt-[25vw]">
         <About_hero />
         <Team />
       </div>

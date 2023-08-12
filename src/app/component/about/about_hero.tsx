@@ -10,7 +10,7 @@ import img3 from "../../../../public/about/hero3.webp";
 const About_hero = () => {
   return (
     <>
-      <div className="w-full h-[46.6vw] py-[3.3vw] relative  bg-white">
+      <div className="w-full h-[46.6vw] sm:h-[60vw] py-[3.3vw] relative  bg-white">
         {/* the floating images start */}
 
         <Image
@@ -18,21 +18,21 @@ const About_hero = () => {
           style={{ transform: "translateX(-50%)" }}
           src={img1}
           alt="chess board"
-          className="w-[7vw] absolute left-[50%] top-[0.7vw]"
+          className="w-[7vw] absolute left-[50%] top-[0.7vw] sm:top-[-8vw] sm:w-[12vw]"
         />
         <Image
           priority
           //   style={{ transform: "translateX(-50%)" }}
           src={img2}
           alt="chess board"
-          className="w-[14vw] absolute left-[4.67vw] top-[10vw]"
+          className="w-[14vw] absolute left-[4.67vw] top-[10vw] sm:top-[-5vw] sm:w-[15vw] sm:left-[4vw]"
         />
         <Image
           priority
           //   style={{ transform: "translateX(-50%)" }}
           src={img3}
           alt="chess board"
-          className="w-[14vw] absolute right-[4.67vw] top-[13.3vw]"
+          className="w-[14vw] absolute right-[4.67vw] top-[13.3vw] sm:top-[20vw] sm:w-[16vw] sm:right-[3vw]"
         />
 
         {/* the floating images end  */}
@@ -41,18 +41,25 @@ const About_hero = () => {
           style={{ transform: "translateX(-50%)" }}
           src={chess}
           alt="chess board"
-          className="w-[70vw] absolute left-[50%] bottom-[-16.6vw]"
+          className="w-[70vw] absolute left-[50%] bottom-[-16.6vw] sm:w-[95vw] sm:bottom-[-30vw]"
         />
-        <div className="w-full flex-col h-auto flex justify-center items-center gap-[1.33vw]">
-          <h1 className="text-[#424242] text-[5.33vw] text-center novabold font-bold leading-[6.7vw]">
+        <div className="w-full flex-col h-auto flex justify-center items-center gap-[1.33vw] sm:gap-[3vw] ">
+          <h1 className="text-[#424242] text-[5.33vw] sm:text-[8vw] text-center novabold font-bold leading-[6.7vw]">
             We <span className="text-[#FF0000]">integrate</span> and <br />{" "}
             <span className="text-[#000000]">collaborate</span>{" "}
             <span className="text-[#FF0000]">together.</span>
           </h1>
 
-          <p className="text-center text-[1.33vw] text-black text-opacity-[75%] nova">
+          <p className="text-center text-[1.33vw] sm:hidden text-black text-opacity-[75%] nova">
             We are digital creatives embracing the freedom to produce solutions
             that connect, <br />
+            communicate and inspire.
+          </p>
+
+          {/* this is for the mobile screen */}
+          <p className=" hidden sm:block text-center  sm:text-[3.5vw] text-black text-opacity-[75%] nova">
+            We are digital creatives embracing the <br /> freedom to produce
+            solutions that connect, <br />
             communicate and inspire.
           </p>
         </div>
