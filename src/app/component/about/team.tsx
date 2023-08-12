@@ -77,7 +77,7 @@ const Team = () => {
             to create profound design asethetics that <br />
             are well crafted . We explore and push boundaries
           </p>
-          <p className="text-[#c3c2c2] hidden sm:block text-[3.5vw] text-center nova font-[300]">
+          <p className="text-[#c3c2c2] hidden sm:block text-[3.5vw] text-center nova font-[300] w-full ">
             <span className="font-[700] text-white"> Our team</span> works hard
             to create profound design <br /> asethetics that are well crafted .
             We explore and <br /> push boundaries
