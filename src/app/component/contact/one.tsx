@@ -34,12 +34,12 @@ const One = (props: any) => {
     <>
       {/* JUST FOR THE PURPOSE OF KEEPING THE FOOTER FISWX WE IMPLEMENT THE DIV BELOW  */}
       <div className="   min-h-[60vw]">
-        <div className="w-full h-auto flex justify-center items-center px-[20vw] py-[3.3vw]">
+        <div className="w-full h-auto flex justify-center items-center px-[20vw] sm:px-[4vw] py-[3.3vw]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0, duration: 1.5 }}
-            className="w-full h-auto flex flex-col gap-[4vw] text nova "
+            className="w-full h-auto flex flex-col gap-[4vw] sm:gap-[18vw] sm:pb-[12vw] text nova "
           >
             <p className="text-[#D01717] nova ">{err}</p>
             {/* YOUR NAME  */}
@@ -110,7 +110,7 @@ const One = (props: any) => {
             {/* ctn button */}
             <div className="w-full  flex justify-end">
               <button
-                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] flex justify-center items-center gap-[0.4vw]"
+                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] flex justify-center items-center gap-[0.4vw] sm:text-[4vw]  sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
                 onClick={() => {
                   handleclick(2);
                 }}

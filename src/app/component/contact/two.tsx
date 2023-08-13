@@ -39,12 +39,12 @@ const Two = (props: any) => {
     <>
       {/* JUST FOR THE PURPOSE OF KEEPING THE FOOTER FISWX WE IMPLEMENT THE DIV BELOW  */}
       <div className="   min-h-[60vw]">
-        <div className="w-full h-auto flex justify-center items-center px-[20vw] py-[3.3vw]">
+        <div className="w-full h-auto flex justify-center items-center px-[20vw] sm:px-[4vw] py-[3.3vw]">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0, duration: 1.5 }}
-            className="w-full h-auto flex flex-col gap-[3.3vw] text nova text-white text-opacity-[50%]"
+            className="w-full h-auto flex flex-col gap-[3.3vw] text nova text-white text-opacity-[50%] sm:gap-[18vw] sm:pb-[12vw]"
           >
             <p className="text-[#D01717] nova ">{err}</p>
             {/* interested in what   */}
@@ -52,7 +52,7 @@ const Two = (props: any) => {
               <select
                 name=""
                 id=""
-                className="h-[4.7vw]  w-full bg-[#1A1A1A] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] "
+                className="h-[4.7vw]  w-full bg-[#1A1A1A] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] sm:py-[2vw] sm:h-full ease-in-out border-white focus:border-b-white text-opacity-[50%] "
                 onChange={(e) => {
                   setinterest(e.target.value);
                 }}
@@ -87,7 +87,7 @@ const Two = (props: any) => {
               <select
                 name=""
                 id=""
-                className="h-[4.7vw]  w-full bg-[#1A1A1A] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] "
+                className="h-[4.7vw]  w-full bg-[#1A1A1A] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full"
                 onChange={(e) => {
                   setbudget(e.target.value);
                 }}
@@ -116,7 +116,7 @@ const Two = (props: any) => {
               <select
                 name=""
                 id=""
-                className="h-[4.7vw]  w-full bg-[#1A1A1A]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] "
+                className="h-[4.7vw]  w-full bg-[#1A1A1A]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full"
                 onChange={(e) => {
                   sethear_us(e.target.value);
                 }}
@@ -153,7 +153,7 @@ const Two = (props: any) => {
             {/* ctn button */}
             <div className="w-full  flex justify-between">
               <button
-                className="nova  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] border-[#D01717] border2 text-white hover:bg-[#920808] flex justify-center items-center gap-[0.33vw]"
+                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] border-[#D01717] border2 text-white hover:bg-[#920808] flex justify-center items-center gap-[0.33vw] sm:text-[4vw]  sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw] sm:hover:border-[0px] sm:text-white hover:bg-[#920808]"
                 onClick={() => {
                   handleback(1);
                 }}
@@ -161,7 +161,7 @@ const Two = (props: any) => {
                 <i className="bi bi-arrow-left"></i> Back
               </button>
               <button
-                className="nova  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808]"
+                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] flex justify-center items-center gap-[0.4vw] sm:text-[4vw]  sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
                 onClick={() => {
                   handleclick(3);
                 }}

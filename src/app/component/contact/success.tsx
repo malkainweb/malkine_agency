@@ -18,20 +18,20 @@ const Success = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0, duration: 1.5 }}
-          className="w-full flex h-auto flex-col py-[6.7vw] justify-center items-center gap-[1.33vw]"
+          className="w-full flex h-auto flex-col py-[6.7vw] justify-center items-center gap-[1.33vw] sm:gap-[10vw] sm:pb-[40vw]"
         >
           <Image
             priority
             src={success}
             alt="sucees image"
-            className="w-[6.7vw] h-fit"
+            className="w-[6.7vw] h-fit sm:w-[20vw]"
           />
-          <p className="text-[2.67vw] nova text-white text-center">
+          <p className="text-[2.67vw] sm:text-[6vw] nova text-white text-center">
             Thank you! Your submission has <br /> been recieved
           </p>
           <Link
             href="/"
-            className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808]"
+            className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] sm:text-[4vw] sm:py-[3.5vw] sm:px-[11vw] sm:rounded-[9.75vw]"
           >
             Back to homepage <i className="bi bi-arrow-right"></i>
           </Link>

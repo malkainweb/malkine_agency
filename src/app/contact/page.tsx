@@ -8,7 +8,7 @@ import Two from "../component/contact/two";
 import Menu from "../component/menu";
 
 export default function Contact() {
-  const [step, setstep] = useState(1);
+  const [step, setstep] = useState(3);
   const [name, setname] = useState("");
   const [phone, setphone] = useState("");
   const [business, setbusiness] = useState("");
@@ -41,11 +41,11 @@ export default function Contact() {
           setleft={setleft}
           setopacity={setopacity}
         />
-        <div className="w-full pt-[10vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
+        <div className="w-full  pt-[10vw] sm:pt-[25vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
           {step == 3 ? (
             ""
           ) : (
-            <p className="pt-[1.33vw]">
+            <p className="pt-[1.33vw] sm:text-[8vw]">
               {" "}
               Let{"'"}s start a project <br /> together.{" "}
             </p>

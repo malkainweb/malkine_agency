@@ -20,7 +20,7 @@ const Footer = () => {
             revolutionize your brand and propel it to <br />
             unparalleled heights.
           </p>
-          <button className="nova hidden sm:block  text-[3vw] font[900]  rounded-[39px] px-[15vw] w-fit py-[4vw] bg-[#D01717] text-white hover:bg-[#920808]">
+          <button className="nova hidden sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]">
             Work with us <i className="bi bi-arrow-right"></i>
           </button>
 
