@@ -43,7 +43,7 @@ const Menu = (props: any) => {
     {
       txt: "Portfolio",
       no: "04",
-      link: "/portfolio",
+      link: "/works",
     },
     {
       txt: "Reviews",

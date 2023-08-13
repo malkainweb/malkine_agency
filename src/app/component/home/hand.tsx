@@ -198,7 +198,7 @@ const Hands = (props: any) => {
                 <Link
                   href="/"
                   key={index}
-                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw] border-[0.05vw] border-white hover:border-[0.05vw] hover:border-black`}
+                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw] hover:border-[0.05vw] hover:border-white `}
                   style={{
                     top: e.top,
                     right: e.right,
