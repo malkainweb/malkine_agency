@@ -31,11 +31,11 @@ const Hero_services = (props: any) => {
             </h1>
 
             <h1 className="sm:text-[5.5vw] hidden sm:block sm:leading-[6vw]">
-              We are a creative agency <br /> working with brands - building{" "}
-              <br />
+              We are a creative <br /> agency working with <br /> brands -
+              building <br />
               insightful strategy
             </h1>
-            <button className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]">
+            <button className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[12vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]">
               Work with us <i className="bi bi-arrow-right"></i>
             </button>
           </div>
