@@ -27,7 +27,7 @@ const Footer = () => {
           {/* the second part of the footer */}
           <div className="w-full  h-auto flex justify-between  items-center  sm:flex-col  ">
             {/* locations */}
-            <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]">
+            <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]  sm:mb-[10vw]">
               <p className="inter font-[500] sm:text-[4vw] text-[1.6vw] capitalize text-white">
                 Our Locations
               </p>
