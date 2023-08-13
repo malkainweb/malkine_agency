@@ -8,7 +8,7 @@ import Two from "../component/contact/two";
 import Menu from "../component/menu";
 
 export default function Contact() {
-  const [step, setstep] = useState(3);
+  const [step, setstep] = useState(1);
   const [name, setname] = useState("");
   const [phone, setphone] = useState("");
   const [business, setbusiness] = useState("");
