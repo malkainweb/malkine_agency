@@ -16,18 +16,22 @@ const Method = () => {
 
   return (
     <>
-      <div className="w-full px-[6.7vw] py-[3.3vw] flex flex-col gap-[3.3vw]">
-        <div className="w-full  flex justify-between items-center">
-          <div className="flex flex-col gap-[0.8vw] w-full ">
-            <p className="text-[1.6vw] nova font-[900] text-[#D01717] capitalize">
+      <div className="w-full px-[6.7vw] sm:px-[3.5vw] py-[3.3vw] flex flex-col gap-[3.3vw]">
+        <div className="w-full sm:flex-col  flex justify-between items-center sm:gap-[7vw]">
+          <div className="flex flex-col gap-[0.8vw] sm:gap-[2.5vw] w-full ">
+            <p className="text-[1.6vw] nova font-[900] text-[#D01717] capitalize sm:text-[3vw]">
               method
             </p>
-            <h1 className="novabold w-full font-[500] text-black text-[4vw] capitalize">
+            <h1 className="novabold w-full sm:hidden  font-[500] text-black text-[4vw] capitalize sm:text-[5.5vw]">
               We offer an end to end project system
             </h1>
+            <h1 className="novabold w-full hidden sm:block font-[600] text-black text-[4vw] capitalize sm:text-[5.5vw]">
+              We offer an end to <br />
+              end project system
+            </h1>
           </div>
-          <div className=" min-w-[40%] flex justify-end">
-            <p className="text-[1.4vw] text-black nova font-[300]  ">
+          <div className=" min-w-[40%] flex justify-end sm:w-full ">
+            <p className="text-[1.4vw] text-black nova font-[300] sm:hidden ">
               We offer a slue of different services <br /> which spans research,
               design, logos,
               <br /> development and deployment. We offer <br />
@@ -35,6 +39,14 @@ const Method = () => {
               <br /> all of your project needs. We are <br />
               determined, detailed, focused and goal <br />
               minded given that we aim to always push <br />
+              boundaries and think outside the box
+            </p>
+
+            <p className="sm:text-[3.5vw] hidden sm:block ">
+              We ofer a slue of different services which spans research, design,
+              logos, development and deployment. We offer an end to end system
+              where we cover all of your project needs. We are determined,
+              detailed, focused and goal minded given that we aim to always puh
               boundaries and think outside the box
             </p>
           </div>
