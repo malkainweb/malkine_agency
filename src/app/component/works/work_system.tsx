@@ -16,29 +16,29 @@ const Work_system = () => {
   ]);
   return (
     <>
-      <div className="w-full  p_r pt-[3.3vw] pb-[26.7vw]">
-        <div className="w-full flex flex-col gap-[6.7vw]">
+      <div className="w-full  p_r pt-[3.3vw] pb-[26.7vw] sm:pb-[13vw]">
+        <div className="w-full flex flex-col gap-[6.7vw] sm:gap-[13vw]">
           {/* heading */}
-          <div className="w-full flex flex-col justify-center items-center gap-[1.3vw] text-white">
-            <h3 className="text-[2.7vw]">Work System </h3>
-            <div className="w-[50%] h-[0.03vw] bg-white"></div>
+          <div className="w-full flex flex-col justify-center items-center  gap-[1.3vw] text-white">
+            <h3 className="text-[2.7vw] sm:text-[6vw]">Work System </h3>
+            <div className="w-[50%] h-[0.03vw] sm:w-full sm:h-[0.25vw] bg-[#D9D9D9]"></div>
           </div>
 
           {/* body */}
-          <div className="w-full h-[13vw]  flex flex-wrap justify-center  items-center gap-[4vw]">
+          <div className="w-full h-[13vw] sm:h-auto sm:justify-center  sm:items-center   flex flex-wrap justify-center  items-center gap-[4vw] sm:gap-[8.5vw]">
             {system.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[10vw] h-full justify-between   items-center flex flex-col "
+                  className="w-[10vw] sm:w-[25vw] sm:justify-center sm:gap-[5vw]   h-full justify-between   items-center flex flex-col "
                   key={index}
                 >
                   <Image
                     priority
                     src={e.img}
                     alt={e.txt}
-                    className="w-full h-fit "
+                    className="w-full sm:w-[70%] h-fit "
                   />
-                  <p className="text-[1.3vw] text-center uppercase text-white nova">
+                  <p className="text-[1.3vw] sm:text-[3.25vw] text-center uppercase text-white nova">
                     {e.txt}
                   </p>
                 </div>

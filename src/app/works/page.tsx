@@ -30,7 +30,7 @@ export default function Contact() {
           setright={setright}
           setopacity={setopacity}
         />
-        <div className="w-full pt-[15vw] sm:pt-[25vw]">
+        <div className="w-full pt-[15vw] sm:pt-[45vw]">
           <Top_works />
           <Work_system />
           <Footer />
