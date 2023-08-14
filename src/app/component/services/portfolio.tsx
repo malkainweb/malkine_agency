@@ -20,7 +20,7 @@ const Portfolio = () => {
         <div className="flex  justify-between  sm:gap-[4.5vw] flex-wrap w-full h-auto">
           <Link
             href="#"
-            className="w-[49.5%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
+            className="w-[49.5%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="sm:gap-[1.25vw] sm:pt-[5vw] flex flex-col gap-[10px] capitalize">
@@ -34,7 +34,7 @@ const Portfolio = () => {
           </Link>
           <Link
             href="#"
-            className="w-[24.6%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
+            className="w-[24.6%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="sm:gap-[1.25vw] sm:pt-[5vw] flex flex-col gap-[10px] capitalize">
@@ -48,7 +48,7 @@ const Portfolio = () => {
           </Link>
           <Link
             href="#"
-            className="w-[24.6%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
+            className="w-[24.6%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="sm:gap-[1.25vw] sm:pt-[5vw] flex flex-col gap-[10px] capitalize">
@@ -63,7 +63,7 @@ const Portfolio = () => {
 
           <Link
             href="#"
-            className="w-[24.6%] sm:block  hidden sm:py-[4vw]idden  port_wrap sm:h-[62.25vw] sm:w-[44vw] rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
+            className="w-[24.6%] sm:block  hidden sm:py-[4vw]idden  port_wrap sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">
               <div className="sm:gap-[1.25vw] sm:pt-[5vw] flex flex-col gap-[10px] capitalize">
