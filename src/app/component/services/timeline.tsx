@@ -13,11 +13,15 @@ const Timeline = () => {
           <div className="h-[40%] w-full  overflow-hidden timeline_right">
             {/* <Image src={timeline_top} alt="makline img" className="w-full" /> */}
           </div>
-          <div className="h-[60%] w-full  flex flex-col text-white bg-black justify-around pl-[65px]">
-            <p className="text-[#808080] text-[2.8vw] nova">Timeline</p>
-            <div className="h-[1px] w-full bg-white"></div>
-            <div className="w-full flex flex-col gap-[45px] inter  text-[20px] font-[400]">
-              <p className=" text-[2.2vw] nova font-[400]">4 - 12 Weeks</p>
+          <div className="h-[60%] w-full  flex flex-col text-white bg-black justify-around pl-[65px]  sm:pl-[4vw] sm:justify-start sm:py-[4vw] sm:gap-[7vw]">
+            <p className="text-[#808080] text-[2.8vw] nova sm:text-[4vw]">
+              Timeline
+            </p>
+            <div className="h-[1px] w-full bg-[#808080] "></div>
+            <div className="w-full flex flex-col gap-[45px] inter  text-[20px] font-[400] ">
+              <p className=" text-[2.2vw] nova font-[400] sm:text-[5vw] sm:mt-[9vw]">
+                4 - 12 Weeks
+              </p>
               <p className="text-[1.2vw] sm:hidden">
                 Lorem ipsum dolor sit amet consectetur adipisicing <br />
                 elit. Voluptatum maxime aspernatur itaque <br /> ullam

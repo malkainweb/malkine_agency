@@ -255,7 +255,7 @@ input[type="number"] {
   width: 2.7vw;
 }
 .port_wrap:hover .port_ctn {
-  border: 2px solid white;
+  border: 0.133vw solid white;
 }
 
 /* ********************THIS IS FOR TH WORKS PAGE SHA  *******************/
@@ -300,5 +300,33 @@ input[type="number"] {
   .timeline_top {
     background-image: url(../../public/services/mob_timeline.webp);
     background-position: right top;
+  }
+
+  /* for the services footer 
+   */
+  .laptop_footer_bg {
+    background-image: url(../../public/services/mobile_laptop_footer.webp);
+    background-size: cover;
+  }
+
+  /* service page  portfolio text*/
+  .port_text {
+    font-size: 5vw;
+  }
+
+  .port_first_text {
+    font-size: 3vw;
+  }
+
+  .port_ctn {
+    border: 0.25vw solid black;
+    border-radius: 100%;
+    font-size: 1.6vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    height: 11vw;
+    width: 11vw;
   }
 }
