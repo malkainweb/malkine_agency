@@ -44,7 +44,7 @@ const About_hero = () => {
           className="w-[70vw] absolute left-[50%] bottom-[-16.6vw] sm:w-[95vw] sm:bottom-[-30vw]"
         />
         <div className="w-full flex-col h-auto flex justify-center items-center gap-[1.33vw] sm:gap-[3vw] ">
-          <h1 className="text-[#424242] text-[5.33vw] sm:text-[8vw] text-center novabold font-bold leading-[6.7vw]">
+          <h1 className="text-[#424242] text-[5.33vw] sm:text-[8vw] text-center novabold font-bold leading-[6.7vw] sm:leading-[9.6vw]">
             We <span className="text-[#FF0000]">integrate</span> and <br />{" "}
             <span className="text-[#000000]">collaborate</span>{" "}
             <span className="text-[#FF0000]">together.</span>
@@ -57,7 +57,7 @@ const About_hero = () => {
           </p>
 
           {/* this is for the mobile screen */}
-          <p className=" hidden sm:block text-center  sm:text-[3.5vw] text-black text-opacity-[75%] nova">
+          <p className=" hidden sm:block text-center   sm:text-[3.5vw] text-black text-opacity-[75%] nova">
             We are digital creatives embracing the <br /> freedom to produce
             solutions that connect, <br />
             communicate and inspire.
