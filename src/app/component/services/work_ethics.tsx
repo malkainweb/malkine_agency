@@ -38,7 +38,7 @@ const Work_ethics = () => {
               built
             </p>
           </div>
-          <div className="h-[18.3vw] relative sm:h-[35vw]  w-full flex justify-center   sm:pl-[4vw]  flex-col capitalize">
+          <div className="h-[18.3vw] relative sm:h-[35vw]  w-full flex justify-center   sm:pl-[4vw]   px-[2.33vw] flex-col capitalize">
             {/* absolute items */}
             <div className="w-[80%] h-[0.07vw] bg-black  sm:h-[0.24vw] absolute top-0 left-[10%] text-center"></div>
             <div className="w-[0.07vw] h-[85%] bg-black sm:w-[0.25vw] absolute right-0 bottom-0"></div>
@@ -48,7 +48,7 @@ const Work_ethics = () => {
               deployed
             </p>
           </div>
-          <div className="h-[18.3vw] relative sm:h-[35vw]  w-full flex justify-center   sm:pl-[4vw]  flex-col capitalize">
+          <div className="h-[18.3vw] relative sm:h-[35vw]  w-full flex justify-center   sm:pl-[4vw]   px-[2.33vw] flex-col capitalize">
             {/* absolute items */}
             <div className="w-[80%] h-[0.07vw] bg-black  sm:h-[0.24vw] absolute top-0 left-[10%] text-center"></div>
             <div className="w-[0.07vw] h-[85%] bg-black sm:w-[0.25vw] absolute right-0 bottom-0 sm:hidden"></div>
