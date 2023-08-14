@@ -10,7 +10,7 @@ import img3 from "../../../../public/about/hero3.webp";
 const About_hero = () => {
   return (
     <>
-      <div className="w-full h-[46.6vw] sm:h-[60vw] py-[3.3vw] relative  bg-white">
+      <div className="w-full h-[46.6vw] sm:h-[62vw] py-[3.3vw] relative  bg-white">
         {/* the floating images start */}
 
         <Image

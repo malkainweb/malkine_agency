@@ -11,7 +11,7 @@ body {
 .outer {
   filter: grayscale(50%);
   padding-top: 6.7vw;
-  color: gray;
+  color: #363636;
   display: flex;
   width: 100%;
   height: fit-content;
@@ -62,4 +62,26 @@ body {
   z-index: 0;
   transition: clip-path 0.3s ease;
   text-shadow: 0 0 0 #111;
+}
+
+@media screen and (max-width: 650px) {
+  .inner {
+    display: inline-flex;
+    width: 69vw;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    /* padding: 100px 100px 100px 100px; */
+    height: auto;
+    font-weight: 700;
+  }
+
+  .dav {
+    display: inline-flex;
+    gap: 2vw;
+    line-height: 5.7vw;
+    padding: 7vw 0px;
+
+    font-size: 5.5vw;
+  }
 }
