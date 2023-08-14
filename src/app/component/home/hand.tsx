@@ -17,6 +17,7 @@ import imag4 from "../../../../public/home/img4.webp";
 import imag5 from "../../../../public/home/img5.webp";
 import imag6 from "../../../../public/home/img6.webp";
 import imag7 from "../../../../public/home/img7.webp";
+import imag8 from "../../../../public/home/img8.webp";
 import imag9 from "../../../../public/home/img9.webp";
 import imag10 from "../../../../public/home/img10.webp";
 import imag11 from "../../../../public/home/img11.webp";
@@ -118,13 +119,106 @@ const Hands = (props: any) => {
     },
   ]);
 
+  const [mobile, setmobile] = useState([
+    {
+      img: imag2,
+      class: "home_edge",
+      bg: "home_black_bg",
+      top: "0px",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+    {
+      img: imag3,
+      bg: "home_black_bg",
+      top: "28.5vw",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+    {
+      img: imag4,
+      bg: "home_black_bg",
+      top: "57vw",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+    {
+      img: imag5,
+      bg: "home_black_bg",
+      top: "85.5vw",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+    {
+      img: imag6,
+      bg: "home_black_bg",
+      top: "114vw",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+
+    {
+      img: imag11,
+      bg: "home_black_bg",
+      top: "114vw",
+      left: "0%",
+      right: "0px",
+    },
+    {
+      img: imag7,
+      bg: "home_black_bg",
+      top: "85.5vw",
+      left: "0%",
+      right: "0px",
+    },
+
+    {
+      img: imag7,
+      bg: "home_black_bg",
+      top: "142.5vw",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+    {
+      img: imag8,
+      bg: "home_black_bg",
+      top: "163vw",
+      left: "0%",
+      right: "0px",
+    },
+    {
+      class: "home_edge",
+
+      img: imag9,
+      bg: "home_black_bg",
+      top: "191.5vw",
+      left: "0%",
+      right: "0px",
+    },
+    {
+      class: "home_edge",
+
+      img: imag1,
+      bg: "home_black_bg",
+      top: "128.25vw",
+      left: "",
+      right: "0px",
+    },
+  ]);
+
   //
   //
 
   return (
     <>
-      <div className="w-full  p_r pt-[6vw] pb-[8vw] h-auto" ref={ref}>
-        <div className="w-full h-[55vw]  relative flex flex-col gap-[4vw]">
+      <div className="w-full  p_r  pt-[6vw] pb-[8vw] h-auto" ref={ref}>
+        <div className="w-full h-[55vw] sm:h-auto  relative flex flex-col gap-[4vw]">
           <div className="flex z-[2] flex-col text-white nova text-[2.7vw]">
             <p className="font-[700] ">Our Top</p>
             <p className=" px-[4.7vw]  italic font-light">Client Logos</p>
@@ -152,7 +246,7 @@ const Hands = (props: any) => {
               </p>
             </div>
           </div>
-          <div className=" w-full h-[86.9vw] relative">
+          <div className="sm:hidden w-full h-[86.9vw] relative">
             {/* this is the middle div */}
             <div
               className="w-[50vw] absolute left-[10vw] top-[16.95vw]"
@@ -209,6 +303,42 @@ const Hands = (props: any) => {
                     src={e.img}
                     alt={"client logos"}
                     className="w-fit h-auto"
+                  />
+                </Link>
+              );
+            })}
+          </div>
+
+          <div className="w-full  hidden sm:block relative h-[220vw]">
+            {/* this is the middle div */}
+            <div className="h-[140vw] absolute left-[50%] top-[16.95vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed translate-x-[50%]"></div>
+
+            {/* this is the start long div */}
+            <div className="h-[100vw] absolute left-[12.5vw] top-[100vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
+
+            {/* this is the slashed  long div */}
+            <div className="w-[30vw] absolute left-[12.5vw] top-[98vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
+
+            {/* this is the start long div */}
+            <div className="w-[30vw] absolute left-[12.5vw] top-[126.5vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
+
+            {mobile.map((e: any, index: any) => {
+              return (
+                <Link
+                  href="/"
+                  key={index}
+                  className={`w-[25vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[25vw] absolute rounded-[100%] px-[6vw] py-[9vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                  style={{
+                    top: e.top,
+                    right: e.right,
+                    left: e.left,
+                    transform: `translateX(${e.translate})`,
+                  }}
+                >
+                  <Image
+                    src={e.img}
+                    alt={"client logos"}
+                    className="w-full h-auto"
                   />
                 </Link>
               );
