@@ -198,7 +198,7 @@ const Hands = (props: any) => {
                 <Link
                   href="/"
                   key={index}
-                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw] hover:border-[0.05vw] hover:border-white `}
+                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                   style={{
                     top: e.top,
                     right: e.right,
@@ -224,27 +224,27 @@ const Hands = (props: any) => {
 
       {/*  */}
       <div
-        className="w-full h-[140vw]   flex hand_bg"
+        className="w-full h-[140vw] sm:h-[280vw]  flex hand_bg"
         style={{ alignItems: "flex-start" }}
       >
         <div
-          className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto "
+          className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-50%] sm:translate-x-[-5vw] "
           style={{
             position: "sticky",
             left: "50%",
             alignSelf: "flex-end",
-            transform: " translateX(-50%)",
           }}
         >
           <Image
             priority
             src={hand_middle}
             alt="work image"
-            className=" w-[45vw]  h-fit transition delay-[2s]"
+            className=" w-[45vw] sm:w-[90vw] h-fit transition delay-[2s]"
           />
         </div>
       </div>
 
+      {/* the third section */}
       <div className="py-[3.33vw] w-full h-auto p_r bg-white" ref={outref}>
         <div className="w-full flex items-end pb-[6.7vw]  h-[53.3vw] home_service  relative">
           <Image

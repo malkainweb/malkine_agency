@@ -329,4 +329,11 @@ input[type="number"] {
     height: 11vw;
     width: 11vw;
   }
+
+  .hand_bg {
+    background-image: url(../../public/home/hand_bg.webp);
+    background-size: 200vw;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
 }
