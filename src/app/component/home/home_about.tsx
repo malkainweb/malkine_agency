@@ -17,7 +17,7 @@ const Home_about = () => {
   ]);
   return (
     <>
-      <div className="w-full  h-[50.6vw] border2 sm:flex-col sm:h-auto p_r rounded-[1.3vw]  flex justify-between gap-[1vw] py-[4vw] sm:pt-[10vw] sm:pb-[15vw] sm:gap-0">
+      <div className="w-full  h-[50.6vw]  sm:flex-col sm:h-auto p_r rounded-[1.3vw]  flex justify-between gap-[1vw] py-[4vw] sm:pt-[10vw] sm:pb-[15vw] sm:gap-0">
         <div className="w-full  home_abou relative  flex items-end sm:items-start sm:h-[91vw] overflow-clip sm:pt-[9vw]">
           {/* the background image  */}
 

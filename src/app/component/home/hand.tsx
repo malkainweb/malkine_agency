@@ -217,30 +217,35 @@ const Hands = (props: any) => {
 
   return (
     <>
-      <div className="w-full  p_r  pt-[6vw] pb-[8vw] h-auto" ref={ref}>
-        <div className="w-full h-[55vw] sm:h-auto  relative flex flex-col gap-[4vw]">
-          <div className="flex z-[2] flex-col text-white nova text-[2.7vw]">
+      <div
+        className="w-full  p_r  pt-[6vw] pb-[8vw] sm:py-[15vw] h-auto"
+        ref={ref}
+      >
+        <div className="w-full h-[55vw] sm:h-auto  relative flex flex-col gap-[4vw] sm:gap-[12vw]">
+          <div className="flex z-[2] flex-col text-white nova text-[2.7vw] sm:text-[6vw]">
             <p className="font-[700] ">Our Top</p>
-            <p className=" px-[4.7vw]  italic font-light">Client Logos</p>
+            <p className=" px-[4.7vw] sm:px-[10vw]  italic font-light">
+              Client Logos
+            </p>
           </div>
 
-          <div className="w-full h-auto  flex flex-col gap-[0.2vw]">
+          <div className="w-full h-auto  flex flex-col gap-[0.2vw] sm:gap-[2vw]">
             <div className="flex">
               <div className="w-[4vw] "></div>
-              <p className="text-[#737373] capitalize">
+              <p className="text-[#737373]  sm:px-[5vw] sm:text-[4vw] capitalize">
                 Our top 12 logo designs
               </p>
             </div>
-            <div className="flex text-white ">
+            <div className="flex text-white sm:gap-[5vw] sm:pb-[10vw]">
               <div className="w-[4vw] h-full  text-[red] font-[900] text-[2.7vw] justify-center flex">
                 <Image
                   priority
                   src={add_logo}
                   alt="start logo"
-                  className=" w-[1.3vw] h-fit "
+                  className=" w-[1.3vw] sm:w-[12vw] h-fit "
                 />
               </div>
-              <p className="nova text-[1vw] font-medium">
+              <p className="nova text-[1vw] font-medium sm:text-[4vw]">
                 We design with quality and brand <br />
                 identity in view
               </p>
