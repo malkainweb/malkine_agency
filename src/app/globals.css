@@ -282,6 +282,10 @@ input[type="number"] {
   background-color: #d01717;
 }
 
+/* agile movement on the home page thats fot the animation that goes up nd down around  */
+.agile {
+  height: 17vw;
+}
 @media screen and (max-width: 650px) {
   .p_r {
     padding-right: 3.75vw;
@@ -335,5 +339,46 @@ input[type="number"] {
     background-size: 200vw;
     background-position: top center;
     background-repeat: no-repeat;
+  }
+
+  .agile {
+    height: 32vw;
+  }
+
+  .home_about_left {
+    animation-name: home_left;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: 1s ease;
+  }
+  .home_about_right {
+    animation-name: home_right;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transition: 1s ease;
+    translate: 0px -100.3vw;
+  }
+
+  @keyframes home_left {
+    0% {
+      translate: 0vw 0vw;
+    }
+    50% {
+      translate: 0vw -100.3vw;
+    }
+    100% {
+      translate: 0vw 0vw;
+    }
+  }
+  @keyframes home_right {
+    0% {
+      translate: 0vw -100.3vw;
+    }
+    50% {
+      translate: 0vw 0vw;
+    }
+    100% {
+      translate: 0vw -100.3vw;
+    }
   }
 }

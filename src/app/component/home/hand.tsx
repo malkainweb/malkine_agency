@@ -322,12 +322,18 @@ const Hands = (props: any) => {
             {/* this is the start long div */}
             <div className="w-[30vw] absolute left-[12.5vw] top-[126.5vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
 
+            {/* this is the slided first long div */}
+            <div className="h-[70vw]  absolute left-[40vw] top-[128.5vw] border-opacity-[30%] rotate-[60deg] border-[0.25vw] border-white  border-dashed "></div>
+
+            {/* this is the slided second long div */}
+            <div className="h-[30vw]  absolute right-[30vw] top-[116.5vw] border-opacity-[30%] rotate-[-70deg] border-[0.25vw] border-white  border-dashed "></div>
+
             {mobile.map((e: any, index: any) => {
               return (
                 <Link
                   href="/"
                   key={index}
-                  className={`w-[25vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[25vw] absolute rounded-[100%] px-[6vw] py-[9vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                  className={`w-[25vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[25vw] absolute rounded-[100%] px-[6vw] py-[8vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                   style={{
                     top: e.top,
                     right: e.right,
@@ -338,7 +344,7 @@ const Hands = (props: any) => {
                   <Image
                     src={e.img}
                     alt={"client logos"}
-                    className="w-full h-auto"
+                    className="w-auto h-full"
                   />
                 </Link>
               );
