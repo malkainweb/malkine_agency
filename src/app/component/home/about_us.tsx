@@ -5,28 +5,36 @@ import React from "react";
 const Home_about_us = () => {
   return (
     <>
-      <div className="w-full bg-white p_r  h-auto flex flex-col gap-[1.3vw] py-[2vw]">
+      <div className="w-full bg-white p_r sm:py-[10vw]  h-auto flex flex-col gap-[1.3vw] py-[2vw]">
         {/* heading */}
-        <div className="flex items-center gap-[1.3vw] nova">
-          <h1 className="nova text-[3.33vw] ">About Us</h1>
-          <button className="border h-fit bg-transparent border-black px-[1.3vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]">
+        <div className="flex items-center sm:items-start sm:flex-col gap-[1.3vw] nova">
+          <h1 className="nova sm:font-[600] text-[3.33vw] sm:order-1 sm:text-[10vw]">
+            About Us
+          </h1>
+          <button className="border h-fit bg-transparent border-black px-[1.3vw] rounded-[0.7vw] py-[0.7vw] text-[1vw] sm:text-[2vw] sm:rounded-[1.25vw] sm:px-[4vw] sm:py-[2vw]">
             Learn More
           </button>
         </div>
 
         {/* body of the about section */}
-        <div className="w-full  items-end gap-[10vw] h-auto flex justify-center ">
+        <div className="w-full   sm:flex-col  items-end gap-[10vw]  h-auto flex justify-center ">
           {/* image */}
-          <div className="w-[13.3vw]  h-[13.3vw]  home_about_img rounded-[0.7vw]"></div>
+          <div className="w-[13.3vw] sm:h-[41vw] sm:w-[35.7vw] sm:rounded-[1.98vw] h-[13.3vw]  home_about_img rounded-[0.7vw]"></div>
 
           {/* now the text */}
-          <div className="w-fit flex-col flex gap-[2vw] ">
-            <div className="text-[1.87vw] inter">
-              <p className="pl-[13.3vw]">
+          <div className="w-fit sm:w-full flex-col flex  sm:gap-[6vw] gap-[2vw] ">
+            <div className="text-[1.87vw] inter sm:text-[4vw] sm:flex sm:flex-col sm:gap-[8vw]">
+              <p className="pl-[13.3vw] hidden sm:block sm:pl-0 ">
+                {" "}
+                <span className="font-[900]">Malkain Designs</span> ut elit
+                volutpat <br /> aliquam. Sit sit sed te
+              </p>
+              <p className="pl-[13.3vw] sm:hidden sm:pl-0 ">
                 {" "}
                 <span className="font-[900]">Malkain Designs</span> ut elit
                 volutpat aliquam. Sit sit sed te
               </p>
+
               <p className="text-start">
                 Lorem ipsum dolor sit amet consectetur. Elit dui nulla <br />{" "}
                 gravida volutpat eget tortor proin. Posuere porttitor <br /> sed
@@ -34,12 +42,11 @@ const Home_about_us = () => {
                 suspendisse auctor. Amet elementum facilisis imperdiet
               </p>
             </div>
-            <div className="w-full flex gap-[1vw] nova uppercase items-center text-[0.8vw] ">
+            <div className="w-full flex gap-[1vw] sm:text-[1.7vw] nova uppercase items-center text-[0.8vw] sm:gap-[2vw]">
               <p>goals</p>
-              <div className="w-[40%] h-[0.07vw] bg-black"></div>
+              <div className="w-[40%] sm:w-[50%] h-[0.07vw] bg-black"></div>
               <p>
-                CREATING USER FRIENDLY, <br />
-                HIGH AESTHETICS DESIGNS
+                CREATING USER FRIENDLY, <br />b HIGH AESTHETICS DESIGNS
               </p>
             </div>
           </div>
