@@ -32,6 +32,8 @@ export default function Home() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    setanimate_text("translateX(50vw)");
+    setgeneral("0vw ");
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
