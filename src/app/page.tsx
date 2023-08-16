@@ -29,7 +29,7 @@ export default function Home() {
   const [opacity, setopacity] = useState(0.2);
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
