@@ -368,7 +368,7 @@ const Hands = (props: any) => {
 
       {/*  */}
       <div
-        className="w-full h-[140vw] sm:h-[280vw] relative flex overflow-clip "
+        className="w-full h-[140vw] sm:h-[290vw] relative flex overflow-clip "
         style={{ alignItems: "flex-start" }}
       >
         {/* hand bg */}
@@ -380,7 +380,7 @@ const Hands = (props: any) => {
         <Image
           src={mob_bg_img}
           alt="hand_bg"
-          className=" absolute top-0 left-0 w-full h-full hidden sm:block"
+          className=" absolute top-0 left-0 w-full h-[280vw] hidden sm:block"
         />
         <div
           className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-50%]  sm:translate-x-[-0vw]  "
@@ -394,7 +394,7 @@ const Hands = (props: any) => {
             priority
             src={hand_middle}
             alt="work image"
-            className=" w-[45vw] sm:w-[100vw] h-fit transition delay-[2s]"
+            className=" w-[45vw] sm:w-[100vw] h-fit  transition delay-[2s]"
           />
         </div>
       </div>
