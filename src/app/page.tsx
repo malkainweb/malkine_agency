@@ -21,10 +21,12 @@ import Home_Header from "./component/navigation/home_header";
 import Menu from "./component/menu";
 
 export default function Home() {
+  const width = globalThis.innerWidth;
+
   const [loader, setloader] = useState(true);
   const [menu, setmenu] = useState(true);
   const [left, setleft] = useState("200vh");
-  const [right, setright] = useState("-200vh");
+  const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
 

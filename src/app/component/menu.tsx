@@ -56,10 +56,11 @@ const Menu = (props: any) => {
       link: "/contact",
     },
   ]);
+  const width = globalThis.innerWidth;
 
   const handleCancel = () => {
     setleft("100%");
-    setright("-100%");
+    setright(width <= 650 ? "100%" : "-100%");
     setheight("0px");
     setopacity(0.2);
   };

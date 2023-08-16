@@ -8,6 +8,8 @@ import Two from "../component/contact/two";
 import Menu from "../component/menu";
 
 export default function Contact() {
+  const width = globalThis.innerWidth;
+
   const [step, setstep] = useState(1);
   const [name, setname] = useState("");
   const [phone, setphone] = useState("");
@@ -20,8 +22,8 @@ export default function Contact() {
   const [opacity, setopacity] = useState(0.2);
 
   // this is for the menu
-  const [left, setleft] = useState("1200vh");
-  const [right, setright] = useState("-1200vh");
+  const [left, setleft] = useState("200vh");
+  const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
   return (
     <>

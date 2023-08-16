@@ -15,16 +15,17 @@ import { useEffect, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function Services() {
+  const width = globalThis.innerWidth;
+
   // this is for the menu
   const [left, setleft] = useState("200vh");
-  const [right, setright] = useState("-200vh");
+  const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
   const [white, setwhite] = useState(0);
 
   // this function below changes the headers as being used
   const { scrollY } = useScroll();
-  const width = globalThis.innerWidth;
   const first = width * 1.13;
   const second = width * 1.8;
   const third = width * 2.4;
