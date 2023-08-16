@@ -381,4 +381,13 @@ input[type="number"] {
       translate: 0vw -100.3vw;
     }
   }
+
+  /* this is for the aim */
+  /* this is for the aim  */
+  .aim {
+    background-image: url(../../public/home/mob_aim.webp);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
 }
