@@ -8,7 +8,9 @@ const Home_mission = () => {
       <div className="w-full bg-white p_r sm:py-[12vw] h-auto flex  flex-col gap-[1.3vw] py-[3.33vw]">
         {/* heading */}
         <div className="flex items-center  gap-[1.33vw] sm:gap-[2.3vw] nova">
-          <h1 className="nova text-[3.33vw] sm:text-[6vw]">Our Mission</h1>
+          <h1 className="nova text-[3.33vw] sm:text-[6vw] sm:font-[600]">
+            Our Mission
+          </h1>
           <button className=" sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]">
             Read More
           </button>
