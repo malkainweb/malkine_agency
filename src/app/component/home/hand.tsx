@@ -7,6 +7,7 @@ import add_logo from "../../../../public/home/add_logo.png";
 
 import { useInView } from "framer-motion";
 import aeroplane_malkaine from "../../../../public/home/home_service.webp";
+import mob_aeroplane_malkaine from "../../../../public/home/mob_home_service.webp";
 import hand_left from "../../../../public/home/hand_left.webp";
 import hand_right from "../../../../public/home/hand_right.webp";
 import hand_middle from "../../../../public/home/hand_middle.webp";
@@ -400,28 +401,40 @@ const Hands = (props: any) => {
 
       {/* the third section */}
       <div className="py-[3.33vw] w-full h-auto p_r bg-white" ref={outref}>
-        <div className="w-full flex items-end pb-[6.7vw]  h-[53.3vw] home_service  relative">
+        <div className="w-full flex items-end sm:pb-[15vw] pb-[6.7vw]  h-[53.3vw] sm:h-[104vw] home_service  relative">
           <Image
             priority
             src={aeroplane_malkaine}
             alt="aeroplan malkaine"
-            className="w-full absolute top-0 left-0 h-full "
+            className="w-full absolute sm:hidden top-0 left-0 h-full "
+          />
+          <Image
+            priority
+            src={mob_aeroplane_malkaine}
+            alt="aeroplan malkaine"
+            className="w-full absolute sm:block  hidden top-0 left-0 h-full "
           />
 
-          <div className=" items-center z-[10] text-white w-full flex justify-between p_r">
+          <div className=" items-center z-[10] text-white w-full flex justify-between p_r  sm:flex-col sm:items-start sm:gap-[26.25vw] ">
             <div className="flex flex-col gap-[0.33vw] w-fit">
-              <p className="text-[3vw] inter font-medium">2023</p>
-              <p className="uppercase nova text-[0.8vw]">malkain, newyork</p>
+              <p className="text-[3vw] inter font-medium sm:text-[7.5vw]">
+                2023
+              </p>
+              <p className="uppercase nova text-[0.8vw] sm:text-[1.5vw]">
+                malkain, newyork
+              </p>
             </div>
             {/* Services we offer */}
-            <div className="flex flex-col gap-[0.7vw] text-[0.8vw]  w-fit uppercasep nova">
-              <p className="text-[3vw]">Services we offer </p>
+            <div className="flex flex-col gap-[0.7vw] text-[0.8vw]  w-fit  nova">
+              <p className="text-[3vw] sm:text-[7.79vw]">Services we offer </p>
               <div className="flex gap-[0.33vw]">
-                <div className="flex items-center  h-fit gap-[0.33vw]">
-                  <p className="uppercase ">our working system </p>
-                  <div className="w-[6.7vw] h-[0.07vw] bg-white"></div>
+                <div className="flex items-center  h-fit gap-[0.33vw] sm:gap-[2vw]">
+                  <p className="uppercase sm:text-[1.55vw]">
+                    our working system{" "}
+                  </p>
+                  <div className="w-[6.7vw] h-[0.07vw] sm:w-[28vw] sm:bg-opacity-[70%] bg-white"></div>
                 </div>
-                <p className="uppercase">
+                <p className="uppercase sm:text-[1.55vw] sm:pl-[2vw]">
                   Lets help take off your next project <br /> from end to end
                   covering from <br /> research down to deployment
                 </p>
@@ -429,8 +442,8 @@ const Hands = (props: any) => {
             </div>
           </div>
           <button
-            className="nova absolute bottom-[0.2vw] left-[50%] text-[1vw] font[900]  rounded-[2.6vw] px-[2vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808]"
-            style={{ transform: "translateX(-50%)" }}
+            className="nova absolute bottom-[0.2vw] left-[50%] text-[1vw] font[900]  rounded-[2.6vw] px-[2vw] py-[1.07vw] bg-[#D01717] text-white translate-x-[-50%] hover:bg-[#920808] sm:text-[2.5vw] sm:px-[5vw] sm:py-[2.5vw] sm:rounded-[5vw] sm:bottom-[6vw] sm:translate-x-[0%] sm:left-[3.5vw]"
+            // style={{ transform: "translateX(-50%)" }}
           >
             Work with us <i className="bi bi-arrow-right"></i>
           </button>
