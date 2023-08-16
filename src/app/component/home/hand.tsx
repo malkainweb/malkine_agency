@@ -297,7 +297,7 @@ const Hands = (props: any) => {
                 <Link
                   href="/"
                   key={index}
-                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] p-[2.7vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] py-[3.9vw] px-[3.4vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                   style={{
                     top: e.top,
                     right: e.right,
@@ -307,7 +307,7 @@ const Hands = (props: any) => {
                   <Image
                     src={e.img}
                     alt={"client logos"}
-                    className="w-fit h-auto"
+                    className="w-full h-full"
                   />
                 </Link>
               );
