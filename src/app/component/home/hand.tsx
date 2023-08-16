@@ -23,6 +23,7 @@ import imag10 from "../../../../public/home/img10.webp";
 import imag11 from "../../../../public/home/img11.webp";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import bg_img from "../../../../public/home/hand_bg.webp";
 // import { useInView } from "react-cool-inview";
 
 const Hands = (props: any) => {
@@ -365,9 +366,15 @@ const Hands = (props: any) => {
 
       {/*  */}
       <div
-        className="w-full h-[140vw] sm:h-[280vw]  flex hand_bg"
+        className="w-full h-[140vw] sm:h-[280vw] relative flex overflow-clip "
         style={{ alignItems: "flex-start" }}
       >
+        {/* hand bg */}
+        <Image
+          src={bg_img}
+          alt="hand_bg"
+          className="border2 absolute top-0 left-0 w-full h-[138vw] sm:w-[2000px]"
+        />
         <div
           className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-50%] sm:translate-x-[-5vw] "
           style={{
