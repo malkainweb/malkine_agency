@@ -82,7 +82,7 @@ const Home_hero = () => {
         transition={{ duration: 3 }}
       >
         <p className="text-[4.3vw] novabold text-center text-white font-[500] leading-[120%]">
-          The best way to predict the <br /> future is to update is
+          The best way to predict the <br /> future is to reinvent it
         </p>
 
         <motion.div

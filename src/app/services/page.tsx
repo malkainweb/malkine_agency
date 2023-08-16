@@ -11,7 +11,7 @@ import Simple from "../component/services/simple";
 import Work_ethics from "../component/services/work_ethics";
 import Timeline from "../component/services/timeline";
 import Menu from "../component/menu";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function Services() {
@@ -56,6 +56,11 @@ export default function Services() {
       setwhite(0);
     }
   });
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>
