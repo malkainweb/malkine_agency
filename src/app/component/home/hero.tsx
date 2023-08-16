@@ -13,11 +13,10 @@ import on_black from "../../../../public/home/on_laptop.webp";
 import tab from "../../../../public/home/tab.webp";
 import phone from "../../../../public/home/phone.webp";
 
-const Home_hero = () => {
+const Home_hero = (props: any) => {
+  const { general, animate_text, setgeneral, setanimate_text } = props;
   const [color, setcolor] = useState<any>("white");
-  const [animate_text, setanimate_text] = useState("translateX(50vw)");
   const [c_opacity, setc_opacity] = useState<any>(1);
-  const [general, setgeneral] = useState<any>("0vw");
   const { scrollY } = useScroll();
   const [check, setcheck] = useState(1);
   const width = globalThis.innerWidth;
@@ -66,13 +65,13 @@ const Home_hero = () => {
     setc_opacity(latest);
   });
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    setanimate_text("translateX(50vw)");
-    setgeneral("0vw ");
+  // useEffect(() => {
+  //   window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //   setanimate_text("translateX(50vw)");
+  //   setgeneral("0vw ");
 
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
   return (
     <>
       {" "}

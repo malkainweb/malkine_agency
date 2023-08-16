@@ -27,9 +27,11 @@ export default function Home() {
   const [right, setright] = useState("-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
+  const [general, setgeneral] = useState<any>("0vw");
+  const [animate_text, setanimate_text] = useState("translateX(50vw)");
 
   useEffect(() => {
-    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
@@ -58,7 +60,12 @@ export default function Home() {
           setright={setright}
           setopacity={setopacity}
         />
-        <Home_hero />
+        <Home_hero
+          general={general}
+          setgeneral={setgeneral}
+          animate_text={animate_text}
+          setanimate_text={setanimate_text}
+        />
         <Highlight />
         <Home_Team />
         <Home_about />
