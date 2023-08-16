@@ -67,9 +67,9 @@ const Home_hero = () => {
   });
 
   useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     setanimate_text("translateX(50vw)");
     setgeneral("0vw ");
-    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
