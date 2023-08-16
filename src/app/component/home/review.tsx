@@ -110,39 +110,41 @@ const Review = () => {
   };
   return (
     <>
-      <div className="w-full p_r py-[3.3vw] flex flex-col gap-[1.33vw] justify-center items-center bg-white">
-        <h1 className="text-[3.3vw] text-center novabold ">
+      <div className="w-full sm:px-0 px-[3vw] sm:py-[5vw] sm:pb-[15vw] py-[3.3vw] flex flex-col gap-[1.33vw] justify-center items-center bg-white sm:items-start">
+        <h1 className="text-[3.3vw] sm:pl-[3.75vw] text-center novabold sm:text-[6vw] sm:text-start ">
           Our Client Reviews
         </h1>
-        <div className="w-full h-[26.7vw] overflow-hidden relative">
+
+        {/* this is for the destop and the below is for the mobile */}
+        <div className="w-full h-[26.7vw] sm:h-[73.75vw] overflow-hidden sm:overflow-x-scroll relative sm:hidden">
           <motion.div
-            className="w-auto h-full  justify-center nova flex gap-[1vw] absolute overflow-hidden top-0 left-0"
+            className="w-auto h-full  justify-center nova flex gap-[1vw] absolute overflow-hidden top-0 left-0 sm:gap-[4vw]"
             animate={{ x: go }}
             transition={{ duration: 2 }}
           >
             {info.map((e: any, index: any) => {
               return (
                 <div
-                  className="w-[22.4vw] rounded-[1.3vw] bg-[#F6F6F6]  h-full flex flex-col px-[1.33vw] justify-around"
+                  className="w-[22.4vw] sm:w-[57.75vw] rounded-[1.3vw] bg-[#F6F6F6]  h-full flex flex-col px-[1.33vw] justify-around"
                   key={index}
                 >
                   <Image
                     priority
                     src={e.stars}
                     alt="stars"
-                    className="w-[6.7vw]"
+                    className="w-[6.7vw] sm:w-[20vw]"
                   />
-                  <p className="text-[1.33vw]">{e.des}</p>
+                  <p className="text-[1.33vw] sm:text-[3.82vw]">{e.des}</p>
                   <div className="w-full flex justify-end ">
                     <Image
                       priority
                       src={block_quote}
                       alt="block_quote"
-                      className="h-fit w-[2vw]"
+                      className="h-fit w-[2vw] sm:w-[5.7vw]"
                     />
                   </div>
-                  <div className="w-full flex gap-[1vw]">
-                    <div className="w-[4.7vw] h-[4.7vw] rounded-[100%]">
+                  <div className="w-full flex gap-[1vw] sm:gap-[3vw]">
+                    <div className="w-[4.7vw] h-[4.7vw] sm:w-[15.12vw] sm:h-auto rounded-[100%]">
                       <Image
                         priority
                         src={e.profile_pic}
@@ -152,10 +154,10 @@ const Review = () => {
                     </div>
 
                     <div className="w-full">
-                      <p className="text-black novabold text-[1.33vw] font-[500] capitalize">
+                      <p className="text-black novabold text-[1.33vw] font-[500] capitalize sm:text-[3.47vw]">
                         {e.name}
                       </p>
-                      <p className="text-[0.93vw] text-[#AFAFAF] ">
+                      <p className="text-[0.93vw] text-[#AFAFAF] sm:text-[2.8vw] ">
                         {e.position}
                       </p>
                     </div>
@@ -172,7 +174,60 @@ const Review = () => {
           </motion.div>
         </div>
 
-        <div className="w-[20vw]  bg-[#F6F6F6] rounded-[1vw] flex h-[0.8vw]">
+        <div className="w-full h-[26.7vw] hidden sm:block sm:h-[73.75vw] overflow-hidden sm:overflow-x-scroll relative">
+          <motion.div className="w-auto h-full  justify-center nova flex gap-[1vw] absolute overflow-hidden top-0 left-0 ">
+            {info.map((e: any, index: any) => {
+              return (
+                <div
+                  className="w-[22.4vw] sm:w-[57.75vw] rounded-[3.3vw] bg-[#F6F6F6]  h-full flex flex-col px-[2.33vw] justify-around sm:ml-[4vw]"
+                  key={index}
+                >
+                  <Image
+                    priority
+                    src={e.stars}
+                    alt="stars"
+                    className="w-[6.7vw] sm:w-[20vw]"
+                  />
+                  <p className="text-[1.33vw] sm:text-[3.82vw]">{e.des}</p>
+                  <div className="w-full flex justify-end ">
+                    <Image
+                      priority
+                      src={block_quote}
+                      alt="block_quote"
+                      className="h-fit w-[2vw] sm:w-[5.7vw]"
+                    />
+                  </div>
+                  <div className="w-full flex gap-[1vw] sm:gap-[3vw]">
+                    <div className="w-[4.7vw] h-[4.7vw] sm:w-[15.12vw] sm:h-auto rounded-[100%]">
+                      <Image
+                        priority
+                        src={e.profile_pic}
+                        alt="avatar"
+                        className="h-fit w-full"
+                      />
+                    </div>
+
+                    <div className="w-full">
+                      <p className="text-black novabold text-[1.33vw] font-[500] capitalize sm:text-[3.47vw]">
+                        {e.name}
+                      </p>
+                      <p className="text-[0.93vw] text-[#AFAFAF] sm:text-[2.8vw] ">
+                        {e.position}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+
+            {/* <div className="w-[22.4vw] border2 h-full"></div>
+            <div className="w-[22.4vw] border2 h-full"></div>
+            <div className="w-[22.4vw] border2 h-full"></div>
+            <div className="w-[22.4vw] border2 h-full"></div>
+            <div className="w-[22.4vw] border2 h-full"></div> */}
+          </motion.div>
+        </div>
+        <div className="w-[20vw] sm:hidden bg-[#F6F6F6] rounded-[1vw] flex h-[0.8vw]">
           <motion.div
             className="w-full cursor-pointer rounded-[1vw]"
             transition={{ duration: 2 }}
@@ -199,6 +254,7 @@ const Review = () => {
           ></motion.div>
         </div>
       </div>
+      <div className="hidden sm:block bg-[#080808] h-[32vw] w-full"></div>
     </>
   );
 };
