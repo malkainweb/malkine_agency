@@ -24,6 +24,7 @@ import imag11 from "../../../../public/home/img11.webp";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import bg_img from "../../../../public/home/hand_bg.webp";
+import mob_bg_img from "../../../../public/home/mob_hand_bg.webp";
 // import { useInView } from "react-cool-inview";
 
 const Hands = (props: any) => {
@@ -373,10 +374,15 @@ const Hands = (props: any) => {
         <Image
           src={bg_img}
           alt="hand_bg"
-          className="border2 absolute top-0 left-0 w-full h-[138vw] sm:w-[2000px]"
+          className=" absolute top-0 left-0 w-full h-[138vw] sm:hidden"
+        />
+        <Image
+          src={mob_bg_img}
+          alt="hand_bg"
+          className=" absolute top-0 left-0 w-full h-full hidden sm:block"
         />
         <div
-          className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-50%] sm:translate-x-[-5vw] "
+          className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-50%]  sm:translate-x-[-0vw]  "
           style={{
             position: "sticky",
             left: "50%",
@@ -387,7 +393,7 @@ const Hands = (props: any) => {
             priority
             src={hand_middle}
             alt="work image"
-            className=" w-[45vw] sm:w-[90vw] h-fit transition delay-[2s]"
+            className=" w-[45vw] sm:w-[100vw] h-fit transition delay-[2s]"
           />
         </div>
       </div>
