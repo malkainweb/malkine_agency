@@ -74,6 +74,7 @@ const Home_gallery = () => {
             return (
               <div
                 className="w-[24.75vw] h-[24.75vw]  absolute rounded-[100%]"
+                key={index}
                 style={{
                   top: e.top,
                   left: e.left,
