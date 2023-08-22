@@ -310,7 +310,7 @@ const Hands = (props: any) => {
                   <Image
                     src={e.img}
                     alt={"client logos"}
-                    className="w-full h-full"
+                    className="w-fit h-full"
                   />
                 </Link>
               );
@@ -442,7 +442,7 @@ const Hands = (props: any) => {
             </div>
           </div>
           <button
-            className="nova absolute bottom-[0.2vw] left-[50%] text-[1vw] font[900]  rounded-[2.6vw] px-[2vw] py-[1.07vw] bg-[#D01717] text-white translate-x-[-50%] hover:bg-[#920808] sm:text-[2.5vw] sm:px-[5vw] sm:py-[2.5vw] sm:rounded-[5vw] sm:bottom-[6vw] sm:translate-x-[0%] sm:left-[3.5vw]"
+            className="nova absolute bottom-[1vw] left-[50%] text-[1vw] font[900]  rounded-[2.6vw] px-[2vw] py-[1.07vw] bg-[#D01717] text-white translate-x-[-50%] hover:bg-[#920808] sm:text-[2.5vw] sm:px-[5vw] sm:py-[2.5vw] sm:rounded-[5vw] sm:bottom-[6vw] sm:translate-x-[0%] sm:left-[3.5vw]"
             // style={{ transform: "translateX(-50%)" }}
           >
             Work with us <i className="bi bi-arrow-right"></i>

@@ -7,7 +7,7 @@ import Hands from "./component/home/hand";
 import Home_hero from "./component/home/hero";
 import { useEffect, useState } from "react";
 import Home_Team from "./component/home/team";
-import Before_client_logo from "./component/home/before_client_logo";
+import Services from "./component/home/services";
 import Home_about from "./component/home/home_about";
 import Home_about_us from "./component/home/about_us";
 import Aim from "./component/home/our_aim";
@@ -64,7 +64,7 @@ export default function Home() {
         <Highlight />
         <Home_Team />
         <Home_about />
-        <Before_client_logo />
+        <Services />
         <Hands />
         <Home_about_us />
         <Home_portfolio />

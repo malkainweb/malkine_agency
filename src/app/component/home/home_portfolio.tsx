@@ -24,7 +24,7 @@ const Home_portfolio = () => {
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{ backgroundImage: "url(/home/port1.webp)" }}
               >
-                <div className="pl-[0.7vw] absolute rounded-l-[0.8vw] top-[-0.33vw] right-0 pb-[0.7vw]  pt-[0.33vw] bg-white">
+                <div className="pl-[0.7vw] absolute rounded-bl-[0.8vw] top-[-0.33vw] right-0 pb-[0.7vw]  pt-[0.33vw] bg-white">
                   <div className="text-[1.2vw] py-[0.7vw] px-[1vw] rounded-[0.8vw]  sm:rounded-[1.5vw] sm:flex sm:justify-center sm:items-center bg-black text-white sm:w-[7.5vw] sm:py-0 sm:px-0 sm:h-[6.5vw] sm:text-[3vw]">
                     {" "}
                     <i className="bi  bi-arrow-up-right"></i>
@@ -47,7 +47,7 @@ const Home_portfolio = () => {
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{ backgroundImage: "url(/home/port2.webp)" }}
               >
-                <div className="pl-[0.7vw] absolute rounded-l-[0.8vw] top-[-0.33vw] right-0 pb-[0.7vw]  pt-[0.33vw] bg-white">
+                <div className="pl-[0.7vw] absolute rounded-bl-[0.8vw] top-[-0.33vw] right-0 pb-[0.7vw]  pt-[0.33vw] bg-white">
                   <div className="text-[1.2vw] py-[0.7vw] px-[1vw] rounded-[0.8vw]  sm:rounded-[1.5vw] sm:flex sm:justify-center sm:items-center bg-black text-white sm:w-[7.5vw] sm:py-0 sm:px-0 sm:h-[6.5vw] sm:text-[3vw]">
                     {" "}
                     <i className="bi  bi-arrow-up-right"></i>
@@ -72,7 +72,7 @@ const Home_portfolio = () => {
                   backgroundImage: "url(/home/port3.webp)",
                 }}
               >
-                <div className="pl-[0.7vw] absolute rounded-l-[0.8vw] top-[-0.33vw] right-0 pb-[0.7vw]  pt-[0.33vw] bg-white">
+                <div className="pl-[0.7vw] absolute rounded-bl-[0.8vw] top-[-0.33vw] right-0 pb-[0.7vw]  pt-[0.33vw] bg-white">
                   <div className="text-[1.2vw] py-[0.7vw] px-[1vw] rounded-[0.8vw]  sm:rounded-[1.5vw] sm:flex sm:justify-center sm:items-center bg-black text-white sm:w-[7.5vw] sm:py-0 sm:px-0 sm:h-[6.5vw] sm:text-[3vw]">
                     {" "}
                     <i className="bi  bi-arrow-up-right"></i>
