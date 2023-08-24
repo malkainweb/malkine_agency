@@ -12,7 +12,12 @@ const Header_transparant = (props: any) => {
   return (
     <>
       <nav className="w-full   h-[10vw] fixed sm:h-[25vw]  z-[99] top-0 left-0  flex  p_r  items-center justify-between bg-transparent">
-        <Link href="/">{white == 1 ? <Logo_black /> : <Logo />}</Link>
+        <Link href="/" className="sm:hidden">
+          {white == 1 ? <Logo_black /> : <Logo />}
+        </Link>
+        <Link href="/" className="sm:block hidden">
+          <Logo_black />{" "}
+        </Link>
         {/* nav menus */}
         <div className="w-[31.3vw] h-[3.3vw] sm:hidden novabold rounded-[3.3vw]   flex justify-center  gap-[30px] items-center  capitalize bg-[#CED7D7] font-[200] text-[0.93vw] backdrop-blur-[25px] text-black bg-opacity-[37%]">
           <Link href="about" className="hover:text-[#afafaf]">

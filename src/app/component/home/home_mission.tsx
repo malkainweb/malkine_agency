@@ -40,6 +40,7 @@ const Home_mission = () => {
                 gravida volutpat eget tortor <br /> proin. Posuere porttitor sed
               </p>
             </div>
+
             <p className="text-center text-[1.87vw] inter  sm:hidden">
               Lorem ipsum dolor sit amet consectetur. Elit dui nulla gravida
               volutpat <br /> eget tortor proin. Posuere porttitor sed
