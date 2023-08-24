@@ -63,13 +63,13 @@ const Hero_services = (props: any) => {
 
   const width = globalThis.innerWidth;
 
-  const new_width = width * 3.5;
+  const new_width = width * 1;
 
-  const mob_new_width = width * 1.1;
+  const mob_new_width = width * 0.8;
 
-  const end_width = new_width + width * 0.8;
+  const end_width = new_width + width * 1.5;
 
-  const mob_end_width = mob_new_width + width * 2.5;
+  const mob_end_width = mob_new_width + width * 2.8;
 
   const { scrollY } = useScroll();
 
@@ -212,10 +212,10 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[150vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw] gap-[5vw] ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[150vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
-          <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
+          <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
             <p className="text-[#D01717] text-[1.6vw] sm:text-[3.5vw] font-bold">
               Services
             </p>

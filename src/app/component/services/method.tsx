@@ -23,7 +23,7 @@ const Method = () => {
 
   return (
     <>
-      <div className="w-full px-[6.7vw] sm:px-[3.5vw] py-[3.3vw] flex  flex-col gap-[3.3vw]">
+      <div className="w-full px-[6.7vw] sm:px-[3.5vw] pb-[3.3vw] flex  flex-col gap-[3.3vw]">
         <div className="w-full sm:flex-col  flex justify-between items-center sm:gap-[7vw]">
           <div className="flex flex-col gap-[0.8vw] sm:gap-[2.5vw] w-full ">
             <p className="text-[1.6vw] nova font-[900] text-[#D01717] capitalize sm:text-[3vw]">
