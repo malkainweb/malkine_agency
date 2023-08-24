@@ -189,7 +189,7 @@ const Home_hero = () => {
               />
             </motion.div>
             <motion.div
-              className="w-[100vw]  sm:h-[50vw] flex justify-center "
+              className="w-[100vw] h-[35vw]  sm:h-[50vw] flex justify-center "
               animate={{ y: "-8vw" }}
             >
               <p
@@ -210,7 +210,7 @@ const Home_hero = () => {
             {/* </div> */}
           </motion.div>
           <motion.p
-            className="text-[16.3vw] sm:text-[25vw] sm:top-[-7vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
+            className="text-[16.3vw] h-[25vw] sm:h-[35vw] sm:text-[25vw] sm:top-[-7vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
             animate={{ transform: animate_text }}
             transition={{ duration: 1 }}
             style={{
