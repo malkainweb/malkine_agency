@@ -17,10 +17,11 @@ const Home_about = () => {
   ]);
   return (
     <>
-      <div className="w-full  h-[50.6vw]  sm:flex-col sm:h-auto p_r rounded-[1.3vw]  flex justify-between gap-[1vw] py-[4vw] sm:pt-[10vw] sm:pb-[15vw] sm:gap-0">
-        <div className="w-full  home_abou relative  flex items-end sm:items-start sm:h-[91vw] overflow-clip sm:pt-[9vw]">
-          {/* the background image  */}
+      <div className="w-full  h-[50.6vw]  sm:flex-col sm:h-auto p_r rounded-[1.3vw]  flex justify-between gap-[1vw] py-[4vw] sm:pt-[10vw] sm:pb-[15vw] sm:gap-0 sm:relative">
+        <div className="w-full  h-[20vw] absolute hidden sm:block bottom-[4vw] z-[20] left-0 bg-gradient-to-t from-[black]"></div>
 
+        <div className="w-full  home_abou relative  flex items-end sm:items-start sm:h-[91vw] overflow-clip sm:pt-[9vw] sm:overflow-visible">
+          {/* the background image  */}
           <div className="w-full h-full absolute sm:bottom-[-7vw]  left-0 ">
             <Image
               priority
@@ -47,7 +48,7 @@ const Home_about = () => {
         </div>
 
         {/* second section */}
-        <div className="w-full sm:h-[100vw] sm:rounded-r-none sm:rounded-br-[5vw] sm:rounded-b-[5vw] bg-white rounded-r-[2.7vw] flex gap-[1.3vw] px-[1.3vw] sm:px-[7vw] sm:gap-[2.5vw]">
+        <div className="w-full sm:hidden sm:rounded-r-none sm:rounded-br-[5vw] sm:rounded-b-[5vw] bg-white rounded-r-[2.7vw] flex gap-[1.3vw] px-[1.3vw] sm:px-[7vw] sm:gap-[2.5vw]">
           <div className="w-full  relative overflow-hidden">
             <div className="w-full h-auto absolute top-0 left-0  gap-[1.3vw] flex flex-col overflow-hidden home_about_left">
               {arr.map((e: any, index: any) => {
