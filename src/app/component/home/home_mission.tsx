@@ -35,7 +35,7 @@ const Home_mission = () => {
                 <br /> volutpat aliquam. Sit sit sed te
               </p>
 
-              <p className=" sm:text-[4vw] sm:pt-[6vw] sm:text-end sm:pr-[10vw] sm:block hidden">
+              <p className=" sm:text-[4vw] sm:pt-[6vw] sm:text-start sm:pr-[10vw] sm:block hidden">
                 Lorem ipsum dolor sit amet consectetur. <br /> Elit dui nulla
                 gravida volutpat eget tortor <br /> proin. Posuere porttitor sed
               </p>
@@ -52,7 +52,7 @@ const Home_mission = () => {
                 volutpat <br /> eget tortor proin. Posuere porttitor sed erat
                 quisque. Donec quisque orci <br /> vestibulum suspendiss
               </p>
-              <p className=" text-end hidden sm:block">
+              <p className=" text-start hidden sm:block">
                 {" "}
                 Lorem ipsum dolor sit amet <br /> consectetur. Elit dui nulla
                 gravida <br />

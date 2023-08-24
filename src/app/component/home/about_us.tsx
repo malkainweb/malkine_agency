@@ -1,6 +1,9 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
+import mob_home_about from "../../../../public/home/mob_home_about.webp";
+import home_about_img from "../../../../public/home/home_about_img.webp";
 
 const Home_about_us = () => {
   return (
@@ -19,7 +22,12 @@ const Home_about_us = () => {
         {/* body of the about section */}
         <div className="w-full   sm:flex-col  items-end gap-[10vw]  h-auto flex justify-center ">
           {/* image */}
-          <div className="w-[13.3vw] sm:h-[41vw] sm:w-[35.7vw] sm:rounded-[1.98vw] h-[13.3vw]  home_about_img rounded-[0.7vw]"></div>
+
+          <Image
+            src={home_about_img}
+            alt="about us image"
+            className="w-[10vw]  sm:hidden h-fit"
+          />
 
           {/* now the text */}
           <div className="w-fit sm:w-full flex-col flex  sm:gap-[6vw] gap-[2vw] ">
@@ -42,6 +50,12 @@ const Home_about_us = () => {
                 suspendisse auctor. Amet elementum facilisis imperdiet
               </p>
             </div>
+
+            <Image
+              src={mob_home_about}
+              alt="about us image"
+              className="w-full hidden sm:block h-fit"
+            />
             <div className="w-full flex gap-[1vw] sm:text-[1.7vw] nova uppercase items-center text-[0.8vw] sm:gap-[2vw]">
               <p>goals</p>
               <div className="w-[40%] sm:w-[50%] h-[0.07vw] bg-black"></div>

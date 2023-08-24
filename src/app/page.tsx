@@ -10,7 +10,7 @@ import Home_Team from "./component/home/team";
 import Services from "./component/home/services";
 import Home_about from "./component/home/home_about";
 import Home_about_us from "./component/home/about_us";
-import Aim from "./component/home/our_aim";
+import Optimized from "./component/home/optimized";
 import Home_mission from "./component/home/home_mission";
 import Home_gallery from "./component/home/home_gallery";
 import Home_portfolio from "./component/home/home_portfolio";
@@ -68,7 +68,7 @@ export default function Home() {
         <Hands />
         <Home_about_us />
         <Home_portfolio />
-        <Aim />
+        <Optimized />
         <Home_mission />
         <Home_gallery />
         <Review />
