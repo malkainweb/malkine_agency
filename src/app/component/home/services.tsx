@@ -122,35 +122,35 @@ const Services = () => {
         setcheck_num(1);
       }
       if (latest >= 1 && latest <= 2) {
-        setdes_translate("translate-y-[-8vw]");
+        setdes_translate("translate-y-[-10vw]");
         setcheck_num(2);
       }
       if (latest >= 2 && latest <= 3) {
-        setdes_translate("translate-y-[-16vw]");
+        setdes_translate("translate-y-[-20vw]");
         setcheck_num(3);
       }
       if (latest >= 3 && latest <= 4) {
-        setdes_translate("translate-y-[-24vw]");
+        setdes_translate("translate-y-[-30vw]");
         setcheck_num(4);
       }
       if (latest >= 4 && latest <= 5) {
-        setdes_translate("translate-y-[-32vw]");
+        setdes_translate("translate-y-[-40vw]");
         setcheck_num(5);
       }
       if (latest >= 5 && latest <= 6) {
-        setdes_translate("translate-y-[-40vw]");
+        setdes_translate("translate-y-[-50vw]");
         setcheck_num(6);
       }
       if (latest >= 6 && latest <= 7) {
-        setdes_translate("translate-y-[-48vw]");
+        setdes_translate("translate-y-[-60vw]");
         setcheck_num(7);
       }
       if (latest >= 7 && latest <= 8) {
-        setdes_translate("translate-y-[-56vw]");
+        setdes_translate("translate-y-[-70vw]");
         setcheck_num(8);
       }
       if (latest >= 8 && latest <= 9) {
-        setdes_translate("translate-y-[-64vw]");
+        setdes_translate("translate-y-[-80vw]");
         setcheck_num(9);
       }
     }
@@ -189,18 +189,18 @@ const Services = () => {
 
       {/* second div */}
       <div
-        className="w-full h-[32vw] sm:h-[64vw]  items-end sticky top-[10vw] sm:top-[40vw]  flex "
+        className="w-full h-[32vw] sm:h-[76vw]  items-end sticky top-[10vw] sm:top-[40vw]  flex "
         style={{ overflow: "clip" }}
       >
         {/* first relative box */}
-        <div className="absolute top-0 left-0 h-[13vw] sm:h-[28vw]  w-full  bg-gradient-to-b from-[black] z-[20]"></div>
+        <div className="absolute top-0 left-0 h-[13vw] sm:h-[33vw]  w-full  bg-gradient-to-b from-[black] z-[20]"></div>
         {/* second relative box */}
-        <div className="absolute bottom-0 left-0 h-[13vw] sm:h-[28vw]  w-full  bg-gradient-to-t from-[black] z-[20]"></div>
+        <div className="absolute bottom-0 left-0 h-[13vw] sm:h-[33vw]  w-full  bg-gradient-to-t from-[black] z-[20]"></div>
         {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
 
         {/* the normaltext animation */}
         <div
-          className={`w-full h-[19vw] sm:h-[36vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10]`}
+          className={`w-full h-[19vw] sm:h-[43vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10]`}
         >
           {service_arr.map((e: any, index: any) => {
             return (
