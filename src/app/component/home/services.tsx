@@ -56,7 +56,7 @@ const Services = () => {
 
   const new_width = width * 3.5;
 
-  const mob_new_width = width * 7.7;
+  const mob_new_width = width * 7.5;
 
   const end_width = new_width + width * 0.8;
 
@@ -159,7 +159,7 @@ const Services = () => {
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw] h-[150vw] sm:h-[300vw] p_r flex flex-col gap-[6vw] ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw] h-[150vw] sm:h-[240vw] p_r flex flex-col sm:gap-[2vw] gap-[6vw] ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
