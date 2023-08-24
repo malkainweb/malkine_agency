@@ -15,7 +15,7 @@ const Home_Team = () => {
   return (
     <>
       <div
-        className={`w-full h-auto sm:h-[45vw] sm:relative hidden sm:overflow-x-hidden `}
+        className={`w-full h-auto sm:h-[45vw] sm:block sm:relative hidden sm:overflow-x-hidden `}
       >
         <div
           style={{
