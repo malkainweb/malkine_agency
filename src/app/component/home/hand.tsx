@@ -29,6 +29,9 @@ import mob_bg_img from "../../../../public/home/mob_hand_bg.webp";
 // import { useInView } from "react-cool-inview";
 
 const Hands = (props: any) => {
+  const [active, setactive] = useState(2);
+  const [go, setgo] = useState("0vw");
+
   const ref = useRef(null);
   const outref = useRef(null);
 
@@ -122,10 +125,58 @@ const Hands = (props: any) => {
     },
   ]);
 
-  const [mobile, setmobile] = useState([
+  const [mobile2, setmobile2] = useState([
+    {
+      img: imag6,
+      bg: "home_black_bg",
+      top: "0px",
+      left: "0",
+      right: "0px",
+    },
+    {
+      img: imag1,
+      bg: "home_black_bg",
+      class: "home_edge",
+      top: "0px",
+      left: "50%",
+      right: "0px",
+      translate: "-50%",
+    },
+    {
+      img: imag7,
+      bg: "home_black_bg",
+      top: "0px",
+      left: "",
+      right: "0px",
+    },
+    {
+      img: imag8,
+      bg: "home_black_bg",
+      top: "38vw",
+      left: "0px",
+      right: "",
+    },
+    {
+      img: imag9,
+      bg: "home_black_bg",
+      class: "home_edge",
+      top: "38vw",
+      left: "50%",
+      right: "",
+      translate: "-50%",
+    },
+  ]);
+  const [mobile1, setmobile1] = useState([
     {
       img: imag2,
       class: "home_edge",
+      bg: "home_black_bg",
+      top: "0px",
+      left: "0",
+      right: "0px",
+    },
+    {
+      img: imag3,
       bg: "home_black_bg",
       top: "0px",
       left: "50%",
@@ -133,33 +184,23 @@ const Hands = (props: any) => {
       translate: "-50%",
     },
     {
-      img: imag3,
-      bg: "home_black_bg",
-      top: "28.5vw",
-      left: "50%",
-      right: "0px",
-      translate: "-50%",
-    },
-    {
       img: imag4,
       bg: "home_black_bg",
-      top: "57vw",
-      left: "50%",
+      top: "0px",
+      left: "",
       right: "0px",
-      translate: "-50%",
+    },
+    {
+      img: imag10,
+      bg: "home_black_bg",
+      top: "38vw",
+      left: "0px",
+      right: "",
     },
     {
       img: imag5,
       bg: "home_black_bg",
-      top: "85.5vw",
-      left: "50%",
-      right: "0px",
-      translate: "-50%",
-    },
-    {
-      img: imag6,
-      bg: "home_black_bg",
-      top: "114vw",
+      top: "38vw",
       left: "50%",
       right: "0px",
       translate: "-50%",
@@ -168,48 +209,7 @@ const Hands = (props: any) => {
     {
       img: imag11,
       bg: "home_black_bg",
-      top: "114vw",
-      left: "0%",
-      right: "0px",
-    },
-    {
-      img: imag7,
-      bg: "home_black_bg",
-      top: "85.5vw",
-      left: "0%",
-      right: "0px",
-    },
-
-    {
-      img: imag7,
-      bg: "home_black_bg",
-      top: "142.5vw",
-      left: "50%",
-      right: "0px",
-      translate: "-50%",
-    },
-    {
-      img: imag8,
-      bg: "home_black_bg",
-      top: "163vw",
-      left: "0%",
-      right: "0px",
-    },
-    {
-      class: "home_edge",
-
-      img: imag9,
-      bg: "home_black_bg",
-      top: "191.5vw",
-      left: "0%",
-      right: "0px",
-    },
-    {
-      class: "home_edge",
-
-      img: imag1,
-      bg: "home_black_bg",
-      top: "128.25vw",
+      top: "38vw",
       left: "",
       right: "0px",
     },
@@ -317,46 +317,85 @@ const Hands = (props: any) => {
             })}
           </div>
 
-          <div className="w-full  hidden sm:block relative h-[220vw]">
-            {/* this is the middle div */}
-            <div className="h-[140vw] absolute left-[50%] top-[16.95vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed translate-x-[50%]"></div>
-
-            {/* this is the start long div */}
-            <div className="h-[100vw] absolute left-[12.5vw] top-[100vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
-
-            {/* this is the slashed  long div */}
-            <div className="w-[30vw] absolute left-[12.5vw] top-[98vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
-
-            {/* this is the start long div */}
-            <div className="w-[30vw] absolute left-[12.5vw] top-[126.5vw] border-opacity-[30%] border-[0.25vw] border-white  border-dashed "></div>
-
-            {/* this is the slided first long div */}
-            <div className="h-[70vw]  absolute left-[40vw] top-[128.5vw] border-opacity-[30%] rotate-[60deg] border-[0.25vw] border-white  border-dashed "></div>
-
-            {/* this is the slided second long div */}
-            <div className="h-[30vw]  absolute right-[30vw] top-[116.5vw] border-opacity-[30%] rotate-[-70deg] border-[0.25vw] border-white  border-dashed "></div>
-
-            {mobile.map((e: any, index: any) => {
-              return (
-                <Link
-                  href="/"
-                  key={index}
-                  className={`w-[25vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[25vw] absolute rounded-[100%] px-[6vw] py-[8vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+          <div className="w-full  hidden sm:block relative h-[100vw] ">
+            <div className="w-full h-[13vw] flex justify-center absolute bottom-[12vw] left-0">
+              <div className="w-[32vw]  flex justify-center gap-[4vw]">
+                <div
+                  className=" rounded-[100%] transition duration-[1s] flex cursor-pointer  justify-center items-center  w-[13vw] h-full"
                   style={{
-                    top: e.top,
-                    right: e.right,
-                    left: e.left,
-                    transform: `translateX(${e.translate})`,
+                    border: `0.25vw solid ${active == 1 ? "white" : "#4C4C4C"}`,
+                    color: active == 1 ? "white" : "#4C4C4C",
+                  }}
+                  onClick={() => {
+                    setactive(2);
+                    if (active == 1) {
+                      setgo("0vw");
+                    }
                   }}
                 >
-                  <Image
-                    src={e.img}
-                    alt={"client logos"}
-                    className="w-auto h-full"
-                  />
-                </Link>
-              );
-            })}
+                  <i className="bi bi-arrow-left text-[5vw]"></i>
+                </div>
+                <div
+                  className=" rounded-[100%] transition duration-[1s] flex  cursor-pointer justify-center items-center  w-[13vw] h-full"
+                  style={{
+                    border: `0.25vw solid ${active == 2 ? "white" : "#4C4C4C"}`,
+                    color: active == 2 ? "white" : "#4C4C4C",
+                  }}
+                  onClick={() => {
+                    setactive(1);
+                    if (active == 2) {
+                      setgo("-107.5vw");
+                    }
+                  }}
+                >
+                  <i className="bi bi-arrow-right text-[5vw]"></i>
+                </div>
+              </div>
+            </div>
+
+            <div
+              className="relative w-full h-auto transisition duration-[1.5s]  "
+              style={{
+                transform: `translateX(${go})`,
+              }}
+            >
+              <div className="w-[200vw] gap-[15vw] flex absolute top-0 left-0 ">
+                <div className="w-full h-[70vw] flex justify-start gap-[5.1vw] flex-wrap ">
+                  {mobile1.map((e: any, index: any) => {
+                    return (
+                      <Link
+                        href="/"
+                        key={index}
+                        className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[6vw] py-[8vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                      >
+                        <Image
+                          src={e.img}
+                          alt={"client logos"}
+                          className="w-auto h-full"
+                        />
+                      </Link>
+                    );
+                  })}
+                </div>
+                <div className="w-full h-[70vw] flex justify-start gap-[5.1vw] items-start flex-wrap ">
+                  {mobile2.map((e: any, index: any) => {
+                    return (
+                      <Link
+                        href="/"
+                        key={index}
+                        className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[6vw] py-[8vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                      >
+                        <Image
+                          src={e.img}
+                          alt={"client logos"}
+                          className="w-auto h-full"
+                        />
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

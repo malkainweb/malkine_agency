@@ -123,7 +123,7 @@ input[type="number"] {
   animation-duration: 15s;
   animation-iteration-count: infinite;
   transition: 1s ease;
-  translate: 0px -79.3vw;
+  translate: 0px -70vw;
 }
 
 @keyframes home_left {
@@ -131,7 +131,7 @@ input[type="number"] {
     translate: 0vw 0vw;
   }
   50% {
-    translate: 0vw -79.3vw;
+    translate: 0vw -70vw;
   }
   100% {
     translate: 0vw 0vw;
@@ -139,13 +139,13 @@ input[type="number"] {
 }
 @keyframes home_right {
   0% {
-    translate: 0vw -79.3vw;
+    translate: 0vw -70vw;
   }
   50% {
     translate: 0vw 0vw;
   }
   100% {
-    translate: 0vw -79.3vw;
+    translate: 0vw -70vw;
   }
 }
 
