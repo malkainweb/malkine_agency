@@ -318,7 +318,7 @@ const Hands = (props: any) => {
           </div>
 
           <div className="w-full  hidden sm:block relative h-[100vw] ">
-            <div className="w-full h-[13vw] flex justify-center absolute bottom-[12vw] left-0">
+            <div className="w-full h-[13vw] flex justify-center absolute bottom-[6vw] left-0">
               <div className="w-[32vw]  flex justify-center gap-[4vw]">
                 <div
                   className=" rounded-[100%] transition duration-[1s] flex cursor-pointer  justify-center items-center  w-[13vw] h-full"
