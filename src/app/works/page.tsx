@@ -3,7 +3,6 @@ import { useState } from "react";
 import Home_Header from "../component/navigation/home_header";
 import Footer from "../component/fotter/footer";
 import Top_works from "../component/works/top_works";
-import Work_system from "../component/works/work_system";
 import Menu from "../component/menu";
 
 export default function Contact() {
@@ -32,9 +31,8 @@ export default function Contact() {
           setright={setright}
           setopacity={setopacity}
         />
-        <div className="w-full pt-[15vw] sm:pt-[45vw]">
+        <div className="w-full pt-[15vw]  sm:pt-[45vw]">
           <Top_works />
-          <Work_system />
           <Footer />
         </div>
       </div>

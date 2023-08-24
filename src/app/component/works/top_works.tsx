@@ -364,7 +364,7 @@ const Top_works = () => {
   ]);
   return (
     <>
-      <div className="w-full h-auto flex flex-col gap-[2vw] sm:gap-[10vw] ">
+      <div className="w-full h-auto flex flex-col gap-[2vw] sm:gap-[10vw] pb-[10vw] ">
         <div className="w-full h-auto ">
           <h1 className="novabold text-[3.5vw] px-[6vw] text-white font-medium sm:text-[8vw] sm:px-[3.75vw]">
             Our Works{" "}

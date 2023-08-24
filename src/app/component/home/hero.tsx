@@ -119,7 +119,7 @@ const Home_hero = () => {
 
             <motion.div
               className="w-[100vw] flex justify-center "
-              animate={{ y: "-8vw" }}
+              animate={{ y: "-11.5vw" }}
             >
               <Image
                 priority
@@ -130,7 +130,7 @@ const Home_hero = () => {
             </motion.div>
             <motion.div
               className="w-[100vw] flex justify-center "
-              animate={{ y: "-8vw" }}
+              animate={{ y: "-12vw" }}
             >
               <Image
                 priority
