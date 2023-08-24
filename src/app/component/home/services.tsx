@@ -154,8 +154,6 @@ const Services = () => {
         setcheck_num(9);
       }
     }
-
-    console.log(latest);
   });
 
   return (
