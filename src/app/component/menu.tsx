@@ -100,7 +100,7 @@ const Menu = (props: any) => {
 
         <motion.div
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: opacity }}
-          initial={{ y: "-100%" }}
+          // initial={{ y: "-100%" }}
           transition={{ duration: 0.7 }}
           className="h-[100vh] sm:w-[100vw]  w-[70vw] px-[2.6vw]   py-[5.3vw] sm:px-[3vw] sm:py-[0px] flex justify-center items-center "
         >
