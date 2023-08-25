@@ -45,6 +45,14 @@ export default function About() {
       } else if (latest <= width * 0.675) {
         setwhite(1);
       }
+
+      if (latest >= width * 1.5) {
+        setwhite(1);
+      }
+
+      if (latest >= width * 5.7) {
+        setwhite(0);
+      }
     }
   });
 
