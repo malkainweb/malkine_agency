@@ -86,8 +86,6 @@ const Hero_services = (props: any) => {
   );
 
   useMotionValueEvent(scroll_lever, "change", (latest) => {
-    console.log(latest);
-
     if (width >= 651) {
       if (latest >= 0 && latest <= 1) {
         setdes_translate("translate-y-[0vw]");

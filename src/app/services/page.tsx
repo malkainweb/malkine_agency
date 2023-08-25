@@ -22,7 +22,7 @@ export default function Services() {
   const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
-  const [white, setwhite] = useState(0);
+  const [white, setwhite] = useState(width <= 650 ? 1 : 0);
 
   // this function below changes the headers as being used
   const { scrollY } = useScroll();
@@ -34,32 +34,65 @@ export default function Services() {
   const six = width * 4.1;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    if (latest >= first) {
-      setwhite(1);
-    } else if (latest <= first) {
-      setwhite(0);
-    }
+    console.log(latest);
+    if (width >= 651) {
+      if (latest >= width * 1.05) {
+        setwhite(1);
+      } else if (latest <= width * 1.05) {
+        setwhite(0);
+      }
 
-    if (latest >= second) {
-      setwhite(0);
-    }
+      if (latest >= width * 3.16) {
+        setwhite(0);
+      }
+      if (latest >= width * 3.7) {
+        setwhite(1);
+      }
+      if (latest >= width * 4.25) {
+        setwhite(0);
+      }
+      if (latest >= width * 4.65) {
+        setwhite(1);
+      }
+      if (latest >= width * 5.5) {
+        setwhite(0);
+      }
+      if (latest >= width * 5.9) {
+        setwhite(1);
+      }
+      if (latest >= width * 5.95) {
+        setwhite(0);
+      }
+    } else if (width <= 650) {
+      if (latest >= width * 5.75) {
+        setwhite(0);
+      } else if (latest <= width * 5.75) {
+        setwhite(1);
+      }
 
-    if (latest >= third) {
-      setwhite(1);
-    }
-    if (latest >= fourth) {
-      setwhite(0);
-    }
-    if (latest >= fifth) {
-      setwhite(1);
-    }
-    if (latest >= six) {
-      setwhite(0);
+      if (latest >= width * 6.75) {
+        setwhite(1);
+      }
+      if (latest >= width * 7.83) {
+        setwhite(0);
+      }
+      if (latest >= width * 8.45) {
+        setwhite(1);
+      }
+      if (latest >= width * 10.85) {
+        setwhite(0);
+      }
+      if (latest >= width * 11.43) {
+        setwhite(1);
+      }
+      if (latest >= width * 11.73) {
+        setwhite(0);
+      }
     }
   });
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 

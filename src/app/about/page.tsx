@@ -39,7 +39,6 @@ export default function About() {
         setwhite(0);
       }
     } else if (width <= 650) {
-      console.log(latest);
       if (latest >= width * 0.675) {
         setwhite(0);
       } else if (latest <= width * 0.675) {
