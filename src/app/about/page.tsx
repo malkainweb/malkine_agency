@@ -25,20 +25,26 @@ export default function About() {
   const third = width * 1.93;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    // console.log(third);
-    // console.log(latest);
+    if (width >= 651) {
+      if (latest >= first) {
+        setwhite(0);
+      } else if (latest <= first) {
+        setwhite(1);
+      }
 
-    if (latest >= first) {
-      setwhite(0);
-    } else if (latest <= first) {
-      setwhite(1);
-    }
-
-    if (latest >= second) {
-      setwhite(1);
-    }
-    if (latest >= third) {
-      setwhite(0);
+      if (latest >= second) {
+        setwhite(1);
+      }
+      if (latest >= third) {
+        setwhite(0);
+      }
+    } else if (width <= 650) {
+      console.log(latest);
+      if (latest >= width * 0.675) {
+        setwhite(0);
+      } else if (latest <= width * 0.675) {
+        setwhite(1);
+      }
     }
   });
 
