@@ -19,6 +19,7 @@ import Review from "./component/home/review";
 import Preloader from "./component/preloader";
 import Home_Header from "./component/navigation/home_header";
 import Menu from "./component/menu";
+import { useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function Home() {
   const width = globalThis.innerWidth;
@@ -28,6 +29,9 @@ export default function Home() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
+  const [white, setwhite] = useState(1);
+  const [nav_menu, setnav_menu] = useState(1);
+  const [nav_ham, setnav_ham] = useState(1);
   const [opacity, setopacity] = useState(0.2);
 
   useEffect(() => {
@@ -39,6 +43,83 @@ export default function Home() {
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  // this function below changes the headers as being used
+  const { scrollY } = useScroll();
+  const first = width * 0.54;
+  const second = width * 0.9;
+  const third = width * 1.93;
+
+  useMotionValueEvent(scrollY, "change", (latest) => {
+    console.log(latest);
+    if (width >= 651) {
+      if (latest >= width * 2.52) {
+        setwhite(0);
+        setnav_ham(0);
+        setnav_menu(0);
+      } else if (latest <= width * 2.52) {
+        setwhite(1);
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+
+      if (latest >= width * 2.7) {
+        setwhite(1);
+        setnav_ham(0);
+        setnav_menu(0);
+      }
+
+      if (latest >= width * 3.2) {
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+      if (latest >= width * 5) {
+        setwhite(0);
+        setnav_ham(0);
+        setnav_menu(0);
+      }
+
+      if (latest >= width * 6.5) {
+        setwhite(1);
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+      if (latest >= width * 6.9) {
+        setwhite(0);
+        setnav_ham(0);
+        setnav_menu(0);
+      }
+      if (latest >= width * 7.7) {
+        setwhite(1);
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+      if (latest >= width * 8.6) {
+        setwhite(0);
+        setnav_ham(0);
+        setnav_menu(0);
+      }
+      if (latest >= width * 10.35) {
+        setwhite(1);
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+    } else if (width <= 650) {
+      if (latest >= width * 0.675) {
+        setwhite(0);
+      } else if (latest <= width * 0.675) {
+        setwhite(1);
+      }
+
+      if (latest >= width * 1.5) {
+        setwhite(1);
+      }
+
+      if (latest >= width * 5.7) {
+        setwhite(0);
+      }
+    }
+  });
 
   return (
     <>
@@ -59,6 +140,9 @@ export default function Home() {
           setleft={setleft}
           setright={setright}
           setopacity={setopacity}
+          white={white}
+          nav_ham={nav_ham}
+          nav_menu={nav_menu}
         />
         <Home_hero />
         <Highlight />
