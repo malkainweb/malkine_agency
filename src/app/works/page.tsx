@@ -12,6 +12,9 @@ export default function Contact() {
   const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
+  const [white, setwhite] = useState(1);
+  const [nav_menu, setnav_menu] = useState(1);
+  const [nav_ham, setnav_ham] = useState(1);
 
   return (
     <>
@@ -30,6 +33,9 @@ export default function Contact() {
           setleft={setleft}
           setright={setright}
           setopacity={setopacity}
+          white={white}
+          nav_ham={nav_ham}
+          nav_menu={nav_menu}
         />
         <div className="w-full pt-[15vw]  sm:pt-[45vw]">
           <Top_works />

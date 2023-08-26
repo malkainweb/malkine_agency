@@ -67,7 +67,7 @@ body {
 @media screen and (max-width: 650px) {
   .inner {
     display: inline-flex;
-    width: 69vw;
+    width: 90vw;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;

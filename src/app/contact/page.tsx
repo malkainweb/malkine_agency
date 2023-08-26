@@ -20,6 +20,9 @@ export default function Contact() {
   const [budget, setbudget] = useState("");
   const [hear_us, sethear_us] = useState("");
   const [opacity, setopacity] = useState(0.2);
+  const [white, setwhite] = useState(1);
+  const [nav_menu, setnav_menu] = useState(1);
+  const [nav_ham, setnav_ham] = useState(1);
 
   // this is for the menu
   const [left, setleft] = useState("200vh");
@@ -42,6 +45,9 @@ export default function Contact() {
           setright={setright}
           setleft={setleft}
           setopacity={setopacity}
+          white={white}
+          nav_ham={nav_ham}
+          nav_menu={nav_menu}
         />
         <div className="w-full  pt-[10vw] sm:pt-[25vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
           {step == 3 ? (
