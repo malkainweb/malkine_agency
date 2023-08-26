@@ -120,12 +120,12 @@ const Home_hero = () => {
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
       >
-        <p className="text-[4.3vw] sm:text-[6vw] novabold text-center text-whbte font-[500] leading-[120%] sm:absolute sm:top-[58vw]  text-white ">
+        <p className="text-[4.3vw] sm:text-[6vw] novabold text-center text-whbte font-[500] leading-[120%] sm:absolute sm:top-[47vw]  text-white ">
           The best way to predict the <br /> future is to reinvent it
         </p>
 
         <motion.div
-          className="w-[100vw] min-h-[30vw] sm:h-[80vw]  overflow-visible top-[15vw] sm:top-[55vw] justify-center flex gap-[3.3vw]"
+          className="w-[100vw] min-h-[30vw] sm:h-[80vw]  overflow-visible top-[15vw] sm:top-[49vw] justify-center flex gap-[3.3vw]"
           style={{
             y: "-2vw",
             zIndex: 1,
@@ -135,7 +135,7 @@ const Home_hero = () => {
           }}
         >
           <motion.div
-            className="w-auto  absolute z-[30] top-0 left-0 h-[30vw] sm:top-[10vw]  flex  "
+            className="w-auto  absolute z-[30] top-0 left-0 h-[30vw]  sm:top-[5vw]  flex  "
             animate={{ transform: `translateX(${general})` }}
             transition={{ duration: 1 }}
           >
@@ -210,7 +210,7 @@ const Home_hero = () => {
             {/* </div> */}
           </motion.div>
           <motion.p
-            className="text-[16.3vw] h-[25vw] sm:h-[35vw] sm:text-[25vw] sm:top-[-7vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
+            className="text-[16.3vw] h-[25vw] sm:h-[35vw] sm:text-[25vw] sm:top-[-11vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
             animate={{ transform: animate_text }}
             transition={{ duration: 1 }}
             style={{
