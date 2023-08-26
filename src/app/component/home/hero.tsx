@@ -70,14 +70,17 @@ const Home_hero = () => {
       //  the option below is for mobile screens
     } else if (width <= 650) {
       // check for the first animation of te text
-      if (latest >= mob_calc_width / 5) {
+      if (latest >= mob_calc_width / 6) {
         setanimate_text("translateX(-50%)");
+      } else if (latest <= mob_calc_width / 6) {
+        setanimate_text("translateX(50vw)");
       }
+
       if (latest >= mob_calc_width / 10) {
         setcolor("black");
-      } else if (latest <= mob_calc_width / 5) {
+      } else if (latest <= mob_calc_width / 6) {
         setcolor("#1A1919");
-        setanimate_text("translateX(50vw)");
+        // setanimate_text("translateX(50vw)");
       }
 
       if (latest >= mob_calc_width / 4) {
