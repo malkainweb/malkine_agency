@@ -128,7 +128,7 @@ const Home_hero = () => {
         </p>
 
         <motion.div
-          className="w-[100vw] min-h-[30vw] sm:h-[80vw]  overflow-visible top-[15vw] sm:top-[49vw] justify-center flex gap-[3.3vw] sticky"
+          className="w-[100vw] min-h-[30vw] sm:h-[80vw] left-0 overflow-visible top-[15vw] sm:top-[49vw] justify-center flex gap-[3.3vw] sticky"
           style={{
             y: "-2vw",
             zIndex: 1,

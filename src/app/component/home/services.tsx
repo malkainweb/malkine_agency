@@ -176,7 +176,7 @@ const Services = () => {
 
       {/* second div */}
       <div
-        className="w-full h-[32vw] sm:h-[100vw]  items-end sticky top-[10vw] sm:top-[40vw]  flex "
+        className="w-full h-[32vw] sm:h-[100vw]  items-end sticky top-[10vw] sm:top-[40vw] left-0  flex "
         style={{ overflow: "clip" }}
       >
         {/* first relative box */}
