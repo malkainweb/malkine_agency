@@ -52,7 +52,7 @@ const Services = () => {
 
   const [check_num, setcheck_num] = useState(1);
 
-  const [example, setexample] = useState("sm:fixed");
+  const [example, setexample] = useState("sm:sticky");
 
   const width = globalThis.innerWidth;
 
@@ -119,6 +119,7 @@ const Services = () => {
       }
     } else if (width <= 650) {
       if (latest >= 0 && latest <= 1) {
+        setexample("sm:fixed");
         setdes_translate("translate-y-[0vw]");
         setcheck_num(1);
       }

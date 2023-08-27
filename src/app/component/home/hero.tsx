@@ -20,7 +20,7 @@ const Home_hero = () => {
   const [general, setgeneral] = useState<any>("0vw");
   const { scrollY } = useScroll();
   const [check, setcheck] = useState(1);
-  const [example, setexample] = useState("sm:fixed");
+  const [example, setexample] = useState("sm:sticky");
   const width = globalThis.innerWidth;
   const calcwidth = width * 2;
   const mob_calc_width = width * 5;
@@ -44,6 +44,7 @@ const Home_hero = () => {
       }
       if (latest >= calcwidth / 10) {
         setcolor("black");
+        setexample("sm:fixed");
       } else if (latest <= calcwidth / 5) {
         setcolor("#1A1919");
         setanimate_text("translateX(50vw)");
