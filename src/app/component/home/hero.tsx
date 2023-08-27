@@ -20,6 +20,7 @@ const Home_hero = () => {
   const [general, setgeneral] = useState<any>("0vw");
   const { scrollY } = useScroll();
   const [check, setcheck] = useState(1);
+  const [example, setexample] = useState("sm:fixed");
   const width = globalThis.innerWidth;
   const calcwidth = width * 2;
   const mob_calc_width = width * 5;
@@ -98,8 +99,10 @@ const Home_hero = () => {
       if (latest >= mob_calc_width / 2) {
         setanimate_text("translateX(-150vw)");
         setgeneral("-300vw");
+        setexample("sm:sticky");
       } else if (latest <= mob_calc_width / 2 && latest >= mob_calc_width / 3) {
         setgeneral("-200vw");
+        setexample("sm:fixed");
       }
     }
   });
@@ -128,11 +131,11 @@ const Home_hero = () => {
         </p>
 
         <motion.div
-          className="w-[100vw] min-h-[30vw] sm:h-[80vw] left-0 overflow-visible top-[15vw] sm:top-[49vw] justify-center flex gap-[3.3vw] sticky"
+          className={`w-[100vw] min-h-[30vw] sm:h-[80vw] left-0 overflow-visible top-[15vw] sm:top-[49vw] justify-center flex gap-[3.3vw] sticky ${example}`}
           style={{
             y: "-2vw",
             zIndex: 1,
-            position: "-webkit-sticky",
+            // position: "-webkit-sticky",
             // top: "15vw",
             // z: 10,
           }}

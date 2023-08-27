@@ -52,6 +52,8 @@ const Services = () => {
 
   const [check_num, setcheck_num] = useState(1);
 
+  const [example, setexample] = useState("sm:fixed");
+
   const width = globalThis.innerWidth;
 
   const new_width = width * 3.2;
@@ -81,6 +83,7 @@ const Services = () => {
       if (latest >= 0 && latest <= 1) {
         setdes_translate("translate-y-[0vw]");
         setcheck_num(1);
+        setexample("sm:fixed");
       }
       if (latest >= 1 && latest <= 2) {
         setdes_translate("translate-y-[-6vw]");
@@ -150,6 +153,7 @@ const Services = () => {
       if (latest >= 8 && latest <= 9) {
         setdes_translate("translate-y-[-96vw]");
         setcheck_num(9);
+        setexample("sm:sticky");
       }
     }
   });
@@ -176,7 +180,7 @@ const Services = () => {
 
       {/* second div */}
       <div
-        className="w-full h-[32vw] sm:h-[100vw]  items-end sticky top-[10vw] sm:top-[40vw] left-0  flex "
+        className={`w-full h-[32vw] sm:h-[100vw]  items-end sticky ${example} top-[10vw] sm:top-[40vw] left-0  flex `}
         style={{ overflow: "clip" }}
       >
         {/* first relative box */}
