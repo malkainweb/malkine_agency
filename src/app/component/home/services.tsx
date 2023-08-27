@@ -172,15 +172,6 @@ const Services = () => {
           Donec quisque orci vestibulum suspendisse auctor. Amet <br />{" "}
           facilisis elementum imperdiet{" "}
         </p>
-
-        {/* destktop text */}
-        <p className="sm:block hidden sm:text-[4vw] opacity-[60%]">
-          Lorem ipsum dolor sit amet consectetur. Elit <br /> dui nulla gravida
-          volutpat eget tortor proin. <br /> Posuere porttitor sed erat quisque.
-          Donec <br />
-          quisque orci vestibulum suspendisse auctor. <br /> Amet elementum
-          facilisis imperdiet
-        </p>
       </div>
 
       {/* second div */}
