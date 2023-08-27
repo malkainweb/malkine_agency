@@ -400,4 +400,9 @@ input[type="number"] {
     background-position: bottom top;
     background-repeat: no-repeat;
   }
+
+  /*tis is for the homepage team section no scrollbar  */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
 }
