@@ -17,6 +17,8 @@ import mob_hero from "../../../../public/services/mob_hero.webp";
 const Hero_services = (props: any) => {
   const { setleft, setright, setopacity, white } = props;
 
+  const [example, setexample] = useState("sm:sticky");
+
   const [service_arr, setservice_arr] = useState([
     {
       class: 1,
@@ -124,9 +126,14 @@ const Hero_services = (props: any) => {
         setcheck_num(9);
       }
     } else if (width <= 650) {
+      if (latest <= 0) {
+        setexample("sm:fixed");
+      }
+
       if (latest >= 0 && latest <= 1) {
         setdes_translate("translate-y-[0vw]");
         setcheck_num(1);
+        setexample("sm:sticky");
       }
       if (latest >= 1 && latest <= 2) {
         setdes_translate("translate-y-[-12vw]");
@@ -159,6 +166,7 @@ const Hero_services = (props: any) => {
       if (latest >= 8 && latest <= 9) {
         setdes_translate("translate-y-[-96vw]");
         setcheck_num(9);
+        setexample("sm:sticky");
       }
     }
   });
@@ -225,7 +233,7 @@ const Hero_services = (props: any) => {
 
         {/* second div */}
         <div
-          className="w-full h-[32vw] sm:h-[100vw]  items-end sticky top-[10vw] sm:top-[40vw]  flex "
+          className={`w-full h-[32vw] sm:h-[100vw]  items-end sticky ${example} top-[10vw] sm:top-[40vw]  flex `}
           style={{ overflow: "clip" }}
         >
           {/* first relative box */}

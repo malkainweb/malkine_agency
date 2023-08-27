@@ -62,7 +62,7 @@ const Services = () => {
 
   const end_width = new_width + width * 1;
 
-  const mob_end_width = mob_new_width + width * 2;
+  const mob_end_width = mob_new_width + width * 2.1;
 
   const { scrollY } = useScroll();
 
@@ -118,9 +118,13 @@ const Services = () => {
         setcheck_num(9);
       }
     } else if (width <= 650) {
-      if (latest >= 0 && latest <= 1) {
+      if (latest <= 0) {
         setexample("sm:fixed");
+      }
+
+      if (latest >= 0 && latest <= 1) {
         setdes_translate("translate-y-[0vw]");
+        setexample("sm:sticky");
         setcheck_num(1);
       }
       if (latest >= 1 && latest <= 2) {
