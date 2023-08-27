@@ -51,7 +51,7 @@ export default function Home() {
   const third = width * 1.93;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
+    // console.log(latest);
     if (width >= 651) {
       if (latest >= width * 2.52) {
         setwhite(0);
@@ -105,18 +105,31 @@ export default function Home() {
         setnav_menu(1);
       }
     } else if (width <= 650) {
-      if (latest >= width * 0.675) {
+      if (latest >= width * 11.7) {
         setwhite(0);
-      } else if (latest <= width * 0.675) {
+        setnav_ham(0);
+      } else if (latest <= width * 11.7) {
         setwhite(1);
+        setnav_ham(1);
       }
 
-      if (latest >= width * 1.5) {
+      if (latest >= width * 17.8) {
         setwhite(1);
       }
-
-      if (latest >= width * 5.7) {
+      if (latest >= width * 18.35) {
         setwhite(0);
+      }
+      if (latest >= width * 18.65) {
+        setwhite(1);
+        setnav_ham(1);
+      }
+      if (latest >= width * 20.3) {
+        setwhite(0);
+        setnav_ham(0);
+      }
+      if (latest >= width * 24.23) {
+        setwhite(1);
+        setnav_ham(1);
       }
     }
   });
