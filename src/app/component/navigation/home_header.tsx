@@ -35,7 +35,7 @@ const Home_Header = (props: any) => {
         </div>
         {/* menu icons */}
         <div
-          className="w-[3.8vw] p-[1vw] sm:w-[34px] sm:h-[34px] sm:p-[6px] flex justify-center items-center h-[3.8vw]  rounded-[100%] bg-[#FFFFFF] bg-opacity-[17%]   cursor-pointer hover:bg-[#c7c5c5] backdrop-blur-[25px]"
+          className="w-[3.8vw] p-[1vw] sm:w-[9vw] sm:h-[9vw] sm:p-[6px] flex justify-center items-center h-[3.8vw]  rounded-[100%] bg-[#FFFFFF] bg-opacity-[17%]   cursor-pointer hover:bg-[#c7c5c5] backdrop-blur-[25px]"
           onClick={() => {
             setleft("0");
             setright("0");

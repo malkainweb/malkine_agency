@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import One from "../component/contact/one";
 import Success from "../component/contact/success";
 import Home_Header from "../component/navigation/home_header";
@@ -28,6 +28,12 @@ export default function Contact() {
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
   const [height, setheight] = useState("0px");
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <Menu

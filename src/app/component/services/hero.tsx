@@ -202,8 +202,8 @@ const Hero_services = (props: any) => {
               building <br />
               insightful strategy
             </h1>
-            <button className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw]  sm:text-white ">
-              Work with us <i className="bi bi-arrow-right"></i>
+            <button className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw]  sm:text-white sm:mt-[2vw] ">
+              Work with us <i className="bi bi-arrow-right sm:hidden"></i>
             </button>
           </div>
         </div>
@@ -242,9 +242,9 @@ const Hero_services = (props: any) => {
               return (
                 <p
                   key={index}
-                  className={`w-full text-[4.2vw] sm:text-[4.3vw] h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
-                    e.class == check_num ? "black" : "black"
-                  }]  font-[${e.class == check_num ? 700 : 500}] `}
+                  className={`w-full text-[4.2vw] sm:text-[4.5vw] h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
+                    e.class == check_num ? "#D01717" : "black"
+                  }]  `}
                 >
                   {e.des}
                 </p>
