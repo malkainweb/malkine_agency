@@ -24,7 +24,6 @@ const ContentLine = (props: any) => {
     offset: ["end center", "start start"],
   });
 
-  // console.log(scrollY);
   const scrollValue = useTransform(scrollYProgress, [0, 0.01], ["100%", "0%"]);
   const clipPathVal = useMotionTemplate`inset(0% ${scrollValue} 0% 0%)`;
 

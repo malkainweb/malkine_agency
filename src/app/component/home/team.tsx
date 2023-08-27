@@ -33,7 +33,6 @@ const Home_Team = () => {
 
   // use motion values to console .log
   useMotionValueEvent(scroll_lever, "change", (latest) => {
-    console.log(latest);
     setindicator(latest);
   });
   return (

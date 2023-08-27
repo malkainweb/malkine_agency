@@ -34,7 +34,6 @@ export default function Services() {
   const six = width * 4.1;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    console.log(latest);
     if (width >= 651) {
       if (latest >= width * 1.05) {
         setwhite(1);

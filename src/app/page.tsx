@@ -51,7 +51,6 @@ export default function Home() {
   const third = width * 1.93;
 
   useMotionValueEvent(scrollY, "change", (latest) => {
-    // console.log(latest);
     if (width >= 651) {
       if (latest >= width * 2.52) {
         setwhite(0);
