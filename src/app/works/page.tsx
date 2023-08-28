@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Home_Header from "../component/navigation/home_header";
 import Footer from "../component/fotter/footer";
 import Top_works from "../component/works/top_works";
@@ -15,6 +15,12 @@ export default function Contact() {
   const [white, setwhite] = useState(1);
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   return (
     <>

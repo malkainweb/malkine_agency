@@ -95,12 +95,13 @@ const Menu = (props: any) => {
                 Lets help bring your amazing <br />
                 idea to life
               </p>
-              <Link
-                href="#"
-                className="novabold text-[1.6vw] absolute bottom-[-3vw] text-black"
+
+              <a
+                href="mailto:info@mailgo.dev"
+                className="novabold text-[1.6vw] absolute bottom-[-3vw] text-black  hover:opacity-[60%] duration-[0.2s] transition"
               >
                 support@malkain.com
-              </Link>
+              </a>
             </div>
           </div>
         </motion.div>
