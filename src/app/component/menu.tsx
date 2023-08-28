@@ -41,15 +41,11 @@ const Menu = (props: any) => {
       link: "/about",
     },
     {
-      txt: "Portfolio",
+      txt: "Our works",
       no: "04",
       link: "/works",
     },
-    {
-      txt: "Reviews",
-      no: "05",
-      link: "/Reviews",
-    },
+
     {
       txt: "Contact Us",
       no: "06",
@@ -87,7 +83,7 @@ const Menu = (props: any) => {
             />
           </Link>
 
-          <div className=" h-[40vw]  sm:hidden  w-full flex justify-end  flex-col ">
+          <div className=" h-[38vw]  sm:hidden  w-full flex justify-end  flex-col ">
             {/* top-[-1.7vw] */}
 
             <div className="w-full flex flex-col gap-[15px] relative">
@@ -97,7 +93,7 @@ const Menu = (props: any) => {
               </p>
 
               <a
-                href="mailto:info@mailgo.dev"
+                href="mailto:support@malkain.com"
                 className="novabold text-[1.6vw] absolute bottom-[-3vw] text-black  hover:opacity-[60%] duration-[0.2s] transition"
               >
                 support@malkain.com
@@ -126,7 +122,7 @@ const Menu = (props: any) => {
               </div>
             </div>
 
-            <div className="w-auto  h-[40vw] sm:h-[100vw] sm:w-full gap-[30px] flex flex-col justify-between  text-white novabold ">
+            <div className="w-auto  h-[38vw] sm:h-[100vw] sm:w-full gap-[30px] flex flex-col justify-between  text-white novabold ">
               <p className="text-[1.3vw] text-[#9E9E9E] sm:hidden  opacity-0">
                 {" "}
                 i
@@ -160,7 +156,7 @@ const Menu = (props: any) => {
             </div>
 
             <Link
-              href="/"
+              href="contact"
               className="nova hidden sm:block hover:bg-[#CDCCCC] transition-all text-[14px] text-[#4B4B4B] bg-[#F3F3F3] py-[3vw] px-[4vw] rounded-[5vw]"
             >
               Become a client <i className="bi bi-arrow-right"></i>
@@ -170,7 +166,7 @@ const Menu = (props: any) => {
             <div className=" w-fit   sm:hidden h-[40vw] flex  flex-col  justify-end  ">
               <div className="flex gap-[1.3vw]  w-fit absolute top-[3vw] right-[3.5vw] items-center ">
                 <Link
-                  href="/"
+                  href="contact"
                   className="nova  hover:bg-[#CDCCCC] transition-all text-[1.33vw] text-[#4B4B4B] bg-[#F3F3F3] py-[0.75vw] px-[1.3vw] rounded-[3vw]"
                 >
                   Become a client
@@ -238,7 +234,7 @@ const Menu = (props: any) => {
             </div>
 
             <Link
-              href="/"
+              href="contact"
               className="nova hidden sm:block hover:bg-[#CDCCCC] transition-all text-[14px] text-[#4B4B4B] bg-[#F3F3F3] py-[3vw] px-[4vw] rounded-[5vw]"
             >
               Become a client <i className="bi bi-arrow-right"></i>
@@ -248,7 +244,7 @@ const Menu = (props: any) => {
             <div className=" w-fit   sm:hidden h-[40vw] flex  flex-col  justify-between ">
               <div className="flex gap-[20px] items-center">
                 <Link
-                  href="/"
+                  href="contact"
                   className="nova  hover:bg-[#CDCCCC] transition-all text-[1.33vw] text-[#4B4B4B] bg-[#F3F3F3] py-[0.75vw] px-[1.3vw] rounded-[3vw]"
                 >
                   Become a client

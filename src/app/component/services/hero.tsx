@@ -13,6 +13,7 @@ import Header_black from "../navigation/header_black_nav";
 import Image from "next/image";
 import hero from "../../../../public/services/hero.webp";
 import mob_hero from "../../../../public/services/mob_hero.webp";
+import Link from "next/link";
 
 const Hero_services = (props: any) => {
   const { setleft, setright, setopacity, white } = props;
@@ -67,9 +68,9 @@ const Hero_services = (props: any) => {
 
   const new_width = width * 1;
 
-  const mob_new_width = width * 0.8;
+  const end_width = new_width + width * 2;
 
-  const end_width = new_width + width * 1.5;
+  const mob_new_width = width * 0.8;
 
   const mob_end_width = mob_new_width + width * 2.8;
 
@@ -210,15 +211,18 @@ const Hero_services = (props: any) => {
               building <br />
               insightful strategy
             </h1>
-            <button className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw]  sm:text-white sm:mt-[2vw] ">
+            <Link
+              href={"contact"}
+              className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw]  sm:text-white sm:mt-[2vw] "
+            >
               Work with us <i className="bi bi-arrow-right sm:hidden"></i>
-            </button>
+            </Link>
           </div>
         </div>
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[150vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[200vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">

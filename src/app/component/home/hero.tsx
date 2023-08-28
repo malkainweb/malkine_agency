@@ -29,8 +29,8 @@ const Home_hero = () => {
     scrollY,
     // Map x from these values:
     [
-      width >= 651 ? calcwidth / 10 : mob_calc_width / 7,
-      width >= 651 ? calcwidth / 7 : mob_calc_width / 6,
+      width >= 651 ? calcwidth / 9 : mob_calc_width / 7,
+      width >= 651 ? calcwidth / 5 : mob_calc_width / 6,
     ],
     // Into these values:
     [1, 0],
@@ -55,12 +55,12 @@ const Home_hero = () => {
         setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= calcwidth / 4.1) {
+      if (latest >= calcwidth / 3.5) {
         setgeneral("-100vw");
         setanimate_text("translateX(-150vw)");
       }
       // && latest >= calcwidth / 4.3  ::::::::::: i minus 0.3
-      if (latest <= calcwidth / 4.1) {
+      if (latest <= calcwidth / 3.5) {
         setgeneral("0vw");
         // setanimate_text("translateX(-150vw)");
       }

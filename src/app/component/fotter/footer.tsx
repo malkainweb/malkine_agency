@@ -20,9 +20,12 @@ const Footer = () => {
             revolutionize your brand and propel it to <br />
             unparalleled heights.
           </p>
-          <button className="nova hidden sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]">
+          <Link
+            href={"contact"}
+            className="nova hidden sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
+          >
             Work with us <i className="bi bi-arrow-right"></i>
-          </button>
+          </Link>
 
           {/* the second part of the footer */}
           <div className="w-full  h-auto flex justify-between  items-center  sm:flex-col  ">
@@ -121,40 +124,38 @@ const Footer = () => {
             </div>
 
             <div className=" sm:order-1 sm:my-[10vw]  p-[28.15px] sm:p-[4vw] min-w-fit  sm:w-full rounded-[2.6vw] sm:rounded-[3.5vw] bg-[#121212]  flex justify-between   capitalize  ">
-              <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] mr-[5.3vw] w-full sm:w-[35vw]   h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw]  font-[400]">
+              <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] mr-[4vw] w-full sm:w-[35vw]   h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw]  font-[400]">
                 <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
                   Discover
                 </p>
-                <Link href="#" className="hover:text-white">
+                <Link href="/" className="hover:text-white">
                   home
                 </Link>
-                <Link href="#" className="hover:text-white">
+                <Link href="services" className="hover:text-white">
                   our services
                 </Link>
-                <Link href="#" className="hover:text-white">
+                <Link href="about" className="hover:text-white">
                   about us
                 </Link>
-                <Link href="#" className="hover:text-white">
-                  portfolio
+                <Link href="works" className="hover:text-white">
+                  our works
                 </Link>
-                <Link href="#" className="hover:text-white">
-                  reviews
-                </Link>
-                <Link href="#" className="hover:text-white">
+
+                <Link href="contact" className="hover:text-white">
                   contact us
                 </Link>
               </div>
               {/* mail us and folllow us section */}
               <div className="min-w-fit sm:w-full  flex flex-col justify-between items-end   ">
-                <div className="h-full w-full gap-[2.7vw]  flex justify-between">
-                  <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
+                <div className="h-full w-full gap-[2.7vw]  flex justify-end">
+                  {/* <div className="flex flex-col gap-[10px] border2 sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
                     <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
                       Mail Us
                     </p>
                     <Link href="#" className="hover:text-white">
                       support@malkain.com
                     </Link>
-                  </div>
+                  </div> */}
                   <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] min-w-fit h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
                     <p className="text-[1.3vw] sm:text-[3.5vw] w-full text-white nova font-[700] text-center">
                       Follow Us
@@ -172,9 +173,12 @@ const Footer = () => {
                 </div>
                 {/* ctn button */}
                 <div className="w-full h-auto flex justify-end">
-                  <button className="nova  text-[1.1vw] font[900] sm:hidden rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]">
+                  <Link
+                    href={"contact"}
+                    className="nova  text-[1vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-white hover:bg-[#920808]"
+                  >
                     Work with us <i className="bi bi-arrow-right"></i>
-                  </button>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -199,12 +203,6 @@ const Footer = () => {
               className="underline underline-offset-2  hover:text-[#cfcece]"
             >
               Terms of Service
-            </Link>
-            <Link
-              href="#"
-              className="underline underline-offset-2  hover:text-[#cfcece]"
-            >
-              Cookies Settings
             </Link>
           </div>
         </div>{" "}
