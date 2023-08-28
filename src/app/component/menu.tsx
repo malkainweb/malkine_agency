@@ -77,21 +77,30 @@ const Menu = (props: any) => {
           transition={{ duration: 0.7 }}
           className="h-[100vh] hide_menu relative  w-[30vw] px-[2.6vw] pb-[5.3vw] pt-[3.35vw] flex items-center"
         >
+          {/* this link is set on position relative  */}
+          <Link href="/" className=" absolute top-[1.65vw]">
+            <Image
+              priority
+              src={logo}
+              alt="menu image"
+              className="w-[6.62vw]   h-fit"
+            />
+          </Link>
+
           <div className=" h-[40vw]  sm:hidden  w-full flex justify-end  flex-col ">
             {/* top-[-1.7vw] */}
-            <Link href="/" className=" absolute top-[1.65vw]">
-              <Image
-                priority
-                src={logo}
-                alt="menu image"
-                className="w-[6.62vw]   h-fit"
-              />
-            </Link>
-            <div className="w-full flex flex-col gap-[15px]">
+
+            <div className="w-full flex flex-col gap-[15px] relative">
               <p className="novabold text-[1.66vw] text-[#BFBFBF]">
                 Lets help bring your amazing <br />
                 idea to life
               </p>
+              <Link
+                href="#"
+                className="novabold text-[1.6vw] absolute bottom-[-3vw] text-black"
+              >
+                support@malkain.com
+              </Link>
             </div>
           </div>
         </motion.div>
@@ -170,31 +179,6 @@ const Menu = (props: any) => {
                   onClick={handleCancel}
                 >
                   <i className="bi bi-x-lg  "></i>
-                </div>
-              </div>
-
-              <div className="flex w-auto gap-[10px] items-center">
-                <div className="flex flex-col gap-[15px] novabold">
-                  <p className="text-[1.2vw] text-[#FFFFFF]">
-                    support@rancroft.com <i className="bi bi-clipboard"></i>
-                  </p>
-                  <p className="text-[1.06vw] text-[#9E9E9E]">
-                    Privacy policy & Cookies
-                  </p>
-                  <p className="text-[0.8vw] text-[#9E9E9E]">
-                    <i className="bi bi-c-circle"></i>Rancroft2023
-                  </p>
-                </div>
-
-                {/* the gloabal and exclamation mark
-                 */}
-                <div className="w-auto flex flex-col gap-[10px]">
-                  <div className="h-[2.2vw] w-[2.2vw] flex justify-center items-center text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white">
-                    <i className="bi bi-globe2 "></i>
-                  </div>
-                  <div className="h-[2.2vw] w-[2.2vw] flex justify-center items-center text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white">
-                    <i className="bi bi-exclamation-lg  "></i>
-                  </div>
                 </div>
               </div>
             </div>
@@ -277,7 +261,7 @@ const Menu = (props: any) => {
               <div className="flex w-auto gap-[10px] items-center">
                 <div className="flex flex-col gap-[15px] novabold">
                   <p className="text-[1.2vw] text-[#FFFFFF]">
-                    support@rancroft.com <i className="bi bi-clipboard"></i>
+                    support@malkain.com <i className="bi bi-clipboard"></i>
                   </p>
                   <p className="text-[1.06vw] text-[#9E9E9E]">
                     Privacy policy & Cookies
