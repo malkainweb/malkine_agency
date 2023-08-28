@@ -66,7 +66,7 @@ const Hero_services = (props: any) => {
 
   const width = globalThis.innerWidth;
 
-  const new_width = width * 0.9;
+  const new_width = width * 1;
 
   const end_width = new_width + width * 2.3;
 
@@ -222,7 +222,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[250vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
