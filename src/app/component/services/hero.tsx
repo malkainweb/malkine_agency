@@ -66,9 +66,9 @@ const Hero_services = (props: any) => {
 
   const width = globalThis.innerWidth;
 
-  const new_width = width * 1;
+  const new_width = width * 0.9;
 
-  const end_width = new_width + width * 2;
+  const end_width = new_width + width * 2.3;
 
   const mob_new_width = width * 0.8;
 
@@ -174,7 +174,7 @@ const Hero_services = (props: any) => {
 
   return (
     <>
-      <div className="w-full py-[0.8vw] px-[0.8vw] h-[110vw] sm:h-[160vw]  sm:py-[2vw] sm:px-[1.2vw]">
+      <div className="w-full py-[0.8vw] px-[0.8vw] h-[100vw] sm:h-[160vw]  sm:py-[2vw] sm:px-[1.2vw]">
         <div className="w-full flex flex-col rounded-[3.3vw] gap-[10vw] h-full relative ">
           <Image
             src={hero}
@@ -222,7 +222,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[200vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[250vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">

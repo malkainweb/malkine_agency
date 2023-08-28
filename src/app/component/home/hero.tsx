@@ -50,7 +50,7 @@ const Home_hero = () => {
         setanimate_text("translateX(-50%)");
       }
 
-      if (latest <= calcwidth / 10) {
+      if (latest <= calcwidth / 9) {
         // setcolor("#1A1919");
         setanimate_text("translateX(50vw)");
       }
