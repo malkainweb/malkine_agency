@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import agile from "../../../../public/home/about.webp";
-import agile2 from "../../../../public/home/agile2.png";
+import agile2 from "../../../../public/home/agile2.webp";
 import mob_agile from "../../../../public/home/mob_about.webp";
 
 import Image from "next/image";
