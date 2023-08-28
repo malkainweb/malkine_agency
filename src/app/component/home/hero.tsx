@@ -55,21 +55,21 @@ const Home_hero = () => {
         setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= calcwidth / 4.5) {
+      if (latest >= calcwidth / 4.1) {
         setgeneral("-100vw");
         setanimate_text("translateX(-150vw)");
       }
-      // && latest >= calcwidth / 4.3
-      if (latest <= calcwidth / 4.5) {
+      // && latest >= calcwidth / 4.3  ::::::::::: i minus 0.3
+      if (latest <= calcwidth / 4.1) {
         setgeneral("0vw");
         // setanimate_text("translateX(-150vw)");
       }
-      if (latest >= calcwidth / 2.7) {
+      if (latest >= calcwidth / 2.3) {
         setgeneral("-200vw");
         // }  if (latest <= calcwidth / 2.5 && latest >= calcwidth / 3.5) {
         //   setgeneral("-100vw");
       }
-      if (latest >= calcwidth / 1.9) {
+      if (latest >= calcwidth / 1.5) {
         setgeneral("-300vw");
         // }  if (latest <= calcwidth / 2 && latest >= calcwidth / 3) {
         //   setgeneral("-200vw");
@@ -129,7 +129,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className={`w-full sm:h-[450vw] sm:relative  h-[300vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
+        className={`w-full sm:h-[450vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
         // animate={{ backgroundColor: color }}
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
@@ -148,10 +148,10 @@ const Home_hero = () => {
             // z: 10,
           }}
         >
-          <motion.div
-            className="w-auto  absolute z-[30] top-0 left-0 h-[30vw]  sm:top-[5vw]  flex  "
-            animate={{ transform: `translateX(${general})` }}
-            transition={{ duration: 1 }}
+          <div
+            className="w-auto  absolute z-[30] transition duration-[1s] top-0 left-0 h-[30vw]  sm:top-[5vw]  flex  "
+            style={{ transform: `translateX(${general})` }}
+            // transition={{ duration: 1 }}
           >
             <div className="w-[100vw] h-fit sm:top-[7vw] relative ">
               <Image
@@ -222,7 +222,7 @@ const Home_hero = () => {
             </motion.div>
 
             {/* </div> */}
-          </motion.div>
+          </div>
           <motion.p
             className="text-[16.3vw] h-[25vw] sm:h-[35vw] sm:text-[25vw] sm:top-[-11vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
             animate={{ transform: animate_text }}
