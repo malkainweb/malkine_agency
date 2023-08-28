@@ -22,15 +22,15 @@ const Home_hero = () => {
   const [check, setcheck] = useState(1);
   const [example, setexample] = useState("sm:sticky");
   const width = globalThis.innerWidth;
-  const calcwidth = width * 2;
+  const calcwidth = width * 4;
   const mob_calc_width = width * 5;
 
   const opacity = useTransform(
     scrollY,
     // Map x from these values:
     [
-      width >= 651 ? calcwidth / 7 : mob_calc_width / 7,
-      width >= 651 ? calcwidth / 6 : mob_calc_width / 6,
+      width >= 651 ? calcwidth / 10 : mob_calc_width / 7,
+      width >= 651 ? calcwidth / 7 : mob_calc_width / 6,
     ],
     // Into these values:
     [1, 0],
@@ -38,35 +38,41 @@ const Home_hero = () => {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (width >= 651) {
+      if (latest >= calcwidth / 20) {
+        setcolor("black");
+      }
+
+      if (latest <= calcwidth / 20) {
+        setcolor("#1A1919");
+      }
       // check for the first animation of te text
-      if (latest >= calcwidth / 5) {
+      if (latest >= calcwidth / 7) {
         setanimate_text("translateX(-50%)");
       }
-      if (latest >= calcwidth / 10) {
-        setcolor("black");
-        setexample("sm:fixed");
-      } else if (latest <= calcwidth / 5) {
-        setcolor("#1A1919");
+
+      if (latest <= calcwidth / 10) {
+        // setcolor("#1A1919");
         setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= calcwidth / 4) {
+      if (latest >= calcwidth / 4.6) {
         setgeneral("-100vw");
         setanimate_text("translateX(-150vw)");
-      } else if (latest <= calcwidth / 4 && latest >= calcwidth / 5) {
-        setgeneral("0vw");
       }
-      if (latest >= calcwidth / 3) {
-        setanimate_text("translateX(-150vw)");
+      // && latest >= calcwidth / 4.6
+      if (latest <= calcwidth / 4.6) {
+        setgeneral("0vw");
+        // setanimate_text("translateX(-150vw)");
+      }
+      if (latest >= calcwidth / 3.3) {
         setgeneral("-200vw");
-      } else if (latest <= calcwidth / 3 && latest >= calcwidth / 4) {
-        setgeneral("-100vw");
+        // }  if (latest <= calcwidth / 2.5 && latest >= calcwidth / 3.5) {
+        //   setgeneral("-100vw");
       }
       if (latest >= calcwidth / 2) {
-        setanimate_text("translateX(-150vw)");
         setgeneral("-300vw");
-      } else if (latest <= calcwidth / 2 && latest >= calcwidth / 3) {
-        setgeneral("-200vw");
+        // }  if (latest <= calcwidth / 2 && latest >= calcwidth / 3) {
+        //   setgeneral("-200vw");
       }
 
       //  the option below is for mobile screens
@@ -80,6 +86,7 @@ const Home_hero = () => {
 
       if (latest >= mob_calc_width / 10) {
         setcolor("black");
+        setexample("sm:fixed");
       } else if (latest <= mob_calc_width / 6) {
         setcolor("#1A1919");
         // setanimate_text("translateX(50vw)");
@@ -122,7 +129,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className={`w-full sm:h-[450vw] sm:relative  h-[200vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
+        className={`w-full sm:h-[450vw] sm:relative  h-[300vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
         // animate={{ backgroundColor: color }}
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
