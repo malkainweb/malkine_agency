@@ -75,18 +75,18 @@ const Menu = (props: any) => {
           animate={{ y: left, backgroundColor: "#D01717", opacity: opacity }}
           initial={{ y: "100%" }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh] hide_menu  w-[30vw] px-[2.6vw] pb-[5.3vw] pt-[3.35vw] flex items-center"
+          className="h-[100vh] hide_menu relative  w-[30vw] px-[2.6vw] pb-[5.3vw] pt-[3.35vw] flex items-center"
         >
-          <div className=" h-full  sm:hidden relative w-full flex justify-between flex-col">
-            <Link href="/">
+          <div className=" h-[40vw]  sm:hidden  w-full flex justify-end  flex-col ">
+            {/* top-[-1.7vw] */}
+            <Link href="/" className=" absolute top-[1.65vw]">
               <Image
                 priority
                 src={logo}
                 alt="menu image"
-                className="w-[6.62vw] absolute top-[-1.7vw]  h-fit"
+                className="w-[6.62vw]   h-fit"
               />
             </Link>
-
             <div className="w-full flex flex-col gap-[15px]">
               <p className="novabold text-[1.66vw] text-[#BFBFBF]">
                 Lets help bring your amazing <br />
@@ -102,7 +102,7 @@ const Menu = (props: any) => {
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: opacity }}
           initial={{ y: "-100%" }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh] sm:w-[100vw]  w-[70vw]  pl-[3vw] pr-[4.1vw]   pb-[5.3vw] pt-[4.5vw] sm:px-[3vw] sm:py-[0px] flex  justify-center items-center sm:hidden"
+          className="h-[100vh] sm:w-[100vw]  w-[70vw] relative  pl-[3vw] pr-[4.1vw]   pb-[5.3vw] pt-[4.5vw] sm:px-[3vw] sm:py-[0px] flex  justify-center items-center sm:hidden"
         >
           <div className="flex  justify-between w-full h-auto   items-center sm:justify-start sm:flex-col sm:gap-[10vw] sm:items-start">
             {/* the first flex with the big options */}
@@ -157,8 +157,8 @@ const Menu = (props: any) => {
             </Link>
 
             {/* the second flex with the small small options */}
-            <div className=" w-fit   sm:hidden h-[40vw] flex  flex-col  justify-between ">
-              <div className="flex gap-[20px] items-center">
+            <div className=" w-fit   sm:hidden h-[40vw] flex  flex-col  justify-end  ">
+              <div className="flex gap-[1.3vw]  w-fit absolute top-[3vw] right-[3.5vw] items-center ">
                 <Link
                   href="/"
                   className="nova  hover:bg-[#CDCCCC] transition-all text-[1.33vw] text-[#4B4B4B] bg-[#F3F3F3] py-[0.75vw] px-[1.3vw] rounded-[3vw]"
