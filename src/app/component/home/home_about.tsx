@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import agile from "../../../../public/home/about.webp";
+import agile2 from "../../../../public/home/agile2.png";
 import mob_agile from "../../../../public/home/mob_about.webp";
 
 import Image from "next/image";
@@ -48,8 +49,8 @@ const Home_about = () => {
         </div>
 
         {/* second section */}
-        <div className="w-full sm:hidden sm:rounded-r-none sm:rounded-br-[5vw] sm:rounded-b-[5vw] bg-white rounded-r-[2.7vw] flex gap-[1.3vw] px-[1.3vw] sm:px-[7vw] sm:gap-[2.5vw]">
-          <div className="w-full  relative overflow-hidden">
+        <div className="w-full sm:hidden   bg-white rounded-[2.7vw] flex  p-[1.3vw] ">
+          {/* <div className="w-full  relative overflow-hidden">
             <div className="w-full h-auto absolute top-0 left-0  gap-[1.3vw] flex flex-col overflow-hidden home_about_left">
               {arr.map((e: any, index: any) => {
                 return (
@@ -92,7 +93,8 @@ const Home_about = () => {
                 );
               })}
             </div>
-          </div>
+          </div> */}
+          <Image src={agile2} alt="malkine about image" className="w-full " />
         </div>
       </div>
     </>
