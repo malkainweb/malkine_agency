@@ -32,7 +32,7 @@ export default function Home() {
   const [white, setwhite] = useState(1);
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
-  const [opacity, setopacity] = useState(0.2);
+  const [opacity, setopacity] = useState(0);
 
   useEffect(() => {
     // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

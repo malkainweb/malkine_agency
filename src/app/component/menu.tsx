@@ -62,28 +62,28 @@ const Menu = (props: any) => {
     setleft("100%");
     setright(width <= 650 ? "100%" : "-100%");
     setheight("0px");
-    setopacity(0.2);
+    setopacity(0);
   };
 
   return (
     <>
       <div
-        className="w-auto  fixed z-[109] top-0 left-0  flex "
+        className="w-auto  fixed z-[109] top-0 left-0   flex "
         style={{ height: height }}
       >
         <motion.div
           animate={{ y: left, backgroundColor: "#D01717", opacity: opacity }}
           initial={{ y: "100%" }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh] hide_menu  w-[30vw] px-[2.6vw] py-[5.3vw] flex items-center"
+          className="h-[100vh] hide_menu  w-[30vw] px-[2.6vw] pb-[5.3vw] pt-[3.35vw] flex items-center"
         >
-          <div className=" h-[40vw] sm:hidden relative w-full flex justify-between flex-col">
+          <div className=" h-full  sm:hidden relative w-full flex justify-between flex-col">
             <Link href="/">
               <Image
                 priority
                 src={logo}
                 alt="menu image"
-                className="w-[8vw] absolute top-[-1.7vw]  h-fit"
+                className="w-[6.62vw] absolute top-[-1.7vw]  h-fit"
               />
             </Link>
 
@@ -102,9 +102,9 @@ const Menu = (props: any) => {
           animate={{ y: right, backgroundColor: "#0C0C0C", opacity: opacity }}
           initial={{ y: "-100%" }}
           transition={{ duration: 0.7 }}
-          className="h-[100vh] sm:w-[100vw]  w-[70vw] px-[2.6vw]   py-[5.3vw] sm:px-[3vw] sm:py-[0px] flex justify-center items-center sm:hidden"
+          className="h-[100vh] sm:w-[100vw]  w-[70vw]  pl-[3vw] pr-[4.1vw]   pb-[5.3vw] pt-[4.5vw] sm:px-[3vw] sm:py-[0px] flex  justify-center items-center sm:hidden"
         >
-          <div className="flex justify-between w-full h-full  items-center sm:justify-start sm:flex-col sm:gap-[10vw] sm:items-start">
+          <div className="flex  justify-between w-full h-auto   items-center sm:justify-start sm:flex-col sm:gap-[10vw] sm:items-start">
             {/* the first flex with the big options */}
             <div className="hidden sm:flex  sm:w-full sm:h-[100px] sm:justify-between sm:items-center ">
               <Logo />
@@ -116,7 +116,7 @@ const Menu = (props: any) => {
               </div>
             </div>
 
-            <div className="w-auto h-[40vw] sm:h-[100vw] sm:w-full gap-[30px] flex flex-col justify-between  text-white novabold ">
+            <div className="w-auto  h-[40vw] sm:h-[100vw] sm:w-full gap-[30px] flex flex-col justify-between  text-white novabold ">
               <p className="text-[1.3vw] text-[#9E9E9E] sm:hidden  opacity-0">
                 {" "}
                 i
@@ -165,16 +165,18 @@ const Menu = (props: any) => {
                 >
                   Become a client
                 </Link>
-                <i
-                  className="bi bi-x-lg py-[0.75vw] px-[1.2vw] text-[1.6vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] cursor-pointer hover:bg-[#B1A2A2] text-white"
+                <div
+                  className="h-[3.8vw] w-[3.8vw] text-[1.6vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] cursor-pointer hover:bg-[#B1A2A2] text-white flex justify-center items-center"
                   onClick={handleCancel}
-                ></i>
+                >
+                  <i className="bi bi-x-lg  "></i>
+                </div>
               </div>
 
               <div className="flex w-auto gap-[10px] items-center">
                 <div className="flex flex-col gap-[15px] novabold">
                   <p className="text-[1.2vw] text-[#FFFFFF]">
-                    Support@rancroft.com <i className="bi bi-clipboard"></i>
+                    support@rancroft.com <i className="bi bi-clipboard"></i>
                   </p>
                   <p className="text-[1.06vw] text-[#9E9E9E]">
                     Privacy policy & Cookies
@@ -187,8 +189,12 @@ const Menu = (props: any) => {
                 {/* the gloabal and exclamation mark
                  */}
                 <div className="w-auto flex flex-col gap-[10px]">
-                  <i className="bi bi-globe2 py-[5px] px-[10px] text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white"></i>
-                  <i className="bi bi-exclamation-lg py-[5px] px-[10px] text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white"></i>
+                  <div className="h-[2.2vw] w-[2.2vw] flex justify-center items-center text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white">
+                    <i className="bi bi-globe2 "></i>
+                  </div>
+                  <div className="h-[2.2vw] w-[2.2vw] flex justify-center items-center text-[1vw] rounded-[100%] font-[700] bg-[#FFFFFF] bg-opacity-[10%] text-white">
+                    <i className="bi bi-exclamation-lg  "></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -213,12 +219,12 @@ const Menu = (props: any) => {
               </div>
             </div>
 
-            <div className="w-auto h-[40vw] sm:h-[100vw] sm:w-full gap-[30px] flex flex-col justify-between  text-white novabold ">
+            <div className="w-auto h-[40vw]  sm:h-[100vw] sm:w-full gap-[30px] flex flex-col justify-between  text-white novabold ">
               <p className="text-[1.3vw] text-[#9E9E9E] sm:hidden  opacity-0">
                 {" "}
                 i
               </p>
-              <div className="w-full h-full flex flex-col justify-between    ">
+              <div className="w-full  h-full flex flex-col justify-between    ">
                 {menu_arr.map((e: any, index: any) => {
                   return (
                     <>
@@ -271,7 +277,7 @@ const Menu = (props: any) => {
               <div className="flex w-auto gap-[10px] items-center">
                 <div className="flex flex-col gap-[15px] novabold">
                   <p className="text-[1.2vw] text-[#FFFFFF]">
-                    Support@rancroft.com <i className="bi bi-clipboard"></i>
+                    support@rancroft.com <i className="bi bi-clipboard"></i>
                   </p>
                   <p className="text-[1.06vw] text-[#9E9E9E]">
                     Privacy policy & Cookies

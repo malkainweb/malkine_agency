@@ -12,8 +12,10 @@ const Home_Header = (props: any) => {
   const { setleft, setright, setopacity, white, nav_menu, nav_ham } = props;
   return (
     <>
-      <nav className="w-full fixed sm:h-[25vw]  z-[99]  h-[10vw] flex  p_r  items-center justify-between bg-transparent">
-        <Link href="/">{white == 1 ? <Logo /> : <Logo_black />}</Link>
+      <nav className="w-full fixed sm:h-[25vw]  z-[99]   h-[10vw] flex  p_r  items-center justify-between bg-transparent">
+        <Link href="/" className="  ">
+          {white == 1 ? <Logo /> : <Logo_black />}
+        </Link>
 
         {/* nav menus */}
         <div
