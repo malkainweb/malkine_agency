@@ -55,21 +55,21 @@ const Home_hero = () => {
         setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= calcwidth / 4.6) {
+      if (latest >= calcwidth / 4.5) {
         setgeneral("-100vw");
         setanimate_text("translateX(-150vw)");
       }
-      // && latest >= calcwidth / 4.6
-      if (latest <= calcwidth / 4.6) {
+      // && latest >= calcwidth / 4.3
+      if (latest <= calcwidth / 4.5) {
         setgeneral("0vw");
         // setanimate_text("translateX(-150vw)");
       }
-      if (latest >= calcwidth / 3.3) {
+      if (latest >= calcwidth / 3.2) {
         setgeneral("-200vw");
         // }  if (latest <= calcwidth / 2.5 && latest >= calcwidth / 3.5) {
         //   setgeneral("-100vw");
       }
-      if (latest >= calcwidth / 2) {
+      if (latest >= calcwidth / 1.9) {
         setgeneral("-300vw");
         // }  if (latest <= calcwidth / 2 && latest >= calcwidth / 3) {
         //   setgeneral("-200vw");
