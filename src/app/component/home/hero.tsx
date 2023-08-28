@@ -64,7 +64,7 @@ const Home_hero = () => {
         setgeneral("0vw");
         // setanimate_text("translateX(-150vw)");
       }
-      if (latest >= calcwidth / 3.2) {
+      if (latest >= calcwidth / 2.7) {
         setgeneral("-200vw");
         // }  if (latest <= calcwidth / 2.5 && latest >= calcwidth / 3.5) {
         //   setgeneral("-100vw");
