@@ -172,7 +172,6 @@ const Services = () => {
       }
 
       if (latest >= 10) {
-        console.log("kdk");
         setexample("sm:sticky");
       }
     }

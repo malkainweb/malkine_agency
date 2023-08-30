@@ -8,7 +8,7 @@ import home_about_img from "../../../../public/home/home_about_img.webp";
 const Home_about_us = () => {
   return (
     <>
-      <div className="w-full bg-white p_r sm:py-[10vw]  h-auto flex flex-col gap-[1.3vw] py-[2vw]">
+      <div className="w-full bg-white p_r sm:py-[10vw]  pb-[8vw]   h-auto flex flex-col gap-[1vw] py-[2vw]">
         {/* heading */}
         <div className="flex items-center sm:items-start sm:flex-col gap-[1.3vw] nova">
           <h1 className="nova sm:font-[600] text-[3.33vw] sm:order-1 sm:text-[10vw]">
