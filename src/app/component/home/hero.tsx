@@ -109,22 +109,27 @@ const Home_hero = () => {
       //    setanimate_text("translateX(-150vw)");
       //  }
 
-      if (latest >= mob_calc_width / 3) {
+      if (latest >= mob_calc_width / 2.5) {
         setgeneral("-100vw");
         setanimate_text("translateX(-150vw)");
       }
-      if (latest <= mob_calc_width / 3) {
+      if (latest <= mob_calc_width / 2.5) {
         setgeneral("0vw");
         // setanimate_text("translateX(-150vw)");
       }
 
-      if (latest >= mob_calc_width / 2.5) {
+      if (latest >= mob_calc_width / 1.6) {
         setgeneral("-200vw");
       }
 
-      if (latest >= mob_calc_width / 2) {
+      if (latest >= mob_calc_width / 1.2) {
         setgeneral("-300vw");
+        setexample("sm:fixed");
+      }
+
+      if (latest >= mob_calc_width / 1.035) {
         setexample("sm:sticky");
+        console.log("i am good ");
       }
     }
   });
@@ -143,7 +148,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className={`w-full sm:h-[600vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
+        className={`w-full sm:h-[1100vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
         // animate={{ backgroundColor: color }}
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
@@ -217,11 +222,11 @@ const Home_hero = () => {
               />
             </motion.div>
             <motion.div
-              className="w-[100vw] h-[80vh]   sm:h-[50vw] flex justify-center items-center "
+              className="w-[100vw] h-[25vw]    sm:h-[50vw] flex justify-center items-center "
               animate={{ y: "-8vw" }}
             >
               <p
-                className="  text-[20vw] sm:text-[23vw] flex justify-center items-center  h-fit    font-[helvetica] font-[700] "
+                className="  text-[20vw] sm:text-[23vw] mt-[14vw] flex justify-center items-center  h-fit    font-[helvetica] font-[700] "
                 style={{
                   background:
                     "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",
@@ -238,7 +243,7 @@ const Home_hero = () => {
             {/* </div> */}
           </div>
           <motion.p
-            className="text-[16.3vw] h-[25vw] sm:h-[35vw] sm:text-[25vw] sm:top-[-11vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
+            className="text-[16.3vw] h-[25vw] sm:h-[40vw] sm:text-[27vw] sm:top-[-13vw] absolute top-[-14.5vw] font-[helvetica] font-[700] left-[50%] "
             animate={{ transform: animate_text }}
             transition={{ duration: 1 }}
             style={{
