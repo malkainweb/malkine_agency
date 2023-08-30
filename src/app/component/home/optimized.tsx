@@ -37,9 +37,9 @@ const Optimized = () => {
               gravida volutpat eget tortor proin.{" "}
             </p>
             <div className="w-auto flex gap-[3vw] sm:w-full sm:justify-between">
-              <button className="font-[helvetica] h-fit capitalize  text-[1.1vw] font[900]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]  sm:text-[4vw] sm:w-fit sm:py-[3vw] sm:px-[4vw]">
+              {/* <button className="font-[helvetica] h-fit capitalize  text-[1.1vw] font[900]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808]  sm:text-[4vw] sm:w-fit sm:py-[3vw] sm:px-[4vw]">
                 Check our portfolio
-              </button>
+              </button> */}
               <button className="font-[helvetica] h-fit capitalize  text-[1.1vw] font[900]  rounded-[39px] px-[50px] py-[16px] bg-[#232020] text-white hover:bg-[#920808] sm:text-[4vw] sm:w-fit sm:py-[3vw] sm:px-[4vw]">
                 Check our portfolio
               </button>
