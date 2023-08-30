@@ -60,9 +60,9 @@ const Services = () => {
 
   const end_width = new_width + width * 2.7;
 
-  const mob_new_width = width * 12.5;
+  const mob_new_width = width * 12.7;
 
-  const mob_end_width = mob_new_width + width * 8.5;
+  const mob_end_width = mob_new_width + width * 7.5;
 
   const { scrollY } = useScroll();
 
@@ -83,7 +83,6 @@ const Services = () => {
       if (latest >= 0 && latest <= 1) {
         setdes_translate("translate-y-[0vw]");
         setcheck_num(1);
-        setexample("sm:fixed");
       }
       if (latest >= 1 && latest <= 2) {
         setdes_translate("translate-y-[-6vw]");
@@ -118,9 +117,15 @@ const Services = () => {
         setcheck_num(9);
       }
     } else if (width <= 650) {
-      if (latest <= 0) {
+      if (latest >= 0 && latest <= 9) {
         setexample("sm:fixed");
       }
+      if (latest <= 0.1) {
+        setexample("sm:sticky");
+      }
+      // if (latest >= 0 && latest <= 9) {
+      //   setexample("sm:fixed");
+      // }
 
       if (latest >= 0 && latest <= 1) {
         setdes_translate("translate-y-[0vw]");
@@ -159,16 +164,22 @@ const Services = () => {
         setcheck_num(9);
         setexample("sm:fixed");
       }
+      if (latest >= 9 && latest <= 10) {
+        setdes_translate("translate-y-[-108vw]");
+      }
+      if (latest >= 9.7) {
+        setdes_translate("translate-y-[-120vw]");
+      }
 
-      if (latest >= 9) {
-        setexample("sm:sticky");
+      if (latest >= 10) {
         console.log("kdk");
+        setexample("sm:sticky");
       }
     }
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[250vw] sm:h-[880vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[250vw] sm:h-[900vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
