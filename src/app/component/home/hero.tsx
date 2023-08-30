@@ -124,12 +124,14 @@ const Home_hero = () => {
 
       if (latest >= mob_calc_width / 1.2) {
         setgeneral("-300vw");
+      }
+
+      if (latest <= mob_calc_width / 1.035) {
         setexample("sm:fixed");
       }
 
       if (latest >= mob_calc_width / 1.035) {
         setexample("sm:sticky");
-        console.log("i am good ");
       }
     }
   });
@@ -226,7 +228,7 @@ const Home_hero = () => {
               animate={{ y: "-8vw" }}
             >
               <p
-                className="  text-[20vw] sm:text-[23vw] mt-[14vw] flex justify-center items-center  h-fit    font-[helvetica] font-[700] "
+                className="  text-[20vw] sm:text-[24vw] mt-[14vw] flex justify-center items-center  h-fit    font-[helvetica] font-[700] "
                 style={{
                   background:
                     "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",
