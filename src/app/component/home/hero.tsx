@@ -23,14 +23,14 @@ const Home_hero = () => {
   const [example, setexample] = useState("sm:sticky");
   const width = globalThis.innerWidth;
   const calcwidth = width * 4;
-  const mob_calc_width = width * 5;
+  const mob_calc_width = width * 10;
 
   const opacity = useTransform(
     scrollY,
     // Map x from these values:
     [
       width >= 651 ? calcwidth / 9 : mob_calc_width / 7,
-      width >= 651 ? calcwidth / 5 : mob_calc_width / 6,
+      width >= 651 ? calcwidth / 5 : mob_calc_width / 3.5,
     ],
     // Into these values:
     [1, 0],
@@ -78,39 +78,53 @@ const Home_hero = () => {
       //  the option below is for mobile screens
     } else if (width <= 650) {
       // check for the first animation of te text
-      if (latest >= mob_calc_width / 6) {
+      if (latest >= mob_calc_width / 4) {
         setanimate_text("translateX(-50%)");
-      } else if (latest <= mob_calc_width / 6) {
+      }
+      if (latest <= mob_calc_width / 4) {
         setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= mob_calc_width / 10) {
+      if (latest >= mob_calc_width / 15) {
         setcolor("black");
         setexample("sm:fixed");
-      } else if (latest <= mob_calc_width / 6) {
-        setcolor("#1A1919");
-        // setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= mob_calc_width / 4) {
-        setgeneral("-100vw");
-        setanimate_text("translateX(-150vw)");
-      } else if (latest <= mob_calc_width / 4 && latest >= mob_calc_width / 5) {
-        setgeneral("0vw");
+      if (latest <= mob_calc_width / 15) {
+        setcolor("#1A1919");
       }
+
+      //  // check for the first animation of te text
+      //  if (latest >= calcwidth / 7) {
+      //    setanimate_text("translateX(-50%)");
+      //  }
+
+      //  if (latest <= calcwidth / 9) {
+      //    // setcolor("#1A1919");
+      //    setanimate_text("translateX(50vw)");
+      //  }
+
+      //  if (latest >= calcwidth / 3.5) {
+      //    setgeneral("-100vw");
+      //    setanimate_text("translateX(-150vw)");
+      //  }
+
       if (latest >= mob_calc_width / 3) {
-        setanimate_text("translateX(-150vw)");
-        setgeneral("-200vw");
-      } else if (latest <= mob_calc_width / 3 && latest >= mob_calc_width / 4) {
         setgeneral("-100vw");
-      }
-      if (latest >= mob_calc_width / 2) {
         setanimate_text("translateX(-150vw)");
+      }
+      if (latest <= mob_calc_width / 3) {
+        setgeneral("0vw");
+        // setanimate_text("translateX(-150vw)");
+      }
+
+      if (latest >= mob_calc_width / 2.5) {
+        setgeneral("-200vw");
+      }
+
+      if (latest >= mob_calc_width / 2) {
         setgeneral("-300vw");
         setexample("sm:sticky");
-      } else if (latest <= mob_calc_width / 2 && latest >= mob_calc_width / 3) {
-        setgeneral("-200vw");
-        setexample("sm:fixed");
       }
     }
   });
@@ -129,7 +143,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className={`w-full sm:h-[450vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
+        className={`w-full sm:h-[600vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
         // animate={{ backgroundColor: color }}
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
@@ -203,11 +217,11 @@ const Home_hero = () => {
               />
             </motion.div>
             <motion.div
-              className="w-[100vw] h-[35vw]  sm:h-[50vw] flex justify-center "
+              className="w-[100vw] h-[80vh]   sm:h-[50vw] flex justify-center items-center "
               animate={{ y: "-8vw" }}
             >
               <p
-                className="  text-[18vw] sm:text-[23vw] mt-[5vw]  font-[helvetica] font-[700] "
+                className="  text-[20vw] sm:text-[23vw] flex justify-center items-center  h-fit    font-[helvetica] font-[700] "
                 style={{
                   background:
                     "linear-gradient(180deg, #17BAD0 0%, rgba(0, 0, 0, 0.97) 100%)",

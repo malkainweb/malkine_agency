@@ -57,8 +57,8 @@ const Home_gallery = () => {
   ]);
   return (
     <>
-      <div className="w-full h-auto py-[3.33vw] relative bg-white  ">
-        <Image
+      <div className="w-full h-auto py-[6.33vw] relative bg-white  ">
+        {/* <Image
           priority
           src={home_gallery}
           alt="gallery"
@@ -69,7 +69,9 @@ const Home_gallery = () => {
           src={mob_home_gallery}
           alt="gallery"
           className=" w-full h-full sm:block hidden "
-        />
+        /> */}
+        <div className="absolute  h-[30vw] sm:hidden w-full top-0 left-0 bg-gradient-to-t from-[#FAFAFA] "></div>
+        <div className="absolute  h-[30vw] sm:hidden w-full bottom-0 left-0 bg-gradient-to-b from-[#FAFAFA] "></div>
 
         <div className="w-full h-[20vw] items-center justify-center sm:bg-gradient-to-b sm:from-[#FAFAFA]  sm:flex hidden">
           <div
@@ -95,7 +97,7 @@ const Home_gallery = () => {
           </div>
         </div>
 
-        <div className="w-full overflow-hidden h-[47vw] relative bg-gradient-to-b from-[#FAFAFA]   p_r sm:hidden">
+        <div className="w-full overflow-hidden h-[47vw] relative  p_r sm:hidden">
           {gall.map((e: any, i: any) => {
             return (
               <div
@@ -114,6 +116,8 @@ const Home_gallery = () => {
             );
           })}
         </div>
+
+        {/* this is just for the coll effecyt of coloruing  */}
 
         <div
           className="hidden sm:block relative h-[100vw] transition duration-[1.5s] "

@@ -46,19 +46,19 @@ const Home_Team = () => {
           style={{
             transform: `translateX(${go})`,
           }}
-          className=" transition duration-[1.5s] w-full sm:w-[300vw] bg-white  sm:bg-black sm:absolute sm:top-0  h-auto  pl-[3.5vw] pr-[2.25vw]  py-[3.3vw] flex justify-between gap-[1.25vw] items-center  sm:gap-[4vw] "
+          className=" transition duration-[1.5s] w-full sm:w-[300vw] bg-white  sm:bg-black sm:absolute sm:top-0  h-auto  pl-[2.2vw] pr-[2.5vw]  py-[3.3vw] flex justify-between gap-[1.25vw] items-center  sm:gap-[4vw] "
         >
-          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-[#0A0A0A] sm:text-white  flex-col p-[1.25vw] justify-between  ">
+          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between  ">
             <div className="w-full flex justify-between font-[helvetica] ">
               <p className="text-[3.5vw] sm:text-[10vw]">34</p>
-              <p className="py-[0.7vw] px-[1vw] bg-white bg-opacity-[40%] rounded-[1.4vw] h-fit text-[1.1vw] sm:text-[4vw] sm:px-[4vw] sm:rounded-[7.6vw] sm:py-[2vw]">
+              <p className="py-[0.7vw] px-[1vw] sm:bg-[#F1F1F1] bg-white bg-opacity-[40%] rounded-[1.4vw] h-fit text-[1.1vw] sm:text-[4vw] sm:px-[4vw] sm:rounded-[7.6vw] sm:py-[2vw]">
                 Team
               </p>
             </div>
             <p className="text-[1.6vw] sm:text-[6.7vw]">Total Employess</p>
           </div>
 
-          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-[#0A0A0A] sm:text-white  flex-col p-[1.25vw] justify-between">
+          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between">
             <div className="w-full flex justify-between font-[helvetica] ">
               <p className="text-[3.5vw] sm:text-[10vw]">02</p>
               <div className="w-[6.7vw] sm:w-[24vw]  h-[4vw] sm:h-[11.25vw]">
@@ -89,7 +89,7 @@ const Home_Team = () => {
 
       <div className={`w-full h-auto sm:h-[45vw] sm:relative sm:hidden  `}>
         <div className=" transition duration-[1.5s] w-full sm:w-[300vw] bg-white  sm:bg-black sm:absolute sm:top-0  h-auto  p_r  py-[3.3vw] flex justify-between gap-[1.25vw] items-center  sm:gap-[4vw] ">
-          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-[#0A0A0A] sm:text-white  flex-col p-[1.25vw] justify-between  ">
+          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between  ">
             <div className="w-full flex justify-between font-[helvetica] ">
               <p className="text-[3.5vw] sm:text-[10vw]">34</p>
               <p className="py-[0.7vw] px-[1vw] bg-white bg-opacity-[40%] rounded-[1.4vw] h-fit text-[1.1vw] sm:text-[4vw] sm:px-[4vw] sm:rounded-[7.6vw] sm:py-[2vw]">
@@ -99,7 +99,7 @@ const Home_Team = () => {
             <p className="text-[1.6vw] sm:text-[6.7vw]">Total Employess</p>
           </div>
 
-          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-[#0A0A0A] sm:text-white  flex-col p-[1.25vw] justify-between">
+          <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between">
             <div className="w-full flex justify-between font-[helvetica] ">
               <p className="text-[3.5vw] sm:text-[10vw]">02</p>
               <div className="w-[6.7vw] sm:w-[24vw]  h-[4vw] sm:h-[11.25vw]">

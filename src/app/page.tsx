@@ -159,7 +159,7 @@ export default function Home() {
         <Home_hero />
         <Highlight />
         <Home_Team />
-        <Home_about />
+        {/* <Home_about /> */}
         <Services />
         <Hands />
         <Home_about_us />
