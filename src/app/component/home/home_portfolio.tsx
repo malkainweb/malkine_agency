@@ -18,8 +18,8 @@ const Home_portfolio = () => {
 
         <div className="sm:h-[90vw] sm:overflow-x-scroll sm:relative w-auto  flex ">
           {/* body of the about section */}
-          <div className="w-full flex justify-between h-auto sm:absolute sm:top-[15vw] sm:left-0 sm:w-auto ">
-            <div className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] sm:ml-[4.5vw] sm:gap-[3vw]">
+          <div className="w-full flex justify-between h-auto  sm:absolute sm:top-[15vw] sm:left-0 sm:w-auto ">
+            <div className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw]">
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{ backgroundImage: "url(/home/port1.webp)" }}
@@ -42,7 +42,7 @@ const Home_portfolio = () => {
                 </h3>
               </div>
             </div>
-            <div className="h-auto   flex flex-col  w-[40%] sm:w-[68.25vw] sm:ml-[4.5vw] sm:gap-[3vw]">
+            <div className="h-auto   flex flex-col  w-[40%] sm:w-[68.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw]">
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{ backgroundImage: "url(/home/port2.webp)" }}
@@ -65,7 +65,7 @@ const Home_portfolio = () => {
                 </h3>
               </div>
             </div>
-            <div className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] sm:ml-[4.5vw] sm:mr-[4.5vw] sm:gap-[3vw]">
+            <div className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] gap-[1vw]  sm:ml-[4.5vw] sm:mr-[4.5vw] sm:gap-[3vw]">
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{
