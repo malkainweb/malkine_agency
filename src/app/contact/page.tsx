@@ -34,6 +34,8 @@ export default function Contact() {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const handle_submit = () => {};
   return (
     <>
       <Menu
@@ -89,6 +91,7 @@ export default function Contact() {
             hear_us={hear_us}
             sethear_us={sethear_us}
             setstep={setstep}
+            handle_submit={handle_submit}
           />
         ) : null}
         {step == 3 ? <Success /> : null}

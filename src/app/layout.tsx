@@ -5,6 +5,8 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import Script from "next/script";
 import { Inter } from "next/font/google";
+import Analytics from "analytics";
+import googleAnalytics from "@analytics/google-analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,6 +15,18 @@ export const metadata: Metadata = {
   description: "malkain designs and deployment",
 };
 
+const analytics = Analytics({
+  app: "awesome-app",
+  plugins: [
+    googleAnalytics({
+      measurementIds: ["G-NNC83QXFK8"],
+    }),
+  ],
+});
+
+/* Track a page view */
+analytics.page();
+
 export default function RootLayout({
   children,
 }: {
@@ -20,24 +34,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-NNC83QXFK8"
       />
-
-      {/* <Script
-      
-        dangerouslySetInnerHTML={{
-          __html: `
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-NNC83QXFK8', {
-            page_path: window.location.pathname,
-          });
-        `,
-        }}
-      /> */}
 
       <Script
         id="google-analytics"
@@ -50,7 +50,7 @@ export default function RootLayout({
               gtag('config', 'G-NNC83QXFK8');
             `,
         }}
-      />
+      /> */}
       <body className="hide_now">{children}</body>
     </html>
   );

@@ -5,11 +5,7 @@ import success from "../../../../public/contact/success.svg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { useEffect } from "react";
-const Success = () => {
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+const Success = (props: any) => {
   return (
     <>
       {/* JUST FOR THE PURPOSE OF KEEPING THE FOOTER FISWX WE IMPLEMENT THE DIV BELOW  */}

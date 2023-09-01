@@ -13,6 +13,7 @@ const Two = (props: any) => {
     hear_us,
     sethear_us,
     setstep,
+    handle_submit,
   } = props;
 
   const handleclick = (i: any) => {
@@ -153,7 +154,7 @@ const Two = (props: any) => {
             {/* ctn button */}
             <div className="w-full  flex justify-between">
               <button
-                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] border-[#D01717] border2 text-white hover:bg-[#920808] flex justify-center items-center gap-[0.33vw] sm:text-[4vw]  sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw] sm:hover:border-[0px] sm:text-white hover:bg-[#920808]"
+                className="nova  text-[1.07vw] font[900]  rounded-[2.6vw] px-[3.8vw] py-[1.07vw] border-[#D01717] border2 text-white hover:bg-[#920808] flex justify-center items-center gap-[0.33vw] sm:text-[4vw]  sm:block   font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw] sm:hover:border-[0px] sm:text-white "
                 onClick={() => {
                   handleback(1);
                 }}
@@ -161,9 +162,10 @@ const Two = (props: any) => {
                 <i className="bi bi-arrow-left"></i> Back
               </button>
               <button
-                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] flex justify-center items-center gap-[0.4vw] sm:text-[4vw]  sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
+                className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] flex justify-center items-center gap-[0.4vw] sm:text-[4vw]  sm:block   font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw]  sm:text-white "
                 onClick={() => {
                   handleclick(3);
+                  handle_submit();
                 }}
               >
                 Submit <i className="bi bi-arrow-right"></i>
