@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import "./style.css";
 import "./global_loader.css";
