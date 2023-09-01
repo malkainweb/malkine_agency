@@ -20,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <script
-        // strategy="afterInteractive"
+      <Script
+        strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-NNC83QXFK8"
       />
 
@@ -40,13 +40,13 @@ export default function RootLayout({
         }}
       /> */}
 
-      <script
+      <Script
         dangerouslySetInnerHTML={{
           __html: `
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'YOUR_TRACKING_CODE');
+              gtag('config', 'G-NNC83QXFK8');
             `,
         }}
       />
