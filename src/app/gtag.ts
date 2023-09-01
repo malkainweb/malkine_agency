@@ -1,9 +1,16 @@
+"use client";
+
 import Script from "next/script";
+import React from "react";
 
 const Gtag = () => {
-  return (
-    <>
-      <Script
+  return <>jgj</>;
+};
+
+export default Gtag;
+
+{
+  /* <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-NNC83QXFK8"
       />
@@ -19,9 +26,5 @@ const Gtag = () => {
               gtag('config', 'G-NNC83QXFK8');
             `,
         }}
-      />
-    </>
-  );
-};
-
-export default Gtag;
+      /> */
+}

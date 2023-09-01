@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Gtag />
+      {/* <Gtag /> */}
       <body className={inter.className}>{children}</body>
     </html>
   );

@@ -20,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Gtag />
+      {/* <Gtag /> */}
       <body className="hide_now">{children}</body>
     </html>
   );
