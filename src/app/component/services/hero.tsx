@@ -70,9 +70,9 @@ const Hero_services = (props: any) => {
 
   const end_width = new_width + width * 2.3;
 
-  const mob_new_width = width * 0.8;
+  const mob_new_width = width * 1;
 
-  const mob_end_width = mob_new_width + width * 2.8;
+  const mob_end_width = mob_new_width + width * 6.3;
 
   const { scrollY } = useScroll();
 
@@ -127,8 +127,11 @@ const Hero_services = (props: any) => {
         setcheck_num(9);
       }
     } else if (width <= 650) {
-      if (latest <= 0) {
+      if (latest >= 0 && latest <= 9) {
         setexample("sm:fixed");
+      }
+      if (latest <= 0.1) {
+        setexample("sm:sticky");
       }
 
       if (latest >= 0 && latest <= 1) {
@@ -167,7 +170,18 @@ const Hero_services = (props: any) => {
       if (latest >= 8 && latest <= 9) {
         setdes_translate("translate-y-[-96vw]");
         setcheck_num(9);
+        setexample("sm:fixed");
+      }
+      if (latest >= 9 && latest <= 10) {
+        setdes_translate("translate-y-[-108vw]");
+      }
+
+      if (latest >= 9) {
         setexample("sm:sticky");
+      }
+
+      if (latest >= 9.2) {
+        setdes_translate("translate-y-[-120vw]");
       }
     }
   });
@@ -222,7 +236,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[240vw] p_r flex flex-col sm:gap-[1vw]  ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[650vw] p_r flex flex-col sm:gap-[0vw]  ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
@@ -237,24 +251,24 @@ const Hero_services = (props: any) => {
 
         {/* second div */}
         <div
-          className={`w-full h-[32vw] sm:h-[100vw]  items-end sticky ${example} top-[10vw] sm:top-[40vw]  flex `}
+          className={`w-full h-[32vw] sm:h-[100vw]  items-end sticky ${example} left-0 top-[10vw] sm:top-[40vw]  flex `}
           style={{ overflow: "clip" }}
         >
           {/* first relative box */}
-          <div className="absolute top-0 left-0 h-[13vw]  sm:h-[45vw]  w-full  bg-gradient-to-b from-[white] z-[20]"></div>
+          <div className="absolute top-0 left-0 h-[13vw]   sm:h-[50vw]  w-full  bg-gradient-to-b from-[white] z-[20]"></div>
           {/* second relative box */}
-          <div className="absolute bottom-0 left-0 h-[13vw]  sm:h-[45vw]  w-full  bg-gradient-to-t from-[white] z-[20]"></div>
+          <div className="absolute bottom-0 left-0 h-[13vw]  sm:h-[50vw]  w-full  bg-gradient-to-t from-[white] z-[20]"></div>
           {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
 
           {/* the normaltext animation */}
           <div
-            className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10]`}
+            className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10] `}
           >
             {service_arr.map((e: any, index: any) => {
               return (
                 <p
                   key={index}
-                  className={`w-full text-[4.2vw] sm:text-[4.5vw] h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
+                  className={`w-full text-[4.2vw] sm:text-[4.3vw] sm:font-[600] sm:text-center  h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
                     e.class == check_num ? "#D01717" : "black"
                   }]  `}
                 >

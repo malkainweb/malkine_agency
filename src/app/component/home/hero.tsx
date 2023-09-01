@@ -155,7 +155,7 @@ const Home_hero = () => {
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
       >
-        <p className="text-[4.3vw] sm:text-[6vw] novabold text-center text-whbte font-[500] leading-[120%] sm:absolute sm:top-[47vw]  text-white ">
+        <p className="text-[4.3vw] sm:text-[6.8vw] novabold text-center text-white font-[500] leading-[120%] sm:absolute sm:top-[38vw]    ">
           The best way to predict the <br /> future is to reinvent it
         </p>
 
