@@ -1,11 +1,15 @@
+"use client";
+
 import "./globals.css";
 import "./style.css";
 import "./global_loader.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Gtag from "./gtag";
+
 import Script from "next/script";
+import { useEffect } from "react";
+// import * as gtag from "../app/gtag";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +27,7 @@ export default function RootLayout({
     <html lang="en">
       <Script
         strategy="afterInteractive"
-        src="https://www.googletagmanager.com/gtag/js?id=G-NNC83QXFK8"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} `}
       />
 
       <Script
@@ -34,10 +38,11 @@ export default function RootLayout({
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'G-NNC83QXFK8');
+              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
             `,
         }}
       />
+
       <body className="hide_now">{children}</body>
     </html>
   );

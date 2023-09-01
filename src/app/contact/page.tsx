@@ -35,7 +35,13 @@ export default function Contact() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
-  const handle_submit = () => {};
+  const handle_submit = () => {
+    window.gtag("event", "form_submission", {
+      event_category: "Contact Form",
+      event_label: "Submit",
+    });
+  };
+
   return (
     <>
       <Menu
