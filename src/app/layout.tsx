@@ -20,12 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script
-        strategy="afterInteractive"
+      <script
+        // strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-NNC83QXFK8"
       />
 
-      <Script
+      {/* <Script
         id="google-analytics"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -37,6 +37,17 @@ export default function RootLayout({
             page_path: window.location.pathname,
           });
         `,
+        }}
+      /> */}
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'YOUR_TRACKING_CODE');
+            `,
         }}
       />
       <body className="hide_now">{children}</body>
