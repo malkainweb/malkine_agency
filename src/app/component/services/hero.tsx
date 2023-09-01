@@ -85,7 +85,7 @@ const Hero_services = (props: any) => {
     ],
 
     // Into these values:
-    [0, 10],
+    [0, 11],
   );
 
   useMotionValueEvent(scroll_lever, "change", (latest) => {
@@ -175,13 +175,11 @@ const Hero_services = (props: any) => {
       if (latest >= 9 && latest <= 10) {
         setdes_translate("translate-y-[-108vw]");
       }
-
-      if (latest >= 9) {
-        setexample("sm:sticky");
-      }
-
-      if (latest >= 9.2) {
+      if (latest >= 10) {
         setdes_translate("translate-y-[-120vw]");
+      }
+      if (latest >= 10.2) {
+        setexample("sm:sticky");
       }
     }
   });
@@ -236,7 +234,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[650vw] p_r flex flex-col sm:gap-[0vw]  ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[670vw] p_r flex flex-col sm:gap-[0vw]  ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">

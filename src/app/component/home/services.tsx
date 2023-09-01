@@ -75,7 +75,7 @@ const Services = () => {
     ],
 
     // Into these values:
-    [0, 10],
+    [0, 11],
   );
 
   useMotionValueEvent(scroll_lever, "change", (latest) => {
@@ -167,11 +167,11 @@ const Services = () => {
       if (latest >= 9 && latest <= 10) {
         setdes_translate("translate-y-[-108vw]");
       }
-      if (latest >= 9.2) {
+      if (latest >= 10) {
         setdes_translate("translate-y-[-120vw]");
       }
 
-      if (latest >= 9.4) {
+      if (latest >= 10.2) {
         setexample("sm:sticky");
       }
     }
