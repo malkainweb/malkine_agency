@@ -21,8 +21,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-
-  console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID);
   return (
     <html lang="en">
       <Script
