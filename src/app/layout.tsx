@@ -27,9 +27,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Head>
-        <meta name="msvalidate.01" content="7F19A1D05342FB69BD2941A0E771D847" />
-      </Head>
       <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} `}
