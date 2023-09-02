@@ -15,6 +15,9 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "malkain",
   description: "malkain designs and deployment",
+  other: {
+    "msvalidate.01": "7F19A1D05342FB69BD2941A0E771D847",
+  },
 };
 
 export default function RootLayout({
