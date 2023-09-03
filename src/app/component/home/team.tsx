@@ -50,7 +50,7 @@ const Home_Team = () => {
         >
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between  ">
             <div className="w-full flex justify-between font-[helvetica] ">
-              <p className="text-[3.5vw] sm:text-[10vw]">34</p>
+              <p className="text-[3.5vw] sm:text-[10vw]">18</p>
               <p className="py-[0.7vw] px-[1vw] sm:bg-[#F1F1F1] bg-white bg-opacity-[40%] rounded-[1.4vw] h-fit text-[1.1vw] sm:text-[4vw] sm:px-[4vw] sm:rounded-[7.6vw] sm:py-[2vw]">
                 Team
               </p>
@@ -60,7 +60,7 @@ const Home_Team = () => {
 
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between">
             <div className="w-full flex justify-between font-[helvetica] ">
-              <p className="text-[3.5vw] sm:text-[10vw]">02</p>
+              <p className="text-[3.5vw] sm:text-[10vw]">8 yrs</p>
               <div className="w-[6.7vw] sm:w-[24vw]  h-[4vw] sm:h-[11.25vw]">
                 <Image
                   priority
@@ -70,12 +70,14 @@ const Home_Team = () => {
                 />
               </div>
             </div>
-            <p className="text-[1.6vw] sm:text-[6.7vw]">Locations</p>
+            <p className="text-[1.6vw] sm:text-[6.7vw]">
+              Providing Amazing Services
+            </p>
           </div>
 
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#D01717] border2 flex-col p-[1.25vw] justify-between text-white">
             <div className="w-full flex justify-between font-[helvetica] ">
-              <p className="text-[3.5vw] sm:text-[10vw]">123</p>
+              <p className="text-[3.5vw] sm:text-[10vw]">34</p>
               <p className="py-[0.7vw] px-[1vw] bg-white  bg-opacity-[26%] rounded-[1.4vw] h-fit text-[1.3vw] sm:text-[3vw] sm:px-[3vw] sm:py-[2vw] sm:rounded-[7.6vw]">
                 PROJECTS
               </p>
@@ -91,7 +93,7 @@ const Home_Team = () => {
         <div className=" transition duration-[1.5s] w-full sm:w-[300vw] bg-white  sm:bg-black sm:absolute sm:top-0  h-auto  p_r  py-[3.3vw] flex justify-between gap-[1.25vw] items-center  sm:gap-[4vw] ">
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between  ">
             <div className="w-full flex justify-between font-[helvetica] ">
-              <p className="text-[3.5vw] sm:text-[10vw]">34</p>
+              <p className="text-[3.5vw] sm:text-[10vw]">18</p>
               <p className="py-[0.7vw] px-[1vw] bg-white bg-opacity-[40%] rounded-[1.4vw] h-fit text-[1.1vw] sm:text-[4vw] sm:px-[4vw] sm:rounded-[7.6vw] sm:py-[2vw]">
                 Team
               </p>
@@ -101,7 +103,7 @@ const Home_Team = () => {
 
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between">
             <div className="w-full flex justify-between font-[helvetica] ">
-              <p className="text-[3.5vw] sm:text-[10vw]">02</p>
+              <p className="text-[3.5vw] sm:text-[10vw]">8 yrs</p>
               <div className="w-[6.7vw] sm:w-[24vw]  h-[4vw] sm:h-[11.25vw]">
                 <Image
                   priority
@@ -111,12 +113,14 @@ const Home_Team = () => {
                 />
               </div>
             </div>
-            <p className="text-[1.6vw] sm:text-[6.7vw]">Locations</p>
+            <p className="text-[1.6vw] sm:text-[6.7vw]">
+              Providing Amazing Services
+            </p>
           </div>
 
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#D01717] border2 flex-col p-[1.25vw] justify-between text-white">
             <div className="w-full flex justify-between font-[helvetica] ">
-              <p className="text-[3.5vw] sm:text-[10vw]">123</p>
+              <p className="text-[3.5vw] sm:text-[10vw]">34</p>
               <p className="py-[0.7vw] px-[1vw] bg-white  bg-opacity-[26%] rounded-[1.4vw] h-fit text-[1.3vw] sm:text-[3vw] sm:px-[3vw] sm:py-[2vw] sm:rounded-[7.6vw]">
                 PROJECTS
               </p>

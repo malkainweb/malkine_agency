@@ -178,7 +178,7 @@ const Services = () => {
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[250vw] sm:h-[700vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[280vw] sm:h-[700vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
@@ -190,10 +190,10 @@ const Services = () => {
           </h3>
         </div>
         <p className="text-[1.3vw] sm:hidden">
-          Lorem ipsum dolor sit amet consectetur. Elit dui nulla gravida <br />
-          volutpat eget tortor proin. Posuere porttitor sed erat quisque. <br />{" "}
-          Donec quisque orci vestibulum suspendisse auctor. Amet <br />{" "}
-          facilisis elementum imperdiet{" "}
+          We apply our knowledge of complex digital solutions to help <br />{" "}
+          real people solve real problems. From smart design to strategic <br />
+          programming, we employ technology as a medium for <br />
+          advancing your business and making human connections.
         </p>
       </div>
 

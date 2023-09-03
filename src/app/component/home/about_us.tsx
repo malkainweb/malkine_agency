@@ -31,23 +31,34 @@ const Home_about_us = () => {
 
           {/* now the text */}
           <div className="w-fit sm:w-full flex-col flex  sm:gap-[6vw] gap-[2vw] ">
-            <div className="text-[1.87vw] inter sm:text-[4vw] sm:flex sm:flex-col sm:gap-[8vw]">
-              <p className="pl-[13.3vw] hidden sm:block sm:pl-0 ">
+            <div className="text-[1.87vw] inter sm:text-[4vw] sm:flex sm:flex-col ">
+              <p className=" hidden sm:block sm:pl-0 sm:leading-[7vw]">
                 {" "}
-                <span className="font-[900]">Malkain Designs</span> ut elit
-                volutpat <br /> aliquam. Sit sit sed te
+                <span className="font-[900]">Malkain </span> is a future-focused
+                design and development firm,
               </p>
               <p className="pl-[13.3vw] sm:hidden sm:pl-0 ">
                 {" "}
-                <span className="font-[900]">Malkain Designs</span> ut elit
-                volutpat aliquam. Sit sit sed te
+                <span className="font-[900]">Malkain </span>is a future-focused
+                design and development firm,
               </p>
 
-              <p className="text-start">
-                Lorem ipsum dolor sit amet consectetur. Elit dui nulla <br />{" "}
-                gravida volutpat eget tortor proin. Posuere porttitor <br /> sed
-                erat quisque. Donec quisque orci vestibulum <br />
-                suspendisse auctor. Amet elementum facilisis imperdiet
+              <p className="text-start sm:hidden">
+                formed to bridge the divide between great ideas and exceptional
+                execution. <br /> Our consumer oriented approach to design
+                aligns our user <br /> interface directly with our main
+                consumers - the end users. <br /> We help our clients form their{" "}
+                futures, create industry leading <br /> campaign creative, and{" "}
+                launch new products and services into the world.
+              </p>
+              <p className="text-start sm:block hidden sm:leading-[7vw]">
+                formed to bridge the divide between great <br /> ideas and
+                exceptional execution. <br />
+                Our consumer oriented approach to design <br /> aligns our user
+                interface directly with our main <br />
+                consumers - the end users. We help our clients <br /> form their
+                futures, create industry leading <br /> campaign creative, and
+                launch new products <br /> and services into the world.
               </p>
             </div>
 
@@ -60,7 +71,8 @@ const Home_about_us = () => {
               <p>goals</p>
               <div className="w-[40%] sm:w-[50%] h-[0.07vw] bg-black"></div>
               <p>
-                CREATING USER FRIENDLY, <br />b HIGH AESTHETICS DESIGNS
+                CREATING USER FRIENDLY, <br />
+                BUT HIGH AESTHETICS DESIGNS
               </p>
             </div>
           </div>

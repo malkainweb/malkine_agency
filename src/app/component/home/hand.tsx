@@ -226,18 +226,18 @@ const Hands = (props: any) => {
       >
         <div className="w-full h-[55vw] sm:h-auto  relative flex flex-col gap-[4vw] sm:gap-[12vw]">
           <div className="flex z-[2] flex-col text-white nova text-[2.7vw] sm:text-[6vw]">
-            <p className="font-[700] ">Our Top</p>
+            <p className="font-[700] ">WHO WE</p>
             <p className=" px-[4.7vw] sm:px-[10vw]  italic font-light">
-              Client Logos
+              WORK WITH
             </p>
           </div>
 
           <div className="w-full h-auto  flex flex-col gap-[0.2vw] sm:gap-[2vw]">
             <div className="flex">
               <div className="w-[4vw] "></div>
-              <p className="text-[#737373]  sm:px-[5vw] sm:text-[4vw] capitalize">
+              {/* <p className="text-[#737373]  sm:px-[5vw] sm:text-[4vw] capitalize">
                 Our top 12 logo designs
-              </p>
+              </p> */}
             </div>
             <div className="flex text-white sm:gap-[5vw] sm:pb-[10vw]">
               <div className="w-[4vw] h-full  text-[red] font-[900] text-[2.7vw] justify-center flex">
@@ -249,8 +249,8 @@ const Hands = (props: any) => {
                 />
               </div>
               <p className="nova text-[1vw] font-medium sm:text-[4vw]">
-                We design with quality and brand <br />
-                identity in view
+                We're honored to be trusted by people <br /> with high
+                standards.
               </p>
             </div>
           </div>
@@ -460,7 +460,7 @@ const Hands = (props: any) => {
                 2023
               </p>
               <p className="uppercase nova text-[0.8vw] sm:text-[1.5vw]">
-                malkain, newyork
+                MALKAIN - NJ
               </p>
             </div>
             {/* Services we offer */}
@@ -468,14 +468,25 @@ const Hands = (props: any) => {
               <p className="text-[3vw] sm:text-[7.79vw]">Services we offer </p>
               <div className="flex gap-[0.33vw]">
                 <div className="flex items-center  h-fit gap-[0.33vw] sm:gap-[2vw]">
-                  <p className="uppercase sm:text-[1.55vw]">
-                    our working system{" "}
+                  <p className="uppercase sm:text-[1.55vw] sm:hidden">
+                    We speak like we design: <br /> thoughtful. And to the
+                    point.
+                  </p>
+                  <p className="uppercase sm:text-[1.55vw] hidden sm:block">
+                    We speak like we design: thoughtful. And to the point.
                   </p>
                   <div className="w-[6.7vw] h-[0.07vw] sm:w-[28vw] sm:bg-opacity-[70%] bg-white"></div>
                 </div>
-                <p className="uppercase sm:text-[1.55vw] sm:pl-[2vw]">
-                  Lets help take off your next project <br /> from end to end
-                  covering from <br /> research down to deployment
+                <p className="uppercase sm:text-[1.55vw] sm:pl-[2vw] sm:hidden">
+                  A company needs to tell a good <br />
+                  story to create a powerful narrative <br /> about its
+                  business, increase product <br />
+                  demand, and drive engagement.
+                </p>
+                <p className="uppercase sm:text-[1.55vw] sm:pl-[2vw] hidden sm:block">
+                  A company needs to tell a good story to create a powerful
+                  narrative about its business, increase product demand, and
+                  drive engagement.
                 </p>
               </div>
             </div>

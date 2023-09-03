@@ -254,7 +254,7 @@ const Review = () => {
           ></motion.div>
         </div>
       </div>
-      <div className="hidden sm:block bg-[#080808] h-[32vw] w-full"></div>
+      <div className="hidden sm:block bg-[#080808] h-[10vw] w-full"></div>
     </>
   );
 };

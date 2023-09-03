@@ -9,17 +9,14 @@ import mob_foot from "../../../../public/fotter/foot_1.webp";
 import mob_foot1 from "../../../../public/fotter/foot_2.webp";
 import canada_loca_red from "../../../../public/fotter/canada_loca_red.webp";
 import Link from "next/link";
+import Logo from "../logo";
 
 const Footer = () => {
   return (
     <>
       <div className="h-auto rounded-t-[4.8vw] w-full  bg-[#080808] ">
-        <div className="w-full h-auto   px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw]">
-          <p className="text-[1.2vw] sm:text-[4vw] inter text-[#E9E9E9] sm:py-[2vw]  font-[400] text-opacity-[80%]">
-            We are the creative superheroes ready to <br />
-            revolutionize your brand and propel it to <br />
-            unparalleled heights.
-          </p>
+        <div className="w-full h-auto   sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] sm:gap-[12vw]">
+          <Logo />
           <Link
             href={"contact"}
             className="nova hidden sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
@@ -30,7 +27,7 @@ const Footer = () => {
           {/* the second part of the footer */}
           <div className="w-full  h-auto flex justify-between  items-center  sm:flex-col  ">
             {/* locations */}
-            <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]  sm:mb-[10vw]">
+            <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]   sm:mb-[10vw]">
               <p className="inter font-[500] sm:text-[4vw] text-[1.6vw] capitalize text-white">
                 Our Locations
               </p>
@@ -148,7 +145,7 @@ const Footer = () => {
               {/* mail us and folllow us section */}
               <div className="min-w-fit sm:w-full  flex flex-col justify-between items-end   ">
                 <div className="h-full w-full gap-[2.7vw]  flex justify-end">
-                  {/* <div className="flex flex-col gap-[10px] border2 sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
+                  {/* <div className="flex flex-col gap-[10px]  sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
                     <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
                       Mail Us
                     </p>

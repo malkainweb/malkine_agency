@@ -11,7 +11,13 @@ const Home_gallery = () => {
   const [go, setgo] = useState("0vw");
   const [gall, setgall] = useState([
     { link: "/home/gallery/1.webp", height: "1vw", left: "4vw", right: "" },
-    { link: "/home/gallery/2.webp", height: "2vw", left: "19vw", right: "" },
+    {
+      color: "#69DF91",
+      height: "2vw",
+      left: "19vw",
+      right: "",
+      txt: "18 Full time employees",
+    },
     { link: "/home/gallery/3.webp", height: "3vw", left: "34vw", right: "" },
     { link: "/home/gallery/4.webp", height: "1.3vw", left: "", right: "19vw" },
     { link: "/home/gallery/5.webp", height: "4vw", left: "", right: "4vw" },
@@ -19,7 +25,13 @@ const Home_gallery = () => {
     { link: "/home/gallery/7.webp", height: "15vw", left: "23vw", right: "" },
     { link: "/home/gallery/8.webp", height: "15vw", left: "45vw", right: "" },
     { link: "/home/gallery/9.webp", height: "15vw", left: "61vw", right: "" },
-    { link: "/home/gallery/10.webp", height: "32vw", left: "10vw", right: "" },
+    {
+      color: "#DBDCE0",
+      height: "32vw",
+      left: "10vw",
+      right: "",
+      txt: "40+ yearly project turn over",
+    },
     { link: "/home/gallery/11.webp", height: "30vw", left: "27vw", right: "" },
     { link: "/home/gallery/12.webp", height: "29vw", left: "45vw", right: "" },
     { link: "/home/gallery/13.webp", height: "29vw", left: "61vw", right: "" },
@@ -101,10 +113,11 @@ const Home_gallery = () => {
           {gall.map((e: any, i: any) => {
             return (
               <div
-                className="w-[13vw] h-[13vw]   rounded-[100%] absolute"
+                className="w-[13vw] h-[13vw] items-center justify-center flex rounded-[100%] absolute nova text-center px-[1vw] text-[#052355] text-[1.3vw]"
                 style={{
                   backgroundImage: `url(${e.link})`,
                   backgroundPosition: "top center",
+                  backgroundColor: e.color,
                   backgroundSize: "cover",
                   backgroundRepeat: "no-repeat",
                   top: e.height,
@@ -112,7 +125,9 @@ const Home_gallery = () => {
                   right: e.right,
                 }}
                 key={i}
-              ></div>
+              >
+                <p>{e.txt}</p>
+              </div>
             );
           })}
         </div>

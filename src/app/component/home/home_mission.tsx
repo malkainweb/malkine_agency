@@ -17,47 +17,50 @@ const Home_mission = () => {
         </div>
 
         {/* body of the about section */}
-        <div className="w-full  items-end gap-[10vw] h-auto flex justify-center  sm:items-start sm:justify-start  sm:pt-[8vw] ">
+        <div className="w-full   gap-[10vw] h-auto flex justify-center   items-start sm:justify-start  sm:pt-[0vw] ">
           {/* image */}
           {/* <div className="w-[6.6vw] sm:hidden h-[full]"></div> */}
 
           {/* now the text */}
-          <div className="w-full px-[5vw] sm:px-0 flex-col flex gap-[2vw]  sm:w-full ">
-            <div className="text-[1.87vw] inter">
-              <p className=" sm:hidden ">
+          <div className="w-full px-[5vw] sm:px-0 flex-col  flex gap-[2vw]  sm:w-full ">
+            <div className="text-[1.87vw] inter sm:leading-[7vw]">
+              {/* <p className=" sm:hidden ">
                 {" "}
                 <span className="font-[900]">Malkain Designs</span> ut elit
                 volutpat aliquam. Sit sit sed te
               </p>
-              <p className=" sm:block hidden sm:text-[4vw] sm:text-start sm:pl-0">
+              <p className=" sm:block hidden sm:text-[4vw] text-start sm:pl-0">
                 {" "}
                 <span className="font-[900]">Malkain Designs</span> ut elit
                 <br /> volutpat aliquam. Sit sit sed te
-              </p>
+              </p> */}
 
-              <p className=" sm:text-[4vw] sm:pt-[6vw] sm:text-start sm:pr-[10vw] sm:block hidden">
-                Lorem ipsum dolor sit amet consectetur. <br /> Elit dui nulla
-                gravida volutpat eget tortor <br /> proin. Posuere porttitor sed
+              <p className=" sm:text-[4vw] sm:pt-[6vw] text-start sm:pr-[10vw] sm:block hidden">
+                We're on a journey to craft innovative, <br /> user-centric
+                online solutions that <br /> empower businesses and individuals{" "}
+                <br />
+                to thrive in the digital age.
               </p>
             </div>
 
-            <p className="text-center text-[1.87vw] inter  sm:hidden">
-              Lorem ipsum dolor sit amet consectetur. Elit dui nulla gravida
-              volutpat <br /> eget tortor proin. Posuere porttitor sed
+            <p className="text-start text-[1.87vw] inter  sm:hidden">
+              We're on a journey to craft innovative, user-centric online
+              solutions <br /> that empower businesses and individuals to thrive
+              in the digital age.
             </p>
-            <div className="w-full text-[1.87vw] sm:text-[4vw] inter sm:pt-[6vw]">
-              <p className="text-end sm:hidden">
-                {" "}
-                Lorem ipsum dolor sit amet consectetur. Elit dui nulla gravida
-                volutpat <br /> eget tortor proin. Posuere porttitor sed erat
-                quisque. Donec quisque orci <br /> vestibulum suspendiss
+            <div className="w-full text-[1.87vw] sm:text-[4vw] inter sm:pt-[3.5vw] sm:leading-[7vw]">
+              <p className="text-start sm:hidden">
+                We are committed to pushing the boundaries of technology and
+                design, <br /> delivering exceptional value to our clients, and
+                fostering a culture of creativity, <br /> collaboration, and
+                continuous learning.
               </p>
               <p className=" text-start hidden sm:block">
-                {" "}
-                Lorem ipsum dolor sit amet <br /> consectetur. Elit dui nulla
-                gravida <br />
-                volutpat eget tortor proin. Posuere <br /> porttitor sed erat
-                quisque. Donec <br /> quisque orci vestibulum suspendiss
+                We are committed to pushing the <br /> boundaries of technology
+                and design, <br /> delivering exceptional value to our clients,{" "}
+                <br />
+                and fostering a culture of creativity, <br /> collaboration, and
+                continuous learning.
               </p>
             </div>
           </div>

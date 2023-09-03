@@ -35,7 +35,7 @@ const Home_portfolio = () => {
               </div>
               <div className="w-full  flex flex-col gap-[0px] nova">
                 <p className="text-[1.2vw] text-[grey] sm:text-[2.5vw] capitalize">
-                  Social Media - Business
+                  Social Media
                 </p>
                 <h3 className="text-[2.13vw] sm:text-[4vw] font-medium capitalize">
                   Bondbullies
