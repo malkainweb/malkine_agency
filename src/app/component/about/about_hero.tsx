@@ -51,16 +51,16 @@ const About_hero = () => {
           </h1>
 
           <p className="text-center text-[1.33vw] sm:hidden text-black text-opacity-[75%] nova">
-            We are digital creatives embracing the freedom to produce solutions
-            that connect, <br />
-            communicate and inspire.
+            With an unwavering strive for the ultimate user experience, we
+            design intuitively , <br />
+            develop smart and test voluminously.
           </p>
 
           {/* this is for the mobile screen */}
           <p className=" hidden sm:block text-center   sm:text-[3.5vw] text-black text-opacity-[75%] nova">
-            We are digital creatives embracing the <br /> freedom to produce
-            solutions that connect, <br />
-            communicate and inspire.
+            With an unwavering strive for the ultimate <br />
+            user experience, we design intuitively , <br /> develop smart and
+            test voluminously.
           </p>
         </div>
       </div>

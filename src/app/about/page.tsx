@@ -6,7 +6,7 @@ import Footer from "../component/fotter/footer";
 import About_hero from "../component/about/about_hero";
 import Header_black from "../component/navigation/header_black_nav";
 import Menu from "../component/menu";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
 export default function About() {
@@ -23,6 +23,12 @@ export default function About() {
   const first = width * 0.54;
   const second = width * 0.9;
   const third = width * 1.93;
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (width >= 651) {

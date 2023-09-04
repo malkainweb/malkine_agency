@@ -25,15 +25,15 @@ const Hero_services = (props: any) => {
       class: 1,
       des: "Website & Platform Design",
     },
-
-    {
-      class: 2,
-      des: "Ecommerce Website Design & Development",
-    },
     {
       class: 3,
       des: "Software Design & Development",
     },
+    {
+      class: 2,
+      des: "Ecommerce Website Design & Development",
+    },
+
     {
       class: 4,
       des: "User Management Systems",
@@ -210,18 +210,18 @@ const Hero_services = (props: any) => {
               Services
             </p>
             <h1
-              className="novabold sm:hidden text-[2.7vw] text-[#232323] leading-[3.2vw] "
+              className="novabold sm:hidden text-[2.7vw] text-[#232323] leading-[3.2vw] capitalize"
               // style={{ lineHeight: "3.2vw" }}
             >
-              We are a creative agency <br /> working with brands - building{" "}
-              <br />
-              insightful strategy
+              We are a full-service design <br />
+              and development agency <br /> collaborating with brands to <br />{" "}
+              deliver innovative online experiences.
             </h1>
 
-            <h1 className="sm:text-[5.5vw] hidden sm:block sm:leading-[6vw]">
-              We are a creative <br /> agency working with <br /> brands -
-              building <br />
-              insightful strategy
+            <h1 className="sm:text-[5vw] hidden sm:block sm:leading-[6vw] capitalize">
+              We are a full-service <br /> design and development <br /> agency
+              collaborating with <br />
+              brands to deliver innovative <br /> online experiences.
             </h1>
             <Link
               href={"contact"}
@@ -238,9 +238,6 @@ const Hero_services = (props: any) => {
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
-            <p className="text-[#D01717] text-[1.6vw] sm:text-[3.5vw] font-bold">
-              Services
-            </p>
             <h3 className=" text-[4vw]  font-[500] sm:text-[6vw]">
               Services we offer
             </h3>

@@ -167,7 +167,7 @@ export default function Home() {
         <Optimized />
         <Home_mission />
         <Home_gallery />
-        <Review />
+        {/* <Review /> */}
         <Footer />
       </div>
     </>

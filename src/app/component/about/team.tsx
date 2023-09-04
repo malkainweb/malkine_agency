@@ -68,10 +68,8 @@ const Team = () => {
     <>
       <div className="w-full h-auto flex flex-col bg-black gap-[3.3vw] pt-[23.3vw] sm:pt-[42vw] pb-[6.7vw] p_r">
         {/* first section */}
-        <div className="flex flex-col justify-center items-center gap-[1.33vw] sm:gap-[6px]">
-          <h1 className="nova text-[4.27vw] sm:text-[8vw] text-white">
-            Our vision
-          </h1>
+        {/* <div className="flex flex-col justify-center items-center gap-[1.33vw] sm:gap-[6px]">
+         
           <p className="text-[#c3c2c2] text-[1.33vw] text-center nova font-[300] sm:hidden">
             <span className="font-[700] text-white"> Our team</span> works hard
             to create profound design asethetics that <br />
@@ -82,10 +80,10 @@ const Team = () => {
             to create profound design <br /> asethetics that are well crafted .
             We explore and <br /> push boundaries
           </p>
-        </div>
+        </div> */}
 
         {/* second section */}
-        <div className="w-full h-auto flex sm:pb-[6vw] flex-wrap justify-between gap-[3.33vw] sm:gap-[8vw]  ">
+        <div className="w-full h-auto flex sm:pb-[6vw] flex-wrap justify-between gap-[3.33vw] pt-[2vw] sm:gap-[8vw]  ">
           {team.map((main: any, index: any) => {
             return (
               <div

@@ -16,7 +16,9 @@ const Footer = () => {
     <>
       <div className="h-auto rounded-t-[4.8vw] w-full  bg-[#080808] ">
         <div className="w-full h-auto   sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] sm:gap-[12vw]">
-          <Logo />
+          <div className="sm:pt-[6vw]">
+            <Logo />
+          </div>
           <Link
             href={"contact"}
             className="nova hidden sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
@@ -120,32 +122,33 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className=" sm:order-1 sm:my-[10vw]  p-[28.15px] sm:p-[4vw] min-w-fit  sm:w-full rounded-[2.6vw] sm:rounded-[3.5vw] bg-[#121212]  flex justify-between   capitalize  ">
-              <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] mr-[4vw] w-full sm:w-[35vw]   h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw]  font-[400]">
-                <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
-                  Discover
-                </p>
-                <Link href="/" className="hover:text-white">
-                  home
-                </Link>
-                <Link href="services" className="hover:text-white">
-                  our services
-                </Link>
-                <Link href="about" className="hover:text-white">
-                  about us
-                </Link>
-                <Link href="works" className="hover:text-white">
-                  our works
-                </Link>
+            <div className="min-w-fit h-auto flex gap-[2vw]  flex-col sm:w-full">
+              <div className=" sm:order-1 sm:my-[10vw]  p-[28.15px] sm:p-[4vw] min-w-fit  sm:w-full rounded-[2.6vw] sm:rounded-[3.5vw] bg-[#121212]  flex justify-between   capitalize  ">
+                <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] mr-[4vw] w-full sm:w-[35vw]   h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw]  font-[400]">
+                  <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
+                    Discover
+                  </p>
+                  <Link href="/" className="hover:text-white">
+                    home
+                  </Link>
+                  <Link href="services" className="hover:text-white">
+                    our services
+                  </Link>
+                  <Link href="about" className="hover:text-white">
+                    about us
+                  </Link>
+                  <Link href="works" className="hover:text-white">
+                    our works
+                  </Link>
 
-                <Link href="contact" className="hover:text-white">
-                  contact us
-                </Link>
-              </div>
-              {/* mail us and folllow us section */}
-              <div className="min-w-fit sm:w-full  flex flex-col justify-between items-end   ">
-                <div className="h-full w-full gap-[2.7vw]  flex justify-end">
-                  {/* <div className="flex flex-col gap-[10px]  sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
+                  <Link href="contact" className="hover:text-white">
+                    contact us
+                  </Link>
+                </div>
+                {/* mail us and folllow us section */}
+                <div className="min-w-fit sm:w-full  flex flex-col justify-between items-end   ">
+                  <div className="h-full w-full gap-[2.7vw]  flex justify-end">
+                    {/* <div className="flex flex-col gap-[10px]  sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
                     <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
                       Mail Us
                     </p>
@@ -153,31 +156,33 @@ const Footer = () => {
                       support@malkain.com
                     </Link>
                   </div> */}
-                  <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] min-w-fit h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
-                    <p className="text-[1.3vw] sm:text-[3.5vw] w-full text-white nova font-[700] text-center">
-                      Follow Us
-                    </p>
-                    <Link href="#" className="hover:text-white">
-                      Instagram
-                    </Link>
-                    <Link href="#" className="hover:text-white">
-                      Linkedin
-                    </Link>
-                    <Link href="#" className="hover:text-white">
-                      Twitter
-                    </Link>
+                    <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] min-w-fit h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
+                      <p className="text-[1.3vw] sm:text-[3.5vw] w-full text-white nova font-[700] text-center">
+                        Follow Us
+                      </p>
+                      <Link href="#" className="hover:text-white">
+                        Instagram
+                      </Link>
+                      <Link href="#" className="hover:text-white">
+                        Linkedin
+                      </Link>
+                      <Link href="#" className="hover:text-white">
+                        Twitter
+                      </Link>
+                    </div>
                   </div>
-                </div>
-                {/* ctn button */}
-                <div className="w-full h-auto flex justify-end">
-                  <Link
-                    href={"contact"}
-                    className="nova  text-[1vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-white hover:bg-[#920808]"
-                  >
-                    Work with us <i className="bi bi-arrow-right"></i>
-                  </Link>
+                  {/* ctn button */}
+                  <div className="w-full h-auto flex justify-end"></div>
                 </div>
               </div>
+
+              {/* the contact us button section on the footer */}
+              <Link
+                href={"contact"}
+                className="nova  text-[1.3vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-center text-white hover:bg-[#920808]"
+              >
+                Work with us <i className="bi bi-arrow-right"></i>
+              </Link>
             </div>
           </div>
         </div>

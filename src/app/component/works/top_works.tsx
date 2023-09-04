@@ -8,35 +8,35 @@ const Top_works = () => {
   const [svg, setsvg] = useState([
     {
       bg: "top",
-      txt: "modamu",
+      txt: "harc",
+      link: "https://harc.casa",
       top: "0px",
       left: "0px",
       right: "",
     },
     {
       bg: "top",
-      txt: "G buddies",
+      txt: "Spoiled Child",
+      link: "https://spoiledchild.com/",
+
       top: "7.7vw",
       left: "0px",
       right: "",
     },
     {
       bg: "middle",
-      txt: "Bondbullies",
+      txt: "Orbit",
+      link: "https://www.orbit.law",
       top: "15.33vw",
       left: "0px",
       right: "",
     },
+
     {
       bg: "top",
-      txt: "",
-      top: "0px",
-      left: "7.7vw",
-      right: "",
-    },
-    {
-      bg: "top",
-      txt: "Ash & Beau",
+      txt: "Good Juju",
+      link: "https://heygoodjuju.com",
+
       top: "7.7vw",
       left: "7.7vw",
       right: "",
@@ -44,21 +44,26 @@ const Top_works = () => {
     // mostly from here third row
     {
       bg: "middle",
-      txt: "GHS",
+      txt: "APR",
+      link: "https://www.aprguarnizioni.com",
       top: "15.33vw",
       left: "7.7vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "Jesus Fish",
+      txt: "Unity",
+      link: "http://getunity.com",
+
       top: "15.33vw",
       left: "15.33vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "atella",
+      txt: "Vibes Only",
+      link: "https://www.vibesonly.com",
+
       top: "15.33vw",
       left: "23vw",
       right: "",
@@ -66,22 +71,19 @@ const Top_works = () => {
     {
       bg: "middle",
       txt: "atella",
+      link: "https://www.atella.ca",
+
       top: "15.33vw",
       left: "30.7vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "atella",
+      txt: "Modamu",
+      link: "https://www.modamuvillage.com",
+
       top: "15.33vw",
       left: "38.33vw",
-      right: "",
-    },
-    {
-      bg: "edges",
-      txt: "Station forge",
-      top: "15.33vw",
-      left: "46vw",
       right: "",
     },
 
@@ -89,36 +91,37 @@ const Top_works = () => {
     {
       bg: "middle",
       txt: "house of adells",
+      link: "https://www.houseofadeles.com",
+
       top: "23vw",
       left: "7.7vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "Evil GSP",
+      txt: "Climb Onsight ",
+      link: "https://www.climbonsight.ca",
+
       top: "23vw",
       left: "15.33vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "house of adells",
+      txt: "House Of Taretti",
+      link: "https://www.houseoftaretti.com",
+
       top: "23vw",
       left: "23vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "house of adells",
+      txt: "Q Department",
+      link: "https://www.qdepartment.com",
+
       top: "23vw",
       left: "30.7vw",
-      right: "",
-    },
-    {
-      bg: "middle",
-      txt: "house of adells",
-      top: "23vw",
-      left: "38.33vw",
       right: "",
     },
 
@@ -126,50 +129,46 @@ const Top_works = () => {
     {
       bg: "middle",
       txt: "Gus Cooney",
+      link: "https://www.guscooney.com",
+
       top: "30.7vw",
       left: "7.7vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "Vibes only",
+      txt: "Wild Brands",
+      link: "https://www.wildebrands.com",
+
       top: "30.7vw",
       left: "15.33vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "One off studio",
+      txt: "With Character",
+      link: "https://www.withcharacter.com",
+
       top: "30.7vw",
       left: "23vw",
-      right: "",
-    },
-    {
-      bg: "middle",
-      txt: "",
-      top: "30.7vw",
-      left: "30.7vw",
-      right: "",
-    },
-    {
-      bg: "middle",
-      txt: "",
-      top: "30.7vw",
-      left: "38.33vw",
       right: "",
     },
 
     // sisxth section
     {
       bg: "middle",
-      txt: "",
+      txt: "Reggie",
+      link: "https://www.reggie.com",
+
       top: "38.33vw",
       left: "15.33vw",
       right: "",
     },
     {
       bg: "middle",
-      txt: "",
+      txt: "Malkain",
+      link: "/",
+
       top: "38.33vw",
       left: "23vw",
       right: "",
@@ -178,24 +177,10 @@ const Top_works = () => {
     // seveth section
     {
       bg: "middle",
-      txt: "",
+      txt: "Livso",
+      link: "https://www.livso.com",
+
       top: "46vw",
-      left: "15.33vw",
-      right: "",
-    },
-    // eigth  section
-    {
-      bg: "middle",
-      txt: "",
-      top: "53.7vw",
-      left: "15.33vw",
-      right: "",
-    },
-    // ninth  section
-    {
-      bg: "edges",
-      txt: "",
-      top: "61.3vw",
       left: "15.33vw",
       right: "",
     },
@@ -366,12 +351,12 @@ const Top_works = () => {
     <>
       <div className="w-full h-auto flex flex-col gap-[2vw] sm:gap-[10vw] pb-[10vw] ">
         <div className="w-full h-auto ">
-          <h1 className="novabold text-[3.5vw] px-[6vw] text-white font-medium sm:text-[8vw] sm:px-[3.75vw]">
+          <h1 className="novabold text-[3.5vw] px-[10vw] text-white font-medium sm:text-[8vw] sm:px-[3.75vw]">
             Our Works{" "}
           </h1>
         </div>
         <div className="w-full h-auto flex justify-center sm:hidden">
-          <div className="w-[53.3vw]  relative h-[70vw] ">
+          <div className="w-[45.3vw]  relative h-[60vw] ">
             {/* the first left div */}
             <div
               style={{
@@ -389,7 +374,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[33.3vw] w-[0.03vw] bg-opacity-[30%] absolute top-[0.7vw] left-[11vw] z-[10]"
+              className="h-[20.3vw] w-[0.03vw] bg-opacity-[30%] absolute top-[10.7vw] left-[11vw] z-[10]"
             ></div>
 
             {/* third sectio dive dive on the section */}
@@ -399,7 +384,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[0.03vw] w-[46.7vw] bg-opacity-[30%] absolute top-[18.7vw] left-[3.3vw] z-[10]"
+              className="h-[0.03vw] w-[40.7vw] bg-opacity-[30%] absolute top-[18.7vw] left-[3.3vw] z-[10]"
             ></div>
 
             {/* fourth sectio dive dive on the section */}
@@ -409,7 +394,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[0.03vw] w-[33.3vw] bg-opacity-[30%] absolute top-[26.3vw] left-[10vw] z-[10]"
+              className="h-[0.03vw] w-[27.3vw] bg-opacity-[30%] absolute top-[26.3vw] left-[10vw] z-[10]"
             ></div>
 
             {/* fifth sectio dive dive on the section */}
@@ -419,7 +404,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[0.03vw] w-[33.3vw] bg-opacity-[30%] absolute top-[34vw] left-[10vw] z-[10]"
+              className="h-[0.03vw] w-[17.3vw] bg-opacity-[30%] absolute top-[34vw] left-[10vw] z-[10]"
             ></div>
 
             {/* sixth  dive on the section */}
@@ -429,7 +414,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[46.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[18.7vw] z-[10]"
+              className="h-[35.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[18.7vw] z-[10]"
             ></div>
 
             {/* seventh  dive on the section */}
@@ -449,7 +434,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[20vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[34vw] z-[10]"
+              className="h-[10vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[34vw] z-[10]"
             ></div>
 
             {/* ninth  dive on the section */}
@@ -459,13 +444,13 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[20vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[41.7vw] z-[10]"
+              className="h-[0vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[41.7vw] z-[10]"
             ></div>
             {svg.map((e: any, index: any) => {
               return (
                 <Link
-                  href="#"
-                  className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.87vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
+                  href={e.link}
+                  className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.7vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
                   key={index}
                   style={{
                     top: e.top,

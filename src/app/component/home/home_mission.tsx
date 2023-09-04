@@ -36,7 +36,7 @@ const Home_mission = () => {
               </p> */}
 
               <p className=" sm:text-[4vw] sm:pt-[6vw] text-start sm:pr-[10vw] sm:block hidden">
-                We're on a journey to craft innovative, <br /> user-centric
+                {" We're"} on a journey to craft innovative, <br /> user-centric
                 online solutions that <br /> empower businesses and individuals{" "}
                 <br />
                 to thrive in the digital age.
@@ -44,7 +44,7 @@ const Home_mission = () => {
             </div>
 
             <p className="text-start text-[1.87vw] inter  sm:hidden">
-              We're on a journey to craft innovative, user-centric online
+              {"  We're"} on a journey to craft innovative, user-centric online
               solutions <br /> that empower businesses and individuals to thrive
               in the digital age.
             </p>

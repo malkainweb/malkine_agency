@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Link from "next/link";
 
 const Home_portfolio = () => {
   return (
@@ -16,10 +17,14 @@ const Home_portfolio = () => {
           </button>
         </div>
 
-        <div className="sm:h-[90vw] sm:overflow-x-scroll sm:relative w-auto  flex ">
+        <div className="sm:h-[90vw] sm:overflow-x-scroll sm:relative w-auto  flex  ">
           {/* body of the about section */}
           <div className="w-full flex justify-between h-auto  sm:absolute sm:top-[15vw] sm:left-0 sm:w-auto ">
-            <div className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw]">
+            <Link
+              href="https://www.orbit.law"
+              target="_blank"
+              className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw] "
+            >
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{ backgroundImage: "url(/home/port1.webp)" }}
@@ -35,14 +40,18 @@ const Home_portfolio = () => {
               </div>
               <div className="w-full  flex flex-col gap-[0px] nova">
                 <p className="text-[1.2vw] text-[grey] sm:text-[2.5vw] capitalize">
-                  Social Media
+                  Law
                 </p>
                 <h3 className="text-[2.13vw] sm:text-[4vw] font-medium capitalize">
-                  Bondbullies
+                  Orbit
                 </h3>
               </div>
-            </div>
-            <div className="h-auto   flex flex-col  w-[40%] sm:w-[68.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw]">
+            </Link>
+            <Link
+              href="https://www.climbonsight.ca"
+              target="_blank"
+              className="h-auto   flex flex-col  w-[40%] sm:w-[68.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw]"
+            >
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{ backgroundImage: "url(/home/port2.webp)" }}
@@ -64,8 +73,12 @@ const Home_portfolio = () => {
                   Climb Onsight
                 </h3>
               </div>
-            </div>
-            <div className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] gap-[1vw]  sm:ml-[4.5vw] sm:mr-[4.5vw] sm:gap-[3vw]">
+            </Link>
+            <Link
+              href="https://www.atella.ca"
+              target="_blank"
+              className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] gap-[1vw]  sm:ml-[4.5vw] sm:mr-[4.5vw] sm:gap-[3vw]"
+            >
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
                 style={{
@@ -89,7 +102,7 @@ const Home_portfolio = () => {
                   Atella
                 </h3>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </div>

@@ -39,7 +39,13 @@ const Home_gallery = () => {
   ]);
 
   const [mob_gall1, setmob_gall1] = useState([
-    { link: "/home/gallery/10.webp", height: "1vw", left: "2vw", right: "" },
+    {
+      color: "#DBDCE0",
+      txt: "40+ yearly project turn over",
+      height: "1vw",
+      left: "2vw",
+      right: "",
+    },
     { link: "/home/gallery/6.webp", height: "10vw", left: "40vw", right: "" },
     { link: "/home/gallery/3.webp", height: "1vw", left: "", right: "4vw" },
     {
@@ -48,7 +54,13 @@ const Home_gallery = () => {
       left: "5vw",
       right: "0vw",
     },
-    { link: "/home/gallery/2.webp", height: "32vw", left: "", right: "10vw" },
+    {
+      txt: "18 Full time employees",
+      color: "#69DF91",
+      height: "32vw",
+      left: "",
+      right: "10vw",
+    },
     { link: "/home/gallery/7.webp", height: "53vw", left: "36vw  ", right: "" },
     { link: "/home/gallery/12.webp", height: "60vw", left: "", right: "2vw" },
   ]);
@@ -138,12 +150,12 @@ const Home_gallery = () => {
           className="hidden sm:block relative h-[100vw] transition duration-[1.5s] "
           style={{ transform: `translateX(${go})` }}
         >
-          <div className="w-[200vw] absolute top-0 left-0 flex h-full">
+          <div className="w-[200vw] absolute top-0 left-0 flex h-full   ">
             <div className="relative w-full h-full ">
               {mob_gall1.map((e: any, index: any) => {
                 return (
                   <div
-                    className="w-[25vw] h-[25vw]  absolute rounded-[100%]"
+                    className="w-[25vw] h-[25vw] items-center justify-center flex  text-[#052355] text-[3vw] px-[2vw] text-center absolute rounded-[100%]"
                     key={index}
                     style={{
                       top: e.height,
@@ -151,10 +163,13 @@ const Home_gallery = () => {
                       right: e.right,
                       backgroundImage: `url(${e.link})`,
                       backgroundPosition: "top center",
+                      backgroundColor: e.color,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
                     }}
-                  ></div>
+                  >
+                    <p>{e.txt}</p>
+                  </div>
                 );
               })}
             </div>

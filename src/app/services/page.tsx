@@ -119,7 +119,7 @@ export default function Services() {
         <Work_ethics />
         <Simple />
         <Portfolio />
-        <Mission />
+        {/* <Mission /> */}
         <Laptop_on_footer />
         <Footer />
       </div>

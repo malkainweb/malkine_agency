@@ -60,7 +60,7 @@ export default function RootLayout({
         }}
       />
 
-      <body className="hide_now">{children}</body>
+      <body className="hide_now ">{children}</body>
     </html>
   );
 }

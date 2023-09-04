@@ -63,54 +63,74 @@ const Two = (props: any) => {
                   What are you interested in ?{" "}
                   <span className="text-[#D01717] ">*</span>
                 </option>
-                <option style={{ color: "white" }} value=" Site from Scratch">
-                  Site from Scratch
+                <option
+                  style={{ color: "white" }}
+                  value=" Website & Platform Design"
+                >
+                  Website & Platform Design
                 </option>
-                <option style={{ color: "white" }} value=" UX/UI Design">
-                  UX/UI Design
+                <option
+                  style={{ color: "white" }}
+                  value=" Ecommerce Website Design & Development"
+                >
+                  Ecommerce Website Design & Development
                 </option>
-                <option style={{ color: "white" }} value="Branding">
-                  Branding
+                <option
+                  style={{ color: "white" }}
+                  value="Software Design & Development"
+                >
+                  Software Design & Development
                 </option>
-                <option style={{ color: "white" }} value="  Web Development">
-                  Web Development
+                <option
+                  style={{ color: "white" }}
+                  value="  User Management Systems"
+                >
+                  User Management Systems
                 </option>
-                <option style={{ color: "white" }} value="3D">
-                  3D
+                <option
+                  style={{ color: "white" }}
+                  value="Custom API Development"
+                >
+                  Custom API Development
                 </option>
-                <option style={{ color: "white" }} value="Maintenances">
-                  Maintenance
+                <option
+                  style={{ color: "white" }}
+                  value="Backend System Development"
+                >
+                  Backend System Development
+                </option>
+                <option
+                  style={{ color: "white" }}
+                  value="Web/Mobile App Development"
+                >
+                  Web/Mobile App Development
+                </option>
+                <option
+                  style={{ color: "white" }}
+                  value="UI/UX For Web Mobile Apps"
+                >
+                  UI/UX For Web Mobile Apps
+                </option>
+                <option
+                  style={{ color: "white" }}
+                  value="UI/UX For Websites & Platforms"
+                >
+                  UI/UX For Websites & Platforms
                 </option>
               </select>
             </div>
             {/* your budget   */}
             <div className="flex flex-col">
-              <select
+              <input
                 name=""
                 id=""
-                className="h-[4.7vw]  w-full bg-[#1A1A1A] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full"
+                placeholder={"What's your budget ? "}
+                className="h-[4.7vw]  w-full bg-[#1A1A1A]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full"
                 onChange={(e) => {
                   setbudget(e.target.value);
                 }}
                 value={budget}
-              >
-                <option style={{}} value="" disabled selected hidden>
-                  What{"'"}s your budget ?{" "}
-                  <span className="text-[#D01717] ">*</span>
-                </option>
-                <option style={{ color: "white" }} value="2k - 10k">
-                  2k - 10k
-                </option>
-                <option style={{ color: "white" }} value="10k - 30k">
-                  10k - 30k
-                </option>
-                <option style={{ color: "white" }} value="40k - 100k">
-                  40k - 100k
-                </option>
-                <option style={{ color: "white" }} value=">100k">
-                  {">"}100k
-                </option>
-              </select>
+              ></input>
             </div>
             {/* how did you hear about us  */}
             <div className="flex flex-col">

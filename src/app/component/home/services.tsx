@@ -13,15 +13,15 @@ const Services = () => {
       class: 1,
       des: "Website & Platform Design",
     },
-
-    {
-      class: 2,
-      des: "Ecommerce Website Design & Development",
-    },
     {
       class: 3,
       des: "Software Design & Development",
     },
+    {
+      class: 2,
+      des: "Ecommerce Website Design & Development",
+    },
+
     {
       class: 4,
       des: "User Management Systems",

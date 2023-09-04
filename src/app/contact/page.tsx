@@ -64,12 +64,12 @@ export default function Contact() {
           nav_menu={nav_menu}
         />
         <div className="w-full  pt-[10vw] sm:pt-[25vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
-          {step == 3 ? (
+          {step == 3 || step == 2 ? (
             ""
           ) : (
-            <p className="pt-[1.33vw] sm:text-[8vw]">
+            <p className="pt-[1.33vw] sm:text-[5vw] ">
               {" "}
-              Let{"'"}s start a project <br /> together.{" "}
+              Your Project, Our Passion. <br /> Connect with us to get started.
             </p>
           )}
         </div>

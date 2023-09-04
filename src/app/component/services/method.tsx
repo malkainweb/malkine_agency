@@ -7,54 +7,44 @@ import bottom_arrow from "../../../../public/services/bottom.webp";
 import left_arrow from "../../../../public/services/left.webp";
 import right_arrow from "../../../../public/services/right.webp";
 const Method = () => {
-  const [meth, setmeth] = useState([
-    ["Research"],
-    ["Design"],
-    ["User Testing"],
-  ]);
+  const [meth, setmeth] = useState([["Research"], ["Design"], ["Development"]]);
 
-  const [meth2, setmeth2] = useState(["Developement ", "Deployment"]);
+  const [meth2, setmeth2] = useState(["Security ", "Deployment"]);
   const [mbbilemeth1, setmbbilemeth1] = useState(["Research", "Design"]);
-  const [mbbilemeth2, setmbbilemeth2] = useState([
-    "Developement ",
-    "Deployment",
-  ]);
-  const [mobile_center, setmobile_center] = useState(["user testing  "]);
+  const [mbbilemeth2, setmbbilemeth2] = useState(["Security ", "Deployment"]);
+  const [mobile_center, setmobile_center] = useState(["Development "]);
 
   return (
     <>
-      <div className="w-full px-[6.7vw] sm:px-[3.5vw] pb-[3.3vw] flex  flex-col gap-[3.3vw]">
-        <div className="w-full sm:flex-col  flex justify-between items-center sm:gap-[7vw]">
+      <div className="w-full px-[6.7vw] sm:px-[3.5vw] pb-[3.3vw] flex  flex-col gap-[3.3vw] ">
+        <div className="w-full sm:flex-col  flex justify-between items-center sm:gap-[7vw] ">
           <div className="flex flex-col gap-[0.8vw] sm:gap-[2.5vw] w-full ">
             <p className="text-[1.6vw] nova font-[900] text-[#D01717] capitalize sm:text-[3vw]">
               method
             </p>
             <h1 className="novabold w-full sm:hidden  font-[500] text-black text-[4vw] capitalize sm:text-[5.5vw]">
-              We offer an end to end project system
+              We offer End to End <br /> project integration.
             </h1>
             <h1 className="novabold w-full hidden sm:block font-[600] text-black text-[4vw] capitalize sm:text-[5.5vw]">
-              We offer an end to <br />
-              end project system
+              We offer End to End <br />
+              project integration.
             </h1>
           </div>
-          <div className=" min-w-[40%] flex justify-end sm:w-full ">
+          <div className=" min-w-[40%] flex justify-end sm:justify-start sm:w-full ">
             <p className="text-[1.4vw] text-black nova font-[300] sm:hidden ">
-              We offer a slue of different services <br /> which spans research,
-              design, logos,
-              <br /> development and deployment. We offer <br />
-              an end to end system where we cover
-              <br /> all of your project needs. We are <br />
-              determined, detailed, focused and goal <br />
-              minded given that we aim to always push <br />
-              boundaries and think outside the box
+              At Malkain, we believe the key to <br />
+              unlocking growth is multifaceted. That's <br /> why we're a full
+              service agency tailored <br />
+              to you, aimed at building excitement and <br /> amazing
+              experiences for the people you <br /> interact with.
             </p>
 
-            <p className="sm:text-[3.5vw] hidden sm:block ">
-              We ofer a slue of different services which spans research, design,
-              logos, development and deployment. We offer an end to end system
-              where we cover all of your project needs. We are determined,
-              detailed, focused and goal minded given that we aim to always puh
-              boundaries and think outside the box
+            <p className="sm:text-[3.5vw] sm:text-start  hidden leading-[6.2vw] sm:block ">
+              At Malkain, we believe the key to <br />
+              unlocking growth is multifaceted. That's <br /> why we're a full
+              service agency tailored <br />
+              to you, aimed at building excitement and <br /> amazing
+              experiences for the people you <br /> interact with.
             </p>
           </div>
         </div>

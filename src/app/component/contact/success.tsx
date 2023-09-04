@@ -23,7 +23,8 @@ const Success = (props: any) => {
             className="w-[6.7vw] h-fit sm:w-[20vw]"
           />
           <p className="text-[2.67vw] sm:text-[6vw] nova text-white text-center">
-            Thank you! Your submission has <br /> been recieved
+            Thank You for your submission! <br /> We will contact you in 48 - 72
+            hrs.
           </p>
           <Link
             href="/"
