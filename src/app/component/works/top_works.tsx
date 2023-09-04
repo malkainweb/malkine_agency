@@ -189,29 +189,25 @@ const Top_works = () => {
   const [mobile_svg, setmobile_svg] = useState([
     {
       bg: "top",
-      txt: "modamu",
+      txt: "harc",
+      link: "https://harc.casa",
       top: "0px",
       left: "0px",
       right: "",
     },
+
     {
       bg: "top",
-      txt: "",
-      top: "0px",
-      left: "50%",
-      right: "",
-      translate: "-50%",
-    },
-    {
-      bg: "top",
-      txt: "modamu",
+      txt: "Spoiled Child",
+      link: "https://spoiledchild.com/",
       top: "32vw",
       left: "0px",
       right: "",
     },
     {
       bg: "top",
-      txt: "",
+      txt: "Orbit",
+      link: "https://www.orbit.law",
       top: "32vw",
       left: "50%",
       right: "",
@@ -219,14 +215,16 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "bondbulies",
+      txt: "Good Juju",
+      link: "https://heygoodjuju.com",
       top: "64vw",
       left: "0px",
       right: "",
     },
     {
       bg: "middle",
-      txt: "GHS",
+      txt: "APR",
+      link: "https://www.aprguarnizioni.com",
       top: "64vw",
       left: "50%",
       right: "",
@@ -234,14 +232,16 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "jesus fish",
+      txt: "Unity",
+      link: "http://getunity.com",
       top: "64vw",
       left: "",
       right: "0px",
     },
     {
       bg: "middle",
-      txt: "atella",
+      txt: "Vibes Only",
+      link: "https://www.vibesonly.com",
       top: "96vw",
       left: "0px",
       right: "",
@@ -249,14 +249,16 @@ const Top_works = () => {
     {
       bg: "middle",
       txt: "atella",
+      link: "https://www.atella.ca",
       top: "96vw",
       left: "50%",
       right: "",
       translate: "-50%",
     },
     {
-      bg: "edges",
-      txt: "station forge",
+      bg: "middle",
+      txt: "Modamu",
+      link: "https://www.modamuvillage.com",
       top: "96vw",
       left: "",
       right: "0px",
@@ -264,13 +266,15 @@ const Top_works = () => {
     {
       bg: "middle",
       txt: "house of adells",
+      link: "https://www.houseofadeles.com",
       top: "128vw",
       left: "0px",
       right: "",
     },
     {
       bg: "middle",
-      txt: "evil GSP",
+      txt: "Climb Onsight ",
+      link: "https://www.climbonsight.ca",
       top: "128vw",
       left: "50%",
       right: "",
@@ -278,21 +282,24 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "house of adeles",
+      txt: "House Of Taretti",
+      link: "https://www.houseoftaretti.com",
       top: "128vw",
       left: "",
       right: "0px",
     },
     {
       bg: "middle",
-      txt: "house of adeles",
+      txt: "Q Department",
+      link: "https://www.qdepartment.com",
       top: "160vw",
       left: "0px",
       right: "",
     },
     {
       bg: "middle",
-      txt: "evil GSP",
+      txt: "Gus Cooney",
+      link: "https://www.guscooney.com",
       top: "160vw",
       left: "50%",
       right: "",
@@ -300,14 +307,16 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "house of adeles",
+      txt: "Wild Brands",
+      link: "https://www.wildebrands.com",
       top: "160vw",
       left: "",
       right: "0px",
     },
     {
       bg: "middle",
-      txt: "",
+      txt: "With Character",
+      link: "https://www.withcharacter.com",
       top: "192vw",
       left: "50%",
       right: "",
@@ -315,7 +324,8 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "",
+      txt: "Reggie",
+      link: "https://www.reggie.com",
       top: "192vw",
       left: "",
       right: "0px",
@@ -324,7 +334,8 @@ const Top_works = () => {
     // now the nomral middles about 3 of them
     {
       bg: "middle",
-      txt: "",
+      txt: "Malkain",
+      link: "/",
       top: "224vw",
       left: "50%",
       right: "",
@@ -332,7 +343,8 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "",
+      txt: "Livso",
+      link: "https://www.livso.com",
       top: "256vw",
       left: "50%",
       right: "",
@@ -341,6 +353,8 @@ const Top_works = () => {
     {
       bg: "edges",
       txt: "",
+      link: "/",
+
       top: "288vw",
       left: "50%",
       right: "",
@@ -450,6 +464,7 @@ const Top_works = () => {
               return (
                 <Link
                   href={e.link}
+                  target="_blank"
                   className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.7vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
                   key={index}
                   style={{
@@ -465,7 +480,7 @@ const Top_works = () => {
           </div>
         </div>
         {/* mobile wrapper sha */}
-        <div className="sm:block hidden  p_r flex justify-center items-center">
+        <div className="sm:block hidden  p_r  justify-center items-center">
           <div className=" w-full h-[320vw] relative">
             {/* the first columen div section */}
             <div
@@ -484,7 +499,7 @@ const Top_works = () => {
                 borderStyle: "dashed",
                 transform: `translateX(-50%)`,
               }}
-              className="h-[300vw] w-[0.03vw] bg-opacity-[30%] absolute top-[10vw] left-[50%] z-[10]"
+              className="h-[250vw] w-[0.03vw] bg-opacity-[30%] absolute top-[40vw] left-[50%] z-[10]"
             ></div>
 
             {/* the third columen div section */}
@@ -496,17 +511,7 @@ const Top_works = () => {
                 borderStyle: "dashed",
                 transform: `translateX(-50%)`,
               }}
-              className="h-[90vw] w-[0.03vw] bg-opacity-[30%] absolute top-[70vw] right-[13.4vw] z-[10]"
-            ></div>
-
-            {/* the first row */}
-            <div
-              style={{
-                border: "0.03vw solid white",
-                opacity: "0.3",
-                borderStyle: "dashed",
-              }}
-              className="h-[0.03vw] w-[46.7vw] bg-opacity-[30%] absolute top-[13.5vw] left-[4vw] z-[10]"
+              className="h-[140vw] w-[0.03vw] bg-opacity-[30%] absolute top-[70vw] right-[13.4vw] z-[10]"
             ></div>
 
             {/* the second row */}
@@ -566,8 +571,9 @@ const Top_works = () => {
             {mobile_svg.map((e: any, index: any) => {
               return (
                 <Link
-                  href="#"
-                  className={`w-[27vw] ${e.bg} z-[30] h-[27vw] absolute rounded-[100%]  works flex justify-center items-center  text-white font-[helvetica] text-[3vw] hover:bg-[#D01717] transition duration-[0.7s] px-[4vw] capitalize text-center hover:border-white hover:border`}
+                  href={e.link}
+                  target="_blank"
+                  className={`w-[27vw] ${e.bg} z-[30] h-[27vw] absolute rounded-[100%]  works flex justify-center items-center  text-white font-[helvetica] text-[2.5vw] hover:bg-[#D01717] transition duration-[0.7s] px-[4vw] capitalize text-center hover:border-white hover:border `}
                   key={index}
                   style={{
                     top: e.top,
