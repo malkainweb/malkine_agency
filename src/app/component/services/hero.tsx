@@ -223,7 +223,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[300vw] p_r flex flex-col sm:gap-[0vw] relative ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[270vw] p_r flex flex-col sm:gap-[0vw] relative ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
@@ -292,7 +292,7 @@ const Hero_services = (props: any) => {
 
         {/* the normaltext animation */}
         <div
-          className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[70vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[7vh]  transition duration-[1s] z-[10]`}
+          className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[70vw] sm:left-0  sm:flex flex-wrap justify-start  sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
         >
           {service_arr.map((e: any, index: any) => {
             return (

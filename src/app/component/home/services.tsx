@@ -252,7 +252,7 @@ const Services = () => {
 
       {/* the normaltext animation */}
       <div
-        className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[100vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[7vh]  transition duration-[1s] z-[10]`}
+        className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[100vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[6vw]  transition duration-[1s] z-[10]`}
       >
         {service_arr.map((e: any, index: any) => {
           return (
