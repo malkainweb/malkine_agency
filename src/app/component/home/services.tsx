@@ -56,9 +56,9 @@ const Services = () => {
 
   const width = globalThis.innerWidth;
 
-  const new_width = width * 4.7;
+  const new_width = width * 4.5;
 
-  const end_width = new_width + width * 3.5;
+  const end_width = new_width + width * 3.2;
 
   const mob_new_width = width * 12.9;
 
@@ -163,7 +163,7 @@ const Services = () => {
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[300vw] sm:h-[310vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] relative ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[310vw] sm:h-[310vw]  p_r flex flex-col sm:gap-[0vw] gap-[2vw] relative ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
@@ -183,18 +183,68 @@ const Services = () => {
       </div>
 
       {/* second div */}
+      {/* second div */}
       <div
-        className={`w-full h-[32vw] sm:h-[100vh] z-[20] items-end ${example}  top-[10vw] sm:top-[0vw] left-0  flex `}
+        className={`w-full h-[32vw] sm:h-[100vw] sm:hidden   items-end sticky  left-0 top-[10vw] sm:top-[40vw]  flex `}
         style={{ overflow: "clip" }}
       >
         {/* first relative box */}
         <div
-          className="absolute top-0 left-0 h-[13vw] sm:h-[46vh]   w-full  bg-gradient-to-b from-[black] z-[20]"
+          className="absolute top-[-1vw] left-0 h-[13vw]   sm:h-[50vw]  w-full   bg-gradient-to-b from-[black] z-[20]"
+          style={{ overflow: "clip" }}
+        ></div>
+        {/* second relative box */}
+        <div
+          className="absolute bottom-[-1vw] left-0 h-[13vw]  sm:h-[50vw]  w-full   bg-gradient-to-t from-[black] z-[20]"
+          style={{ overflow: "clip" }}
+        ></div>
+        {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
+
+        {/* the normaltext animation */}
+        <div
+          className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10] `}
+        >
+          {service_arr.map((e: any, index: any) => {
+            return (
+              <p
+                key={index}
+                className={`w-full text-[4.2vw] sm:text-[4.3vw] sm:font-[600] sm:text-center  h-[6vw] sm:h-[12vw] flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+                  e.class == check_num ? "#D01717" : "white"
+                }]  `}
+              >
+                {e.des}
+              </p>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* comment for the mobile  */}
+      {/* second div */}
+
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      {/*  */}
+      <div
+        className={`w-full h-[50vw] hidden  sm:h-[100vh] z-[20] items-end  sticky   top-[0vw] sm:top-[0vw] left-0  sm:flex `}
+        style={{ overflow: "clip" }}
+      >
+        {/* first relative box */}
+
+        <div
+          className="absolute top-0 left-0 h-[20vw] sm:h-[46vh]   w-full  bg-gradient-to-b from-[black] z-[20]"
           style={{ overflow: "hidden" }}
         ></div>
         {/* second relative box */}
         <div
-          className="absolute bottom-0 left-0 h-[13vw] sm:h-[46vh]   w-full  bg-gradient-to-t from-[black] z-[20]"
+          className="absolute bottom-0 left-0 h-[20vw] sm:h-[46vh]   w-full  bg-gradient-to-t from-[black] z-[20]"
           style={{ overflow: "hidden" }}
         ></div>
       </div>
@@ -202,13 +252,13 @@ const Services = () => {
 
       {/* the normaltext animation */}
       <div
-        className={`w-full h-[19vw] sm:h-[56vw] sm:absolute sm:top-[100vw] sm:left-0  flex flex-wrap justify-start sm:gap-[7vh] ${des_translate} transition duration-[1s] z-[10]`}
+        className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[100vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[7vh]  transition duration-[1s] z-[10]`}
       >
         {service_arr.map((e: any, index: any) => {
           return (
             <p
               key={index}
-              className={`w-full text-[4.2vw] sm:text-center sm:text-[6vw] text-center sm:font-[600] h-[6vw]   flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+              className={`w-full text-[4.5vw] sm:text-center sm:text-[6vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
                 e.class == check_num ? "#D01717" : "white"
               }] `}
             >

@@ -68,11 +68,11 @@ const Hero_services = (props: any) => {
 
   const new_width = width * 1;
 
-  const end_width = new_width + width * 2.3;
+  const end_width = new_width + width * 2.5;
 
-  const mob_new_width = width * 1;
+  const mob_new_width = width * 1.3;
 
-  const mob_end_width = mob_new_width + width * 6.3;
+  const mob_end_width = mob_new_width + width * 2.8;
 
   const { scrollY } = useScroll();
 
@@ -135,48 +135,37 @@ const Hero_services = (props: any) => {
       }
 
       if (latest >= 0 && latest <= 1) {
-        setdes_translate("translate-y-[0vw]");
         setcheck_num(1);
         setexample("sm:sticky");
       }
       if (latest >= 1 && latest <= 2) {
-        setdes_translate("translate-y-[-12vw]");
         setcheck_num(2);
       }
       if (latest >= 2 && latest <= 3) {
-        setdes_translate("translate-y-[-24vw]");
         setcheck_num(3);
       }
       if (latest >= 3 && latest <= 4) {
-        setdes_translate("translate-y-[-36vw]");
         setcheck_num(4);
       }
       if (latest >= 4 && latest <= 5) {
-        setdes_translate("translate-y-[-48vw]");
         setcheck_num(5);
       }
       if (latest >= 5 && latest <= 6) {
-        setdes_translate("translate-y-[-60vw]");
         setcheck_num(6);
       }
       if (latest >= 6 && latest <= 7) {
-        setdes_translate("translate-y-[-72vw]");
         setcheck_num(7);
       }
       if (latest >= 7 && latest <= 8) {
-        setdes_translate("translate-y-[-84vw]");
         setcheck_num(8);
       }
       if (latest >= 8 && latest <= 9) {
-        setdes_translate("translate-y-[-96vw]");
         setcheck_num(9);
         setexample("sm:fixed");
       }
       if (latest >= 9 && latest <= 10) {
-        setdes_translate("translate-y-[-108vw]");
       }
       if (latest >= 10) {
-        setdes_translate("translate-y-[-120vw]");
       }
       if (latest >= 10.2) {
         setexample("sm:sticky");
@@ -234,7 +223,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[670vw] p_r flex flex-col sm:gap-[0vw]  ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[300vw] p_r flex flex-col sm:gap-[0vw] relative ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
@@ -246,7 +235,7 @@ const Hero_services = (props: any) => {
 
         {/* second div */}
         <div
-          className={`w-full h-[32vw] sm:h-[100vw]  items-end sticky ${example} left-0 top-[10vw] sm:top-[40vw]  flex `}
+          className={`w-full h-[32vw] sm:h-[100vw] sm:hidden items-end sticky ${example} left-0 top-[10vw] sm:top-[40vw]  flex `}
           style={{ overflow: "clip" }}
         >
           {/* first relative box */}
@@ -272,6 +261,51 @@ const Hero_services = (props: any) => {
               );
             })}
           </div>
+        </div>
+
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        {/*  */}
+        <div
+          className={`w-full h-[50vw] hidden  sm:h-[100vh] z-[20] items-end  sticky   top-[0vw] sm:top-[0vw] left-0  sm:flex `}
+          style={{ overflow: "clip" }}
+        >
+          {/* first relative box */}
+
+          <div
+            className="absolute top-0 left-0 h-[20vw] sm:h-[46vh]    w-full   bg-gradient-to-b from-[white] z-[20]"
+            style={{ overflow: "hidden" }}
+          ></div>
+          {/* second relative box */}
+          <div
+            className="absolute bottom-0 left-0 h-[20vw] sm:h-[46vh]    w-full   bg-gradient-to-t from-[white] z-[20]"
+            style={{ overflow: "hidden" }}
+          ></div>
+        </div>
+        {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
+
+        {/* the normaltext animation */}
+        <div
+          className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[70vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[7vh]  transition duration-[1s] z-[10]`}
+        >
+          {service_arr.map((e: any, index: any) => {
+            return (
+              <p
+                key={index}
+                className={`w-full text-[4.5vw] sm:text-center sm:text-[6vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+                  e.class == check_num ? "#D01717" : "black"
+                }] `}
+              >
+                {e.des}
+              </p>
+            );
+          })}
         </div>
       </div>
     </>
