@@ -11,7 +11,9 @@ import Image from "next/image";
 import laptop_black from "../../../../public/home/black_laptop.webp";
 import on_black from "../../../../public/home/on_laptop.webp";
 import tab from "../../../../public/home/tab.webp";
+import mob_tab from "../../../../public/home/mob_tab.webp";
 import phone from "../../../../public/home/phone.webp";
+import mob_phone from "../../../../public/home/mob_phone.webp";
 
 const Home_hero = () => {
   const [color, setcolor] = useState<any>("#1A1919");
@@ -208,7 +210,13 @@ const Home_hero = () => {
               <Image
                 priority
                 src={tab}
-                className="w-[63vw] sm:w-[85vw] h-fit"
+                className="w-[63vw] sm:w-[85vw] h-fit sm:hidden"
+                alt="laptop black"
+              />
+              <Image
+                priority
+                src={mob_tab}
+                className="w-[63vw] sm:w-[94vw] h-fit sm:block hidden"
                 alt="laptop black"
               />
             </motion.div>
@@ -219,7 +227,13 @@ const Home_hero = () => {
               <Image
                 priority
                 src={phone}
-                className="w-[63vw] sm:w-[85vw] h-fit"
+                className="w-[63vw] sm:w-[85vw] h-fit sm:hidden"
+                alt="laptop black"
+              />
+              <Image
+                priority
+                src={mob_phone}
+                className="w-[63vw] sm:w-[94vw] h-fit hidden sm:block"
                 alt="laptop black"
               />
             </motion.div>
