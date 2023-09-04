@@ -25,13 +25,15 @@ body {
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
+  text-transform: capitalize;
+
   /* padding: 100px 100px 100px 100px; */
   height: auto;
   font-weight: 700;
 }
 .dav {
   display: inline-flex;
-  gap: 10px;
+  gap: 0.7vw;
   line-height: 4.5vw;
   padding: 4vw 0px;
   flex-wrap: wrap;

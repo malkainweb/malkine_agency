@@ -14,7 +14,7 @@ const Optimized = () => {
           {/* first optimized */}
           <div className="w-full flex justify-between items-center  sm:justify-center">
             <p className="text-[3vw] sm:text-center  novabold uppercase text-white text-start sm:text-[5.5vw]">
-              Developing award <br /> winging ideas <br />
+              Developing award <br /> winning ideas <br />
               one at a time
             </p>
             <div className="sm:hidden">
