@@ -258,7 +258,7 @@ const Services = () => {
           return (
             <p
               key={index}
-              className={`w-full text-[4.5vw] sm:text-center sm:text-[6vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+              className={`w-full text-[4.5vw] sm:text-center sm:text-[5.81vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
                 e.class == check_num ? "#D01717" : "white"
               }] `}
             >
