@@ -33,16 +33,16 @@ const Method = () => {
           <div className=" min-w-[40%] flex justify-end sm:justify-start sm:w-full ">
             <p className="text-[1.4vw] text-black nova font-[300] sm:hidden ">
               At Malkain, we believe the key to <br />
-              unlocking growth is multifaceted. That's <br /> why we're a full
-              service agency tailored <br />
+              unlocking growth is multifaceted. {"That's"} <br /> why {"we're"}{" "}
+              a full service agency tailored <br />
               to you, aimed at building excitement and <br /> amazing
               experiences for the people you <br /> interact with.
             </p>
 
             <p className="sm:text-[3.5vw] sm:text-start  hidden leading-[6.2vw] sm:block ">
               At Malkain, we believe the key to <br />
-              unlocking growth is multifaceted. That's <br /> why we're a full
-              service agency tailored <br />
+              unlocking growth is multifaceted.{" That's "}
+              <br /> why{" we're"} a full service agency tailored <br />
               to you, aimed at building excitement and <br /> amazing
               experiences for the people you <br /> interact with.
             </p>
