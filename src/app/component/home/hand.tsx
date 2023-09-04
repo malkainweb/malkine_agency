@@ -249,7 +249,7 @@ const Hands = (props: any) => {
                 />
               </div>
               <p className="nova text-[1vw] font-medium sm:text-[4vw]">
-                We're honored to be trusted by people <br /> with high
+                {"We're"} honored to be trusted by people <br /> with high
                 standards.
               </p>
             </div>
