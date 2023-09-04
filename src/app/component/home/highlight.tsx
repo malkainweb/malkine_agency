@@ -7,6 +7,7 @@ import {
   useTransform,
   useMotionTemplate,
 } from "framer-motion";
+import Link from "next/link";
 // import "./styles.css"
 
 /*
@@ -87,9 +88,12 @@ const Highlight = () => {
         </div>
       </div>
       <div className="w-full flex justify-center pb-[6.7vw]">
-        <button className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]">
+        <Link
+          href="contact"
+          className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
+        >
           Work with us <i className="bi bi-arrow-right"></i>
-        </button>
+        </Link>
       </div>
     </>
   );

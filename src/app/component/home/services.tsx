@@ -58,7 +58,7 @@ const Services = () => {
 
   const new_width = width * 4.7;
 
-  const end_width = new_width + width * 2.7;
+  const end_width = new_width + width * 3.5;
 
   const mob_new_width = width * 12.7;
 
@@ -178,7 +178,7 @@ const Services = () => {
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[280vw] sm:h-[700vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[300vw] sm:h-[700vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
@@ -222,7 +222,7 @@ const Services = () => {
             return (
               <p
                 key={index}
-                className={`w-full text-[4.2vw] sm:text-center sm:text-[4.4vw] sm:font-[600] h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
+                className={`w-full text-[4.2vw] sm:text-center sm:text-[4.4vw] sm:font-[600] h-[6vw] sm:h-[12vw] flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
                   e.class == check_num ? "#D01717" : "white"
                 }] `}
               >
