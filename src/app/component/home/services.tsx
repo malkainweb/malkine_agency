@@ -189,12 +189,12 @@ const Services = () => {
       >
         {/* first relative box */}
         <div
-          className="absolute top-0 left-0 h-[13vw] sm:h-[26vh]  w-full  bg-gradient-to-b from-[black] z-[20]"
+          className="absolute top-0 left-0 h-[13vw] sm:h-[46vh]  w-full  bg-gradient-to-b from-[black] z-[20]"
           style={{ overflow: "hidden" }}
         ></div>
         {/* second relative box */}
         <div
-          className="absolute bottom-0 left-0 h-[13vw] sm:h-[66vh]   w-full  bg-gradient-to-t from-[black] z-[20]"
+          className="absolute bottom-0 left-0 h-[13vw] sm:h-[46vh]   w-full  bg-gradient-to-t from-[black] z-[20]"
           style={{ overflow: "hidden" }}
         ></div>
       </div>
