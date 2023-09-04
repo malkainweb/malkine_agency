@@ -163,7 +163,7 @@ const Services = () => {
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[310vw] sm:h-[310vw]  p_r flex flex-col sm:gap-[0vw] gap-[2vw] relative ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[310vw] sm:h-[330vw]  p_r flex flex-col sm:gap-[0vw] gap-[2vw] relative ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
@@ -252,7 +252,7 @@ const Services = () => {
 
       {/* the normaltext animation */}
       <div
-        className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[100vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[6vw]  transition duration-[1s] z-[10]`}
+        className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[100vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
       >
         {service_arr.map((e: any, index: any) => {
           return (
