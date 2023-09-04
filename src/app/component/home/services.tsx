@@ -60,9 +60,9 @@ const Services = () => {
 
   const end_width = new_width + width * 3.5;
 
-  const mob_new_width = width * 12.7;
+  const mob_new_width = width * 12.8;
 
-  const mob_end_width = mob_new_width + width * 6;
+  const mob_end_width = mob_new_width + width * 2;
 
   const { scrollY } = useScroll();
 
@@ -117,68 +117,53 @@ const Services = () => {
         setcheck_num(9);
       }
     } else if (width <= 650) {
-      if (latest >= 0 && latest <= 9) {
-        setexample("sm:fixed");
-      }
-      if (latest <= 0.1) {
-        setexample("sm:sticky");
-      }
+      // if (latest <= 0.1) {
+      //   setexample("sm:sticky");
+      // }
       // if (latest >= 0 && latest <= 9) {
       //   setexample("sm:fixed");
       // }
 
       if (latest >= 0 && latest <= 1) {
-        setdes_translate("translate-y-[0vw]");
         setcheck_num(1);
+        console.log("dkdidi");
       }
       if (latest >= 1 && latest <= 2) {
-        setdes_translate("translate-y-[-12vw]");
         setcheck_num(2);
       }
       if (latest >= 2 && latest <= 3) {
-        setdes_translate("translate-y-[-24vw]");
         setcheck_num(3);
       }
       if (latest >= 3 && latest <= 4) {
-        setdes_translate("translate-y-[-36vw]");
         setcheck_num(4);
       }
       if (latest >= 4 && latest <= 5) {
-        setdes_translate("translate-y-[-48vw]");
         setcheck_num(5);
       }
       if (latest >= 5 && latest <= 6) {
-        setdes_translate("translate-y-[-60vw]");
         setcheck_num(6);
       }
       if (latest >= 6 && latest <= 7) {
-        setdes_translate("translate-y-[-72vw]");
         setcheck_num(7);
       }
       if (latest >= 7 && latest <= 8) {
-        setdes_translate("translate-y-[-84vw]");
         setcheck_num(8);
       }
       if (latest >= 8 && latest <= 9) {
-        setdes_translate("translate-y-[-96vw]");
         setcheck_num(9);
-        setexample("sm:fixed");
       }
       if (latest >= 9 && latest <= 10) {
-        setdes_translate("translate-y-[-108vw]");
       }
       if (latest >= 10) {
-        setdes_translate("translate-y-[-120vw]");
       }
 
       if (latest >= 10.2) {
-        setexample("sm:sticky");
       }
     }
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[300vw] sm:h-[700vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[300vw] sm:h-[300vw] p_r flex flex-col sm:gap-[0vw] gap-[2vw] relative ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
@@ -199,38 +184,38 @@ const Services = () => {
 
       {/* second div */}
       <div
-        className={`w-full h-[32vw] sm:h-[100vw]  items-end sticky ${example} top-[10vw] sm:top-[40vw] left-0  flex `}
+        className={`w-full h-[32vw] sm:h-[100vh] z-[20] items-end ${example}  top-[10vw] sm:top-[0vw] left-0  flex `}
         style={{ overflow: "clip" }}
       >
         {/* first relative box */}
         <div
-          className="absolute top-0 left-0 h-[13vw] sm:h-[44vw]  w-full  bg-gradient-to-b from-[black] z-[20]"
+          className="absolute top-0 left-0 h-[13vw] sm:h-[26vh]  w-full  bg-gradient-to-b from-[black] z-[20]"
           style={{ overflow: "hidden" }}
         ></div>
         {/* second relative box */}
         <div
-          className="absolute bottom-0 left-0 h-[13vw] sm:h-[44vw]  w-full  bg-gradient-to-t from-[black] z-[20]"
+          className="absolute bottom-0 left-0 h-[13vw] sm:h-[66vh]   w-full  bg-gradient-to-t from-[black] z-[20]"
           style={{ overflow: "hidden" }}
         ></div>
-        {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
+      </div>
+      {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
 
-        {/* the normaltext animation */}
-        <div
-          className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10]`}
-        >
-          {service_arr.map((e: any, index: any) => {
-            return (
-              <p
-                key={index}
-                className={`w-full text-[4.2vw] sm:text-center sm:text-[4.4vw] sm:font-[600] h-[6vw] sm:h-[12vw] flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
-                  e.class == check_num ? "#D01717" : "white"
-                }] `}
-              >
-                {e.des}
-              </p>
-            );
-          })}
-        </div>
+      {/* the normaltext animation */}
+      <div
+        className={`w-full h-[19vw] sm:h-[56vw] sm:absolute sm:top-[63vw] sm:left-0  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10]`}
+      >
+        {service_arr.map((e: any, index: any) => {
+          return (
+            <p
+              key={index}
+              className={`w-full text-[4.2vw] sm:text-center sm:text-[4.4vw] sm:font-[600] h-[6vw] sm:h-[10vh]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+                e.class == check_num ? "#D01717" : "white"
+              }] `}
+            >
+              {e.des}
+            </p>
+          );
+        })}
       </div>
     </div>
   );
