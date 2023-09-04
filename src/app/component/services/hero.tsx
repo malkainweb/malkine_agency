@@ -26,11 +26,11 @@ const Hero_services = (props: any) => {
       des: "Website & Platform Design",
     },
     {
-      class: 3,
+      class: 2,
       des: "Software Design & Development",
     },
     {
-      class: 2,
+      class: 3,
       des: "Ecommerce Website Design & Development",
     },
 

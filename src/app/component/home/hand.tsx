@@ -493,7 +493,7 @@ const Hands = (props: any) => {
           </div>
           <Link
             href={"contact"}
-            className="nova absolute bottom-[1.8vw] left-[50%] text-[1vw] font[900]  rounded-[2.6vw] px-[2vw] py-[1.07vw] bg-[#D01717] text-white translate-x-[-50%] hover:bg-[#920808] sm:text-[2.5vw] sm:px-[5vw] sm:py-[2.5vw] sm:rounded-[5vw] sm:bottom-[6vw] sm:translate-x-[0%] sm:left-[3.5vw]"
+            className="nova absolute bottom-[1.8vw] left-[50%] text-[1vw] font[900] sm:hidden  rounded-[2.6vw] px-[2vw] py-[1.07vw] bg-[#D01717] text-white translate-x-[-50%] hover:bg-[#920808] sm:text-[2.5vw] sm:px-[5vw] sm:py-[2.5vw] sm:rounded-[5vw] sm:bottom-[6vw] sm:translate-x-[0%] sm:left-[3.5vw]"
             // style={{ transform: "translateX(-50%)" }}
           >
             Work with us <i className="bi bi-arrow-right"></i>
