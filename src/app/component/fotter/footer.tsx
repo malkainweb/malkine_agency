@@ -161,7 +161,7 @@ const Footer = () => {
 
           <div className="text-white capitalize text-[0.821vw] sm:text-[3vw] sm:text-opacity-[60%] flex gap-[1.4vw] sm:gap-[4vw]">
             <Link
-              href="#"
+              href="privacy"
               className="underline underline-offset-2  hover:text-[#cfcece]"
             >
               Privacy Policy

@@ -37,7 +37,7 @@ const Team = () => {
     {
       img: img1,
       name: "Davis I.",
-      des: "Developer",
+      des: "Software Developer",
     },
     {
       img: img5,
