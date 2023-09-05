@@ -120,17 +120,32 @@ const Two = (props: any) => {
               </select>
             </div>
             {/* your budget   */}
-            <div className="flex flex-col">
+            <div className="flex flex-col relative">
               <input
                 name=""
                 id=""
                 placeholder={"What's your budget ? "}
-                className="h-[4.7vw]  w-full bg-[#1A1A1A]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full"
+                className="h-[4.7vw]    w-full bg-[#1A1A1A]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white pr-[0.7vw] pl-[2vw] sm:pl-[4.3vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full"
                 onChange={(e) => {
-                  setbudget(e.target.value);
+                  const inputValue = e.target.value;
+
+                  // Remove existing commas and non-numeric characters
+                  const numericValue = inputValue.replace(/[^0-9]/g, "");
+
+                  // Add commas after every 3 digits
+                  const formatted = numericValue.replace(
+                    /\B(?=(\d{3})+(?!\d))/g,
+                    ",",
+                  );
+
+                  // Add .00 to the end
+                  setbudget(formatted);
                 }}
                 value={budget}
               ></input>
+              <div className="w-fit h-[4.7vw]  absolute top-0 left-[0.5vw] flex justify-center items-center text-[1.5vw]  sm:text-[4vw] sm:h-full">
+                $
+              </div>
             </div>
             {/* how did you hear about us  */}
             <div className="flex flex-col">
