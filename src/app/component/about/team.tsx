@@ -14,68 +14,68 @@ const Team = () => {
   const [team, setteam] = useState([
     {
       img: img1,
-      name: "Nathan",
-      des: "designer",
+      name: "Emmanuel N.",
+      des: "CEO & founder",
     },
 
     {
       img: img5,
-      name: "Philips",
+      name: "Philips O.",
       des: "Wordpress Developer ",
     },
 
     {
       img: img2,
-      name: "Kalu Chijoke",
+      name: "Kalu C.",
       des: "UI/UX Designer ",
     },
     {
       img: img5,
-      name: "Chisom Amaechi",
+      name: "Chisom A.",
       des: "Fullstack Developer",
     },
     {
       img: img1,
-      name: "Davis",
+      name: "Davis I.",
       des: "Developer",
     },
     {
       img: img5,
-      name: "Mirian",
+      name: "Mirian A.",
       des: "UI/UX Designer ",
     },
     {
       img: img1,
-      name: "Abigail",
-      des: "Senior Software Developer ",
+      name: "Abigail A.",
+      des: "  Software Developer ",
     },
 
     {
       img: img3,
-      name: "Nathan Chris",
-      des: "davis",
+      name: "Nathan C.",
+      des: "designer",
     },
 
     {
       img: img5,
-      name: "Bryan (Veyron)",
+      name: "Bryan V.",
       des: "Fullstack Developer",
     },
 
     {
       img: img4,
-      name: "Unwana",
-      des: "Virtual Personal Assistant ",
+      name: "Unwana U.",
+      des: "Operations Manager ",
     },
     {
       img: img5,
-      name: "Derin",
+      name: "Derin O.",
       des: "Project Manager",
     },
 
     {
       img: img6,
-      name: "Asibe Emmanuel ",
+      name: "Asibe E. ",
       des: "3D Motion Designer",
     },
   ]);
