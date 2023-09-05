@@ -49,11 +49,7 @@ const Team = () => {
       name: "Abigail",
       des: "Senior Software Developer ",
     },
-    {
-      img: img5,
-      name: "Joseph Etim",
-      des: "Project Manager",
-    },
+
     {
       img: img3,
       name: "Nathan Chris",
@@ -64,11 +60,6 @@ const Team = () => {
       img: img5,
       name: "Bryan (Veyron)",
       des: "Fullstack Developer",
-    },
-    {
-      img: img1,
-      name: "Benjamin ",
-      des: "",
     },
 
     {
