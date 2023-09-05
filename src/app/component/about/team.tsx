@@ -131,7 +131,7 @@ const Team = () => {
                 {/* the clients imformaiton */}
                 <div className="flex flex-col justify-end w-full   h-full sm:gap-[21vw]">
                   <div className="flex flex-col gap-[0.66vw] ">
-                    <h1 className="font-[700] nova text-[2.8vw] sm:text-[5vw] capitalize">
+                    <h1 className="font-[700] nova text-[2.8vw] sm:text-[6.5vw] capitalize">
                       {main.name}
                     </h1>
                     <p className="text-[1vw] sm:text-[3vw] font-[helvetica] capitalize">
