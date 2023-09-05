@@ -12,12 +12,12 @@ const Home_mission = () => {
           <h1 className="nova text-[3.33vw] sm:text-[6vw] sm:font-[600]">
             Our Mission
           </h1>
-          <Link
+          {/* <Link
             href="about"
             className=" sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]  hover:bg-black hover:text-white transition duration-[0.6s]"
           >
             Read More
-          </Link>
+          </Link> */}
         </div>
 
         {/* body of the about section */}
