@@ -14,39 +14,78 @@ const Team = () => {
   const [team, setteam] = useState([
     {
       img: img1,
-      name: "Emmanuel Nwosu",
-      des: "Lorem ipsum dolor sit amet consectetur. At et varius vitae elementum sociis sit. Ut convallis ipsum vel justo amet eu ullamcorper id morbi.",
-      skill: [["management"], ["team planning"]],
+      name: "Nathan",
+      des: "davis",
     },
+
+    {
+      img: img5,
+      name: "Philips",
+      des: "Wordpress Developer ",
+    },
+
     {
       img: img2,
       name: "Kalu Chijoke",
-      des: "Lorem ipsum dolor sit amet consectetur. At et varius vitae elementum sociis sit. Ut convallis ipsum vel justo amet eu ullamcorper id morbi.",
-      skill: [["ui design"], ["prototyping"], ["web design"]],
+      des: "UI/UX Designer ",
     },
     {
-      img: img3,
-      name: "Nathan Chris",
-      des: "Lorem ipsum dolor sit amet consectetur. At et varius vitae elementum sociis sit. Ut convallis ipsum vel justo amet eu ullamcorper id morbi.",
-      skill: [["management"], ["team planning"]],
+      img: img5,
+      name: "Chisom Amaechi",
+      des: "Fullstack Developer",
     },
     {
-      img: img4,
-      name: "Mirian Achonwa",
-      des: "Lorem ipsum dolor sit amet consectetur. At et varius vitae elementum sociis sit. Ut convallis ipsum vel justo amet eu ullamcorper id morbi.",
-      skill: [["ui design"], ["prototyping"], ["web design"]],
+      img: img1,
+      name: "Davis",
+      des: "Developer",
+    },
+    {
+      img: img5,
+      name: "Mirian",
+      des: "UI/UX Designer ",
+    },
+    {
+      img: img1,
+      name: "Abigail",
+      des: "Senior Software Developer ",
     },
     {
       img: img5,
       name: "Joseph Etim",
-      des: "Lorem ipsum dolor sit amet consectetur. At et varius vitae elementum sociis sit. Ut convallis ipsum vel justo amet eu ullamcorper id morbi.",
-      skill: [["management"], ["team planning"]],
+      des: "Project Manager",
     },
     {
+      img: img3,
+      name: "Nathan Chris",
+      des: "davis",
+    },
+
+    {
+      img: img5,
+      name: "Bryan (Veyron)",
+      des: "Fullstack Developer",
+    },
+    {
+      img: img1,
+      name: "Benjamin ",
+      des: "",
+    },
+
+    {
+      img: img4,
+      name: "Unwana",
+      des: "Virtual Personal Assistant ",
+    },
+    {
+      img: img5,
+      name: "Derin",
+      des: "Project Manager",
+    },
+
+    {
       img: img6,
-      name: "Onyinye Philips",
-      des: "Lorem ipsum dolor sit amet consectetur. At et varius vitae elementum sociis sit. Ut convallis ipsum vel justo amet eu ullamcorper id morbi.",
-      skill: [["ui design"], ["prototyping"], ["web design"]],
+      name: "Asibe Emmanuel ",
+      des: "3D Motion Designer",
     },
   ]);
 
@@ -87,42 +126,26 @@ const Team = () => {
           {team.map((main: any, index: any) => {
             return (
               <div
-                className="bg-white rounded-[0.7vw] sm:rounded-[2.5vw] px-[3.3vw] py-[4.6vw] sm:w-[100%] w-[48%] h-auto  flex justify-between items-center gap-[3vw] sm:gap-[6vw]"
+                className="bg-white rounded-[0.7vw] sm:rounded-[2.5vw] px-[3.3vw]  py-[4.6vw] sm:w-[100%] w-[48%] h-auto  flex justify-between items-center gap-[3vw] sm:gap-[6vw]"
                 key={index}
               >
-                <div className="w-auto h-[24vw] sm:w-[22vw] sm:h-fit flex  justify-center items-center ">
+                <div className="w-[15vw] h-auto   order-2 sm:w-[25vw] sm:h-fit flex  justify-center items-center ">
                   <Image
                     priority
                     src={main.img}
-                    className="w-fit h-full sm:h-fit sm:w-full"
+                    className="w-full h-fit sm:h-fit sm:w-full"
                     alt="team members"
                   />
                 </div>
                 {/* the clients imformaiton */}
-                <div className="flex flex-col justify-between w-full  h-full sm:gap-[21vw]">
-                  <div className="flex flex-col gap-[0.66vw]">
-                    <h1 className="font-[700] nova text-[2.33vw] sm:text-[4.5vw] capitalize">
+                <div className="flex flex-col justify-end w-full   h-full sm:gap-[21vw]">
+                  <div className="flex flex-col gap-[0.66vw] ">
+                    <h1 className="font-[700] nova text-[2.8vw] sm:text-[5vw] capitalize">
                       {main.name}
                     </h1>
-                    <p className="text-[1.2vw] sm:text-[3vw]">{main.des}</p>
-                  </div>
-                  {/* skilss section */}
-                  <div className="flex flex-col gap-[0.66vw]">
-                    <p className="nova text-[1.6vw] sm:text-[4vw] text-[red] font-[500]">
-                      Skills
+                    <p className="text-[1.5vw] sm:text-[3vw] font-[helvetica] uppercase">
+                      {main.des}
                     </p>
-                    <div className="flex flex-wrap gap-[0.66vw] sm:gap-[2vw] nova items-center">
-                      {main.skill.map((a: any, m: any) => {
-                        return (
-                          <p
-                            className="border-black border rounded-[1.6vw] sm:rounded-[6vw] text-[0.8vw] sm:text-[2.5vw] py-[0.7vw] px-[1.07vw] uppercase"
-                            key={m}
-                          >
-                            {a}
-                          </p>
-                        );
-                      })}
-                    </div>
                   </div>
                 </div>
               </div>
