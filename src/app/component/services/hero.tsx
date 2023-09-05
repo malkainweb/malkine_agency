@@ -246,13 +246,13 @@ const Hero_services = (props: any) => {
 
           {/* the normaltext animation */}
           <div
-            className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[0.1s] z-[10] `}
+            className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10] `}
           >
             {service_arr.map((e: any, index: any) => {
               return (
                 <p
                   key={index}
-                  className={`w-full text-[4.2vw] sm:text-[4.3vw] sm:font-[600] sm:text-center  h-[6vw] sm:h-[12vw] flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+                  className={`w-full text-[4.2vw] sm:text-[4.3vw] sm:font-[600] sm:text-center  h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
                     e.class == check_num ? "#D01717" : "black"
                   }]  `}
                 >
@@ -277,7 +277,7 @@ const Hero_services = (props: any) => {
 
         {/* the normaltext animation */}
         <div
-          className={`w-full h-[19vw] hidden sm:h-auto  sm:flex flex-wrap justify-start  sm:gap-[6.5vw]  transition duration-[0.1s] z-[10]`}
+          className={`w-full h-[19vw] hidden sm:h-auto  sm:flex flex-wrap justify-start  sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
         >
           {service_arr.map((e: any, index: any) => {
             return (
