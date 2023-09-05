@@ -70,7 +70,7 @@ const Hero_services = (props: any) => {
 
   const end_width = new_width + width * 2.5;
 
-  const mob_new_width = width * 1.3;
+  const mob_new_width = width * 1;
 
   const mob_end_width = mob_new_width + width * 2.8;
 
@@ -223,7 +223,7 @@ const Hero_services = (props: any) => {
       </div>
 
       {/* next section under home  */}
-      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-[270vw] p_r flex flex-col sm:gap-[0vw] relative ">
+      <div className="w-full bg-white pb-[2vw] pt-[7vw] h-[240vw] sm:h-auto p_r flex flex-col sm:gap-[20vw] relative  sm:pb-[20vw] ">
         {/* first div */}
         <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-[#0C0A0A]">
           <div className="flex flex-col gap-[2.5vw]  font-[helvetica] ">
@@ -272,34 +272,19 @@ const Hero_services = (props: any) => {
         {/*  */}
         {/*  */}
         {/*  */}
-        <div
-          className={`w-full h-[50vw] hidden  sm:h-[100vh] z-[20] items-end  sticky   top-[0vw] sm:top-[0vw] left-0  sm:flex `}
-          style={{ overflow: "clip" }}
-        >
-          {/* first relative box */}
 
-          <div
-            className="absolute top-0 left-0 h-[20vw] sm:h-[46vh]    w-full   bg-gradient-to-b from-[white] z-[20]"
-            style={{ overflow: "hidden" }}
-          ></div>
-          {/* second relative box */}
-          <div
-            className="absolute bottom-0 left-0 h-[20vw] sm:h-[46vh]    w-full   bg-gradient-to-t from-[white] z-[20]"
-            style={{ overflow: "hidden" }}
-          ></div>
-        </div>
         {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
 
         {/* the normaltext animation */}
         <div
-          className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[70vw] sm:left-0  sm:flex flex-wrap justify-start  sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
+          className={`w-full h-[19vw] hidden sm:h-auto  sm:flex flex-wrap justify-start  sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
         >
           {service_arr.map((e: any, index: any) => {
             return (
               <p
                 key={index}
-                className={`w-full text-[4.5vw] sm:text-center sm:text-[6vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
-                  e.class == check_num ? "#D01717" : "black"
+                className={`w-full text-[4.3vw] sm:text-center sm:text-[5.95vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+                  e.class == check_num ? "#D01717" : "#808080"
                 }] `}
               >
                 {e.des}
