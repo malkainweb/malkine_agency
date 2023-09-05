@@ -8,45 +8,15 @@ import {
 } from "framer-motion";
 
 const Services = () => {
-  const [service_arr, setservice_arr] = useState([
-    {
-      class: 1,
-      des: "Website & Platform Design",
-    },
-    {
-      class: 2,
-      des: "Software Design & Development",
-    },
-    {
-      class: 3,
-      des: "Ecommerce Website Design & Development",
-    },
-
-    {
-      class: 4,
-      des: "User Management Systems",
-    },
-    {
-      class: 5,
-      des: "Custom API Development",
-    },
-    {
-      class: 6,
-      des: "Backend System Development",
-    },
-    {
-      class: 7,
-      des: "Web/Mobile App Development",
-    },
-    {
-      class: 8,
-      des: "UI/UX For Web Mobile Apps",
-    },
-    {
-      class: 9,
-      des: "UI/UX For Websites & Platforms",
-    },
-  ]);
+  const [c1, setc1] = useState("80%");
+  const [c2, setc2] = useState("80%");
+  const [c3, setc3] = useState("80%");
+  const [c4, setc4] = useState("40%");
+  const [c5, setc5] = useState("40%");
+  const [c6, setc6] = useState("40%");
+  const [c7, setc7] = useState("40%");
+  const [c8, setc8] = useState("40%");
+  const [c9, setc9] = useState("40%");
 
   const [des_translate, setdes_translate] = useState("translate: 0vw 0vw;");
 
@@ -60,7 +30,7 @@ const Services = () => {
 
   const end_width = new_width + width * 3.2;
 
-  const mob_new_width = width * 12.9;
+  const mob_new_width = width * 12.5;
 
   const mob_end_width = mob_new_width + width * 2;
 
@@ -77,6 +47,56 @@ const Services = () => {
     // Into these values:
     [0, 11],
   );
+
+  // the array function
+  const [service_arr, setservice_arr] = useState([
+    {
+      class: 1,
+      des: "Website & Platform Design",
+      opac: c1,
+    },
+    {
+      class: 2,
+      des: "Software Design & Development",
+      opac: c2,
+    },
+    {
+      class: 3,
+      des: "Ecommerce Website Design & Development",
+      opac: c3,
+    },
+
+    {
+      class: 4,
+      des: "User Management Systems",
+      opac: c4,
+    },
+    {
+      class: 5,
+      des: "Custom API Development",
+      opac: c5,
+    },
+    {
+      class: 6,
+      des: "Backend System Development",
+      opac: c6,
+    },
+    {
+      class: 7,
+      des: "Web/Mobile App Development",
+      opac: c7,
+    },
+    {
+      class: 8,
+      des: "UI/UX For Web Mobile Apps",
+      opac: c8,
+    },
+    {
+      class: 9,
+      des: "UI/UX For Websites & Platforms",
+      opac: c9,
+    },
+  ]);
 
   useMotionValueEvent(scroll_lever, "change", (latest) => {
     if (width >= 651) {
@@ -162,7 +182,7 @@ const Services = () => {
   });
 
   return (
-    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[310vw] sm:h-[320vw]  p_r flex flex-col sm:gap-[0vw] gap-[2vw] relative ">
+    <div className="w-full bg-black pb-[2vw] pt-[7vw]  h-[310vw] sm:h-auto   p_r flex flex-col sm:py-[10vw] sm:gap-[20vw] gap-[2vw] relative ">
       {/* first div */}
       <div className="w-full flex sm:flex-col sm:gap-[4vw] sm:items-start justify-between items-center  h-auto text-white">
         <div className="flex flex-col gap-[3vw]  font-[helvetica] ">
@@ -236,14 +256,14 @@ const Services = () => {
 
       {/* the normaltext animation */}
       <div
-        className={`w-full h-[19vw] hidden sm:h-[56vw] absolute top-[40vw] left-0 sm:top-[100vw] sm:left-0  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
+        className={`w-full h-[19vw] hidden sm:h-[auto]  sm:flex flex-wrap justify-start gap-[5vh] sm:gap-[6.5vw]  transition duration-[1s] z-[10]`}
       >
         {service_arr.map((e: any, index: any) => {
           return (
             <p
               key={index}
-              className={`w-full text-[4.5vw] sm:text-center sm:text-[5.81vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
-                e.class == check_num ? "#D01717" : "white"
+              className={`w-full text-[4.5vw] sm:text-center sm:text-[5.9vw] text-center sm:font-[600]  flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
+                e.class == check_num ? "#D01717" : "#808080"
               }] `}
             >
               {e.des}
