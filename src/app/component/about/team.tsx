@@ -134,7 +134,7 @@ const Team = () => {
                     <h1 className="font-[700] nova text-[2.8vw] sm:text-[5vw] capitalize">
                       {main.name}
                     </h1>
-                    <p className="text-[1.5vw] sm:text-[3vw] font-[helvetica] uppercase">
+                    <p className="text-[1vw] sm:text-[3vw] font-[helvetica] capitalize">
                       {main.des}
                     </p>
                   </div>
