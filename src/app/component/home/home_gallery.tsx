@@ -24,7 +24,14 @@ const Home_gallery = () => {
     { link: "/home/gallery/6.webp", height: "17vw", left: "6vw  ", right: "" },
     { link: "/home/gallery/7.webp", height: "15vw", left: "23vw", right: "" },
     { link: "/home/gallery/8.webp", height: "15vw", left: "45vw", right: "" },
-    { link: "/home/gallery/9.webp", height: "15vw", left: "61vw", right: "" },
+    {
+      color: "#314C55",
+      txt: "8 Years Providing Amazing services",
+      txtColor: "#FEF7DD",
+      height: "15vw",
+      left: "61vw",
+      right: "",
+    },
     {
       color: "#DBDCE0",
       height: "32vw",
@@ -33,9 +40,25 @@ const Home_gallery = () => {
       txt: "40+ yearly project turn over",
     },
     { link: "/home/gallery/11.webp", height: "30vw", left: "27vw", right: "" },
-    { link: "/home/gallery/12.webp", height: "29vw", left: "45vw", right: "" },
+    {
+      color: "#052355",
+      height: "29vw",
+      txt: "36",
+      txtColor: "#C8D6EC",
+      txtfont: "5.8vw",
+      left: "45vw",
+      right: "",
+    },
     { link: "/home/gallery/13.webp", height: "29vw", left: "61vw", right: "" },
-    { link: "/home/gallery/5.webp", height: "25vw", left: "", right: "7vw" },
+    {
+      txt: "51",
+      color: "#A891AB",
+      txtColor: "#052355",
+      txtfont: "5.8vw",
+      height: "25vw",
+      left: "",
+      right: "7vw",
+    },
   ]);
 
   const [mob_gall1, setmob_gall1] = useState([
@@ -61,13 +84,28 @@ const Home_gallery = () => {
       left: "",
       right: "10vw",
     },
-    { link: "/home/gallery/7.webp", height: "53vw", left: "36vw  ", right: "" },
+    {
+      color: "#314C55",
+      txt: "8 Years Providing Amazing services",
+      txtColor: "#FEF7DD",
+      height: "53vw",
+      left: "36vw  ",
+      right: "",
+    },
     { link: "/home/gallery/12.webp", height: "60vw", left: "", right: "2vw" },
   ]);
 
   const [mob_gall2, setmob_gall2] = useState([
     { link: "/home/gallery/1.webp", height: "1vw", left: "", right: "2vw" },
-    { link: "/home/gallery/9.webp", height: "5vw", left: "2vw", right: "" },
+    {
+      color: "#314C55",
+      txt: "31",
+      txtColor: "#FEF7DD",
+      txtfont: "12vw",
+      height: "5vw",
+      left: "2vw",
+      right: "",
+    },
     { link: "/home/gallery/4.webp", height: "2vw", left: "40vw", right: "" },
     { link: "/home/gallery/8.webp", height: "28vw", left: "28vw", right: "" },
     { link: "/home/gallery/5.webp", height: "40vw", left: "1vw", right: "" },
@@ -135,6 +173,8 @@ const Home_gallery = () => {
                   top: e.height,
                   left: e.left,
                   right: e.right,
+                  color: e.txtColor,
+                  fontSize: e.txtfont,
                 }}
                 key={i}
               >
@@ -155,7 +195,7 @@ const Home_gallery = () => {
               {mob_gall1.map((e: any, index: any) => {
                 return (
                   <div
-                    className="w-[25vw] h-[25vw] items-center justify-center flex  text-[#052355] text-[3vw] px-[2vw] text-center absolute rounded-[100%]"
+                    className="w-[25vw] h-[25vw] items-center justify-center flex  text-[#052355] text-[2.5vw] px-[1.5vw] text-center absolute rounded-[100%]"
                     key={index}
                     style={{
                       top: e.height,
@@ -166,6 +206,8 @@ const Home_gallery = () => {
                       backgroundColor: e.color,
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
+                      color: e.txtColor,
+                      fontSize: e.txtfont,
                     }}
                   >
                     <p>{e.txt}</p>
@@ -178,18 +220,25 @@ const Home_gallery = () => {
               {mob_gall2.map((e: any, index: any) => {
                 return (
                   <div
-                    className="w-[24.75vw] h-[24.75vw]  absolute rounded-[100%]"
+                    className="w-[24.75vw] h-[24.75vw]  absolute rounded-[100% text-[2.5vw] px-[1.5vw] items-center justify-center flex text-center absolute rounded-[100%]"
                     key={index}
                     style={{
                       top: e.height,
                       left: e.left,
                       right: e.right,
+                      backgroundColor: e.color,
+
                       backgroundImage: `url(${e.link})`,
                       backgroundPosition: "top center",
                       backgroundSize: "cover",
                       backgroundRepeat: "no-repeat",
+                      color: e.txtColor,
+                      fontSize: e.txtfont,
                     }}
-                  ></div>
+                  >
+                    {" "}
+                    <p>{e.txt}</p>
+                  </div>
                 );
               })}
             </div>
