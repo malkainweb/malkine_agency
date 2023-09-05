@@ -182,7 +182,7 @@ const PrivacyPolicyPage = () => {
 
         {/* The rest of the content continues here */}
 
-        <h2 className="text-2xl font-semibold mt-6">Children's Data</h2>
+        <h2 className="text-2xl font-semibold mt-6">{"Children's"} Data</h2>
         <p>The Services are not intended to be used by children...</p>
 
         {/* The rest of the content continues here */}
