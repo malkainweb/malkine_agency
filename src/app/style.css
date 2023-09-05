@@ -21,7 +21,7 @@ body {
 
 .inner {
   display: inline-flex;
-  width: 72vw;
+  width: 76vw;
   flex-wrap: wrap;
   text-align: center;
   justify-content: center;
@@ -69,7 +69,7 @@ body {
 @media screen and (max-width: 650px) {
   .inner {
     display: inline-flex;
-    width: 90vw;
+    width: 96vw;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -84,6 +84,6 @@ body {
     line-height: 5.7vw;
     padding: 7vw 0px;
 
-    font-size: 5.5vw;
+    font-size: 6vw;
   }
 }

@@ -12,9 +12,12 @@ const Home_portfolio = () => {
           <h1 className="nova text-[3.33vw] sm:text-[6vw] sm:font-[600]">
             Our Portfolio
           </h1>
-          <button className="sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]">
+          <Link
+            href="works"
+            className="sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]  hover:bg-black hover:text-white transition duration-[0.6s]"
+          >
             View All
-          </button>
+          </Link>
         </div>
 
         <div className="sm:h-[90vw] sm:overflow-x-scroll sm:relative w-auto  flex  ">
@@ -22,8 +25,7 @@ const Home_portfolio = () => {
           <div className="w-full flex justify-between h-auto  sm:absolute sm:top-[15vw] sm:left-0 sm:w-auto ">
             <Link
               href="https://www.orbit.law"
-              target="_blank"
-              className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw] "
+              className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw] hover:scale-[1.03] hover:text-[#d01717] transition duration-[0.5s] "
             >
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
@@ -47,10 +49,11 @@ const Home_portfolio = () => {
                 </h3>
               </div>
             </Link>
+
+            {/* second link */}
             <Link
               href="https://www.climbonsight.ca"
-              target="_blank"
-              className="h-auto   flex flex-col  w-[40%] sm:w-[68.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw]"
+              className="h-auto   flex flex-col  w-[40%] sm:w-[68.25vw]  gap-[1vw] sm:ml-[4.5vw] sm:gap-[3vw] hover:scale-[1.03] hover:text-[#d01717] transition duration-[0.5s] "
             >
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "
@@ -74,10 +77,12 @@ const Home_portfolio = () => {
                 </h3>
               </div>
             </Link>
+
+            {/* third link */}
+
             <Link
               href="https://www.atella.ca"
-              target="_blank"
-              className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] gap-[1vw]  sm:ml-[4.5vw] sm:mr-[4.5vw] sm:gap-[3vw]"
+              className="h-auto   flex flex-col  w-[27%] sm:w-[48.25vw] gap-[1vw]  sm:ml-[4.5vw] sm:mr-[4.5vw] sm:gap-[3vw] hover:scale-[1.03] hover:text-[#d01717] transition duration-[0.5s] "
             >
               <div
                 className=" rounded-[0.8vw]  sm:rounded-[1.5vw]  port_gen w-full relative h-[20vw] sm:h-[54.9vw] "

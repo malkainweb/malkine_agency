@@ -4,6 +4,7 @@ import Image from "next/image";
 import React from "react";
 import mob_home_about from "../../../../public/home/mob_home_about.webp";
 import home_about_img from "../../../../public/home/home_about_img.webp";
+import Link from "next/link";
 
 const Home_about_us = () => {
   return (
@@ -14,9 +15,12 @@ const Home_about_us = () => {
           <h1 className="nova sm:font-[600] text-[3.33vw] sm:order-1 sm:text-[10vw]">
             About Us
           </h1>
-          <button className="border h-fit bg-transparent border-black px-[1.3vw] rounded-[0.7vw] py-[0.7vw] text-[1vw] sm:text-[2vw] sm:rounded-[1.25vw] sm:px-[4vw] sm:py-[2vw]">
+          <Link
+            href="about"
+            className="border h-fit bg-transparent border-black px-[1.3vw] rounded-[0.7vw] py-[0.7vw] text-[1vw] sm:text-[2vw] sm:rounded-[1.25vw] sm:px-[4vw] sm:py-[2vw] hover:bg-black hover:text-white transition duration-[0.6s]"
+          >
             Learn More
-          </button>
+          </Link>
         </div>
 
         {/* body of the about section */}

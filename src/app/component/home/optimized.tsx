@@ -10,9 +10,9 @@ const Optimized = () => {
   return (
     <>
       <div className="w-full  h-auto py-[5vw] bg-white ">
-        <div className="w-full h-auto gap-[3vw] py-[7vw] sm:py-[15vw] sm:gap-[5vw] flex-col p_r rounded-[1.33vw] bg-black flex sm:rounded-none">
+        <div className="w-full h-auto gap-[3vw] py-[7vw] sm:py-[15vw] sm:gap-[5vw] flex-col p_r  bg-black flex sm:rounded-none">
           {/* first optimized */}
-          <div className="w-full flex justify-between items-center  sm:justify-center">
+          <div className="w-full flex justify-between items-start  sm:justify-center">
             <p className="text-[3vw] sm:text-center  novabold uppercase text-white text-start sm:text-[5.5vw]">
               Developing award <br /> winning ideas <br />
               one at a time

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React from "react";
 
 const Home_mission = () => {
@@ -11,9 +12,12 @@ const Home_mission = () => {
           <h1 className="nova text-[3.33vw] sm:text-[6vw] sm:font-[600]">
             Our Mission
           </h1>
-          <button className=" sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]">
+          <Link
+            href="about"
+            className=" sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]  hover:bg-black hover:text-white transition duration-[0.6s]"
+          >
             Read More
-          </button>
+          </Link>
         </div>
 
         {/* body of the about section */}
@@ -48,8 +52,8 @@ const Home_mission = () => {
               solutions <br /> that empower businesses and individuals to thrive
               in the digital age.
             </p>
-            <div className="w-full text-[1.87vw] sm:text-[4vw] inter sm:pt-[3.5vw] sm:leading-[7vw]">
-              <p className="text-start sm:hidden">
+            <div className="w-full text-[1.87vw] pl-[10vw] sm:pl-0 sm:text-[4vw] inter sm:pt-[3.5vw] sm:leading-[7vw]">
+              <p className="text-center sm:hidden">
                 We are committed to pushing the boundaries of technology and
                 design, <br /> delivering exceptional value to our clients, and
                 fostering a culture of creativity, <br /> collaboration, and

@@ -464,7 +464,6 @@ const Top_works = () => {
               return (
                 <Link
                   href={e.link}
-                  target="_blank"
                   className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.7vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
                   key={index}
                   style={{
@@ -572,7 +571,6 @@ const Top_works = () => {
               return (
                 <Link
                   href={e.link}
-                  target="_blank"
                   className={`w-[27vw] ${e.bg} z-[30] h-[27vw] absolute rounded-[100%]  works flex justify-center items-center  text-white font-[helvetica] text-[2.5vw] hover:bg-[#D01717] transition duration-[0.7s] px-[4vw] capitalize text-center hover:border-white hover:border `}
                   key={index}
                   style={{
