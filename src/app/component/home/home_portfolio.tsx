@@ -14,7 +14,7 @@ const Home_portfolio = () => {
           </h1>
           <Link
             href="works"
-            className="sm:text-[3vw] sm:px-[6vw] sm:py-[2vw] sm:border-hidden border-black sm:bg-[#d01717] sm:rounded-[4.25vw] border h-fit bg-transparent  px-[2.33vw] rounded-[0.7vw] py-[1vw] text-[1.3vw]  hover:bg-black hover:text-white sm:text-[white] transition duration-[0.6s]"
+            className="sm:text-[4vw] sm:px-[6vw] sm:py-[2vw] sm:border-hidden border-black sm:bg-[#d01717] sm:rounded-[4.25vw] border h-fit bg-transparent  px-[2.33vw] rounded-[0.7vw] py-[1vw] text-[1.3vw]  hover:bg-black hover:text-white sm:text-[white] transition duration-[0.6s]"
           >
             View All
           </Link>

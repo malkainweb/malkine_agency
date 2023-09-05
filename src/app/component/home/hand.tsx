@@ -466,22 +466,22 @@ const Hands = (props: any) => {
               <p className="text-[3vw] sm:text-[7.79vw]">Services we offer </p>
               <div className="flex gap-[0.33vw]">
                 <div className="flex items-center  h-fit gap-[0.33vw] sm:gap-[2vw]">
-                  <p className="uppercase sm:text-[2.1vw] sm:hidden">
+                  <p className="uppercase sm:text-[2.3vw] font-[500] sm:hidden">
                     We speak like we design: <br /> thoughtful. And to the
                     point.
                   </p>
-                  <p className="uppercase sm:text-[2.1vw] hidden sm:block">
+                  <p className="uppercase sm:text-[2.3vw] font-[500] hidden sm:block">
                     We speak like we design: thoughtful. And to the point.
                   </p>
                   <div className="w-[6.7vw] h-[0.07vw] sm:w-[28vw] sm:bg-opacity-[70%] bg-white"></div>
                 </div>
-                <p className="uppercase sm:text-[2.1vw] sm:pl-[2vw] sm:hidden">
+                <p className="uppercase sm:text-[2.3vw] font-[500] sm:pl-[2vw] sm:hidden">
                   A company needs to tell a good <br />
                   story to create a powerful narrative <br /> about its
                   business, increase product <br />
                   demand, and drive engagement.
                 </p>
-                <p className="uppercase sm:text-[2.1vw] sm:pl-[2vw] hidden sm:block">
+                <p className="uppercase sm:text-[2.3vw] font-[500] sm:pl-[2vw] hidden sm:block">
                   A company needs to tell a good story to create a powerful
                   narrative about its business, increase product demand, and
                   drive engagement.

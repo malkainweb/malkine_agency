@@ -71,12 +71,15 @@ const Home_about_us = () => {
               alt="about us image"
               className="w-full hidden sm:block h-fit"
             />
-            <div className="w-full flex gap-[1vw] sm:text-[1.7vw] nova uppercase items-center text-[0.8vw] sm:gap-[2vw]">
+            <div className="w-full flex gap-[1vw] sm:text-[3vw] nova uppercase items-center text-[0.8vw] sm:gap-[2vw]">
               <p>goals</p>
               <div className="w-[40%] sm:w-[50%] h-[0.07vw] bg-black"></div>
-              <p>
+              <p className="sm:hidden">
                 CREATING USER FRIENDLY, <br />
                 BUT HIGH AESTHETICS DESIGNS
+              </p>
+              <p className="sm:block hidden">
+                CREATING USER FRIENDLY, BUT HIGH AESTHETICS DESIGNS
               </p>
             </div>
           </div>

@@ -78,23 +78,6 @@ const Services = () => {
     [0, 11],
   );
 
-  // this is for the vibration of your website
-  function vibrate() {
-    if (!window) {
-      return;
-    }
-
-    if (!window.navigator) {
-      return;
-    }
-
-    if (!window.navigator.vibrate) {
-      return;
-    }
-
-    window.navigator.vibrate(100);
-  }
-
   useMotionValueEvent(scroll_lever, "change", (latest) => {
     if (width >= 651) {
       if (latest >= 0 && latest <= 1) {
@@ -146,23 +129,18 @@ const Services = () => {
       }
       if (latest >= 1 && latest <= 2) {
         setcheck_num(2);
-        vibrate();
       }
       if (latest >= 2 && latest <= 3) {
         setcheck_num(3);
-        vibrate();
       }
       if (latest >= 3 && latest <= 4) {
         setcheck_num(4);
-        vibrate();
       }
       if (latest >= 4 && latest <= 5) {
         setcheck_num(5);
-        vibrate();
       }
       if (latest >= 5 && latest <= 6) {
         setcheck_num(6);
-        vibrate();
       }
       if (latest >= 6 && latest <= 7) {
         setcheck_num(7);
