@@ -2,26 +2,23 @@
 
 import Image from "next/image";
 import React, { useRef } from "react";
-import client_logo from "../../../../public/home/client.webp";
 import add_logo from "../../../../public/home/add_logo.png";
 
 import { useInView } from "framer-motion";
 import aeroplane_malkaine from "../../../../public/home/home_service.webp";
 import mob_aeroplane_malkaine from "../../../../public/home/mob_home_service.webp";
-import hand_left from "../../../../public/home/hand_left.webp";
-import hand_right from "../../../../public/home/hand_right.webp";
 import hand_middle from "../../../../public/home/hand_middle.webp";
-import imag1 from "../../../../public/home/img1.webp";
-import imag2 from "../../../../public/home/img2.webp";
-import imag3 from "../../../../public/home/img3.webp";
-import imag4 from "../../../../public/home/img4.webp";
-import imag5 from "../../../../public/home/img5.webp";
-import imag6 from "../../../../public/home/img6.webp";
-import imag7 from "../../../../public/home/img7.webp";
-import imag8 from "../../../../public/home/img8.webp";
-import imag9 from "../../../../public/home/img9.webp";
-import imag10 from "../../../../public/home/img10.webp";
-import imag11 from "../../../../public/home/img11.webp";
+import imag1 from "../../../../public/home/1.webp";
+import imag2 from "../../../../public/home/2.webp";
+import imag3 from "../../../../public/home/3.webp";
+import imag4 from "../../../../public/home/4.webp";
+import imag5 from "../../../../public/home/5.webp";
+import imag6 from "../../../../public/home/6.webp";
+import imag7 from "../../../../public/home/7.webp";
+import imag8 from "../../../../public/home/8.webp";
+import imag9 from "../../../../public/home/9.webp";
+import imag10 from "../../../../public/home/10.webp";
+import imag11 from "../../../../public/home/11.webp";
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import bg_img from "../../../../public/home/hand_bg.webp";
@@ -150,20 +147,21 @@ const Hands = (props: any) => {
       right: "0px",
     },
     {
-      img: imag8,
-      bg: "home_black_bg",
-      top: "38vw",
-      left: "0px",
-      right: "",
-    },
-    {
       img: imag9,
       bg: "home_black_bg",
-      class: "home_edge",
       top: "38vw",
       left: "50%",
       right: "",
       translate: "-50%",
+    },
+    {
+      img: imag8,
+      class: "home_edge",
+
+      bg: "home_black_bg",
+      top: "38vw",
+      left: "0px",
+      right: "",
     },
   ]);
   const [mobile1, setmobile1] = useState([
@@ -300,7 +298,7 @@ const Hands = (props: any) => {
                 <Link
                   href="/"
                   key={index}
-                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] py-[3.9vw] px-[3.4vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                  className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] py-[1vw] px-[1.4vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                   style={{
                     top: e.top,
                     right: e.right,
@@ -366,7 +364,7 @@ const Hands = (props: any) => {
                       <Link
                         href="/"
                         key={index}
-                        className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[6vw] py-[8vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                        className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[3vw] py-[3vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                       >
                         <Image
                           src={e.img}
@@ -383,7 +381,7 @@ const Hands = (props: any) => {
                       <Link
                         href="/"
                         key={index}
-                        className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[6vw] py-[8vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
+                        className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[3vw] py-[3vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                       >
                         <Image
                           src={e.img}
