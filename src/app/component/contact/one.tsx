@@ -72,7 +72,11 @@ const One = (props: any) => {
             <div className="flex flex-col">
               <input
                 onChange={(e) => {
-                  setphone(e.target.value);
+                  const inputText = e.target.value;
+
+                  // Use a regular expression to remove any characters that are not numbers or symbols
+                  const sanitizedText = inputText.replace(/[^0-9+()\-\s]/g, "");
+                  setphone(sanitizedText);
                 }}
                 placeholder="Your phone number"
                 type="text"

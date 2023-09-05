@@ -167,7 +167,7 @@ const Footer = () => {
               Privacy Policy
             </Link>
             <Link
-              href="#"
+              href="terms"
               className="underline underline-offset-2  hover:text-[#cfcece]"
             >
               Terms of Service
