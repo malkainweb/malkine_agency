@@ -8,13 +8,13 @@ const Home_portfolio = () => {
     <>
       <div className="w-full  bg-white sm:px-0 px-[3vw]  h-auto flex flex-col gap-[1.33vw] py-[2vw]">
         {/* heading */}
-        <div className="flex items-center gap-[1.33vw] nova sm:px-[3.75vw]">
+        <div className="flex items-center sm:justify-between gap-[1.33vw] nova sm:px-[3.75vw]">
           <h1 className="nova text-[3.33vw] sm:text-[6vw] sm:font-[600]">
             Our Portfolio
           </h1>
           <Link
             href="works"
-            className="sm:text-[2.5vw] sm:px-[4vw] sm:py-[1vw] sm:rounded-[1.25vw] border h-fit bg-transparent border-black px-[1.33vw] rounded-[0.7vw] py-[0.7vw] text-[1vw]  hover:bg-black hover:text-white transition duration-[0.6s]"
+            className="sm:text-[3vw] sm:px-[6vw] sm:py-[2vw]  border-black sm:bg-[#d01717] sm:rounded-[1.25vw] border h-fit bg-transparent  px-[2.33vw] rounded-[0.7vw] py-[1vw] text-[1.3vw]  hover:bg-black hover:text-white sm:text-[white] transition duration-[0.6s]"
           >
             View All
           </Link>

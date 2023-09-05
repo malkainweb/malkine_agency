@@ -17,7 +17,7 @@ const Home_about_us = () => {
           </h1>
           <Link
             href="about"
-            className="border h-fit bg-transparent border-black px-[1.3vw] rounded-[0.7vw] py-[0.7vw] text-[1vw] sm:text-[2vw] sm:rounded-[1.25vw] sm:px-[4vw] sm:py-[2vw] hover:bg-black hover:text-white transition duration-[0.6s]"
+            className="border h-fit bg-transparent border-black px-[1.3vw] rounded-[0.7vw] py-[0.7vw] text-[1vw] sm:text-[3.2vw] sm:rounded-[1.25vw] sm:px-[4vw] sm:py-[2vw] hover:bg-black hover:text-white transition duration-[0.6s]"
           >
             Learn More
           </Link>

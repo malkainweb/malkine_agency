@@ -42,7 +42,7 @@ const Home_about = () => {
             <h1 className="text-[2vw] nova capitalize text-white sm:text-[6vw]">
               We Remain <br /> agile and <br /> adaptable
             </h1>
-            <button className="nova  text-[1.07vw]  font[900] rounded-[2.6vw] px-[3.3vw] py-[1.07vw] sm:text-[2.25vw] bg-[#D01717] text-white w-fit hover:bg-[#920808] sm:px-[4vw] sm:py-[2vw] sm:rounded-[6vw]">
+            <button className="nova  text-[1.07vw]  font[900] rounded-[2.6vw] px-[3.3vw] py-[1.07vw] sm:text-[3vw]  border-black bg-[#D01717] text-white w-fit hover:bg-[#920808] sm:px-[4vw] sm:py-[2vw] sm:rounded-[6vw]">
               Learn more <i className="bi bi-arrow-right"></i>
             </button>
           </div>
