@@ -152,17 +152,21 @@ const Two = (props: any) => {
                 >
                   Twitter
                 </option>
-                <option style={{ color: "white" }} value="A friend">
-                  A friend
-                </option>
+
                 <option style={{ color: "white" }} value="Linkedin">
                   Linkedin
                 </option>
                 <option style={{ color: "white" }} value="Word of mouth">
                   Word of mouth
                 </option>
-                <option style={{ color: "white" }} value="Instagram">
-                  Instagram
+                <option style={{ color: "white" }} value="Goggle">
+                  Goggle
+                </option>
+                <option style={{ color: "white" }} value="Bing">
+                  Bing
+                </option>
+                <option style={{ color: "white" }} value="Yahoo">
+                  Yahoo
                 </option>
               </select>
             </div>

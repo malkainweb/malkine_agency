@@ -90,7 +90,7 @@ const Top_works = () => {
     // fourth section
     {
       bg: "middle",
-      txt: "house of adells",
+      txt: "house of adeles",
       link: "https://www.houseofadeles.com",
 
       top: "23vw",
@@ -265,7 +265,7 @@ const Top_works = () => {
     },
     {
       bg: "middle",
-      txt: "house of adells",
+      txt: "house of adeles",
       link: "https://www.houseofadeles.com",
       top: "128vw",
       left: "0px",

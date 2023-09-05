@@ -13,12 +13,12 @@ const Timeline = () => {
           <div className="h-[40%] w-full  overflow-hidden timeline_right">
             {/* <Image src={timeline_top} alt="makline img" className="w-full" /> */}
           </div>
-          <div className="h-[60%] w-full  flex flex-col text-white bg-black justify-around pl-[65px]  sm:pl-[4vw] sm:justify-start sm:py-[4vw] sm:gap-[5vw]">
+          <div className="h-[60%]  w-full  flex flex-col text-white bg-black justify-around pl-[4.3vw] py-[2vw] sm:pl-[4vw] sm:justify-start sm:py-[4vw] sm:gap-[5vw]">
             <p className="text-[#808080] text-[2.5vw] nova sm:text-[3vw]">
               Elevate experiences and <br /> activate growth
             </p>
             <div className="h-[1px] w-full bg-[#808080] "></div>
-            <div className="w-full flex flex-col gap-[3vw] sm:gap-[5vw] inter  text-[20px] font-[400] ">
+            <div className="w-full flex flex-col gap-[2.5vw] sm:gap-[5vw] inter  text-[20px] font-[400] ">
               <p className=" text-[2.2vw] nova font-[400] sm:text-[5vw] ">
                 What we do
               </p>

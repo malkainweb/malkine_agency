@@ -65,7 +65,7 @@ const Portfolio = () => {
           </Link>
 
           <Link
-            href="https://www.heygoodjuju.co"
+            href="https://www.heygoodjuju.com"
             className="w-[24.6%] sm:block  hidden sm:py-[4vw]idden  port_wrap sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
             <div className="flex flex-col justify-between h-full">

@@ -29,53 +29,12 @@ const Footer = () => {
           {/* the second part of the footer */}
           <div className="w-full  h-auto flex justify-between  items-center  sm:flex-col  ">
             {/* locations */}
-            <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]   sm:mb-[10vw]">
+            <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]   sm:mb-[1vw]">
               <p className="inter font-[500] sm:text-[4vw] text-[1.6vw] capitalize text-white">
                 Our Locations
               </p>
               {/* now actual locations */}
-              <div className="w-auto h-auto    flex gap-[2.13vw] justify-start items-end text-[0.93vw] sm:text-[3vw] sm:mr-0 sm:justify-between">
-                <div className="w-[9.1vw] h-[8vw] sm:w-[40vw]  relative ">
-                  <Image
-                    priority
-                    src={canada_loca}
-                    alt="canada location"
-                    className="w-full h-fit sm:hidden absolute z-[40] bottom-0 left-0 "
-                  />
-                  <Image
-                    priority
-                    src={mob_foot}
-                    alt="canada location"
-                    className="w-full h-fit hidden sm:block absolute z-[40] bottom-0 left-0 "
-                  />
-                  <Image
-                    priority
-                    src={canada_loca_red}
-                    alt="canada location"
-                    className="w-full h-fit sm:hidden transistion opacity-0 duration-[0.7s] hover:opacity-[1] absolute z-[50] bottom-0 left-0"
-                  />
-                </div>
-                <div className="w-[0.07vw] h-[5.13vw] sm:h-[15vw] bg-[#838383] sm:hidden"></div>
-                <div className="flex flex-col gap-[0.3vw] sm:text-[2.5vw] sm:text-end">
-                  <p className="inter text-[1.2vw] sm:text-[3.25vw] font-[700] capitalize text-white">
-                    canada
-                  </p>
-                  <p className="text-[white]">
-                    <span className="text-[#838383]">Address</span> 32D
-                    Greenwich avenue
-                  </p>
-
-                  <p className="text-[white]">
-                    <span className="text-[#838383]">Telephone</span>+1(31) 323
-                    233
-                  </p>
-                  <p className="text-[white]">
-                    <span className="text-[#838383]">Email</span>{" "}
-                    support@malkain.com
-                  </p>
-                </div>
-              </div>
-              <div className="w-auto h-auto flex gap-[2.13vw] justify-start sm:justify-between items-end text-[0.93vw]">
+              <div className="w-auto h-auto flex gap-[2.13vw] justify-start sm:justify-between items-end  text-[0.93vw] sm:mt-[5vw]">
                 <div className="w-[9.1vw] h-[8vw] sm:w-[40vw]  relative">
                   <Image
                     priority
@@ -106,14 +65,49 @@ const Footer = () => {
                     USA
                   </p>
                   <p className="text-[white]">
-                    <span className="text-[#838383]">Address</span> 32D
-                    Greenwich avenue
+                    <span className="text-[#838383]"></span> 317 George St, 3rd
+                    Floor <br />
+                    New Brunswick , NJ , 08901
                   </p>
 
                   <p className="text-[white]">
-                    <span className="text-[#838383]">Telephone</span>+1(31) 323
-                    233
+                    <span className="text-[#838383]">Email</span>{" "}
+                    support@malkain.com
                   </p>
+                </div>
+              </div>
+
+              <div className="w-auto h-auto    flex gap-[2.13vw] justify-start items-end text-[0.93vw] sm:text-[3vw] sm:mr-0 sm:justify-between">
+                <div className="w-[9.1vw] h-[8vw] sm:w-[40vw]  relative ">
+                  <Image
+                    priority
+                    src={canada_loca}
+                    alt="canada location"
+                    className="w-full h-fit sm:hidden absolute z-[40] bottom-0 left-0 "
+                  />
+                  <Image
+                    priority
+                    src={mob_foot}
+                    alt="canada location"
+                    className="w-full h-fit hidden sm:block absolute z-[40] bottom-0 left-0 "
+                  />
+                  <Image
+                    priority
+                    src={canada_loca_red}
+                    alt="canada location"
+                    className="w-full h-fit sm:hidden transistion opacity-0 duration-[0.7s] hover:opacity-[1] absolute z-[50] bottom-0 left-0"
+                  />
+                </div>
+                <div className="w-[0.07vw] h-[5.13vw] sm:h-[15vw] bg-[#838383] sm:hidden"></div>
+                <div className="flex flex-col gap-[0.3vw] sm:text-[2.5vw] sm:text-end">
+                  <p className="inter text-[1.2vw] sm:text-[3.25vw] font-[700] capitalize text-white">
+                    canada
+                  </p>
+                  <p className="text-[white]">
+                    <span className="text-[#838383]"></span> 201 Portage Ave
+                    18th Floor, <br /> Winnipeg, MB R3B 3K6, Canada
+                  </p>
+
                   <p className="text-[white]">
                     <span className="text-[#838383]">Email</span>{" "}
                     support@malkain.com
@@ -156,20 +150,6 @@ const Footer = () => {
                       support@malkain.com
                     </Link>
                   </div> */}
-                    <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] min-w-fit h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
-                      <p className="text-[1.3vw] sm:text-[3.5vw] w-full text-white nova font-[700] text-center">
-                        Follow Us
-                      </p>
-                      <Link href="#" className="hover:text-white">
-                        Instagram
-                      </Link>
-                      <Link href="#" className="hover:text-white">
-                        Linkedin
-                      </Link>
-                      <Link href="#" className="hover:text-white">
-                        Twitter
-                      </Link>
-                    </div>
                   </div>
                   {/* ctn button */}
                   <div className="w-full h-auto flex justify-end"></div>
