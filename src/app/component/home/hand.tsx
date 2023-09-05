@@ -457,7 +457,7 @@ const Hands = (props: any) => {
               <p className="text-[3vw] inter font-medium sm:text-[7.5vw]">
                 2023
               </p>
-              <p className="uppercase nova text-[2vw] sm:text-[1.5vw]">
+              <p className="uppercase nova text-[2vw] sm:text-[3vw]">
                 MALKAIN - NJ
               </p>
             </div>

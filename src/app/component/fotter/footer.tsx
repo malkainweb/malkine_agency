@@ -27,7 +27,7 @@ const Footer = () => {
           </Link>
 
           {/* the second part of the footer */}
-          <div className="w-full  h-auto flex justify-between  items-center  sm:flex-col  ">
+          <div className="w-full  h-auto flex justify-between  items-center sm:items-start  sm:flex-col  ">
             {/* locations */}
             <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]   sm:mb-[1vw]">
               <p className="inter font-[500] sm:text-[4vw] text-[1.6vw] capitalize text-white">
@@ -59,8 +59,8 @@ const Footer = () => {
 "
                   />
                 </div>
-                <div className="w-[0.07vw] h-[5.13vw] sm:h-[15vw] bg-[#838383] sm:hidden"></div>
-                <div className="flex flex-col gap-[0.3vw] sm:text-[2.5vw] sm:text-end">
+                <div className="w-[0.07vw] h-[5.13vw] sm:h-[15vw] bg-[#838383] sm:hidden "></div>
+                <div className="flex flex-col gap-[0.3vw] sm:text-[2.5vw] sm:text-end ">
                   <p className="inter text-[1.2vw] sm:text-[3.25vw] font-[700] capitalize text-white">
                     USA
                   </p>
@@ -99,7 +99,7 @@ const Footer = () => {
                   />
                 </div>
                 <div className="w-[0.07vw] h-[5.13vw] sm:h-[15vw] bg-[#838383] sm:hidden"></div>
-                <div className="flex flex-col gap-[0.3vw] sm:text-[2.5vw] sm:text-end">
+                <div className="flex flex-col gap-[0.3vw] sm:text-[2.5vw] sm:text-end ">
                   <p className="inter text-[1.2vw] sm:text-[3.25vw] font-[700] capitalize text-white">
                     canada
                   </p>
@@ -116,9 +116,9 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="min-w-fit h-auto flex gap-[2vw]  flex-col sm:w-full">
+            <div className="min-w-fit h-auto flex gap-[2vw]  flex-col  sm:w-[53vw]">
               <div className=" sm:order-1 sm:my-[10vw]  p-[28.15px] sm:p-[4vw] min-w-fit  sm:w-full rounded-[2.6vw] sm:rounded-[3.5vw] bg-[#121212]  flex justify-between   capitalize  ">
-                <div className="flex flex-col gap-[10px] sm:gap-[2.25vw] mr-[4vw] w-full sm:w-[35vw]   h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw]  font-[400]">
+                <div className="  flex flex-col gap-[10px] sm:gap-[2.25vw] mr-[4vw] w-full sm:w-[35vw]   h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw]  font-[400]">
                   <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
                     Discover
                   </p>
@@ -140,20 +140,6 @@ const Footer = () => {
                   </Link>
                 </div>
                 {/* mail us and folllow us section */}
-                <div className="min-w-fit sm:w-full  flex flex-col justify-between items-end   ">
-                  <div className="h-full w-full gap-[2.7vw]  flex justify-end">
-                    {/* <div className="flex flex-col gap-[10px]  sm:gap-[2.25vw] w-full h-auto  text-[#E4E4E4] text-[0.93vw] sm:text-[3vw] sm:mr-0 font-[400]">
-                    <p className="text-[1.3vw] sm:text-[3.5vw] text-white nova font-[700]">
-                      Mail Us
-                    </p>
-                    <Link href="#" className="hover:text-white">
-                      support@malkain.com
-                    </Link>
-                  </div> */}
-                  </div>
-                  {/* ctn button */}
-                  <div className="w-full h-auto flex justify-end"></div>
-                </div>
               </div>
 
               {/* the contact us button section on the footer */}
