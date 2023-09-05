@@ -99,8 +99,8 @@ const TermsPage = () => {
           If, at our request, you send certain specific submissions (for example
           contest entries) or without a request from us you send creative ideas,
           suggestions, proposals, plans, or other materials, whether online, by
-          email, by postal mail, or otherwise (collectively, 'comments'), you
-          agree that we may, at any time, without restriction, edit, copy,
+          email, by postal mail, or otherwise (collectively, {"'comments'"}),
+          you agree that we may, at any time, without restriction, edit, copy,
           publish, distribute, translate and otherwise use in any medium any
           comments that you forward to us.
         </p>
@@ -148,8 +148,8 @@ const TermsPage = () => {
           parent, subsidiaries, affiliates, partners, officers, directors,
           agents, contractors, licensors, service providers, subcontractors,
           suppliers, interns and employees, harmless from any claim or demand,
-          including reasonable attorneys’ fees, made by any third-party due to
-          or arising out of your breach of these Terms of Service or the
+          including reasonable{" attorneys’"} fees, made by any third-party due
+          to or arising out of your breach of these Terms of Service or the
           documents they incorporate by reference, or your violation of any law
           or the rights of a third-party.
         </p>
