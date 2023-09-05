@@ -14,6 +14,11 @@ export default function Terms() {
   const [opacity, setopacity] = useState(0.2);
   const [white, setwhite] = useState(1);
 
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       <Menu
