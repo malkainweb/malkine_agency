@@ -35,6 +35,7 @@ const Hands = (props: any) => {
   const [c_logo, setc_logo] = useState([
     {
       img: imag1,
+      link: "https://spoiledchild.com/",
       class: "home_edge",
       bg: "home_black_bg",
       top: "0px",
@@ -44,6 +45,8 @@ const Hands = (props: any) => {
     {
       img: imag2,
       class: "home_edge",
+      link: "https://harc.casa",
+
       bg: "home_black_bg",
       top: "11.6vw",
       left: "0px",
@@ -51,6 +54,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag3,
+      link: "https://www.aprguarnizioni.com",
 
       bg: "home_black_bg",
       top: "11.6vw",
@@ -59,6 +63,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag4,
+      link: "https://www.reggie.com",
 
       bg: "home_black_bg",
       top: "11.6vw",
@@ -67,6 +72,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag5,
+      link: "/",
 
       bg: "home_black_bg",
       top: "11.6vw",
@@ -75,6 +81,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag6,
+      link: "http://getunity.com",
 
       bg: "home_black_bg",
       top: "11.6vw",
@@ -83,6 +90,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag7,
+      link: "https://www.atella.ca",
 
       bg: "home_black_bg",
       top: "11.6vw",
@@ -91,6 +99,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag10,
+      link: "https://www.qdepartment.com",
 
       bg: "home_black_bg",
       top: "23.2vw",
@@ -99,6 +108,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag11,
+      link: "https://www.houseofadeles.com",
 
       bg: "home_black_bg",
       top: "23.2vw",
@@ -107,6 +117,8 @@ const Hands = (props: any) => {
     },
     {
       img: imag9,
+      link: "https://www.modamuvillage.com",
+
       class: "home_edge",
       bg: "home_black_bg",
       top: "23.2vw",
@@ -115,6 +127,8 @@ const Hands = (props: any) => {
     },
     {
       img: imag10,
+      link: "https://www.qdepartment.com",
+
       bg: "home_black_bg",
       top: "23.2vw",
       left: "",
@@ -125,6 +139,8 @@ const Hands = (props: any) => {
   const [mobile2, setmobile2] = useState([
     {
       img: imag6,
+      link: "http://getunity.com",
+
       bg: "home_black_bg",
       top: "0px",
       left: "0",
@@ -133,6 +149,8 @@ const Hands = (props: any) => {
     {
       img: imag1,
       bg: "home_black_bg",
+      link: "https://spoiledchild.com/",
+
       class: "home_edge",
       top: "0px",
       left: "50%",
@@ -141,6 +159,8 @@ const Hands = (props: any) => {
     },
     {
       img: imag7,
+      link: "https://www.atella.ca",
+
       bg: "home_black_bg",
       top: "0px",
       left: "",
@@ -148,6 +168,8 @@ const Hands = (props: any) => {
     },
     {
       img: imag9,
+      link: "https://www.modamuvillage.com",
+
       bg: "home_black_bg",
       top: "38vw",
       left: "50%",
@@ -157,6 +179,7 @@ const Hands = (props: any) => {
     {
       img: imag8,
       class: "home_edge",
+      link: "https://www.climbonsight.ca",
 
       bg: "home_black_bg",
       top: "38vw",
@@ -168,6 +191,8 @@ const Hands = (props: any) => {
     {
       img: imag2,
       class: "home_edge",
+      link: "https://harc.casa",
+
       bg: "home_black_bg",
       top: "0px",
       left: "0",
@@ -176,6 +201,8 @@ const Hands = (props: any) => {
     {
       img: imag3,
       bg: "home_black_bg",
+      link: "https://www.aprguarnizioni.com",
+
       top: "0px",
       left: "50%",
       right: "0px",
@@ -184,6 +211,8 @@ const Hands = (props: any) => {
     {
       img: imag4,
       bg: "home_black_bg",
+      link: "https://www.reggie.com",
+
       top: "0px",
       left: "",
       right: "0px",
@@ -191,6 +220,8 @@ const Hands = (props: any) => {
     {
       img: imag10,
       bg: "home_black_bg",
+      link: "https://www.qdepartment.com",
+
       top: "38vw",
       left: "0px",
       right: "",
@@ -199,6 +230,8 @@ const Hands = (props: any) => {
       img: imag5,
       bg: "home_black_bg",
       top: "38vw",
+      link: "/",
+
       left: "50%",
       right: "0px",
       translate: "-50%",
@@ -207,6 +240,8 @@ const Hands = (props: any) => {
     {
       img: imag11,
       bg: "home_black_bg",
+      link: "https://www.houseofadeles.com",
+
       top: "38vw",
       left: "",
       right: "0px",
@@ -296,7 +331,7 @@ const Hands = (props: any) => {
             {c_logo.map((e: any, index: any) => {
               return (
                 <Link
-                  href="/"
+                  href={e.link}
                   key={index}
                   className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] py-[1vw] px-[1.4vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                   style={{
@@ -362,7 +397,7 @@ const Hands = (props: any) => {
                   {mobile1.map((e: any, index: any) => {
                     return (
                       <Link
-                        href="/"
+                        href={e.link}
                         key={index}
                         className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[3vw] py-[3vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                       >
@@ -379,7 +414,7 @@ const Hands = (props: any) => {
                   {mobile2.map((e: any, index: any) => {
                     return (
                       <Link
-                        href="/"
+                        href={e.link}
                         key={index}
                         className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[3vw] py-[3vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                       >
