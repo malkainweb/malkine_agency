@@ -14,6 +14,7 @@ export async function POST(req: Request) {
       "support@malkain.com",
       "emmanuel@malkain.com",
       "malkaindesigns@gmail.com",
+      "davisisibor@gmail.com",
     ],
     reply_to: data.email,
     subject: "New Client submission from " + data.name,
