@@ -35,7 +35,6 @@ export default function Home() {
   const [opacity, setopacity] = useState(0);
 
   useEffect(() => {
-    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     const timer = setTimeout(() => {
       setloader(false);
       document.body.classList.remove("hide_now");
@@ -52,56 +51,47 @@ export default function Home() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (width >= 651) {
-      if (latest >= width * 2.52) {
+      if (latest >= width * 4.18) {
         setwhite(0);
         setnav_ham(0);
         setnav_menu(0);
-      } else if (latest <= width * 2.52) {
+      } else if (latest <= width * 4.18) {
         setwhite(1);
         setnav_ham(1);
         setnav_menu(1);
       }
 
-      if (latest >= width * 2.7) {
+      if (latest >= width * 4.35) {
         setwhite(1);
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+
+      if (latest >= width * 8.13) {
+        setwhite(0);
+      }
+      if (latest >= width * 9.53) {
+        setwhite(0);
+        setnav_ham(0);
+        setnav_menu(0);
+      }
+      if (latest >= width * 10.94) {
+        setwhite(1);
+        setnav_ham(1);
+        setnav_menu(1);
+      }
+
+      if (latest >= width * 12.08) {
+        setwhite(0);
         setnav_ham(0);
         setnav_menu(0);
       }
 
-      if (latest >= width * 3.2) {
-        setnav_ham(1);
-        setnav_menu(1);
-      }
-      if (latest >= width * 5) {
-        setwhite(0);
-        setnav_ham(0);
-        setnav_menu(0);
-      }
-
-      if (latest >= width * 6.5) {
+      if (latest >= width * 13) {
         setwhite(1);
         setnav_ham(1);
         setnav_menu(1);
-      }
-      if (latest >= width * 6.9) {
-        setwhite(0);
-        setnav_ham(0);
-        setnav_menu(0);
-      }
-      if (latest >= width * 7.7) {
-        setwhite(1);
-        setnav_ham(1);
-        setnav_menu(1);
-      }
-      if (latest >= width * 8.6) {
-        setwhite(0);
-        setnav_ham(0);
-        setnav_menu(0);
-      }
-      if (latest >= width * 10.35) {
-        setwhite(1);
-        setnav_ham(1);
-        setnav_menu(1);
+        console.log("dkdidi");
       }
     } else if (width <= 650) {
       if (latest >= width * 11.7) {
