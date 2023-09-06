@@ -20,13 +20,12 @@ export default function About() {
 
   // this function below changes the headers as being used
   const { scrollY } = useScroll();
-  const first = width * 0.54;
-  const second = width * 0.9;
-  const third = width * 1.93;
+  const first = width * 0.52;
+  const second = width * 0.76;
+  const third = width * 2.97;
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -45,17 +44,17 @@ export default function About() {
         setwhite(0);
       }
     } else if (width <= 650) {
-      if (latest >= width * 0.675) {
+      if (latest >= width * 0.74) {
         setwhite(0);
-      } else if (latest <= width * 0.675) {
+      } else if (latest <= width * 0.74) {
         setwhite(1);
       }
 
-      if (latest >= width * 1.5) {
+      if (latest >= width * 1.16) {
         setwhite(1);
       }
 
-      if (latest >= width * 5.7) {
+      if (latest >= width * 8.52) {
         setwhite(0);
       }
     }
