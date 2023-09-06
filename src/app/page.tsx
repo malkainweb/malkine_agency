@@ -94,29 +94,29 @@ export default function Home() {
         console.log("dkdidi");
       }
     } else if (width <= 650) {
-      if (latest >= width * 11.7) {
+      if (latest >= width * 16.55) {
         setwhite(0);
         setnav_ham(0);
-      } else if (latest <= width * 11.7) {
+      } else if (latest <= width * 16.55) {
         setwhite(1);
         setnav_ham(1);
       }
 
-      if (latest >= width * 17.8) {
+      if (latest >= width * 22.8) {
         setwhite(1);
       }
-      if (latest >= width * 18.35) {
+      if (latest >= width * 23.35) {
         setwhite(0);
       }
-      if (latest >= width * 18.65) {
+      if (latest >= width * 23.65) {
         setwhite(1);
         setnav_ham(1);
       }
-      if (latest >= width * 20.3) {
+      if (latest >= width * 25.75) {
         setwhite(0);
         setnav_ham(0);
       }
-      if (latest >= width * 24.23) {
+      if (latest >= width * 28.22) {
         setwhite(1);
         setnav_ham(1);
       }
