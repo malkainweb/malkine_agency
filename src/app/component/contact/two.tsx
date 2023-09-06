@@ -4,7 +4,6 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const Two = (props: any) => {
-  const [err, seterr] = useState("");
   const {
     interest,
     setinterest,
@@ -14,19 +13,21 @@ const Two = (props: any) => {
     sethear_us,
     setstep,
     handle_submit,
+    err,
+    seterr,
   } = props;
 
-  const handleclick = (i: any) => {
-    if (!budget || !hear_us || !interest) {
-      seterr("Complete your information below *");
-      // 👇️ scroll to top on page load
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-      return;
-    } else {
-      seterr("");
-      setstep(i);
-    }
-  };
+  // const handleclick = (i: any) => {
+  //   if (!budget || !hear_us || !interest) {
+  //     seterr("Complete your information below *");
+  //     // 👇️ scroll to top on page load
+  //     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+  //     return;
+  //   } else {
+  //     seterr("");
+  //     setstep(i);
+  //   }
+  // };
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -203,7 +204,6 @@ const Two = (props: any) => {
               <button
                 className="nova  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.8vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] flex justify-center items-center gap-[0.4vw] sm:text-[4vw]  sm:block   font[900]  sm:rounded-[9.75vw] sm:px-[11vw] w-fit sm:py-[3.5vw]  sm:text-white "
                 onClick={() => {
-                  handleclick(3);
                   handle_submit();
                 }}
               >

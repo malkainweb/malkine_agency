@@ -6,11 +6,13 @@ import Home_Header from "../component/navigation/home_header";
 import Footer from "../component/fotter/footer";
 import Two from "../component/contact/two";
 import Menu from "../component/menu";
+import axios from "axios";
+import { Resend } from "resend";
 
 export default function Contact() {
   const width = globalThis.innerWidth;
 
-  const [step, setstep] = useState(1);
+  const [step, setstep] = useState(2);
   const [name, setname] = useState("");
   const [phone, setphone] = useState("");
   const [business, setbusiness] = useState("");
@@ -23,6 +25,7 @@ export default function Contact() {
   const [white, setwhite] = useState(1);
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
+  const [err, seterr] = useState("");
 
   // this is for the menu
   const [left, setleft] = useState("200vh");
@@ -35,11 +38,42 @@ export default function Contact() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // this is for the mail
+
   const handle_submit = () => {
-    window.gtag("event", "form_submission", {
-      event_category: "Contact Form",
-      event_label: "Submit",
-    });
+    if (!budget || !hear_us || !interest) {
+      seterr("Complete your information below *");
+      // 👇️ scroll to top on page load
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+      return;
+    } else {
+      console.log(budget);
+      seterr("");
+      // setstep(3);
+
+      window.gtag("event", "form_submission", {
+        event_category: "Contact Form",
+        event_label: "Submit",
+      });
+
+      axios
+        .post("/api/contact", {
+          name: name,
+          phone: phone,
+          email: email,
+          business: business,
+          project_info: prject_info,
+          interest: interest,
+          budget: budget,
+          hear_us: hear_us,
+        })
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
   };
 
   return (
@@ -98,6 +132,8 @@ export default function Contact() {
             sethear_us={sethear_us}
             setstep={setstep}
             handle_submit={handle_submit}
+            err={err}
+            seterr={seterr}
           />
         ) : null}
         {step == 3 ? <Success /> : null}
