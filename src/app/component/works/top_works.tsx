@@ -19,7 +19,7 @@ const Top_works = () => {
       txt: "Spoiled Child",
       link: "https://spoiledchild.com/",
 
-      top: "7.7vw",
+      top: "10.7vw",
       left: "0px",
       right: "",
     },
@@ -27,7 +27,7 @@ const Top_works = () => {
       bg: "middle",
       txt: "Orbit",
       link: "https://www.orbit.law",
-      top: "15.33vw",
+      top: "21.33vw",
       left: "0px",
       right: "",
     },
@@ -37,8 +37,8 @@ const Top_works = () => {
       txt: "Good Juju",
       link: "https://heygoodjuju.com",
 
-      top: "7.7vw",
-      left: "7.7vw",
+      top: "10.7vw",
+      left: "10.7vw",
       right: "",
     },
     // mostly from here third row
@@ -46,8 +46,8 @@ const Top_works = () => {
       bg: "middle",
       txt: "APR",
       link: "https://www.aprguarnizioni.com",
-      top: "15.33vw",
-      left: "7.7vw",
+      top: "21.33vw",
+      left: "10.7vw",
       right: "",
     },
     {
@@ -55,8 +55,8 @@ const Top_works = () => {
       txt: "Unity",
       link: "http://getunity.com",
 
-      top: "15.33vw",
-      left: "15.33vw",
+      top: "21.33vw",
+      left: "21.33vw",
       right: "",
     },
     {
@@ -64,8 +64,8 @@ const Top_works = () => {
       txt: "Vibes Only",
       link: "https://www.vibesonly.com",
 
-      top: "15.33vw",
-      left: "23vw",
+      top: "21.33vw",
+      left: "32vw",
       right: "",
     },
     {
@@ -73,8 +73,8 @@ const Top_works = () => {
       txt: "atella",
       link: "https://www.atella.ca",
 
-      top: "15.33vw",
-      left: "30.7vw",
+      top: "21.33vw",
+      left: "42.7vw",
       right: "",
     },
     {
@@ -82,8 +82,8 @@ const Top_works = () => {
       txt: "Modamu",
       link: "https://www.modamuvillage.com",
 
-      top: "15.33vw",
-      left: "38.33vw",
+      top: "21.33vw",
+      left: "53.33vw",
       right: "",
     },
 
@@ -93,8 +93,8 @@ const Top_works = () => {
       txt: "house of adeles",
       link: "https://www.houseofadeles.com",
 
-      top: "23vw",
-      left: "7.7vw",
+      top: "32vw",
+      left: "10.7vw",
       right: "",
     },
     {
@@ -102,8 +102,8 @@ const Top_works = () => {
       txt: "Climb Onsight ",
       link: "https://www.climbonsight.ca",
 
-      top: "23vw",
-      left: "15.33vw",
+      top: "32vw",
+      left: "21.33vw",
       right: "",
     },
     {
@@ -111,8 +111,8 @@ const Top_works = () => {
       txt: "House Of Taretti",
       link: "https://www.houseoftaretti.com",
 
-      top: "23vw",
-      left: "23vw",
+      top: "32vw",
+      left: "32vw",
       right: "",
     },
     {
@@ -120,8 +120,8 @@ const Top_works = () => {
       txt: "Q Department",
       link: "https://www.qdepartment.com",
 
-      top: "23vw",
-      left: "30.7vw",
+      top: "32vw",
+      left: "42.7vw",
       right: "",
     },
 
@@ -131,8 +131,8 @@ const Top_works = () => {
       txt: "Gus Cooney",
       link: "https://www.guscooney.com",
 
-      top: "30.7vw",
-      left: "7.7vw",
+      top: "42.7vw",
+      left: "10.7vw",
       right: "",
     },
     {
@@ -140,8 +140,8 @@ const Top_works = () => {
       txt: "Wild Brands",
       link: "https://www.wildebrands.com",
 
-      top: "30.7vw",
-      left: "15.33vw",
+      top: "42.7vw",
+      left: "21.33vw",
       right: "",
     },
     {
@@ -149,8 +149,8 @@ const Top_works = () => {
       txt: "With Character",
       link: "https://www.withcharacter.com",
 
-      top: "30.7vw",
-      left: "23vw",
+      top: "42.7vw",
+      left: "32vw",
       right: "",
     },
 
@@ -160,8 +160,8 @@ const Top_works = () => {
       txt: "Reggie",
       link: "https://www.reggie.com",
 
-      top: "38.33vw",
-      left: "15.33vw",
+      top: "53.33vw",
+      left: "21.33vw",
       right: "",
     },
     {
@@ -169,8 +169,8 @@ const Top_works = () => {
       txt: "Malkain",
       link: "/",
 
-      top: "38.33vw",
-      left: "23vw",
+      top: "53.33vw",
+      left: "32vw",
       right: "",
     },
 
@@ -180,8 +180,8 @@ const Top_works = () => {
       txt: "Livso",
       link: "https://www.livso.com",
 
-      top: "46vw",
-      left: "15.33vw",
+      top: "64vw",
+      left: "21.33vw",
       right: "",
     },
   ]);
@@ -363,14 +363,14 @@ const Top_works = () => {
   ]);
   return (
     <>
-      <div className="w-full h-auto flex flex-col gap-[2vw] sm:gap-[10vw] pb-[10vw] ">
+      <div className="w-full h-auto flex flex-col gap-[2vw] sm:gap-[10vw] pb-[20vw] ">
         <div className="w-full h-auto ">
-          <h1 className="novabold text-[3.5vw] px-[10vw] text-white font-medium sm:text-[8vw] sm:px-[3.75vw]">
+          <h1 className="novabold text-[3.5vw] px-[2vw] text-white font-medium sm:text-[8vw] sm:px-[3.75vw]">
             Our Works{" "}
           </h1>
         </div>
         <div className="w-full h-auto flex justify-center sm:hidden">
-          <div className="w-[45.3vw]  relative h-[60vw] ">
+          <div className="w-[63vw]  relative h-[74vw] ">
             {/* the first left div */}
             <div
               style={{
@@ -378,7 +378,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[16.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[0.7vw] left-[3.3vw] z-[10]"
+              className="h-[23.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[0.7vw] left-[4.4vw] z-[10]"
             ></div>
 
             {/* second dive on the section */}
@@ -388,7 +388,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[20.3vw] w-[0.03vw] bg-opacity-[30%] absolute top-[10.7vw] left-[11vw] z-[10]"
+              className="h-[30.3vw] w-[0.03vw] bg-opacity-[30%] absolute top-[10.7vw] left-[15.1vw] z-[10]"
             ></div>
 
             {/* third sectio dive dive on the section */}
@@ -398,7 +398,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[0.03vw] w-[40.7vw] bg-opacity-[30%] absolute top-[18.7vw] left-[3.3vw] z-[10]"
+              className="h-[0.03vw] w-[55.7vw] bg-opacity-[30%] absolute top-[26vw] left-[3vw] z-[10]"
             ></div>
 
             {/* fourth sectio dive dive on the section */}
@@ -408,7 +408,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[0.03vw] w-[27.3vw] bg-opacity-[30%] absolute top-[26.3vw] left-[10vw] z-[10]"
+              className="h-[0.03vw] w-[37.3vw] bg-opacity-[30%] absolute top-[36.5vw] left-[12vw] z-[10]"
             ></div>
 
             {/* fifth sectio dive dive on the section */}
@@ -418,7 +418,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[0.03vw] w-[17.3vw] bg-opacity-[30%] absolute top-[34vw] left-[10vw] z-[10]"
+              className="h-[0.03vw] w-[22.3vw] bg-opacity-[30%] absolute top-[47.35vw] left-[18vw] z-[10]"
             ></div>
 
             {/* sixth  dive on the section */}
@@ -428,7 +428,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[35.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[18.7vw] z-[10]"
+              className="h-[10.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[25.7vw] left-[47vw] z-[10]"
             ></div>
 
             {/* seventh  dive on the section */}
@@ -438,7 +438,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[26.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[26.3vw] z-[10]"
+              className="h-[38.7vw] w-[0.03vw] bg-opacity-[30%] absolute top-[26.7vw] left-[25.7vw] z-[10]"
             ></div>
 
             {/* eight  dive on the section */}
@@ -448,7 +448,7 @@ const Top_works = () => {
                 opacity: "0.3",
                 borderStyle: "dashed",
               }}
-              className="h-[10vw] w-[0.03vw] bg-opacity-[30%] absolute top-[16.7vw] left-[34vw] z-[10]"
+              className="h-[30vw] w-[0.03vw] bg-opacity-[30%] absolute top-[23.7vw] left-[36.5vw] z-[10]"
             ></div>
 
             {/* ninth  dive on the section */}
@@ -464,7 +464,7 @@ const Top_works = () => {
               return (
                 <Link
                   href={e.link}
-                  className={`w-[6.7vw] z-[30] h-[6.7vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.7vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
+                  className={`w-[9vw] z-[30] h-[9vw] absolute rounded-[100%]  works flex justify-center items-center ${e.bg} text-white font-[helvetica] text-[0.9vw] hover:bg-[#D01717] transition duration-[0.7s] px-[0.7vw] capitalize text-center hover:border-white hover:border`}
                   key={index}
                   style={{
                     top: e.top,
