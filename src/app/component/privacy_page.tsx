@@ -10,14 +10,16 @@ const PrivacyPolicyPage = () => {
         <p className="text-sm text-gray-500">Last updated: [[5 Sept 2023]]</p>
 
         <p>
-          This Privacy Policy describes how Malkain Designs (the "Site," "we,"
-          "us," or "our") collects, uses, and discloses your personal
-          information when you visit, use our services, or make a purchase from
-          malkain.com (the "Site") or otherwise communicate with us
-          (collectively, the "Services"). For purposes of this Privacy Policy,
-          "you" and "your" means you as the user of the Services, whether you
-          are a customer, website visitor, or another individual whose
-          information we have collected pursuant to this Privacy Policy.
+          This Privacy Policy describes how Malkain Designs (the
+          {'"Site"'}
+          {'"we"'} {'"us"'} or {'"our"'}) collects, uses, and discloses your
+          personal information when you visit, use our services, or make a
+          purchase from malkain.com (the {"'Site'"}) or otherwise communicate
+          with us (collectively, the {'"Services"'}). For purposes of this
+          Privacy Policy, {'"you"'} and {'"your"'} means you as the user of the
+          Services, whether you are a customer, website visitor, or another
+          individual whose information we have collected pursuant to this
+          Privacy Policy.
         </p>
 
         <p className="mt-4">
@@ -37,7 +39,7 @@ const PrivacyPolicyPage = () => {
           We may update this Privacy Policy from time to time, including to
           reflect changes to our practices or for other operational, legal, or
           regulatory reasons. We will post the revised Privacy Policy on the
-          Site, update the "Last updated" date, and take any other steps
+          Site, update the {'"Last updated"'} date, and take any other steps
           required by applicable law.
         </p>
 
@@ -65,7 +67,7 @@ const PrivacyPolicyPage = () => {
         <p>
           The types of personal information we obtain about you depend on how
           you interact with our Site and use our Services. When we use the term
-          "personal information," we are referring to information that
+          {'    "personal information,"'} we are referring to information that
           identifies, relates to, describes, or can be associated with you. The
           following sections describe the categories and specific types of
           personal information we collect.

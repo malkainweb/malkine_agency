@@ -8,7 +8,7 @@ import { useInView } from "framer-motion";
 import aeroplane_malkaine from "../../../../public/home/home_service.webp";
 import mob_aeroplane_malkaine from "../../../../public/home/mob_home_service.webp";
 import hand_middle from "../../../../public/home/hand_middle.webp";
-import imag1 from "../../../../public/home/1.webp";
+import imag1 from "../../../../public/home/1.png";
 import imag2 from "../../../../public/home/2.webp";
 import imag3 from "../../../../public/home/3.webp";
 import imag4 from "../../../../public/home/4.webp";
@@ -41,6 +41,7 @@ const Hands = (props: any) => {
       top: "0px",
       left: "52.2vw",
       right: "0px",
+      h: "",
     },
     {
       img: imag2,
@@ -72,7 +73,7 @@ const Hands = (props: any) => {
     },
     {
       img: imag5,
-      link: "/",
+      link: "https://www.withcharacter.com",
 
       bg: "home_black_bg",
       top: "11.6vw",
@@ -116,9 +117,8 @@ const Hands = (props: any) => {
       right: "0px",
     },
     {
-      img: imag9,
-      link: "https://www.modamuvillage.com",
-
+      img: imag8,
+      link: "https://www.climbonsight.ca",
       class: "home_edge",
       bg: "home_black_bg",
       top: "23.2vw",
@@ -126,8 +126,8 @@ const Hands = (props: any) => {
       right: "0px",
     },
     {
-      img: imag10,
-      link: "https://www.qdepartment.com",
+      img: imag9,
+      link: "https://www.modamuvillage.com",
 
       bg: "home_black_bg",
       top: "23.2vw",
@@ -230,7 +230,7 @@ const Hands = (props: any) => {
       img: imag5,
       bg: "home_black_bg",
       top: "38vw",
-      link: "/",
+      link: "https://www.withcharacter.com",
 
       left: "50%",
       right: "0px",
@@ -343,7 +343,7 @@ const Hands = (props: any) => {
                   <Image
                     src={e.img}
                     alt={"client logos"}
-                    className="w-fit h-full"
+                    className="w-fit h-full "
                   />
                 </Link>
               );
