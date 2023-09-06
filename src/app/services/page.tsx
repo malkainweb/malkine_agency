@@ -35,63 +35,63 @@ export default function Services() {
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     if (width >= 651) {
-      if (latest >= width * 1.05) {
+      if (latest >= width * 0.95) {
         setwhite(1);
-      } else if (latest <= width * 1.05) {
+      } else if (latest <= width * 0.95) {
         setwhite(0);
       }
 
-      if (latest >= width * 3.16) {
+      if (latest >= width * 3.95) {
         setwhite(0);
       }
-      if (latest >= width * 3.7) {
+      // if (latest >= width * 3.7) {
+      //   setwhite(1);
+      // }
+      if (latest >= width * 4.5) {
         setwhite(1);
       }
-      if (latest >= width * 4.25) {
+      if (latest >= width * 4.78) {
         setwhite(0);
       }
-      if (latest >= width * 4.65) {
+      if (latest >= width * 5.16) {
         setwhite(1);
       }
-      if (latest >= width * 5.5) {
+      if (latest >= width * 5.83) {
         setwhite(0);
-      }
-      if (latest >= width * 5.9) {
-        setwhite(1);
       }
       if (latest >= width * 5.95) {
         setwhite(0);
       }
     } else if (width <= 650) {
-      if (latest >= width * 5.75) {
+      if (latest >= width * 5.45) {
         setwhite(0);
-      } else if (latest <= width * 5.75) {
+      } else if (latest <= width * 5.45) {
         setwhite(1);
       }
 
-      if (latest >= width * 6.75) {
+      if (latest >= width * 6.35) {
         setwhite(1);
       }
-      if (latest >= width * 7.83) {
+      if (latest >= width * 6.88) {
         setwhite(0);
       }
-      if (latest >= width * 8.45) {
+      if (latest >= width * 7.5) {
         setwhite(1);
       }
-      if (latest >= width * 10.85) {
+      if (latest >= width * 9.38) {
         setwhite(0);
       }
-      if (latest >= width * 11.43) {
+      if (latest >= width * 9.95) {
         setwhite(1);
       }
-      if (latest >= width * 11.73) {
+      if (latest >= width * 10.08) {
         setwhite(0);
       }
     }
   });
 
   useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    // window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
