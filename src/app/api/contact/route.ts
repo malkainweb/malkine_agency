@@ -1,8 +1,7 @@
-import Logo from "@/app/component/logo";
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-export async function POST(req) {
+export async function POST(req: Request) {
   const resend = new Resend(process.env.PUBLIC_EMAIL_ID);
 
   // const body = JSON.parse(req.body);
