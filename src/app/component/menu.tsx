@@ -48,7 +48,7 @@ const Menu = (props: any) => {
 
     {
       txt: "Contact Us",
-      no: "06",
+      no: "05",
       link: "/contact",
     },
   ]);
