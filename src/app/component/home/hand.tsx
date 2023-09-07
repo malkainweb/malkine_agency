@@ -446,11 +446,13 @@ const Hands = (props: any) => {
         {/* hand bg */}
         <Image
           src={bg_img}
+          priority
           alt="hand_bg"
           className=" absolute top-0 left-0 w-full h-[138vw] sm:hidden"
         />
         <Image
           src={mob_bg_img}
+          priority
           alt="hand_bg"
           className=" absolute top-0 left-0 w-full h-[280vw] hidden sm:block"
         />
