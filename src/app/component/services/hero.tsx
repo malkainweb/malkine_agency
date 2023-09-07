@@ -179,11 +179,13 @@ const Hero_services = (props: any) => {
         <div className="w-full flex flex-col rounded-[3.3vw] gap-[10vw] h-full relative ">
           <Image
             src={hero}
+            priority
             alt=""
             className="w-full h-full absolute top-0 left-0 sm:hidden"
           />
           <Image
             src={mob_hero}
+            priority
             alt=""
             className="w-full h-full absolute top-0 left-0 sm:block hidden"
           />
