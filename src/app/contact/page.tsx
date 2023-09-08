@@ -12,7 +12,7 @@ import { Resend } from "resend";
 export default function Contact() {
   const width = globalThis.innerWidth;
 
-  const [step, setstep] = useState(2);
+  const [step, setstep] = useState(1);
   const [name, setname] = useState("");
   const [phone, setphone] = useState("");
   const [business, setbusiness] = useState("");
