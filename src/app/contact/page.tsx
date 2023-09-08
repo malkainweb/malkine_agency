@@ -1,4 +1,11 @@
 "use client";
+
+declare global {
+  interface Window {
+    fbq: any;
+  }
+}
+
 import { useState, useEffect } from "react";
 import One from "../component/contact/one";
 import Success from "../component/contact/success";
@@ -54,6 +61,8 @@ export default function Contact() {
         event_category: "Contact Form",
         event_label: "Submit",
       });
+
+      window.fbq("trackCustom", "submit form");
 
       axios
         .post("/api/contact", {
