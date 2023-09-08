@@ -22,6 +22,7 @@ const Portfolio = () => {
         </div>
         <div className="flex  justify-between  sm:gap-[4.5vw] flex-wrap w-full h-auto">
           <Link
+            target="_blank"
             href="https://www.houseofadeles.com"
             className="w-[49.5%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
@@ -36,6 +37,7 @@ const Portfolio = () => {
             </div>
           </Link>
           <Link
+            target="_blank"
             href="https://www.orbit.law"
             className="w-[24.6%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
@@ -50,6 +52,7 @@ const Portfolio = () => {
             </div>
           </Link>
           <Link
+            target="_blank"
             href="https://www.atella.ca"
             className="w-[24.6%]  port_wrap sm:py-[4vw] sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
@@ -65,6 +68,7 @@ const Portfolio = () => {
           </Link>
 
           <Link
+            target="_blank"
             href="https://www.heygoodjuju.com"
             className="w-[24.6%] sm:block  hidden sm:py-[4vw]idden  port_wrap sm:h-[62.25vw] sm:w-[44vw] rounded-[10px] sm:rounded-[2.5vw]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
@@ -84,6 +88,7 @@ const Portfolio = () => {
         <div className="flex   justify-between flex-wrap w-full h-auto">
           {" "}
           <Link
+            target="_blank"
             href="https://www.heygoodjuju.com
 "
             className="w-[24.6%]  port_wrap sm:hidden rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
@@ -99,6 +104,7 @@ const Portfolio = () => {
             </div>
           </Link>
           <Link
+            target="_blank"
             href="https://www.guscooney.com"
             className="w-[24.6%] sm:hidden  port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >
@@ -113,6 +119,7 @@ const Portfolio = () => {
             </div>
           </Link>
           <Link
+            target="_blank"
             href="https://www.climbonsight.ca"
             className="w-[49.5%] sm:hidden port_wrap rounded-[10px]  cursor-pointer py-[2vw] h-[23.3vw] px-[2vw]"
           >

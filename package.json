@@ -27,6 +27,7 @@
     "react": "18.2.0",
     "react-cool-inview": "^3.0.1",
     "react-dom": "18.2.0",
+    "react-facebook-pixel": "^1.0.4",
     "react-player": "^2.12.0",
     "react-scroll": "^1.8.9",
     "resend": "^0.16.0",

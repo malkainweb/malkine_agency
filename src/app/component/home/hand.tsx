@@ -332,6 +332,7 @@ const Hands = (props: any) => {
               return (
                 <Link
                   href={e.link}
+                  target="_blank"
                   key={index}
                   className={`w-[10.7vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center  h-[10.7vw] absolute rounded-[100%] py-[1vw] px-[1.4vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                   style={{
@@ -398,6 +399,7 @@ const Hands = (props: any) => {
                     return (
                       <Link
                         href={e.link}
+                        target="_blank"
                         key={index}
                         className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[3vw] py-[3vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                       >
@@ -415,6 +417,7 @@ const Hands = (props: any) => {
                     return (
                       <Link
                         href={e.link}
+                        target="_blank"
                         key={index}
                         className={`w-[27vw] h-[27vw] hover:bg-[darkred] transisition duration-[0.5s] bg-black  ${e.class} flex justify-center items-center    rounded-[100%] px-[3vw] py-[3vw] border-[0.05vw] border-white border-opacity-[30%] hover:border-black`}
                       >
