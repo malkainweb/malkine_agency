@@ -34,6 +34,17 @@ export default function Home() {
   const [nav_ham, setnav_ham] = useState(1);
   const [opacity, setopacity] = useState(0);
 
+  // this is for tracking
+  useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("328321129605998"); // facebookPixel
+        ReactPixel.pageView();
+      });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setloader(false);
