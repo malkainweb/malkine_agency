@@ -31,7 +31,7 @@ export default function RootLayout({
     import("react-facebook-pixel")
       .then((x) => x.default)
       .then((ReactPixel) => {
-        ReactPixel.init("328321129605998"); // facebookPixelId
+        ReactPixel.init("328321129605998"); // facebookPixel
         ReactPixel.pageView();
       });
     // eslint-disable-next-line react-hooks/exhaustive-deps
