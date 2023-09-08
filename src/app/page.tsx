@@ -42,6 +42,7 @@ export default function Home() {
         ReactPixel.init("328321129605998"); // facebookPixel
         ReactPixel.pageView();
       });
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
