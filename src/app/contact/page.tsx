@@ -26,7 +26,7 @@ export default function Contact() {
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
   const [err, seterr] = useState("");
-
+  const [sendbtn, setsendbtn] = useState("Submit");
   // this is for the menu
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
@@ -48,6 +48,7 @@ export default function Contact() {
       return;
     } else {
       seterr("");
+      setsendbtn("Sending");
 
       window.gtag("event", "form_submission", {
         event_category: "Contact Form",
@@ -67,6 +68,7 @@ export default function Contact() {
         })
         .then((response) => {
           setstep(3);
+          setsendbtn("Submit");
         })
         .catch((err) => {
           console.log(err);
@@ -131,6 +133,8 @@ export default function Contact() {
             setstep={setstep}
             handle_submit={handle_submit}
             err={err}
+            sendbtn={sendbtn}
+            setsendbtn={setsendbtn}
             seterr={seterr}
           />
         ) : null}

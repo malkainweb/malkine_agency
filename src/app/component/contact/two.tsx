@@ -14,7 +14,7 @@ const Two = (props: any) => {
     setstep,
     handle_submit,
     err,
-    seterr,
+    sendbtn,
   } = props;
 
   // const handleclick = (i: any) => {
@@ -208,7 +208,7 @@ const Two = (props: any) => {
                   handle_submit();
                 }}
               >
-                Submit <i className="bi bi-arrow-right"></i>
+                {sendbtn} <i className="bi bi-arrow-right"></i>
               </button>
             </div>
           </motion.div>
