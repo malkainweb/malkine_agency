@@ -72,16 +72,17 @@ const Two = (props: any) => {
                 </option>
                 <option
                   style={{ color: "white" }}
-                  value=" Ecommerce Website Design & Development"
-                >
-                  Ecommerce Website Design & Development
-                </option>
-                <option
-                  style={{ color: "white" }}
                   value="Software Design & Development"
                 >
                   Software Design & Development
                 </option>
+                <option
+                  style={{ color: "white" }}
+                  value=" Ecommerce Website Design & Development"
+                >
+                  Ecommerce Website Design & Development
+                </option>
+
                 <option
                   style={{ color: "white" }}
                   value="  User Management Systems"

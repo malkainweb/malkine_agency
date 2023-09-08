@@ -21,7 +21,7 @@ const Team = () => {
     {
       img: img5,
       name: "Philips O.",
-      des: "Wordpress Developer ",
+      des: "Fullstack Developer ",
     },
 
     {
@@ -31,7 +31,12 @@ const Team = () => {
     },
     {
       img: img5,
-      name: "Chisom A.",
+      name: "Derin O.",
+      des: "Project Manager",
+    },
+    {
+      img: img5,
+      name: "Bryan V.",
       des: "Fullstack Developer",
     },
     {
@@ -41,9 +46,10 @@ const Team = () => {
     },
     {
       img: img5,
-      name: "Mirian A.",
-      des: "UI/UX Designer ",
+      name: "Chisom A.",
+      des: "Fullstack Developer",
     },
+
     {
       img: img1,
       name: "Abigail A.",
@@ -53,24 +59,17 @@ const Team = () => {
     {
       img: img3,
       name: "Nathan C.",
-      des: "designer",
+      des: "graphics designer",
     },
-
     {
       img: img5,
-      name: "Bryan V.",
-      des: "Fullstack Developer",
+      name: "Mirian A.",
+      des: "UI/UX Designer ",
     },
-
     {
       img: img4,
       name: "Unwana U.",
       des: "Operations Manager ",
-    },
-    {
-      img: img5,
-      name: "Derin O.",
-      des: "Project Manager",
     },
 
     {

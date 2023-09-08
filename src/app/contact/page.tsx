@@ -12,7 +12,7 @@ import { Resend } from "resend";
 export default function Contact() {
   const width = globalThis.innerWidth;
 
-  const [step, setstep] = useState(1);
+  const [step, setstep] = useState(2);
   const [name, setname] = useState("");
   const [phone, setphone] = useState("");
   const [business, setbusiness] = useState("");
@@ -47,9 +47,7 @@ export default function Contact() {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
       return;
     } else {
-      console.log(budget);
       seterr("");
-      // setstep(3);
 
       window.gtag("event", "form_submission", {
         event_category: "Contact Form",
@@ -68,7 +66,7 @@ export default function Contact() {
           hear_us: hear_us,
         })
         .then((response) => {
-          console.log(response);
+          setstep(3);
         })
         .catch((err) => {
           console.log(err);
