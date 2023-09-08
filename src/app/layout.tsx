@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import "./style.css";
 import "./global_loader.css";
@@ -27,6 +25,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  "use client";
   useEffect(() => {
     import("react-facebook-pixel")
       .then((x) => x.default)
