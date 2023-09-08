@@ -1,3 +1,5 @@
+"use client";
+
 import "./globals.css";
 import "./style.css";
 import "./global_loader.css";
@@ -25,6 +27,15 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  useEffect(() => {
+    import("react-facebook-pixel")
+      .then((x) => x.default)
+      .then((ReactPixel) => {
+        ReactPixel.init("328321129605998"); // facebookPixelId
+        ReactPixel.pageView();
+      });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <html lang="en">
       {/* goggle trackginig */}
@@ -61,7 +72,7 @@ export default function RootLayout({
       />
 
       {/* this is for facebook tracking */}
-      <Script
+      {/* <Script
         id="fb-pixel"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -78,7 +89,7 @@ export default function RootLayout({
              fbq('track', 'PageView');
           `,
         }}
-      />
+      /> */}
       <body className="hide_now ">{children}</body>
     </html>
   );
