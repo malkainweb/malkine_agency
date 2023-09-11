@@ -254,7 +254,7 @@ const Hero_services = (props: any) => {
               return (
                 <p
                   key={index}
-                  className={`w-full text-[4.2vw] sm:text-[4.3vw] sm:font-[600] sm:text-center  h-[6vw] sm:h-[12vw] flex justify-center transition duration-[1s] items-center font-[helvetica] text-[${
+                  className={`w-full text-[4.2vw] sm:text-[4.3vw] sm:font-[600] sm:text-center  h-[6vw] sm:h-[12vw] flex justify-center transition duration-[0.1s] items-center font-[helvetica] text-[${
                     e.class == check_num ? "#D01717" : "black"
                   }]  `}
                 >
