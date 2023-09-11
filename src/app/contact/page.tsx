@@ -84,7 +84,7 @@ export default function Contact() {
             setsendbtn("Submit");
             setstep(3);
           } else {
-            seterr("Something went wrong. Please try again");
+            seterr("Something went wrong. Please try again or reload the page");
             console.log("something went wrong");
             setdisabled(!disabled);
           }
