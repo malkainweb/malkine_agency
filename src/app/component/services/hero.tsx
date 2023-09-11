@@ -246,7 +246,7 @@ const Hero_services = (props: any) => {
           <div className="absolute bottom-0 left-0 h-[13vw]  sm:h-[50vw]  w-full  bg-gradient-to-t from-[white] z-[20]"></div>
           {/* <div className="absolute top-[13vw]  left-0 h-[6vw]  w-full text-black bg-[red]"></div> */}
 
-          {/* the normaltext animation and its so good  */}
+          {/* the normaltext animation   */}
           <div
             className={`w-full h-[19vw] sm:h-[56vw]  flex flex-wrap justify-start ${des_translate} transition duration-[1s] z-[10] `}
           >
