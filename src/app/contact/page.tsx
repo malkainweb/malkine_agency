@@ -14,7 +14,6 @@ import Footer from "../component/fotter/footer";
 import Two from "../component/contact/two";
 import Menu from "../component/menu";
 import axios from "axios";
-import { Resend } from "resend";
 
 export default function Contact() {
   const width = globalThis.innerWidth;
@@ -87,12 +86,15 @@ export default function Contact() {
           } else {
             seterr("Something went wrong. Please try again");
             console.log("something went wrong");
-            setdisabled(disabled);
+            setdisabled(!disabled);
           }
         })
         .catch((err) => {
           console.log(err);
-          setdisabled(disabled);
+          seterr(
+            "Something went wrong. Please try again or reload the page and try again",
+          );
+          setdisabled(!disabled);
         });
     }
   };
