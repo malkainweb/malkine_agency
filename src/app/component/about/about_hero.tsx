@@ -40,6 +40,7 @@ const About_hero = () => {
           priority
           style={{ transform: "translateX(-50%)" }}
           src={chess}
+          placeholder="blur"
           alt="chess board"
           className="w-[70vw] absolute left-[50%] bottom-[-16.6vw] sm:w-[95vw] sm:bottom-[-30vw]"
         />

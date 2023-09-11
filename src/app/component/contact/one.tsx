@@ -51,7 +51,7 @@ const One = (props: any) => {
                 value={name}
                 placeholder="Your name * "
                 type="text"
-                className="w-full bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white focus:border-b-white"
+                className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white focus:border-b-white"
               />
             </div>
 

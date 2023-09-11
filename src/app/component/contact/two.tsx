@@ -15,6 +15,8 @@ const Two = (props: any) => {
     handle_submit,
     err,
     sendbtn,
+    disabled,
+    setdisabled,
   } = props;
 
   // const handleclick = (i: any) => {
@@ -207,6 +209,7 @@ const Two = (props: any) => {
                 onClick={() => {
                   handle_submit();
                 }}
+                disabled={disabled}
               >
                 {sendbtn} <i className="bi bi-arrow-right"></i>
               </button>

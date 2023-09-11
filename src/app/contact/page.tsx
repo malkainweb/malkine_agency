@@ -34,6 +34,8 @@ export default function Contact() {
   const [nav_ham, setnav_ham] = useState(1);
   const [err, seterr] = useState("");
   const [sendbtn, setsendbtn] = useState("Submit");
+  const [disabled, setdisabled] = useState(false);
+
   // this is for the menu
   const [left, setleft] = useState("200vh");
   const [right, setright] = useState(width <= 650 ? "200vh" : "-200vh");
@@ -56,31 +58,41 @@ export default function Contact() {
     } else {
       seterr("");
       setsendbtn("Sending");
-
+      setdisabled(!disabled);
       window.gtag("event", "form_submission", {
         event_category: "Contact Form",
         event_label: "Submit",
       });
 
       window.fbq("trackCustom", "submit form");
-
+      let data = JSON.stringify({
+        name: name,
+        phone: phone,
+        email: email,
+        business: business,
+        project_info: prject_info,
+        interest: interest,
+        budget: budget,
+        hear_us: hear_us,
+      });
       axios
-        .post("/api/contact", {
-          name: name,
-          phone: phone,
-          email: email,
-          business: business,
-          project_info: prject_info,
-          interest: interest,
-          budget: budget,
-          hear_us: hear_us,
+        .post("/api/contact", data, {
+          headers: { "Content-Type": "application/json" },
         })
         .then((response) => {
-          setstep(3);
-          setsendbtn("Submit");
+          if (response.data.emailSent == true) {
+            console.log(response.data.emailSent);
+            setsendbtn("Submit");
+            setstep(3);
+          } else {
+            seterr("Something went wrong. Please try again");
+            console.log("something went wrong");
+            setdisabled(disabled);
+          }
         })
         .catch((err) => {
           console.log(err);
+          setdisabled(disabled);
         });
     }
   };
@@ -145,6 +157,8 @@ export default function Contact() {
             sendbtn={sendbtn}
             setsendbtn={setsendbtn}
             seterr={seterr}
+            disabled={disabled}
+            setdisabled={setdisabled}
           />
         ) : null}
         {step == 3 ? <Success /> : null}
