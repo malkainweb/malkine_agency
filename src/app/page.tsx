@@ -19,7 +19,13 @@ import Review from "./component/home/review";
 import Preloader from "./component/preloader";
 import Home_Header from "./component/navigation/home_header";
 import Menu from "./component/menu";
-import { useMotionValueEvent, useScroll } from "framer-motion";
+import {
+  useTransform,
+  motion,
+  useScroll,
+  useMotionValueEvent,
+  useMotionValue,
+} from "framer-motion";
 
 export default function Home() {
   const width = globalThis.innerWidth;
@@ -33,6 +39,9 @@ export default function Home() {
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
   const [opacity, setopacity] = useState(0);
+  const [played, setplayed] = useState(4.8);
+  const [opacity_loader, setopacity_loader] = useState(1);
+  const [monitor_loader, setmonitor_loader] = useState(0);
 
   // this is for tracking
   useEffect(() => {
@@ -46,14 +55,87 @@ export default function Home() {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  // useEffect(() => {
+  //   const timer = setTimeout(() => {
+  //     // setloader(false);
+  //     document.body.classList.remove("hide_now");
+  //   }, 4000);
+  //   return () => clearTimeout(timer);
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, []);
+  const x = useMotionValue(4.8);
+
   useEffect(() => {
-    const timer = setTimeout(() => {
+    x.set(played);
+    // console.log(x.get());
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [played]);
+
+  // useEffect(() => {
+
+  //   const unsubX = x.on("change", () => {
+  //     if (monitor_loader >= 1.1) {
+  //          console.log(monitor_loader);
+  //       //setloader(false);
+  //       document.body.classList.remove("hide_now");
+  //       // console.log(latest);
+  //     }
+  //   });
+  //   // const unsubY = y.on("change", doSomething);
+
+  //   return () => {
+  //     unsubX();
+  //     // unsubY();
+  //   };
+  // }, [x]);
+  const scroll_lever = useTransform(
+    x,
+    // Map x from these values:
+    [3.7, 4.8],
+
+    // Into these values:
+    [2, 1],
+  );
+  // const timer = setTimeout(() => {
+  //   // setloader(false);
+  //   document.body.classList.remove("hide_now");
+  // }, 4000);
+
+  useMotionValueEvent(scroll_lever, "change", (latest) => {
+    if (latest <= 0.2) {
+      // setmonitor_loader(latest);
       setloader(false);
       document.body.classList.remove("hide_now");
-    }, 2000);
-    return () => clearTimeout(timer);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+      // console.log(latest);
+    }
+
+    // console.log(x)
+  });
+
+  const bad = useTransform(
+    scroll_lever,
+    // Map x from these values:
+    [2, 1],
+
+    // Into these values:
+    [1, 0],
+  );
+
+  useMotionValueEvent(bad, "change", (latest) => {
+    //console.log(latest);
+    setopacity_loader(latest);
+    if (latest <= 0.3) {
+      // setmonitor_loader(latest);
+      setTimeout(() => {
+        setloader(false);
+        document.body.classList.remove("hide_now");
+      }, 500);
+
+      console.log(latest);
+    }
+    // console.log(x)
+  });
 
   // this function below changes the headers as being used
   const { scrollY } = useScroll();
@@ -137,7 +219,13 @@ export default function Home() {
 
   return (
     <>
-      {loader ? <Preloader /> : null}
+      {loader ? (
+        <Preloader
+          opacity_loader={opacity_loader}
+          played={played}
+          setplayed={setplayed}
+        />
+      ) : null}
       <Menu
         setleft={setleft}
         left={left}

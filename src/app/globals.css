@@ -10,10 +10,6 @@
   -webkit-appearance: none !important;
 }
 
-.hide_now {
-  overflow: clip;
-}
-
 html {
   overflow-x: clip;
 }
@@ -26,6 +22,10 @@ body {
   overflow-x: clip;
 }
 
+.hide_now {
+  overflow-y: clip;
+  height: 101vh;
+}
 /* styling for the input eflements on the contact page  */
 
 /* Chrome, Safari, Edge, Opera */

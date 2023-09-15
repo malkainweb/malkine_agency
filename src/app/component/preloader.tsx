@@ -1,111 +1,67 @@
 "use client";
+import ReactPlayer from "react-player";
+import {
+  useTransform,
+  motion,
+  useScroll,
+  useMotionValueEvent,
+  useMotionValue,
+} from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 
-const Preloader = () => {
+const Preloader = (props: any) => {
+  const { played, setplayed, opacity_loader } = props;
+  const [new_height, setnew_height] = useState<any>("1.3");
+  const [new_width, setnew_width] = useState<any>("1.3");
+  // const videoref = useRef<any>(null);
+
+  const x = useMotionValue(0);
+
+  // this is where the magic happens
+  // const scroll_lever = useTransform(
+  //   x,
+  //   // Map x from these values:
+  //   [4, 4.7],
+
+  //   // Into these values:
+  //   [1, 0],
+  // );
+  // useMotionValueEvent(scroll_lever, "change", (latest) => {
+  //   console.log(latest);
+  //   setopacity(latest);
+  //   // console.log(x)
+  // });
   return (
-    <div className="wrap_all">
-      {/* //{" "}
-      <div className="scene">
-        // <div className="shadow"></div>
-        //{" "}
-        <div className="jumper">
-          //{" "}
-          <div className="spinner">
-            //{" "}
-            <div className="scaler">
-              //{" "}
-              <div className="loader">
-                //{" "}
-                <div className="cuboid">
-                  // <div className="cuboid__side"></div>
-                  // <div className="cuboid__side"></div>
-                  // <div className="cuboid__side"></div>
-                  // <div className="cuboid__side"></div>
-                  // <div className="cuboid__side"></div>
-                  // <div className="cuboid__side"></div>
-                  //{" "}
-                </div>
-                //{" "}
-              </div>
-              //{" "}
-            </div>
-            //{" "}
-          </div>
-          //{" "}
-        </div>
-        //{" "} */}
-
-      <svg viewBox="0 0 100 100">
-        <g
-          fill="none"
-          stroke="#fff"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="6"
-        >
-          <path d="M 21 40 V 59">
-            <animateTransform
-              attributeName="transform"
-              attributeType="XML"
-              type="rotate"
-              values="0 21 59; 180 21 59"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <path d="M 79 40 V 59">
-            <animateTransform
-              attributeName="transform"
-              attributeType="XML"
-              type="rotate"
-              values="0 79 59; -180 79 59"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <path d="M 50 21 V 40">
-            <animate
-              attributeName="d"
-              values="M 50 21 V 40; M 50 59 V 40"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <path d="M 50 60 V 79">
-            <animate
-              attributeName="d"
-              values="M 50 60 V 79; M 50 98 V 79"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <path d="M 50 21 L 79 40 L 50 60 L 21 40 Z">
-            <animate
-              attributeName="stroke"
-              values="rgba(255,255,255,1); rgba(100,100,100,0)"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </path>
-
-          <path d="M 50 40 L 79 59 L 50 79 L 21 59 Z" />
-          <path d="M 50 59 L 79 78 L 50 98 L 21 78 Z">
-            <animate
-              attributeName="stroke"
-              values="rgba(100,100,100,0); rgba(255,255,255,1)"
-              dur="2s"
-              repeatCount="indefinite"
-            />
-          </path>
-          <animateTransform
-            attributeName="transform"
-            attributeType="XML"
-            type="translate"
-            values="0 0; 0 -19"
-            dur="2s"
-            repeatCount="indefinite"
-          />
-        </g>
-      </svg>
+    <div
+      style={{
+        transform: `scale( ${new_width} , ${new_height})`,
+        opacity: opacity_loader,
+        transition: "0.7s ease",
+      }}
+      className=" w-full h-full transition duration-[1s] bg-[#1B1819] opacity-[100%] fixed flex justify-center items-center top-0 left-0 z-[99999] "
+    >
+      <ReactPlayer
+        className={`w-full h-full border2  `}
+        url="/preloader.webm"
+        width={"100%"}
+        height={"100%"}
+        playing={true}
+        loop={true}
+        controls={false}
+        volume={0}
+        onProgress={(progress) => {
+          setplayed(progress.playedSeconds);
+        }}
+      />
+      {/* <video
+        autoPlay
+        ref={videoref}
+        loop
+        muted
+        preload="metadata"
+        className={`w-full h-full border2  `}
+        src="/preloader.webm"
+      ></video> */}
     </div>
   );
 };
