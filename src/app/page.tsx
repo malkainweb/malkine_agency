@@ -40,20 +40,6 @@ export default function Home() {
   const [nav_ham, setnav_ham] = useState(1);
   const [opacity, setopacity] = useState(0);
   const [played, setplayed] = useState(4.8);
-  const [opacity_loader, setopacity_loader] = useState(1);
-  const [monitor_loader, setmonitor_loader] = useState(0);
-
-  // this is for tracking
-  useEffect(() => {
-    // import("react-facebook-pixel")
-    //   .then((x) => x.default)
-    //   .then((ReactPixel) => {
-    //     ReactPixel.init("328321129605998"); // facebookPixel
-    //     ReactPixel.pageView();
-    //     ReactPixel.track("submit form");
-    //   });
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
 
   // useEffect(() => {
   //   const timer = setTimeout(() => {
@@ -63,79 +49,6 @@ export default function Home() {
   //   return () => clearTimeout(timer);
   //   // eslint-disable-next-line react-hooks/exhaustive-deps
   // }, []);
-  const x = useMotionValue(4.8);
-
-  useEffect(() => {
-    x.set(played);
-    // console.log(x.get());
-
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [played]);
-
-  // useEffect(() => {
-
-  //   const unsubX = x.on("change", () => {
-  //     if (monitor_loader >= 1.1) {
-  //          console.log(monitor_loader);
-  //       //setloader(false);
-  //       document.body.classList.remove("hide_now");
-  //       // console.log(latest);
-  //     }
-  //   });
-  //   // const unsubY = y.on("change", doSomething);
-
-  //   return () => {
-  //     unsubX();
-  //     // unsubY();
-  //   };
-  // }, [x]);
-  const scroll_lever = useTransform(
-    x,
-    // Map x from these values:
-    [3.7, 4.8],
-
-    // Into these values:
-    [2, 1],
-  );
-  // const timer = setTimeout(() => {
-  //   // setloader(false);
-  //   document.body.classList.remove("hide_now");
-  // }, 4000);
-
-  useMotionValueEvent(scroll_lever, "change", (latest) => {
-    if (latest <= 0.2) {
-      // setmonitor_loader(latest);
-      setloader(false);
-      document.body.classList.remove("hide_now");
-      // console.log(latest);
-    }
-
-    // console.log(x)
-  });
-
-  const bad = useTransform(
-    scroll_lever,
-    // Map x from these values:
-    [2, 1],
-
-    // Into these values:
-    [1, 0],
-  );
-
-  useMotionValueEvent(bad, "change", (latest) => {
-    //console.log(latest);
-    setopacity_loader(latest);
-    if (latest <= 0.3) {
-      // setmonitor_loader(latest);
-      setTimeout(() => {
-        setloader(false);
-        document.body.classList.remove("hide_now");
-      }, 500);
-
-      console.log(latest);
-    }
-    // console.log(x)
-  });
 
   // this function below changes the headers as being used
   const { scrollY } = useScroll();
@@ -219,13 +132,7 @@ export default function Home() {
 
   return (
     <>
-      {loader ? (
-        <Preloader
-          opacity_loader={opacity_loader}
-          played={played}
-          setplayed={setplayed}
-        />
-      ) : null}
+      {loader ? <Preloader /> : null}
       <Menu
         setleft={setleft}
         left={left}
