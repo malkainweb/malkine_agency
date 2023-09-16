@@ -39,8 +39,8 @@ export default function Home() {
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
   const [opacity, setopacity] = useState(0);
-  const [played, setplayed] = useState(4.8);
-
+  const [scale, setscale] = useState("scale-[1.1]");
+  const [preloader_img_opacity, setpreloader_img_opacity] = useState();
   // useEffect(() => {
   //   const timer = setTimeout(() => {
   //     // setloader(false);
@@ -132,7 +132,14 @@ export default function Home() {
 
   return (
     <>
-      {loader ? <Preloader /> : null}
+      {/* {loader ? (
+        <Preloader
+          setscale={setscale}
+          scale={scale}
+          preloader_img_opacity={preloader_img_opacity}
+          setpreloader_img_opacity={setpreloader_img_opacity}
+        />
+      ) : null} */}
       <Menu
         setleft={setleft}
         left={left}
