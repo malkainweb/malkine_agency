@@ -74,7 +74,7 @@ const Preloader = (props: any) => {
           // initial={{ scale: 1.5 }}
           // animate={{ width: "10vw", height: "10vw", scale: 0.7 }}
           // transition={{ duration: 5 }}
-          className={`  w-[15vw] transition duration-[3s] h-auto`}
+          className={`  w-[15vw] transition duration-[2s] h-auto`}
           style={{ scale: scale, opacity: preloader_img_opacity }}
         >
           <Image
@@ -177,7 +177,7 @@ const Preloader = (props: any) => {
           // initial={{ scale: 1.5 }}
           // animate={{ width: "10vw", height: "10vw", scale: 0.7 }}
           // transition={{ duration: 5 }}
-          className={`  w-[50vw] transition duration-[3s] h-auto`}
+          className={`  w-[50vw] transition duration-[2s] h-auto`}
           style={{ scale: scale, opacity: preloader_img_opacity }}
         >
           <Image

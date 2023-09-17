@@ -1,3 +1,5 @@
+"use client";
+
 import "./globals.css";
 import "./style.css";
 import "./global_loader.css";
@@ -8,6 +10,7 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 import { useEffect } from "react";
 import Head from "next/head";
+import { usePathname } from "next/navigation";
 // import * as gtag from "../app/gtag";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -25,6 +28,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
+
   return (
     <html lang="en">
       {/* goggle trackginig */}
@@ -79,7 +84,7 @@ export default function RootLayout({
           `,
         }}
       />
-      <body className="hide_now ">{children}</body>
+      <body className={`${pathname == "/" && "hide_now"} `}>{children}</body>
     </html>
   );
 }
