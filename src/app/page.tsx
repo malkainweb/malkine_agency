@@ -39,16 +39,18 @@ export default function Home() {
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
   const [opacity, setopacity] = useState(0);
-  const [scale, setscale] = useState("scale-[1.1]");
-  const [preloader_img_opacity, setpreloader_img_opacity] = useState();
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     // setloader(false);
-  //     document.body.classList.remove("hide_now");
-  //   }, 4000);
-  //   return () => clearTimeout(timer);
-  //   // eslint-disable-next-line react-hooks/exhaustive-deps
-  // }, []);
+  const [scale, setscale] = useState(1.2);
+  const [preloader_img_opacity, setpreloader_img_opacity] = useState(0);
+  const [beginlines, setbeginlines] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setloader(false);
+      document.body.classList.remove("hide_now");
+    }, 5000);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   // this function below changes the headers as being used
   const { scrollY } = useScroll();
@@ -132,14 +134,16 @@ export default function Home() {
 
   return (
     <>
-      {/* {loader ? (
+      {loader ? (
         <Preloader
           setscale={setscale}
           scale={scale}
           preloader_img_opacity={preloader_img_opacity}
           setpreloader_img_opacity={setpreloader_img_opacity}
+          beginlines={beginlines}
+          setbeginlines={setbeginlines}
         />
-      ) : null} */}
+      ) : null}
       <Menu
         setleft={setleft}
         left={left}

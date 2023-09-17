@@ -22,10 +22,10 @@ body {
   overflow-x: clip;
 }
 
-/* .hide_now {
+.hide_now {
   overflow-y: clip;
   height: 101vh;
-} */
+}
 /* styling for the input eflements on the contact page  */
 
 /* Chrome, Safari, Edge, Opera */
@@ -289,6 +289,23 @@ input[type="number"] {
 
 /* this is for the new services styling sha . now let's hop in  */
 
+.triangle {
+  /* width: 0; */
+  height: 0;
+  border-left: 80vw solid transparent;
+  border-right: 80vw solid transparent;
+  rotate: 135deg;
+  border-bottom: 200vh solid black;
+}
+.triangle2 {
+  width: 0;
+  height: 0;
+  border-left: 80vw solid transparent;
+  border-right: 80vw solid transparent;
+  rotate: -45deg;
+  border-bottom: 200vh solid black;
+}
+
 @media screen and (max-width: 650px) {
   .p_r {
     padding-right: 3.75vw;
@@ -404,5 +421,24 @@ input[type="number"] {
   /*tis is for the homepage team section no scrollbar  */
   .no-scrollbar::-webkit-scrollbar {
     display: none;
+  }
+
+  .triangle {
+    width: 0;
+    height: 0;
+    border-left: 110vw solid transparent;
+    border-right: 110vw solid transparent;
+    rotate: 135deg;
+    border-bottom: 220vh solid black;
+  }
+  .triangle2 {
+    width: 0;
+    height: 0;
+    border-left: 110vw solid transparent;
+
+    border-right: 110vw solid transparent;
+
+    rotate: -45deg;
+    border-bottom: 220vh solid black;
   }
 }
