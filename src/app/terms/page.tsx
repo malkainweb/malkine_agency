@@ -16,6 +16,7 @@ export default function Terms() {
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    document.body.classList.remove("hide_now");
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

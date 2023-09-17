@@ -1,5 +1,3 @@
-"use client";
-
 import "./globals.css";
 import "./style.css";
 import "./global_loader.css";
@@ -28,8 +26,6 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  const pathname = usePathname();
-
   return (
     <html lang="en">
       {/* goggle trackginig */}
@@ -84,7 +80,7 @@ export default function RootLayout({
           `,
         }}
       />
-      <body className={`${pathname == "/" && "hide_now"} `}>{children}</body>
+      <body className="hide_now">{children}</body>
     </html>
   );
 }
