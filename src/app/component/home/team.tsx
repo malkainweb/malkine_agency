@@ -55,7 +55,7 @@ const Home_Team = () => {
                 Team
               </p>
             </div>
-            <p className="text-[1.6vw] sm:text-[6.7vw]">Total Employess</p>
+            <p className="text-[1.6vw] sm:text-[6.7vw]">Total Employees</p>
           </div>
 
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between">
@@ -103,7 +103,7 @@ const Home_Team = () => {
                 Team
               </p>
             </div>
-            <p className="text-[1.6vw] sm:text-[6.7vw]">Total Employess</p>
+            <p className="text-[1.6vw] sm:text-[6.7vw]">Total Employees</p>
           </div>
 
           <div className="flex w-full h-[10.3vw] sm:w-[95vw] sm:h-[38vw] sm:rounded-[5.57vw] sm:px-[4vw] sm:py-[3vw] rounded-[2vw] bg-[#F1F1F1] sm:bg-white  flex-col p-[1.25vw] justify-between">
