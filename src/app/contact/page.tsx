@@ -125,10 +125,10 @@ export default function Contact() {
           {step == 3 || step == 2 ? (
             ""
           ) : (
-            <p className="pt-[1.33vw] sm:text-[5vw] ">
+            <h1 className="pt-[1.33vw] sm:text-[5vw] ">
               {" "}
               Your Project, Our Passion. <br /> Connect with us to get started.
-            </p>
+            </h1>
           )}
         </div>
         {step == 1 ? (

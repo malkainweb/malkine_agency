@@ -3,6 +3,7 @@
 import React from "react";
 import Header_transparant from "../navigation/header_transparant";
 import { useState } from "react";
+import Head from "next/head";
 import {
   useTransform,
   motion,
@@ -198,22 +199,24 @@ const Hero_services = (props: any) => {
 
           <div className="w-full flex flex-col gap-[1.7vw] sm:gap-[2.5vw] pt-[12vw] sm:pt-[25vw]  blend px-[5.13vw]">
             <p className="nova  text-[1.6vw] font-[900]  text-[#dcdcdc] sm:text-[4vw] ">
+              <Head>
+                <meta name="robots" content="noindex" />
+              </Head>
               Services
             </p>
             <h1
-              className="novabold sm:hidden text-[2.7vw] text-[#232323] leading-[3.2vw] capitalize"
+              className="novabold  text-[2.7vw] text-[#232323] leading-[3.2vw]  sm:text-[5vw]  sm:block sm:leading-[6vw] capitalize"
               // style={{ lineHeight: "3.2vw" }}
             >
-              We are a full-service design <br />
-              and development agency <br /> collaborating with brands to <br />{" "}
-              deliver innovative online experiences.
+              We are a full-service <br className="hidden sm:block" /> design{" "}
+              <br className="sm:hidden block" />
+              and development <br className="hidden sm:block" /> agency{" "}
+              <br className="sm:hidden block" /> collaborating with{" "}
+              <br className="hidden sm:block" /> brands to{" "}
+              <br className="sm:hidden block" /> deliver innovative{" "}
+              <br className="hidden sm:block" /> online experiences.
             </h1>
 
-            <h1 className="sm:text-[5vw] hidden sm:block sm:leading-[6vw] capitalize">
-              We are a full-service <br /> design and development <br /> agency
-              collaborating with <br />
-              brands to deliver innovative <br /> online experiences.
-            </h1>
             <Link
               href={"contact"}
               className="nova w-fit  text-[1.07vw] font[900]text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw]  sm:text-white sm:mt-[2vw] "
