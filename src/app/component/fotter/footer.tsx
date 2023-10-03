@@ -14,7 +14,7 @@ import Logo from "../logo";
 const Footer = () => {
   return (
     <>
-      <div className="h-auto rounded-t-[4.8vw] w-full  bg-[#080808] ">
+      <nav className="h-auto rounded-t-[4.8vw] w-full  bg-[#080808] ">
         <div className="w-full h-auto   sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] sm:gap-[12vw]">
           <div className="sm:pt-[6vw]">
             <Logo />
@@ -174,7 +174,7 @@ const Footer = () => {
             </Link>
           </div>
         </div>{" "}
-      </div>
+      </nav>
     </>
   );
 };

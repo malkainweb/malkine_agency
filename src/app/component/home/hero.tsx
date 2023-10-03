@@ -31,8 +31,8 @@ const Home_hero = () => {
     scrollY,
     // Map x from these values:
     [
-      width >= 651 ? calcwidth / 9 : mob_calc_width / 7,
-      width >= 651 ? calcwidth / 5 : mob_calc_width / 3.5,
+      width >= 651 ? calcwidth / 9 : mob_calc_width / 15,
+      width >= 651 ? calcwidth / 5 : mob_calc_width / 10,
     ],
     // Into these values:
     [1, 0],
@@ -80,19 +80,19 @@ const Home_hero = () => {
       //  the option below is for mobile screens
     } else if (width <= 650) {
       // check for the first animation of te text
-      if (latest >= mob_calc_width / 4) {
+      if (latest >= mob_calc_width / 10) {
         setanimate_text("translateX(-50%)");
       }
-      if (latest <= mob_calc_width / 4) {
+      if (latest <= mob_calc_width / 10) {
         setanimate_text("translateX(50vw)");
       }
 
-      if (latest >= mob_calc_width / 15) {
+      if (latest >= mob_calc_width / 20) {
         setcolor("black");
         setexample("sm:fixed");
       }
 
-      if (latest <= mob_calc_width / 15) {
+      if (latest <= mob_calc_width / 20) {
         setcolor("#1A1919");
       }
 
@@ -111,28 +111,28 @@ const Home_hero = () => {
       //    setanimate_text("translateX(-150vw)");
       //  }
 
-      if (latest >= mob_calc_width / 2.5) {
+      if (latest >= mob_calc_width / 5) {
         setgeneral("-100vw");
         setanimate_text("translateX(-150vw)");
       }
-      if (latest <= mob_calc_width / 2.5) {
+      if (latest <= mob_calc_width / 5) {
         setgeneral("0vw");
         // setanimate_text("translateX(-150vw)");
       }
 
-      if (latest >= mob_calc_width / 1.6) {
+      if (latest >= mob_calc_width / 3) {
         setgeneral("-200vw");
       }
 
-      if (latest >= mob_calc_width / 1.2) {
+      if (latest >= mob_calc_width / 2) {
         setgeneral("-300vw");
       }
 
-      if (latest <= mob_calc_width / 1.035) {
+      if (latest <= mob_calc_width / 2.035) {
         setexample("sm:fixed");
       }
 
-      if (latest >= mob_calc_width / 1.035) {
+      if (latest >= mob_calc_width / 2.035) {
         setexample("sm:sticky");
       }
     }
@@ -152,7 +152,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className={`w-full sm:h-[1100vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
+        className={`w-full sm:h-[700vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
         // animate={{ backgroundColor: color }}
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}

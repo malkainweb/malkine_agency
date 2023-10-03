@@ -44,9 +44,22 @@ export default function Home() {
   const [beginlines, setbeginlines] = useState(true);
 
   useEffect(() => {
+    document.body.classList.add("hide_now");
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      document.body.classList.remove("hide_now");
+    }, 4650);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     const timer = setTimeout(() => {
       setloader(false);
-      document.body.classList.remove("hide_now");
     }, 5000);
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps

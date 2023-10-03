@@ -14,8 +14,8 @@ import { usePathname } from "next/navigation";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "malkain",
-  description: "malkain designs and deployment",
+  title: "Malkain",
+  description: "Malkain Designs and Deployment",
   other: {
     "msvalidate.01": "7F19A1D05342FB69BD2941A0E771D847",
   },
@@ -80,7 +80,7 @@ export default function RootLayout({
           `,
         }}
       />
-      <body className="hide_now">{children}</body>
+      <body className="">{children}</body>
     </html>
   );
 }

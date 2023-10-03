@@ -5,8 +5,8 @@ import Script from "next/script";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Contact malkain",
-  description: "malkain designs contact page",
+  title: "Contact Malkain",
+  description: "Malkain Designs Contact Page",
 };
 
 export default function RootLayout({
