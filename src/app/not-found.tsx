@@ -58,9 +58,9 @@ export default function NotFound() {
           nav_ham={nav_ham}
           nav_menu={nav_menu}
         />
-        <div className="w-full h-[100vh]">
-          <div className="w-full flex gap-[1vw] justify-center  items-center flex-col h-full">
-            <div className="w-full flex gap-[1vw] justify-center items-center  ">
+        <div className="w-full h-[50vw] sm:h-[150vw]">
+          <div className="w-full flex  justify-center  items-center flex-col h-full">
+            <div className="w-full flex gap-[1vw] justify-center items-center ">
               <p
                 className="  text-[20vw] sm:text-[20vw] mt-[1vw]   justify-center items-center  h-fit  w-fit    font-[helvetica] font-[700] "
                 style={{
@@ -96,7 +96,9 @@ export default function NotFound() {
               Return to homepage
             </Link>
           </div>
-          {/* <Footer /> */}
+          <div className="w-full h-auto bg-[#1A1A1A] ">
+            <Footer />
+          </div>
         </div>
       </div>
     </>

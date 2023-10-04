@@ -30,7 +30,7 @@ const Services = () => {
 
   const end_width = new_width + width * 3.2;
 
-  const mob_new_width = width * 12.5;
+  const mob_new_width = width * 8;
 
   const mob_end_width = mob_new_width + width * 2;
 
@@ -146,6 +146,7 @@ const Services = () => {
 
       if (latest >= 0 && latest <= 1) {
         setcheck_num(1);
+        console.log("this is really good ");
       }
       if (latest >= 1 && latest <= 2) {
         setcheck_num(2);
