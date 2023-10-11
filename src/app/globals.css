@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=League+Spartan:wght@500;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -69,6 +69,11 @@ input[type="number"] {
   src: url("../../public/fonts/UnivaNova-Medium.ttf");
 }
 
+@font-face {
+  font-family: "proxima_nova";
+  src: url("../../public/fonts/Fontspring-DEMO-proximanovacond-black.otf");
+}
+
 .border2 {
   border: 1px solid red;
 }
@@ -78,6 +83,9 @@ input[type="number"] {
   padding-left: 3vw;
 }
 
+.proxima {
+  font-family: proxima_nova, sans-serif;
+}
 .nova {
   font-family: nova, sans-serif;
 }
@@ -88,6 +96,10 @@ input[type="number"] {
 
 .inter {
   font-family: "Inter", sans-serif;
+}
+
+.league {
+  font-family: "League Spartan", sans-serif;
 }
 .hand_bg {
   background-image: url(../../public/home/hand_bg.webp);

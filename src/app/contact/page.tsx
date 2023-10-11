@@ -81,7 +81,7 @@ export default function Contact() {
         })
         .then((response) => {
           if (response.data.emailSent == true) {
-            console.log(response.data.emailSent);
+            // console.log(response.data.emailSent);
             setsendbtn("Submit");
             setstep(3);
           } else {
