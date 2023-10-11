@@ -108,7 +108,7 @@ const Slide_showcase = () => {
                 <Link
                   href={e.link}
                   target="_blank"
-                  className="w-[60vw] sm:w-[80vw] h-auto flex flex-col gap-[0.2vw] text-white hover:scale-[1.01] hover:text-[#D01717] transition duration-[0.3s]"
+                  className="w-[60vw] sm:w-[90vw] h-auto flex flex-col gap-[0.2vw] text-white hover:scale-[1.01] hover:text-[#D01717] transition duration-[0.3s]"
                   key={index}
                 >
                   <div className="w-full h-[30vw] sm:h-[45vw] overflow-hidden flex justify-center items-center ">
