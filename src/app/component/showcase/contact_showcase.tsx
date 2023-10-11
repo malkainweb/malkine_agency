@@ -20,7 +20,6 @@ const Contact_showcase = () => {
       !prject_info ||
       !email ||
       !business ||
-      !phone ||
       !name ||
       !budget ||
       !hear_us ||
@@ -79,6 +78,7 @@ const Contact_showcase = () => {
         })
         .catch((err) => {
           console.log(err);
+          setsending(false);
           seterr(
             "Something went wrong. Please try again or reload the page and try again",
           );
@@ -92,33 +92,37 @@ const Contact_showcase = () => {
         <h1 className="league font-[700] text-[2.3vw] mb-[1vw]">Contact Us</h1>
         <div className="w-full h-auto flex flex-col gap-[1.6vw]">
           <input
-            // onChange={(e) => {
-            //   setname(e.target.value);
-            // }}
+            onChange={(e) => {
+              setname(e.target.value);
+            }}
+            value={name}
             placeholder="Name"
             type="text"
             className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
           />
           <input
-            // onChange={(e) => {
-            //   setname(e.target.value);
-            // }}
+            onChange={(e) => {
+              setemail(e.target.value);
+            }}
+            value={email}
             placeholder="Email"
             type="text"
             className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
           />
           <input
-            // onChange={(e) => {
-            //   setname(e.target.value);
-            // }}
+            onChange={(e) => {
+              setbusiness(e.target.value);
+            }}
+            value={business}
             placeholder="Company Name"
             type="text"
             className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
           />
           <input
-            // onChange={(e) => {
-            //   setname(e.target.value);
-            // }}
+            onChange={(e) => {
+              setprject_info(e.target.value);
+            }}
+            value={prject_info}
             placeholder="Tell Us About the Project"
             type="text"
             className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
@@ -128,6 +132,10 @@ const Contact_showcase = () => {
             <select
               name=""
               id=""
+              onChange={(e) => {
+                setinterest(e.target.value);
+              }}
+              value={interest}
               className=" w-full bg-[#101519] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white py-[0.4vw] px-[0.7vw] sm:py-[2vw] sm:h-full ease-in-out border-white focus:border-b-white text-opacity-[59%] text-[1.1vw] league"
             >
               <option style={{}} value="" disabled selected hidden>
@@ -221,9 +229,10 @@ const Contact_showcase = () => {
               name=""
               id=""
               className=" w-full bg-[#101519]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full text-[1.1vw] league"
-              //   onChange={(e) => {
-              //     sethear_us(e.target.value);
-              //   }}
+              onChange={(e) => {
+                sethear_us(e.target.value);
+              }}
+              value={hear_us}
             >
               <option style={{}} value="" disabled selected hidden>
                 How did you hear about us ?{" "}
@@ -255,15 +264,29 @@ const Contact_showcase = () => {
           {/* call to action button  */}
 
           <div className="w-full h-auto  flex justify-end gap-[1vw] items-center">
-            <p className="league text-[0.8vw]" style={{ color: "red" }}>
+            <p
+              className="league text-[0.8vw] w-full"
+              style={{
+                color:
+                  err ==
+                  "Thank you for reaching out. Your email has been received and will be reviewed promptly"
+                    ? "green"
+                    : "red",
+              }}
+            >
               {err}
             </p>
             <button
-              className="bg-[#D01717] text-[1.2vw]  hover:bg-[#920808] transition duration-[0.5s] px-[2vw] rounded-[2vw] py-[0.6vw] league"
+              className="bg-[#D01717] text-[1.2vw] h-[3vw] w-[50%] hover:bg-[#920808] transition duration-[0.5s] px-[2vw] rounded-[2vw] py-[0.6vw] league flex justify-center items-center"
               type="submit"
               onClick={handle_submit}
             >
-              Submit
+              {" "}
+              {sending ? (
+                <div className="rounded-[100%] h-[2vw] w-[2vw]  border-solid  border-t-[0.4vw] border-[white] animate-spin"></div>
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
         </div>

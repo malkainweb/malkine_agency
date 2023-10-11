@@ -84,13 +84,20 @@ const Slide_showcase = () => {
   });
   return (
     <>
-      <div className="w-full h-[350vw] sm:h-auto relative bg-black sm:pb-[10vw] sm:pt-[20vw]">
+      <div className="w-full h-[350vw] sm:h-auto relative bg-black sm:pb-[18vw] sm:pt-[20vw]">
         <div
           className={`w-[70vw] sm:w-full  bg-black h-[100vh] sm:h-auto sm:relative  fixed top-0 right-0 z-[9]  transition duration-[1s] pt-[3vw]`}
         >
           <h1 className="hidden sm:block text-[6vw] league text-white text-center pb-[5vw] font-[600]">
             Our Work
           </h1>
+
+          <Link
+            href={"/contact"}
+            className="league hidden sm:block fixed bottom-[4vw] z-[11] left-[50%] translate-x-[-50%] py-[2.5vw] px-[6vw] text-[4vw] hover:bg-[#920808] bg-[#D01717] text-white  sm:rounded-[9.75vw]"
+          >
+            Contact Us
+          </Link>
           {/* the container tht hadnles it  */}
           <div
             className={`w-[360vw] sm:w-full h-full relative top-0 justify-center items-center gap-[4vw] sm:gap-[6vw] right-0  flex pl-[4vw] sm:pl-0 sm:flex-col`}
