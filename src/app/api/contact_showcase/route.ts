@@ -11,7 +11,6 @@ export async function POST(req: Request, res: any) {
       "malkaindesigns@gmail.com",
       "emmanuel@malkain.com",
       "support@malkain.com",
-      "davisisibor@gmail.com",
     ],
     subject: "New Client submission from Showcase Page " + data.name,
     text: data.name,
