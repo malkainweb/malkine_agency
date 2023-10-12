@@ -101,6 +101,18 @@ const Contact_showcase = () => {
         <h1 className="league font-[700] text-[2.3vw] mb-[2vw] text-[#E8E7D7]">
           Contact Us
         </h1>
+        <p
+          className="league text-[0.8vw] w-full"
+          style={{
+            color:
+              err ==
+              "Thank you for reaching out. Your email has been received and will be reviewed promptly"
+                ? "green"
+                : "red",
+          }}
+        >
+          {err}
+        </p>
         <div className="w-full h-auto flex flex-col gap-[2.5vh]">
           <input
             onChange={(e) => {
@@ -272,20 +284,8 @@ const Contact_showcase = () => {
           {/* call to action button  */}
 
           <div className="w-full h-auto  flex justify-end gap-[1vw] items-center">
-            <p
-              className="league text-[0.8vw] w-full"
-              style={{
-                color:
-                  err ==
-                  "Thank you for reaching out. Your email has been received and will be reviewed promptly"
-                    ? "green"
-                    : "red",
-              }}
-            >
-              {err}
-            </p>
             <button
-              className="bg-[#D01717] text-[1.2vw] h-[3vw] w-[50%] hover:bg-[#920808] transition duration-[0.5s] px-[2vw] rounded-[2vw] py-[0.6vw] league flex justify-center items-center"
+              className="bg-[#D01717] text-[1.3vw] h-[3vw] w-full hover:bg-[#920808] transition duration-[0.5s] league mt-[0.5vw] flex justify-center items-center"
               type="submit"
               onClick={handle_submit}
             >
