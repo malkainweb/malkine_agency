@@ -68,7 +68,7 @@ const Slide_showcase = () => {
 
   const [check, setcheck] = useState(0);
   const [move, setmove] = useState("translate-x-[200vw]");
-  const videoRefs = items.map(() => useRef());
+  // const videoRefs = items.map(() => useRef());
 
   const width = globalThis.innerWidth;
 
@@ -127,7 +127,7 @@ const Slide_showcase = () => {
                     {e.video ? (
                       <div className="w-full  h-full">
                         <video
-                          ref={videoRefs[index]}
+                          // ref={videoRefs[index]}
                           src={e.video_link}
                           loop={true}
                           className="scale-[1.2]"
