@@ -81,7 +81,7 @@ const Slide_showcase = () => {
     [0, width * 4],
 
     // Into these values:
-    [0, 380],
+    [0, 360],
   );
 
   // use motion values to console .log
