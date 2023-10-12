@@ -68,7 +68,7 @@ const Slide_showcase = () => {
 
   const [check, setcheck] = useState(0);
   const [move, setmove] = useState("translate-x-[200vw]");
-  const videoRefs: any = items.map(() => useRef());
+  // const videoRefs: any = items.map(() => useRef());
 
   // useEffect(() => {
   //   if (currentVideoIndex !== null && videoRefs[currentVideoIndex]?.current) {
@@ -138,6 +138,7 @@ const Slide_showcase = () => {
                           loop={true}
                           className="scale-[1.2]"
                           muted={true}
+                          playsInline={true}
                           autoPlay={true}
                           controls={false}
                           onPlay={() => setCurrentVideoIndex(index)}
