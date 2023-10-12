@@ -70,11 +70,11 @@ const Slide_showcase = () => {
   const [move, setmove] = useState("translate-x-[200vw]");
   const videoRefs: any = items.map(() => useRef());
 
-  useEffect(() => {
-    if (currentVideoIndex !== null && videoRefs[currentVideoIndex]?.current) {
-      videoRefs[currentVideoIndex].current.play();
-    }
-  }, [currentVideoIndex]);
+  // useEffect(() => {
+  //   if (currentVideoIndex !== null && videoRefs[currentVideoIndex]?.current) {
+  //     videoRefs[currentVideoIndex].current.play();
+  //   }
+  // }, [currentVideoIndex]);
 
   const width = globalThis.innerWidth;
 
@@ -133,12 +133,12 @@ const Slide_showcase = () => {
                     {e.video ? (
                       <div className="w-full  h-full">
                         <video
-                          ref={videoRefs[index]}
+                          // ref={videoRefs[index]}
                           src={e.video_link}
                           loop={true}
                           className="scale-[1.2]"
-                          muted
-                          // autoPlay
+                          muted={true}
+                          autoPlay={true}
                           controls={false}
                           onPlay={() => setCurrentVideoIndex(index)}
                         ></video>
