@@ -2,6 +2,13 @@
 
 import React, { useState } from "react";
 import axios from "axios";
+import { League_Spartan } from "next/font/google";
+const league = League_Spartan({
+  weight: ["400", "700"],
+  style: ["normal"],
+  subsets: ["latin"],
+  display: "swap",
+});
 
 const Contact_showcase = () => {
   const [name, setname] = useState("");
@@ -88,9 +95,13 @@ const Contact_showcase = () => {
   };
   return (
     <>
-      <div className="fixed left-0 top-0 w-[30vw] min-h-[100vh]  bg-[#101519] z-[10] px-[3vw] pt-[8vw]  text-white sm:hidden">
-        <h1 className="league font-[700] text-[2.3vw] mb-[1vw]">Contact Us</h1>
-        <div className="w-full h-auto flex flex-col gap-[1.6vw]">
+      <div
+        className={`fixed left-0 top-0 w-[30vw] min-h-[100vh]  bg-[#101519] z-[10] px-[3vw] pt-[6vw]  text-[#E8E7D7] sm:hidden ${league.className} font-[700] flex justify-center flex-col`}
+      >
+        <h1 className="league font-[700] text-[2.3vw] mb-[2vw] text-[#E8E7D7]">
+          Contact Us
+        </h1>
+        <div className="w-full h-auto flex flex-col gap-[2.5vh]">
           <input
             onChange={(e) => {
               setname(e.target.value);
@@ -98,7 +109,7 @@ const Contact_showcase = () => {
             value={name}
             placeholder="Name"
             type="text"
-            className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
+            className="w-full capitalize bg-transparent outline-none border-b-2 transition duration-[0.5s] text-opacity-[100%]   py-[0.4vw]   ease-in-out border-[#D01717] text-[1.6vw] placeholder-[#E8E7D7] focus:border-b-white text-[#E8E7D7] "
           />
           <input
             onChange={(e) => {
@@ -107,7 +118,7 @@ const Contact_showcase = () => {
             value={email}
             placeholder="Email"
             type="text"
-            className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
+            className="w-full capitalize bg-transparent outline-none border-b-2 transition duration-[0.5s]   py-[0.4vw]   ease-in-out border-[#D01717] text-[1.6vw] placeholder-[#E8E7D7] focus:border-b-white text-[#E8E7D7] league"
           />
           <input
             onChange={(e) => {
@@ -116,7 +127,7 @@ const Contact_showcase = () => {
             value={business}
             placeholder="Company Name"
             type="text"
-            className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
+            className="w-full capitalize bg-transparent outline-none border-b-2 transition duration-[0.5s]   py-[0.4vw]   ease-in-out border-[#D01717] text-[1.6vw] placeholder-[#E8E7D7] focus:border-b-white text-[#E8E7D7] league"
           />
           <input
             onChange={(e) => {
@@ -125,7 +136,7 @@ const Contact_showcase = () => {
             value={prject_info}
             placeholder="Tell Us About the Project"
             type="text"
-            className="w-full capitalize bg-transparent outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s]  text-white text-opacity-[90%] py-[0.4vw] px-[0.7vw]  ease-in-out border-white text-[1.1vw] focus:border-b-white league"
+            className="w-full capitalize bg-transparent outline-none border-b-2 transition duration-[0.5s]   py-[0.4vw]   ease-in-out border-[#D01717] text-[1.6vw] placeholder-[#E8E7D7] focus:border-b-white text-[#E8E7D7] league"
           />
 
           <div className="flex flex-col">
@@ -136,7 +147,7 @@ const Contact_showcase = () => {
                 setinterest(e.target.value);
               }}
               value={interest}
-              className=" w-full bg-[#101519] outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white py-[0.4vw] px-[0.7vw] sm:py-[2vw] sm:h-full ease-in-out border-white focus:border-b-white text-opacity-[59%] text-[1.1vw] league"
+              className=" w-full bg-[#101519] outline-none border-b-2 transition duration-[0.5s]  py-[0.4vw]  sm:py-[2vw] sm:h-full ease-in-out border-[#D01717] focus:border-b-white text-[#E8E7D7]  text-[1.6vw] placeholder-[#E8E7D7] league"
             >
               <option style={{}} value="" disabled selected hidden>
                 Service
@@ -201,7 +212,7 @@ const Contact_showcase = () => {
               name=""
               id=""
               placeholder={"What's your budget ? "}
-              className="   w-full bg-[#101519]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white pr-[0.7vw] pl-[2vw] sm:pl-[4.3vw] py-[0.4vw] px-[0.7vw] ease-in-out border-white focus:border-b-white text-opacity-[59%] text-[1.1vw] league sm:py-[2vw] sm:h-full"
+              className="   w-full bg-[#101519]  outline-none border-b-2 transition duration-[0.5s]  pr-[0.7vw] py-[0.4vw]  ease-in-out border-[#D01717] focus:border-b-white text-[#E8E7D7]  text-[1.6vw] placeholder-[#E8E7D7] league sm:py-[2vw] sm:h-full"
               onChange={(e) => {
                 const inputValue = e.target.value;
 
@@ -219,16 +230,13 @@ const Contact_showcase = () => {
               }}
               value={budget}
             ></input>
-            <div className="w-fit h-full  absolute top-0 left-[0.5vw] flex justify-center items-center text-[1.1vw]  sm:text-[4vw] sm:h-full text-opacity-[59%] text-white">
-              $
-            </div>
           </div>
 
           <div className="flex flex-col">
             <select
               name=""
               id=""
-              className=" w-full bg-[#101519]  outline-none border-b-2 border-opacity-[20%] transition duration-[0.5s] text-white px-[0.7vw] py-[0.13vw] ease-in-out border-white focus:border-b-white text-opacity-[50%] sm:py-[2vw] sm:h-full text-[1.1vw] league"
+              className=" w-full bg-[#101519]  outline-none border-b-2 transition duration-[0.5s]   py-[0.13vw] ease-in-out border-[#D01717] focus:border-b-white text-[#E8E7D7]  sm:py-[2vw] sm:h-full text-[1.6vw] placeholder-[#E8E7D7] league"
               onChange={(e) => {
                 sethear_us(e.target.value);
               }}

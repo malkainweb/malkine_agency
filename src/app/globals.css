@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=League+Spartan:wght@500;700&display=swap");
 * {
   margin: 0;
@@ -99,7 +98,7 @@ input[type="number"] {
 }
 
 .league {
-  font-family: "League Spartan", sans-serif;
+  /* font-family: "League Spartan", sans-serif; */
 }
 .hand_bg {
   background-image: url(../../public/home/hand_bg.webp);
