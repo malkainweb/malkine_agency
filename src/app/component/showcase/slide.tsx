@@ -74,7 +74,6 @@ const Slide_showcase = () => {
     if (currentVideoIndex !== null && videoRefs[currentVideoIndex]?.current) {
       videoRefs[currentVideoIndex].current.play();
     }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentVideoIndex]);
 
   const width = globalThis.innerWidth;
