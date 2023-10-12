@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { useScroll, useMotionValueEvent, useTransform } from "framer-motion";
 import Image from "next/image";
 import showcase1 from "../../../../public/home/gallery/13.webp";
@@ -68,7 +68,14 @@ const Slide_showcase = () => {
 
   const [check, setcheck] = useState(0);
   const [move, setmove] = useState("translate-x-[200vw]");
-  // const videoRefs = items.map(() => useRef());
+  const videoRefs: any = items.map(() => useRef());
+
+  useEffect(() => {
+    if (currentVideoIndex !== null && videoRefs[currentVideoIndex]?.current) {
+      videoRefs[currentVideoIndex].current.play();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentVideoIndex]);
 
   const width = globalThis.innerWidth;
 
@@ -127,12 +134,12 @@ const Slide_showcase = () => {
                     {e.video ? (
                       <div className="w-full  h-full">
                         <video
-                          // ref={videoRefs[index]}
+                          ref={videoRefs[index]}
                           src={e.video_link}
                           loop={true}
                           className="scale-[1.2]"
                           muted
-                          autoPlay
+                          // autoPlay
                           controls={false}
                           onPlay={() => setCurrentVideoIndex(index)}
                         ></video>
