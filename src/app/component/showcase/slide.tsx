@@ -141,6 +141,7 @@ const Slide_showcase = () => {
                           muted={true}
                           playsInline={true}
                           autoPlay={true}
+                          preload="auto"
                           controls={false}
                           onPlay={() => setCurrentVideoIndex(index)}
                         >

@@ -102,7 +102,7 @@ const Contact_showcase = () => {
           Contact Us
         </h1>
         <p
-          className="league text-[0.8vw] w-full"
+          className="league text-[0.8vw]  w-full"
           style={{
             color:
               err ==
@@ -220,6 +220,9 @@ const Contact_showcase = () => {
           </div>
 
           <div className="flex flex-col relative">
+            <span className="text-[1.6vw] absolute right-0 right-0 h-full flex justify-center items-center w-fit">
+              $
+            </span>
             <input
               name=""
               id=""
