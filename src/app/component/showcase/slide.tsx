@@ -26,7 +26,8 @@ const Slide_showcase = () => {
       link: "https://www.qdepartment.com/",
       img: showcase1,
       video: true,
-      video_link: "/showcase/q.mp4",
+      video_link:
+        "https://res.cloudinary.com/dwovcsb1d/video/upload/v1697180459/q_rzr7sz.mp4",
     },
     {
       heading: "good juju",
@@ -41,7 +42,8 @@ const Slide_showcase = () => {
       link: "https://spoiledchild.com/",
       img: showcase3,
       video: true,
-      video_link: "/showcase/s.mp4",
+      video_link:
+        "https://res.cloudinary.com/dwovcsb1d/video/upload/v1697180647/s_sw2iga.mp4",
     },
     {
       heading: "harc ",
@@ -134,7 +136,6 @@ const Slide_showcase = () => {
                       <div className="w-full  h-full">
                         <video
                           // ref={videoRefs[index]}
-                          src={e.video_link}
                           loop={true}
                           className="scale-[1.2]"
                           muted={true}
@@ -142,7 +143,11 @@ const Slide_showcase = () => {
                           autoPlay={true}
                           controls={false}
                           onPlay={() => setCurrentVideoIndex(index)}
-                        ></video>
+                        >
+                          {" "}
+                          <source src={e.video_link} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
                       </div>
                     ) : (
                       <Image
