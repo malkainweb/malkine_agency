@@ -116,6 +116,7 @@ const Contact_showcase = () => {
         <div className="w-full h-auto flex flex-col gap-[2.5vh]">
           <input
             onChange={(e) => {
+              seterr("");
               setname(e.target.value);
             }}
             value={name}
@@ -125,6 +126,7 @@ const Contact_showcase = () => {
           />
           <input
             onChange={(e) => {
+              seterr("");
               setemail(e.target.value);
             }}
             value={email}
@@ -134,6 +136,7 @@ const Contact_showcase = () => {
           />
           <input
             onChange={(e) => {
+              seterr("");
               setbusiness(e.target.value);
             }}
             value={business}
@@ -143,6 +146,7 @@ const Contact_showcase = () => {
           />
           <input
             onChange={(e) => {
+              seterr("");
               setprject_info(e.target.value);
             }}
             value={prject_info}
@@ -156,6 +160,7 @@ const Contact_showcase = () => {
               name=""
               id=""
               onChange={(e) => {
+                seterr("");
                 setinterest(e.target.value);
               }}
               value={interest}
@@ -229,6 +234,7 @@ const Contact_showcase = () => {
               placeholder={"What's your budget ? "}
               className="   w-full bg-[#101519]  outline-none border-b-2 transition duration-[0.5s]  pr-[0.7vw] py-[0.4vw]  ease-in-out border-[#D01717] focus:border-b-white text-[#E8E7D7]  text-[1.6vw] placeholder-[#E8E7D7] league sm:py-[2vw] sm:h-full"
               onChange={(e) => {
+                seterr("");
                 const inputValue = e.target.value;
 
                 // Remove existing commas and non-numeric characters
@@ -253,6 +259,7 @@ const Contact_showcase = () => {
               id=""
               className=" w-full bg-[#101519]  outline-none border-b-2 transition duration-[0.5s]   py-[0.13vw] ease-in-out border-[#D01717] focus:border-b-white text-[#E8E7D7]  sm:py-[2vw] sm:h-full text-[1.6vw] placeholder-[#E8E7D7] league"
               onChange={(e) => {
+                seterr("");
                 sethear_us(e.target.value);
               }}
               value={hear_us}

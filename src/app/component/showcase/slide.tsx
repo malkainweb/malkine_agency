@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useScroll, useMotionValueEvent, useTransform } from "framer-motion";
 import Image from "next/image";
-import showcase1 from "../../../../public/home/gallery/13.webp";
+import showcase1 from "../../../../public/showcase/q.gif";
 import showcase2 from "../../../../public/showcase/Good_Juju.webp";
 import showcase3 from "../../../../public/home/gallery/13.webp";
 import showcase4 from "../../../../public/showcase/Harc.webp";
@@ -17,15 +17,19 @@ const league = League_Spartan({
   subsets: ["latin"],
   display: "swap",
 });
+
 const Slide_showcase = () => {
+  const width = globalThis.innerWidth;
+
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+  // const width = globalThis.innerWidth;
   const [items, setitems] = useState([
     {
       heading: "Q department",
       sub_heading: "website design & development",
       link: "https://www.qdepartment.com/",
       img: showcase1,
-      video: true,
+      video: width > 651 ? true : false,
       video_link:
         "https://res.cloudinary.com/dwovcsb1d/video/upload/v1697180459/q_rzr7sz.mp4",
     },
@@ -77,8 +81,6 @@ const Slide_showcase = () => {
   //     videoRefs[currentVideoIndex].current.play();
   //   }
   // }, [currentVideoIndex]);
-
-  const width = globalThis.innerWidth;
 
   // console.log(width);
   const { scrollY } = useScroll();
