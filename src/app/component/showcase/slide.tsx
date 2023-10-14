@@ -22,6 +22,7 @@ const Slide_showcase = () => {
   const width = globalThis.innerWidth;
 
   const [currentVideoIndex, setCurrentVideoIndex] = useState(0);
+
   // const width = globalThis.innerWidth;
   const [items, setitems] = useState([
     {
