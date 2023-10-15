@@ -3,7 +3,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { useScroll, useMotionValueEvent, useTransform } from "framer-motion";
 import Image from "next/image";
-import showcase1 from "../../../../public/showcase/q.gif";
+import showcase1 from "../../../../public/showcase/Good_Juju.webp";
 import showcase2 from "../../../../public/showcase/Good_Juju.webp";
 import showcase3 from "../../../../public/home/gallery/13.webp";
 import showcase4 from "../../../../public/showcase/Harc.webp";
