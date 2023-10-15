@@ -30,9 +30,9 @@ const Slide_showcase = () => {
       sub_heading: "website design & development",
       link: "https://www.qdepartment.com/",
       img: showcase1,
-      video: width > 651 ? true : false,
-      video_link:
-        "https://res.cloudinary.com/dwovcsb1d/video/upload/v1697180459/q_rzr7sz.mp4",
+      video: true,
+      scale: true,
+      video_link: "/showcase/q.mp4",
     },
     {
       heading: "good juju",
@@ -47,8 +47,8 @@ const Slide_showcase = () => {
       link: "https://spoiledchild.com/",
       img: showcase3,
       video: true,
-      video_link:
-        "https://res.cloudinary.com/dwovcsb1d/video/upload/v1697180647/s_sw2iga.mp4",
+      scale: false,
+      video_link: "/showcase/s.mp4",
     },
     {
       heading: "harc ",
@@ -117,9 +117,12 @@ const Slide_showcase = () => {
 
           <Link
             href={"/contact"}
-            className={`${league.className} league hidden sm:block fixed bottom-[4vw] z-[11] left-[50%] translate-x-[-50%] py-[2.5vw] px-[6vw] text-[4vw] hover:bg-[#920808] bg-[#D01717] text-white  sm:rounded-[9.75vw]`}
+            className={`${league.className} league hidden sm:block fixed bottom-[4vw] z-[11] left-[50%] translate-x-[-50%] w-[70vw] h-[13vw] text-[6vw] hover:bg-[#920808] bg-[#D01717] text-white  sm:rounded-[9.75vw]`}
           >
-            Contact Us
+            <p className="w-full h-full flex justify-center items-center ">
+              {" "}
+              Contact Us
+            </p>
           </Link>
           {/* the container tht hadnles it  */}
           <div
@@ -140,8 +143,10 @@ const Slide_showcase = () => {
                         <video
                           // ref={videoRefs[index]}
                           loop={true}
-                          className="scale-[1.2]"
                           muted={true}
+                          style={{
+                            transform: e.scale ? "scale(1.5)" : "scale(1)",
+                          }}
                           playsInline={true}
                           autoPlay={true}
                           preload="auto"

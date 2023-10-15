@@ -40,12 +40,12 @@ const Contact_showcase = () => {
       setsending(true);
 
       //    setdisabled(!disabled);
-      window.gtag("event", "form_submission ", {
+      window.gtag("event", "form_submission", {
         event_category: "Contact Form",
         event_label: "Submit",
       });
 
-      window.fbq("trackCustom", "submit form ");
+      window.fbq("trackCustom", "submit form");
       let data = JSON.stringify({
         name: name,
         phone: phone,
