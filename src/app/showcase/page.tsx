@@ -3,6 +3,7 @@
 import Menu from "../component/menu";
 import Header_black from "../component/navigation/header_black_nav";
 import Showcase_header from "../component/navigation/showcase_header";
+import Preloader from "../component/preloader";
 import Contact_showcase from "../component/showcase/contact_showcase";
 import Slide_showcase from "../component/showcase/slide";
 import TermsPage from "../component/terms_of_service";
@@ -16,16 +17,49 @@ export default function Terms() {
   const [height, setheight] = useState("0px");
   const [opacity, setopacity] = useState(0.2);
   const [white, setwhite] = useState(1);
+  const [scale, setscale] = useState(1.2);
+  const [preloader_img_opacity, setpreloader_img_opacity] = useState(0);
+  const [beginlines, setbeginlines] = useState(true);
+  const [loader, setloader] = useState(true);
 
   useEffect(() => {
     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    document.body.classList.remove("hide_now");
     // contact_showcase;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  useEffect(() => {
+    document.body.classList.add("hide_now");
 
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      document.body.classList.remove("hide_now");
+    }, 4500);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setloader(false);
+    }, 5000);
+    return () => clearTimeout(timer);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
+      {loader ? (
+        <Preloader
+          setscale={setscale}
+          scale={scale}
+          preloader_img_opacity={preloader_img_opacity}
+          setpreloader_img_opacity={setpreloader_img_opacity}
+          beginlines={beginlines}
+          setbeginlines={setbeginlines}
+        />
+      ) : null}
       <Menu
         setleft={setleft}
         left={left}
