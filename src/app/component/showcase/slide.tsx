@@ -17,6 +17,7 @@ const league = League_Spartan({
   subsets: ["latin"],
   display: "swap",
 });
+import { motion } from "framer-motion";
 
 const Slide_showcase = () => {
   const width = globalThis.innerWidth;
@@ -74,6 +75,7 @@ const Slide_showcase = () => {
   ]);
 
   const [check, setcheck] = useState(0);
+  const [mul, setmul] = useState(3.5);
   const [move, setmove] = useState("translate-x-[200vw]");
   // const videoRefs: any = items.map(() => useRef());
 
@@ -86,19 +88,40 @@ const Slide_showcase = () => {
   // console.log(width);
   const { scrollY } = useScroll();
 
+  const totalWidth = 360; // Adjust to match your content's total width
+  useEffect(() => {
+    if (width > 650 && width <= 799) {
+      return setmul(2.2);
+    } else if (width > 800 && width <= 999) {
+      return setmul(3);
+    } else if (width > 1000) {
+      return setmul(3.5);
+    }
+  }, [width]);
+
+  // Calculate the maximum scrollable value based on total width and viewport width
+  const maxScrollX = totalWidth - width;
+
+  // Use useTransform to map vertical scroll (scrollY) to horizontal scroll (scrollX)
+  // const scroll_lever = useTransform(
+  //   scrollY,
+  //   [0, maxScrollX], // Map from 0 to the maximum scrollable value
+  //   [0, -totalWidth], // Map to the full content width (negative value)
+  // );
+
   const scroll_lever = useTransform(
     scrollY,
     // Map x from these values:
-    [0, width * 4],
+    [0, width * mul],
 
     // Into these values:
-    [0, 360],
+    [0, 310],
   );
 
   // use motion values to console .log
   useMotionValueEvent(scroll_lever, "change", (latest) => {
     {
-      globalThis.innerWidth > 650 && setcheck(latest);
+      globalThis.innerWidth > 650 ? setcheck(latest) : setcheck(0);
     }
 
     // setmove(`translate-x-[${-latest + "vw"}]`);
@@ -125,9 +148,12 @@ const Slide_showcase = () => {
             </p>
           </Link>
           {/* the container tht hadnles it  */}
-          <div
-            className={`w-[370vw] sm:w-full h-full relative top-0 justify-center items-center gap-[4vw] sm:gap-[6vw] right-0  flex pl-[4vw] sm:pl-0 sm:flex-col`}
-            style={{ transform: `translateX(-${check}vw)` }}
+          <motion.div
+            className={`w-[370vw] sm:w-full h-full relative top-0  justify-center items-center gap-[4vw] sm:gap-[6vw] right-0  flex pl-[4vw] sm:pl-0 sm:flex-col`}
+            // style={{ transform: `translateX(-${check}vw)` }}
+            initial={{ x: 0 }} // Apply x initial animation value
+            animate={{ x: -check + "vw" }}
+            transition={{ duration: 2 }}
           >
             {items.map((e: any, index: any) => {
               return (
@@ -180,7 +206,7 @@ const Slide_showcase = () => {
                 </Link>
               );
             })}
-          </div>
+          </motion.div>
         </div>
       </div>{" "}
     </>
