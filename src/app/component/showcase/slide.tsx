@@ -153,7 +153,7 @@ const Slide_showcase = () => {
             // style={{ transform: `translateX(-${check}vw)` }}
             initial={{ x: 0 }} // Apply x initial animation value
             animate={{ x: -check + "vw" }}
-            transition={{ duration: 2 }}
+            transition={{ duration: 0.2 }}
           >
             {items.map((e: any, index: any) => {
               return (
