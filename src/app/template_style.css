@@ -89,3 +89,33 @@ body {
     font-size: 5vw;
   }
 }
+
+@keyframes move_hand {
+  0% {
+    transform: translateY(0%) translateX(30%);
+  }
+  50% {
+    transform: translateY(4%) translateX(30%);
+  }
+  100% {
+    transform: translateY(0%) translateX(30%);
+  }
+}
+
+/* @keyframes innovation_translate_mobile {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -330.5%;
+  }
+} */
+
+.move_hand {
+  animation: move_hand 3s linear infinite; /* Adjust the duration as needed */
+  /* animation-delay: 0s, -5s; */
+}
+
+.move_hand:hover {
+  animation-play-state: paused;
+}

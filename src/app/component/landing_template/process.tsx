@@ -57,7 +57,7 @@ const Processes = () => {
   ];
   return (
     <>
-      <div className="w-full flex  flex-col items-center my-[6vw] ">
+      <div className="w-full flex   flex-col items-center mb-[13vw] ">
         <h2 className={` font_helvetica text-[5vw] py-[3vw] text-white`}>
           Our Process
         </h2>

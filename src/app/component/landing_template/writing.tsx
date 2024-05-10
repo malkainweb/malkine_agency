@@ -165,7 +165,7 @@ const Writing = () => {
         </div>
 
         {/* the button */}
-        <div className="w-full flex justify-center pt-[3vw]">
+        <div className="w-full flex justify-center pt-[1vw] sm:pt-[3vw]">
           <Link
             href="contact"
             className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
