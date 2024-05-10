@@ -10,37 +10,47 @@ import mob_foot1 from "../../../../public/fotter/foot_2.webp";
 import canada_loca_red from "../../../../public/fotter/canada_loca_red.webp";
 import Link from "next/link";
 import Logo from "../logo";
+import footer_bg from "../../../../public/landingpage_template/footer_bg.webp";
 
-const Footer = () => {
+const Footer = ({ landing }: any) => {
   return (
     <>
-      <nav className="h-auto rounded-t-[4.8vw] w-full  bg-[#080808] ">
-        <div className="w-full h-auto   sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] sm:gap-[12vw]">
+      <nav
+        className={`h-auto relative overflow-hidden rounded-t-[4.8vw] w-full ${
+          landing ? "bg-[#222222] sm:bg-[#080808]" : "bg-[#080808] "
+        }  `}
+      >
+        <Image
+          src={footer_bg}
+          alt="footer bg"
+          className="absolute z-[5] sm:hidden top-0 left-0 w-full h-fit"
+        />
+        <div className="w-full h-auto  z-[10]  sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] sm:gap-[12vw]">
           <div className="sm:pt-[6vw]">
             <Logo />
           </div>
           <Link
             href={"contact"}
-            className="nova hidden sm:block  sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
+            className="nova hidden sm:block z-[10]   sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
           >
             Work with us <i className="bi bi-arrow-right"></i>
           </Link>
 
           {/* the second part of the footer */}
-          <div className="w-full  h-auto flex justify-between  items-center sm:items-start  sm:flex-col  ">
+          <div className="w-full z-[10]  h-auto flex justify-between  items-center sm:items-start  sm:flex-col  ">
             {/* locations */}
             <div className=" sm:order-2 flex flex-col   sm:py-[10vw]  h-auto gap-[1.7vw] w-full inter sm:gap-[10vw]   sm:mb-[1vw]">
               <p className="inter font-[500] sm:text-[4vw] text-[1.6vw] capitalize text-white">
                 Our Locations
               </p>
               {/* now actual locations */}
-              <div className="w-auto h-auto flex gap-[2.13vw] justify-start sm:justify-between items-end  text-[0.93vw] sm:mt-[5vw]">
+              <div className="w-auto h-auto z-[10]  flex gap-[2.13vw] justify-start sm:justify-between items-end  text-[0.93vw] sm:mt-[5vw]">
                 <div className="w-[9.1vw] h-[8vw] sm:w-[40vw]  relative">
                   <Image
                     priority
                     src={usa_loca}
                     alt="canada location"
-                    className="w-full h-fit absolute sm:hidden z-[40] bottom-0 left-0"
+                    className="w-full h-fit absolute  sm:hidden z-[40] bottom-0 left-0"
                   />
                   {/* mobile image */}
                   <Image

@@ -31,7 +31,7 @@ const Calendy = () => {
     },
   });
   return (
-    <div className="w-full flex flex-col items-center my-[5vw] sm:my-[4vw] sm:gap-[6vw] gap-[2vw] ">
+    <div className="w-full flex flex-col items-center mt-[6vw] sm:my-[4vw] sm:gap-[6vw] gap-[1vw] ">
       <h3 className="font_helvetica text-white text-[5vw] sm:text-[7vw] text-center">
         Let's Get Started
       </h3>
