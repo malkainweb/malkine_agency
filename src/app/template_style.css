@@ -8,6 +8,10 @@ body {
   margin: 0;
 } */
 
+.font_helvetica {
+  font-family: Helvetica;
+}
+
 .template_outer {
   filter: grayscale(15%);
   padding-top: 2vw;
