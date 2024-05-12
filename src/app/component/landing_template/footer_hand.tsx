@@ -48,7 +48,7 @@ const Footer_hand = () => {
         <Image
           src={hand}
           alt="hand"
-          className="w-[20vw] translate-x-[30%] footer-hand-image  sm:w-[50vw] h-fit"
+          className="w-[20vw] translate-x-[30%] cursor-pointer footer-hand-image  sm:w-[50vw] h-fit"
         />
       </div>
     </>

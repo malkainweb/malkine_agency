@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
 import line from "../../../../public/landingpage_template/line.png";
-import one from "../../../../public/landingpage_template/example.webp";
-import two from "../../../../public/landingpage_template/example.webp";
-import three from "../../../../public/landingpage_template/example.webp";
-import four from "../../../../public/landingpage_template/example.webp";
+import one from "../../../../public/landingpage_template/example1.webp";
+import two from "../../../../public/landingpage_template/example2.webp";
+import three from "../../../../public/landingpage_template/example3.webp";
+// import four from "../../../../public/landingpage_template/example.webp";
 
 import blue_arrow from "../../../public/home/processes/blue_arrow.png";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
