@@ -4,7 +4,7 @@ const Template_hero = () => {
   return (
     <>
       <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[4vw] gap-[3.5vw]  text-center">
-        <h1 className="font_helvetica text-white text-[5vw] sm:leading-[8vw] sm:text-[7vw] leading-[5.5vw]">
+        <h1 className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] leading-[5.5vw]">
           Great Architects{" "}
           <span className="bg-gradient-to-r from-[#273CF8]  to-[#F24545] inline-block text-transparent bg-clip-text">
             Design

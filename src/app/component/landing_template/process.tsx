@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import line from "../../../../public/landingpage_template/line.png";
+import mob_line from "../../../../public/landingpage_template/mob_line.png";
 import one from "../../../../public/landingpage_template/example1.webp";
 import two from "../../../../public/landingpage_template/example2.webp";
 import three from "../../../../public/landingpage_template/example3.webp";
@@ -10,9 +11,17 @@ import blue_arrow from "../../../public/home/processes/blue_arrow.png";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 import { CabinetGrotesk_bold, CabinetGrotesk_medium } from "@/app/utils/fonts";
 import External_btn from "@/app/utils/external_btn";
+import { useEffect, useState } from "react";
 // import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 
 const Processes = () => {
+  const width = globalThis.innerWidth;
+
+  const [calc_width, setcalc_width] = useState(1000);
+
+  useEffect(() => {
+    setcalc_width(width);
+  }, [width]);
   const items = [
     {
       step_text: "STEP 01: GET STARTED",
@@ -34,7 +43,7 @@ const Processes = () => {
     {
       step_text: "STEP 03: PROTOTYPING",
       heading: "Prototyping",
-      top: "4vw",
+      top: "1vw",
 
       body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
       center: true,
@@ -42,6 +51,8 @@ const Processes = () => {
     {
       step_text: "STEP 04: DEVELOPMENT",
       heading: "Developing",
+      top: "vw",
+
       body: "While implementing modular and scalable development stacks, we collaborate to build out backend functionality of the desired outcome and implement front end engineering design structures while maintaining agile development methodology and prioritizing platform security.",
       img: three,
       //   reverse: true,
@@ -58,102 +69,117 @@ const Processes = () => {
   return (
     <>
       <div className="w-full flex   flex-col items-center mb-[13vw] ">
-        <h2 className={` font_helvetica text-[5vw] py-[3vw] text-white`}>
+        <h2
+          className={` font_helvetica sm:text-[8vw] sm:leading-[9vw] text-[5vw] py-[3vw] text-white`}
+        >
           Our Process
         </h2>
         {/* the bottom process and the mapping function */}
-        <div className=" w-[70vw]  flex flex-col items-center justify-between  gap-[8vw] relative">
+        <div className=" w-[70vw] sm:w-[90vw]  flex flex-col items-center justify-between  gap-[8vw] sm:gap-[3vw] relative">
           <Image
             src={line}
             alt="line"
-            className="w-fit  h-full absolute left-[50%] translate-x-[-50%] "
+            className="w-fit  h-full sm:hidden absolute left-[50%] translate-x-[-50%] "
           />
           {items.map((e: any, index: any) => {
             return (
-              <div
-                key={index}
-                style={{ marginTop: e.top }}
-                className={`  gap-[7vw]  ${
-                  e.center
-                    ? "w-[26vw] h-[20vw]   bg-[#D01717] rounded-[2vw] items-center z-[99] px-[2vw]"
-                    : "w-full h-auto items-start"
-                }    flex justify-center  ${
-                  e.reverse ? "flex-row-reverse" : "flex-row"
-                }`}
-              >
-                {e.img && (
-                  <div
-                    className={`w-[50%]  ${
-                      e.reverse ? "justify-start" : "justify-end"
-                    }  flex  `}
-                  >
-                    <Image
-                      src={e.img}
-                      alt={e.heading}
-                      className="w-full h-fit"
-                    />
-                  </div>
+              <>
+                {index != 0 && (
+                  <Image
+                    src={mob_line}
+                    alt="line"
+                    className="hidden sm:block w-[3vw] h-fit"
+                  />
                 )}
 
-                {/* the body  */}
                 <div
-                  className={`   ${
+                  key={index}
+                  style={{ marginTop: calc_width > 700 ? e.top : "" }}
+                  className={`   gap-[7vw]  ${
                     e.center
-                      ? "w-full text-white  items-center text-center "
-                      : "w-[50%]"
-                  } flex flex-col gap-[0.7vw] ${
-                    e.reverse ? "items-end" : "items-start"
-                  }  `}
+                      ? "w-[26vw] h-[20vw] sm:w-full sm:h-auto  sm:rounded-[7vw]    bg-[#D01717] rounded-[2vw] sm:mb-[4vw] items-center z-[99] px-[2vw] sm:py-[6vw] sm:px-[4vw]"
+                      : "w-full h-auto sm:pb-[4vw] sm:text-center sm:flex-col sm:items-center items-start"
+                  }    flex justify-center  ${
+                    e.reverse ? "flex-row-reverse" : "flex-row"
+                  }`}
                 >
-                  <div className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw] border-white border-opacity-[50%] rounded-[2.9vw]">
-                    <p
-                      className={`${CabinetGrotesk_medium.className} text-[0.9vw] uppercase`}
-                    >
-                      {e.step_text}
-                    </p>
-                  </div>
-                  <h2
-                    className={` text-white ${CabinetGrotesk_bold.className} ${
-                      e.reverse ? "text-end" : ""
-                    }  text-[3.1vw]`}
-                  >
-                    {e.heading}
-                  </h2>
-
-                  <p
-                    className={` text-white ${
-                      CabinetGrotesk_medium.className
-                    } ${
-                      e.reverse ? "text-end pl-[6vw]" : ""
-                    }  text-[1.2vw] leading-[1.5vw]`}
-                  >
-                    {e.body}
-                  </p>
-
-                  {index != items.length - 1 && (
+                  {e.img && (
                     <div
-                      className={` ${
-                        e.center ? "hidden" : "flex"
-                      } group  mt-[1vw] `}
+                      className={`w-[50%] sm:w-[80%]  ${
+                        e.reverse ? "justify-start" : "justify-end"
+                      }  flex  `}
                     >
-                      <button
-                        onClick={() => {
-                          scrollTo_calendy();
-                        }}
-                        className={` sm:w-[39vw] capitalize   sm:h-[11.2vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[#D01717] bg-[#F3F3F3] `}
-                      >
-                        get started
-                      </button>
-                      <External_btn
-                        h={"3.2"}
-                        w={"3.2"}
-                        bg={"#F3F3F3"}
-                        img={"blue"}
+                      <Image
+                        style={{ filter: `drop-shadow(0 0 0.80vw #ffffff8b)` }}
+                        src={e.img}
+                        alt={e.heading}
+                        className="sm:w-full w-[70%] bg-[#ffffff8b] drop-shadow-xl rounded-[100%] filter  h-fit"
                       />
                     </div>
                   )}
+
+                  {/* the body  */}
+                  <div
+                    className={` sm:w-full sm:flex sm:flex-col sm:gap-[2vw]   ${
+                      e.center
+                        ? "w-full text-white  items-center text-center "
+                        : "w-[50%]    sm:items-center"
+                    } flex flex-col gap-[0.7vw] ${
+                      e.reverse ? "items-end " : "items-start"
+                    }  `}
+                  >
+                    <div className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw]  sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]">
+                      <p
+                        className={`${CabinetGrotesk_medium.className} sm:text-[3.2vw]  text-[0.9vw] uppercase`}
+                      >
+                        {e.step_text}
+                      </p>
+                    </div>
+                    <h2
+                      className={` text-white sm:text-[8vw] sm:text-center ${
+                        CabinetGrotesk_bold.className
+                      } ${
+                        e.reverse ? "text-end " : "sm:text-center"
+                      }  text-[3.1vw]`}
+                    >
+                      {e.heading}
+                    </h2>
+
+                    <p
+                      className={` text-white sm:text-[4vw] sm:leading-[5.5vw] ${
+                        CabinetGrotesk_medium.className
+                      } ${
+                        e.reverse ? "text-end sm:text-center pl-[6vw]" : ""
+                      }  text-[1.2vw] leading-[1.5vw]`}
+                    >
+                      {e.body}
+                    </p>
+
+                    {index != items.length - 1 && (
+                      <div
+                        className={` ${
+                          e.center ? "hidden" : "flex"
+                        } group  mt-[1vw] `}
+                      >
+                        <button
+                          onClick={() => {
+                            scrollTo_calendy();
+                          }}
+                          className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[#D01717] bg-[#F3F3F3] `}
+                        >
+                          get started
+                        </button>
+                        <External_btn
+                          h={"3.2"}
+                          w={"3.2"}
+                          bg={"#F3F3F3"}
+                          img={"blue"}
+                        />
+                      </div>
+                    )}
+                  </div>
                 </div>
-              </div>
+              </>
             );
           })}
         </div>
