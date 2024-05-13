@@ -19,7 +19,7 @@ const Scrolling_hands = (props: any) => {
   return (
     <>
       <div
-        className="w-full my-[7vw] h-[140vw] sm:h-[300vw] relative flex overflow-clip "
+        className="w-full mt-[3vw] mb-[7vw] sm:my-[7vw] h-[140vw] sm:h-[300vw] relative flex overflow-clip "
         style={{ alignItems: "flex-start" }}
       >
         {/* hand bg */}
