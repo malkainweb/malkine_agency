@@ -9,6 +9,7 @@ import Writing from "../component/landing_template/writing";
 import Menu from "../component/menu";
 import Home_Header from "../component/navigation/home_header";
 import Template_hero from "../component/landing_template/hero";
+import Landing_nav from "../component/landing_template/landing_nav";
 
 const Landing_template = () => {
   const width = globalThis.innerWidth;
@@ -43,6 +44,7 @@ const Landing_template = () => {
           nav_menu={nav_menu}
         />
       </div> */}
+      <Landing_nav />
       <div className="h-[6vw] sm:h-[25vw] "></div>
       <Template_hero />
       <Scrolling_hands />
