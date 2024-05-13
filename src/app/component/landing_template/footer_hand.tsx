@@ -10,23 +10,26 @@ const Footer_hand = () => {
     // Select the animated element
     const animatedElement: any = document.querySelector(".footer-hand-image");
 
-    // Add event listeners
-    animatedElement.addEventListener("mouseenter", () => {
-      // Start the animation when hovering
+    // Define the event listener functions
+    const startAnimation = () => {
       animatedElement.style.animation = "move_hand 1.5s linear infinite";
-    });
+    };
 
-    animatedElement.addEventListener("mouseleave", () => {
-      // Pause the animation when not hovering
+    const pauseAnimation = () => {
       animatedElement.style.animationPlayState = "paused";
-    });
+    };
+
+    // Add event listeners
+    animatedElement.addEventListener("mouseenter", startAnimation);
+    animatedElement.addEventListener("mouseleave", pauseAnimation);
 
     // Clean up the event listeners when the component unmounts
     return () => {
-      animatedElement.removeEventListener("mouseenter");
-      animatedElement.removeEventListener("mouseleave");
+      animatedElement.removeEventListener("mouseenter", startAnimation);
+      animatedElement.removeEventListener("mouseleave", pauseAnimation);
     };
   }, []);
+
   return (
     <>
       <div className="w-full h-[63vw] mt-[4vw] sm:h-[150vw]  flex flex-col justify-between items-center ">
