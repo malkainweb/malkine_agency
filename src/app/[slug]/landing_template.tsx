@@ -43,7 +43,7 @@ const Landing_template = () => {
           nav_menu={nav_menu}
         />
       </div> */}
-      <div className="h-[6vw] sm:h-[20vw] "></div>
+      <div className="h-[6vw] sm:h-[25vw] "></div>
       <Template_hero />
       <Scrolling_hands />
       <Writing />

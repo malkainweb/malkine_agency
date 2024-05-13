@@ -68,7 +68,7 @@ const Processes = () => {
   ];
   return (
     <>
-      <div className="w-full flex   flex-col items-center mb-[13vw] ">
+      <div className="w-full flex sm:gap-[12vw]  flex-col items-center mb-[13vw] ">
         <h2
           className={` font_helvetica sm:text-[8vw] sm:leading-[9vw] text-[5vw] py-[3vw] text-white`}
         >
@@ -149,7 +149,9 @@ const Processes = () => {
                       className={` text-white sm:text-[4vw] sm:leading-[5.5vw] ${
                         CabinetGrotesk_medium.className
                       } ${
-                        e.reverse ? "text-end sm:text-center pl-[6vw]" : ""
+                        e.reverse
+                          ? "text-end sm:text-center pl-[6vw] sm:pl-0"
+                          : ""
                       }  text-[1.2vw] leading-[1.5vw]`}
                     >
                       {e.body}
