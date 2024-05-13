@@ -88,7 +88,7 @@ const Processes = () => {
                   <Image
                     src={mob_line}
                     alt="line"
-                    className="hidden sm:block w-[3vw] h-fit"
+                    className="hidden sm:block w-[2.2vw] h-fit"
                   />
                 )}
 
