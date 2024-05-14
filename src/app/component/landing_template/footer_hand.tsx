@@ -6,29 +6,29 @@ import Link from "next/link";
 import { useEffect } from "react";
 
 const Footer_hand = () => {
-  useEffect(() => {
-    // Select the animated element
-    const animatedElement: any = document.querySelector(".footer-hand-image");
+  // useEffect(() => {
+  //   // Select the animated element
+  //   const animatedElement: any = document.querySelector(".footer-hand-image");
 
-    // Define the event listener functions
-    const startAnimation = () => {
-      animatedElement.style.animation = "move_hand 1.5s linear infinite";
-    };
+  //   // Define the event listener functions
+  //   const startAnimation = () => {
+  //     animatedElement.style.animation = "move_hand 1.5s linear infinite";
+  //   };
 
-    const pauseAnimation = () => {
-      animatedElement.style.animationPlayState = "paused";
-    };
+  //   const pauseAnimation = () => {
+  //     animatedElement.style.animationPlayState = "paused";
+  //   };
 
-    // Add event listeners
-    animatedElement.addEventListener("mouseenter", startAnimation);
-    animatedElement.addEventListener("mouseleave", pauseAnimation);
+  //   // Add event listeners
+  //   animatedElement.addEventListener("mouseleave", startAnimation);
+  //   animatedElement.addEventListener("mouseenter", pauseAnimation);
 
-    // Clean up the event listeners when the component unmounts
-    return () => {
-      animatedElement.removeEventListener("mouseenter", startAnimation);
-      animatedElement.removeEventListener("mouseleave", pauseAnimation);
-    };
-  }, []);
+  //   // Clean up the event listeners when the component unmounts
+  //   return () => {
+  //     animatedElement.addEventListener("mouseleave", startAnimation);
+  //     animatedElement.addEventListener("mouseenter", pauseAnimation);
+  //   };
+  // }, []);
 
   return (
     <>
@@ -51,7 +51,7 @@ const Footer_hand = () => {
         <Image
           src={hand}
           alt="hand"
-          className="w-[20vw] translate-x-[30%] cursor-pointer footer-hand-image  sm:w-[50vw] h-fit"
+          className="w-[20vw] translate-x-[30%] move_hand cursor-pointer footer-hand-image  sm:w-[50vw] h-fit"
         />
       </div>
     </>

@@ -112,10 +112,15 @@ body {
 } */
 
 .move_hand {
-  animation: move_hand 3s linear infinite; /* Adjust the duration as needed */
+  animation: move_hand 1.5s linear infinite; /* Adjust the duration as needed */
   /* animation-delay: 0s, -5s; */
 }
 
 .move_hand:hover {
   animation-play-state: paused;
+}
+
+.show_item {
+  opacity: 1;
+  transform: translateX(0);
 }
