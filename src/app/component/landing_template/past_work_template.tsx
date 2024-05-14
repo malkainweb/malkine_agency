@@ -97,7 +97,7 @@ const Past_work_template = () => {
                 <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden sm:rounded-[4.7vw]  rounded-[2.5vw]">
                   <Image src={e.img} alt="img" className="w-full h-fit" />
                 </div>
-                <p className="text-white sm:text-[2.5vw] sm:leading-[3vw] text-[0.9vw] font_helvetica">
+                <p className="text-white sm:text-[3vw] sm:leading-[3.5vw] text-[0.9vw] font_helvetica">
                   {visibleIndexes.includes(index) && (
                     <Typewriter
                       words={[e.text]}
