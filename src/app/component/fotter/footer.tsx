@@ -25,16 +25,22 @@ const Footer = ({ landing }: any) => {
           alt="footer bg"
           className="absolute z-[5] sm:hidden top-0 left-0 w-full h-fit"
         />
-        <div className="w-full h-auto  z-[10]  sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] sm:gap-[12vw]">
+        <div
+          className={`w-full h-auto  z-[10]  sm:px-[3.5vw] px-[2.7vw]  py-[2.7vw] flex flex-col gap-[2vw] ${
+            !landing ? "sm:gap-[12vw]" : "sm:gap-[2vw]"
+          } `}
+        >
           <div className="sm:pt-[6vw]">
             <Logo />
           </div>
-          <Link
-            href={"contact"}
-            className="nova hidden sm:block z-[10]   sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
-          >
-            Work with us <i className="bi bi-arrow-right"></i>
-          </Link>
+          {!landing && (
+            <Link
+              href={"contact"}
+              className="nova hidden sm:block z-[10]   sm:text-[3vw] font[900]  sm:rounded-[9.75vw] sm:px-[15vw] w-fit sm:py-[4vw] bg-[#D01717] sm:text-white hover:bg-[#920808]"
+            >
+              Work with us <i className="bi bi-arrow-right"></i>
+            </Link>
+          )}
 
           {/* the second part of the footer */}
           <div className="w-full z-[10]  h-auto flex justify-between  items-center sm:items-start  sm:flex-col  ">
