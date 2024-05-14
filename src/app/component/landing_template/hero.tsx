@@ -21,7 +21,7 @@ const Template_hero = () => {
           </span>
         </h1>
 
-        <p className="font_helvetica sm:text-[3.5vw] sm:leading-[4vw] text-[1.5vw] text-white leading-[1.8vw]">
+        <p className="font_helvetica sm:text-[3.5vw] sm:leading-[4vw] text-[1.8vw] text-white leading-[2vw]">
           Let us create an online portfolio that reflects the amount{" "}
           <br className="hidden sm:block" /> of care and{" "}
           <br className="sm:hidden" />

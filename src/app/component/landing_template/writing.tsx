@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, createRef } from "react";
+import { useRef, createRef, useEffect } from "react";
 import {
   motion,
   useScroll,
@@ -10,6 +10,8 @@ import {
 import Link from "next/link";
 import text_img from "../../../../public/landingpage_template/text_img.webp";
 import Image from "next/image";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 const ContentLine = (props: any) => {
   const { content } = props;
   // const contentRef = useRef(null);
@@ -134,6 +136,30 @@ const Writing = () => {
   //     "and value to people , brands , and the ",
   //     "world around us",
   //   ];
+
+  useEffect(() => {
+    // Register ScrollTrigger plugin
+    gsap.registerPlugin(ScrollTrigger);
+
+    // Select text elements using the Next.js convention
+    const textElements = document.querySelectorAll(".elementor-heading-title");
+
+    // Loop through each text element
+    textElements.forEach((text) => {
+      // Apply animation to each text element
+      gsap.to(text, {
+        backgroundSize: "100%",
+        ease: "none",
+        scrollTrigger: {
+          trigger: text,
+          start: "center 80%",
+          end: "center 20%",
+          scrub: true,
+        },
+      });
+    });
+  }, []); // Run only once on component mount
+
   return (
     <>
       {" "}
@@ -163,6 +189,14 @@ const Writing = () => {
             </p>
           </div>
         </div>
+
+        {/* <div className="elementor-heading-title text-[10vw]">
+          Great architects design buildings that inspire but let's be honest,
+          most architect websites leave a lot to be desired. We get it. You're
+          passionate about creating spaces that amaze, but wrestling with
+          website builders isn't exactly your dream project. That's where we
+          come in.
+        </div> */}
 
         {/* the button */}
         <div className="w-full flex justify-center pt-[1vw] sm:pt-[3vw]">
