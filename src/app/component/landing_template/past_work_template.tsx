@@ -13,27 +13,27 @@ const Past_work_template = () => {
   const data_array = [
     {
       img: img2,
-      text: "HEALTH-ADE - WE HELPED HEALTH-ADE FOLLOW THEIR GUT",
+      text: "Health-ade - we helped health-ade follow their gut",
     },
     {
       img: img1,
-      text: "SMARTSWEETS - EXPANDING THE CANDY UNIVERSE WITH SMARTSWEETS.",
+      text: "Smartsweets - expanding the candy universe with smartsweets.",
     },
     {
       img: img1,
-      text: "NYLON - REDESIGNING AN ICONIC MAGAZINE FOR THE INTERNET AGE.",
+      text: "Nylon - redesigning an iconic magazine for the internet age .",
     },
     {
       img: img2,
-      text: "HEALTH-ADE - WE HELPED HEALTH-ADE FOLLOW THEIR GUT",
+      text: "Health-ade - we helped health-ade follow their gut",
     },
     {
       img: img2,
-      text: "MAEV - THE WELLNESS BRAND FOR CITY DOGS AND THEIR HUMANS.",
+      text: "Maev - the wellness brand for city dogs and their humans.",
     },
     {
       img: img1,
-      text: "PETFOLK - RESHAPING PET CARE FOR TODAY",
+      text: "Petfolk - reshaping pet care for today",
     },
   ];
 
@@ -97,7 +97,7 @@ const Past_work_template = () => {
                 <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden sm:rounded-[4.7vw]  rounded-[2.5vw]">
                   <Image src={e.img} alt="img" className="w-full h-fit" />
                 </div>
-                <p className="text-white sm:text-[3vw] sm:leading-[3.5vw] text-[0.9vw] font_helvetica">
+                <p className="text-white sm:text-[3.5vw] capitalize sm:leading-[4.5vw] text-[1.1vw] leading-[1.3vw] font_helvetica">
                   {visibleIndexes.includes(index) && (
                     <Typewriter
                       words={[e.text]}

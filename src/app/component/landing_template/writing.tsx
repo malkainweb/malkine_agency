@@ -177,7 +177,7 @@ const Writing = () => {
         <Image
           src={text_img}
           alt="about image"
-          className=" w-[70vw] h-fit sm:w-[85vw] "
+          className=" w-[70vw] h-fit sm:w-[90vw] "
         />
         {/* the second text  */}
         <div className="template_outer ">
