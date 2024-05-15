@@ -31,7 +31,7 @@ body {
   text-align: center;
   justify-content: center;
   height: auto;
-  font-weight: 600;
+  font-weight: lighter;
 }
 .template_dav {
   display: inline-flex;
@@ -123,4 +123,14 @@ body {
 .show_item {
   opacity: 1;
   transform: translateX(0);
+}
+
+.elementor-heading-title {
+  color: rgb(182, 182, 182, 0.2);
+  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+  position: relative;
 }
