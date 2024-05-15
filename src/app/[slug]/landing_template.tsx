@@ -11,6 +11,7 @@ import Home_Header from "../component/navigation/home_header";
 import Template_hero from "../component/landing_template/hero";
 import Landing_nav from "../component/landing_template/landing_nav";
 import Past_work_template from "../component/landing_template/past_work_template";
+import Preloader_template from "../component/landing_template/preloader_template";
 
 const Landing_template = () => {
   const width = globalThis.innerWidth;
@@ -45,6 +46,7 @@ const Landing_template = () => {
           nav_menu={nav_menu}
         />
       </div> */}
+      <Preloader_template />
       <Landing_nav />
       <div className="h-[6vw] sm:h-[25vw] "></div>
       <Template_hero />
