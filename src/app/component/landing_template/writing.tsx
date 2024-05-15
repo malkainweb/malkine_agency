@@ -8,7 +8,7 @@ import {
   useMotionTemplate,
 } from "framer-motion";
 import Link from "next/link";
-import text_img from "../../../../public/landingpage_template/text_img.webp";
+import text_img from "../../../../public/landingpage_template/architect_imgaes/what_we_do.webp";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
@@ -177,7 +177,7 @@ const Writing = () => {
         <Image
           src={text_img}
           alt="about image"
-          className=" w-[30vw] h-fit sm:w-[80vw] "
+          className=" w-[70vw] h-fit sm:w-[85vw] "
         />
         {/* the second text  */}
         <div className="template_outer ">

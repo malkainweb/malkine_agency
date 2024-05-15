@@ -113,7 +113,7 @@ const Processes = () => {
                         style={{ filter: `drop-shadow(0 0 0.80vw #ffffff8b)` }}
                         src={e.img}
                         alt={e.heading}
-                        className="sm:w-full w-[70%] bg-[#ffffff8b] drop-shadow-xl rounded-[100%] filter  h-fit"
+                        className="sm:w-full w-[70%] bg-[#ffffff8b] drop-shadow-xl sm:drop-shadow-2xl rounded-[100%] filter  h-fit"
                       />
                     </div>
                   )}
