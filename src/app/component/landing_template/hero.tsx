@@ -6,16 +6,16 @@ const Template_hero = () => {
       <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[8vw] gap-[3.5vw]  text-center">
         <h1 className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] leading-[5.5vw]">
           Great Architects{" "}
-          <span className="bg-gradient-to-r from-[#273CF8]  to-[#F24545] inline-block text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-[#172392]  to-[#818BE8] inline-block text-transparent bg-clip-text">
             Design
           </span>{" "}
           <br className="hidden sm:block" />
           Great <br className="sm:hidden" />
-          <span className="bg-gradient-to-r from-[#273CF8] via-[#623FC4]  to-[#743FB4] inline-block text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-[#172392]   to-[#818BE8] inline-block text-transparent bg-clip-text">
             Buildings
           </span>{" "}
           Not{" "}
-          <span className="bg-gradient-to-r from-[#F82727]   to-[#A26A19] inline-block text-transparent bg-clip-text">
+          <span className="bg-gradient-to-r from-[#F82727] via-[#F82727]   to-[#DE3B23] inline-block text-transparent bg-clip-text">
             {" "}
             Great Websites
           </span>
