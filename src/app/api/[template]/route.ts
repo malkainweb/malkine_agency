@@ -18,6 +18,9 @@ export async function GET(_request: NextRequest, { params }: any) {
   const data = [
     {
       category: "architect",
+      title: "Malkain - Crafting Stunning Online Portfolios for Architects",
+      description:
+        "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
       hero_text: [
         { word: "Great " },
         { word: "Architects " },
