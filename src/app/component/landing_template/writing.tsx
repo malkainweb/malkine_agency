@@ -153,7 +153,7 @@ const Writing = () => {
         scrollTrigger: {
           trigger: text,
           start: "center 80%",
-          end: "center 20%",
+          end: "center 50%",
           scrub: true,
         },
       });
@@ -163,9 +163,9 @@ const Writing = () => {
   return (
     <>
       {" "}
-      <div className="flex flex-col items-center gap-0 sm:gap-[5vw] w-full ">
+      <div className="flex flex-col items-center gap-[5vw] sm:gap-[5vw] w-full ">
         {/* the first text  */}
-        <div className="template_outer ">
+        {/* <div className="template_outer ">
           <div className="template_inner">
             <p className="template_dav">
               {content.map((item: any, index: any) => (
@@ -173,14 +173,26 @@ const Writing = () => {
               ))}
             </p>
           </div>
+        </div> */}
+
+        <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
+          <p>
+            {" "}
+            Great architects design buildings that inspire but let{"'"}s be
+            honest, most architect websites leave a lot to be desired. We get
+            it. You{"'"}re passionate about creating spaces that amaze, but
+            wrestling with website builders isn't exactly your dream project.
+            That{"'"}s where we come in.
+          </p>
         </div>
+
         <Image
           src={text_img}
           alt="about image"
           className=" w-[70vw] h-fit sm:w-[90vw] "
         />
         {/* the second text  */}
-        <div className="template_outer ">
+        {/* <div className="template_outer ">
           <div className="template_inner">
             <p className="template_dav">
               {second_content.map((item: any, index: any) => (
@@ -188,16 +200,14 @@ const Writing = () => {
               ))}
             </p>
           </div>
-        </div>
+        </div> */}
 
-        <div className="elementor-heading-title text-[3vw] text-center px-[10vw]">
+        <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
           <p>
-            {" "}
-            Great architects design buildings that inspire but let's be honest,
-            most architect websites leave a lot to be desired. We get it. You're
-            passionate about creating spaces that amaze, but wrestling with
-            website builders isn't exactly your dream project. That's where we
-            come in.
+            We{"'"}re a web design firm obsessed with crafting beautiful and
+            functional websites for architects like you. We translate your
+            vision into stunning online portfolios that showcase your work with
+            the same care and commitment you put into every building.
           </p>
         </div>
 

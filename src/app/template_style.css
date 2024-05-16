@@ -127,7 +127,7 @@ body {
 
 .elementor-heading-title {
   color: rgb(182, 182, 182, 0.2);
-  background: linear-gradient(to right, #b6b6b6, #b6b6b6) no-repeat;
+  background: linear-gradient(to right, #ff0f0f, #ff0f0f) no-repeat;
   -webkit-background-clip: text;
   background-clip: text;
   background-size: 0%;
