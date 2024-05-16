@@ -1,3 +1,4 @@
+import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 import Link from "next/link";
 
 const Template_hero = () => {
@@ -30,6 +31,9 @@ const Template_hero = () => {
 
         <button
           //   href={"contact"}
+          onClick={() => {
+            scrollTo_calendy();
+          }}
           className="nova w-fit  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] sm:text-[3vw]   sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw] font_helvetica  sm:text-white sm:mt-[2vw] "
         >
           Let{"'"}s Build! <i className="bi bi-arrow-right sm:hidden"></i>

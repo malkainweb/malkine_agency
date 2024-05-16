@@ -11,6 +11,7 @@ import canada_loca_red from "../../../../public/fotter/canada_loca_red.webp";
 import Link from "next/link";
 import Logo from "../logo";
 import footer_bg from "../../../../public/landingpage_template/footer_bg.webp";
+import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 
 const Footer = ({ landing }: any) => {
   return (
@@ -157,12 +158,24 @@ const Footer = ({ landing }: any) => {
               </div>
 
               {/* the contact us button section on the footer */}
-              <Link
-                href={"contact"}
-                className="nova  text-[1.3vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-center text-white hover:bg-[#920808]"
-              >
-                Work with us <i className="bi bi-arrow-right"></i>
-              </Link>
+              {!landing ? (
+                <Link
+                  href={"contact"}
+                  className="nova  text-[1.3vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-center text-white hover:bg-[#920808]"
+                >
+                  Work with us <i className="bi bi-arrow-right"></i>
+                </Link>
+              ) : (
+                <button
+                  // href={"contact"}
+                  onClick={() => {
+                    scrollTo_calendy();
+                  }}
+                  className="nova  text-[1.3vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-center text-white hover:bg-[#920808]"
+                >
+                  Work with us <i className="bi bi-arrow-right"></i>
+                </button>
+              )}
             </div>
           </div>
         </div>

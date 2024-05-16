@@ -12,6 +12,7 @@ import text_img from "../../../../public/landingpage_template/architect_imgaes/w
 import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 const ContentLine = (props: any) => {
   const { content } = props;
   // const contentRef = useRef(null);
@@ -213,12 +214,14 @@ const Writing = () => {
 
         {/* the button */}
         <div className="w-full flex justify-center pt-[1vw] sm:pt-[3vw]">
-          <Link
-            href="contact"
+          <button
+            onClick={() => {
+              scrollTo_calendy();
+            }}
             className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
           >
             Let{"'"}s Build <i className="bi bi-arrow-right"></i>
-          </Link>
+          </button>
         </div>
       </div>
     </>
