@@ -182,8 +182,8 @@ const Writing = () => {
             Great architects design buildings that inspire but let{"'"}s be
             honest, most architect websites leave a lot to be desired. We get
             it. You{"'"}re passionate about creating spaces that amaze, but
-            wrestling with website builders isn't exactly your dream project.
-            That{"'"}s where we come in.
+            wrestling with website builders isn{"'"}t exactly your dream
+            project. That{"'"}s where we come in.
           </p>
         </div>
 
