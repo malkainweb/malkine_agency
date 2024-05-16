@@ -24,31 +24,36 @@ import right3 from "../../../../public/landingpage_template/architect_imgaes/rig
 import right4 from "../../../../public/landingpage_template/architect_imgaes/right4.webp";
 // import { useInView } from "react-cool-inview";
 
-const Scrolling_hands = (props: any) => {
-  const left_info = [
-    { img: left1 },
-    { img: left2 },
-    { img: left3 },
-    { img: left4 },
-  ];
-  const right_info = [
-    { img: right1 },
-    { img: right2 },
-    { img: right3 },
-    { img: right4 },
-  ];
-  const mob_left_info = [
-    // { img: left1 },
-    { img: left2 },
-    // { img: left3 },
-    { img: left4 },
-  ];
-  const mob_right_info = [
-    // { img: right1 },
-    { img: right2 },
-    // { img: right3 },
-    { img: right4 },
-  ];
+const Scrolling_hands = ({
+  left_img,
+  right_img,
+  mob_left_img,
+  mob_right_img,
+}: any) => {
+  // const left_info = [
+  //   { img: left1 },
+  //   { img: left2 },
+  //   { img: left3 },
+  //   { img: left4 },
+  // ];
+  // const right_info = [
+  //   { img: right1 },
+  //   { img: right2 },
+  //   { img: right3 },
+  //   { img: right4 },
+  // ];
+  // const mob_left_info = [
+  //   // { img: left1 },
+  //   { img: left2 },
+  //   // { img: left3 },
+  //   { img: left4 },
+  // ];
+  // const mob_right_info = [
+  //   // { img: right1 },
+  //   { img: right2 },
+  //   // { img: right3 },
+  //   { img: right4 },
+  // ];
   // const mobile_left_info = ["", ""];
   return (
     <>
@@ -72,7 +77,7 @@ const Scrolling_hands = (props: any) => {
         {/* this is for the desktop */}
         <div className="w-full sm:hidden  absolute top-0 flex justify-between  h-full">
           <div className=" h-fit justify-center gap-[0.7vw]  flex flex-wrap w-[40.5%]">
-            {left_info.map((e: any, index: any) => {
+            {left_img.map((e: any, index: any) => {
               return (
                 <Image
                   key={index}
@@ -84,7 +89,7 @@ const Scrolling_hands = (props: any) => {
             })}
           </div>
           <div className=" h-fit justify-center gap-[0.7vw]  flex flex-wrap w-[40.5%]">
-            {right_info.map((e: any, index: any) => {
+            {right_img.map((e: any, index: any) => {
               return (
                 <Image
                   key={index}
@@ -99,7 +104,7 @@ const Scrolling_hands = (props: any) => {
         {/* this is for the mobile screen */}
         <div className="w-full hidden  absolute top-0 sm:flex justify-between  h-full">
           <div className=" h-fit justify-center gap-[2.4vw]  flex flex-wrap w-[42.5%] translate-x-[-30%]">
-            {mob_left_info.map((e: any, index: any) => {
+            {mob_left_img.map((e: any, index: any) => {
               return (
                 <Image
                   key={index}
@@ -111,7 +116,7 @@ const Scrolling_hands = (props: any) => {
             })}
           </div>
           <div className=" h-fit justify-center gap-[2.4vw]  flex flex-wrap w-[42.5%] translate-x-[30%]">
-            {mob_right_info.map((e: any, index: any) => {
+            {mob_right_img.map((e: any, index: any) => {
               return (
                 <Image
                   key={index}

@@ -1,12 +1,30 @@
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 import Link from "next/link";
 
-const Template_hero = () => {
+const Template_hero = ({ caption, heading }: any) => {
   return (
     <>
       <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[8vw] gap-[3.5vw]  text-center">
-        <h1 className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] leading-[5.5vw]">
-          Great Architects{" "}
+        <h1 className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] px-[10vw] sm:px-[2vw] leading-[5.5vw]">
+          {heading.map((e: any, index: any) => {
+            return (
+              <span
+                className={`${
+                  e.color == "blue"
+                    ? "bg-gradient-to-r from-[#172392]  to-[#818BE8] inline-block text-transparent bg-clip-text"
+                    : ""
+                }   ${
+                  e.color == "red"
+                    ? "bg-gradient-to-r from-[#F82727] via-[#F82727]   to-[#DE3B23] inline-block text-transparent bg-clip-text"
+                    : ""
+                }  `}
+                key={index}
+              >
+                {e.word}{" "}
+              </span>
+            );
+          })}
+          {/* Great Architects{" "}
           <span className="bg-gradient-to-r from-[#172392]  to-[#818BE8] inline-block text-transparent bg-clip-text">
             Design
           </span>{" "}
@@ -19,14 +37,14 @@ const Template_hero = () => {
           <span className="bg-gradient-to-r from-[#F82727] via-[#F82727]   to-[#DE3B23] inline-block text-transparent bg-clip-text">
             {" "}
             Great Websites
-          </span>
+          </span> */}
         </h1>
 
-        <p className="font_helvetica sm:text-[3.5vw] sm:leading-[4vw] text-[1.8vw] text-white leading-[2vw]">
-          Let us create an online portfolio that reflects the amount{" "}
-          <br className="hidden sm:block" /> of care and{" "}
-          <br className="sm:hidden" />
-          commitment you put into every building.{" "}
+        <p
+          // dangerouslySetInnerHTML={{ __html: caption }}
+          className="font_helvetica px-[25vw] sm:px-[2vw] sm:text-[3.5vw] sm:leading-[4vw] text-[1.8vw] text-white leading-[2vw]"
+        >
+          {caption}
         </p>
 
         <button

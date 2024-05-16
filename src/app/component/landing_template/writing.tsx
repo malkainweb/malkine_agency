@@ -39,7 +39,7 @@ const ContentLine = (props: any) => {
   );
 };
 
-const Writing = () => {
+const Writing = ({ writing_one, writing_two }: any) => {
   const content = [
     "Great",
     "architects",
@@ -177,14 +177,7 @@ const Writing = () => {
         </div> */}
 
         <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
-          <p>
-            {" "}
-            Great architects design buildings that inspire but let{"'"}s be
-            honest, most architect websites leave a lot to be desired. We get
-            it. You{"'"}re passionate about creating spaces that amaze, but
-            wrestling with website builders isn{"'"}t exactly your dream
-            project. That{"'"}s where we come in.
-          </p>
+          <p>{writing_one}</p>
         </div>
 
         <Image
@@ -204,12 +197,7 @@ const Writing = () => {
         </div> */}
 
         <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
-          <p>
-            We{"'"}re a web design firm obsessed with crafting beautiful and
-            functional websites for architects like you. We translate your
-            vision into stunning online portfolios that showcase your work with
-            the same care and commitment you put into every building.
-          </p>
+          <p>{writing_two}</p>
         </div>
 
         {/* the button */}

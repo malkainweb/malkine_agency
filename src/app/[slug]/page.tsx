@@ -7,12 +7,12 @@ async function getProjects(template_title: string) {
     `${process.env.NEXT_PUBLIC_PUBLIC_URL}/api/${template_title}`,
     { cache: "no-store" },
   );
-  console.log("this is working");
+  // console.log("this is working");
   if (!res.ok) {
     notFound();
   }
   const projects = await res.json();
-  console.log(projects.category.pastwork.works);
+  // console.log(projects.category.pastwork.works);
   return projects;
 }
 
@@ -20,7 +20,7 @@ export default async function Home({ params }: { params: { slug: string } }) {
   const projects = await getProjects(params.slug);
   return (
     <>
-      <Landing_template />{" "}
+      <Landing_template data={projects.category} />{" "}
     </>
   );
 }

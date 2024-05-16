@@ -1,5 +1,16 @@
 import { NextRequest, NextResponse } from "next/server";
-import img1 from "../../../../public/landingpage_template/architect_imgaes/left1.webp";
+
+// the is for the assessts of the architext landing page
+import architect_left1 from "../../../../public/landingpage_template/architect_imgaes/left1.webp";
+import architect_left2 from "../../../../public/landingpage_template/architect_imgaes/left2.webp";
+import architect_left3 from "../../../../public/landingpage_template/architect_imgaes/left3.webp";
+import architect_left4 from "../../../../public/landingpage_template/architect_imgaes/left4.webp";
+import architect_right1 from "../../../../public/landingpage_template/architect_imgaes/right1.webp";
+import architect_right2 from "../../../../public/landingpage_template/architect_imgaes/right2.webp";
+import architect_right3 from "../../../../public/landingpage_template/architect_imgaes/right3.webp";
+import architect_right4 from "../../../../public/landingpage_template/architect_imgaes/right4.webp";
+import port1 from "../../../../public/landingpage_template/port1.webp";
+import port2 from "../../../../public/landingpage_template/port2.webp";
 
 export async function GET(_request: NextRequest, { params }: any) {
   const baseUrl = `${process.env.NEXT_PUBLIC_PUBLIC_URL}`; // Update this based on your base URL
@@ -8,12 +19,12 @@ export async function GET(_request: NextRequest, { params }: any) {
     {
       category: "architect",
       hero_text: [
-        { word: "Great" },
-        { word: "Architects" },
-        { word: "Design", color: "blue" },
-        { word: "Great" },
-        { word: "Buildings", color: "blue" },
-        { word: "Not" },
+        { word: "Great " },
+        { word: "Architects " },
+        { word: "Design ", color: "blue" },
+        { word: " Great " },
+        { word: "Buildings ", color: "blue" },
+        { word: " Not " },
         { word: "Great Websites", color: "red" },
       ],
       caption:
@@ -23,51 +34,49 @@ export async function GET(_request: NextRequest, { params }: any) {
       writing_two:
         "We're a web design firm obsessed with crafting beautiful and functional websites for architects like you. We translate your vision into stunning online portfolios that showcase your work with the same care and commitment you put into every building.",
       scroll_left_img: [
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/left1.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/left2.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/left3.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/left4.webp` },
+        { img: architect_left1 },
+        { img: architect_left2 },
+        { img: architect_left3 },
+        { img: architect_left4 },
       ],
       scroll_right_img: [
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/right1.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/right2.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/right3.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/right4.webp` },
+        { img: architect_right1 },
+        { img: architect_right2 },
+        { img: architect_right3 },
+        { img: architect_right4 },
       ],
-      mob_scroll_left_img: [
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/left2.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/left4.webp` },
-      ],
+      mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
       mob_scroll_right_img: [
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/right2.webp` },
-        { img: `${baseUrl}/landingpage_template/architect_imgaes/right4.webp` },
+        { img: architect_right2 },
+        { img: architect_right4 },
       ],
       pastwork: {
         heading: "We Don't Just Talk The Talk We Walk The Walk",
         works: [
           {
-            img: `${baseUrl}/landingpage_template/port1.webp`,
-            text: "Smartsweets - expanding the candy universe with smartsweets.",
-          },
-          {
-            img: `${baseUrl}/landingpage_template/port2.webp`,
+            img: port2,
             text: "Health-ade - we helped health-ade follow their gut",
           },
           {
-            img: `${baseUrl}/landingpage_template/port1.webp`,
+            img: port1,
+            text: "Smartsweets - expanding the candy universe with smartsweets.",
+          },
+
+          {
+            img: port2,
             text: "Nylon - redesigning an iconic magazine for the internet age .",
           },
           {
-            img: `${baseUrl}/landingpage_template/port2.webp`,
-            text: "Nylon - redesigning an iconic magazine for the internet age .",
-          },
-          {
-            img: `${baseUrl}/landingpage_template/port1.webp`,
+            img: port1,
             text: "Maev - the wellness brand for city dogs and their humans.",
           },
           {
-            img: `${baseUrl}/landingpage_template/port2.webp`,
+            img: port2,
             text: "Petfolk - reshaping pet care for today",
+          },
+          {
+            img: port1,
+            text: "Nylon - redesigning an iconic magazine for the internet age .",
           },
         ],
       },

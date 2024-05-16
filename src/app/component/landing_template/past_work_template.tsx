@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 // import Typewriter from "typewriter-effect";
-const Past_work_template = () => {
+const Past_work_template = ({ heading, pastwork }: any) => {
   //   const info_array = ["", "", "", "", "", ""];
 
   const data_array = [
@@ -81,11 +81,11 @@ const Past_work_template = () => {
     <>
       <div className="w-full flex flex-col  pb-[5vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
         {" "}
-        <h3 className="font_helvetica leading-[4.2vw] text-white text-[3.8vw] font-bold sm:text-[6vw] sm:leading-[7vw]  text-center">
-          We Don{"'"}t Just Talk The Talk <br /> We Walk The Walk{" "}
+        <h3 className="font_helvetica leading-[4.2vw] text-white text-[3.8vw] font-bold sm:text-[6vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center">
+          {heading}{" "}
         </h3>
         <div className="w-full flex px-[1vw] sm:gap-[6vw] sm:px-[3vw] justify-center gap-[3vw] flex-wrap ">
-          {data_array.map((e: any, index: any) => {
+          {pastwork.map((e: any, index: any) => {
             return (
               <Link
                 href={"/"}

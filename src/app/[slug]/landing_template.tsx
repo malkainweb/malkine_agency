@@ -13,7 +13,7 @@ import Landing_nav from "../component/landing_template/landing_nav";
 import Past_work_template from "../component/landing_template/past_work_template";
 import Preloader_template from "../component/landing_template/preloader_template";
 
-const Landing_template = () => {
+const Landing_template = ({ data }: any) => {
   const width = globalThis.innerWidth;
 
   const [left, setleft] = useState("200vh");
@@ -49,10 +49,18 @@ const Landing_template = () => {
       <Preloader_template />
       <Landing_nav />
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      <Template_hero />
-      <Scrolling_hands />
-      <Writing />
-      <Past_work_template />
+      <Template_hero caption={data.caption} heading={data.hero_text} />
+      <Scrolling_hands
+        left_img={data.scroll_left_img}
+        right_img={data.scroll_right_img}
+        mob_left_img={data.mob_scroll_left_img}
+        mob_right_img={data.mob_scroll_right_img}
+      />
+      <Writing writing_one={data.writing_one} writing_two={data.writing_two} />
+      <Past_work_template
+        heading={data.pastwork.heading}
+        pastwork={data.pastwork.works}
+      />
       <Calendy />
       <Processes />
       <Footer_hand />
