@@ -22,7 +22,81 @@ export async function GET(_request: NextRequest, { params }: any) {
 
   const data = [
     {
-      category: "architect",
+      category: "architects",
+      title: "Malkain - Crafting Stunning Online Portfolios for Architects",
+      description:
+        "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
+      hero_text: [
+        { word: "Great " },
+        { word: "Architects " },
+        { word: "Design ", color: "blue" },
+        { word: " Great " },
+        { word: "Buildings ", color: "blue" },
+        { word: " Not " },
+        { word: "Great Websites", color: "red" },
+      ],
+      caption:
+        "Let us create an online portfolio that reflects the amount of care and commitment you put into every building.",
+      writing_one:
+        "Great architects design buildings that inspire but let's be honest, most architect websites leave a lot to be desired. We get it. You're passionate about creating spaces that amaze, but wrestling with website builders isn't exactly your dream project. That's where we come in.",
+      writing_two:
+        "We're a web design firm obsessed with crafting beautiful and functional websites for architects like you. We translate your vision into stunning online portfolios that showcase your work with the same care and commitment you put into every building.",
+      scroll_left_img: [
+        { img: architect_left1 },
+        { img: architect_left2 },
+        { img: architect_left3 },
+        { img: architect_left4 },
+      ],
+      scroll_right_img: [
+        { img: architect_right1 },
+        { img: architect_right2 },
+        { img: architect_right3 },
+        { img: architect_right4 },
+      ],
+      mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
+      mob_scroll_right_img: [
+        { img: architect_right2 },
+        { img: architect_right4 },
+      ],
+      pastwork: {
+        heading: "Projects",
+        works: [
+          {
+            img: pastwork1,
+            text: "Mitrex ",
+            link: "https://www.mitrex.com/",
+          },
+          {
+            img: pastwork2,
+            text: "Modscape",
+            link: "https://www.modscape.com.au/",
+          },
+
+          {
+            img: pastwork3,
+            text: "Atella",
+            link: "https://www.atella.ca/",
+          },
+          {
+            img: pastwork4,
+            text: "gow hastings ",
+            link: "https://gowhastings.com/",
+          },
+          {
+            img: pastwork5,
+            text: "Novumc",
+            link: "https://www.novum.com.au/",
+          },
+          {
+            img: pastwork6,
+            text: "Archier",
+            link: "https://archier.com.au/",
+          },
+        ],
+      },
+    },
+    {
+      category: "architecture",
       title: "Malkain - Crafting Stunning Online Portfolios for Architects",
       description:
         "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
