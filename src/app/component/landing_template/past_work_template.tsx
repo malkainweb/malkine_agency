@@ -56,7 +56,7 @@ const Past_work_template = ({ heading, pastwork }: any) => {
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.52 },
     );
 
     itemsRefs.current.forEach((ref: any) => {
