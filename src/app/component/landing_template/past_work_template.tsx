@@ -107,7 +107,7 @@ const Past_work_template = ({ heading, pastwork }: any) => {
                     <Typewriter
                       words={[e.text]}
                       cursorStyle=""
-                      typeSpeed={50}
+                      typeSpeed={70}
                       delaySpeed={1000}
                     />
                   )}
