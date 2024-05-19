@@ -82,6 +82,7 @@ const Scrolling_hands = ({
                 <Image
                   key={index}
                   src={e.img}
+                  // width={}
                   alt="images"
                   className="w-[47%] h-fit"
                 />

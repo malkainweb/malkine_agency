@@ -9,8 +9,13 @@ import architect_right1 from "../../../../public/landingpage_template/architect_
 import architect_right2 from "../../../../public/landingpage_template/architect_imgaes/right2.webp";
 import architect_right3 from "../../../../public/landingpage_template/architect_imgaes/right3.webp";
 import architect_right4 from "../../../../public/landingpage_template/architect_imgaes/right4.webp";
-import port1 from "../../../../public/landingpage_template/port1.webp";
-import port2 from "../../../../public/landingpage_template/port2.webp";
+
+import pastwork1 from "../../../../public/landingpage_template/architect_imgaes/past_work1.webp";
+import pastwork2 from "../../../../public/landingpage_template/architect_imgaes/past_work2.webp";
+import pastwork3 from "../../../../public/landingpage_template/architect_imgaes/past_work3.webp";
+import pastwork4 from "../../../../public/landingpage_template/architect_imgaes/past_work4.webp";
+import pastwork5 from "../../../../public/landingpage_template/architect_imgaes/past_work5.webp";
+import pastwork6 from "../../../../public/landingpage_template/architect_imgaes/past_work6.webp";
 
 export async function GET(_request: NextRequest, { params }: any) {
   const baseUrl = `${process.env.NEXT_PUBLIC_PUBLIC_URL}`; // Update this based on your base URL
@@ -54,32 +59,38 @@ export async function GET(_request: NextRequest, { params }: any) {
         { img: architect_right4 },
       ],
       pastwork: {
-        heading: "We Don't Just Talk The Talk We Walk The Walk",
+        heading: "Projects",
         works: [
           {
-            img: port2,
-            text: "Health-ade - we helped health-ade follow their gut",
+            img: pastwork1,
+            text: "Mitrex ",
+            link: "https://www.mitrex.com/",
           },
           {
-            img: port1,
-            text: "Smartsweets - expanding the candy universe with smartsweets.",
+            img: pastwork2,
+            text: "Modscape",
+            link: "https://www.modscape.com.au/",
           },
 
           {
-            img: port2,
-            text: "Nylon - redesigning an iconic magazine for the internet age .",
+            img: pastwork3,
+            text: "Atella",
+            link: "https://www.atella.ca/",
           },
           {
-            img: port1,
-            text: "Maev - the wellness brand for city dogs and their humans.",
+            img: pastwork4,
+            text: "gow hastings ",
+            link: "https://gowhastings.com/",
           },
           {
-            img: port2,
-            text: "Petfolk - reshaping pet care for today",
+            img: pastwork5,
+            text: "Novumc",
+            link: "https://www.novum.com.au/",
           },
           {
-            img: port1,
-            text: "Nylon - redesigning an iconic magazine for the internet age .",
+            img: pastwork6,
+            text: "Archier",
+            link: "https://archier.com.au/",
           },
         ],
       },
