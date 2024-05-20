@@ -38,11 +38,12 @@ const Calendy = () => {
       <h3 className="font_helvetica text-white text-[5vw] sm:text-[7vw] text-center">
         Let{"'"}s Get Started
       </h3>
-      <div className="Calendy w-full    sm:w-[95%]">
+      <div className="Calendy w-full overflow-hidden  sm:rounded-[5vw]   sm:w-[95%]">
         <InlineWidget
           url="https://calendly.com/emmanuel-malkaindesigns/malkain-health-clone"
           styles={{
             height: "1000px",
+
             width: "100%",
           }}
         />

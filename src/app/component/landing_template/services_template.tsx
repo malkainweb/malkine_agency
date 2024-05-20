@@ -59,7 +59,7 @@ const Services_template = () => {
   return (
     <>
       {/* this is for mobile */}
-      <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b my-[4vw] items-center h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[15vw]  sm:pb-[10vw]">
+      <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b sm:my-[15vw] my-[4vw] items-center h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[15vw]  sm:pb-[10vw]">
         <h2
           className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw] font_helvetica text-white text-[3.2vw] sm:mb-0  font-bold text-center  `}
         >
@@ -85,10 +85,10 @@ const Services_template = () => {
                     : index == 0
                     ? "sm:rotate-[6deg]"
                     : ""
-                } sm:left-[50%] sm:top-0 sm:absolute sm:translate-x-[-50%]   sm:h-[104vw] flex flex-col justify-between  ${
+                } sm:left-[50%] sm:top-0 sm:absolute sm:translate-x-[-50%]   sm:h-[104vw] flex flex-col justify-between shadow-2xl shadow-[#ffffff3e]   ${
                   active_index < index
                     ? "sm:opacity-[0%] sm:translate-x-[100%]"
-                    : "sm:opacity-[100%] shadow-2xl shadow-[#ffffff3e] "
+                    : "sm:opacity-[100%] "
                 }  `}
                 style={{
                   // opacity: active_index < index ? 0 : 1,
@@ -97,7 +97,7 @@ const Services_template = () => {
               >
                 {/* the image */}
                 <Image src={e.img} alt={e.title} className="w-full h-fit" />
-                <div className="w-full sm:h-[50vw]    text-[black] items-center rounded-[1.8vw] h-[14.5vw] g  sm:rounded-[6vw] flex flex-col justify-center  bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0">
+                <div className="w-full sm:h-[53vw]    text-[black] items-center rounded-[1.8vw] h-[14.5vw] g  sm:rounded-[6vw] flex flex-col justify-center  bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0">
                   <h4
                     className={` font-bold  text-center  text-[1.4vw] sm:text-[5vw]`}
                   >

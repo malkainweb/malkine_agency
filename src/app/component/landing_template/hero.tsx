@@ -15,7 +15,7 @@ const Template_hero = ({ caption, heading }: any) => {
                     : ""
                 }   ${
                   e.color == "red"
-                    ? "bg-gradient-to-r from-[#F82727] via-[#F82727]   to-[#DE3B23] inline-block text-transparent bg-clip-text"
+                    ? "bg-gradient-to-r from-[#C9C0AF]   to-[#EF5731] inline-block text-transparent bg-clip-text"
                     : ""
                 }  `}
                 key={index}
