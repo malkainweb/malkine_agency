@@ -40,7 +40,7 @@ const Calendy = () => {
       </h3>
       <div className="Calendy w-full    sm:w-[95%]">
         <InlineWidget
-          url="https://calendly.com/emmanuel-malkaindesigns/malkainhealth"
+          url="https://calendly.com/emmanuel-malkaindesigns/malkain-health-clone"
           styles={{
             height: "1000px",
             width: "100%",

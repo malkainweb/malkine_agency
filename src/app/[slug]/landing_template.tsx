@@ -12,6 +12,7 @@ import Template_hero from "../component/landing_template/hero";
 import Landing_nav from "../component/landing_template/landing_nav";
 import Past_work_template from "../component/landing_template/past_work_template";
 import Preloader_template from "../component/landing_template/preloader_template";
+import Services_template from "../component/landing_template/services_template";
 
 const Landing_template = ({ data }: any) => {
   const width = globalThis.innerWidth;
@@ -61,6 +62,7 @@ const Landing_template = ({ data }: any) => {
         heading={data.pastwork.heading}
         pastwork={data.pastwork.works}
       />
+      <Services_template />
       <Calendy />
       <Processes />
       <Footer_hand />

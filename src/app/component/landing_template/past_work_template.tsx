@@ -102,7 +102,7 @@ const Past_work_template = ({ heading, pastwork }: any) => {
                     className="w-full h-fit group-hover:scale-[1.1] duration-[0.6s] transition"
                   />
                 </div>
-                <p className="text-white uppercase sm:text-[3.5vw]  sm:leading-[4.5vw] text-[1.1vw] leading-[1.3vw] font_helvetica">
+                <p className="text-white uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] font_helvetica">
                   {visibleIndexes.includes(index) && (
                     <Typewriter
                       words={[e.text]}
