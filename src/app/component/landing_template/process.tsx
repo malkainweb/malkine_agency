@@ -75,7 +75,7 @@ const Processes = () => {
           Our Process
         </h2>
         {/* the bottom process and the mapping function */}
-        <div className=" w-[70vw] sm:w-[90vw]  flex flex-col items-center justify-between  gap-[8vw] sm:gap-[3vw] relative">
+        <div className=" w-[70vw] sm:w-[90vw]  flex flex-col items-center justify-between  gap-[8vw] sm:gap-[2.3vw] relative">
           <Image
             src={line}
             alt="line"
@@ -88,7 +88,7 @@ const Processes = () => {
                   <Image
                     src={mob_line}
                     alt="line"
-                    className="hidden sm:block w-[2.2vw] h-fit"
+                    className="hidden sm:block w-[1.6vw] h-fit"
                   />
                 )}
 
