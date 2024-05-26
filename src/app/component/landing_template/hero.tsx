@@ -10,11 +10,11 @@ const Template_hero = ({ caption, heading }: any) => {
             return (
               <span
                 className={`${
-                  e.color == "blue"
+                  e.color == "red"
                     ? "bg-gradient-to-r from-[#172392]  to-[#818BE8] inline-block text-transparent bg-clip-text"
                     : ""
                 }   ${
-                  e.color == "red"
+                  e.color == "example"
                     ? "bg-gradient-to-r from-[#C9C0AF]   to-[#EF5731] inline-block text-transparent bg-clip-text"
                     : ""
                 }  `}

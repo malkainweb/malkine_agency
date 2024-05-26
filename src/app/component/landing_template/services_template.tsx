@@ -18,7 +18,7 @@ import { useEffect, useRef, useState } from "react";
 // } from "../general_component/fonts";
 
 const Services_template = () => {
-  const [active_index, setactive_index] = useState<any>(2);
+  const [active_index, setactive_index] = useState<any>(0);
   const [size, setsize] = useState<any>(null);
 
   const width = globalThis.innerWidth;
@@ -77,22 +77,23 @@ const Services_template = () => {
             return (
               <div
                 key={index}
-                className={`sm:w-[72vw]  font_helvetica relative sm:rounded-[6vw]  rounded-[2.5vw] overflow-hidden w-full h-[33vw] ${
+                className={`sm:w-[72vw] sm:z-[40]  font_helvetica relative sm:rounded-[6vw]  rounded-[2.5vw] overflow-hidden w-full h-[33vw] ${
                   active_index == index
                     ? `sm:rotate-[0deg]`
                     : index == 1
                     ? `sm:rotate-[-6deg]`
-                    : index == 0
+                    : index == 2
                     ? "sm:rotate-[6deg]"
                     : ""
-                } sm:left-[50%] sm:top-0 sm:absolute sm:translate-x-[-50%]   sm:h-[104vw] flex flex-col justify-between shadow-2xl shadow-[#ffffff3e]   ${
-                  active_index < index
+                } sm:left-[50%] sm:top-0 sm:absolute sm:translate-x-[-50%]   sm:h-[104vw] flex flex-col justify-between shadow-2xl shadow-[#ffffff21]   ${
+                  active_index > index
                     ? "sm:opacity-[0%] sm:translate-x-[100%]"
                     : "sm:opacity-[100%] "
                 }  `}
                 style={{
                   // opacity: active_index < index ? 0 : 1,
                   transition: "0.8s ease",
+                  zIndex: items.length - index + 1,
                 }}
               >
                 {/* the image */}
@@ -121,8 +122,8 @@ const Services_template = () => {
           <Image
             src={prev_works}
             onClick={() => {
-              if (active_index < items.length - 1) {
-                setactive_index(active_index + 1);
+              if (active_index > 0) {
+                setactive_index(active_index - 1);
               }
             }}
             alt="prev "
@@ -131,8 +132,8 @@ const Services_template = () => {
           <Image
             src={next_works}
             onClick={() => {
-              if (active_index > 0) {
-                setactive_index(active_index - 1);
+              if (active_index < items.length - 1) {
+                setactive_index(active_index + 1);
               }
             }}
             alt="next "

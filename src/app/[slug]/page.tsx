@@ -5,7 +5,7 @@ import Landing_template from "./landing_template";
 async function getProjects(template_title: string) {
   const res = await fetch(
     `${process.env.NEXT_PUBLIC_PUBLIC_URL}/api/${template_title}`,
-    // { cache: "no-store" },
+    { cache: "no-store" },
   );
   // console.log("this is working");
   if (!res.ok) {
