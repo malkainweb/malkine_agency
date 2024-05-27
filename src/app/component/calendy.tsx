@@ -29,7 +29,7 @@ const Calendy = () => {
         event_label: "Calendy booking successfull",
       });
 
-      console.log("Booking successful");
+      console.log("Booking.. successful");
     },
   });
   return (
