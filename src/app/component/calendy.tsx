@@ -16,7 +16,7 @@ const Calendy = () => {
         event_category: "Calendy",
         event_label: "Calendy Date and time selected",
       });
-      console.log("done done done");
+      console.log("Date and time selected");
     },
     onEventTypeViewed: () => console.log("onEventTypeViewed"),
     onEventScheduled: (e) => {
@@ -28,6 +28,8 @@ const Calendy = () => {
         event_category: "Calendy",
         event_label: "Calendy booking successfull",
       });
+
+      console.log("Booking successful");
     },
   });
   return (
