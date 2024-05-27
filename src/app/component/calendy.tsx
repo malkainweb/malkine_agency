@@ -9,7 +9,7 @@ const Calendy = () => {
     onDateAndTimeSelected: () => {
       // console.log("onDateAndTimeSelected");
       // Track a "Lead" event with the Facebook Pixel
-      window.fbq("trackCustom", "Calendy", {
+      window.fbq("track", "Calendy", {
         value: "Calendy Date and time selected", // the value of the lead (optional)
       });
       window.gtag("event", "Calendy ", {
@@ -21,7 +21,7 @@ const Calendy = () => {
     onEventTypeViewed: () => console.log("onEventTypeViewed"),
     onEventScheduled: (e) => {
       // console.log(e.data.payload);
-      window.fbq("trackCustom", "Calendy success", {
+      window.fbq("track", "Calendy success", {
         value: "Calendy booking successfull", // the value of the lead (optional)
       });
       window.gtag("event", "Calendy success", {
