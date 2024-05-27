@@ -37,7 +37,7 @@ export default function RootLayout({
 
       {/* bing tracking  */}
 
-        <Script
+      <Script
         id="Bing clarity"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -49,8 +49,6 @@ export default function RootLayout({
         })(window, document, "clarity", "script", '${process.env.NEXT_PUBLIC_BING_CLARITY_ID}');`,
         }}
       />
-
-
 
       <Script
         id="fb-pixel"
