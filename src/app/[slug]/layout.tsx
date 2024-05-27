@@ -36,7 +36,8 @@ export default function RootLayout({
       />
 
       {/* bing tracking  */}
-      <Script
+
+        <Script
         id="Bing clarity"
         strategy="afterInteractive"
         dangerouslySetInnerHTML={{
@@ -49,7 +50,8 @@ export default function RootLayout({
         }}
       />
 
-      {/* this is for facebook tracking */}
+
+
       <Script
         id="fb-pixel"
         strategy="afterInteractive"
@@ -63,11 +65,12 @@ export default function RootLayout({
             t.src=v;s=b.getElementsByTagName(e)[0];
             s.parentNode.insertBefore(t,s)}(window, document,'script',
             'https://connect.facebook.net/en_US/fbevents.js');
-            fbq('init', ${process.env.NEXT_PUBLIC_META_PIXED_ID});
+            fbq('init', '744969054307651');
              fbq('track', 'PageView');
           `,
         }}
       />
+
       <body style={{ backgroundColor: "#0E0E0E" }} className={inter.className}>
         {children}
       </body>
