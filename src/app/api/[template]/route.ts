@@ -26,9 +26,9 @@ import pastwork5 from "../../../../public/landingpage_template/architect_imgaes/
 import pastwork6 from "../../../../public/landingpage_template/architect_imgaes/past_work6.webp";
 
 // EXTRA WORKS
-import extra_pastwork1 from "../../../../public/landingpage_template/architect_imgaes/past_work1.webp";
-import extra_pastwork2 from "../../../../public/landingpage_template/architect_imgaes/past_work2.webp";
-import extra_pastwork3 from "../../../../public/landingpage_template/architect_imgaes/past_work3.webp";
+import extra_pastwork1 from "../../../../public/landingpage_template/academy_pastworks_images/img1.webp";
+import extra_pastwork2 from "../../../../public/landingpage_template/academy_pastworks_images/img2.webp";
+import extra_pastwork3 from "../../../../public/landingpage_template/academy_pastworks_images/img3.webp";
 
 // SERVICES IMAGE
 import architect_services_img_1 from "../../../../public/landingpage_template/services/1.webp";
