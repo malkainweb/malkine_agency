@@ -39,7 +39,7 @@ const ContentLine = (props: any) => {
   );
 };
 
-const Writing = ({ writing_one, writing_two }: any) => {
+const Writing = ({ writing_one, writing_two, img }: any) => {
   const content = [
     "Great",
     "architects",
@@ -181,7 +181,7 @@ const Writing = ({ writing_one, writing_two }: any) => {
         </div>
 
         <Image
-          src={text_img}
+          src={img}
           alt="about image"
           className=" w-[70vw] h-fit sm:w-[90vw] "
         />

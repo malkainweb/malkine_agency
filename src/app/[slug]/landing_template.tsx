@@ -50,19 +50,39 @@ const Landing_template = ({ data }: any) => {
       <Preloader_template />
       <Landing_nav />
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      <Template_hero caption={data.caption} heading={data.hero_text} />
+      <Template_hero
+        caption={data.caption}
+        heading={data.hero_text}
+        desktop_size={data.desktop_size}
+        size={data.size}
+        mobile_size={data.mobile_size}
+      />
       <Scrolling_hands
         left_img={data.scroll_left_img}
         right_img={data.scroll_right_img}
         mob_left_img={data.mob_scroll_left_img}
         mob_right_img={data.mob_scroll_right_img}
       />
-      <Writing writing_one={data.writing_one} writing_two={data.writing_two} />
+      <Writing
+        writing_one={data.writing_one}
+        img={data.about_image}
+        writing_two={data.writing_two}
+      />
+      {data.category && (
+        <Past_work_template
+          heading={data.extra_pastwork.heading}
+          pastwork={data.extra_pastwork.works}
+        />
+      )}
       <Past_work_template
         heading={data.pastwork.heading}
         pastwork={data.pastwork.works}
       />
-      <Services_template />
+
+      <Services_template
+        services={data.services}
+        color={data.service_text_color}
+      />
       <Calendy />
       <Processes />
       <Footer_hand />

@@ -1,21 +1,42 @@
+"use client";
+
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
-const Template_hero = ({ caption, heading }: any) => {
+const Template_hero = ({
+  caption,
+  heading,
+  size,
+  mobile_size,
+  desktop_size,
+}: any) => {
+  const width = globalThis.innerWidth;
+  const [compt_width, setcompt_width] = useState(0);
+  useEffect(() => {
+    setcompt_width(width);
+  }, [width]);
   return (
     <>
       <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[8vw] gap-[3.5vw]  text-center">
-        <h1 className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] px-[10vw] sm:px-[2vw] leading-[5.5vw]">
+        <h1
+          style={{ fontSize: size && width < 650 ? mobile_size : desktop_size }}
+          className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] px-[7vw]  sm:px-[2vw] leading-[5.5vw]"
+        >
           {heading.map((e: any, index: any) => {
             return (
               <span
                 className={`${
-                  e.color == "red"
-                    ? "bg-gradient-to-r from-[#172392]  to-[#818BE8] inline-block text-transparent bg-clip-text"
+                  e.color == "lightgreen"
+                    ? "bg-gradient-to-r from-[#BCCC7A] via-[#BCCC7A]  to-[#C6B7B7] inline-block text-transparent bg-clip-text"
                     : ""
                 }   ${
-                  e.color == "example"
-                    ? "bg-gradient-to-r from-[#C9C0AF]   to-[#EF5731] inline-block text-transparent bg-clip-text"
+                  e.color == "lightred"
+                    ? "bg-gradient-to-r from-[#F5848B] via-[#F5848B]  to-[#C6B7B7] inline-block text-transparent bg-clip-text"
+                    : ""
+                } ${
+                  e.color == "blue"
+                    ? "bg-gradient-to-r from-[#172392]  to-[#818BE8] inline-block text-transparent bg-clip-text"
                     : ""
                 }  `}
                 key={index}

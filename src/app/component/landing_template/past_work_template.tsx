@@ -84,38 +84,40 @@ const Past_work_template = ({ heading, pastwork }: any) => {
         <h3 className="font_helvetica leading-[4.2vw] text-white text-[3.8vw] font-bold sm:text-[6vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center">
           {heading}{" "}
         </h3>
-        <div className="w-full flex  px-[1vw] sm:gap-[6vw] sm:px-[3vw] justify-center gap-[3vw] flex-wrap ">
-          {pastwork.map((e: any, index: any) => {
-            return (
-              <Link
-                href={e.link}
-                target="_blank"
-                data-index={index}
-                key={index}
-                ref={(ref) => (itemsRefs.current[index] = ref)}
-                className="w-[45%] group mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
-              >
-                <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden sm:rounded-[4.7vw]  rounded-[2.5vw]">
-                  <Image
-                    src={e.img}
-                    alt="img"
-                    className="w-full h-fit group-hover:scale-[1.1] duration-[0.6s] transition"
-                  />
-                </div>
-                <p className="text-white uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] font_helvetica">
-                  {visibleIndexes.includes(index) && (
-                    <Typewriter
-                      words={[e.text]}
-                      cursorStyle=""
-                      typeSpeed={70}
-                      delaySpeed={1000}
+        <div className="w-full flex  px-[3vw]  sm:gap-[6vw] sm:px-[3vw] justify-center gap-[3vw] flex-wrap ">
+          <div className="w-full sm:w-full flex   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap ">
+            {pastwork.map((e: any, index: any) => {
+              return (
+                <Link
+                  href={e.link}
+                  target="_blank"
+                  data-index={index}
+                  key={index}
+                  ref={(ref) => (itemsRefs.current[index] = ref)}
+                  className="w-[48%] group mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0  transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
+                >
+                  <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden sm:rounded-[4.7vw]  rounded-[2.5vw]">
+                    <Image
+                      src={e.img}
+                      alt="img"
+                      className="w-full h-fit group-hover:scale-[1] scale-[1.1] duration-[0.6s] transition"
                     />
-                  )}
-                </p>
-                {/* <p className="text-white"></p> */}
-              </Link>
-            );
-          })}
+                  </div>
+                  <p className="text-white uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] font_helvetica">
+                    {visibleIndexes.includes(index) && (
+                      <Typewriter
+                        words={[e.text]}
+                        cursorStyle=""
+                        typeSpeed={70}
+                        delaySpeed={1000}
+                      />
+                    )}
+                  </p>
+                  {/* <p className="text-white"></p> */}
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </div>
     </>

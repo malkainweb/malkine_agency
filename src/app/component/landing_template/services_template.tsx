@@ -17,7 +17,7 @@ import { useEffect, useRef, useState } from "react";
 //   CabinetGrotesk_medium,
 // } from "../general_component/fonts";
 
-const Services_template = () => {
+const Services_template = ({ services, color }: any) => {
   const [active_index, setactive_index] = useState<any>(0);
   const [size, setsize] = useState<any>(null);
 
@@ -73,7 +73,7 @@ const Services_template = () => {
         </p>
         {/* now the main functions */}
         <div className="w-full sm:relative flex sm:block gap-[3vw] px-[11vw]   h-auto sm:top-0  sm:h-[105vw] ">
-          {items.map((e: any, index: any) => {
+          {services.map((e: any, index: any) => {
             return (
               <div
                 key={index}
@@ -98,9 +98,12 @@ const Services_template = () => {
               >
                 {/* the image */}
                 <Image src={e.img} alt={e.title} className="w-full h-fit" />
-                <div className="w-full sm:h-[53vw]    text-[black] items-center rounded-[1.8vw] h-[14.5vw] g  sm:rounded-[6vw] flex flex-col justify-center  bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0">
+                <div
+                  className="w-full sm:h-[53vw]    text-[black] items-center rounded-[1.8vw] h-[14.5vw] g  sm:rounded-[6vw] flex flex-col justify-center  bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0"
+                  style={{ color: color ? "white" : "" }}
+                >
                   <h4
-                    className={` font-bold  text-center  text-[1.4vw] sm:text-[5vw]`}
+                    className={` font-bold px-[3vw] text-center leading-[1.4vw]  text-[1.4vw] sm:text-[5vw]`}
                   >
                     {e.heading}
                   </h4>
