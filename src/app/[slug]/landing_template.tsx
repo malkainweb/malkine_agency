@@ -60,6 +60,7 @@ const Landing_template = ({ data }: any) => {
       <Scrolling_hands
         left_img={data.scroll_left_img}
         right_img={data.scroll_right_img}
+        main_img={data.main_img}
         mob_left_img={data.mob_scroll_left_img}
         mob_right_img={data.mob_scroll_right_img}
       />
@@ -84,7 +85,7 @@ const Landing_template = ({ data }: any) => {
         color={data.service_text_color}
       />
       <Calendy />
-      <Processes />
+      <Processes process={data.process} />
       <Footer_hand />
       <Footer landing={true} />
       {/* <div className="h-[100vw]"></div> */}

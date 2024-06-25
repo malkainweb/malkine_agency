@@ -29,6 +29,7 @@ const Scrolling_hands = ({
   right_img,
   mob_left_img,
   mob_right_img,
+  main_img,
 }: any) => {
   // const left_info = [
   //   { img: left1 },
@@ -139,7 +140,7 @@ const Scrolling_hands = ({
         >
           <Image
             priority
-            src={hand_middle}
+            src={main_img}
             alt="work image"
             className=" w-[45vw] sm:w-[100vw] h-fit  transition delay-[2s]"
           />

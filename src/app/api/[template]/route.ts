@@ -41,6 +41,18 @@ import academy_services_img_3 from "../../../../public/landingpage_template/acad
 // ABOUT IMAGES
 import architect_about_image from "../../../../public/landingpage_template/architect_imgaes/what_we_do.webp";
 
+// THE MAIN IMAGE IN SCROLLING
+import architect_hand_middle from "../../../../public/home/hand_middle.webp";
+import academic_hand_middle from "../../../../public/landingpage_template/academic_hand_middle.png";
+
+// PROCESS IMAGES
+import academy_process_1 from "../../../../public/landingpage_template/academy_process/example1.webp";
+import academy_process_2 from "../../../../public/landingpage_template/academy_process/example2.webp";
+import academy_process_3 from "../../../../public/landingpage_template/academy_process/example3.webp";
+
+import architect_one from "../../../../public/landingpage_template/example1.webp";
+import architect_two from "../../../../public/landingpage_template/example2.webp";
+import architect_three from "../../../../public/landingpage_template/example3.webp";
 import academy_about_images from "../../../../public/landingpage_template/academy_services_images/what_we_do.webp";
 export async function GET(_request: NextRequest, { params }: any) {
   const baseUrl = `${process.env.NEXT_PUBLIC_PUBLIC_URL}`; // Update this based on your base URL
@@ -64,7 +76,7 @@ export async function GET(_request: NextRequest, { params }: any) {
         { word: " Scholarly Engagement ", color: "lightred" },
       ],
       size: true,
-      mobile_size: "4vw",
+      mobile_size: "8vw",
       desktop_size: "4vw",
       caption:
         "Let us create an online website that reflects the amount of care and commitment you put into student and research. ",
@@ -85,11 +97,9 @@ export async function GET(_request: NextRequest, { params }: any) {
         { img: academy_right3 },
         { img: academy_right4 },
       ],
-      mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
-      mob_scroll_right_img: [
-        { img: architect_right2 },
-        { img: architect_right4 },
-      ],
+      main_img: academic_hand_middle,
+      mob_scroll_left_img: [{ img: academy_left2 }, { img: academy_left4 }],
+      mob_scroll_right_img: [{ img: academy_right2 }, { img: academy_right4 }],
       extra_pastwork: {
         heading: "Past Work - Personal Websites",
         works: [
@@ -170,6 +180,50 @@ export async function GET(_request: NextRequest, { params }: any) {
           deg: 10,
         },
       ],
+      process: [
+        {
+          step_text: "STEP 01: GET STARTED",
+          heading: "Onboarding",
+          top: "1vw",
+          body: "After conducting a compressive assessment to understand project requirement, a tailored on-boarding plan would be created to obtain relevant information poignant to the successful completion of the project.",
+          img: academy_process_1,
+          //   reverse: true,
+        },
+        {
+          step_text: "STEP 02: DESIGN",
+          heading: "Designing",
+          top: "2vw",
+
+          body: "Here we'll design wireframes, lo-fi and hi-fi user interface emphasizing intuitive navigation and compliance with industry regulations. Collaborating closely with all stakeholders involved, ensures that the final UI design prioritizes usability, accessibility, and a seamless user experience.",
+          img: academy_process_2,
+          reverse: true,
+        },
+        {
+          step_text: "STEP 03: PROTOTYPING",
+          heading: "Prototyping",
+          top: "1vw",
+
+          body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+          center: true,
+        },
+        {
+          step_text: "STEP 04: DEVELOPMENT",
+          heading: "Developing",
+          top: "vw",
+
+          body: "While implementing modular and scalable development stacks, we collaborate to build out backend functionality of the desired outcome and implement front end engineering design structures while maintaining agile development methodology and prioritizing platform security.",
+          img: academy_process_3,
+          //   reverse: true,
+        },
+        {
+          step_text: "STEP 05: LONG TERM",
+          heading: "Maintenance",
+
+          body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+          //   img: four,
+          center: true,
+        },
+      ],
     },
     {
       category: "architects",
@@ -205,6 +259,8 @@ export async function GET(_request: NextRequest, { params }: any) {
         { img: architect_right3 },
         { img: architect_right4 },
       ],
+      main_img: architect_hand_middle,
+
       mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
       mob_scroll_right_img: [
         { img: architect_right2 },
@@ -266,6 +322,50 @@ export async function GET(_request: NextRequest, { params }: any) {
           body: "From seamlessly intuitive client management systems to the creation of secure, highly scalable mobile applications, our commitment is to provide unparalleled solutions catering to the diverse needs of both internal and external client relations tools to enhance growth and scale systemically. ",
           img: architect_services_img_3,
           deg: 10,
+        },
+      ],
+      process: [
+        {
+          step_text: "STEP 01: GET STARTED",
+          heading: "Onboarding",
+          top: "1vw",
+          body: "After conducting a compressive assessment to understand project requirement, a tailored on-boarding plan would be created to obtain relevant information poignant to the successful completion of the project.",
+          img: architect_one,
+          //   reverse: true,
+        },
+        {
+          step_text: "STEP 02: DESIGN",
+          heading: "Designing",
+          top: "2vw",
+
+          body: "Here we'll design wireframes, lo-fi and hi-fi user interface emphasizing intuitive navigation and compliance with industry regulations. Collaborating closely with all stakeholders involved, ensures that the final UI design prioritizes usability, accessibility, and a seamless user experience.",
+          img: architect_two,
+          reverse: true,
+        },
+        {
+          step_text: "STEP 03: PROTOTYPING",
+          heading: "Prototyping",
+          top: "1vw",
+
+          body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+          center: true,
+        },
+        {
+          step_text: "STEP 04: DEVELOPMENT",
+          heading: "Developing",
+          top: "vw",
+
+          body: "While implementing modular and scalable development stacks, we collaborate to build out backend functionality of the desired outcome and implement front end engineering design structures while maintaining agile development methodology and prioritizing platform security.",
+          img: architect_three,
+          //   reverse: true,
+        },
+        {
+          step_text: "STEP 05: LONG TERM",
+          heading: "Maintenance",
+
+          body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+          //   img: four,
+          center: true,
         },
       ],
     },

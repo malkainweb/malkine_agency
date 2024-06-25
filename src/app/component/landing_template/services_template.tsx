@@ -103,7 +103,7 @@ const Services_template = ({ services, color }: any) => {
                   style={{ color: color ? "white" : "" }}
                 >
                   <h4
-                    className={` font-bold px-[3vw] text-center leading-[1.4vw]  text-[1.4vw] sm:text-[5vw]`}
+                    className={` font-bold px-[3vw] text-center sm:leading-[6vw] leading-[1.4vw]  text-[1.4vw] sm:text-[5vw]`}
                   >
                     {e.heading}
                   </h4>

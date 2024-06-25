@@ -14,7 +14,7 @@ import External_btn from "@/app/utils/external_btn";
 import { useEffect, useState } from "react";
 // import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 
-const Processes = () => {
+const Processes = ({ process }: any) => {
   const width = globalThis.innerWidth;
 
   const [calc_width, setcalc_width] = useState(1000);
@@ -81,7 +81,7 @@ const Processes = () => {
             alt="line"
             className="w-fit  h-full sm:hidden absolute left-[50%] translate-x-[-50%] "
           />
-          {items.map((e: any, index: any) => {
+          {process.map((e: any, index: any) => {
             return (
               <>
                 {index != 0 && (
