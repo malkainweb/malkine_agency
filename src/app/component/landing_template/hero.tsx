@@ -20,7 +20,9 @@ const Template_hero = ({
     <>
       <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[8vw] gap-[3.5vw]  text-center">
         <h1
-          style={{ fontSize: size && width < 650 ? mobile_size : desktop_size }}
+          style={{
+            fontSize: size && compt_width < 650 ? mobile_size : desktop_size,
+          }}
           className="font_helvetica text-white text-[5vw] sm:leading-[9vw] sm:text-[8vw] px-[7vw]  sm:px-[2vw] leading-[5.5vw]"
         >
           {heading.map((e: any, index: any) => {
