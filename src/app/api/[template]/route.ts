@@ -30,6 +30,11 @@ import extra_pastwork1 from "../../../../public/landingpage_template/academy_pas
 import extra_pastwork2 from "../../../../public/landingpage_template/academy_pastworks_images/img2.webp";
 import extra_pastwork3 from "../../../../public/landingpage_template/academy_pastworks_images/img3.webp";
 
+import academy_pastwork6 from "../../../../public/landingpage_template/academy_pastworks_images/past_work6.webp";
+import academy_pastwork5 from "../../../../public/landingpage_template/academy_pastworks_images/past_work5.webp";
+import academy_pastwork4 from "../../../../public/landingpage_template/academy_pastworks_images/past_work4.webp";
+import academy_pastwork2 from "../../../../public/landingpage_template/academy_pastworks_images/past_work2.webp";
+import academy_pastwork1 from "../../../../public/landingpage_template/academy_pastworks_images/past_work1.webp";
 // SERVICES IMAGE
 import architect_services_img_1 from "../../../../public/landingpage_template/services/1.webp";
 import architect_services_img_2 from "../../../../public/landingpage_template/services/2.webp";
@@ -105,19 +110,19 @@ export async function GET(_request: NextRequest, { params }: any) {
         works: [
           {
             img: extra_pastwork1,
-            text: "Modamu Village- Childcare Services. ",
-            link: "https://www.mitrex.com/",
+            text: "Gus Cooney ",
+            link: "https://guscooney.com",
           },
           {
             img: extra_pastwork2,
-            text: "Modamu Village- Childcare Services.",
-            link: "https://www.modscape.com.au/",
+            text: "Echo and Nate",
+            link: "https://echoandnate.com",
           },
 
           {
             img: extra_pastwork3,
-            text: "Modamu Village- Childcare Services.",
-            link: "https://www.atella.ca/",
+            text: "Hovn Studios",
+            link: "https://hovnstudios.com",
           },
         ],
       },
@@ -125,35 +130,40 @@ export async function GET(_request: NextRequest, { params }: any) {
         heading: "Past Work - Other Sectors",
         works: [
           {
-            img: pastwork1,
-            text: "Mitrex ",
-            link: "https://www.mitrex.com/",
+            img: academy_pastwork1,
+            text: "Q Department ",
+            link: "https://www.qdepartment.com/",
+            video: true,
+            video_link: "/showcase/q.mp4",
+            scale: true,
           },
           {
-            img: pastwork2,
-            text: "Modscape",
-            link: "https://www.modscape.com.au/",
+            img: academy_pastwork2,
+            text: "Spoiled Child",
+            link: "https://spoiledchild.com/",
+            video_link: "/showcase/s.mp4",
+            video: true,
           },
 
           {
             img: pastwork3,
-            text: "Atella",
+            text: "Atella Studios",
             link: "https://www.atella.ca/",
           },
           {
-            img: pastwork4,
-            text: "gow hastings ",
-            link: "https://gowhastings.com/",
+            img: academy_pastwork4,
+            text: "Harc ",
+            link: "https://harc.casa/",
           },
           {
-            img: pastwork5,
-            text: "Novumc",
-            link: "https://www.novum.com.au/",
+            img: academy_pastwork5,
+            text: "Good Juju",
+            link: "https://heygoodjuju.com/",
           },
           {
-            img: pastwork6,
-            text: "Archier",
-            link: "https://archier.com.au/",
+            img: academy_pastwork6,
+            text: "Atella",
+            link: "https://www.atella.ca/",
           },
         ],
       },

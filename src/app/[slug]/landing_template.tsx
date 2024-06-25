@@ -69,6 +69,7 @@ const Landing_template = ({ data }: any) => {
         img={data.about_image}
         writing_two={data.writing_two}
       />
+      <Calendy />
       {data.category == "academia" && (
         <Past_work_template
           heading={data.extra_pastwork.heading}
@@ -84,7 +85,7 @@ const Landing_template = ({ data }: any) => {
         services={data.services}
         color={data.service_text_color}
       />
-      <Calendy />
+
       <Processes process={data.process} />
       <Footer_hand />
       <Footer landing={true} />
