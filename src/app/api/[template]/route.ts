@@ -87,7 +87,7 @@ export async function GET(_request: NextRequest, { params }: any) {
         "Let us create an online website that reflects the amount of care and commitment you put into student and research. ",
       writing_one:
         "Academic minds develop research that shapes our world, but let's face it, most professor websites leave a lot to be desired. We get you. You're passionate about groundbreaking ideas, but wrestling with website builders isn't exactly your forte. That's where we come in. ",
-      about_image: academy_about_images,
+      about_image: architect_about_image,
       writing_two:
         "We're a web design firm obsessed with crafting beautiful and functional websites for professors like you. We translate your vision into stunning online portfolios that showcase your work with the same care and commitment you put into every paper.",
       scroll_left_img: [
@@ -148,7 +148,7 @@ export async function GET(_request: NextRequest, { params }: any) {
           {
             img: pastwork3,
             text: "Atella Studios",
-            link: "https://www.atella.ca/",
+            link: "https://www.atellastudios.com/",
           },
           {
             img: academy_pastwork4,
