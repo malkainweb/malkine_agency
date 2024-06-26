@@ -99,7 +99,7 @@ const Services_template = ({ services, color }: any) => {
                 {/* the image */}
                 <Image src={e.img} alt={e.title} className="w-full h-fit" />
                 <div
-                  className="w-full sm:h-[53vw]    text-[black] items-center rounded-[1.8vw] h-[14.5vw] g  sm:rounded-[6vw] flex flex-col justify-center  bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0"
+                  className="w-full sm:h-[53vw]     text-[black] items-center rounded-[1.8vw] h-[14.5vw] g  sm:rounded-[6vw] flex flex-col justify-start pt-[1vw] sm:pt-0 sm:justify-center bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0"
                   style={{ color: color ? "white" : "" }}
                 >
                   <h4

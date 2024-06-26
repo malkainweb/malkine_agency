@@ -17,6 +17,14 @@ import academy_right1 from "../../../../public/landingpage_template/academia_ima
 import academy_right2 from "../../../../public/landingpage_template/academia_images/right2.webp";
 import academy_right3 from "../../../../public/landingpage_template/academia_images/right3.webp";
 import academy_right4 from "../../../../public/landingpage_template/academia_images/right4.webp";
+import practices_left_1 from "../../../../public/landingpage_template/practice_images/left1.webp";
+import practices_left_2 from "../../../../public/landingpage_template/practice_images/left2.webp";
+import practices_left_3 from "../../../../public/landingpage_template/practice_images/left3.webp";
+import practices_left_4 from "../../../../public/landingpage_template/practice_images/left4.webp";
+import practices_right_1 from "../../../../public/landingpage_template/practice_images/right1.webp";
+import practices_right_2 from "../../../../public/landingpage_template/practice_images/right2.webp";
+import practices_right_3 from "../../../../public/landingpage_template/practice_images/right3.webp";
+import practices_right_4 from "../../../../public/landingpage_template/practice_images/right4.webp";
 
 import pastwork1 from "../../../../public/landingpage_template/architect_imgaes/past_work1.webp";
 import pastwork2 from "../../../../public/landingpage_template/architect_imgaes/past_work2.webp";
@@ -236,6 +244,158 @@ export async function GET(_request: NextRequest, { params }: any) {
       ],
     },
     {
+      category: "practices",
+      title: "Malkain - Crafting Stunning Online Portfolios for Architects",
+      description:
+        "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
+      hero_text: [
+        { word: "Focus " },
+        { word: "on " },
+        { word: "Patient " },
+        { word: " Care,  " },
+        { word: "Buildings " },
+        { word: " Not " },
+        { word: "Web Design", color: "blue" },
+        { word: " : " },
+        { word: " We " },
+        { word: " Create " },
+        { word: " Websites " },
+        { word: " That " },
+        { word: " Deliver Results", color: "red" },
+      ],
+      size: true,
+      mobile_size: "6vw",
+      desktop_size: "3vw",
+      caption:
+        "Let us create an online website that reflects the amount of care and commitment you give ever patient. ",
+      writing_one:
+        "You dedicate your expertise to changing lives, but let's be honest, most healthcare websites leave a lot to be desired. We get it. You're passionate about patient care, but wrestling with website builders isn't exactly your dream outcome. ",
+      about_image: architect_about_image,
+      writing_two:
+        "We're a web design firm obsessed with crafting beautiful and functional websites for healthcare providers like you. We translate your vision into stunning and functional online websites that showcase your services with the same care and commitment you put in with every patient.",
+      scroll_left_img: [
+        { img: practices_left_1 },
+        { img: practices_left_2 },
+        { img: practices_left_3 },
+        { img: practices_left_4 },
+      ],
+      scroll_right_img: [
+        { img: practices_right_1 },
+        { img: practices_right_2 },
+        { img: practices_right_3 },
+        { img: practices_right_4 },
+      ],
+      main_img: architect_hand_middle,
+
+      mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
+      mob_scroll_right_img: [
+        { img: architect_right2 },
+        { img: architect_right4 },
+      ],
+      pastwork: {
+        heading: "Projects",
+        works: [
+          {
+            img: pastwork1,
+            text: "Mitrex ",
+            link: "https://www.mitrex.com/",
+          },
+          {
+            img: pastwork2,
+            text: "Modscape",
+            link: "https://www.modscape.com.au/",
+          },
+
+          {
+            img: pastwork3,
+            text: "Atella",
+            link: "https://www.atella.ca/",
+          },
+          {
+            img: pastwork4,
+            text: "gow hastings ",
+            link: "https://gowhastings.com/",
+          },
+          {
+            img: pastwork5,
+            text: "Novumc",
+            link: "https://www.novum.com.au/",
+          },
+          {
+            img: pastwork6,
+            text: "Archier",
+            link: "https://archier.com.au/",
+          },
+        ],
+      },
+      services: [
+        {
+          heading: "Web Design",
+          body: "Attract new patients and build trust with a user-friendly, mobile-optimized website designed specifically for healthcare providers. Our agency offers HIPAA-compliant web design services to showcase your practice and educate your patients online. Let's discuss how we can help you establish a strong online presence.",
+          deg: 30,
+
+          img: architect_services_img_1,
+        },
+
+        {
+          heading: "Website SEO",
+          body: "Get found by more patients searching for your services! We specialize in medical SEO, helping healthcare providers rank higher in search results for relevant keywords. Increase your online visibility and attract new patients organically with our proven SEO strategies.",
+          img: architect_services_img_2,
+          deg: -30,
+        },
+        {
+          heading: "Custom Software",
+          body: "Streamline workflows and elevate patient care with custom software solutions built for your practice. Our team develops HIPAA-compliant applications to meet your specific needs, from appointment scheduling to telehealth integration. Let's discuss how custom software can improve your efficiency and patient experience.",
+          img: architect_services_img_3,
+          deg: 10,
+        },
+      ],
+      process: [
+        {
+          step_text: "STEP 01: GET STARTED",
+          heading: "Onboarding",
+          top: "1vw",
+          body: "After conducting a compressive assessment to understand project requirement, a tailored on-boarding plan would be created to obtain relevant information poignant to the successful completion of the project.",
+          img: architect_one,
+          //   reverse: true,
+        },
+        {
+          step_text: "STEP 02: DESIGN",
+          heading: "Designing",
+          top: "2vw",
+
+          body: "Here we'll design wireframes, lo-fi and hi-fi user interface emphasizing intuitive navigation and compliance with industry regulations. Collaborating closely with all stakeholders involved, ensures that the final UI design prioritizes usability, accessibility, and a seamless user experience.",
+          img: architect_two,
+          reverse: true,
+        },
+        {
+          step_text: "STEP 03: PROTOTYPING",
+          heading: "Prototyping",
+          top: "1vw",
+
+          body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+          center: true,
+        },
+        {
+          step_text: "STEP 04: DEVELOPMENT",
+          heading: "Developing",
+          top: "vw",
+
+          body: "While implementing modular and scalable development stacks, we collaborate to build out backend functionality of the desired outcome and implement front end engineering design structures while maintaining agile development methodology and prioritizing platform security.",
+          img: architect_three,
+          //   reverse: true,
+        },
+        {
+          step_text: "STEP 05: LONG TERM",
+          heading: "Maintenance",
+
+          body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+          //   img: four,
+          center: true,
+        },
+      ],
+    },
+    {
       category: "architects",
       title: "Malkain - Crafting Stunning Online Portfolios for Architects",
       description:
@@ -379,80 +539,6 @@ export async function GET(_request: NextRequest, { params }: any) {
         },
       ],
     },
-    // {
-    //   category: "architecture",
-    //   title: "Malkain - Crafting Stunning Online Portfolios for Architects",
-    //   description:
-    //     "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
-    //   hero_text: [
-    //     { word: "Great " },
-    //     { word: "Architects " },
-    //     { word: "Design ", color: "blue" },
-    //     { word: " Great " },
-    //     { word: "Buildings ", color: "blue" },
-    //     { word: " Not " },
-    //     { word: "Great Websites", color: "red" },
-    //   ],
-    //   caption:
-    //     "Let us create an online portfolio that reflects the amount of care and commitment you put into every building.",
-    //   writing_one:
-    //     "Great architects design buildings that inspire but let's be honest, most architect websites leave a lot to be desired. We get it. You're passionate about creating spaces that amaze, but wrestling with website builders isn't exactly your dream project. That's where we come in.",
-    //   writing_two:
-    //     "We're a web design firm obsessed with crafting beautiful and functional websites for architects like you. We translate your vision into stunning online portfolios that showcase your work with the same care and commitment you put into every building.",
-    //   scroll_left_img: [
-    //     { img: architect_left1 },
-    //     { img: architect_left2 },
-    //     { img: architect_left3 },
-    //     { img: architect_left4 },
-    //   ],
-    //   scroll_right_img: [
-    //     { img: architect_right1 },
-    //     { img: architect_right2 },
-    //     { img: architect_right3 },
-    //     { img: architect_right4 },
-    //   ],
-    //   mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
-    //   mob_scroll_right_img: [
-    //     { img: architect_right2 },
-    //     { img: architect_right4 },
-    //   ],
-    //   pastwork: {
-    //     heading: "Projects",
-    //     works: [
-    //       {
-    //         img: pastwork1,
-    //         text: "Mitrex ",
-    //         link: "https://www.mitrex.com/",
-    //       },
-    //       {
-    //         img: pastwork2,
-    //         text: "Modscape",
-    //         link: "https://www.modscape.com.au/",
-    //       },
-
-    //       {
-    //         img: pastwork3,
-    //         text: "Atella",
-    //         link: "https://www.atella.ca/",
-    //       },
-    //       {
-    //         img: pastwork4,
-    //         text: "gow hastings ",
-    //         link: "https://gowhastings.com/",
-    //       },
-    //       {
-    //         img: pastwork5,
-    //         text: "Novumc",
-    //         link: "https://www.novum.com.au/",
-    //       },
-    //       {
-    //         img: pastwork6,
-    //         text: "Archier",
-    //         link: "https://archier.com.au/",
-    //       },
-    //     ],
-    //   },
-    // },
   ];
 
   const template_slug = params.template;
