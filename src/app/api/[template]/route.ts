@@ -89,8 +89,8 @@ export async function GET(_request: NextRequest, { params }: any) {
         { word: " Scholarly Engagement ", color: "lightred" },
       ],
       size: true,
-      mobile_size: "8vw",
-      desktop_size: "4vw",
+      mobile_size: 8,
+      desktop_size: 4,
       caption:
         "Let us create an online website that reflects the amount of care and commitment you put into student and research. ",
       writing_one:
@@ -261,11 +261,11 @@ export async function GET(_request: NextRequest, { params }: any) {
         { word: " Create " },
         { word: " Websites " },
         { word: " That " },
-        { word: " Deliver Results", color: "red" },
+        { word: " Deliver Results", color: "lightred" },
       ],
       size: true,
-      mobile_size: "6vw",
-      desktop_size: "3vw",
+      mobile_size: 6,
+      desktop_size: 3.5,
       caption:
         "Let us create an online website that reflects the amount of care and commitment you give ever patient. ",
       writing_one:
@@ -287,10 +287,13 @@ export async function GET(_request: NextRequest, { params }: any) {
       ],
       main_img: architect_hand_middle,
 
-      mob_scroll_left_img: [{ img: architect_left2 }, { img: architect_left4 }],
+      mob_scroll_left_img: [
+        { img: practices_left_2 },
+        { img: practices_left_4 },
+      ],
       mob_scroll_right_img: [
-        { img: architect_right2 },
-        { img: architect_right4 },
+        { img: practices_right_2 },
+        { img: practices_right_4 },
       ],
       pastwork: {
         heading: "Projects",
