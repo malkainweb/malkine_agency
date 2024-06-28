@@ -129,15 +129,6 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
     "building.",
   ];
 
-  //   const content = [
-  //     "We are a creative agency working ",
-  //     "brands - building insightful strategy, ",
-  //     "creating unique designs and crafting ",
-  //     "experiences that bring positive change",
-  //     "and value to people , brands , and the ",
-  //     "world around us",
-  //   ];
-
   useEffect(() => {
     // Register ScrollTrigger plugin
     gsap.registerPlugin(ScrollTrigger);
@@ -166,15 +157,6 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
       {" "}
       <div className="flex flex-col items-center gap-[5vw] sm:gap-[5vw] w-full ">
         {/* the first text  */}
-        {/* <div className="template_outer ">
-          <div className="template_inner">
-            <p className="template_dav">
-              {content.map((item: any, index: any) => (
-                <ContentLine key={index} content={item} />
-              ))}
-            </p>
-          </div>
-        </div> */}
 
         <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
           <p>{writing_one}</p>
@@ -186,15 +168,6 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
           className=" w-[70vw] h-fit sm:w-[90vw] "
         />
         {/* the second text  */}
-        {/* <div className="template_outer ">
-          <div className="template_inner">
-            <p className="template_dav">
-              {second_content.map((item: any, index: any) => (
-                <ContentLine key={index} content={item} />
-              ))}
-            </p>
-          </div>
-        </div> */}
 
         <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
           <p>{writing_two}</p>

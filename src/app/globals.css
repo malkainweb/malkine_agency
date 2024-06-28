@@ -21,6 +21,13 @@ body {
   overflow-x: clip;
 }
 
+.change_bg_to_white {
+  background-color: white;
+}
+.change_bg_to_black {
+  background-color: #0e0e0e;
+}
+
 .hide_now {
   overflow-y: clip;
   height: 101vh;

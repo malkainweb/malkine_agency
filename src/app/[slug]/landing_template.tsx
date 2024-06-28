@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Calendy from "../component/calendy";
 import Footer from "../component/fotter/footer";
 import Footer_hand from "../component/landing_template/footer_hand";
@@ -25,6 +25,29 @@ const Landing_template = ({ data }: any) => {
   const [nav_menu, setnav_menu] = useState(1);
   const [nav_ham, setnav_ham] = useState(1);
 
+  useEffect(() => {
+    // Access the body element
+    const body = document.body;
+
+    // Add the class 'change_bg_color' to the body element
+
+    if (data.background_color == "white") {
+      body.classList.add("change_bg_to_white");
+    }
+
+    // Change the background color of the body element
+    if (data.background_color) {
+      body.style.backgroundColor = data.background_color;
+    } else {
+      body.style.backgroundColor = "#0e0e0e";
+    }
+
+    // Optionally, return a cleanup function to remove the class when the component unmounts
+    return () => {
+      body.classList.remove("change_bg_to_white");
+    };
+  }, []); // Empty dependency array means this effect runs once on mount and cleanup on unmount
+
   return (
     <>
       {/* <Menu
@@ -47,7 +70,7 @@ const Landing_template = ({ data }: any) => {
           nav_menu={nav_menu}
         />
       </div> */}
-      <Preloader_template />
+      <Preloader_template traingle_color={data.prealoader_bg} />
       <Landing_nav />
       <div className="h-[6vw] sm:h-[25vw] "></div>
       <Template_hero
@@ -56,6 +79,7 @@ const Landing_template = ({ data }: any) => {
         desktop_size={data.desktop_size}
         size={data.size}
         mobile_size={data.mobile_size}
+        text_color={data.header_text_color}
       />
       <Scrolling_hands
         left_img={data.scroll_left_img}
@@ -63,6 +87,7 @@ const Landing_template = ({ data }: any) => {
         main_img={data.main_img}
         mob_left_img={data.mob_scroll_left_img}
         mob_right_img={data.mob_scroll_right_img}
+        bg_gradient_color={data.background_color}
       />
       <Writing
         writing_one={data.writing_one}

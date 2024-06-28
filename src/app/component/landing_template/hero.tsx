@@ -10,6 +10,7 @@ const Template_hero = ({
   size,
   mobile_size,
   desktop_size,
+  text_color,
 }: any) => {
   const width = globalThis.innerWidth;
   const [compt_width, setcompt_width] = useState(0);
@@ -29,19 +30,21 @@ const Template_hero = ({
               size && compt_width < 650
                 ? `${mobile_size}vw`
                 : `${desktop_size + 0.5}vw`,
+            color: text_color,
           }}
-          className={`font_helvetica text-white text-[5vw]  sm:text-[8vw] px-[7vw]  sm:px-[2vw] ${
+          className={`font_helvetica  text-white text-[5vw]  sm:text-[8vw] px-[7vw]  sm:px-[2vw] ${
             size ? "" : "leading-[5.5vw] sm:leading-[9vw]"
           } `}
         >
           {heading.map((e: any, index: any) => {
             return (
               <span
+                style={{ color: e.normal ? e.color : "" }}
                 className={`${
                   e.color == "lightgreen"
                     ? "bg-gradient-to-r from-[#BCCC7A] via-[#BCCC7A]  to-[#C6B7B7] inline-block text-transparent bg-clip-text"
                     : ""
-                }   ${
+                }  ${
                   e.color == "lightred"
                     ? "bg-gradient-to-r from-[#F5848B] via-[#F5848B]  to-[#C6B7B7] inline-block text-transparent bg-clip-text"
                     : ""
@@ -73,6 +76,9 @@ const Template_hero = ({
         </h1>
 
         <p
+          style={{
+            color: text_color,
+          }}
           // dangerouslySetInnerHTML={{ __html: caption }}
           className="font_helvetica px-[25vw] sm:px-[2vw] sm:text-[3.5vw] sm:leading-[4vw] text-[1.8vw] text-white leading-[2vw]"
         >

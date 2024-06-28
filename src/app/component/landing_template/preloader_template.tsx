@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 
 import Preloader from "../preloader";
 
-const Preloader_template = () => {
+const Preloader_template = ({ traingle_color }: any) => {
   const width = globalThis.innerWidth;
 
   const [loader, setloader] = useState(true);
@@ -39,6 +39,7 @@ const Preloader_template = () => {
       {loader ? (
         <Preloader
           setscale={setscale}
+          traingle_color={traingle_color}
           scale={scale}
           preloader_img_opacity={preloader_img_opacity}
           setpreloader_img_opacity={setpreloader_img_opacity}

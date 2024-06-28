@@ -12,6 +12,7 @@ const Preloader = (props: any) => {
     setpreloader_img_opacity,
     beginlines,
     setbeginlines,
+    traingle_color,
   } = props;
   const [line_opacity, setline_opacity] = useState(1);
   const [trans1, settrans1] = useState("-100vh");
@@ -21,7 +22,9 @@ const Preloader = (props: any) => {
   const [trans5, settrans5] = useState("100vh");
   const [transX1, settransX1] = useState("0vw");
   const [transY1, settransY1] = useState("0vh");
-  const [bgcolor, setbgcolor] = useState("black");
+  const [bgcolor, setbgcolor] = useState(
+    traingle_color ? traingle_color : "black",
+  );
 
   useEffect(() => {
     setscale(0.8);
@@ -63,12 +66,22 @@ const Preloader = (props: any) => {
         }}
       >
         <div
-          className="absolute bottom-[-60vh] right-[-80vw] transition duration-[4s] border2 triangle "
-          style={{ transform: `translate(${transX1} , ${transY1})` }}
+          className={`absolute bottom-[-60vh] right-[-80vw] transition duration-[4s] border2  triangle `}
+          style={{
+            transform: `translate(${transX1} , ${transY1})`,
+            borderBottom: `200vh solid ${
+              traingle_color ? traingle_color : "black"
+            } `,
+          }}
         ></div>
         <div
-          className="absolute transition duration-[4s] top-[-60vh] left-[-80vw]  border2 triangle2   "
-          style={{ transform: `translate(${transX1} , ${transY1})` }}
+          className={`absolute transition duration-[4s] top-[-60vh] left-[-80vw]  border2 triangle2   `}
+          style={{
+            transform: `translate(${transX1} , ${transY1})`,
+            borderBottom: `200vh solid ${
+              traingle_color ? traingle_color : "black"
+            } `,
+          }}
         ></div>
         <motion.div
           // initial={{ scale: 1.5 }}
@@ -167,11 +180,21 @@ const Preloader = (props: any) => {
       >
         <div
           className="absolute bottom-[-140vh] right-[-200vw] transition duration-[4s] border2 triangle "
-          style={{ transform: `translate(${transX1} , ${transY1})` }}
+          style={{
+            transform: `translate(${transX1} , ${transY1})`,
+            borderBottom: `220vh solid ${
+              traingle_color ? traingle_color : "black"
+            } `,
+          }}
         ></div>
         <div
           className="absolute transition duration-[4s] top-[-140vh] left-[-200vw]  border2 triangle2   "
-          style={{ transform: `translate(${transX1} , ${transY1})` }}
+          style={{
+            transform: `translate(${transX1} , ${transY1})`,
+            borderBottom: `220vh solid ${
+              traingle_color ? traingle_color : "black"
+            } `,
+          }}
         ></div>
         <motion.div
           // initial={{ scale: 1.5 }}
