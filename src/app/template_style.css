@@ -134,3 +134,12 @@ body {
   transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
   position: relative;
 }
+.elementor-blue-title {
+  color: rgba(93, 92, 92, 0.2);
+  background: linear-gradient(to right, #226dff, #226dff) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  background-size: 0%;
+  transition: background-size cubic-bezier(0.1, 0.5, 0.5, 1) 0.5s;
+  position: relative;
+}

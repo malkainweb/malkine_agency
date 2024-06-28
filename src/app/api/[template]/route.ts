@@ -247,6 +247,8 @@ export async function GET(_request: NextRequest, { params }: any) {
       category: "practices",
       background_color: "white",
       prealoader_bg: "#226DFF",
+      btn_bg_color: "#226DFF",
+      writing_text_color: "elementor-blue-title",
       header_text_color: "black",
       title: "Malkain - Crafting Stunning Online Portfolios for Architects",
       description:
@@ -268,6 +270,7 @@ export async function GET(_request: NextRequest, { params }: any) {
       size: true,
       mobile_size: 5,
       desktop_size: 4.3,
+
       caption:
         "Let us create an online website that reflects the amount of care and commitment you give ever patient. ",
       writing_one:

@@ -11,6 +11,7 @@ const Template_hero = ({
   mobile_size,
   desktop_size,
   text_color,
+  btn_bg_color,
 }: any) => {
   const width = globalThis.innerWidth;
   const [compt_width, setcompt_width] = useState(0);
@@ -90,7 +91,8 @@ const Template_hero = ({
           onClick={() => {
             scrollTo_calendy();
           }}
-          className="nova w-fit  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717]  hover:bg-[#920808] sm:text-[3vw]   sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw] font_helvetica  sm:text-white sm:mt-[2vw] "
+          className="nova w-fit  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] hover:opacity-[70%]  sm:text-[3vw]   sm:rounded-[9.75vw] sm:px-[12vw]  sm:py-[4vw] font_helvetica  sm:text-white sm:mt-[2vw] "
+          style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
         >
           Let{"'"}s Build! <i className="bi bi-arrow-right sm:hidden"></i>
         </button>

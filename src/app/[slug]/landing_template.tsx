@@ -80,6 +80,7 @@ const Landing_template = ({ data }: any) => {
         size={data.size}
         mobile_size={data.mobile_size}
         text_color={data.header_text_color}
+        btn_bg_color={data.btn_bg_color}
       />
       <Scrolling_hands
         left_img={data.scroll_left_img}
@@ -91,7 +92,9 @@ const Landing_template = ({ data }: any) => {
       />
       <Writing
         writing_one={data.writing_one}
+        writing_text_color={data.writing_text_color}
         img={data.about_image}
+        btn_bg_color={data.btn_bg_color}
         writing_two={data.writing_two}
       />
       <Calendy />
@@ -104,6 +107,7 @@ const Landing_template = ({ data }: any) => {
       <Past_work_template
         heading={data.pastwork.heading}
         pastwork={data.pastwork.works}
+        text_color={data.header_text_color}
       />
 
       <Services_template

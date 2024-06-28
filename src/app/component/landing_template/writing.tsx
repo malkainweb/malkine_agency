@@ -14,7 +14,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 const ContentLine = (props: any) => {
-  const { content } = props;
+  const { content, writing_text_color } = props;
   // const contentRef = useRef(null);
   const contentRef = createRef<HTMLSpanElement>();
 
@@ -39,7 +39,13 @@ const ContentLine = (props: any) => {
   );
 };
 
-const Writing = ({ writing_one, writing_two, img }: any) => {
+const Writing = ({
+  writing_one,
+  writing_two,
+  img,
+  writing_text_color,
+  btn_bg_color,
+}: any) => {
   const content = [
     "Great",
     "architects",
@@ -134,7 +140,12 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Select text elements using the Next.js convention
-    const textElements = document.querySelectorAll(".elementor-heading-title");
+    const textElements = document.querySelectorAll(
+      writing_text_color
+        ? `.${writing_text_color}`
+        : ".elementor-heading-title",
+    );
+    // const textElements = document.querySelectorAll(".elementor-heading-title");
 
     // Loop through each text element
     textElements.forEach((text) => {
@@ -158,8 +169,14 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
       <div className="flex flex-col items-center gap-[5vw] sm:gap-[5vw] w-full ">
         {/* the first text  */}
 
-        <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
-          <p>{writing_one}</p>
+        <div
+          className={` ${
+            writing_text_color ? writing_text_color : "elementor-heading-title"
+          }  leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]`}
+        >
+          <p>
+            {writing_one} {writing_text_color}
+          </p>
         </div>
 
         <Image
@@ -169,7 +186,11 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
         />
         {/* the second text  */}
 
-        <div className="elementor-heading-title leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]">
+        <div
+          className={`${
+            writing_text_color ? writing_text_color : "elementor-heading-title"
+          } leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]`}
+        >
           <p>{writing_two}</p>
         </div>
 
@@ -179,7 +200,8 @@ const Writing = ({ writing_one, writing_two, img }: any) => {
             onClick={() => {
               scrollTo_calendy();
             }}
-            className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
+            className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
+            style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
           >
             Let{"'"}s Build <i className="bi bi-arrow-right"></i>
           </button>

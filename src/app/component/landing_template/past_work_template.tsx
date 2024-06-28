@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 
 // import Typewriter from "typewriter-effect";
-const Past_work_template = ({ heading, pastwork }: any) => {
+const Past_work_template = ({ heading, pastwork, text_color }: any) => {
   //   const info_array = ["", "", "", "", "", ""];
 
   const data_array = [
@@ -81,7 +81,12 @@ const Past_work_template = ({ heading, pastwork }: any) => {
     <>
       <div className="w-full flex flex-col  pb-[5vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
         {" "}
-        <h3 className="font_helvetica leading-[4.2vw] text-white text-[3.8vw] font-bold sm:text-[6vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center">
+        <h3
+          style={{
+            color: text_color,
+          }}
+          className="font_helvetica leading-[4.2vw] text-white text-[3.8vw] font-bold sm:text-[6vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center"
+        >
           {heading}{" "}
         </h3>
         <div className="w-full flex  px-[3vw]  sm:gap-[6vw] sm:px-[3vw] justify-center gap-[3vw] flex-wrap ">
@@ -125,7 +130,12 @@ const Past_work_template = ({ heading, pastwork }: any) => {
                       </div>
                     ) : null}
                   </div>
-                  <p className="text-white uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] font_helvetica">
+                  <p
+                    className="text-white uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] font_helvetica"
+                    style={{
+                      color: text_color,
+                    }}
+                  >
                     {visibleIndexes.includes(index) && (
                       <Typewriter
                         words={[e.text]}
