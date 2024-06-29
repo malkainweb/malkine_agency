@@ -191,7 +191,7 @@ const Processes = ({
                             scrollTo_calendy();
                           }}
                           style={{
-                            color: btn_bg_color ? btn_bg_color : "",
+                            color: btn_bg_color && btn_bg_color,
                           }}
                           className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[#D01717] bg-[#F3F3F3] `}
                         >
