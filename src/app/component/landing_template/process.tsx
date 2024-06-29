@@ -20,6 +20,7 @@ const Processes = ({
   text_color,
   arrow_icon,
   straight_line_image,
+  mobile_straight_line_image,
 }: any) => {
   const width = globalThis.innerWidth;
 
@@ -95,7 +96,11 @@ const Processes = ({
               <>
                 {index != 0 && (
                   <Image
-                    src={mob_line}
+                    src={
+                      mobile_straight_line_image
+                        ? mobile_straight_line_image
+                        : mob_line
+                    }
                     alt="line"
                     className="hidden sm:block w-[1.6vw] h-fit"
                   />

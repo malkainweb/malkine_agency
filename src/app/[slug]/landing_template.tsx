@@ -122,6 +122,7 @@ const Landing_template = ({ data }: any) => {
         text_color={data.header_text_color}
         arrow_icon={data.arrow_icon}
         straight_line_image={data.straight_line_image}
+        mobile_straight_line_image={data.mobile_straight_line_image}
       />
       <Footer_hand
         text_color={data.header_text_color}

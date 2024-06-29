@@ -83,6 +83,9 @@ import practice_blue_icon from "../../../../public/landingpage_template/practice
 
 // PROCESS LINE IMAGE
 import practice_blue_line_img from "../../../../public/landingpage_template/blue_line.png";
+
+// MOBILE PROCESS LINE IMAGE
+import mobile_practice_blue_line_img from "../../../../public/landingpage_template/blue_mob_line.png";
 export async function GET(_request: NextRequest, { params }: any) {
   const baseUrl = `${process.env.NEXT_PUBLIC_PUBLIC_URL}`; // Update this based on your base URL
 
@@ -284,7 +287,7 @@ export async function GET(_request: NextRequest, { params }: any) {
         { word: " Deliver Results", normal: true, color: "#D80F0F" },
       ],
       size: true,
-      mobile_size: 5,
+      mobile_size: 7.5,
       desktop_size: 4.3,
 
       caption:
@@ -377,6 +380,7 @@ export async function GET(_request: NextRequest, { params }: any) {
       service_text_color: "white",
       arrow_icon: practice_blue_icon,
       straight_line_image: practice_blue_line_img,
+      mobile_straight_line_image: mobile_practice_blue_line_img,
 
       process: [
         {
