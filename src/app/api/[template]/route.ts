@@ -97,9 +97,10 @@ export async function GET(_request: NextRequest, { params }: any) {
   const data = [
     {
       category: "academia",
-      title: "Malkain - Crafting Stunning Online Portfolios for Architects",
+      title:
+        "Malkain Academia - Empowering Scholars with Exceptional Online Presence",
       description:
-        "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
+        "Malkain Academia is dedicated to elevating the online presence of professors and researchers. We craft stunning online portfolios that showcase your work with precision, sophistication, and attention to detail, igniting scholarly engagement and empowering you to share your research with the world.",
       hero_text: [
         { word: "Unleash " },
         { word: "Your " },
@@ -274,9 +275,10 @@ export async function GET(_request: NextRequest, { params }: any) {
       btn_bg_color: "#226DFF",
       writing_text_color: "elementor-blue-title",
       header_text_color: "black",
-      title: "Malkain - Crafting Stunning Online Portfolios for Architects",
+      title:
+        "Malkain Healthcare -  Where Patient Care Meets Digital Excellence",
       description:
-        "Malkain understands that great architects create inspirational buildings, not websites. That is why we are committed to developing online portfolios that reflect the effort and dedication you put into each job. Our skilled web design agency specialises in creating stunning, practical websites that reflect your architectural ideas. Let us take care of your digital presence so you can focus on what you do best: creating remarkable venues.",
+        "Malkain is a web design firm obsessed with crafting beautiful and functional websites for healthcare providers like you. We translate your vision into stunning and functional online websites that showcase your services with the same care and commitment you put in with every patient.",
       hero_text: [
         { word: "Focus " },
         { word: "on " },
