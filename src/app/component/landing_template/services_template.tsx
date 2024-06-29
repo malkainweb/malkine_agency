@@ -17,7 +17,13 @@ import { useEffect, useRef, useState } from "react";
 //   CabinetGrotesk_medium,
 // } from "../general_component/fonts";
 
-const Services_template = ({ services, color, text_color }: any) => {
+const Services_template = ({
+  services,
+  color,
+  text_color,
+  mobile_control_next_arrow,
+  mobile_control_prev_arrow,
+}: any) => {
   const [active_index, setactive_index] = useState<any>(0);
   const [size, setsize] = useState<any>(null);
 
@@ -59,7 +65,7 @@ const Services_template = ({ services, color, text_color }: any) => {
   return (
     <>
       {/* this is for mobile */}
-      <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b sm:my-[15vw] mb-[4vw] items-center  h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[15vw]  sm:pb-[10vw]">
+      <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b sm:my-0 mb-[4vw] items-center  h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[5vw]   sm:pb-[10vw]">
         <h2
           className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw] font_helvetica text-white text-[3.2vw] sm:mb-0  font-bold text-center  `}
           style={{ color: text_color }}
@@ -127,7 +133,9 @@ const Services_template = ({ services, color, text_color }: any) => {
           className={` w-full sm:mt-[2vw] hidden sm:flex justify-center sm:gap-[6vw] gap-[2vw] items-center`}
         >
           <Image
-            src={prev_works}
+            src={
+              mobile_control_prev_arrow ? mobile_control_prev_arrow : prev_works
+            }
             onClick={() => {
               if (active_index > 0) {
                 setactive_index(active_index - 1);
@@ -137,7 +145,9 @@ const Services_template = ({ services, color, text_color }: any) => {
             className="sm:w-[11vw] w-[2.9vw] hover:cursor-pointer  h-fit"
           />
           <Image
-            src={next_works}
+            src={
+              mobile_control_next_arrow ? mobile_control_next_arrow : next_works
+            }
             onClick={() => {
               if (active_index < items.length - 1) {
                 setactive_index(active_index + 1);

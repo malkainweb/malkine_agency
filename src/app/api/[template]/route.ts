@@ -47,8 +47,9 @@ import academy_pastwork1 from "../../../../public/landingpage_template/academy_p
 import practice_pastwork6 from "../../../../public/landingpage_template/practice_past_work_images/past_work6.webp";
 import practice_pastwork5 from "../../../../public/landingpage_template/practice_past_work_images/past_work5.webp";
 import practice_pastwork4 from "../../../../public/landingpage_template/practice_past_work_images/past_work4.webp";
-import practice_pastwork2 from "../../../../public/landingpage_template/academy_pastworks_images/past_work2.webp";
-import practice_pastwork1 from "../../../../public/landingpage_template/academy_pastworks_images/past_work1.webp";
+import practice_pastwork3 from "../../../../public/landingpage_template/practice_past_work_images/past_work3.webp";
+import practice_pastwork2 from "../../../../public/landingpage_template/practice_past_work_images/past_work2.webp";
+import practice_pastwork1 from "../../../../public/landingpage_template/practice_past_work_images/past_work1.webp";
 // SERVICES IMAGE
 import architect_services_img_1 from "../../../../public/landingpage_template/services/1.webp";
 import architect_services_img_2 from "../../../../public/landingpage_template/services/2.webp";
@@ -86,6 +87,10 @@ import practice_blue_line_img from "../../../../public/landingpage_template/blue
 
 // MOBILE PROCESS LINE IMAGE
 import mobile_practice_blue_line_img from "../../../../public/landingpage_template/blue_mob_line.png";
+
+// MOBILE ARROWS FOR SERVICES
+import mobile_black_arrow_prev from "../../../../public/landingpage_template/black_prev_works.png";
+import mobile_black_arrow_next from "../../../../public/landingpage_template/black_next_works.png";
 export async function GET(_request: NextRequest, { params }: any) {
   const baseUrl = `${process.env.NEXT_PUBLIC_PUBLIC_URL}`; // Update this based on your base URL
 
@@ -323,18 +328,18 @@ export async function GET(_request: NextRequest, { params }: any) {
         heading: "Projects",
         works: [
           {
-            img: pastwork1,
+            img: practice_pastwork1,
             text: "Exo ",
             link: "https://www.exo.inc/",
           },
           {
-            img: pastwork2,
+            img: practice_pastwork2,
             text: "Pico",
             link: "https://www.picoclinics.com/",
           },
 
           {
-            img: pastwork3,
+            img: practice_pastwork3,
             text: "Ysotope",
             link: "https://www.ysotope.com/",
           },
@@ -382,6 +387,8 @@ export async function GET(_request: NextRequest, { params }: any) {
       straight_line_image: practice_blue_line_img,
       mobile_straight_line_image: mobile_practice_blue_line_img,
 
+      mobile_control_prev_arrow: mobile_black_arrow_prev,
+      mobile_control_next_arrow: mobile_black_arrow_next,
       process: [
         {
           step_text: "STEP 01: GET STARTED",

@@ -114,6 +114,8 @@ const Landing_template = ({ data }: any) => {
         services={data.services}
         color={data.service_text_color}
         text_color={data.header_text_color}
+        mobile_control_prev_arrow={data.mobile_control_prev_arrow}
+        mobile_control_next_arrow={data.mobile_control_next_arrow}
       />
 
       <Processes
