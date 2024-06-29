@@ -17,7 +17,7 @@ import { useEffect, useRef, useState } from "react";
 //   CabinetGrotesk_medium,
 // } from "../general_component/fonts";
 
-const Services_template = ({ services, color }: any) => {
+const Services_template = ({ services, color, text_color }: any) => {
   const [active_index, setactive_index] = useState<any>(0);
   const [size, setsize] = useState<any>(null);
 
@@ -62,10 +62,14 @@ const Services_template = ({ services, color }: any) => {
       <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b sm:my-[15vw] my-[4vw] items-center h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[15vw]  sm:pb-[10vw]">
         <h2
           className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw] font_helvetica text-white text-[3.2vw] sm:mb-0  font-bold text-center  `}
+          style={{ color: text_color }}
         >
           Services
         </h2>
-        <p className={`  sm:text-[3.3vw] text-[1.3vw] text-center text-white `}>
+        <p
+          style={{ color: text_color }}
+          className={`  sm:text-[3.3vw] text-[1.3vw] text-center text-white `}
+        >
           We understand the unique challenges and opportunities{" "}
           <br className="" /> that the architectural industry faces in the
           digital age. <br className="hidden sm:block" /> Here{" "}

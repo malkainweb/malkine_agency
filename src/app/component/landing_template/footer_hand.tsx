@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 
-const Footer_hand = () => {
+const Footer_hand = ({ text_color }: any) => {
   // useEffect(() => {
   //   // Select the animated element
   //   const animatedElement: any = document.querySelector(".footer-hand-image");
@@ -35,7 +35,12 @@ const Footer_hand = () => {
     <>
       <div className="w-full h-[63vw] mt-[4vw] sm:h-[150vw]  flex flex-col justify-between items-center ">
         <div className="flex flex-col  ">
-          <h3 className="font_helvetica text-white text-[5vw] sm:text-[10vw] text-center">
+          <h3
+            style={{
+              color: text_color,
+            }}
+            className="font_helvetica text-white text-[5vw] sm:text-[10vw] text-center"
+          >
             Let{"'"}s Get Started
           </h3>
 

@@ -14,7 +14,7 @@ import External_btn from "@/app/utils/external_btn";
 import { useEffect, useState } from "react";
 // import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 
-const Processes = ({ process }: any) => {
+const Processes = ({ process, btn_bg_color }: any) => {
   const width = globalThis.innerWidth;
 
   const [calc_width, setcalc_width] = useState(1000);
@@ -97,7 +97,9 @@ const Processes = ({ process }: any) => {
                   style={{ marginTop: calc_width > 700 ? e.top : "" }}
                   className={`   gap-[7vw]  ${
                     e.center
-                      ? "w-[26vw] h-[20vw] sm:w-full sm:h-auto  sm:rounded-[7vw]    bg-[#D01717] rounded-[2vw] sm:mb-[4vw] items-center z-[99] px-[2vw] sm:py-[6vw] sm:px-[4vw]"
+                      ? `w-[26vw] h-[20vw] sm:w-full sm:h-auto  sm:rounded-[7vw]  ${
+                          btn_bg_color ? "bg-[#226DFF]" : "bg-[#D01717]"
+                        }   rounded-[2vw] sm:mb-[4vw] items-center z-[99] px-[2vw] sm:py-[6vw] sm:px-[4vw]`
                       : "w-full h-auto sm:pb-[4vw] sm:text-center sm:flex-col sm:items-center items-start"
                   }    flex justify-center  ${
                     e.reverse ? "flex-row-reverse" : "flex-row"

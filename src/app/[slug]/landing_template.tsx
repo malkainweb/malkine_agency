@@ -113,10 +113,11 @@ const Landing_template = ({ data }: any) => {
       <Services_template
         services={data.services}
         color={data.service_text_color}
+        text_color={data.header_text_color}
       />
 
-      <Processes process={data.process} />
-      <Footer_hand />
+      <Processes process={data.process} btn_bg_color={data.btn_bg_color} />
+      <Footer_hand text_color={data.header_text_color} />
       <Footer landing={true} />
       {/* <div className="h-[100vw]"></div> */}
     </>

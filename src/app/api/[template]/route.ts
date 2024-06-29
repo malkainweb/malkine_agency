@@ -358,6 +358,8 @@ export async function GET(_request: NextRequest, { params }: any) {
           deg: 10,
         },
       ],
+      service_text_color: "white",
+
       process: [
         {
           step_text: "STEP 01: GET STARTED",
