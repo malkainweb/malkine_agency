@@ -43,6 +43,12 @@ import academy_pastwork5 from "../../../../public/landingpage_template/academy_p
 import academy_pastwork4 from "../../../../public/landingpage_template/academy_pastworks_images/past_work4.webp";
 import academy_pastwork2 from "../../../../public/landingpage_template/academy_pastworks_images/past_work2.webp";
 import academy_pastwork1 from "../../../../public/landingpage_template/academy_pastworks_images/past_work1.webp";
+
+import practice_pastwork6 from "../../../../public/landingpage_template/practice_past_work_images/past_work6.webp";
+import practice_pastwork5 from "../../../../public/landingpage_template/practice_past_work_images/past_work5.webp";
+import practice_pastwork4 from "../../../../public/landingpage_template/practice_past_work_images/past_work4.webp";
+import practice_pastwork2 from "../../../../public/landingpage_template/academy_pastworks_images/past_work2.webp";
+import practice_pastwork1 from "../../../../public/landingpage_template/academy_pastworks_images/past_work1.webp";
 // SERVICES IMAGE
 import architect_services_img_1 from "../../../../public/landingpage_template/services/1.webp";
 import architect_services_img_2 from "../../../../public/landingpage_template/services/2.webp";
@@ -51,8 +57,13 @@ import architect_services_img_3 from "../../../../public/landingpage_template/se
 import academy_services_img_1 from "../../../../public/landingpage_template/academy_services_images/img_1.webp";
 import academy_services_img_2 from "../../../../public/landingpage_template/academy_services_images/img2.webp";
 import academy_services_img_3 from "../../../../public/landingpage_template/academy_services_images/img3.webp";
+
+import practice_services_img_2 from "../../../../public/landingpage_template/practice_services/img2.webp";
+import practice_services_img_3 from "../../../../public/landingpage_template/practice_services/img3.webp";
+
 // ABOUT IMAGES
 import architect_about_image from "../../../../public/landingpage_template/architect_imgaes/what_we_do.webp";
+import practice_about_image from "../../../../public/landingpage_template/practice_services/what_we_do.webp";
 
 // THE MAIN IMAGE IN SCROLLING
 import architect_hand_middle from "../../../../public/home/hand_middle.webp";
@@ -66,7 +77,12 @@ import academy_process_3 from "../../../../public/landingpage_template/academy_p
 import architect_one from "../../../../public/landingpage_template/example1.webp";
 import architect_two from "../../../../public/landingpage_template/example2.webp";
 import architect_three from "../../../../public/landingpage_template/example3.webp";
-import academy_about_images from "../../../../public/landingpage_template/academy_services_images/what_we_do.webp";
+
+// PROCESS ARROW ICON
+import practice_blue_icon from "../../../../public/landingpage_template/practice_services/blue_icon.png";
+
+// PROCESS LINE IMAGE
+import practice_blue_line_img from "../../../../public/landingpage_template/blue_line.png";
 export async function GET(_request: NextRequest, { params }: any) {
   const baseUrl = `${process.env.NEXT_PUBLIC_PUBLIC_URL}`; // Update this based on your base URL
 
@@ -275,7 +291,7 @@ export async function GET(_request: NextRequest, { params }: any) {
         "Let us create an online website that reflects the amount of care and commitment you give ever patient. ",
       writing_one:
         "You dedicate your expertise to changing lives, but let's be honest, most healthcare websites leave a lot to be desired. We get it. You're passionate about patient care, but wrestling with website builders isn't exactly your dream outcome. ",
-      about_image: architect_about_image,
+      about_image: practice_about_image,
       writing_two:
         "We're a web design firm obsessed with crafting beautiful and functional websites for healthcare providers like you. We translate your vision into stunning and functional online websites that showcase your services with the same care and commitment you put in with every patient.",
       scroll_left_img: [
@@ -320,17 +336,17 @@ export async function GET(_request: NextRequest, { params }: any) {
             link: "https://www.ysotope.com/",
           },
           {
-            img: pastwork4,
+            img: practice_pastwork4,
             text: "Yuri",
             link: "https://www.yurigravity.com/",
           },
           {
-            img: pastwork5,
+            img: practice_pastwork5,
             text: "Cabinet",
             link: "https://www.cabinethealth.com",
           },
           {
-            img: pastwork6,
+            img: practice_pastwork6,
             text: "Decibel",
             link: "https://www.decibelhealth.com/",
           },
@@ -342,23 +358,25 @@ export async function GET(_request: NextRequest, { params }: any) {
           body: "Attract new patients and build trust with a user-friendly, mobile-optimized website designed specifically for healthcare providers. Our agency offers HIPAA-compliant web design services to showcase your practice and educate your patients online. Let's discuss how we can help you establish a strong online presence.",
           deg: 30,
 
-          img: architect_services_img_1,
+          img: academy_services_img_1,
         },
 
         {
           heading: "Website SEO",
           body: "Get found by more patients searching for your services! We specialize in medical SEO, helping healthcare providers rank higher in search results for relevant keywords. Increase your online visibility and attract new patients organically with our proven SEO strategies.",
-          img: architect_services_img_2,
+          img: practice_services_img_2,
           deg: -30,
         },
         {
           heading: "Custom Software",
           body: "Streamline workflows and elevate patient care with custom software solutions built for your practice. Our team develops HIPAA-compliant applications to meet your specific needs, from appointment scheduling to telehealth integration. Let's discuss how custom software can improve your efficiency and patient experience.",
-          img: architect_services_img_3,
+          img: practice_services_img_3,
           deg: 10,
         },
       ],
       service_text_color: "white",
+      arrow_icon: practice_blue_icon,
+      straight_line_image: practice_blue_line_img,
 
       process: [
         {

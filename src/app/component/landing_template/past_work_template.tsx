@@ -79,7 +79,7 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
   //   }, [visibleIndexes]);
   return (
     <>
-      <div className="w-full flex flex-col  pb-[5vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
+      <div className="w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
         {" "}
         <h3
           style={{

@@ -97,7 +97,7 @@ const Landing_template = ({ data }: any) => {
         btn_bg_color={data.btn_bg_color}
         writing_two={data.writing_two}
       />
-      <Calendy />
+      <Calendy text_color={data.header_text_color} />
       {data.category == "academia" && (
         <Past_work_template
           heading={data.extra_pastwork.heading}
@@ -116,9 +116,18 @@ const Landing_template = ({ data }: any) => {
         text_color={data.header_text_color}
       />
 
-      <Processes process={data.process} btn_bg_color={data.btn_bg_color} />
-      <Footer_hand text_color={data.header_text_color} />
-      <Footer landing={true} />
+      <Processes
+        process={data.process}
+        btn_bg_color={data.btn_bg_color}
+        text_color={data.header_text_color}
+        arrow_icon={data.arrow_icon}
+        straight_line_image={data.straight_line_image}
+      />
+      <Footer_hand
+        text_color={data.header_text_color}
+        btn_bg_color={data.btn_bg_color}
+      />
+      <Footer landing={true} btn_bg_color={data.btn_bg_color} />
       {/* <div className="h-[100vw]"></div> */}
     </>
   );

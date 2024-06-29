@@ -59,7 +59,7 @@ const Services_template = ({ services, color, text_color }: any) => {
   return (
     <>
       {/* this is for mobile */}
-      <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b sm:my-[15vw] my-[4vw] items-center h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[15vw]  sm:pb-[10vw]">
+      <div className="w-full font_helvetica py-[4vw] sm:bg-gradient-to-b sm:my-[15vw] mb-[4vw] items-center  h-auto  gap-[2vw]  px-[2vw]  flex flex-col sm:gap-[7vw] sm:pt-[15vw]  sm:pb-[10vw]">
         <h2
           className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw] font_helvetica text-white text-[3.2vw] sm:mb-0  font-bold text-center  `}
           style={{ color: text_color }}

@@ -5,7 +5,7 @@ import arrow from "../../../public/landingpage_template/right_top_arrow.png";
 import blue_arrow from "../../../public/landingpage_template/Icon.png";
 import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 
-const External_btn = ({ h, w, bg, img }: any) => {
+const External_btn = ({ h, w, bg, img, btn_bg_color, arrow_icon }: any) => {
   return (
     <>
       <div
@@ -23,7 +23,10 @@ const External_btn = ({ h, w, bg, img }: any) => {
           className={`absolute z-[99] top-[100%] group-hover:top-0  ${
             img != "blue" ? "bg-white" : "bg-[#D01717]"
           }  w-full h-full left-0`}
-          style={{ transition: "0.7s ease" }}
+          style={{
+            transition: "0.7s ease",
+            backgroundColor: btn_bg_color ? btn_bg_color : "",
+          }}
         ></div>
         {/* <div className="w-full h-full absolute top-0 "></div> */}
         <Image
@@ -37,7 +40,7 @@ const External_btn = ({ h, w, bg, img }: any) => {
           style={{ width: `${w - 1.3}vw`, transition: "0.7s ease" }}
         />
         <Image
-          src={blue_arrow}
+          src={arrow_icon ? arrow_icon : blue_arrow}
           alt="arrow"
           className={` ${
             img == "blue"

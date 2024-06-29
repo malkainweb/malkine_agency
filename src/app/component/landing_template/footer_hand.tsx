@@ -6,7 +6,7 @@ import Link from "next/link";
 import { useEffect } from "react";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 
-const Footer_hand = ({ text_color }: any) => {
+const Footer_hand = ({ text_color, btn_bg_color }: any) => {
   // useEffect(() => {
   //   // Select the animated element
   //   const animatedElement: any = document.querySelector(".footer-hand-image");
@@ -47,10 +47,11 @@ const Footer_hand = ({ text_color }: any) => {
           {/* the button */}
           <div className="w-full flex justify-center pt-[2vw]">
             <button
+              style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
               onClick={() => {
                 scrollTo_calendy();
               }}
-              className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:bg-[#920808] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
+              className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
             >
               Work with us <i className="bi bi-arrow-right"></i>
             </button>

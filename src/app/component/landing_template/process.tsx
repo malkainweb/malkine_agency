@@ -14,7 +14,13 @@ import External_btn from "@/app/utils/external_btn";
 import { useEffect, useState } from "react";
 // import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 
-const Processes = ({ process, btn_bg_color }: any) => {
+const Processes = ({
+  process,
+  btn_bg_color,
+  text_color,
+  arrow_icon,
+  straight_line_image,
+}: any) => {
   const width = globalThis.innerWidth;
 
   const [calc_width, setcalc_width] = useState(1000);
@@ -70,6 +76,9 @@ const Processes = ({ process, btn_bg_color }: any) => {
     <>
       <div className="w-full flex sm:gap-[12vw]  flex-col items-center mb-[13vw] ">
         <h2
+          style={{
+            color: text_color,
+          }}
           className={` font_helvetica sm:text-[8vw] sm:leading-[9vw] text-[5vw] py-[3vw] text-white`}
         >
           Our Process
@@ -77,7 +86,7 @@ const Processes = ({ process, btn_bg_color }: any) => {
         {/* the bottom process and the mapping function */}
         <div className=" w-[70vw] sm:w-[90vw]  flex flex-col items-center justify-between  gap-[8vw] sm:gap-[2.3vw] relative">
           <Image
-            src={line}
+            src={straight_line_image ? straight_line_image : line}
             alt="line"
             className="w-fit  h-full sm:hidden absolute left-[50%] translate-x-[-50%] "
           />
@@ -130,7 +139,13 @@ const Processes = ({ process, btn_bg_color }: any) => {
                       e.reverse ? "items-end " : "items-start"
                     }  `}
                   >
-                    <div className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw]  sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]">
+                    <div
+                      style={{
+                        color: !e.center && text_color,
+                        borderColor: !e.center && text_color,
+                      }}
+                      className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw]  sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]"
+                    >
                       <p
                         className={`${CabinetGrotesk_medium.className} sm:text-[3.2vw]  text-[0.9vw] uppercase`}
                       >
@@ -138,6 +153,9 @@ const Processes = ({ process, btn_bg_color }: any) => {
                       </p>
                     </div>
                     <h2
+                      style={{
+                        color: !e.center && text_color,
+                      }}
                       className={` text-white sm:text-[8vw] sm:text-center ${
                         CabinetGrotesk_bold.className
                       } ${
@@ -148,6 +166,9 @@ const Processes = ({ process, btn_bg_color }: any) => {
                     </h2>
 
                     <p
+                      style={{
+                        color: !e.center && text_color,
+                      }}
                       className={` text-white sm:text-[4vw] sm:leading-[5.5vw] ${
                         CabinetGrotesk_medium.className
                       } ${
@@ -169,6 +190,9 @@ const Processes = ({ process, btn_bg_color }: any) => {
                           onClick={() => {
                             scrollTo_calendy();
                           }}
+                          style={{
+                            color: btn_bg_color ? btn_bg_color : "",
+                          }}
                           className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[#D01717] bg-[#F3F3F3] `}
                         >
                           get started
@@ -178,6 +202,8 @@ const Processes = ({ process, btn_bg_color }: any) => {
                           w={"3.2"}
                           bg={"#F3F3F3"}
                           img={"blue"}
+                          arrow_icon={arrow_icon}
+                          btn_bg_color={btn_bg_color}
                         />
                       </div>
                     )}

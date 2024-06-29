@@ -13,7 +13,7 @@ import Logo from "../logo";
 import footer_bg from "../../../../public/landingpage_template/footer_bg.webp";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 
-const Footer = ({ landing }: any) => {
+const Footer = ({ landing, btn_bg_color }: any) => {
   return (
     <>
       <nav
@@ -171,7 +171,8 @@ const Footer = ({ landing }: any) => {
                   onClick={() => {
                     scrollTo_calendy();
                   }}
-                  className="nova  text-[1.3vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-center text-white hover:bg-[#920808]"
+                  style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
+                  className="nova  text-[1.3vw] font[900] sm:hidden rounded-[39px] px-[3vw] py-[1vw] bg-[#D01717] text-center text-white  hover:opacity-[70%]  "
                 >
                   Work with us <i className="bi bi-arrow-right"></i>
                 </button>
