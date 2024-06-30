@@ -166,7 +166,7 @@ const Writing = ({
   return (
     <>
       {" "}
-      <div className="flex flex-col items-center gap-[5vw] sm:gap-[5vw] w-full ">
+      <div className="flex flex-col mt-[6vw] mb-[2vw] sm;mb-[4vw] sm:mt-[10vw]  items-center gap-[5vw] sm:gap-[5vw] w-full ">
         {/* the first text  */}
 
         <div

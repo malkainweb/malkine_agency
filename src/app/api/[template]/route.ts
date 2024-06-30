@@ -319,15 +319,15 @@ export async function GET(_request: NextRequest, { params }: any) {
       main_img: architect_hand_middle,
 
       mob_scroll_left_img: [
-        { img: practices_left_2 },
+        { img: practices_left_1 },
         { img: practices_left_4 },
       ],
       mob_scroll_right_img: [
         { img: practices_right_2 },
         { img: practices_right_4 },
       ],
-      pastwork: {
-        heading: "Projects",
+      extra_pastwork: {
+        heading: "Past Work - Healthcare",
         works: [
           {
             img: practice_pastwork1,
@@ -359,6 +359,48 @@ export async function GET(_request: NextRequest, { params }: any) {
             img: practice_pastwork6,
             text: "Decibel",
             link: "https://www.decibelhealth.com/",
+          },
+        ],
+      },
+
+      pastwork: {
+        heading: "Past Work - Other Sectors",
+        works: [
+          {
+            img: academy_pastwork1,
+            text: "Q Department ",
+            link: "https://www.qdepartment.com/",
+            video: true,
+            video_link: "/showcase/q.mp4",
+            scale: true,
+          },
+          {
+            img: academy_pastwork2,
+            text: "Spoiled Child",
+            link: "https://spoiledchild.com/",
+            video_link: "/showcase/s.mp4",
+            video: true,
+          },
+
+          {
+            img: pastwork3,
+            text: "Atella Studios",
+            link: "https://www.atellastudios.com/",
+          },
+          {
+            img: academy_pastwork4,
+            text: "Harc ",
+            link: "https://harc.casa/",
+          },
+          {
+            img: academy_pastwork5,
+            text: "Good Juju",
+            link: "https://heygoodjuju.com/",
+          },
+          {
+            img: academy_pastwork6,
+            text: "Atella",
+            link: "https://www.atella.ca/",
           },
         ],
       },
@@ -477,8 +519,8 @@ export async function GET(_request: NextRequest, { params }: any) {
         { img: architect_right2 },
         { img: architect_right4 },
       ],
-      pastwork: {
-        heading: "Projects",
+      extra_pastwork: {
+        heading: "Past Work - Architecture",
         works: [
           {
             img: pastwork1,
@@ -491,11 +533,6 @@ export async function GET(_request: NextRequest, { params }: any) {
             link: "https://www.modscape.com.au/",
           },
 
-          {
-            img: pastwork3,
-            text: "Atella",
-            link: "https://www.atella.ca/",
-          },
           {
             img: pastwork4,
             text: "gow hastings ",
@@ -510,6 +547,48 @@ export async function GET(_request: NextRequest, { params }: any) {
             img: pastwork6,
             text: "Archier",
             link: "https://archier.com.au/",
+          },
+        ],
+      },
+
+      pastwork: {
+        heading: "Past Work - Other Sectors",
+        works: [
+          {
+            img: academy_pastwork1,
+            text: "Q Department ",
+            link: "https://www.qdepartment.com/",
+            video: true,
+            video_link: "/showcase/q.mp4",
+            scale: true,
+          },
+          {
+            img: academy_pastwork2,
+            text: "Spoiled Child",
+            link: "https://spoiledchild.com/",
+            video_link: "/showcase/s.mp4",
+            video: true,
+          },
+
+          {
+            img: pastwork3,
+            text: "Atella Studios",
+            link: "https://www.atellastudios.com/",
+          },
+          {
+            img: academy_pastwork4,
+            text: "Harc ",
+            link: "https://harc.casa/",
+          },
+          {
+            img: academy_pastwork5,
+            text: "Good Juju",
+            link: "https://heygoodjuju.com/",
+          },
+          {
+            img: academy_pastwork6,
+            text: "Atella",
+            link: "https://www.atella.ca/",
           },
         ],
       },

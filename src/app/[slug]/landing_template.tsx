@@ -90,6 +90,18 @@ const Landing_template = ({ data }: any) => {
         mob_right_img={data.mob_scroll_right_img}
         bg_gradient_color={data.background_color}
       />
+      {data.extra_pastwork && (
+        <Past_work_template
+          heading={data.extra_pastwork.heading}
+          pastwork={data.extra_pastwork.works}
+          text_color={data.header_text_color}
+        />
+      )}
+      <Past_work_template
+        heading={data.pastwork.heading}
+        pastwork={data.pastwork.works}
+        text_color={data.header_text_color}
+      />
       <Writing
         writing_one={data.writing_one}
         writing_text_color={data.writing_text_color}
@@ -98,17 +110,6 @@ const Landing_template = ({ data }: any) => {
         writing_two={data.writing_two}
       />
       <Calendy text_color={data.header_text_color} />
-      {data.category == "academia" && (
-        <Past_work_template
-          heading={data.extra_pastwork.heading}
-          pastwork={data.extra_pastwork.works}
-        />
-      )}
-      <Past_work_template
-        heading={data.pastwork.heading}
-        pastwork={data.pastwork.works}
-        text_color={data.header_text_color}
-      />
 
       <Services_template
         services={data.services}
