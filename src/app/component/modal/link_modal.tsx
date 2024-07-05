@@ -32,11 +32,13 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
         style={{ transition: "0.6s ease" }}
         onClick={hidenow}
       >
-        <Image
-          src={exit}
-          alt="Exit"
-          className="w-fit pr-[2rem] cursor-pointer"
-        />
+        <button className="h-[8%] w-fit">
+          <Image
+            src={exit}
+            alt="Exit"
+            className="w-fit pr-[2rem] cursor-pointer"
+          />
+        </button>
         <div
           onClick={(e) => {
             e.stopPropagation();
