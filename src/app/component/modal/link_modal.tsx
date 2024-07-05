@@ -7,7 +7,6 @@ import { useEffect, useState } from "react";
 
 const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
   const [start_modal, setstart_modal] = useState(false);
-  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     setstart_modal(true);
@@ -48,18 +47,13 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
             start_modal ? "translate-y-0" : "translate-y-[120%]"
           } rounded-t-[1rem] gap-[1.8rem]`}
         >
-          {isLoading && (
-            <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-75 z-10">
-              <span>Loading...</span>
-            </div>
-          )}
           <iframe
             src={path}
+            // frameBorder="0"
             width="100%"
             height="100%"
-            className="relative z-0"
+            className=" "
             allowFullScreen
-            onLoad={() => setIsLoading(false)}
           ></iframe>
         </div>
       </div>
