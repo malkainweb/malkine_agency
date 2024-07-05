@@ -5,10 +5,13 @@ import img1 from "../../../../public/landingpage_template/port1.webp";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
+import Link_modal from "../modal/link_modal";
 
 // import Typewriter from "typewriter-effect";
 const Past_work_template = ({ heading, pastwork, text_color }: any) => {
   //   const info_array = ["", "", "", "", "", ""];
+  const [start_anime, setstart_anime] = useState(false);
+  const [path, setpath] = useState("");
 
   const data_array = [
     {
@@ -93,13 +96,17 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
           <div className="w-full sm:w-full flex   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap ">
             {pastwork.map((e: any, index: any) => {
               return (
-                <Link
-                  href={e.link}
-                  target="_blank"
+                <div
+                  // href={e.link}
+                  // target="_blank"
+                  onClick={() => {
+                    setpath(e.link);
+                    setstart_anime(true);
+                  }}
                   data-index={index}
                   key={index}
                   ref={(ref) => (itemsRefs.current[index] = ref)}
-                  className="w-[48%] group mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 overflow-hidden transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
+                  className="w-[48%] group cursor-pointer mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 overflow-hidden transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
                 >
                   <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden relative sm:rounded-[4.7vw]  rounded-[2.5vw]">
                     {" "}
@@ -146,12 +153,20 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
                     )}
                   </p>
                   {/* <p className="text-white"></p> */}
-                </Link>
+                </div>
               );
             })}
           </div>
         </div>
       </div>
+
+      {start_anime && (
+        <Link_modal
+          // nav_items={nav_items}
+          setstart_anime={setstart_anime}
+          path={path}
+        />
+      )}
     </>
   );
 };
