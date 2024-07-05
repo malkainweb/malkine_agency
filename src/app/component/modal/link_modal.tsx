@@ -31,12 +31,8 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
         style={{ transition: "0.6s ease" }}
         onClick={hidenow}
       >
-        <button className="h-[8%] w-fit">
-          <Image
-            src={exit}
-            alt="Exit"
-            className="w-fit pr-[2rem] cursor-pointer"
-          />
+        <button className="h-[8%] w-fit pr-[2rem] cursor-pointer flex justify-center items-center">
+          <Image src={exit} alt="Exit" className="w-fit h-[90%] " />
         </button>
         <div
           onClick={(e) => {
