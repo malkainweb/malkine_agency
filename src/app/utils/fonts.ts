@@ -13,3 +13,9 @@ export const CabinetGrotesk_medium = localFont({
 export const CabinetGrotesk_light = localFont({
   src: "../../../public/fonts/cabinet_grotest/CabinetGrotesk-Thin.otf",
 });
+export const NeueHaasDisplay_roman = localFont({
+  src: "../../../public/fonts/neue_haas_grotesk_display_pro_cufonfonts/NeueHaasDisplayRoman.ttf",
+});
+export const NeueHaasDisplay_light = localFont({
+  src: "../../../public/fonts/neue_haas_grotesk_display_pro_cufonfonts/NeueHaasDisplayLight.ttf",
+});
