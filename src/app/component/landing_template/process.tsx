@@ -73,7 +73,7 @@ const Processes = ({
       step_text: "STEP 05: LONG TERM",
       heading: "Maintenance",
 
-      body: "Gradually we'll evolve wireframes into interactive, high-fidelity prototypes, to achieve an appropriate user journey as customers navigate across the platform.",
+      body: "By far, the most important step, we work with your business on regular updates to ensure the content forever up to date and also implement feedback based off user response from the initial product.",
       //   img: four,
       center: true,
     },

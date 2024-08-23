@@ -11,7 +11,7 @@ import {
   NeueHaasDisplay_light,
   NeueHaasDisplay_medium,
 } from "@/app/utils/fonts";
-import Each_past_work from "@/app/service/each_past_work";
+import drop_down from "@/../public/new_service/drop_down.png";
 
 // NOW FOR THE IAMGES
 
@@ -68,6 +68,7 @@ import gus_gooney from "@/../public/landingpage_template/academy_pastworks_image
 import erica from "@/../public/past_work/portfolio/erica.webp";
 import echo_nate from "@/../public/landingpage_template/academy_pastworks_images/img2.webp";
 import hovn_studio from "@/../public/landingpage_template/academy_pastworks_images/img3.webp";
+import Each_past_work from "@/app/letsgetteslas/each_past_work";
 // import Typewriter from "typewriter-effect";
 const Past_work_template = ({ heading, pastwork, text_color }: any) => {
   //   const info_array = ["", "", "", "", "", ""];
@@ -149,6 +150,7 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         {
           img: kate_perry,
           text: "katy perry collection",
+          link: "https://www.malkain.com/",
         },
         {
           img: spoil_child,
@@ -160,18 +162,22 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         {
           img: get_unity,
           text: "get unity",
+          link: "http://getunity.com/",
         },
         {
           img: vibes_only,
           text: "vibes only",
+          link: "https://www.vibesonly.com/",
         },
         {
           img: wild_brands,
           text: "wilde brands",
+          link: "https://www.wildebrands.com/",
         },
         {
           img: with_character,
           text: "With character",
+          link: "https://www.withcharacter.com/",
         },
       ],
     },
@@ -193,11 +199,13 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         },
         {
           img: orbit_law,
+          link: "https://orbit.law",
           text: "orbit law",
         },
         {
           img: apr,
           text: "apr",
+          link: "https://www.aprguarnizioni.com/",
         },
         {
           img: atella_studio,
@@ -226,6 +234,7 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         {
           img: exo,
           text: "exo",
+          link: "https://www.exo.inc/",
         },
         {
           img: ysotope,
@@ -245,10 +254,12 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         {
           img: modamu,
           text: "modamu village",
+          link: "https://app.modamuvillage.com",
         },
         {
           img: climb_onsight,
           text: "climb onsight",
+          link: "https://app.climbonsight.ca",
         },
       ],
     },
@@ -293,6 +304,7 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         {
           img: erica,
           text: "erica boothby",
+          link: "http://www.ericaboothby.com",
         },
         {
           img: hovn_studio,
@@ -319,11 +331,12 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
               // color: text_color,
             }
           }
-          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[6vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center ${NeueHaasDisplay_light.className}`}
+          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[7vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center ${NeueHaasDisplay_light.className}`}
         >
           Past Work{" "}
         </h3>
-        <div className="w-full flex justify-center gap-[2vw] ">
+        {/* this is for desktop  */}
+        <div className="w-full sm:hidden flex justify-center gap-[2vw] ">
           {menu_arr.map((e: any, index: any) => {
             return (
               <button
@@ -344,6 +357,26 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
               </button>
             );
           })}
+        </div>
+        {/* this is for mobile */}
+        {/* Dropdown for mobile devices */}
+        <div className="hidden w-fit  mx-auto px-[3vw] sm:rounded-[13vw] bg-[#FF0000] py-[1.5vw] overflow-hidden   sm:flex justify-center relative">
+          <select
+            className={`sm:text-[5vw] select relative bg-[#FF0000]  outline-none  ${NeueHaasDisplay_light.className} capitalize  justify-center text-center   text-black`}
+            onChange={(e) => setactive(e.target.value)}
+            value={active}
+          >
+            {" "}
+            {menu_arr.map((e: any, index: any) => (
+              <option
+                className={`  ${NeueHaasDisplay_light.className} sm:text-[5vw] bg-black text-white `}
+                key={index}
+                value={e.title}
+              >
+                {e.title}
+              </option>
+            ))}
+          </select>
         </div>
         <div className="w-full flex  px-[3vw]  sm:gap-[6vw] sm:px-[3vw] justify-center gap-[3vw] flex-wrap ">
           <div className="w-full sm:w-full flex   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap ">

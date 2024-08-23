@@ -39,7 +39,7 @@ const Service_hero = () => {
           onClick={() => {
             scrollTo_calendy();
           }}
-          className={`nova w-fit  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] hover:opacity-[70%]  sm:text-[3vw]   sm:rounded-[9.75vw] sm:px-[12vw] ${NeueHaasDisplay_roman.className}  sm:py-[4vw] font_helvetica  sm:text-white sm:mt-[2vw] `}
+          className={`nova w-fit  text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] hover:opacity-[70%]  sm:text-[3vw]   sm:rounded-[9.75vw] sm:px-[18vw] ${NeueHaasDisplay_roman.className}  sm:py-[4vw] font_helvetica  sm:text-white sm:mt-[2vw] `}
           //   style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
         >
           Get Started <i className="bi bi-arrow-right sm:hidden"></i>

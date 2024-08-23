@@ -460,3 +460,15 @@ input[type="number"] {
     border-bottom: 220vh solid black;
   }
 }
+
+.select {
+  appearance: auto !important;
+  -webkit-appearance: auto !important;
+  -moz-appearance: auto !important;
+  /* background-color: #ff0000; */
+  /* background: url("data:image/svg+xml;base64,...") no-repeat right center; Replace with your arrow SVG */
+  /* background-size: 1rem; */
+  /* padding-right: 2em; Make space for the arrow */
+  /* border: 1px solid #ccc; Style as needed */
+  /* border-radius: 2vw; */
+}

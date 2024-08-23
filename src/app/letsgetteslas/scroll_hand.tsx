@@ -29,8 +29,8 @@ const right_img = [
   { img: right_img3 },
   { img: right_img4 },
 ];
-const mob_right_img = [{ img: right_img2 }, { img: right_img4 }];
-const mob_left_img = [{ img: left_img2 }, { img: left_img4 }];
+const mob_right_img = [{ img: right_img2 }, { img: right_img1 }];
+const mob_left_img = [{ img: left_img1 }, { img: right_img3 }];
 
 const New_scroll_hand = () => {
   return (

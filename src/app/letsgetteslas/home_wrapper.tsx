@@ -15,6 +15,7 @@ import architect_three from "../../../public/new_service/process_3.webp";
 import Writing from "../component/landing_template/writing";
 import Calendy from "../component/calendy";
 import Past_work_template from "../component/landing_template/past_work_template";
+import New_service from "./new_service";
 
 export default function Home_wrapper() {
   const process = [
@@ -66,31 +67,19 @@ export default function Home_wrapper() {
       {" "}
       <Landing_nav />
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      {/* <Service_hero />
-      <New_scroll_hand /> */}
+      <Service_hero />
+      <New_scroll_hand />
       <Past_work_template />
-      <Writing
-      // writing_one={
-      //   "We build all in one solutions from custom website to custom software using user oriented designs to create unique experiences for your customers."
-      // }
-      // writing_text_color={data.writing_text_color}
-      // img={data.about_image}
-      // btn_bg_color={data.btn_bg_color}
-      // writing_two={data.writing_two}
-      />
+      <Writing />
       <Calendy text_color={"#000000"} />
-      {/* <Processes
+      <New_service />
+      <Processes
         process={process}
-        // btn_bg_color={data.btn_bg_color}
         text_color={"#000000"}
-        // arrow_icon={data.arrow_icon}
         straight_line_image={line}
         mobile_straight_line_image={mobile_line}
       />
-      <Footer_hand
-        text_color={"#000000"}
-        // btn_bg_color={data.btn_bg_color}
-      /> */}
+      <Footer_hand text_color={"#000000"} />
       <Footer landing={true} btn_bg_color={"#D01717"} />
     </>
   );
