@@ -5,32 +5,9 @@ import hand from "../../../../public/landingpage_template/footer_hand.webp";
 import Link from "next/link";
 import { useEffect } from "react";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
+import { NeueHaasDisplay_light } from "@/app/utils/fonts";
 
 const Footer_hand = ({ text_color, btn_bg_color }: any) => {
-  // useEffect(() => {
-  //   // Select the animated element
-  //   const animatedElement: any = document.querySelector(".footer-hand-image");
-
-  //   // Define the event listener functions
-  //   const startAnimation = () => {
-  //     animatedElement.style.animation = "move_hand 1.5s linear infinite";
-  //   };
-
-  //   const pauseAnimation = () => {
-  //     animatedElement.style.animationPlayState = "paused";
-  //   };
-
-  //   // Add event listeners
-  //   animatedElement.addEventListener("mouseleave", startAnimation);
-  //   animatedElement.addEventListener("mouseenter", pauseAnimation);
-
-  //   // Clean up the event listeners when the component unmounts
-  //   return () => {
-  //     animatedElement.addEventListener("mouseleave", startAnimation);
-  //     animatedElement.addEventListener("mouseenter", pauseAnimation);
-  //   };
-  // }, []);
-
   return (
     <>
       <div className="w-full h-[63vw] mt-[4vw] sm:h-[150vw]  flex flex-col justify-between items-center ">
@@ -39,7 +16,7 @@ const Footer_hand = ({ text_color, btn_bg_color }: any) => {
             style={{
               color: text_color,
             }}
-            className="font_helvetica text-white text-[5vw] sm:text-[10vw] text-center"
+            className={`font_helvetica text-white text-[5vw] sm:text-[10vw] text-center ${NeueHaasDisplay_light.className}`}
           >
             Let{"'"}s Get Started
           </h3>

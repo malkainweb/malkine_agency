@@ -168,32 +168,6 @@ const Writing = ({
       {" "}
       <div className="flex flex-col mt-[6vw] mb-[2vw] sm;mb-[4vw] sm:mt-[10vw]  items-center gap-[5vw] sm:gap-[5vw] w-full ">
         {/* the first text  */}
-
-        <div
-          className={` ${
-            writing_text_color ? writing_text_color : "elementor-heading-title"
-          }  leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]`}
-        >
-          <p>
-            {writing_one} {writing_text_color}
-          </p>
-        </div>
-
-        <Image
-          src={img}
-          alt="about image"
-          className=" w-[70vw] h-fit sm:w-[90vw] "
-        />
-        {/* the second text  */}
-
-        <div
-          className={`${
-            writing_text_color ? writing_text_color : "elementor-heading-title"
-          } leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]`}
-        >
-          <p>{writing_two}</p>
-        </div>
-
         {/* the button */}
         <div className="w-full flex justify-center pt-[1vw] sm:pt-[3vw]">
           <button
@@ -205,6 +179,38 @@ const Writing = ({
           >
             Let{"'"}s Build <i className="bi bi-arrow-right"></i>
           </button>
+        </div>
+        <div
+          className={` ${
+            writing_text_color ? writing_text_color : "elementor-heading-title"
+          }  leading-[4.5vw] text-[4.4vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[7vw] sm:leading-[7vw]`}
+        >
+          <p>
+            {/* {writing_one} {writing_text_color} */}
+            We build all in one solutions from custom{" "}
+            <br className="sm:hidden" /> website to custom software using user{" "}
+            <br className="sm:hidden" /> oriented designs to create unique{" "}
+            <br className="sm:hidden" />
+            experiences for your customers.
+          </p>
+        </div>
+
+        {img && (
+          <Image
+            src={img}
+            alt="about image"
+            className=" w-[70vw] h-fit sm:w-[90vw] "
+          />
+        )}
+
+        {/* the second text  */}
+
+        <div
+          className={`${
+            writing_text_color ? writing_text_color : "elementor-heading-title"
+          } leading-[3.9vw] text-[3.3vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[5vw] sm:leading-[6vw]`}
+        >
+          <p>{writing_two}</p>
         </div>
       </div>
     </>

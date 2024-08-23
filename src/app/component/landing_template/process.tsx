@@ -9,7 +9,12 @@ import three from "../../../../public/landingpage_template/example3.webp";
 
 import blue_arrow from "../../../public/home/processes/blue_arrow.png";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
-import { CabinetGrotesk_bold, CabinetGrotesk_medium } from "@/app/utils/fonts";
+import {
+  CabinetGrotesk_bold,
+  CabinetGrotesk_medium,
+  NeueHaasDisplay_light,
+  NeueHaasDisplay_roman,
+} from "@/app/utils/fonts";
 import External_btn from "@/app/utils/external_btn";
 import { useEffect, useState } from "react";
 // import { scrollTo_calendy } from "../utils/scroll_to_calendy";
@@ -102,7 +107,7 @@ const Processes = ({
                         : mob_line
                     }
                     alt="line"
-                    className="hidden sm:block w-[1.6vw] h-fit"
+                    className="hidden sm:block w-[2vw] h-fit"
                   />
                 )}
 
@@ -126,10 +131,10 @@ const Processes = ({
                       }  flex  `}
                     >
                       <Image
-                        style={{ filter: `drop-shadow(0 0 0.80vw #ffffff8b)` }}
+                        // style={{ filter: `drop-shadow(0 0 0.80vw #ffffff8b)` }}
                         src={e.img}
                         alt={e.heading}
-                        className="sm:w-full w-[70%] bg-[#ffffff8b] drop-shadow-xl sm:drop-shadow-2xl rounded-[100%] filter  h-fit"
+                        className="sm:w-full w-[70%] shadow-[#000000]  shadow-2xl rounded-[100%]   h-fit"
                       />
                     </div>
                   )}
@@ -148,8 +153,12 @@ const Processes = ({
                       style={{
                         color: !e.center && text_color,
                         borderColor: !e.center && text_color,
+                        // border: e.center && "1px solid white",
                       }}
-                      className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw]  sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]"
+                      // className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw]  sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]"
+                      className={`flex ${
+                        e.center && "border-[0.07vw]"
+                      } text-white justify-center items-center w-[11.2vw] h-[2.2vw]   sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]`}
                     >
                       <p
                         className={`${CabinetGrotesk_medium.className} sm:text-[3.2vw]  text-[0.9vw] uppercase`}
@@ -162,7 +171,7 @@ const Processes = ({
                         color: !e.center && text_color,
                       }}
                       className={` text-white sm:text-[8vw] sm:text-center ${
-                        CabinetGrotesk_bold.className
+                        NeueHaasDisplay_roman.className
                       } ${
                         e.reverse ? "text-end " : "sm:text-center"
                       }  text-[3.1vw]`}
@@ -175,7 +184,7 @@ const Processes = ({
                         color: !e.center && text_color,
                       }}
                       className={` text-white sm:text-[4vw] sm:leading-[5.5vw] ${
-                        CabinetGrotesk_medium.className
+                        NeueHaasDisplay_light.className
                       } ${
                         e.reverse
                           ? "text-end sm:text-center pl-[6vw] sm:pl-0"
@@ -196,16 +205,17 @@ const Processes = ({
                             scrollTo_calendy();
                           }}
                           style={{
-                            color: btn_bg_color && btn_bg_color,
+                            backgroundColor: "#D01717",
+                            // color: btn_bg_color && btn_bg_color,
                           }}
-                          className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[#D01717] bg-[#F3F3F3] `}
+                          className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[white] bg-[#F3F3F3] `}
                         >
                           get started
                         </button>
                         <External_btn
                           h={"3.2"}
                           w={"3.2"}
-                          bg={"#F3F3F3"}
+                          bg={"#D01717"}
                           img={"blue"}
                           arrow_icon={arrow_icon}
                           btn_bg_color={btn_bg_color}

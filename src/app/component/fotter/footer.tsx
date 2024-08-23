@@ -184,7 +184,7 @@ const Footer = ({ landing, btn_bg_color }: any) => {
         {/* the copyright section */}
         <div className="w-full h-[2.13vw] sm:h-auto sm:flex-col sm:gap-[4vw] px-[2.7vw]  py-[2.7vw] flex justify-between items-center sm:text-opacity-[60%]">
           <p className="text-[#FFFFFF] sm:text-opacity-[60%] inter font-[400] text-[0.821vw] sm:text-[3vw] ">
-            2023 Malkain. All right reserved.
+            2024 Malkain. All right reserved.
           </p>
 
           <div className="text-white capitalize text-[0.821vw] sm:text-[3vw] sm:text-opacity-[60%] flex gap-[1.4vw] sm:gap-[4vw]">

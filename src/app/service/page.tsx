@@ -1,15 +1,10 @@
-import Landing_nav from "../component/landing_template/landing_nav";
-import Service_hero from "./hero";
-import New_scroll_hand from "./scroll_hand";
+import Home_wrapper from "./home_wrapper";
 
-export default async function Home() {
+export default function Home() {
   return (
     <>
       {" "}
-      <Landing_nav />
-      <div className="h-[6vw] sm:h-[25vw] "></div>
-      <Service_hero />
-      <New_scroll_hand />
+      <Home_wrapper />
     </>
   );
 }

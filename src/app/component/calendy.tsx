@@ -3,6 +3,7 @@
 import { AnyCnameRecord } from "dns";
 import React from "react";
 import { InlineWidget, useCalendlyEventListener } from "react-calendly";
+import { NeueHaasDisplay_light } from "../utils/fonts";
 
 const Calendy = ({ text_color }: any) => {
   useCalendlyEventListener({
@@ -42,7 +43,7 @@ const Calendy = ({ text_color }: any) => {
         style={{
           color: text_color,
         }}
-        className="font_helvetica text-white text-[5vw] sm:text-[7vw] text-center"
+        className={`${NeueHaasDisplay_light.className} text-white text-[5vw] sm:text-[7vw] text-center`}
       >
         Let{"'"}s Get Started
       </h3>

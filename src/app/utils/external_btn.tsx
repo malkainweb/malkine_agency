@@ -21,7 +21,7 @@ const External_btn = ({ h, w, bg, img, btn_bg_color, arrow_icon }: any) => {
       >
         <div
           className={`absolute z-[99] top-[100%] group-hover:top-0  ${
-            img != "blue" ? "bg-white" : "bg-[#D01717]"
+            img != "blue" ? "bg-white" : "bg-[#F3F3F3]"
           }  w-full h-full left-0`}
           style={{
             transition: "0.7s ease",
@@ -33,7 +33,7 @@ const External_btn = ({ h, w, bg, img, btn_bg_color, arrow_icon }: any) => {
           src={arrow}
           alt="arrow"
           className={` ${
-            img != "blue"
+            img == "blue"
               ? "group-hover:opacity-0 z-[99] opacity-100"
               : "opacity-0 group-hover:opacity-100 "
           }  w-[2.3vw] z-[99] h-fit absolute top-[50%] translate-x-[-50%] left-[50%] translate-y-[-50%]`}
@@ -43,7 +43,7 @@ const External_btn = ({ h, w, bg, img, btn_bg_color, arrow_icon }: any) => {
           src={arrow_icon ? arrow_icon : blue_arrow}
           alt="arrow"
           className={` ${
-            img == "blue"
+            img != "blue"
               ? "group-hover:opacity-0 z-[99] opacity-100"
               : "opacity-0 group-hover:opacity-100 "
           }  w-[2.3vw] z-[99] h-fit absolute top-[50%] translate-x-[-50%] left-[50%] translate-y-[-50%]`}

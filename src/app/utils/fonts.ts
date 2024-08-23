@@ -19,3 +19,9 @@ export const NeueHaasDisplay_roman = localFont({
 export const NeueHaasDisplay_light = localFont({
   src: "../../../public/fonts/neue_haas_grotesk_display_pro_cufonfonts/NeueHaasDisplayLight.ttf",
 });
+export const NeueHaasDisplay_bold = localFont({
+  src: "../../../public/fonts/neue_haas_grotesk_display_pro_cufonfonts/NeueHaasDisplayBold.ttf",
+});
+export const NeueHaasDisplay_medium = localFont({
+  src: "../../../public/fonts/neue_haas_grotesk_display_pro_cufonfonts/NeueHaasDisplayMediu.ttf",
+});
