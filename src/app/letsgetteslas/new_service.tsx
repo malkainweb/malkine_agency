@@ -134,7 +134,7 @@ const New_service = () => {
                           words={[e.body]}
                           key={index}
                           cursorStyle=""
-                          typeSpeed={1}
+                          typeSpeed={0.7}
                           delaySpeed={1000}
                         />
                       )}
@@ -179,7 +179,7 @@ const New_service = () => {
       {/* THIS IS FOR MOBILE */}
       {/* THIS IS FOR MOBILE */}
       {/* this is for mobile */}
-      <div className="w-full   overflow-hidden  sm:mb-[15vw]  flex-col gap-[5vw] justify-center md:hidden flex">
+      <div className="w-full   overflow-hidden   sm:my-[15vw]  flex-col gap-[5vw] justify-center hidden sm:flex">
         <h3
           className={`${NeueHaasDisplay_roman.className} sm:text-[7vw] text-center sm:leading-[8vw]`}
         >

@@ -30,8 +30,8 @@ const Service_hero = () => {
           We create everything your company needs from websites,{" "}
           <br className="hidden sm:block" /> client portals,{" "}
           <br className="sm:hidden" />
-          internal CRM's and mobile apps to <br className="hidden sm:block" />{" "}
-          empower and boost growth.
+          internal CRM{"'"}s and mobile apps to{" "}
+          <br className="hidden sm:block" /> empower and boost growth.
         </p>
 
         <button
