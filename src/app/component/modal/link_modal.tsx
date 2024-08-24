@@ -25,23 +25,28 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
       {" "}
       {/* mobile nav  */}
       <div
-        className={`z-[3000] w-full h-full overflow-hidden bg-black fixed top-0 flex flex-col justify-end items-end ${
+        className={`z-[3000] w-full h-full overflow-hidden px-[1.5%] bg-black gap-[1vw] sm:gap-[2.5vw] pt-[0.55vw] fixed top-0 flex flex-col justify-end items-center ${
           start_modal ? "backdrop-blur-xl bg-opacity-[70%]" : "bg-opacity-0"
         }`}
-        style={{ transition: "0.6s ease" }}
+        style={{ transition: "0.5s ease" }}
         onClick={hidenow}
       >
-        <button className="h-[8%] w-fit pr-[2rem] cursor-pointer flex justify-center items-center">
+        <button
+          style={{ transition: "0.5s ease" }}
+          className={`h-[8%] w-fit  cursor-pointer flex justify-center ${
+            start_modal ? "opacity-[70%]" : "opacity-0"
+          } items-center`}
+        >
           <Image src={exit} alt="Exit" className="w-fit h-[90%] " />
         </button>
         <div
           onClick={(e) => {
             e.stopPropagation();
           }}
-          style={{ transition: "0.6s ease" }}
-          className={`w-full bg-white h-[92%] overflow-hidden relative ${
+          style={{ transition: "0.5s ease" }}
+          className={`w-full bg-white h-[90%]  border-white border-x-[0.2vw] border-t-[0.2vw] sm:border-x-[1.1vw] sm:border-t-[1.1vw]  overflow-hidden relative ${
             start_modal ? "translate-y-0" : "translate-y-[120%]"
-          } rounded-t-[1rem] gap-[1.8rem]`}
+          } rounded-t-[2vw] sm:rounded-t-[7vw] gap-[1.8rem]`}
         >
           <iframe
             src={path}
