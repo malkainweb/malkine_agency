@@ -70,7 +70,12 @@ import echo_nate from "@/../public/landingpage_template/academy_pastworks_images
 import hovn_studio from "@/../public/landingpage_template/academy_pastworks_images/img3.webp";
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
 // import Typewriter from "typewriter-effect";
-const Past_work_template = ({ heading, pastwork, text_color }: any) => {
+const Past_work_template = ({
+  heading,
+  pastwork,
+  text_color,
+  sethide_nav,
+}: any) => {
   //   const info_array = ["", "", "", "", "", ""];
   const [start_anime, setstart_anime] = useState(false);
   const [path, setpath] = useState("");
@@ -155,7 +160,8 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
         {
           img: spoil_child,
           text: "Spoiled Child",
-          link: "https://spoiledchild.com/",
+          // link: "https://spoiledchild.com/",
+          link: "https://www.spoiledchild.com/",
           video_link: "/showcase/s.mp4",
           video: true,
         },
@@ -321,6 +327,10 @@ const Past_work_template = ({ heading, pastwork, text_color }: any) => {
   ];
 
   const [active, setactive] = useState("Ecommerce");
+
+  useEffect(() => {
+    sethide_nav(!start_anime);
+  }, [start_anime]);
   return (
     <>
       <div className="w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">

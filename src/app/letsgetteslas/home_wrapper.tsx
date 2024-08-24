@@ -16,6 +16,7 @@ import Writing from "../component/landing_template/writing";
 import Calendy from "../component/calendy";
 import Past_work_template from "../component/landing_template/past_work_template";
 import New_service from "./new_service";
+import { useState } from "react";
 
 export default function Home_wrapper() {
   const process = [
@@ -62,14 +63,16 @@ export default function Home_wrapper() {
       center: true,
     },
   ];
+
+  const [hide_nav, sethide_nav] = useState(false);
   return (
     <>
       {" "}
-      <Landing_nav />
+      {hide_nav && <Landing_nav />}
       <div className="h-[6vw] sm:h-[25vw] "></div>
       <Service_hero />
       <New_scroll_hand />
-      <Past_work_template />
+      <Past_work_template sethide_nav={sethide_nav} />
       <Writing />
       <Calendy text_color={"#000000"} />
       <New_service />
