@@ -14,7 +14,7 @@ const Each_past_work = ({ body, setpath, setstart_anime }: any) => {
       (entries) => {
         entries.forEach((entry: any, index: any) => {
           if (entry.isIntersecting) {
-            console.log(entry.target.getAttribute("data-index"));
+            // console.log(entry.target.getAttribute("data-index"));
             entry.target.classList.add("show_item");
             setVisibleIndexes((prevIndexes: any) => [
               ...prevIndexes,

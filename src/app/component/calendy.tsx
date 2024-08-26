@@ -49,7 +49,7 @@ const Calendy = ({ text_color }: any) => {
       </h3>
       <div className="Calendy w-full overflow-hidden  sm:rounded-[5vw]   sm:w-[95%]">
         <InlineWidget
-          url="https://calendly.com/emmanuel-malkaindesigns/malkain-health-clone"
+          url="https://calendly.com/emmanuel-malkaindesigns/malkain-health-clone/hide_gdpr_banner=1"
           styles={{
             height: "1000px",
 

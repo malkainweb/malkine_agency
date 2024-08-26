@@ -95,7 +95,7 @@ const New_scroll_hand = () => {
           </div>
         </div>
         <div
-          className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-48.8%]  sm:translate-x-[-0vw]  "
+          className="flex  justify-center bottom-[-3.33vw]  w-fit items-center h-auto translate-x-[-50%]  sm:translate-x-[-0vw]  "
           style={{
             position: "sticky",
             left: "50%",
@@ -106,7 +106,7 @@ const New_scroll_hand = () => {
             priority
             src={main_img}
             alt="work image"
-            className=" w-[50vw] sm:w-[100vw]  h-fit  transition delay-[2s]"
+            className=" w-[49vw] sm:w-[100vw]  h-fit  transition delay-[2s]"
           />
         </div>{" "}
         <div

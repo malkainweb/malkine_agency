@@ -115,7 +115,7 @@ const Past_work_template = ({
       (entries) => {
         entries.forEach((entry: any, index: any) => {
           if (entry.isIntersecting) {
-            console.log(entry.target.getAttribute("data-index"));
+            // console.log(entry.target.getAttribute("data-index"));
             entry.target.classList.add("show_item");
             setVisibleIndexes((prevIndexes: any) => [
               ...prevIndexes,

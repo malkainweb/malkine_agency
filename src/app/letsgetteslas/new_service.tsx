@@ -103,9 +103,9 @@ const New_service = () => {
             >
               Services
             </h2>
-            <div className="flex flex-col capitalize z-[10] gap-[1vw] ">
+            <div className="flex flex-col  z-[10] gap-[1vw] ">
               <h3
-                className={`${NeueHaasDisplay_medium.className} z-[10] text-[2vw] text-[#FC2200]`}
+                className={`${NeueHaasDisplay_medium.className} capitalize z-[10] text-[2vw] text-[#FC2200]`}
               >
                 {items.map((e: any, index: any) => {
                   return (
@@ -124,7 +124,7 @@ const New_service = () => {
                 })}
               </h3>
               <p
-                className={`${NeueHaasDisplay_light.className} z-[10] text-[1.4vw]`}
+                className={`${NeueHaasDisplay_light.className} z-[10] text-[1.2vw] leading-[1.6vw]`}
               >
                 {items.map((e: any, index: any) => {
                   return (
@@ -196,7 +196,7 @@ const New_service = () => {
               >
                 <div
                   //   id={`brand-${index}`}
-                  className=" bg-[#C9C9C9] items-center p-[1.7vw] gap-[1vw] flex flex-col rounded-[5vw]"
+                  className=" bg-[#FC2200] items-center p-[1.7vw] gap-[1vw] flex flex-col rounded-[5vw]"
                   //   key={index}
                 >
                   <div className="w-full overflow-hidden bg-white rounded-[5vw]">
