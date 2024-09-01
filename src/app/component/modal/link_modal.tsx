@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import exit from "../../../../public/exit.png";
 import { useEffect, useState } from "react";
+import Script from "next/script";
 
 const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
   const [start_modal, setstart_modal] = useState(false);
@@ -23,6 +24,15 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
   return (
     <>
       {" "}
+      <Script
+        type="module"
+        src="https://unpkg.com/x-frame-bypass"
+        strategy="afterInteractive" // ensures the script is loaded after the page is interactive
+      />
+      <Script
+        src="https://unpkg.com/@ungap/custom-elements-builtin"
+        strategy="afterInteractive"
+      />
       {/* mobile nav  */}
       <div
         className={`z-[3000] w-full h-full overflow-hidden px-[1.5%] bg-black gap-[1vw] sm:gap-[2.5vw] pt-[0.55vw] fixed top-0 flex flex-col justify-end items-center ${
@@ -50,6 +60,7 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
         >
           <iframe
             src={path}
+            is="x-frame-bypass"
             // frameBorder="0"
             width="100%"
             height="100%"

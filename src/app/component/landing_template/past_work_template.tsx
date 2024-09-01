@@ -69,6 +69,7 @@ import erica from "@/../public/past_work/portfolio/erica.webp";
 import echo_nate from "@/../public/landingpage_template/academy_pastworks_images/img2.webp";
 import hovn_studio from "@/../public/landingpage_template/academy_pastworks_images/img3.webp";
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
+import Script from "next/script";
 // import Typewriter from "typewriter-effect";
 const Past_work_template = ({
   heading,
@@ -333,6 +334,15 @@ const Past_work_template = ({
   }, [start_anime]);
   return (
     <>
+      {/* <Script
+        type="module"
+        src="https://unpkg.com/x-frame-bypass"
+        strategy="afterInteractive" // ensures the script is loaded after the page is interactive
+      />
+      <Script
+        src="https://unpkg.com/@ungap/custom-elements-builtin"
+        strategy="afterInteractive"
+      /> */}
       <div className="w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
         {" "}
         <h3
