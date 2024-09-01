@@ -222,6 +222,7 @@ const Past_work_template = ({
         {
           img: re_origin,
           text: "re-origin",
+          link: "https://www.re-origin.com/",
         },
       ],
     },
@@ -334,15 +335,16 @@ const Past_work_template = ({
   }, [start_anime]);
   return (
     <>
-      {/* <Script
+      <Script
         type="module"
-        src="https://unpkg.com/x-frame-bypass"
+        // src="https://unpkg.com/x-frame-bypass"
+        src="/x-iframe-bypass.js"
         strategy="afterInteractive" // ensures the script is loaded after the page is interactive
       />
       <Script
         src="https://unpkg.com/@ungap/custom-elements-builtin"
         strategy="afterInteractive"
-      /> */}
+      />
       <div className="w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
         {" "}
         <h3

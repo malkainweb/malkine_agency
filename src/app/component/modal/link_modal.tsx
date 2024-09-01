@@ -24,7 +24,7 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
   return (
     <>
       {" "}
-      <Script
+      {/* <Script
         type="module"
         src="https://unpkg.com/x-frame-bypass"
         strategy="afterInteractive" // ensures the script is loaded after the page is interactive
@@ -32,7 +32,7 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
       <Script
         src="https://unpkg.com/@ungap/custom-elements-builtin"
         strategy="afterInteractive"
-      />
+      /> */}
       {/* mobile nav  */}
       <div
         className={`z-[3000] w-full h-full overflow-hidden px-[1.5%] bg-black gap-[1vw] sm:gap-[2.5vw] pt-[0.55vw] fixed top-0 flex flex-col justify-end items-center ${
@@ -65,7 +65,7 @@ const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
             width="100%"
             height="100%"
             className=" "
-            allowFullScreen
+            // allowFullScreen
           ></iframe>
         </div>
       </div>
