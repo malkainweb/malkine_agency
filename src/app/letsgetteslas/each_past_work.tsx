@@ -5,7 +5,12 @@ import { useEffect, useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { NeueHaasDisplay_bold } from "../utils/fonts";
 
-const Each_past_work = ({ body, setpath, setstart_anime }: any) => {
+const Each_past_work = ({
+  body,
+  setpath,
+  setstart_anime,
+  setopen_iframe,
+}: any) => {
   const itemsRefs = useRef<any>([]);
   const [visibleIndexes, setVisibleIndexes] = useState<any>([]);
 
@@ -51,6 +56,7 @@ const Each_past_work = ({ body, setpath, setstart_anime }: any) => {
             // target="_blank"
             onClick={() => {
               setpath(e.link);
+              setopen_iframe(e.open_false);
               setstart_anime(true);
             }}
             data-index={index}

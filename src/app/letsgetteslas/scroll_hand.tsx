@@ -27,9 +27,12 @@ const right_img = [
   { img: right_img1 },
   { img: right_img2 },
   { img: right_img3 },
-  { img: right_img4 },
+  { img: right_img4, video: true, video_link: "/showcase/q.mp4" },
 ];
-const mob_right_img = [{ img: right_img2 }, { img: right_img1 }];
+const mob_right_img = [
+  { img: right_img1 },
+  { img: right_img4, video: true, video_link: "/showcase/q.mp4" },
+];
 const mob_left_img = [{ img: left_img1 }, { img: right_img3 }];
 
 const New_scroll_hand = () => {
@@ -44,25 +47,52 @@ const New_scroll_hand = () => {
           <div className=" h-fit justify-center gap-[0.7vw]  flex flex-wrap w-[40.5%]">
             {left_img.map((e: any, index: any) => {
               return (
-                <Image
-                  key={index}
-                  src={e.img}
-                  // width={}
-                  alt="images"
-                  className="w-[47%] h-fit"
-                />
+                <div className="w-[47%] overflow-hidden relative rounded-[2vw] ">
+                  <Image
+                    key={index}
+                    src={e.img}
+                    // width={}
+                    alt="images"
+                    className="w-full h-fit"
+                  />
+                </div>
               );
             })}
           </div>
           <div className=" h-fit justify-center gap-[0.7vw]  flex flex-wrap w-[40.5%]">
             {right_img.map((e: any, index: any) => {
               return (
-                <Image
-                  key={index}
-                  src={e.img}
-                  alt="images"
-                  className="w-[47%] h-fit"
-                />
+                <div className="w-[47%] overflow-hidden relative rounded-[2vw] ">
+                  <Image
+                    key={index}
+                    src={e.img}
+                    // width={}
+                    alt="images"
+                    className="w-full h-fit"
+                  />
+                  {e.video ? (
+                    <div className="w-full absolute top-[50%]   translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
+                      <video
+                        className=" "
+                        // ref={videoRefs[index]}
+                        loop={true}
+                        muted={true}
+                        style={{
+                          transform: "scale(8)",
+                        }}
+                        playsInline={true}
+                        autoPlay={true}
+                        preload="auto"
+                        controls={false}
+                        // onPlay={() => setCurrentVideoIndex(index)}
+                      >
+                        {" "}
+                        <source src={e.video_link} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  ) : null}
+                </div>
               );
             })}
           </div>{" "}
@@ -72,24 +102,50 @@ const New_scroll_hand = () => {
           <div className=" h-fit justify-center  gap-[2.4vw]  flex flex-wrap w-[42.5%] translate-x-[-30%]">
             {mob_left_img.map((e: any, index: any) => {
               return (
-                <Image
-                  key={index}
-                  src={e.img}
-                  alt="images"
-                  className="w-full h-fit"
-                />
+                <div className="w-full rounded-[5vw] overflow-hidden">
+                  <Image
+                    key={index}
+                    src={e.img}
+                    alt="images"
+                    className="w-full h-fit"
+                  />
+                </div>
               );
             })}
           </div>
           <div className=" h-fit justify-center gap-[2.4vw]  flex flex-wrap w-[42.5%] translate-x-[30%]">
             {mob_right_img.map((e: any, index: any) => {
               return (
-                <Image
-                  key={index}
-                  src={e.img}
-                  alt="images"
-                  className="w-full h-fit"
-                />
+                <div className="w-full relative overflow-hidden rounded-[5vw]">
+                  <Image
+                    key={index}
+                    src={e.img}
+                    alt="images"
+                    className="w-full h-fit"
+                  />
+                  {e.video ? (
+                    <div className="w-full absolute top-[50%]   translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
+                      <video
+                        className=" "
+                        // ref={videoRefs[index]}
+                        loop={true}
+                        muted={true}
+                        style={{
+                          transform: "scale(8)",
+                        }}
+                        playsInline={true}
+                        autoPlay={true}
+                        preload="auto"
+                        controls={false}
+                        // onPlay={() => setCurrentVideoIndex(index)}
+                      >
+                        {" "}
+                        <source src={e.video_link} type="video/mp4" />
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  ) : null}
+                </div>
               );
             })}
           </div>

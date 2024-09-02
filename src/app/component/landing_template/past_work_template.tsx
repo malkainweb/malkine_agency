@@ -164,6 +164,7 @@ const Past_work_template = ({
           // link: "https://spoiledchild.com/",
           link: "https://www.spoiledchild.com/",
           video_link: "/showcase/s.mp4",
+          open_false: true,
           video: true,
         },
         {
@@ -175,6 +176,7 @@ const Past_work_template = ({
           img: vibes_only,
           text: "vibes only",
           link: "https://www.vibesonly.com/",
+          open_false: true,
         },
         {
           img: wild_brands,
@@ -185,6 +187,7 @@ const Past_work_template = ({
           img: with_character,
           text: "With character",
           link: "https://www.withcharacter.com/",
+          open_false: true,
         },
       ],
     },
@@ -203,11 +206,13 @@ const Past_work_template = ({
           img: good_juuju,
           text: "Good Juju",
           link: "https://heygoodjuju.com/",
+          open_false: true,
         },
         {
           img: orbit_law,
           link: "https://orbit.law",
           text: "orbit law",
+          open_false: true,
         },
         {
           img: apr,
@@ -233,6 +238,7 @@ const Past_work_template = ({
           img: cabinet_health,
           text: "cabinet health",
           link: "https://www.cabinethealth.com",
+          open_false: true,
         },
         {
           img: decibel,
@@ -263,6 +269,7 @@ const Past_work_template = ({
           img: modamu,
           text: "modamu village",
           link: "https://app.modamuvillage.com",
+          open_false: true,
         },
         {
           img: climb_onsight,
@@ -283,11 +290,13 @@ const Past_work_template = ({
           img: atella_ca,
           text: "Atella",
           link: "https://www.atella.ca/",
+          open_false: true,
         },
         {
           img: mitrex,
           text: "Mitrex ",
           link: "https://www.mitrex.com/",
+          open_false: true,
         },
         {
           img: hastings,
@@ -298,6 +307,7 @@ const Past_work_template = ({
           img: archier,
           text: "Archier",
           link: "https://archier.com.au/",
+          open_false: true,
         },
       ],
     },
@@ -323,12 +333,14 @@ const Past_work_template = ({
           img: echo_nate,
           text: "Echo and Nate",
           link: "https://echoandnate.com",
+          open_false: true,
         },
       ],
     },
   ];
 
   const [active, setactive] = useState("Ecommerce");
+  const [open_iframe, setopen_iframe] = useState<any>(null);
 
   useEffect(() => {
     sethide_nav(!start_anime);
@@ -409,6 +421,7 @@ const Past_work_template = ({
                   {active == outer.title && (
                     <Each_past_work
                       body={outer.body}
+                      setopen_iframe={setopen_iframe}
                       setpath={setpath}
                       setstart_anime={setstart_anime}
                     />
@@ -425,6 +438,7 @@ const Past_work_template = ({
           // nav_items={nav_items}
           setstart_anime={setstart_anime}
           path={path}
+          open_iframe={open_iframe}
         />
       )}
     </>
