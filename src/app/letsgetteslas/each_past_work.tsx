@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { NeueHaasDisplay_bold } from "../utils/fonts";
+import Link from "next/link";
 
 const Each_past_work = ({
   body,
@@ -51,14 +52,14 @@ const Each_past_work = ({
     <>
       {body.map((e: any, index: any) => {
         return (
-          <div
-            // href={e.link}
-            // target="_blank"
-            onClick={() => {
-              setpath(e.link);
-              setopen_iframe(e.open_false);
-              setstart_anime(true);
-            }}
+          <Link
+            href={e.link}
+            target="_blank"
+            // onClick={() => {
+            //   setpath(e.link);
+            //   setopen_iframe(e.open_false);
+            //   setstart_anime(true);
+            // }}
             data-index={index}
             key={index}
             ref={(ref) => (itemsRefs.current[index] = ref)}
@@ -111,7 +112,7 @@ const Each_past_work = ({
               )}
             </p>
             {/* <p className="text-white"></p> */}
-          </div>
+          </Link>
         );
       })}
     </>
