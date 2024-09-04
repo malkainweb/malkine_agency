@@ -52,14 +52,14 @@ const Each_past_work = ({
     <>
       {body.map((e: any, index: any) => {
         return (
-          <Link
-            href={e.link}
-            target="_blank"
-            // onClick={() => {
-            //   setpath(e.link);
-            //   setopen_iframe(e.open_false);
-            //   setstart_anime(true);
-            // }}
+          <div
+            // href={e.link}
+            // target="_blank"
+            onClick={() => {
+              setpath(e.link);
+              setopen_iframe(e.open_false);
+              setstart_anime(true);
+            }}
             data-index={index}
             key={index}
             ref={(ref) => (itemsRefs.current[index] = ref)}
@@ -112,7 +112,7 @@ const Each_past_work = ({
               )}
             </p>
             {/* <p className="text-white"></p> */}
-          </Link>
+          </div>
         );
       })}
     </>
