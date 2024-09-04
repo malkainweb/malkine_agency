@@ -127,7 +127,7 @@ const Past_work_template = ({
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.511 },
     );
 
     itemsRefs.current.forEach((ref: any) => {
