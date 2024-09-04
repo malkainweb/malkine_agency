@@ -237,7 +237,7 @@ const Past_work_template = ({
         {
           img: cabinet_health,
           text: "cabinet health",
-          link: "https://www.cabinethealth.com",
+          link: "https://cabinethealth.com/",
           open_false: true,
         },
         {
@@ -268,7 +268,7 @@ const Past_work_template = ({
         {
           img: modamu,
           text: "modamu village",
-          link: "https://app.modamuvillage.com",
+          link: "https://www.app.modamuvillage.com",
           open_false: true,
         },
         {
@@ -327,7 +327,7 @@ const Past_work_template = ({
         {
           img: hovn_studio,
           text: "Hovn Studios",
-          link: "https://hovnstudios.com",
+          link: "https://hovnstudios.com/",
         },
         {
           img: echo_nate,
@@ -441,6 +441,8 @@ const Past_work_template = ({
           open_iframe={open_iframe}
         />
       )}
+
+      {/* <FetchData /> */}
     </>
   );
 };
