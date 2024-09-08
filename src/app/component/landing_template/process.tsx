@@ -26,6 +26,7 @@ const Processes = ({
   arrow_icon,
   straight_line_image,
   mobile_straight_line_image,
+  show_btn,
 }: any) => {
   const width = globalThis.innerWidth;
 
@@ -195,32 +196,36 @@ const Processes = ({
                     </p>
 
                     {index != items.length - 1 && (
-                      <div
-                        className={` ${
-                          e.center ? "hidden" : "flex"
-                        } group  mt-[1vw] `}
-                      >
-                        <button
-                          onClick={() => {
-                            scrollTo_calendy();
-                          }}
-                          style={{
-                            backgroundColor: "#D01717",
-                            // color: btn_bg_color && btn_bg_color,
-                          }}
-                          className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[white] bg-[#F3F3F3] `}
-                        >
-                          get started
-                        </button>
-                        <External_btn
-                          h={"3.2"}
-                          w={"3.2"}
-                          bg={"#D01717"}
-                          img={"blue"}
-                          arrow_icon={arrow_icon}
-                          btn_bg_color={btn_bg_color}
-                        />
-                      </div>
+                      <>
+                        {show_btn && (
+                          <div
+                            className={` ${
+                              e.center ? "hidden" : "flex"
+                            } group  mt-[1vw] `}
+                          >
+                            <button
+                              onClick={() => {
+                                scrollTo_calendy();
+                              }}
+                              style={{
+                                backgroundColor: "#D01717",
+                                // color: btn_bg_color && btn_bg_color,
+                              }}
+                              className={` sm:w-[35vw] capitalize sm:text-[3.72vw]   sm:h-[11vw]  w-[10.5vw] h-[3.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.06vw] ${CabinetGrotesk_bold.className} text-[white] bg-[#F3F3F3] `}
+                            >
+                              get started
+                            </button>
+                            <External_btn
+                              h={"3.2"}
+                              w={"3.2"}
+                              bg={"#D01717"}
+                              img={"blue"}
+                              arrow_icon={arrow_icon}
+                              btn_bg_color={btn_bg_color}
+                            />
+                          </div>
+                        )}
+                      </>
                     )}
                   </div>
                 </div>

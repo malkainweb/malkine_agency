@@ -7,10 +7,10 @@ import { useEffect } from "react";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 import { NeueHaasDisplay_light } from "@/app/utils/fonts";
 
-const Footer_hand = ({ text_color, btn_bg_color }: any) => {
+const Footer_hand = ({ text_color, btn_bg_color, show_btn }: any) => {
   return (
     <>
-      <div className="w-full h-[63vw] mt-[4vw] sm:h-[150vw]  flex flex-col justify-between items-center ">
+      <div className="w-full h-auto gap-[3vw] sm:gap-[15vw]  mt-[4vw]   flex flex-col  items-center ">
         <div className="flex flex-col  ">
           <h3
             style={{
@@ -22,17 +22,19 @@ const Footer_hand = ({ text_color, btn_bg_color }: any) => {
           </h3>
 
           {/* the button */}
-          <div className="w-full flex justify-center pt-[2vw]">
-            <button
-              style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
-              onClick={() => {
-                scrollTo_calendy();
-              }}
-              className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
-            >
-              Work with us <i className="bi bi-arrow-right"></i>
-            </button>
-          </div>
+          {show_btn && (
+            <div className="w-full flex justify-center pt-[2vw]">
+              <button
+                style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
+                onClick={() => {
+                  scrollTo_calendy();
+                }}
+                className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
+              >
+                Work with us <i className="bi bi-arrow-right"></i>
+              </button>
+            </div>
+          )}
         </div>
         <Image
           src={hand}

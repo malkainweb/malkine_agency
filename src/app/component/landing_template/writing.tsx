@@ -45,6 +45,7 @@ const Writing = ({
   img,
   writing_text_color,
   btn_bg_color,
+  show_btn,
 }: any) => {
   const content = [
     "Great",
@@ -170,15 +171,17 @@ const Writing = ({
         {/* the first text  */}
         {/* the button */}
         <div className="w-full flex justify-center pt-[1vw] sm:pt-[3vw]">
-          <button
-            onClick={() => {
-              scrollTo_calendy();
-            }}
-            className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
-            style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
-          >
-            Let{"'"}s Build <i className="bi bi-arrow-right"></i>
-          </button>
+          {show_btn && (
+            <button
+              onClick={() => {
+                scrollTo_calendy();
+              }}
+              className="  text-[20px] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
+              style={{ backgroundColor: btn_bg_color ? btn_bg_color : "" }}
+            >
+              Let{"'"}s Build <i className="bi bi-arrow-right"></i>
+            </button>
+          )}
         </div>
         <div
           className={` ${

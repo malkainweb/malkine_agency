@@ -70,10 +70,10 @@ export default function Home_wrapper() {
       {" "}
       {hide_nav && <Landing_nav />}
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      <Service_hero />
+      <Service_hero show_btn={false} />
       <New_scroll_hand />
-      <Past_work_template sethide_nav={sethide_nav} />
-      <Writing />
+      <Past_work_template hide_btn={true} sethide_nav={sethide_nav} />
+      <Writing show_btn={false} />
       {/* <Calendy text_color={"#000000"} /> */}
       <New_service />
       <Processes
@@ -81,8 +81,9 @@ export default function Home_wrapper() {
         text_color={"#000000"}
         straight_line_image={line}
         mobile_straight_line_image={mobile_line}
+        show_btn={false}
       />
-      <Footer_hand text_color={"#000000"} />
+      <Footer_hand show_btn={false} text_color={"#000000"} />
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>
   );

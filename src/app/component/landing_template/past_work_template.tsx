@@ -153,10 +153,29 @@ const Past_work_template = ({
     {
       title: "Ecommerce",
       body: [
+        // {
+        //   img: kate_perry,
+        //   text: "katy perry collection",
+        //   link: "https://www.malkain.com/",
+        // },
         {
-          img: kate_perry,
-          text: "katy perry collection",
-          link: "https://www.malkain.com/",
+          img: get_unity,
+          text: "get unity",
+          link: "http://getunity.com/",
+        },
+
+        {
+          img: vibes_only,
+          text: "vibes only",
+          link: "https://www.vibesonly.com/",
+          open_false: true,
+        },
+
+        {
+          img: with_character,
+          text: "With character",
+          link: "https://www.withcharacter.com/",
+          open_false: true,
         },
         {
           img: spoil_child,
@@ -165,29 +184,13 @@ const Past_work_template = ({
           link: "https://www.spoiledchild.com/",
           video_link: "/showcase/s.mp4",
           open_false: true,
+          new_tab: true,
           video: true,
-        },
-        {
-          img: get_unity,
-          text: "get unity",
-          link: "http://getunity.com/",
-        },
-        {
-          img: vibes_only,
-          text: "vibes only",
-          link: "https://www.vibesonly.com/",
-          open_false: true,
         },
         {
           img: wild_brands,
           text: "wilde brands",
           link: "https://www.wildebrands.com/",
-        },
-        {
-          img: with_character,
-          text: "With character",
-          link: "https://www.withcharacter.com/",
-          open_false: true,
         },
       ],
     },
@@ -239,6 +242,7 @@ const Past_work_template = ({
           text: "cabinet health",
           link: "https://cabinethealth.com/",
           open_false: true,
+          new_tab: true,
         },
         {
           img: decibel,
@@ -270,6 +274,7 @@ const Past_work_template = ({
           text: "modamu village",
           link: "https://www.app.modamuvillage.com",
           open_false: true,
+          new_tab: true,
         },
         {
           img: climb_onsight,
@@ -308,6 +313,7 @@ const Past_work_template = ({
           text: "Archier",
           link: "https://archier.com.au/",
           open_false: true,
+          new_tab: true,
         },
       ],
     },
@@ -334,6 +340,7 @@ const Past_work_template = ({
           text: "Echo and Nate",
           link: "https://echoandnate.com",
           open_false: true,
+          new_tab: true,
         },
       ],
     },
