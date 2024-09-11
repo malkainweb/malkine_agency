@@ -159,25 +159,6 @@ const Past_work_template = ({
         //   link: "https://www.malkain.com/",
         // },
         {
-          img: get_unity,
-          text: "get unity",
-          link: "http://getunity.com/",
-        },
-
-        {
-          img: vibes_only,
-          text: "vibes only",
-          link: "https://www.vibesonly.com/",
-          open_false: true,
-        },
-
-        {
-          img: with_character,
-          text: "With character",
-          link: "https://www.withcharacter.com/",
-          open_false: true,
-        },
-        {
           img: spoil_child,
           text: "Spoiled Child",
           // link: "https://spoiledchild.com/",
@@ -188,9 +169,29 @@ const Past_work_template = ({
           video: true,
         },
         {
+          img: get_unity,
+          text: "get unity",
+          link: "http://getunity.com/",
+          new_tab: true,
+        },
+
+        {
+          img: with_character,
+          text: "With character",
+          link: "https://www.withcharacter.com/",
+          open_false: true,
+        },
+
+        {
           img: wild_brands,
           text: "wilde brands",
           link: "https://www.wildebrands.com/",
+        },
+        {
+          img: vibes_only,
+          text: "vibes only",
+          link: "https://www.vibesonly.com/",
+          open_false: true,
         },
       ],
     },
@@ -206,37 +207,53 @@ const Past_work_template = ({
           scale: true,
         },
         {
-          img: good_juuju,
-          text: "Good Juju",
-          link: "https://heygoodjuju.com/",
-          open_false: true,
-        },
-        {
           img: orbit_law,
           link: "https://orbit.law",
           text: "orbit law",
           open_false: true,
         },
         {
-          img: apr,
-          text: "apr",
-          link: "https://www.aprguarnizioni.com/",
+          img: good_juuju,
+          text: "Good Juju",
+          link: "https://heygoodjuju.com/",
+          open_false: true,
         },
+
         {
           img: atella_studio,
           text: "Atella Studios",
           link: "https://www.atellastudios.com/",
         },
         {
-          img: re_origin,
-          text: "re-origin",
-          link: "https://www.re-origin.com/",
+          img: apr,
+          text: "apr",
+          link: "https://www.aprguarnizioni.com/",
         },
+        // {
+        //   img: re_origin,
+        //   text: "re-origin",
+        //   link: "https://www.re-origin.com/",
+        // },
       ],
     },
     {
       title: "Healthcare",
       body: [
+        {
+          img: ysotope,
+          text: "Ysotope",
+          link: "https://www.ysotope.com/",
+        },
+        {
+          img: exo,
+          text: "exo",
+          link: "https://www.exo.inc/",
+        },
+        {
+          img: pico,
+          text: "Pico",
+          link: "https://www.picoclinics.com/",
+        },
         {
           img: cabinet_health,
           text: "cabinet health",
@@ -249,54 +266,12 @@ const Past_work_template = ({
           text: "Decibel",
           link: "https://www.decibelhealth.com/",
         },
-        {
-          img: exo,
-          text: "exo",
-          link: "https://www.exo.inc/",
-        },
-        {
-          img: ysotope,
-          text: "Ysotope",
-          link: "https://www.ysotope.com/",
-        },
-        {
-          img: pico,
-          text: "Pico",
-          link: "https://www.picoclinics.com/",
-        },
       ],
     },
-    {
-      title: "Software",
-      body: [
-        {
-          img: modamu,
-          text: "modamu village",
-          link: "https://www.app.modamuvillage.com",
-          open_false: true,
-          new_tab: true,
-        },
-        {
-          img: climb_onsight,
-          text: "climb onsight",
-          link: "https://app.climbonsight.ca",
-        },
-      ],
-    },
+
     {
       title: "Architecture",
       body: [
-        {
-          img: harc,
-          text: "Harc ",
-          link: "https://harc.casa/",
-        },
-        {
-          img: atella_ca,
-          text: "Atella",
-          link: "https://www.atella.ca/",
-          open_false: true,
-        },
         {
           img: mitrex,
           text: "Mitrex ",
@@ -304,9 +279,21 @@ const Past_work_template = ({
           open_false: true,
         },
         {
+          img: harc,
+          text: "Harc ",
+          link: "https://harc.casa/",
+        },
+        {
           img: hastings,
           text: "gow hastings ",
           link: "https://gowhastings.com/",
+        },
+
+        {
+          img: atella_ca,
+          text: "Atella",
+          link: "https://www.atella.ca/",
+          open_false: true,
         },
         {
           img: archier,
@@ -321,25 +308,37 @@ const Past_work_template = ({
       title: "Portfolio",
       body: [
         {
-          img: gus_gooney,
-          text: "Gus Cooney ",
-          link: "https://guscooney.com",
-        },
-        {
-          img: erica,
-          text: "erica boothby",
-          link: "http://www.ericaboothby.com",
+          img: echo_nate,
+          text: "Echo and Nate",
+          link: "https://echoandnate.com",
+          open_false: true,
+          new_tab: true,
         },
         {
           img: hovn_studio,
           text: "Hovn Studios",
           link: "https://hovnstudios.com/",
         },
+
         {
-          img: echo_nate,
-          text: "Echo and Nate",
-          link: "https://echoandnate.com",
-          open_false: true,
+          img: erica,
+          text: "erica boothby",
+          link: "https://erica-malkain.vercel.app/",
+        },
+        {
+          img: gus_gooney,
+          text: "Gus Cooney ",
+          link: "https://guscooney.com",
+        },
+      ],
+    },
+    {
+      title: "Software",
+      body: [
+        {
+          img: climb_onsight,
+          text: "climb onsight",
+          link: "https://app.climbonsight.ca",
           new_tab: true,
         },
       ],
