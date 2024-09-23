@@ -19,9 +19,10 @@ const Service_hero = ({ show_btn }: any) => {
           leading-[4.5vw] sm:leading-[9vw] ${NeueHaasDisplay_roman.className}
           `}
         >
-          <span className="text-[#FF0000]">We build</span> break through
-          websites and <br className="sm:hidden" /> software for break through
-          brands.
+          We <span className="text-[#FF0000]">Build</span> Custom
+          <span className="text-[#FF0000]"> Websites </span> <br />
+          and Software that
+          <span className="text-[#FF0000]"> Converts</span>
         </h1>
         <p
           className={` ${NeueHaasDisplay_light.className} font_helvetica   sm:text-[3.5vw] sm:leading-[4vw] text-[1.8vw]  leading-[2.1vw]`}
