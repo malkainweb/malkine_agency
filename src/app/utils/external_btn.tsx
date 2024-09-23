@@ -47,7 +47,7 @@ const External_btn = ({ h, w, bg, img, btn_bg_color, arrow_icon }: any) => {
               ? "group-hover:opacity-0 z-[99] opacity-100"
               : "opacity-0 group-hover:opacity-100 "
           }  w-[2.3vw] z-[99] h-fit absolute top-[50%] translate-x-[-50%] left-[50%] translate-y-[-50%]`}
-          style={{ width: `${w - 2.2}vw`, transition: "0.7s ease" }}
+          style={{ width: `${w - 2.7}vw`, transition: "0.7s ease" }}
         />
       </div>
     </>

@@ -17,6 +17,9 @@ import Calendy from "../component/calendy";
 import Past_work_template from "../component/landing_template/past_work_template";
 import New_service from "./new_service";
 import { useState } from "react";
+import Brands from "./brand";
+import Who_we_are from "./who_we_are_mobile";
+import How_to_find_us from "./how_to_find_us";
 
 export default function Home_wrapper() {
   const process = [
@@ -70,12 +73,17 @@ export default function Home_wrapper() {
       {" "}
       {hide_nav && <Landing_nav />}
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      <Service_hero />
+      {/* <Service_hero />
       <New_scroll_hand />
+      <Brands /> */}
       <Past_work_template sethide_nav={sethide_nav} />
-      <Writing />
+      {/* <Writing />
+      <div className="sm:block hidden">
+        <Who_we_are />
+      </div>
       <Calendy text_color={"#000000"} />
-      <New_service />
+      <How_to_find_us />
+      <New_service /> */}
       <Processes
         process={process}
         text_color={"#000000"}

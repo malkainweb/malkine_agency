@@ -58,11 +58,6 @@ const Each_past_work = ({
               <Link
                 href={e.link}
                 target="_blank"
-                // onClick={() => {
-                //   setpath(e.link);
-                //   setopen_iframe(e.open_false);
-                //   setstart_anime(true);
-                // }}
                 data-index={index}
                 key={index}
                 ref={(ref) => (itemsRefs.current[index] = ref)}
@@ -78,7 +73,6 @@ const Each_past_work = ({
                   {e.video ? (
                     <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
                       <video
-                        // ref={videoRefs[index]}
                         loop={true}
                         muted={true}
                         style={{
@@ -88,7 +82,6 @@ const Each_past_work = ({
                         autoPlay={true}
                         preload="auto"
                         controls={false}
-                        // onPlay={() => setCurrentVideoIndex(index)}
                       >
                         {" "}
                         <source src={e.video_link} type="video/mp4" />
@@ -99,11 +92,6 @@ const Each_past_work = ({
                 </div>
                 <p
                   className={` uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] ${NeueHaasDisplay_bold.className}`}
-                  style={
-                    {
-                      // color: text_color,
-                    }
-                  }
                 >
                   {" "}
                   {visibleIndexes.includes(index) && (
@@ -115,12 +103,9 @@ const Each_past_work = ({
                     />
                   )}
                 </p>
-                {/* <p className="text-white"></p> */}
               </Link>
             ) : (
               <div
-                // href={e.link}
-                // target="_blank"
                 onClick={() => {
                   setpath(e.link);
                   setopen_iframe(e.open_false);
@@ -141,7 +126,6 @@ const Each_past_work = ({
                   {e.video ? (
                     <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
                       <video
-                        // ref={videoRefs[index]}
                         loop={true}
                         muted={true}
                         style={{
@@ -151,7 +135,6 @@ const Each_past_work = ({
                         autoPlay={true}
                         preload="auto"
                         controls={false}
-                        // onPlay={() => setCurrentVideoIndex(index)}
                       >
                         {" "}
                         <source src={e.video_link} type="video/mp4" />
@@ -162,11 +145,6 @@ const Each_past_work = ({
                 </div>
                 <p
                   className={` uppercase sm:text-[4.2vw] font-bold  sm:leading-[5vw] text-[1.5vw] leading-[2vw] ${NeueHaasDisplay_bold.className}`}
-                  style={
-                    {
-                      // color: text_color,
-                    }
-                  }
                 >
                   {visibleIndexes.includes(index) && (
                     <Typewriter
@@ -177,7 +155,6 @@ const Each_past_work = ({
                     />
                   )}
                 </p>
-                {/* <p className="text-white"></p> */}
               </div>
             )}{" "}
           </>

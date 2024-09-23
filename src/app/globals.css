@@ -472,3 +472,42 @@ input[type="number"] {
   /* border: 1px solid #ccc; Style as needed */
   /* border-radius: 2vw; */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide_scroll_bar::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes innovation_translate {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -147.5%;
+  }
+}
+
+@keyframes innovation_translate_mobile {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -330.5%;
+  }
+}
+
+.innovation_translate {
+  animation: innovation_translate 15s linear infinite; /* Adjust the duration as needed */
+  /* animation-delay: 0s, -5s; */
+}
+
+.innovation_translate:hover {
+  animation-play-state: paused;
+}
+
+@media screen and (max-width: 650px) {
+  .innovation_translate {
+    animation: innovation_translate_mobile 12s linear infinite; /* Adjust the duration as needed */
+    /* animation-delay: 0s, -5s; */
+  }
+}

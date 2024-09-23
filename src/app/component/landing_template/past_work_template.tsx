@@ -70,6 +70,7 @@ import echo_nate from "@/../public/landingpage_template/academy_pastworks_images
 import hovn_studio from "@/../public/landingpage_template/academy_pastworks_images/img3.webp";
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
 import Script from "next/script";
+import Mobile_Live_past_work from "@/app/letsgetteslas/mobile_each_past_work";
 // import Typewriter from "typewriter-effect";
 const Past_work_template = ({
   heading,
@@ -371,7 +372,7 @@ const Past_work_template = ({
               // color: text_color,
             }
           }
-          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[7vw] px-[20vw] sm:px-[2vw] sm:leading-[7vw]  text-center ${NeueHaasDisplay_light.className}`}
+          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[7vw] px-[20vw] sm:px-0 sm:leading-[7vw]  text-center ${NeueHaasDisplay_light.className}`}
         >
           Past Work{" "}
         </h3>
@@ -418,14 +419,33 @@ const Past_work_template = ({
             ))}
           </select>
         </div>
-        <div className="w-full flex  px-[3vw]  sm:gap-[6vw] sm:px-[3vw] justify-center gap-[3vw] flex-wrap ">
-          <div className="w-full sm:w-full flex   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap ">
+        <div className="w-full flex  px-[3vw]  sm:gap-[6vw] sm:px-0 justify-center gap-[3vw] flex-wrap ">
+          {/* DESKTOP DESIGN */}
+          <div className="w-full sm:w-full flex sm:hidden   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap ">
             {menu_arr.map((outer: any, outer_index: any) => {
               return (
                 <>
                   {" "}
                   {active == outer.title && (
                     <Each_past_work
+                      body={outer.body}
+                      setopen_iframe={setopen_iframe}
+                      setpath={setpath}
+                      setstart_anime={setstart_anime}
+                    />
+                  )}
+                </>
+              );
+            })}
+          </div>
+          {/* MOBILE DESIGN */}
+          <div className="w-full sm:w-full sm:flex hidden   sm:gap-[6vw] sm:px-0 justify-between gap-[3vw]  flex-wrap ">
+            {menu_arr.map((outer: any, outer_index: any) => {
+              return (
+                <>
+                  {" "}
+                  {active == outer.title && (
+                    <Mobile_Live_past_work
                       body={outer.body}
                       setopen_iframe={setopen_iframe}
                       setpath={setpath}
