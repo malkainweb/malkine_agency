@@ -73,17 +73,17 @@ export default function Home_wrapper() {
       {" "}
       {hide_nav && <Landing_nav />}
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      {/* <Service_hero />
+      <Service_hero />
       <New_scroll_hand />
-      <Brands /> */}
+      <Brands />
       <Past_work_template sethide_nav={sethide_nav} />
-      {/* <Writing />
+      <Writing />
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
       <Calendy text_color={"#000000"} />
       <How_to_find_us />
-      <New_service /> */}
+      <New_service />
       <Processes
         process={process}
         text_color={"#000000"}
@@ -91,7 +91,7 @@ export default function Home_wrapper() {
         mobile_straight_line_image={mobile_line}
       />
       <Footer_hand text_color={"#000000"} />
-      <Footer landing={true} btn_bg_color={"#D01717"} />
+      {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>
   );
 }
