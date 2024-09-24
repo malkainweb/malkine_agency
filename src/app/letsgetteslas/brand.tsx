@@ -43,7 +43,7 @@ const Brands = () => {
               : CabinetGrotesk_bold.className
           } leading-[4.5vw] text-[4.2vw] sm:text-[7vw] sm:leading-[9vw] sm:px-[2vw]`}
         >
-          We are trusted by leading <br className="sm:hidden" /> healthcare
+          We are trusted by leading <br className="sm:hidden" />
           organizations{" "}
         </h2>
         <p
@@ -51,8 +51,7 @@ const Brands = () => {
         >
           We are proud to have collaborated with some of the{" "}
           <br className="hidden sm:block" /> most innovative and influential
-          health care <br className="hidden sm:block" /> organizations brands in
-          the world.{" "}
+          <br className="hidden sm:block" /> organizations brands in the world.{" "}
         </p>
 
         {/* now the button */}
