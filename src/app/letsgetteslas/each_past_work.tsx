@@ -31,7 +31,7 @@ const Each_past_work = ({
           }
         });
       },
-      { threshold: 0.5 },
+      { threshold: 0.51 },
     );
 
     itemsRefs.current.forEach((ref: any) => {
