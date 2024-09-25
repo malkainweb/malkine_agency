@@ -96,7 +96,7 @@ const Each_past_work = ({
                 data-index={index}
                 key={index}
                 ref={(ref) => (itemsRefs.current[index] = ref)}
-                className="w-[48%] group show_item cursor-pointer mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 overflow-hidden transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
+                className="w-[48%] group  cursor-pointer mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 overflow-hidden transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
               >
                 <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden relative sm:rounded-[4.7vw]  rounded-[2.5vw] border border-[#0000005d] ">
                   {" "}
@@ -149,7 +149,7 @@ const Each_past_work = ({
                 data-index={index}
                 key={index}
                 ref={(ref) => (itemsRefs.current[index] = ref)}
-                className="w-[48%] show_item group cursor-pointer mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 overflow-hidden transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
+                className="w-[48%]  group cursor-pointer mb-[-1vw] gap-[0.7vw] translate-y-[10%] opacity-0 overflow-hidden transition duration-[1s] sm:gap-[2vw] sm:w-full  flex flex-col "
               >
                 <div className="w-full text-white h-[24vw] bg-[#ffffff71] sm:h-[50vw] overflow-hidden relative sm:rounded-[4.7vw]  rounded-[2.5vw] border border-[#0000005d] ">
                   {" "}
