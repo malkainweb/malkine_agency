@@ -439,11 +439,10 @@ const Past_work_template = ({
             })}
           </div>
           {/* MOBILE DESIGN */}
-          {/* <div className="w-full sm:w-full sm:flex hidden   sm:gap-[6vw] sm:px-0 justify-between gap-[3vw]  flex-wrap ">
+          <div className="w-full sm:w-full sm:flex hidden   sm:gap-[6vw] sm:px-0 justify-between gap-[3vw]  flex-wrap ">
             {menu_arr.map((outer: any, outer_index: any) => {
               return (
                 <>
-                 
                   {active == outer.title && (
                     <Mobile_Live_past_work
                       body={outer.body}
@@ -455,7 +454,7 @@ const Past_work_template = ({
                 </>
               );
             })}
-          </div> */}
+          </div>
         </div>
       </div>
 
