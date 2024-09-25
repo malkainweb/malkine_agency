@@ -20,7 +20,7 @@ const Each_past_work = ({
       (entries) => {
         entries.forEach((entry: any, index: any) => {
           if (entry.isIntersecting) {
-            // console.log(entry.target.getAttribute("data-index"));
+            console.log(entry.target.getAttribute("data-index"), 'this is from each past works');
             entry.target.classList.add("show_item");
             setVisibleIndexes((prevIndexes: any) => [
               ...prevIndexes,
