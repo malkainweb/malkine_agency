@@ -15,40 +15,72 @@ const Each_past_work = ({
   const itemsRefs = useRef<any>([]);
   const [visibleIndexes, setVisibleIndexes] = useState<any>([]);
 
+  // useEffect(() => {
+  //   const observer = new IntersectionObserver(
+  //     (entries) => {
+  //       entries.forEach((entry: any, index: any) => {
+  //         if (entry.isIntersecting) {
+  //           console.log(
+  //             entry.target.getAttribute("data-index"),
+  //             "this is from each past works",
+  //           );
+  //           entry.target.classList.add("show_item");
+  //           setVisibleIndexes((prevIndexes: any) => [
+  //             ...prevIndexes,
+  //             //   parseInt(entry.target.dataset.index),
+  //             parseInt(entry.target.getAttribute("data-index")),
+  //           ]);
+  //           observer.unobserve(entry.target);
+  //         }
+  //       });
+  //     },
+  //     { threshold: 0.51 },
+  //   );
+
+  //   itemsRefs.current.forEach((ref: any) => {
+  //     observer.observe(ref);
+  //   });
+
+  //   return () => {
+  //     if (itemsRefs) {
+  //       itemsRefs.current.forEach((ref: any) => {
+  //         if (ref) {
+  //           observer.unobserve(ref);
+  //         }
+  //       });
+  //     }
+  //   };
+  // }, []);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
-        entries.forEach((entry: any, index: any) => {
+        entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log(
-              entry.target.getAttribute("data-index"),
-              "this is from each past works",
-            );
+            const index = entry.target.getAttribute("data-index");
+            console.log(index, "this is from each past works");
             entry.target.classList.add("show_item");
             setVisibleIndexes((prevIndexes: any) => [
               ...prevIndexes,
-              //   parseInt(entry.target.dataset.index),
-              parseInt(entry.target.getAttribute("data-index")),
+              parseInt(index as string),
             ]);
-            observer.unobserve(entry.target);
           }
         });
       },
-      { threshold: 0.51 },
+      {
+        threshold: 0.3,
+        rootMargin: "0px 0px -30% 0px",
+      },
     );
 
     itemsRefs.current.forEach((ref: any) => {
-      observer.observe(ref);
+      if (ref) observer.observe(ref);
     });
 
     return () => {
-      if (itemsRefs) {
-        itemsRefs.current.forEach((ref: any) => {
-          if (ref) {
-            observer.unobserve(ref);
-          }
-        });
-      }
+      itemsRefs.current.forEach((ref: any) => {
+        if (ref) observer.unobserve(ref);
+      });
     };
   }, []);
   return (
