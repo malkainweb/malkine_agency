@@ -511,3 +511,8 @@ input[type="number"] {
     /* animation-delay: 0s, -5s; */
   }
 }
+
+.show_item {
+  opacity: 1;
+  transform: translateY(0);
+}
