@@ -17,6 +17,7 @@ import { useState } from "react";
 import Service_hero from "../letsgetteslas/hero";
 import New_scroll_hand from "../letsgetteslas/scroll_hand";
 import New_service from "../letsgetteslas/new_service";
+import Mobile_Process from "../letsgetteslas/mobile_process";
 
 export default function Home_wrapper() {
   const process = [
@@ -76,13 +77,17 @@ export default function Home_wrapper() {
       <Writing show_btn={false} />
       {/* <Calendy text_color={"#000000"} /> */}
       <New_service />
-      <Processes
-        process={process}
-        text_color={"#000000"}
-        straight_line_image={line}
-        mobile_straight_line_image={mobile_line}
-        show_btn={false}
-      />
+      <div className="sm:block hidden">
+        <Mobile_Process />
+      </div>
+      <div className="sm:hidden block">
+        <Processes
+          process={process}
+          text_color={"#000000"}
+          straight_line_image={line}
+          mobile_straight_line_image={mobile_line}
+        />
+      </div>
       <Footer_hand show_btn={false} text_color={"#000000"} />
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>

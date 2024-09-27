@@ -20,6 +20,7 @@ import { useState } from "react";
 import Brands from "./brand";
 import Who_we_are from "./who_we_are_mobile";
 import How_to_find_us from "./how_to_find_us";
+import Mobile_Process from "./mobile_process";
 
 export default function Home_wrapper() {
   const process = [
@@ -84,12 +85,17 @@ export default function Home_wrapper() {
       <Calendy text_color={"#000000"} />
       <How_to_find_us />
       <New_service />
-      <Processes
-        process={process}
-        text_color={"#000000"}
-        straight_line_image={line}
-        mobile_straight_line_image={mobile_line}
-      />
+      <div className="sm:block hidden">
+        <Mobile_Process />
+      </div>
+      <div className="sm:hidden block">
+        <Processes
+          process={process}
+          text_color={"#000000"}
+          straight_line_image={line}
+          mobile_straight_line_image={mobile_line}
+        />
+      </div>
       <Footer_hand text_color={"#000000"} />
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>

@@ -28,7 +28,7 @@ const New_service = () => {
   const items = [
     {
       heading: "Web/Mobile App Development",
-      body: "We create more than just mobile apps; we develop powerful software solutions optimized for on-the-go experiences. Our team combines software engineering prowess with a deep understanding of mobile platforms to deliver exceptional user experiences. From concept to deployment, we build native and cross-platform apps that drive user engagement, loyalty,and business results.",
+      body: "We create more than just mobile apps; we develop powerful software solutions optimized for on-the-go experiences. Our team combines software engineering prowess with a deep understanding of mobile platforms to deliver exceptional user experiences.",
       bg: "#9562E5",
       img: app_dev,
       top_img: polygon,
@@ -50,7 +50,7 @@ const New_service = () => {
     },
     {
       heading: "E-commerce Web Design & Software",
-      body: "Our focus is on creating online shopping experiences that captivate customers and drive conversions is unwavering. Through data-driven design and a deep understanding of consumer behavior, we build websites that not only look stunning but also deliver exceptional results. With over 9 years of on the ground experience, we have designs, developed and maintained websites that have processed over $54 million in revenue.",
+      body: "Through data-driven design and a deep understanding of consumer behavior, we build websites that not only look stunning but also deliver exceptional results. With over 9 years of on the ground experience, we have designs, developed and maintained websites that have processed over $54 million in revenue.",
       img: eccomerce,
       top_img: three,
       bg: "#4FA0FF",
@@ -236,7 +236,7 @@ const New_service = () => {
           Services we offer{" "}
         </h2>
 
-        <div className=" w-full sm:overflow-hidden h-[26vw] sm:h-[130vw] relative   ">
+        <div className=" w-full sm:overflow-hidden h-[26vw] sm:h-[110vw] relative   ">
           <div
             ref={ref}
             className={`sm:absolute  sm:w-auto   sm:top-0 justify-between w-full sm:justify-start  sm:left-0  sm:px-[3vw] h-full flex sm:gap-[3vw] `}

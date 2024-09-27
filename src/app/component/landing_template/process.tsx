@@ -42,7 +42,7 @@ const Processes = ({
       top: "1vw",
       body: "After conducting a compressive assessment to understand project requirement, a tailored on-boarding plan would be created to obtain relevant information poignant to the successful completion of the project.",
       img: one,
-      //   reverse: true,
+      
     },
     {
       step_text: "STEP 02: DESIGN",
