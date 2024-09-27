@@ -58,7 +58,7 @@ const Mobile_Process = () => {
       {/* this is for mobile */}
       <div className="w-full  py-[4vw] sm:bg-gradient-to-b my-[4vw] items-center h-auto gap-[2vw]   px-[4vw]  flex flex-col sm:gap-[13vw] sm:pt-[15vw]  sm:pb-[20vw]">
         <h2
-          className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw]  text-[3.2vw] sm:mb-0  font-bold text-center ${CabinetGrotesk_bold.className} `}
+          className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw]  text-[3.2vw] sm:mb-0  font-bold text-center ${CabinetGrotesk_medium.className} `}
         >
           Our Process
         </h2>
