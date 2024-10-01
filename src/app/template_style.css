@@ -92,13 +92,13 @@ body {
 
 @keyframes move_hand {
   0% {
-    transform: translateY(0%) translateX(30%);
+    transform: translateY(1%) translateX(30%);
   }
   50% {
-    transform: translateY(4%) translateX(30%);
+    transform: translateY(6%) translateX(30%);
   }
   100% {
-    transform: translateY(0%) translateX(30%);
+    transform: translateY(1%) translateX(30%);
   }
 }
 

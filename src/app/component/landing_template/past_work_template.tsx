@@ -21,53 +21,84 @@ import drop_down from "@/../public/new_service/drop_down.png";
 
 import vibes_only from "@/../public/past_work/eccomerce/vibes_only.webp";
 import get_unity from "@/../public/past_work/eccomerce/get_unity.webp";
-import kate_perry from "@/../public/past_work/eccomerce/kate_perry.webp";
 import wild_brands from "@/../public/past_work/eccomerce/wild_brands.webp";
 import with_character from "@/../public/past_work/eccomerce/with_character.webp";
-import spoil_child from "@/../public/landingpage_template/academy_pastworks_images/past_work2.webp";
+import spoil_child from "@/../public/past_work/eccomerce/spoil_child.webp";
+
+import mob_vibes_only from "@/../public/past_work/eccomerce/mob_vibes_only.webp";
+import mob_get_unity from "@/../public/past_work/eccomerce/mob_get_unity.webp";
+import mob_wild_brands from "@/../public/past_work/eccomerce/mob_wild_brands.webp";
+import mob_with_character from "@/../public/past_work/eccomerce/mob_with_character.webp";
+import mob_spoil_child from "@/../public/past_work/eccomerce/mob_spoil_child.webp";
 
 // GENERAL WEBSITE
 // GENERAL WEBSITE
 // GENERAL WEBSITE
-import q_department from "@/../public/landingpage_template/academy_pastworks_images/past_work1.webp";
-import good_juuju from "@/../public/landingpage_template/academy_pastworks_images/past_work5.webp";
-import atella_studio from "@/../public/landingpage_template/architect_imgaes/past_work3.webp";
+import q_department from "@/../public/past_work/general_website/q_department.webp";
+import good_juuju from "@/../public/past_work/general_website/good_juuju.webp";
+import atella_studio from "@/../public/past_work/general_website/atella_studio.webp";
 import re_origin from "@/../public/past_work/general_website/re_origin.webp";
 import orbit_law from "@/../public/past_work/general_website/orbit_law.webp";
 import apr from "@/../public/past_work/general_website/apr.webp";
 
+import mob_q_department from "@/../public/past_work/general_website/mob_q_department.webp";
+import mob_good_juuju from "@/../public/past_work/general_website/mob_good_juuju.webp";
+import mob_atella_studio from "@/../public/past_work/general_website/mob_atella_studio.webp";
+import mob_re_origin from "@/../public/past_work/general_website/mob_re_origin.webp";
+import mob_orbit_law from "@/../public/past_work/general_website/mob_orbit_law.webp";
+import mob_apr from "@/../public/past_work/general_website/mob_apr.webp";
+
 // HEALTHCARE
 // HEALTHCARE
 // HEALTHCARE
-import cabinet_health from "@/../public/landingpage_template/practice_past_work_images/past_work5.webp";
-import decibel from "@/../public/landingpage_template/practice_past_work_images/past_work6.webp";
-import ysotope from "@/../public/landingpage_template/practice_past_work_images/past_work3.webp";
-import pico from "@/../public/landingpage_template/practice_past_work_images/past_work2.webp";
+import cabinet_health from "@/../public/past_work/healthcare/cabinet_health.webp";
+import decibel from "@/../public/past_work/healthcare/decibel.webp";
+import ysotope from "@/../public/past_work/healthcare/ysotope.webp";
+import pico from "@/../public/past_work/healthcare/pico.webp";
 import exo from "@/../public/past_work/healthcare/exo.webp";
+
+import mob_cabinet_health from "@/../public/past_work/healthcare/mob_cabinet_health.webp";
+import mob_decibel from "@/../public/past_work/healthcare/mob_decibel.webp";
+import mob_ysotope from "@/../public/past_work/healthcare/mob_ysotope.webp";
+import mob_pico from "@/../public/past_work/healthcare/mob_pico.webp";
+import mob_exo from "@/../public/past_work/healthcare/mob_exo.webp";
 
 // SOFTWARE
 // SOFTWARE
 // SOFTWARE
 import modamu from "@/../public/past_work/software/modamu.webp";
 import climb_onsight from "@/../public/past_work/software/climb_onsight.webp";
+import mob_climb_onsight from "@/../public/past_work/software/mob_climb_onsight.webp";
 
 // ARCHITECTURE
 // ARCHITECTURE
 // ARCHITECTURE
 
-import harc from "@/../public/landingpage_template/academy_pastworks_images/past_work4.webp";
-import atella_ca from "@/../public/landingpage_template/academy_pastworks_images/past_work6.webp";
+import harc from "@/../public/past_work/architecture/harc.webp";
+import atella_ca from "@/../public/past_work/architecture/atella_ca.webp";
 import archier from "@/../public/past_work/architecture/archier.webp";
 import mitrex from "@/../public/past_work/architecture/mitrex.webp";
-import hastings from "@/../public/landingpage_template/architect_imgaes/past_work4.webp";
+import hastings from "@/../public/past_work/architecture/hastings.webp";
+
+import mob_harc from "@/../public/past_work/architecture/mob_harc.webp";
+import mob_atella_ca from "@/../public/past_work/architecture/mob_atella_ca.webp";
+import mob_archier from "@/../public/past_work/architecture/mob_archier.webp";
+import mob_mitrex from "@/../public/past_work/architecture/mob_mitrex.webp";
+import mob_hastings from "@/../public/past_work/architecture/mob_hastings.webp";
 
 // PORTFOLIO
 // PORTFOLIO
 // PORTFOLIO
-import gus_gooney from "@/../public/landingpage_template/academy_pastworks_images/img1.webp";
+import gus_gooney from "@/../public/past_work/portfolio/gus_gooney.webp";
 import erica from "@/../public/past_work/portfolio/erica.webp";
-import echo_nate from "@/../public/landingpage_template/academy_pastworks_images/img2.webp";
-import hovn_studio from "@/../public/landingpage_template/academy_pastworks_images/img3.webp";
+import echo_nate from "@/../public/past_work/portfolio/echo_nate.webp";
+import hovn_studio from "@/../public/past_work/portfolio/hovn_studio.webp";
+
+import mob_gus_gooney from "@/../public/past_work/portfolio/mob_gus_gooney.webp";
+import mob_erica from "@/../public/past_work/portfolio/mob_erica.webp";
+import mob_echo_nate from "@/../public/past_work/portfolio/mob_echo_nate.webp";
+import mob_hovn_studio from "@/../public/past_work/portfolio/mob_hovn_studio.webp";
+
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
 import Script from "next/script";
 import Mobile_Live_past_work from "@/app/letsgetteslas/mobile_each_past_work";
@@ -78,36 +109,8 @@ const Past_work_template = ({
   text_color,
   sethide_nav,
 }: any) => {
-  //   const info_array = ["", "", "", "", "", ""];
   const [start_anime, setstart_anime] = useState(false);
   const [path, setpath] = useState("");
-
-  // const data_array = [
-  //   {
-  //     img: img2,
-  //     text: "Health-ade - we helped health-ade follow their gut",
-  //   },
-  //   {
-  //     img: img1,
-  //     text: "Smartsweets - expanding the candy universe with smartsweets.",
-  //   },
-  //   {
-  //     img: img1,
-  //     text: "Nylon - redesigning an iconic magazine for the internet age .",
-  //   },
-  //   {
-  //     img: img2,
-  //     text: "Health-ade - we helped health-ade follow their gut",
-  //   },
-  //   {
-  //     img: img2,
-  //     text: "Maev - the wellness brand for city dogs and their humans.",
-  //   },
-  //   {
-  //     img: img1,
-  //     text: "Petfolk - reshaping pet care for today",
-  //   },
-  // ];
 
   const itemsRefs = useRef<any>([]);
   const [visibleIndexes, setVisibleIndexes] = useState<any>([]);
@@ -146,10 +149,6 @@ const Past_work_template = ({
     };
   }, []);
 
-  //   useEffect(() => {
-  //     console.log(visibleIndexes);
-  //   }, [visibleIndexes]);
-
   const menu_arr = [
     {
       title: "Ecommerce",
@@ -168,12 +167,14 @@ const Past_work_template = ({
           open_false: true,
           new_tab: true,
           video: true,
+          mob_img: mob_spoil_child,
         },
         {
           img: get_unity,
           text: "get unity",
           link: "http://getunity.com/",
           new_tab: true,
+          mob_img: mob_get_unity,
         },
 
         {
@@ -181,17 +182,20 @@ const Past_work_template = ({
           text: "With character",
           link: "https://www.withcharacter.com/",
           open_false: true,
+          mob_img: mob_with_character,
         },
 
         {
           img: wild_brands,
           text: "wilde brands",
           link: "https://www.wildebrands.com/",
+          mob_img: mob_wild_brands,
         },
         {
           img: vibes_only,
           text: "vibes only",
           link: "https://www.vibesonly.com/",
+          mob_img: mob_vibes_only,
           open_false: true,
         },
       ],
@@ -206,29 +210,34 @@ const Past_work_template = ({
           video: true,
           video_link: "/showcase/q.mp4",
           scale: true,
+          mob_img: mob_q_department,
         },
         {
           img: orbit_law,
           link: "https://orbit.law",
           text: "orbit law",
           open_false: true,
+          mob_img: mob_orbit_law,
         },
         {
           img: good_juuju,
           text: "Good Juju",
           link: "https://heygoodjuju.com/",
           open_false: true,
+          mob_img: mob_good_juuju,
         },
 
         {
           img: atella_studio,
           text: "Atella Studios",
           link: "https://www.atellastudios.com/",
+          mob_img: mob_atella_studio,
         },
         {
           img: apr,
           text: "apr",
           link: "https://www.aprguarnizioni.com/",
+          mob_img: mob_apr,
         },
         // {
         //   img: re_origin,
@@ -244,16 +253,20 @@ const Past_work_template = ({
           img: ysotope,
           text: "Ysotope",
           link: "https://www.ysotope.com/",
+          mob_img: mob_ysotope,
+        },
+
+        {
+          img: pico,
+          text: "Pico",
+          link: "https://www.picoclinics.com/",
+          mob_img: mob_pico,
         },
         {
           img: exo,
           text: "exo",
           link: "https://www.exo.inc/",
-        },
-        {
-          img: pico,
-          text: "Pico",
-          link: "https://www.picoclinics.com/",
+          mob_img: mob_exo,
         },
         {
           img: cabinet_health,
@@ -261,11 +274,13 @@ const Past_work_template = ({
           link: "https://cabinethealth.com/",
           open_false: true,
           new_tab: true,
+          mob_img: mob_cabinet_health,
         },
         {
           img: decibel,
           text: "Decibel",
           link: "https://www.decibelhealth.com/",
+          mob_img: mob_decibel,
         },
       ],
     },
@@ -278,16 +293,19 @@ const Past_work_template = ({
           text: "Mitrex ",
           link: "https://www.mitrex.com/",
           open_false: true,
+          mob_img: mob_mitrex,
         },
         {
           img: harc,
           text: "Harc ",
           link: "https://harc.casa/",
+          mob_img: mob_harc,
         },
         {
           img: hastings,
           text: "gow hastings ",
           link: "https://gowhastings.com/",
+          mob_img: mob_hastings,
         },
 
         {
@@ -295,6 +313,7 @@ const Past_work_template = ({
           text: "Atella",
           link: "https://www.atella.ca/",
           open_false: true,
+          mob_img: mob_atella_ca,
         },
         {
           img: archier,
@@ -302,6 +321,7 @@ const Past_work_template = ({
           link: "https://archier.com.au/",
           open_false: true,
           new_tab: true,
+          mob_img: mob_archier,
         },
       ],
     },
@@ -314,22 +334,26 @@ const Past_work_template = ({
           link: "https://echoandnate.com",
           open_false: true,
           new_tab: true,
+          mob_img: mob_echo_nate,
         },
         {
           img: hovn_studio,
           text: "Hovn Studios",
           link: "https://hovnstudios.com/",
+          mob_img: mob_hovn_studio,
         },
 
         {
           img: erica,
           text: "erica boothby",
           link: "https://erica-malkain.vercel.app/",
+          mob_img: mob_erica,
         },
         {
           img: gus_gooney,
           text: "Gus Cooney ",
           link: "https://guscooney.com",
+          mob_img: mob_gus_gooney,
         },
       ],
     },
@@ -341,6 +365,7 @@ const Past_work_template = ({
           text: "climb onsight",
           link: "https://app.climbonsight.ca",
           new_tab: true,
+          mob_img: mob_climb_onsight,
         },
       ],
     },

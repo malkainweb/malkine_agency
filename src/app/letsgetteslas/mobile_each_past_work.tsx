@@ -136,7 +136,7 @@ const Mobile_Live_past_work = ({
               return (
                 <div
                   key={index}
-                  className="w-full hidden sm:rounded-[8vw]   sm:block overflow-hidden sm:h-[100vw] absolute  top-0  "
+                  className="w-full hidden sm:rounded-t-[8vw]   sm:block overflow-hidden sm:h-[100vw] absolute  top-0  "
                   style={{
                     opacity:
                       active_item == -1 * (last_array.length - index) ? 1 : 0,
@@ -149,7 +149,7 @@ const Mobile_Live_past_work = ({
                         loop={true}
                         muted={true}
                         style={{
-                          transform: e.scale ? "scale(1.5)" : "scale(1)",
+                          transform: "scale(3.3)",
                         }}
                         playsInline={true}
                         autoPlay={true}
@@ -163,9 +163,9 @@ const Mobile_Live_past_work = ({
                     </div>
                   ) : null}{" "}
                   <Image
-                    src={e.img}
+                    src={e.mob_img}
                     alt={e.text}
-                    className="w-full absolute top-0 left-0 h-fit scale-[1.5]"
+                    className="w-full absolute top-0 left-0 h-fit"
                   />
                 </div>
               );
@@ -175,7 +175,7 @@ const Mobile_Live_past_work = ({
             return (
               <div
                 key={index}
-                className="w-full hidden  sm:rounded-[8vw]   sm:block overflow-hidden sm:h-[100vw] absolute  top-0  "
+                className="w-full hidden  sm:rounded-t-[8vw]  sm:block overflow-hidden sm:h-[100vw] absolute  top-0  "
                 style={{
                   opacity: active_item == index ? 1 : 0,
                   transition: "2s ease",
@@ -187,7 +187,7 @@ const Mobile_Live_past_work = ({
                       loop={true}
                       muted={true}
                       style={{
-                        transform: e.scale ? "scale(1.5)" : "scale(1)",
+                        transform: "scale(3.3)",
                       }}
                       playsInline={true}
                       autoPlay={true}
@@ -201,9 +201,9 @@ const Mobile_Live_past_work = ({
                   </div>
                 ) : null}{" "}
                 <Image
-                  src={e.img}
+                  src={e.mob_img}
                   alt={e.text}
-                  className="w-full absolute top-0 left-0 h-fit scale-[1.5]"
+                  className="w-full absolute top-0 left-0 h-fit "
                 />
               </div>
             );
@@ -247,9 +247,7 @@ const Mobile_Live_past_work = ({
                                 loop={true}
                                 muted={true}
                                 style={{
-                                  transform: e.scale
-                                    ? "scale(1.5)"
-                                    : "scale(1)",
+                                  transform: "scale(3.3)",
                                 }}
                                 playsInline={true}
                                 autoPlay={true}
@@ -263,13 +261,13 @@ const Mobile_Live_past_work = ({
                             </div>
                           ) : null}{" "}
                           <Image
-                            src={e.img}
+                            src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit scale-[2.5]"
+                            className="w-full h-fit "
                           />
                         </div>
 
-                        <p className="sm:text-[6vw] mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
+                        <p className="sm:text-[6vw] capitalize mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
                       </div>
@@ -300,9 +298,7 @@ const Mobile_Live_past_work = ({
                                 loop={true}
                                 muted={true}
                                 style={{
-                                  transform: e.scale
-                                    ? "scale(1.5)"
-                                    : "scale(1)",
+                                  transform: "scale(3.3)",
                                 }}
                                 playsInline={true}
                                 autoPlay={true}
@@ -316,13 +312,13 @@ const Mobile_Live_past_work = ({
                             </div>
                           ) : null}{" "}
                           <Image
-                            src={e.img}
+                            src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit scale-[2.5]"
+                            className="w-full h-fit "
                           />
                         </div>
 
-                        <p className="sm:text-[6vw] mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
+                        <p className="sm:text-[6vw] mt-[1.8vw] capitalize text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
                       </div>
@@ -367,9 +363,7 @@ const Mobile_Live_past_work = ({
                                 loop={true}
                                 muted={true}
                                 style={{
-                                  transform: e.scale
-                                    ? "scale(1.5)"
-                                    : "scale(1)",
+                                  transform: "scale(3.3)",
                                 }}
                                 playsInline={true}
                                 autoPlay={true}
@@ -383,13 +377,13 @@ const Mobile_Live_past_work = ({
                             </div>
                           ) : null}{" "}
                           <Image
-                            src={e.img}
+                            src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit scale-[2.5]"
+                            className="w-full h-fit "
                           />
                         </div>
 
-                        <p className="sm:text-[6vw] mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
+                        <p className="sm:text-[6vw] mt-[1.8vw] capitalize text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
                       </div>
@@ -419,9 +413,7 @@ const Mobile_Live_past_work = ({
                                 loop={true}
                                 muted={true}
                                 style={{
-                                  transform: e.scale
-                                    ? "scale(1.5)"
-                                    : "scale(1)",
+                                  transform: "scale(3.3)",
                                 }}
                                 playsInline={true}
                                 autoPlay={true}
@@ -435,13 +427,13 @@ const Mobile_Live_past_work = ({
                             </div>
                           ) : null}{" "}
                           <Image
-                            src={e.img}
+                            src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit scale-[2.5]"
+                            className="w-full h-fit "
                           />
                         </div>
 
-                        <p className="sm:text-[6vw] mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
+                        <p className="sm:text-[6vw] capitalize mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
                       </div>
