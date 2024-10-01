@@ -13,13 +13,6 @@ import {
 } from "react";
 import img1 from "../../../public/home/hero.webp";
 
-import cabinet from "../../../public/home/live_past_work/Cabinet.webp";
-import Gus_Cooney from "../../../public/home/live_past_work/Gus_Cooney.webp";
-import yuri from "../../../public/home/live_past_work/Yuri.webp";
-import Garner from "../../../public/home/live_past_work/Garner.webp";
-import Decibel from "../../../public/home/live_past_work/Decibel.webp";
-import Re_origin from "../../../public/home/live_past_work/Re_origin.webp";
-
 import localFont from "next/font/local";
 import { useRouter } from "next/navigation";
 
@@ -64,8 +57,8 @@ const Mobile_Live_past_work = ({
       setleft(-8);
       setactive_item(2);
     } else if (screenwidth < 650) {
-      setleft(-55);
-      setactive_item(1);
+      setleft(15);
+      setactive_item(0);
     }
   }, [screenSize, screenwidth]);
 
