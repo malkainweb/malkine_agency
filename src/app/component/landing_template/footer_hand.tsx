@@ -10,7 +10,7 @@ import { NeueHaasDisplay_light } from "@/app/utils/fonts";
 const Footer_hand = ({ text_color, btn_bg_color, show_btn }: any) => {
   return (
     <>
-      <div className="w-full h-auto gap-[3vw] sm:gap-[15vw]  mt-[4vw]   flex flex-col  items-center ">
+      <div className="w-full h-auto gap-[2vw] sm:gap-[15vw]  mt-[4vw]   flex flex-col  items-center ">
         <div className="flex flex-col  ">
           <h3
             style={{
