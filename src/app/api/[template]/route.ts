@@ -685,3 +685,11 @@
 //     { status: 200 },
 //   );
 // }
+
+import { NextResponse } from "next/server";
+import { Resend } from "resend";
+import nodemailer from "nodemailer";
+
+export async function POST(req: Request, res: any) {
+  NextResponse.json({ status: 500 });
+}
