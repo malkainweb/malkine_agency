@@ -35,7 +35,7 @@ const mob_right_img = [
   { img: right_img4 },
   // { img: right_img4, video: true, video_link: "/showcase/q.mp4" },
 ];
-const mob_left_img = [{ img: left_img1 }, { img: right_img3 }];
+const mob_left_img = [{ img: left_img1 }, { img: right_img2 }];
 
 const New_scroll_hand = () => {
   return (

@@ -16,7 +16,13 @@ import Image from "next/image";
 // import External_btn from "../general_component/external_btn";
 import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 import External_btn from "../utils/external_btn";
-import { CabinetGrotesk_bold, CabinetGrotesk_medium } from "../utils/fonts";
+import {
+  CabinetGrotesk_bold,
+  CabinetGrotesk_medium,
+  NeueHaasDisplay_light,
+  NeueHaasDisplay_medium,
+  NeueHaasDisplay_roman,
+} from "../utils/fonts";
 
 const Brands = () => {
   const logos = [
@@ -37,17 +43,13 @@ const Brands = () => {
     <div className="  gap-[5vw] pb-[4vw] pt-[5vw] sm:bg-none  bg-white sm:gap-[5vw] sm:mt-0 sm:pb-[10vw]    sm:w-full flex flex-col sm:justify-between sm:items-start">
       <div className="flex sm:flex-col sm:gap-[3vw] items-center sm:items-start flex-row sm:justify-start justify-between sm:px-[3vw] px-[5vw]">
         <h2
-          className={`${
-            globalThis.innerWidth < 650
-              ? CabinetGrotesk_medium
-              : CabinetGrotesk_bold.className
-          } leading-[4.5vw] text-[4.2vw] sm:text-[7vw] sm:leading-[9vw] sm:px-[2vw]`}
+          className={`${NeueHaasDisplay_roman.className} leading-[4.5vw] text-[4.2vw] sm:text-[7vw]  sm:leading-[9vw] sm:px-[2vw]`}
         >
           We are trusted by leading <br className="sm:hidden" />
           organizations{" "}
         </h2>
         <p
-          className={`${CabinetGrotesk_medium.className} hidden sm:block sm:text-[3.72vw] text-[1.4vw] sm:px-[3vw]`}
+          className={`${NeueHaasDisplay_light.className} hidden sm:block sm:text-[3.72vw] text-[1.4vw] sm:px-[3vw]`}
         >
           We are proud to have collaborated with some of the{" "}
           <br className="hidden sm:block" /> most innovative and influential
@@ -60,7 +62,7 @@ const Brands = () => {
             onClick={() => {
               scrollTo_calendy();
             }}
-            className={` sm:w-[39vw] sm:block hidden sm:h-[11.2vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${CabinetGrotesk_bold.className} bg-[#EE2020] text-white`}
+            className={` sm:w-[39vw] sm:block hidden sm:h-[11.2vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
           >
             Get started
           </button>
@@ -69,7 +71,7 @@ const Brands = () => {
               onClick={() => {
                 scrollTo_calendy();
               }}
-              className={` sm:w-[39vw] capitalize   sm:h-[11.2vw] w-[13.5vw] h-[4.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.1vw] ${CabinetGrotesk_bold.className} bg-[#EE2020] text-white`}
+              className={` sm:w-[39vw] capitalize   sm:h-[11.2vw] w-[13.5vw] h-[4.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.1vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
             >
               get started
             </button>

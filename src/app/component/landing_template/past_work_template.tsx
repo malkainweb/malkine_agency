@@ -10,6 +10,7 @@ import {
   NeueHaasDisplay_bold,
   NeueHaasDisplay_light,
   NeueHaasDisplay_medium,
+  NeueHaasDisplay_roman,
 } from "@/app/utils/fonts";
 import drop_down from "@/../public/new_service/drop_down.png";
 
@@ -102,6 +103,7 @@ import mob_hovn_studio from "@/../public/past_work/portfolio/mob_hovn_studio.web
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
 import Script from "next/script";
 import Mobile_Live_past_work from "@/app/letsgetteslas/mobile_each_past_work";
+import { noSSR } from "next/dynamic";
 // import Typewriter from "typewriter-effect";
 const Past_work_template = ({
   heading,
@@ -426,9 +428,9 @@ const Past_work_template = ({
         </div>
         {/* this is for mobile */}
         {/* Dropdown for mobile devices */}
-        <div className="hidden w-fit  mx-auto px-[3vw] sm:rounded-[13vw] bg-[#FF0000] py-[1.5vw] overflow-hidden   sm:flex justify-center relative">
+        <div className="hidden w-fit  mx-auto   bg-[#FF0000] py-[2vw] overflow-hidden   sm:flex justify-center relative sm:w-[50vw] sm:rounded-[8.75vw] sm:text-[3.5vw]   sm:h-[11.2vw]">
           <select
-            className={`sm:text-[5vw] select relative bg-[#FF0000]  outline-none  ${NeueHaasDisplay_light.className} capitalize  justify-center text-center   text-black`}
+            className={`sm:text-[5vw] select relative bg-[#FF0000]  outline-none  ${NeueHaasDisplay_roman.className} capitalize  justify-center text-center   text-white`}
             onChange={(e) => setactive(e.target.value)}
             value={active}
           >

@@ -31,12 +31,9 @@ const Mobile_Live_past_work = ({
   const [items, setitems] = useState(body);
 
   const width = globalThis.innerWidth;
-  const [video_modal, setvideo_modal] = useState(false);
-  const [active_video, setactive_video] = useState<any>(null);
+
   const [prev_active_item, setprev_active_item] = useState<any>(null);
-  const [video_array, setvideo_array] = useState([]);
-  // const [transition, settransition] = useState("1.2s");
-  // const [desktop_active, setdesktop_active] = useState(2);
+
   const [left, setleft] = useState(-55);
   const [screenSize, setScreenSize] = useState(globalThis.innerWidth);
 
@@ -110,6 +107,59 @@ const Mobile_Live_past_work = ({
       console.log(active_item);
     }
   }, [active_item]);
+  const containerRef = useRef<any>(null);
+
+  const handleTouchStart = (event: any) => {
+    const touchStart = event.touches[0].pageX;
+    const container = containerRef.current;
+    if (container) {
+      container.addEventListener("touchmove", handleTouchMove);
+      container.addEventListener("touchend", handleTouchEnd);
+      container.dataset.touchStartX = touchStart.toString();
+    }
+  };
+
+  const threshold = 80; // Set the minimum scroll distance (threshold) here
+
+  const handleTouchMove = (event: any) => {
+    const touchCurrent = event.touches[0].pageX;
+    const container = containerRef.current;
+    if (container) {
+      const touchDelta = Number(container.dataset.touchStartX!) - touchCurrent;
+      const isSignificantScroll = Math.abs(touchDelta) > threshold;
+
+      if (isSignificantScroll) {
+        if (touchDelta > 0) {
+          // Scrolling right (next)
+          if (width > 650) {
+            setactive_item(active_item + 1);
+            setleft(left - 21);
+          } else if (width < 650) {
+            setactive_item(active_item + 1);
+            setleft(left - 70);
+          }
+        } else {
+          // Scrolling left (prev)
+          if (width > 650) {
+            setactive_item(active_item - 1);
+            setleft(left + 21);
+          } else if (width < 650) {
+            setactive_item(active_item - 1);
+            setleft(left + 70);
+          }
+        }
+        container.dataset.touchStartX = touchCurrent.toString();
+      }
+    }
+  };
+  const handleTouchEnd = () => {
+    const container = containerRef.current;
+    if (container) {
+      container.removeEventListener("touchmove", handleTouchMove);
+      container.removeEventListener("touchend", handleTouchEnd);
+      container.dataset.touchStartX = "";
+    }
+  };
 
   return (
     <>
@@ -122,88 +172,12 @@ const Mobile_Live_past_work = ({
       >
         {/* this is the container that contains the box */}
         <div
-          className={`w-full relative    h-[46vw]   sm:h-[145vw] overflow-hidden sm:rounded-[8vw]`}
+          ref={containerRef}
+          onTouchStart={handleTouchStart}
+          className={`w-full relative    h-[46vw]    sm:h-[130vw] overflow-hidden sm:rounded-[8vw]`}
         >
-          {last_array.length > 0 &&
-            last_array.map((e: any, index: any) => {
-              return (
-                <div
-                  key={index}
-                  className="w-full hidden sm:rounded-t-[8vw]   sm:block overflow-hidden sm:h-[100vw] absolute  top-0  "
-                  style={{
-                    opacity:
-                      active_item == -1 * (last_array.length - index) ? 1 : 0,
-                    transition: "2s ease",
-                  }}
-                >
-                  {e.video ? (
-                    <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[10] h-full">
-                      <video
-                        loop={true}
-                        muted={true}
-                        style={{
-                          transform: "scale(3.3)",
-                        }}
-                        playsInline={true}
-                        autoPlay={true}
-                        preload="auto"
-                        controls={false}
-                      >
-                        {" "}
-                        <source src={e.video_link} type="video/mp4" />
-                        Your browser does not support the video tag.
-                      </video>
-                    </div>
-                  ) : null}{" "}
-                  <Image
-                    src={e.mob_img}
-                    alt={e.text}
-                    className="w-full absolute top-0 left-0 h-fit"
-                  />
-                </div>
-              );
-            })}
-
-          {items.map((e: any, index: any) => {
-            return (
-              <div
-                key={index}
-                className="w-full hidden  sm:rounded-t-[8vw]  sm:block overflow-hidden sm:h-[100vw] absolute  top-0  "
-                style={{
-                  opacity: active_item == index ? 1 : 0,
-                  transition: "2s ease",
-                }}
-              >
-                {e.video ? (
-                  <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[10] h-full">
-                    <video
-                      loop={true}
-                      muted={true}
-                      style={{
-                        transform: "scale(3.3)",
-                      }}
-                      playsInline={true}
-                      autoPlay={true}
-                      preload="auto"
-                      controls={false}
-                    >
-                      {" "}
-                      <source src={e.video_link} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  </div>
-                ) : null}{" "}
-                <Image
-                  src={e.mob_img}
-                  alt={e.text}
-                  className="w-full absolute top-0 left-0 h-fit "
-                />
-              </div>
-            );
-          })}
-
           <div
-            className={`w-auto absolute sm:gap-[0vw] ${
+            className={`w-auto absolute  sm:gap-[0vw] ${
               active_item < 0 ? "mr-[0vw] " : "mr-[10vw] sm:mr-0"
             }   gap-[0vw] flex sm:top-0 top-[9vw]  h-auto`}
             style={{
@@ -222,7 +196,7 @@ const Mobile_Live_past_work = ({
                       href={e.link}
                       target="_blank"
                       key={index}
-                      className={`sm:w-[70vw] z-[20] cursor-pointer w-[25vw] rounded-[1.2vw] sm:py-[10vw]  relative ${
+                      className={`sm:w-[70vw] z-[20] sm:h-fit sm:mt-[10vw]  cursor-pointer w-[25vw] rounded-[1.2vw]    relative ${
                         active_item == -1 * (last_array.length - index)
                           ? "sm:scale-[1.1] scale-[1.15]  sm:mx-0 mx-[4vw]  "
                           : "sm:scale-[0.8] scale-[0.75]  sm:mx-0 mx-[-2vw] "
@@ -232,31 +206,12 @@ const Mobile_Live_past_work = ({
                         transition: "1s ease",
                       }}
                     >
-                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[4vw] flex flex-col sm:gap-[1vw] sm:mt-[20vw] overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[4vw]">
-                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[6vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[70vw] ">
-                          {e.video ? (
-                            <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
-                              <video
-                                loop={true}
-                                muted={true}
-                                style={{
-                                  transform: "scale(3.3)",
-                                }}
-                                playsInline={true}
-                                autoPlay={true}
-                                preload="auto"
-                                controls={false}
-                              >
-                                {" "}
-                                <source src={e.video_link} type="video/mp4" />
-                                Your browser does not support the video tag.
-                              </video>
-                            </div>
-                          ) : null}{" "}
+                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
+                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
                           <Image
                             src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit "
+                            className="w-full h-full object-cover"
                           />
                         </div>
 
@@ -273,7 +228,7 @@ const Mobile_Live_past_work = ({
                         setstart_anime(true);
                       }}
                       key={index}
-                      className={`sm:w-[70vw]  z-[20] cursor-pointer w-[25vw] rounded-[1.2vw] sm:py-[10vw]  relative ${
+                      className={`sm:w-[70vw] sm:h-fit sm:mt-[10vw] z-[20] cursor-pointer w-[25vw] rounded-[1.2vw]   relative ${
                         active_item == -1 * (last_array.length - index)
                           ? "sm:scale-[1.1] scale-[1.15]  sm:mx-0 mx-[4vw]  "
                           : "sm:scale-[0.8] scale-[0.75]  sm:mx-0 mx-[-2vw] "
@@ -283,31 +238,12 @@ const Mobile_Live_past_work = ({
                         transition: "1s ease",
                       }}
                     >
-                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[4vw] flex flex-col sm:gap-[1vw] sm:mt-[20vw] overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[4vw]">
-                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[6vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[70vw] ">
-                          {e.video ? (
-                            <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
-                              <video
-                                loop={true}
-                                muted={true}
-                                style={{
-                                  transform: "scale(3.3)",
-                                }}
-                                playsInline={true}
-                                autoPlay={true}
-                                preload="auto"
-                                controls={false}
-                              >
-                                {" "}
-                                <source src={e.video_link} type="video/mp4" />
-                                Your browser does not support the video tag.
-                              </video>
-                            </div>
-                          ) : null}{" "}
+                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]    sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
+                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
                           <Image
                             src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit "
+                            className="w-full h-full object-cover"
                           />
                         </div>
 
@@ -323,9 +259,9 @@ const Mobile_Live_past_work = ({
           </div>
 
           <div
-            className={`w-auto absolute sm:gap-[0vw] ${
+            className={`w-auto absolute   sm:gap-[0vw] ${
               active_item < 0 ? "ml-[10vw] sm:ml-0 " : ""
-            }   gap-[0vw] flex sm:top-0 top-[9vw]  h-auto`}
+            }   gap-[0vw] flex sm:top-[0vw] top-[9vw]  h-auto`}
             style={{
               transition: `0.6s ease`,
               left: `${left}vw`,
@@ -339,40 +275,21 @@ const Mobile_Live_past_work = ({
                       href={e.link}
                       target="_blank"
                       key={index}
-                      className={`sm:w-[70vw] z-[20] cursor-pointer w-[25vw] rounded-[1.2vw] sm:py-[10vw]  relative ${
+                      className={`sm:w-[70vw] z-[20] sm:h-fit sm:mt-[10vw]   cursor-pointer  w-[25vw] rounded-[1.2vw]   relative ${
                         active_item == index
                           ? "sm:scale-[1.1] scale-[1.15]  sm:mx-0 mx-[3vw]  "
                           : "sm:scale-[0.8] scale-[0.75]  sm:mx-0 mx-[-2vw] "
-                      }  flex justify-center sm:rounded-[8vw]  overflow-hidden`}
+                      }  flex justify-center sm:rounded-[8vw]   overflow-hidden`}
                       style={{
                         transition: "0.7s ease",
                       }}
                     >
-                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[4vw] flex flex-col sm:gap-[1vw] sm:mt-[20vw] overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[4vw]">
-                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[6vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[70vw] ">
-                          {e.video ? (
-                            <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
-                              <video
-                                loop={true}
-                                muted={true}
-                                style={{
-                                  transform: "scale(3.3)",
-                                }}
-                                playsInline={true}
-                                autoPlay={true}
-                                preload="auto"
-                                controls={false}
-                              >
-                                {" "}
-                                <source src={e.video_link} type="video/mp4" />
-                                Your browser does not support the video tag.
-                              </video>
-                            </div>
-                          ) : null}{" "}
+                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
+                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
                           <Image
                             src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit "
+                            className="w-full h-full object-cover"
                           />
                         </div>
 
@@ -389,7 +306,7 @@ const Mobile_Live_past_work = ({
                         setstart_anime(true);
                       }}
                       key={index}
-                      className={`sm:w-[70vw] z-[20] cursor-pointer w-[25vw] rounded-[1.2vw] sm:py-[10vw]  relative ${
+                      className={`sm:w-[70vw] z-[20] sm:h-fit sm:mt-[10vw]  cursor-pointer w-[25vw] rounded-[1.2vw]   relative ${
                         active_item == index
                           ? "sm:scale-[1.1] scale-[1.15]  sm:mx-0 mx-[3vw]  "
                           : "sm:scale-[0.8] scale-[0.75]  sm:mx-0 mx-[-2vw] "
@@ -398,31 +315,12 @@ const Mobile_Live_past_work = ({
                         transition: "0.7s ease",
                       }}
                     >
-                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[4vw] flex flex-col sm:gap-[1vw] sm:mt-[20vw] overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[4vw]">
-                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[6vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[70vw] ">
-                          {e.video ? (
-                            <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
-                              <video
-                                loop={true}
-                                muted={true}
-                                style={{
-                                  transform: "scale(3.3)",
-                                }}
-                                playsInline={true}
-                                autoPlay={true}
-                                preload="auto"
-                                controls={false}
-                              >
-                                {" "}
-                                <source src={e.video_link} type="video/mp4" />
-                                Your browser does not support the video tag.
-                              </video>
-                            </div>
-                          ) : null}{" "}
+                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
+                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
                           <Image
                             src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-fit "
+                            className="w-full h-full object-cover"
                           />
                         </div>
 
@@ -440,7 +338,7 @@ const Mobile_Live_past_work = ({
 
         <div
           className={` w-full  ${
-            dont_hide ? " sm:pb-[12vw] pb-[2vw] " : "sm:pb-[12vw]"
+            dont_hide ? " sm:py-[5vw] pb-[2vw] " : "sm:py-[5vw]"
           }  flex justify-center sm:gap-[6vw] gap-[2vw] items-center`}
         >
           <Image
