@@ -107,7 +107,7 @@ const New_service = () => {
     }
   }, [currentInView]);
 
-  const ref = useRef(null);
+  const ref = useRef<any>(null);
   const isInView = useInView(ref);
 
   useEffect(() => {
@@ -137,6 +137,56 @@ const New_service = () => {
     window.addEventListener("resize", handleResize);
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const containerRef = useRef<any>(null);
+
+  const handleTouchStart = (event: any) => {
+    const touchStart = event.touches[0].pageX;
+
+    const container = ref.current;
+    if (container) {
+      container.addEventListener("touchmove", handleTouchMove);
+      container.addEventListener("touchend", handleTouchEnd);
+      container.dataset.touchStartX = touchStart.toString();
+    }
+  };
+
+  const threshold = 80; // Set the minimum scroll distance (threshold) here
+
+  const handleTouchMove = (event: any) => {
+    const touchCurrent = event.touches[0].pageX;
+    const container = ref.current;
+    if (container) {
+      const touchDelta = Number(container.dataset.touchStartX!) - touchCurrent;
+      const isSignificantScroll = Math.abs(touchDelta) > threshold;
+
+      if (isSignificantScroll) {
+        if (touchDelta > 0) {
+          // Scrolling right (next)
+          if (current_index >= items.length - 1) {
+            return;
+          }
+          setcurrent_index(current_index + 1);
+        } else {
+          // Scrolling left (prev)
+          if (current_index <= 0) {
+            return;
+          }
+          setcurrent_index(current_index - 1);
+        }
+        container.dataset.touchStartX = touchCurrent.toString();
+      }
+    }
+  };
+  const handleTouchEnd = () => {
+    const container = ref.current;
+    if (container) {
+      container.removeEventListener("touchmove", handleTouchMove);
+      container.removeEventListener("touchend", handleTouchEnd);
+      container.dataset.touchStartX = "";
+    }
+  };
+
   return (
     <>
       {/* THIS IS FOR DESKTOP  */}
@@ -238,6 +288,7 @@ const New_service = () => {
 
         <div className=" w-full sm:overflow-hidden h-[26vw] sm:h-[110vw] relative   ">
           <div
+            onTouchStart={handleTouchStart}
             ref={ref}
             className={`sm:absolute  sm:w-auto   sm:top-0 justify-between w-full sm:justify-start  sm:left-0  sm:px-[3vw] h-full flex sm:gap-[3vw] `}
             style={{
