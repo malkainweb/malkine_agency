@@ -153,6 +153,46 @@ const Past_work_template = ({
 
   const menu_arr = [
     {
+      title: "Architecture",
+      body: [
+        // {
+        //   img: mitrex,
+        //   text: "Mitrex ",
+        //   link: "https://www.mitrex.com/",
+        //   open_false: true,
+        //   mob_img: mob_mitrex,
+        // },
+        {
+          img: harc,
+          text: "Harc ",
+          link: "https://harc.casa/",
+          mob_img: mob_harc,
+        },
+        {
+          img: hastings,
+          text: "gow hastings ",
+          link: "https://gowhastings.com/",
+          mob_img: mob_hastings,
+        },
+
+        // {
+        //   img: atella_ca,
+        //   text: "Atella",
+        //   link: "https://www.atella.ca/",
+        //   open_false: true,
+        //   mob_img: mob_atella_ca,
+        // },
+        // {
+        //   img: archier,
+        //   text: "Archier",
+        //   link: "https://archier.com.au/",
+        //   open_false: true,
+        //   new_tab: true,
+        //   mob_img: mob_archier,
+        // },
+      ],
+    },
+    {
       title: "Ecommerce",
       body: [
         // {
@@ -288,46 +328,6 @@ const Past_work_template = ({
     },
 
     {
-      title: "Architecture",
-      body: [
-        {
-          img: mitrex,
-          text: "Mitrex ",
-          link: "https://www.mitrex.com/",
-          open_false: true,
-          mob_img: mob_mitrex,
-        },
-        {
-          img: harc,
-          text: "Harc ",
-          link: "https://harc.casa/",
-          mob_img: mob_harc,
-        },
-        {
-          img: hastings,
-          text: "gow hastings ",
-          link: "https://gowhastings.com/",
-          mob_img: mob_hastings,
-        },
-
-        {
-          img: atella_ca,
-          text: "Atella",
-          link: "https://www.atella.ca/",
-          open_false: true,
-          mob_img: mob_atella_ca,
-        },
-        {
-          img: archier,
-          text: "Archier",
-          link: "https://archier.com.au/",
-          open_false: true,
-          new_tab: true,
-          mob_img: mob_archier,
-        },
-      ],
-    },
-    {
       title: "Portfolio",
       body: [
         {
@@ -373,7 +373,7 @@ const Past_work_template = ({
     },
   ];
 
-  const [active, setactive] = useState("Ecommerce");
+  const [active, setactive] = useState("Architecture");
   const [open_iframe, setopen_iframe] = useState<any>(null);
 
   useEffect(() => {

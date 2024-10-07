@@ -13,7 +13,12 @@ import { useMotionValueEvent, useScroll } from "framer-motion";
 
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
-import { CabinetGrotesk_bold, CabinetGrotesk_medium } from "@/app/utils/fonts";
+import {
+  CabinetGrotesk_bold,
+  CabinetGrotesk_medium,
+  NeueHaasDisplay_light,
+  NeueHaasDisplay_roman,
+} from "@/app/utils/fonts";
 
 const Mobile_Process = () => {
   const items = [
@@ -58,7 +63,7 @@ const Mobile_Process = () => {
       {/* this is for mobile */}
       <div className="w-full  py-[4vw] sm:bg-gradient-to-b my-[4vw] items-center h-auto gap-[2vw]   px-[4vw]  flex flex-col sm:gap-[13vw] sm:pt-[15vw]  sm:pb-[20vw]">
         <h2
-          className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw]  text-[3.2vw] sm:mb-0  font-bold text-center ${CabinetGrotesk_medium.className} `}
+          className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw]  text-[3.2vw] sm:mb-0   text-center ${NeueHaasDisplay_roman.className} `}
         >
           Our Process
         </h2>
@@ -88,15 +93,19 @@ const Mobile_Process = () => {
                 }}
               >
                 {/* the image */}
-                <Image src={e.img} alt={e.title} className="w-full h-fit" />
+                <Image
+                  src={e.img}
+                  alt={e.title}
+                  className="w-full h-full object-cover"
+                />
                 <div className="w-full sm:h-auto sm:py-[5vw]   text-white items-center rounded-[1.8vw] h-[13.5vw] g  sm:rounded-[6vw] flex flex-col justify-center  bg-white bg-opacity-[23%] backdrop-blur-2xl gap-[1vw] sm:gap-[3vw] absolute bottom-0 left-0">
                   <h4
-                    className={` ${CabinetGrotesk_bold.className} text-center  text-[1.4vw] sm:text-[5vw]`}
+                    className={` ${NeueHaasDisplay_roman.className} text-center  text-[1.4vw] sm:text-[5vw]`}
                   >
                     {e.heading}
                   </h4>
                   <p
-                    className={` ${CabinetGrotesk_medium.className} sm:text-[3.5vw] text-[1vw] px-[1vw] sm:px-[3vw] sm:leading-[4.7vw] text-center`}
+                    className={` ${NeueHaasDisplay_light.className} sm:text-[3.5vw] text-[1vw] px-[1vw] sm:px-[3vw] sm:leading-[4.7vw] text-center`}
                   >
                     {e.body}
                   </p>

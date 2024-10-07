@@ -21,6 +21,8 @@ import Brands from "./brand";
 import Who_we_are from "./who_we_are_mobile";
 import How_to_find_us from "./how_to_find_us";
 import Mobile_Process from "./mobile_process";
+import Link from "next/link";
+import { NeueHaasDisplay_roman } from "../utils/fonts";
 
 export default function Home_wrapper() {
   const process = [
@@ -73,6 +75,15 @@ export default function Home_wrapper() {
     <>
       {" "}
       {hide_nav && <Landing_nav />}
+      <Link
+        href={"/contact"}
+        className={`${NeueHaasDisplay_roman.className} league hidden sm:block fixed bottom-[4vw] z-[11] left-[50%] translate-x-[-50%] w-[70vw] h-[13vw] text-[6vw] hover:bg-[#920808] bg-[#D01717] text-white  sm:rounded-[9.75vw]`}
+      >
+        <p className="w-full h-full flex justify-center items-center ">
+          {" "}
+          Contact Us
+        </p>
+      </Link>
       <div className="h-[6vw] sm:h-[25vw] "></div>
       <Service_hero />
       <New_scroll_hand />
@@ -82,7 +93,6 @@ export default function Home_wrapper() {
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
-      <Calendy text_color={"#000000"} />
       <How_to_find_us />
       <New_service />
       <div className="sm:block hidden">
@@ -97,6 +107,7 @@ export default function Home_wrapper() {
         />
       </div>
       <Footer_hand text_color={"#000000"} />
+      {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>
   );
