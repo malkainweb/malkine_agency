@@ -77,7 +77,7 @@ export default function Home_wrapper() {
       {hide_nav && <Landing_nav />}
       <Link
         href={"/contact"}
-        className={`${NeueHaasDisplay_roman.className} league hidden sm:block fixed bottom-[4vw] z-[11] left-[50%] translate-x-[-50%] w-[70vw] h-[13vw] text-[6vw] hover:bg-[#920808] bg-[#D01717] text-white  sm:rounded-[9.75vw]`}
+        className={`${NeueHaasDisplay_roman.className} league z-[10000]  fixed bottom-[1vw] sm:bottom-[4vw]  sm:left-[50%] right-[2vw] sm:translate-x-[-50%] sm:w-[70vw] w-[12vw] h-[2.8vw] sm:h-[13vw] text-[1.2vw] sm:text-[6vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
       >
         <p className="w-full h-full flex justify-center items-center ">
           {" "}
