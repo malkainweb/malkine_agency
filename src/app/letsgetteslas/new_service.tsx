@@ -275,13 +275,13 @@ const New_service = () => {
                     />
 
                     <h2
-                      className={`${CabinetGrotesk_bold.className} text-[2vw] leading-[2.3vw] text-white sm:text-[8.37vw] sm:leading-[10.2vw]`}
+                      className={`${NeueHaasDisplay_roman.className} text-[2vw] leading-[2.3vw] text-white sm:text-[8.37vw] sm:leading-[10.2vw]`}
                     >
                       {e.heading}
                     </h2>
 
                     <p
-                      className={`${CabinetGrotesk_medium.className} text-[1vw]  text-white sm:text-[3.72vw] sm:pr-[8vw]`}
+                      className={`${NeueHaasDisplay_light.className} text-[1vw]  text-white sm:text-[3.72vw] sm:pr-[8vw]`}
                     >
                       {e.body}
                     </p>

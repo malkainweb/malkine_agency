@@ -10,7 +10,7 @@ import { NeueHaasDisplay_light } from "@/app/utils/fonts";
 const Footer_hand = ({ text_color, btn_bg_color, show_btn }: any) => {
   return (
     <>
-      <div className="w-full h-auto gap-[2vw] sm:gap-[15vw]  mt-[4vw]   flex flex-col  items-center ">
+      <div className="w-full h-auto gap-[2vw] sm:gap-[10vw]  mt-[4vw]   flex flex-col  items-center ">
         <div className="flex flex-col  ">
           <h3
             style={{
@@ -31,7 +31,7 @@ const Footer_hand = ({ text_color, btn_bg_color, show_btn }: any) => {
                 }}
                 className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
               >
-                Work with us <i className="bi bi-arrow-right"></i>
+                Get Started <i className="bi bi-arrow-right"></i>
               </button>
             </div>
           )}

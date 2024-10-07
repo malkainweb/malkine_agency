@@ -1,6 +1,6 @@
 "use client";
 
-import { CabinetGrotesk_medium } from "../utils/fonts";
+import { CabinetGrotesk_medium, NeueHaasDisplay_roman } from "../utils/fonts";
 
 const How_to_find_us = () => {
   return (
@@ -8,7 +8,7 @@ const How_to_find_us = () => {
       <div className="w-full h-auto  px-[3vw] flex sm:gap-[5vw] flex-col pb-[5vw] pt-[5vw] sm:py-[10vw]   justify-center gap-[1.5vw]">
         {/* the title */}
         <h2
-          className={`${CabinetGrotesk_medium.className} text-center sm:text-[7vw] text-[5vw]`}
+          className={`${NeueHaasDisplay_roman.className} text-center sm:text-[7vw] text-[5vw]`}
         >
           Catch us in Downtown <br className="hidden sm:block" />
           New Brunswick

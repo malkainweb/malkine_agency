@@ -15,8 +15,8 @@ const Service_hero = ({ show_btn }: any) => {
     <>
       <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[8vw] gap-[3.5vw]  text-center">
         <h1
-          className={`font_helvetica  text-[4vw]  sm:text-[6vw] px-[7vw]  sm:px-[2vw] 
-          leading-[4.5vw] sm:leading-[7vw] ${NeueHaasDisplay_roman.className}
+          className={`font_helvetica  text-[4vw]  sm:text-[7vw] px-[7vw]  sm:px-[2vw] 
+          leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}
           `}
         >
           We <span className="text-[#FF0000]">Build</span> Custom

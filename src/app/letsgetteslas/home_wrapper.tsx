@@ -106,7 +106,7 @@ export default function Home_wrapper() {
           mobile_straight_line_image={mobile_line}
         />
       </div>
-      <Footer_hand text_color={"#000000"} />
+      <Footer_hand show_btn={true} text_color={"#000000"} />
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>
