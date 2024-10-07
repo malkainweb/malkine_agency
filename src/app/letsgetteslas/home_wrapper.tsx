@@ -89,7 +89,7 @@ export default function Home_wrapper() {
       <New_scroll_hand />
       <Brands />
       <Past_work_template sethide_nav={sethide_nav} />
-      <Writing />
+      {/* <Writing />
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
@@ -106,7 +106,7 @@ export default function Home_wrapper() {
           mobile_straight_line_image={mobile_line}
         />
       </div>
-      <Footer_hand text_color={"#000000"} />
+      <Footer_hand text_color={"#000000"} /> */}
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </>

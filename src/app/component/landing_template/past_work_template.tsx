@@ -80,12 +80,20 @@ import atella_ca from "@/../public/past_work/architecture/atella_ca.webp";
 import archier from "@/../public/past_work/architecture/archier.webp";
 import mitrex from "@/../public/past_work/architecture/mitrex.webp";
 import hastings from "@/../public/past_work/architecture/hastings.webp";
+import west from "@/../public/past_work/architecture/53_west_53.webp";
+import weeks from "@/../public/past_work/architecture/weeks.webp";
+import market_vision from "@/../public/past_work/architecture/marketvision.webp";
+import autexacoustics from "@/../public/past_work/architecture/autex_acoustics.webp";
 
 import mob_harc from "@/../public/past_work/architecture/mob_harc.webp";
 import mob_atella_ca from "@/../public/past_work/architecture/mob_atella_ca.webp";
 import mob_archier from "@/../public/past_work/architecture/mob_archier.webp";
 import mob_mitrex from "@/../public/past_work/architecture/mob_mitrex.webp";
 import mob_hastings from "@/../public/past_work/architecture/mob_hastings.webp";
+import mob_west from "@/../public/past_work/architecture/mob_53_west_53.webp";
+import mob_weeks from "@/../public/past_work/architecture/mob_weeks.webp";
+import mob_marketvision from "@/../public/past_work/architecture/mob_marketvision.webp";
+import mob_autexacoustics from "@/../public/past_work/architecture/mob_autex_acoustics.webp";
 
 // PORTFOLIO
 // PORTFOLIO
@@ -173,6 +181,31 @@ const Past_work_template = ({
           text: "gow hastings ",
           link: "https://gowhastings.com/",
           mob_img: mob_hastings,
+        },
+        {
+          img: west,
+          text: "53 West 53 ",
+          link: "https://53w53.com/",
+          mob_img: mob_west,
+        },
+        {
+          img: weeks,
+          text: "Weeks off ",
+          link: "https://www.weeks-off.com/en",
+          mob_img: mob_weeks,
+        },
+        {
+          img: market_vision,
+          text: "Market Vision ",
+          link: "https://marketvision.ca/",
+          mob_img: mob_marketvision,
+        },
+
+        {
+          img: autexacoustics,
+          text: "Autex  Acoustic  ",
+          link: "https://www.autexacoustics.com/",
+          mob_img: mob_autexacoustics,
         },
 
         // {

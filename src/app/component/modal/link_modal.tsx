@@ -35,7 +35,7 @@ const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
       {" "}
       {/* mobile nav  */}
       <div
-        className={`z-[3000] w-full h-full overflow-hidden px-[1.5%] bg-black gap-[1vw] sm:gap-[2.5vw] pt-[0.55vw] fixed top-0 flex flex-col justify-end items-center ${
+        className={`z-[10000] w-full h-full overflow-hidden px-[1.5%] bg-black gap-[1vw] sm:gap-[2.5vw] pt-[0.55vw] fixed top-0 flex flex-col justify-end items-center ${
           start_modal ? "backdrop-blur-xl bg-opacity-[70%]" : "bg-opacity-0"
         }`}
         style={{ transition: "0.5s ease" }}
