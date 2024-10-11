@@ -86,6 +86,13 @@ export default function Home_wrapper() {
     if (search) {
       setsubmit(true);
       setstart_anime(true);
+      window.fbq("track", "GoHighLevelFormSubmit", {
+        value: "Go High Level form successfully submitted", // Optional, to track lead value
+      });
+      window.gtag("event", "GoHighLevelFormSubmit", {
+        event_category: "Lead Generation",
+        event_label: "Go High Level form successfully submitted",
+      });
     } else {
       setstart_anime(false);
       setsubmit(false);
@@ -106,6 +113,13 @@ export default function Home_wrapper() {
       <button
         onClick={() => {
           setstart_anime(true);
+          window.fbq("track", "ContactUsClick", {
+            value: "Customer clicked on Contact Us button", // Optional, to track a specific value
+          });
+          window.gtag("event", "ContactUsClick", {
+            event_category: "Lead Generation",
+            event_label: "Customer clicked on Contact Us button",
+          });
         }}
         className={`${NeueHaasDisplay_roman.className} league z-[10000]  fixed bottom-[1vw] sm:bottom-[4vw]  sm:left-[50%] right-[2vw] sm:translate-x-[-50%] sm:w-[85vw] w-[12vw] h-[2.8vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
       >
