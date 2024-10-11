@@ -82,7 +82,7 @@ export default function Home_wrapper() {
   const search = searchParams.get("success");
 
   useEffect(() => {
-    console.log(search);
+    // console.log(search);
     if (search) {
       setsubmit(true);
       setstart_anime(true);
