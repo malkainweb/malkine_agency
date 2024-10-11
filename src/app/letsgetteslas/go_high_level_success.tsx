@@ -17,9 +17,8 @@ const Go_high_level_success = (props: any) => {
             alt="sucees image"
             className="w-[6.7vw] h-fit sm:w-[20vw]"
           />
-          <p className="text-2xl sm:leading-[6.5vw] sm:px-[5%] sm:text-[5vw] nova text-white text-center">
-            Thank You for your submission! <br className="sm:hidden" /> We will
-            contact you in 24 hrs.
+          <p className="text-2xl sm:leading-[6.5vw]  sm:text-[5vw] nova text-white text-center">
+            Thank You for your submission! <br /> We will contact you in 24 hrs.
           </p>
           <Link
             href="/letsgetteslas"
