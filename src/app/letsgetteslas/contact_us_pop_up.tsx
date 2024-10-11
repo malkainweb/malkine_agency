@@ -9,12 +9,21 @@ import Success from "../component/contact/success";
 import Go_high_level_success from "./go_high_level_success";
 import { useSearchParams } from "next/navigation";
 
-const Go_high_level_form = ({ setstart_anime, submit, setsubmit }: any) => {
+const Go_high_level_form = ({
+  setstart_anime,
+  sethide_nav,
+  submit,
+  setsubmit,
+}: any) => {
   const [start_modal, setstart_modal] = useState(false);
 
   useEffect(() => {
     setstart_modal(true);
   }, []);
+
+  useEffect(() => {
+    sethide_nav(!start_modal);
+  }, [start_modal]);
 
   const hidenow = () => {
     setstart_modal(false);
