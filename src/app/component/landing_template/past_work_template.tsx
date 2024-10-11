@@ -432,7 +432,7 @@ const Past_work_template = ({
               // color: text_color,
             }
           }
-          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[7vw] px-[20vw]  sm:leading-[7vw]  text-center sm:text-start sm:px-[5vw] ${NeueHaasDisplay_roman.className}`}
+          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[8.5vw] px-[20vw]  sm:leading-[7vw]  text-center   ${NeueHaasDisplay_roman.className}`}
         >
           Past Work{" "}
         </h3>
@@ -461,7 +461,7 @@ const Past_work_template = ({
         </div>
         {/* this is for mobile */}
         {/* Dropdown for mobile devices */}
-        <div className="hidden w-fit  sm:mx-[5vw]   bg-[#FF0000] py-[2vw] overflow-hidden   sm:flex justify-center relative sm:w-[50vw] sm:rounded-[8.75vw] sm:text-[3.5vw]   sm:h-[11.2vw]">
+        <div className="hidden w-full  sm:mx-auto   bg-[#FF0000] py-[2vw] overflow-hidden   sm:flex justify-center border2 relative sm:w-[50vw] sm:rounded-[8.75vw] sm:text-[3.5vw]   sm:h-[11.2vw]">
           <select
             className={`sm:text-[5vw] select relative bg-[#FF0000]  outline-none  ${NeueHaasDisplay_roman.className} capitalize  justify-center text-center   text-white`}
             onChange={(e) => setactive(e.target.value)}

@@ -82,7 +82,6 @@ export default function Home_wrapper() {
   const search = searchParams.get("success");
 
   useEffect(() => {
-    // console.log(search);
     if (search) {
       setsubmit(true);
       setstart_anime(true);
@@ -105,7 +104,7 @@ export default function Home_wrapper() {
       {start_anime && (
         <Go_high_level_form
           submit={submit}
-          sethide_nav={sethide_nav}
+          // sethide_nav={sethide_nav}
           setsubmit={setsubmit}
           // nav_items={nav_items}
           setstart_anime={setstart_anime}

@@ -17,7 +17,8 @@ import localFont from "next/font/local";
 import { useRouter } from "next/navigation";
 
 import Link from "next/link";
-import { CabinetGrotesk_bold } from "../utils/fonts";
+import { CabinetGrotesk_bold, NeueHaasDisplay_roman } from "../utils/fonts";
+import Go_high_level_form from "./contact_us_pop_up";
 
 const Mobile_Live_past_work = ({
   dont_hide,
@@ -161,6 +162,8 @@ const Mobile_Live_past_work = ({
     }
   };
 
+  const [go_high_level_start_anime, setgo_high_level_start_anime] =
+    useState(false);
   return (
     <>
       <div
@@ -174,7 +177,7 @@ const Mobile_Live_past_work = ({
         <div
           ref={containerRef}
           onTouchStart={handleTouchStart}
-          className={`w-full relative    h-[46vw]    sm:h-[130vw] overflow-hidden sm:rounded-[8vw]`}
+          className={`w-full relative    h-[46vw]     sm:h-[138vw] overflow-hidden sm:rounded-[8vw]`}
         >
           <div
             className={`w-auto absolute  sm:gap-[0vw] ${
@@ -218,6 +221,15 @@ const Mobile_Live_past_work = ({
                         <p className="sm:text-[6vw] capitalize mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
+
+                        {/* now the button */}
+                        <div className="flex justify-center sm:px-[3vw]">
+                          <button
+                            className={` sm:w-[39vw] sm:block hidden sm:h-[10vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
+                          >
+                            Preview the website
+                          </button>
+                        </div>
                       </div>
                     </Link>
                   ) : (
@@ -250,6 +262,15 @@ const Mobile_Live_past_work = ({
                         <p className="sm:text-[6vw] mt-[1.8vw] capitalize text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
+
+                        {/* now the button */}
+                        <div className="flex justify-center sm:px-[3vw]">
+                          <button
+                            className={` sm:w-[39vw] sm:block hidden sm:h-[10vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
+                          >
+                            Preview the website
+                          </button>
+                        </div>
                       </div>
                     </div>
                   )}{" "}
@@ -296,6 +317,14 @@ const Mobile_Live_past_work = ({
                         <p className="sm:text-[6vw] mt-[1.8vw] capitalize text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
+                        {/* now the button */}
+                        <div className="flex justify-center sm:px-[3vw]">
+                          <button
+                            className={` sm:w-[39vw] sm:block hidden sm:h-[10vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
+                          >
+                            Preview the website
+                          </button>
+                        </div>
                       </div>
                     </Link>
                   ) : (
@@ -327,6 +356,15 @@ const Mobile_Live_past_work = ({
                         <p className="sm:text-[6vw] capitalize mt-[1.8vw] text-[2vw] font-bold text-center sm:mt-[3vw]">
                           {e.text}
                         </p>
+
+                        {/* now the button */}
+                        <div className="flex justify-center sm:px-[3vw]">
+                          <button
+                            className={` sm:w-[39vw] sm:block hidden sm:h-[10vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
+                          >
+                            Preview the website
+                          </button>
+                        </div>
                       </div>
                     </div>
                   )}
@@ -335,7 +373,23 @@ const Mobile_Live_past_work = ({
             })}
           </div>
         </div>
-
+        <div className="flex justify-center sm:px-[3vw]">
+          <button
+            onClick={() => {
+              setgo_high_level_start_anime(true);
+              window.fbq("track", "ContactUsClick", {
+                value: "Customer clicked on Contact Us button", // Optional, to track a specific value
+              });
+              window.gtag("event", "ContactUsClick", {
+                event_category: "Lead Generation",
+                event_label: "Customer clicked on Contact Us button",
+              });
+            }}
+            className={` sm:w-[60vw] sm:block hidden sm:h-[12vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[4.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
+          >
+            Get started
+          </button>
+        </div>
         <div
           className={` w-full  ${
             dont_hide ? " sm:py-[5vw] pb-[2vw] " : "sm:py-[5vw]"
@@ -371,6 +425,12 @@ const Mobile_Live_past_work = ({
           />
         </div>
       </div>
+      {go_high_level_start_anime && (
+        <Go_high_level_form
+          // nav_items={nav_items}
+          setgo_high_level_start_anime={setgo_high_level_start_anime}
+        />
+      )}
     </>
   );
 };

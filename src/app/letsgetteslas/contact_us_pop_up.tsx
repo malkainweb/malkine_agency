@@ -10,8 +10,8 @@ import Go_high_level_success from "./go_high_level_success";
 import { useSearchParams } from "next/navigation";
 
 const Go_high_level_form = ({
-  setstart_anime,
-  sethide_nav,
+  setgo_high_level_start_anime,
+  // sethide_nav,
   submit,
   setsubmit,
 }: any) => {
@@ -21,15 +21,15 @@ const Go_high_level_form = ({
     setstart_modal(true);
   }, []);
 
-  useEffect(() => {
-    sethide_nav(!start_modal);
-  }, [start_modal]);
+  // useEffect(() => {
+  //   sethide_nav(!start_modal);
+  // }, [start_modal]);
 
   const hidenow = () => {
     setstart_modal(false);
 
     setTimeout(() => {
-      setstart_anime(false);
+      setgo_high_level_start_anime(false);
     }, 700);
   };
 
