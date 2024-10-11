@@ -128,7 +128,7 @@ export default function Home_wrapper() {
           Contact Us
         </p>
       </button>
-      {/* <div className="h-[6vw] sm:h-[25vw] "></div>
+      <div className="h-[6vw] sm:h-[25vw] "></div>
       <Service_hero />
       <New_scroll_hand />
       <Brands />
@@ -149,7 +149,7 @@ export default function Home_wrapper() {
           straight_line_image={line}
           mobile_straight_line_image={mobile_line}
         />
-      </div> */}
+      </div>
       <Footer_hand show_btn={true} text_color={"#000000"} />
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
