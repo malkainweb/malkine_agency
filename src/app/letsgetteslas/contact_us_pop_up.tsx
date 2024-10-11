@@ -43,15 +43,18 @@ const Go_high_level_form = ({ setstart_anime, submit, setsubmit }: any) => {
         }`}
         style={{ transition: "0.5s ease" }}
       >
-        <button
-          onClick={hidenow}
-          style={{ transition: "0.5s ease" }}
-          className={`h-[8%] absolute top-[1vw] right-[1vw] w-fit  cursor-pointer flex justify-center ${
-            start_modal ? "opacity-[70%]" : "opacity-0"
-          } items-center`}
-        >
-          <Image src={exit} alt="Exit" className="w-fit h-[90%] " />
-        </button>
+        {!submit && (
+          <button
+            onClick={hidenow}
+            style={{ transition: "0.5s ease" }}
+            className={`h-[8%] absolute top-[1vw] right-[1vw] w-fit  cursor-pointer flex justify-center ${
+              start_modal ? "opacity-[70%]" : "opacity-0"
+            } items-center`}
+          >
+            <Image src={exit} alt="Exit" className="w-fit h-[90%] " />
+          </button>
+        )}
+
         <div
           onClick={(e) => {
             e.stopPropagation();
