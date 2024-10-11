@@ -16,13 +16,15 @@ import Writing from "../component/landing_template/writing";
 import Calendy from "../component/calendy";
 import Past_work_template from "../component/landing_template/past_work_template";
 import New_service from "./new_service";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Brands from "./brand";
 import Who_we_are from "./who_we_are_mobile";
 import How_to_find_us from "./how_to_find_us";
 import Mobile_Process from "./mobile_process";
 import Link from "next/link";
 import { NeueHaasDisplay_roman } from "../utils/fonts";
+import Go_high_level_form from "./contact_us_pop_up";
+import { useSearchParams } from "next/navigation";
 
 export default function Home_wrapper() {
   const process = [
@@ -71,20 +73,48 @@ export default function Home_wrapper() {
   ];
 
   const [hide_nav, sethide_nav] = useState(false);
+  const [start_anime, setstart_anime] = useState(false);
+
+  const [submit, setsubmit] = useState(false);
+
+  const searchParams = useSearchParams();
+
+  const search = searchParams.get("success");
+
+  useEffect(() => {
+    console.log(search);
+    if (search) {
+      setsubmit(true);
+      setstart_anime(true);
+    } else {
+      setstart_anime(false);
+      setsubmit(false);
+    }
+  }, [search]);
   return (
     <>
       {" "}
       {hide_nav && <Landing_nav />}
-      <Link
-        href={"/contact"}
+      {start_anime && (
+        <Go_high_level_form
+          submit={submit}
+          setsubmit={setsubmit}
+          // nav_items={nav_items}
+          setstart_anime={setstart_anime}
+        />
+      )}
+      <button
+        onClick={() => {
+          setstart_anime(true);
+        }}
         className={`${NeueHaasDisplay_roman.className} league z-[10000]  fixed bottom-[1vw] sm:bottom-[4vw]  sm:left-[50%] right-[2vw] sm:translate-x-[-50%] sm:w-[85vw] w-[12vw] h-[2.8vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
       >
         <p className="w-full h-full flex justify-center items-center ">
           {" "}
           Contact Us
         </p>
-      </Link>
-      <div className="h-[6vw] sm:h-[25vw] "></div>
+      </button>
+      {/* <div className="h-[6vw] sm:h-[25vw] "></div>
       <Service_hero />
       <New_scroll_hand />
       <Brands />
@@ -105,7 +135,7 @@ export default function Home_wrapper() {
           straight_line_image={line}
           mobile_straight_line_image={mobile_line}
         />
-      </div>
+      </div> */}
       <Footer_hand show_btn={true} text_color={"#000000"} />
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
