@@ -362,7 +362,7 @@ const Mobile_Live_past_work = ({
                           <button
                             className={` sm:w-[39vw] sm:block hidden sm:h-[10vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
                           >
-                            Preview the website
+                            Preview website
                           </button>
                         </div>
                       </div>
@@ -373,7 +373,7 @@ const Mobile_Live_past_work = ({
             })}
           </div>
         </div>
-        <div className="flex justify-center sm:px-[3vw]">
+        {/* <div className="flex justify-center sm:px-[3vw]">
           <button
             onClick={() => {
               setgo_high_level_start_anime(true);
@@ -389,7 +389,7 @@ const Mobile_Live_past_work = ({
           >
             Get started
           </button>
-        </div>
+        </div> */}
         <div
           className={` w-full  ${
             dont_hide ? " sm:py-[5vw] pb-[2vw] " : "sm:py-[5vw]"

@@ -170,18 +170,7 @@ const Past_work_template = ({
         //   open_false: true,
         //   mob_img: mob_mitrex,
         // },
-        {
-          img: harc,
-          text: "Harc ",
-          link: "https://harc.casa/",
-          mob_img: mob_harc,
-        },
-        {
-          img: hastings,
-          text: "gow hastings ",
-          link: "https://gowhastings.com/",
-          mob_img: mob_hastings,
-        },
+
         {
           img: west,
           text: "53 West 53 ",
@@ -206,6 +195,18 @@ const Past_work_template = ({
           text: "Autex  Acoustic  ",
           link: "https://www.autexacoustics.com/",
           mob_img: mob_autexacoustics,
+        },
+        {
+          img: harc,
+          text: "Harc ",
+          link: "https://harc.casa/",
+          mob_img: mob_harc,
+        },
+        {
+          img: hastings,
+          text: "gow hastings ",
+          link: "https://gowhastings.com/",
+          mob_img: mob_hastings,
         },
 
         // {
