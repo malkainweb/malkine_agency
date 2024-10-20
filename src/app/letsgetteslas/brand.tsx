@@ -14,11 +14,9 @@ import img_11 from "../../../public/home/logos/11.png";
 import img_12 from "../../../public/home/logos/12.png";
 import Image from "next/image";
 // import External_btn from "../general_component/external_btn";
-import { scrollTo_calendy } from "../utils/scroll_to_calendy";
+// import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 import External_btn from "../utils/external_btn";
 import {
-  CabinetGrotesk_bold,
-  CabinetGrotesk_medium,
   NeueHaasDisplay_light,
   NeueHaasDisplay_medium,
   NeueHaasDisplay_roman,

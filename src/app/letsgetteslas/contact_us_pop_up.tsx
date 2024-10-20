@@ -21,10 +21,6 @@ const Go_high_level_form = ({
     setstart_modal(true);
   }, []);
 
-  // useEffect(() => {
-  //   sethide_nav(!start_modal);
-  // }, [start_modal]);
-
   const hidenow = () => {
     setstart_modal(false);
 

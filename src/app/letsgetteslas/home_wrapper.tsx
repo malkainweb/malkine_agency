@@ -73,7 +73,8 @@ export default function Home_wrapper() {
   ];
 
   const [hide_nav, sethide_nav] = useState(false);
-  const [start_anime, setstart_anime] = useState(false);
+  const [go_high_level_start_anime, setgo_high_level_start_anime] =
+    useState(false);
 
   const [submit, setsubmit] = useState(false);
 
@@ -84,7 +85,7 @@ export default function Home_wrapper() {
   useEffect(() => {
     if (search) {
       setsubmit(true);
-      setstart_anime(true);
+      setgo_high_level_start_anime(true);
       window.fbq("track", "GoHighLevelFormSubmit", {
         value: "Go High Level form successfully submitted", // Optional, to track lead value
       });
@@ -93,7 +94,7 @@ export default function Home_wrapper() {
         event_label: "Go High Level form successfully submitted",
       });
     } else {
-      setstart_anime(false);
+      setgo_high_level_start_anime(false);
       setsubmit(false);
     }
   }, [search]);
@@ -101,39 +102,41 @@ export default function Home_wrapper() {
     <>
       {" "}
       {hide_nav && <Landing_nav />}
-      {start_anime && (
+      {go_high_level_start_anime && (
         <Go_high_level_form
           submit={submit}
           // sethide_nav={sethide_nav}
           setsubmit={setsubmit}
           // nav_items={nav_items}
-          setstart_anime={setstart_anime}
+          setgo_high_level_start_anime={setgo_high_level_start_anime}
         />
       )}
-      <button
-        onClick={() => {
-          setstart_anime(true);
-          window.fbq("track", "ContactUsClick", {
-            value: "Customer clicked on Contact Us button", // Optional, to track a specific value
-          });
-          window.gtag("event", "ContactUsClick", {
-            event_category: "Lead Generation",
-            event_label: "Customer clicked on Contact Us button",
-          });
-        }}
-        className={`${NeueHaasDisplay_roman.className} league z-[10000]  fixed bottom-[1vw] sm:bottom-[4vw]  sm:left-[50%] right-[2vw] sm:translate-x-[-50%] sm:w-[85vw] w-[12vw] h-[2.8vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
-      >
-        <p className="w-full h-full flex justify-center items-center ">
-          {" "}
-          Contact Us
-        </p>
-      </button>
+      <div className="sm:w-full sm:flex sm:justify-center sm:left-[50%]  z-[10000] sm:pb-[3vw]  right-[2vw] sm:translate-x-[-50%]  fixed bottom-[1vw] sm:bottom-[0]">
+        <div className=" hidden h-full blur-[25px] sm:block border2 w-full bg-black  absolute bottom-0 left-0  "></div>
+        <button
+          onClick={() => {
+            setgo_high_level_start_anime(true);
+            window.fbq("track", "ContactUsClick", {
+              value: "Customer clicked on Contact Us button", // Optional, to track a specific value
+            });
+            window.gtag("event", "ContactUsClick", {
+              event_category: "Lead Generation",
+              event_label: "Customer clicked on Contact Us button",
+            });
+          }}
+          className={`${NeueHaasDisplay_roman.className} league sm:w-[85vw] z-[10] border2 shadow-sm w-[12vw] h-[2.8vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
+        >
+          <p className="w-full h-full flex justify-center items-center ">
+            {" "}
+            Contact Us
+          </p>
+        </button>
+      </div>
       <div className="h-[6vw] sm:h-[25vw] "></div>
-      <Service_hero />
+      <Service_hero show_btn={true} />
       <New_scroll_hand />
       <Brands />
       <Past_work_template sethide_nav={sethide_nav} />
-      {/* <Writing />
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
@@ -149,7 +152,8 @@ export default function Home_wrapper() {
           straight_line_image={line}
           mobile_straight_line_image={mobile_line}
         />
-      </div> */}
+      </div>
+      <Writing />
       <Footer_hand show_btn={true} text_color={"#000000"} />
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
