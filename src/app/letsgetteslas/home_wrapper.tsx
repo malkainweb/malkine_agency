@@ -132,7 +132,7 @@ export default function Home_wrapper() {
           </p>
         </button>
       </div>
-      <div className="h-[6vw] sm:h-[25vw] "></div>
+      <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
       <Service_hero show_btn={true} />
       <New_scroll_hand />
       <Brands />
