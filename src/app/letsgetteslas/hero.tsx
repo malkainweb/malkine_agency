@@ -67,7 +67,7 @@ const Service_hero = ({ show_btn }: any) => {
           leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}
           `}
         >
-          Hi! We're
+          Hi! We{"'"}re
           <span className="text-[#FF0000]"> Malkain </span>
           and We Design Websites for{" "}
           <span className="text-[#FF0000]"> Architects </span>
