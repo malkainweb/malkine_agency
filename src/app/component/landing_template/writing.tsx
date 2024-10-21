@@ -97,7 +97,7 @@ const Writing = ({
         <div
           className={` ${
             writing_text_color ? writing_text_color : "elementor-heading-title"
-          }  leading-[4.5vw] text-[4.4vw] text-center  w-[83vw] sm:w-[93vw]  sm:text-[7vw] sm:leading-[7vw]`}
+          }  leading-[4.5vw] text-[4.4vw] text-center  w-[83vw] sm:w-[90vw]  sm:text-[7vw] sm:leading-[7vw]`}
         >
           <p>
             {/* {writing_one} {writing_text_color}
@@ -106,8 +106,10 @@ const Writing = ({
             <br className="sm:hidden" /> oriented designs to create unique{" "}
             <br className="sm:hidden" />
             experiences for your customers. */}
-            Get a FREE Gallery Page Re-design for your website once you reach
-            out. OFFER valid only for the month of October
+            Get a FREE Gallery Page <br className="hidden sm:block" />
+            Re-design for your website once you reach out.{" "}
+            <br className="hidden sm:block" />
+            OFFER valid only for the month of October
           </p>
         </div>
 

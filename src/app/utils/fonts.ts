@@ -25,3 +25,6 @@ export const NeueHaasDisplay_bold = localFont({
 export const NeueHaasDisplay_medium = localFont({
   src: "../../../public/fonts/neue_haas_grotesk_display_pro_cufonfonts/NeueHaasDisplayMediu.ttf",
 });
+export const aeonik_regular = localFont({
+  src: "../../../public/fonts/aeonik/aeoniktrial-regular.otf",
+});
