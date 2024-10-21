@@ -29,7 +29,7 @@ const Service_hero = ({ show_btn }: any) => {
       )}
       {/* special header */}
       <div
-        className={` ${aeonik_regular.className} sm:mb-[5vw] sm:flex hidden flex-col  `}
+        className={` ${aeonik_regular.className} sm:mb-[10vw] sm:flex hidden flex-col  `}
       >
         <div className=" w-full overflow-hidden">
           <Image src={new_hero_img} alt="new_hero_img" className="w-full" />
@@ -38,7 +38,7 @@ const Service_hero = ({ show_btn }: any) => {
           <h3 className="text-[#FF7E7E] sm:text-[10vw] sm:leading-[9.5vw]">
             Launch your new website on January 1
           </h3>
-          <p className="sm:text-[5vw] sm:leading-[5.5vw]">
+          <p className="sm:text-[5vw]  sm:leading-[5.5vw]">
             We{"'"}ll even design a{" "}
             <span className="text-[#C0FFE3]"> FREE </span>
             Gallery Page <br /> to see if we{"'"}re the right fit <br />- Offer
@@ -61,7 +61,7 @@ const Service_hero = ({ show_btn }: any) => {
           </button>
         </div>
       </div>
-      <div className="w-full py-[3vw] flex flex-col items-center sm:gap-[8vw] gap-[3vw]  text-center">
+      <div className="w-full py-[3vw] sm:pb-[6vw] flex flex-col items-center sm:gap-[8vw] gap-[3vw]  text-center">
         <h1
           className={`font_helvetica  text-[4vw]  sm:text-[7vw] px-[7vw]  sm:px-[2vw] 
           leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}
@@ -74,7 +74,7 @@ const Service_hero = ({ show_btn }: any) => {
           and <span className="text-[#FF0000]"> Home Specialist</span>
         </h1>
         <p
-          className={` ${NeueHaasDisplay_roman.className}  leading-[2.5vw] sm:leading-[4.5vw]  text-[2vw]   sm:text-[4vw]`}
+          className={` sm:hidden ${NeueHaasDisplay_roman.className}  leading-[2.5vw] sm:leading-[4.5vw]  text-[2vw]   sm:text-[4vw]`}
         >
           We{"'"}ll even design a <span className="text-[#FF0000]"> FREE </span>{" "}
           Gallery Page to see if we{"'"}re <br />
