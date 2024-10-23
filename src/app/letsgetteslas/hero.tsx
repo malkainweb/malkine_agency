@@ -44,7 +44,7 @@ const Service_hero = ({ show_btn }: any) => {
             Gallery Page <br /> to see if we{"'"}re the right fit <br />- Offer
             Expires Oct 31*{" "}
           </p>
-          <button
+          {/* <button
             onClick={() => {
               setgo_high_level_start_anime(true);
               window.fbq("track", "ContactUsClick", {
@@ -58,7 +58,7 @@ const Service_hero = ({ show_btn }: any) => {
             className="w-full bg-[#C0FFE3] sm:text-[5vw] text-black sm:leading-[5.5vw] sm:h-[13vw] sm:rounded-[2.5vw]"
           >
             Get Started
-          </button>
+          </button> */}
         </div>
       </div>
       <div className="w-full py-[3vw] sm:pb-[6vw] flex flex-col items-center sm:gap-[8vw] gap-[3vw]  text-center">
