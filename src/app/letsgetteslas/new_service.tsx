@@ -27,7 +27,7 @@ import { useInView } from "framer-motion";
 const New_service = () => {
   const items = [
     {
-      heading: "Web/Mobile App Development",
+      heading: "Web/Mobile App Development ",
       body: "We create more than just mobile apps; we develop powerful software solutions optimized for on-the-go experiences. Our team combines software engineering prowess with a deep understanding of mobile platforms to deliver exceptional user experiences.",
       bg: "#9562E5",
       img: app_dev,
