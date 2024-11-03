@@ -85,7 +85,7 @@ export default function Home_wrapper() {
   useEffect(() => {
     if (search) {
       setsubmit(true);
-      console.log("tracking");
+      // console.log("tracking");
       setgo_high_level_start_anime(true);
       window.fbq("track", "GoHighLevelFormSubmit", {
         value: "Go High Level form successfully submitted", // Optional, to track lead value

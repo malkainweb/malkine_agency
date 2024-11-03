@@ -42,7 +42,7 @@ const Service_hero = ({ show_btn }: any) => {
             We{"'"}ll even design a{" "}
             <span className="text-[#C0FFE3]"> FREE </span>
             Gallery Page <br /> to see if we{"'"}re the right fit <br />- Offer
-            Expires Oct 31*{" "}
+            Expires Nov 30*{" "}
           </p>
           {/* <button
             onClick={() => {
