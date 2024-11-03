@@ -85,6 +85,7 @@ export default function Home_wrapper() {
   useEffect(() => {
     if (search) {
       setsubmit(true);
+      console.log("tracking");
       setgo_high_level_start_anime(true);
       window.fbq("track", "GoHighLevelFormSubmit", {
         value: "Go High Level form successfully submitted", // Optional, to track lead value
@@ -135,7 +136,7 @@ export default function Home_wrapper() {
       <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
       <Service_hero show_btn={true} />
       <New_scroll_hand />
-      <Brands />
+      {/* <Brands /> */}
       <Past_work_template sethide_nav={sethide_nav} />
       <div className="sm:block hidden">
         <Who_we_are />
