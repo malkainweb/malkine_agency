@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import add_logo from "../../../../public/home/add_logo.png";
-import main_img from "../../../public/new_service/main_img.webp";
+import main_img from "../../../public/campaign/scrolling_hand/main_img.webp";
 import left_img1 from "../../../public/new_service/left_img1.webp";
 import left_img2 from "../../../public/campaign/scrolling_hand/left_img2.webp";
 import left_img3 from "../../../public/new_service/left_img3.webp";
@@ -41,7 +41,7 @@ const Campaign_New_scroll_hand = () => {
   return (
     <>
       <div
-        className="w-full mt-[3vw] mb-[7vw]  sm:my-[7vw] h-[90vw] sm:h-[206vw] relative flex overflow-clip "
+        className="w-full mt-[3vw] mb-[7vw]  sm:my-[7vw] h-[90vw] sm:h-[200vw] relative flex overflow-clip "
         style={{ alignItems: "flex-start" }}
       >
         {/* this is for the desktop */}
@@ -57,7 +57,7 @@ const Campaign_New_scroll_hand = () => {
                     src={e.img}
                     // width={}
                     alt="images"
-                    className="w-full h-fit"
+                    className="w-full h-full object-cover"
                   />
                 </div>
               );
@@ -74,7 +74,7 @@ const Campaign_New_scroll_hand = () => {
                     src={e.img}
                     // width={}
                     alt="images"
-                    className="w-full h-fit"
+                    className="w-full h-full object-cover"
                   />
                   {e.video ? (
                     <div className="w-full absolute top-[50%]   translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">

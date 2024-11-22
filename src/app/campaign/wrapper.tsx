@@ -138,7 +138,7 @@ const Campaign_Home_wrapper = () => {
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
-      <How_to_find_us />
+      {/* <How_to_find_us /> */}
       <New_service />
       <div className="sm:block hidden">
         <Mobile_Process />
