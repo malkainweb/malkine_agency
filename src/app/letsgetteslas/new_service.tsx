@@ -27,37 +27,29 @@ import { useInView } from "framer-motion";
 const New_service = () => {
   const items = [
     {
-      heading: "Web/Mobile App Development ",
-      body: "We create more than just mobile apps; we develop powerful software solutions optimized for on-the-go experiences. Our team combines software engineering prowess with a deep understanding of mobile platforms to deliver exceptional user experiences.",
-      bg: "#9562E5",
-      img: app_dev,
-      top_img: polygon,
-    },
-
-    {
       heading: "Web Design",
-      body: "Enhance your portfolio online with our specialized web design services for architecture firms. From intuitive navigation to visually striking elements, our comprehensive approach aims to elevate your brand's visibility and credibility in the competitive online landscape.",
+      body: "Through data-driven design and a deep understanding of consumer behavior, we build websites that not only look stunning but also deliver exceptional results. With over 9 years of on the ground experience, we have designs, developed and maintained websites that have processed over $54 million in revenue.",
       img: web_design,
       bg: "#FCB525",
       top_img: two,
     },
     {
-      heading: "Software Development",
-      body: "Imagine software that feels like an extension of your team. We build applications that seamlessly integrate into your workflow, boosting efficiency and productivity. Our focus is on creating intuitive, user-friendly solutions that empower your business to achieve its full potential.",
+      heading: "Landing Page Development",
+      body: "Walking backwards from your marketing strategy and target audience, we design and development custom pages optimized for marketing funnels. Using powerful API like Cloudinary and Clarity, we build and iterate pages continually based off customer feedback to improve sales.",
       img: web_developement,
       top_img: four,
       bg: "#EF6C52",
     },
     {
-      heading: "E-commerce Web Design & Software",
-      body: "Through data-driven design and a deep understanding of consumer behavior, we build websites that not only look stunning but also deliver exceptional results. With over 9 years of on the ground experience, we have designs, developed and maintained websites that have processed over $54 million in revenue.",
+      heading: "Custom App Development",
+      body: " Imagine software that feels like an extension of your team. We build applications and features that seamlessly integrate into your workflow, boosting efficiency and productivity. Our focus is on creating intuitive, user-friendly solutions that empower your business to achieve its full potential.",
       img: eccomerce,
       top_img: three,
       bg: "#4FA0FF",
     },
     {
-      heading: "Custom API Development",
-      body: "We don't merely code APIs; we construct the digital connective tissue of your business. Our team is dedicated to crafting robust, scalable, and secure APIs that seamlessly integrate your systems and unlock new possibilities. We build APIs that are not just functional, but intelligent, driving efficiency and innovation.",
+      heading: "Marketing Services",
+      body: "Following up on branding and web designs, we follow your brand all the way across to your customers by providing graphical and video design services for your media buying campaigns. We deliver custom static ads, final cut videos and A/B split test packages for your media buying needs.",
       img: custom_api,
       top_img: four,
       bg: "#9562E5",

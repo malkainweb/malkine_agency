@@ -235,23 +235,32 @@ const Past_work_template = ({
         //   link: "https://www.malkain.com/",
         // },
         {
-          img: spoil_child,
-          text: "Spoiled Child",
-          // link: "https://spoiledchild.com/",
-          link: "https://www.spoiledchild.com/",
-          video_link: "/showcase/s.mp4",
-          open_false: true,
-          new_tab: true,
+          img: q_department,
+          text: "Q Department ",
+          link: "https://www.qdepartment.com/",
           video: true,
-          mob_img: mob_spoil_child,
+          video_link: "/showcase/q.mp4",
+          scale: true,
+          mob_img: mob_q_department,
         },
-        {
-          img: get_unity,
-          text: "get unity",
-          link: "http://getunity.com/",
-          new_tab: true,
-          mob_img: mob_get_unity,
-        },
+        // {
+        //   img: spoil_child,
+        //   text: "Spoiled Child",
+        //   // link: "https://spoiledchild.com/",
+        //   link: "https://www.spoiledchild.com/",
+        //   video_link: "/showcase/s.mp4",
+        //   open_false: true,
+        //   new_tab: true,
+        //   video: true,
+        //   mob_img: mob_spoil_child,
+        // },
+        // {
+        //   img: get_unity,
+        //   text: "get unity",
+        //   link: "http://getunity.com/",
+        //   new_tab: true,
+        //   mob_img: mob_get_unity,
+        // },
 
         {
           img: with_character,
@@ -279,15 +288,15 @@ const Past_work_template = ({
     {
       title: "General website",
       body: [
-        {
-          img: q_department,
-          text: "Q Department ",
-          link: "https://www.qdepartment.com/",
-          video: true,
-          video_link: "/showcase/q.mp4",
-          scale: true,
-          mob_img: mob_q_department,
-        },
+        // {
+        //   img: q_department,
+        //   text: "Q Department ",
+        //   link: "https://www.qdepartment.com/",
+        //   video: true,
+        //   video_link: "/showcase/q.mp4",
+        //   scale: true,
+        //   mob_img: mob_q_department,
+        // },
         {
           img: orbit_law,
           link: "https://orbit.law",
@@ -407,7 +416,7 @@ const Past_work_template = ({
     },
   ];
 
-  const [active, setactive] = useState("Architecture");
+  const [active, setactive] = useState("Ecommerce");
   const [open_iframe, setopen_iframe] = useState<any>(null);
 
   useEffect(() => {

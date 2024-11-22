@@ -22,6 +22,7 @@ import { NeueHaasDisplay_roman } from "../utils/fonts";
 import Go_high_level_form from "../letsgetteslas/contact_us_pop_up";
 import { useSearchParams } from "next/navigation";
 import Campaign_New_scroll_hand from "./scroll_hand";
+import Campaign_hero from "./campaign_hero";
 
 const Campaign_Home_wrapper = () => {
   const process = [
@@ -131,7 +132,8 @@ const Campaign_Home_wrapper = () => {
         </button>
       </div>
       <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
-      <Service_hero show_btn={true} />
+      {/* <Service_hero show_btn={true} /> */}
+      <Campaign_hero show_btn={true} />
       <Campaign_New_scroll_hand />
       {/* <Brands /> */}
       <Past_work_template sethide_nav={sethide_nav} />
@@ -151,7 +153,7 @@ const Campaign_Home_wrapper = () => {
           mobile_straight_line_image={mobile_line}
         />
       </div>
-      <Writing />
+      {/* <Writing /> */}
       <Footer_hand show_btn={true} text_color={"#000000"} />
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
