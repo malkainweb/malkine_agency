@@ -4,13 +4,13 @@ import Image from "next/image";
 import React, { useRef } from "react";
 import add_logo from "../../../../public/home/add_logo.png";
 import main_img from "../../../public/campaign/scrolling_hand/main_img.webp";
-import left_img1 from "../../../public/new_service/left_img1.webp";
+import left_img1 from "../../../public/campaign/scrolling_hand/left_img1.webp";
 import left_img2 from "../../../public/campaign/scrolling_hand/left_img2.webp";
-import left_img3 from "../../../public/new_service/left_img3.webp";
+import left_img3 from "../../../public/campaign/scrolling_hand/left_img3.webp";
 import left_img4 from "../../../public/campaign/scrolling_hand/left_img4.webp";
 import right_img1 from "../../../public/campaign/scrolling_hand/right_img1.webp";
-import right_img2 from "../../../public/new_service/right_img2.webp";
-import right_img3 from "../../../public/new_service/right_img3.webp";
+import right_img2 from "../../../public/campaign/scrolling_hand/right_img2.webp";
+import right_img3 from "../../../public/campaign/scrolling_hand/right_img3.webp";
 import right_img4 from "../../../public/campaign/scrolling_hand/right_img4.webp";
 
 import { useState, useEffect } from "react";
@@ -25,9 +25,10 @@ const left_img = [
 ];
 const right_img = [
   { img: right_img1 },
-  { img: right_img2 },
+
   { img: right_img3 },
   { img: right_img4 },
+  { img: right_img2 },
   // { img: right_img4, video: true, video_link: "/showcase/q.mp4" },
 ];
 const mob_right_img = [
