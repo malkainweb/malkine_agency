@@ -103,7 +103,7 @@ const Each_past_work = ({
                   <Image
                     src={e.img}
                     alt="img"
-                    className="w-full  h-fit group-hover:scale-[1] scale-[1.1] duration-[0.6s] z-[10] transition"
+                    className="w-full  h-full object-cover group-hover:scale-[1] scale-[1.1] duration-[0.6s] z-[10] transition"
                   />
                   {e.video ? (
                     <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">
@@ -156,7 +156,7 @@ const Each_past_work = ({
                   <Image
                     src={e.img}
                     alt="img"
-                    className="w-full  h-fit group-hover:scale-[1] scale-[1.1] duration-[0.6s] z-[10] transition"
+                    className="w-full h-full object-cover group-hover:scale-[1] scale-[1.1] duration-[0.6s] z-[10] transition"
                   />
                   {e.video ? (
                     <div className="w-full absolute top-[50%] translate-y-[-50%] left-[50%] translate-x-[-50%] z-[20] h-full">

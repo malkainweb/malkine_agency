@@ -21,6 +21,10 @@ import drop_down from "@/../public/new_service/drop_down.png";
 // ECCOMERCE
 
 import vibes_only from "@/../public/past_work/eccomerce/vibes_only.webp";
+import Vazzi from "@/../public/past_work/eccomerce/vazzi.png";
+import Yulia from "@/../public/past_work/eccomerce/Yulia.png";
+import dailycomputer from "@/../public/past_work/eccomerce/dailycomputer.png";
+import Tinypod from "@/../public/past_work/eccomerce/tinypod.png";
 import get_unity from "@/../public/past_work/eccomerce/get_unity.webp";
 import wild_brands from "@/../public/past_work/eccomerce/wild_brands.webp";
 import with_character from "@/../public/past_work/eccomerce/with_character.webp";
@@ -161,6 +165,95 @@ const Past_work_template = ({
 
   const menu_arr = [
     {
+      title: "Ecommerce",
+      body: [
+        // {
+        //   img: kate_perry,
+        //   text: "katy perry collection",
+        //   link: "https://www.malkain.com/",
+        // },
+        {
+          img: q_department,
+          text: "Q Department ",
+          link: "https://www.qdepartment.com/",
+          video: true,
+          video_link: "/showcase/q.mp4",
+          scale: true,
+          mob_img: mob_q_department,
+        },
+        {
+          img: Vazzi,
+          text: "Vazzi ",
+          link: "https://vazzi.fun/#about",
+          mob_img: Vazzi,
+        },
+        {
+          img: Tinypod,
+          text: "The Tinypod ",
+          link: "https://thetinypod.com/",
+          mob_img: Tinypod,
+        },
+        {
+          img: dailycomputer,
+          text: "Day Light Computer ",
+          link: "https://daylightcomputer.com/",
+          mob_img: dailycomputer,
+        },
+        {
+          img: Yulia,
+          text: "Yulia ",
+          link: "https://www.yulia.world/",
+          mob_img: Yulia,
+        },
+        {
+          img: atella_studio,
+          text: "Atella Studios",
+          link: "https://www.atellastudios.com/",
+          mob_img: mob_atella_studio,
+        },
+        // {
+        //   img: spoil_child,
+        //   text: "Spoiled Child",
+        //   // link: "https://spoiledchild.com/",
+        //   link: "https://www.spoiledchild.com/",
+        //   video_link: "/showcase/s.mp4",
+        //   open_false: true,
+        //   new_tab: true,
+        //   video: true,
+        //   mob_img: mob_spoil_child,
+        // },
+        // {
+        //   img: get_unity,
+        //   text: "get unity",
+        //   link: "http://getunity.com/",
+        //   new_tab: true,
+        //   mob_img: mob_get_unity,
+        // },
+
+        // {
+        //   img: with_character,
+        //   text: "With character",
+        //   link: "https://www.withcharacter.com/",
+        //   open_false: true,
+        //   mob_img: mob_with_character,
+        // },
+
+        // {
+        //   img: wild_brands,
+        //   text: "wilde brands",
+        //   link: "https://www.wildebrands.com/",
+        //   mob_img: mob_wild_brands,
+        // },
+        {
+          img: vibes_only,
+          text: "vibes only",
+          link: "https://www.vibesonly.com/",
+          mob_img: mob_vibes_only,
+          open_false: true,
+        },
+      ],
+    },
+    {
       title: "Architecture",
       body: [
         // {
@@ -227,65 +320,6 @@ const Past_work_template = ({
       ],
     },
     {
-      title: "Ecommerce",
-      body: [
-        // {
-        //   img: kate_perry,
-        //   text: "katy perry collection",
-        //   link: "https://www.malkain.com/",
-        // },
-        {
-          img: q_department,
-          text: "Q Department ",
-          link: "https://www.qdepartment.com/",
-          video: true,
-          video_link: "/showcase/q.mp4",
-          scale: true,
-          mob_img: mob_q_department,
-        },
-        // {
-        //   img: spoil_child,
-        //   text: "Spoiled Child",
-        //   // link: "https://spoiledchild.com/",
-        //   link: "https://www.spoiledchild.com/",
-        //   video_link: "/showcase/s.mp4",
-        //   open_false: true,
-        //   new_tab: true,
-        //   video: true,
-        //   mob_img: mob_spoil_child,
-        // },
-        // {
-        //   img: get_unity,
-        //   text: "get unity",
-        //   link: "http://getunity.com/",
-        //   new_tab: true,
-        //   mob_img: mob_get_unity,
-        // },
-
-        {
-          img: with_character,
-          text: "With character",
-          link: "https://www.withcharacter.com/",
-          open_false: true,
-          mob_img: mob_with_character,
-        },
-
-        {
-          img: wild_brands,
-          text: "wilde brands",
-          link: "https://www.wildebrands.com/",
-          mob_img: mob_wild_brands,
-        },
-        {
-          img: vibes_only,
-          text: "vibes only",
-          link: "https://www.vibesonly.com/",
-          mob_img: mob_vibes_only,
-          open_false: true,
-        },
-      ],
-    },
-    {
       title: "General website",
       body: [
         // {
@@ -312,12 +346,12 @@ const Past_work_template = ({
           mob_img: mob_good_juuju,
         },
 
-        {
-          img: atella_studio,
-          text: "Atella Studios",
-          link: "https://www.atellastudios.com/",
-          mob_img: mob_atella_studio,
-        },
+        // {
+        //   img: atella_studio,
+        //   text: "Atella Studios",
+        //   link: "https://www.atellastudios.com/",
+        //   mob_img: mob_atella_studio,
+        // },
         {
           img: apr,
           text: "apr",

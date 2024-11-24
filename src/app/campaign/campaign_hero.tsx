@@ -13,7 +13,8 @@ import tummy_blur from "../../../public/campaign/hero/blur.webp";
 import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
-import img from "../../../public/campaign/hero/hero.gif";
+import gif from "../../../public/campaign/hero/hero.gif";
+import img from "../../../public/campaign/hero/hero.webp";
 import Go_high_level_form from "../letsgetteslas/contact_us_pop_up";
 
 const Campaign_hero = ({ show_btn }: any) => {
@@ -40,11 +41,16 @@ const Campaign_hero = ({ show_btn }: any) => {
       {/* mobile design */}
       <div className=" p-[2%]  hidden  sm:flex flex-col mb-[5vw]    ">
         <div className="relative  h-[32rem] rounded-[20px] overflow-hidden">
-          <div className="w-full h-full ">
+          <div className="w-full h-full relative flex">
+            <Image
+              src={gif}
+              alt="hero"
+              className="w-full h-full  object-cover "
+            />
             <Image
               src={img}
               alt="hero"
-              className="w-full h-full object-cover "
+              className="w-full h-full absolute top-0 left-0 object-cover "
             />
           </div>{" "}
           <div className="absolute w-full  rounded-[20px] overflow-hidden bottom-0 left-0 z-[100] ">
