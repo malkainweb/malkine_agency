@@ -46,7 +46,7 @@ const Campaign_hero = ({ show_btn, form_link }: any) => {
             <Image
               src={gif}
               alt="hero"
-              className="w-full h-full  object-cover "
+              className="w-full h-full z-[10]  object-cover "
             />
             <Image
               src={img}
