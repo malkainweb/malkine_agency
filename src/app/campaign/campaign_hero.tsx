@@ -17,7 +17,7 @@ import gif from "../../../public/campaign/hero/hero.gif";
 import img from "../../../public/campaign/hero/hero.webp";
 import Go_high_level_form from "../letsgetteslas/contact_us_pop_up";
 
-const Campaign_hero = ({ show_btn }: any) => {
+const Campaign_hero = ({ show_btn, form_link }: any) => {
   const width = globalThis.innerWidth;
 
   const [compt_width, setcompt_width] = useState(0);
@@ -30,6 +30,7 @@ const Campaign_hero = ({ show_btn }: any) => {
     <>
       {go_high_level_start_anime && (
         <Go_high_level_form
+          form_link={form_link}
           setgo_high_level_start_anime={setgo_high_level_start_anime}
         />
       )}

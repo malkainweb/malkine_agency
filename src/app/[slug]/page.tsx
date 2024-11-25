@@ -1,59 +1,74 @@
 import { notFound } from "next/navigation";
-import Scrolling_hands from "../component/landing_template/scrolling_hand";
-import Landing_template from "./landing_template";
+import Campaign_Home_wrapper from "./wrapper";
+import {
+  collection,
+  getDocs,
+  getFirestore,
+  query,
+  where,
+} from "firebase/firestore";
+import { firebaseConfig } from "../utils/fire_base_config";
+import { initializeApp } from "firebase/app";
+// import Loader from "./loader";
 
-async function getProjects(template_title: string) {
-  const res = await fetch(
-    `${process.env.NEXT_PUBLIC_PUBLIC_URL}/api/${template_title}`,
-    { cache: "no-store" },
-  );
-  // console.log("this is working");
-  if (!res.ok) {
-    notFound();
+// const fetchpage_data = async (slug: any) => {
+//   const { data, error } = await supabase
+//     .from("page_detail")
+//     .select("*")
+//     .eq("page_name", slug) // Filter by page_name == slug
+//     .order("created_at", { ascending: false });
+
+//   if (error) {
+//     console.error("Error fetching page data:", error);
+//     return null;
+//   }
+
+//   return data;
+// };
+
+const db = getFirestore();
+initializeApp(firebaseConfig);
+
+const fetchpage_data = async (slug: any) => {
+  try {
+    const q = query(
+      collection(db, "pages"), // Replace with your actual collection name
+      where("page_name", "==", slug), // Filter where page_name matches slug
+    );
+    const querySnapshot = await getDocs(q);
+
+    if (querySnapshot.empty) {
+      console.error("No matching document found.");
+      return null;
+    }
+
+    // Get the first document from the results
+    const doc = querySnapshot.docs[0];
+    return {
+      id: doc.id, // Include document ID if needed
+      ...doc.data(),
+    };
+  } catch (error) {
+    console.error("Error fetching page data:", error);
+    return null;
   }
-  const projects = await res.json();
-  // console.log(projects.category.pastwork.works);
-  return projects;
-}
-
-export async function generateMetadata({ params }: any, parent: any) {
-  const id = params.slug;
-  // console.log("this is the id off", id);
-  // const blog = BlogData.find((item) => item.id === id);
-  const projects = await getProjects(params.slug);
-
-  // excerpt;
-  return {
-    title: projects.category.title,
-    description: projects.category.description,
-    // openGraph: {
-    //   // title: " SG Technofab: Blogs",
-    //   // description:
-    //   //   "Explore the world of heating, ventilation, and air conditioning with SG Technofab's informative blog. Stay current with the latest industry news, exclusive interviews, cutting-edge innovations, and helpful resources selected to keep you informed and empowered. Whether you're a homeowner, a company owner, or an industry professional, our blog is your go-to resource for anything HVAC. Explore important issues and stay ahead of the curve with SG Technofab.",
-    //   // url: "https://sgtechnofab.com",
-    //   siteName: "SG Technofab",
-    //   images: [
-    //     {
-    //       url: blogData.data.featuredImage.url,
-    //       width: 800,
-    //       height: 600,
-    //     },
-    //     {
-    //       url: blogData.data.featuredImage.url,
-    //       width: 1800,
-    //       height: 1600,
-    //     },
-    //   ],
-    //   locale: "en_US",
-    //   type: "website",
-    // },
-  };
-}
+};
 export default async function Home({ params }: { params: { slug: string } }) {
-  const projects = await getProjects(params.slug);
+  const product_data: any = await fetchpage_data(params.slug);
+
+  // console.log(product_data);
+  // Check if data is empty
+  if (!product_data) {
+    console.log("now data");
+    return notFound();
+  }
   return (
     <>
-      <Landing_template data={projects.category} />{" "}
+      {" "}
+      <Campaign_Home_wrapper
+        id={product_data.id}
+        form_link={product_data.form_link}
+      />
     </>
   );
 }

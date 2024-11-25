@@ -11,6 +11,7 @@
   "dependencies": {
     "@analytics/google-analytics": "^1.0.7",
     "@sendgrid/mail": "^7.7.0",
+    "@supabase/supabase-js": "^2.46.1",
     "@types/node": "20.4.4",
     "@types/react": "18.2.15",
     "@types/react-dom": "18.2.7",
@@ -21,6 +22,7 @@
     "cordova-plugin-ionic-webview": "^5.0.0",
     "eslint": "8.45.0",
     "eslint-config-next": "13.4.12",
+    "firebase": "^11.0.2",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.5",
     "helmet": "^7.0.0",

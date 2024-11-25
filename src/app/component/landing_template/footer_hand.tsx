@@ -8,13 +8,19 @@ import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
 import { NeueHaasDisplay_light } from "@/app/utils/fonts";
 import Go_high_level_form from "@/app/letsgetteslas/contact_us_pop_up";
 
-const Footer_hand = ({ text_color, btn_bg_color, show_btn }: any) => {
+const Footer_hand = ({
+  text_color,
+  form_link,
+  btn_bg_color,
+  show_btn,
+}: any) => {
   const [go_high_level_start_anime, setgo_high_level_start_anime] =
     useState(false);
   return (
     <>
       {go_high_level_start_anime && (
         <Go_high_level_form
+          form_link={form_link}
           // nav_items={nav_items}
           setgo_high_level_start_anime={setgo_high_level_start_anime}
         />

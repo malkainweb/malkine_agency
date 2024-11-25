@@ -14,6 +14,7 @@ const Go_high_level_form = ({
   // sethide_nav,
   submit,
   setsubmit,
+  form_link,
 }: any) => {
   const [start_modal, setstart_modal] = useState(false);
 
@@ -80,14 +81,16 @@ const Go_high_level_form = ({
             <>
               {" "}
               <iframe
-                src="https://api.leadconnectorhq.com/widget/form/h9nBLPagXp3ChYSLemqL"
+                src={`https://api.leadconnectorhq.com/widget/form/${form_link}`}
                 style={{
                   width: "100%",
                   height: "100%",
-                  border: "none",
+                  boxShadow: "none",
+                  //   border: "none",
                   borderRadius: "3px",
                 }}
-                id="inline-h9nBLPagXp3ChYSLemqL"
+                // className="border2 h-[40rem] max-h-[90%] "
+                id={`inline-${form_link}`}
                 data-layout='{"id":"INLINE"}'
                 data-trigger-type="alwaysShow"
                 data-trigger-value=""
@@ -95,11 +98,11 @@ const Go_high_level_form = ({
                 data-activation-value=""
                 data-deactivation-type="neverDeactivate"
                 data-deactivation-value=""
-                data-form-name="Malkain Landing Page Form"
-                data-height="974"
-                data-layout-iframe-id="inline-h9nBLPagXp3ChYSLemqL"
-                data-form-id="h9nBLPagXp3ChYSLemqL"
-                title="Malkain Landing Page Form"
+                data-form-name="Cameo contact form"
+                // data-height="1200"
+                data-layout-iframe-id={`inline-${form_link}`}
+                data-form-id={form_link}
+                title="Cameo contact form"
                 onLoad={() => {
                   setIsLoading(false);
                   console.log("this has loaded");
