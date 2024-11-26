@@ -25,6 +25,14 @@ import Campaign_New_scroll_hand from "../campaign/scroll_hand";
 import Campaign_hero from "../campaign/campaign_hero";
 import Modal_text_edit from "./modal_text_edit";
 import Edit_text from "./edit_text";
+import {
+  getAuth,
+  onAuthStateChanged,
+  signInWithEmailAndPassword,
+  signOut,
+} from "firebase/auth";
+import { initializeApp } from "firebase/app";
+import { firebaseConfig } from "../utils/fire_base_config";
 
 const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const process = [
@@ -105,9 +113,29 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const [record_Name, setrecord_Name] = useState("");
   const [record_id, setrecord_id] = useState("");
   const [btn_text, setbtn_text] = useState("");
-  const [isloggedin, setisloggedin] = useState(true);
+  const [isloggedin, setisloggedin] = useState(false);
 
   // get the products
+
+  // Initialize the data base connection
+  initializeApp(firebaseConfig);
+  const auth = getAuth();
+  // Use useEffect to check if the user is already authenticated
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      if (user) {
+        setisloggedin(true);
+        // Replace with your protected route
+      } else {
+        // console.log("logged out");
+        setisloggedin(false);
+      }
+    });
+
+    // Clean up the listener when the component unmounts
+    return () => unsubscribe();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
   return (
     <>
       {" "}

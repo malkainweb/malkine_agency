@@ -33,7 +33,7 @@ const Login = () => {
         setloggedin(true);
         // Replace with your protected route
       } else {
-        console.log("logged out");
+        // console.log("logged out");
       }
     });
 
