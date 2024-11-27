@@ -115,7 +115,7 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const [btn_text, setbtn_text] = useState("");
   const [isloggedin, setisloggedin] = useState(false);
 
-  // get the products
+  // get the products now
 
   // Initialize the data base connection
   initializeApp(firebaseConfig);
