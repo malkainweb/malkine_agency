@@ -132,7 +132,7 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
       }
     });
 
-    // Clean up the listener when the component unmounts
+    // Clean up the listener when the component unmounts and go
     return () => unsubscribe();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
