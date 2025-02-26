@@ -6,7 +6,7 @@ import Image from "next/image";
 import UspBackground from "@/../public/campaign/UspAnimation/UspBackground.webp";
 import small_logo from "../../../public/new_options/small_logo.webp";
 import { gsap } from "gsap";
-import { NeueHaasDisplay_roman } from "../utils/fonts";
+import { NeueHaasDisplay_bold, NeueHaasDisplay_roman } from "../utils/fonts";
 
 const MalkainIsForYouIf = () => {
   const items = [
@@ -107,9 +107,15 @@ const MalkainIsForYouIf = () => {
   }, [yvalue]);
   return (
     <>
+      <h2
+        className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
+      >
+        {" "}
+        Malkain is <br /> for you IF
+      </h2>
       {/* the wrapper */}
       <div
-        className={`w-full pt-[3rem] md:w-[100rem] md:max-w-full mx-auto flex items-end  relative`}
+        className={`w-full  md:w-[100rem] md:max-w-full mx-auto flex items-end  relative`}
         style={{ height: `${items.length * 100}vh` }}
         ref={sectionRef}
       >
