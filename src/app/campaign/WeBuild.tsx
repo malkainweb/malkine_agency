@@ -77,7 +77,7 @@ const WeBuild = () => {
         // style={{ height: `${items.length * 30}vh` }}
         ref={sectionRef}
       >
-        <div className="sticky top-0 left-0 w-full h-[40vh] z-[20] bg-gradient-to-b from-black via-[#000000ca]"></div>
+        <div className="sticky top-0 left-0 w-full h-[40vh] z-[20] bg-gradient-to-b from-black via-[black]"></div>
 
         <div className="flex justify-center pb-[0vh] items-center  overflow-hidden flex-col  bottom-0 h-full bg-black  w-full ">
           <motion.div
@@ -87,7 +87,7 @@ const WeBuild = () => {
                 // transition: "0.5s ease-out",
               }
             }
-            className=" gap-[6rem] h-fit flex flex-col  w-full"
+            className=" gap-[5rem] h-fit flex flex-col  w-full"
           >
             {/* the customized scroll bar ends */}
             {items.map((e, index) => {
@@ -103,7 +103,7 @@ const WeBuild = () => {
             })}
           </motion.div>
         </div>
-        <div className="sticky bottom-0 left-0 w-full h-[40vh] z-[20] bg-gradient-to-t from-black via-[#000000ca]"></div>
+        <div className="sticky bottom-0 left-0 w-full h-[40vh] z-[20] bg-gradient-to-t from-black via-[black]"></div>
       </div>
     </>
   );
