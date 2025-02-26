@@ -24,6 +24,7 @@ import { useSearchParams } from "next/navigation";
 import Campaign_New_scroll_hand from "./scroll_hand";
 import Campaign_hero from "./campaign_hero";
 import MalkainIsForYouIf from "./MalkainIsForYouIf";
+import Webuild from "./WeBuild";
 
 const Campaign_Home_wrapper = () => {
   const process = [
@@ -144,6 +145,7 @@ const Campaign_Home_wrapper = () => {
       </div>
       {/* <How_to_find_us /> */}
       <New_service />
+      <Webuild />
       <div className="sm:block hidden">
         <Mobile_Process />
       </div>
