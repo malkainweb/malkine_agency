@@ -135,8 +135,8 @@ const Campaign_Home_wrapper = () => {
       <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
       {/* <Service_hero show_btn={true} /> */}
       <Campaign_hero show_btn={true} />
-      <MalkainIsForYouIf />
       <Campaign_New_scroll_hand />
+      <MalkainIsForYouIf />
       {/* <Brands /> */}
       <Past_work_template sethide_nav={sethide_nav} />
       <div className="sm:block hidden">
