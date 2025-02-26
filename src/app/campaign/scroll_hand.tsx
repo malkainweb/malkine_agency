@@ -5,13 +5,13 @@ import React, { useRef } from "react";
 import add_logo from "../../../../public/home/add_logo.png";
 import main_img from "../../../public/campaign/scrolling_hand/handImage.webp";
 import left_img1 from "../../../public/campaign/scrolling_hand/left_img1.webp";
-import left_img2 from "../../../public/campaign/scrolling_hand/left_img2.webp";
+import left_img2 from "../../../public/campaign/WeCreateWebsiteThatConvert/left_img1.webp";
 import left_img3 from "../../../public/campaign/scrolling_hand/left_img3.webp";
-import left_img4 from "../../../public/campaign/scrolling_hand/left_img4.webp";
-import right_img1 from "../../../public/campaign/scrolling_hand/right_img1.webp";
+import left_img4 from "../../../public/campaign/WeCreateWebsiteThatConvert/LetsGetYourStarted.webp";
+import right_img1 from "../../../public/campaign/WeCreateWebsiteThatConvert/CraftingDigitalWellness.webp";
 import right_img2 from "../../../public/campaign/scrolling_hand/right_img2.webp";
 import right_img3 from "../../../public/campaign/scrolling_hand/right_img3.webp";
-import right_img4 from "../../../public/campaign/scrolling_hand/right_img4.webp";
+import right_img4 from "../../../public/campaign/WeCreateWebsiteThatConvert/right_img1.webp";
 
 import { useState, useEffect } from "react";
 import Link from "next/link";

@@ -23,6 +23,7 @@ import Go_high_level_form from "../letsgetteslas/contact_us_pop_up";
 import { useSearchParams } from "next/navigation";
 import Campaign_New_scroll_hand from "./scroll_hand";
 import Campaign_hero from "./campaign_hero";
+import MalkainIsForYouIf from "./MalkainIsForYouIf";
 
 const Campaign_Home_wrapper = () => {
   const process = [
@@ -134,6 +135,7 @@ const Campaign_Home_wrapper = () => {
       <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
       {/* <Service_hero show_btn={true} /> */}
       <Campaign_hero show_btn={true} />
+      <MalkainIsForYouIf />
       <Campaign_New_scroll_hand />
       {/* <Brands /> */}
       <Past_work_template sethide_nav={sethide_nav} />
