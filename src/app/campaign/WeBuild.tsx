@@ -69,7 +69,7 @@ const WeBuild = () => {
         className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
       >
         {" "}
-        Malkain is <br /> for you IF
+        We BUILD{" "}
       </h2>
       {/* the wrapper */}
       <div
