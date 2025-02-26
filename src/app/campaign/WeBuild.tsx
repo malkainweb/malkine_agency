@@ -9,17 +9,37 @@ import { gsap } from "gsap";
 import { NeueHaasDisplay_bold, NeueHaasDisplay_roman } from "../utils/fonts";
 
 const WeBuild = () => {
-  const items = [
+  // the array function
+  const [items, setitems] = useState([
     {
-      body: "You want a website that is uniquely designed for your brand, not just another template.",
+      des: "Website & Platform Design",
     },
     {
-      body: "You need a high-performing site that loads fast and converts visitors into customers.",
+      des: "Software Design & Development",
     },
     {
-      body: "You prefer working with a team that prioritizes strategy, design, and user experience.",
+      des: "Ecommerce Website Design & Development",
     },
-  ];
+
+    {
+      des: "User Management Systems",
+    },
+    {
+      des: "Custom API Development",
+    },
+    {
+      des: "Backend System Development",
+    },
+    {
+      des: "Web/Mobile App Development",
+    },
+    {
+      des: "UI/UX For Web Mobile Apps",
+    },
+    {
+      des: "UI/UX For Websites & Platforms",
+    },
+  ]);
 
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -120,12 +140,6 @@ const WeBuild = () => {
         ref={sectionRef}
       >
         <div className="flex justify-center items-center  overflow-hidden  sticky bottom-0 h-[100vh]  w-full ">
-          <Image
-            src={UspBackground}
-            alt="usp background image"
-            className="w-full h-full hidden sm:block object-cover"
-          />
-
           {/* the customized scroll bar ends */}
           {items.map((e, index) => {
             return (
@@ -139,7 +153,7 @@ const WeBuild = () => {
                 }  flex rounded-[16px] bg-black/40  sm:bg-black/20 backdrop-blur-2xl text-white`}
               >
                 <p className={`${NeueHaasDisplay_roman.className} text-2xl`}>
-                  {e.body}
+                  {e.des}
                 </p>
               </div>
             );
