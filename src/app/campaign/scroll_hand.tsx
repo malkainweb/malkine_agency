@@ -3,7 +3,7 @@
 import Image from "next/image";
 import React, { useRef } from "react";
 import add_logo from "../../../../public/home/add_logo.png";
-import main_img from "../../../public/campaign/scrolling_hand/main_img.webp";
+import main_img from "../../../public/campaign/scrolling_hand/handImage.webp";
 import left_img1 from "../../../public/campaign/scrolling_hand/left_img1.webp";
 import left_img2 from "../../../public/campaign/scrolling_hand/left_img2.webp";
 import left_img3 from "../../../public/campaign/scrolling_hand/left_img3.webp";

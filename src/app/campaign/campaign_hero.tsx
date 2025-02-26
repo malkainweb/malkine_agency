@@ -64,12 +64,13 @@ const Campaign_hero = ({ show_btn, form_link }: any) => {
               <h1
                 className={`${NeueHaasDisplay_medium.className}  text-center  text-white z-[10] text-[8vw] leading-[8.3vw]`}
               >
-                We Build Custom <br /> Ecommerce Solutions{" "}
+                Websites built for yesterday, won{"'"}t convert today{"'"}s
+                customers
               </h1>{" "}
               <p
                 className={`${NeueHaasDisplay_light.className} relative text-center text-[5vw] leading-[6vw] text-white`}
               >
-                Click contact us to schedule a <br /> Free Consulation
+                Let{"'"}s get you a website for your <br /> type of business.{" "}
               </p>
             </div>
           </div>{" "}
@@ -87,10 +88,15 @@ const Campaign_hero = ({ show_btn, form_link }: any) => {
           leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}
           `}
         >
-          We Build Custom <br /> Ecommerce Solutions
-          <span className="text-[#FF0000]"> </span>
+          Websites built for yesterday, won{"'"}t <br /> convert today{"'"}s
+          customers <span className="text-[#FF0000]"> </span>
         </h1>
-        <div className="flex flex-col sm:gap-[6vw] gap-[1vw] ">
+        <p
+          className={`${NeueHaasDisplay_light.className} relative text-center text-[2vw] leading-[2.2vw] `}
+        >
+          Let{"'"}s get you a website for your type of business.{" "}
+        </p>
+        {/* <div className="flex flex-col sm:gap-[6vw] gap-[1vw] ">
           <p
             className={`${NeueHaasDisplay_medium.className} sm:text-[12vw] text-[3vw] sm:leading-[11vw]`}
           >
@@ -103,7 +109,7 @@ const Campaign_hero = ({ show_btn, form_link }: any) => {
             Landing Pages <br /> Custom Apps <br />
             <span className="text-[#FF0000]"> Websites</span>
           </p>
-        </div>
+        </div> */}
         {show_btn && (
           <button
             onClick={() => {
