@@ -46,7 +46,7 @@ const WeBuildCards = ({
       >
         {" "}
         <motion.p
-          style={{ fontSize: fontsize, opacity, transition: "0.3s ease-out" }}
+          style={{ fontSize: fontsize, transition: "0.3s ease-out" }}
           className=" text-center text-white"
         >
           {data.des}
