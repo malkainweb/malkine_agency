@@ -115,7 +115,7 @@ const MalkainIsForYouIf = () => {
       </h2>
       {/* the wrapper */}
       <div
-        className={`w-full  md:w-[100rem] md:max-w-full mx-auto flex items-end  relative`}
+        className={`w-full  md:w-[100rem] bg-black/40 md:max-w-full mx-auto flex items-end  relative`}
         style={{ height: `${items.length * 100}vh` }}
         ref={sectionRef}
       >
