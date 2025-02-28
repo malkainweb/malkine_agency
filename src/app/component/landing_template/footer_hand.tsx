@@ -33,7 +33,7 @@ const Footer_hand = ({
             }}
             className={`font_helvetica text-white text-[5vw] sm:text-[10vw] text-center ${NeueHaasDisplay_light.className}`}
           >
-            Let's Work together
+            Let{"'"}s Work together
           </h3>
 
           {/* the button */}
