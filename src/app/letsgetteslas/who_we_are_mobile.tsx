@@ -9,10 +9,17 @@ const Who_we_are = () => {
     {
       heading: "9 Years",
       body: "Providing Amazing Services",
+      bg: "#EE2020",
     },
     {
-      heading: "18 Total",
-      body: "Full- time in-house Employees ",
+      heading: "Over 250+",
+      body: "Projects completed ",
+      bg: "#0000006c",
+    },
+    {
+      heading: "23",
+      body: "Experts on the team ",
+      bg: "#EF6C52",
     },
   ];
   return (
@@ -25,12 +32,8 @@ const Who_we_are = () => {
               return (
                 <div
                   key={index}
-                  // style={{ backgroundColor: }}
-                  className={`flex flex-col px-[4vw] gap-[3vw] ${
-                    NeueHaasDisplay_roman.className
-                  } ${
-                    index == 0 ? "bg-[#EE2020] " : "bg-[black] bg-opacity-[35%]"
-                  } justify-center text-white  w-[65vw]   backdrop-blur-3xl rounded-[3.2vw] h-full`}
+                  style={{ backgroundColor: e.bg }}
+                  className={`flex flex-col px-[4vw] gap-[3vw] ${NeueHaasDisplay_roman.className}  justify-center text-white  w-[65vw]   backdrop-blur-3xl rounded-[3.2vw] h-full`}
                 >
                   <h2 className={`text-[10vw]`}>{e.heading}</h2>
                   <h2 className={`text-[5vw] pr-[10vw] leading-[6.5vw]`}>
