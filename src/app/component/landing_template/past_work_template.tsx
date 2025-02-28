@@ -21,6 +21,8 @@ import drop_down from "@/../public/new_service/drop_down.png";
 // ECCOMERCE
 
 import vibes_only from "@/../public/past_work/eccomerce/vibes_only.webp";
+import katePerry from "@/../public/past_work/katePerry.webp";
+import cameo from "@/../public/past_work/cameo.webp";
 import Vazzi from "@/../public/past_work/eccomerce/vazzi.png";
 import Yulia from "@/../public/past_work/eccomerce/Yulia.png";
 import dailycomputer from "@/../public/past_work/eccomerce/dailycomputer.png";
@@ -145,7 +147,7 @@ const Past_work_template = ({
           }
         });
       },
-      { threshold: 0.51 },
+      { threshold: 0.51 }
     );
 
     itemsRefs.current.forEach((ref: any) => {
@@ -164,6 +166,75 @@ const Past_work_template = ({
   }, []);
 
   const menu_arr = [
+    // THIS IS BECAUE OF MALKAIN UPDATE SO THIS IS FOR IT TO DISPLAY SINGLY
+    {
+      title: "MalkainSpecial",
+      body: [
+        {
+          img: katePerry,
+          text: "katy perry collection",
+          link: "https://kate-perry.vercel.app/",
+          mob_img: katePerry,
+        },
+        {
+          img: q_department,
+          text: "Q Department ",
+          link: "https://www.qdepartment.com/",
+          video: true,
+          video_link: "/showcase/q.mp4",
+          scale: true,
+          mob_img: mob_q_department,
+        },
+
+        {
+          img: Tinypod,
+          text: "The Tinypod ",
+          link: "https://thetinypod.com/",
+          mob_img: Tinypod,
+        },
+        {
+          img: exo,
+          text: "exo",
+          link: "https://www.exo.inc/",
+          mob_img: mob_exo,
+        },
+        {
+          img: orbit_law,
+          link: "https://orbit.law",
+          text: "orbit law",
+          open_false: true,
+          mob_img: mob_orbit_law,
+        },
+
+        {
+          img: west,
+          text: "53 West 53 ",
+          link: "https://53w53.com/",
+          mob_img: mob_west,
+        },
+        {
+          img: cameo,
+          text: "Cameo Surgery ",
+          link: "https://www.cameosurgerycenter.com/",
+          mob_img: cameo,
+        },
+
+        {
+          img: good_juuju,
+          text: "Good Juju",
+          link: "https://heygoodjuju.com/",
+          open_false: true,
+          mob_img: mob_good_juuju,
+        },
+
+        {
+          img: hovn_studio,
+          text: "Hovn Studios",
+          link: "https://hovnstudios.com/",
+          mob_img: mob_hovn_studio,
+        },
+      ],
+    },
     {
       title: "Ecommerce",
       body: [
@@ -450,7 +521,7 @@ const Past_work_template = ({
     },
   ];
 
-  const [active, setactive] = useState("Ecommerce");
+  const [active, setactive] = useState("MalkainSpecial");
   const [open_iframe, setopen_iframe] = useState<any>(null);
 
   useEffect(() => {
@@ -476,12 +547,13 @@ const Past_work_template = ({
               // color: text_color,
             }
           }
-          className={` leading-[4.2vw]  text-[3.8vw] sm:text-[8.5vw] px-[20vw]  sm:leading-[7vw]  text-center   ${NeueHaasDisplay_roman.className}`}
+          className={` leading-[4.2vw] pt-[2rem] text-[3.8vw] sm:text-[8.5vw] px-[20vw]  sm:leading-[7vw]  text-center   ${NeueHaasDisplay_roman.className}`}
         >
           Past Work{" "}
         </h3>
         {/* this is for desktop  */}
-        <div className="w-full sm:hidden flex justify-center gap-[2vw] ">
+        {/* THIS WAS HIDDEN BECAUSE OF MALKAIN UPDATE */}
+        <div className="w-full hidden  justify-center gap-[2vw] ">
           {menu_arr.map((e: any, index: any) => {
             return (
               <button
@@ -505,7 +577,8 @@ const Past_work_template = ({
         </div>
         {/* this is for mobile */}
         {/* Dropdown for mobile devices */}
-        <div className="hidden w-full  sm:mx-auto   bg-[#FF0000] py-[2vw] overflow-hidden   sm:flex justify-center border2 relative sm:w-[50vw] sm:rounded-[8.75vw] sm:text-[3.5vw]   sm:h-[11.2vw]">
+        {/* THIS WAS HIDDEN BECAUSE OF MALKAIN UPDATE */}
+        <div className="hidden w-full  sm:mx-auto   bg-[#FF0000] py-[2vw] overflow-hidden  justify-center border2 relative sm:w-[50vw] sm:rounded-[8.75vw] sm:text-[3.5vw]   sm:h-[11.2vw]">
           <select
             className={`sm:text-[5vw] select relative bg-[#FF0000]  outline-none  ${NeueHaasDisplay_roman.className} capitalize  justify-center text-center   text-white`}
             onChange={(e) => setactive(e.target.value)}
