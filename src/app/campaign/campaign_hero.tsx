@@ -82,7 +82,7 @@ const Campaign_hero = ({ show_btn, form_link }: any) => {
       {/* DESKTOP DESIGN */}
       {/* DESKTOP DESIGN */}
       {/* DESKTOP DESIGN */}
-      <div className="w-full py-[3vw] sm:pb-[6vw] border2 sm:hidden flex flex-col items-center sm:gap-[8vw] gap-[3vw]  text-center">
+      <div className="w-full py-[3vw] sm:pb-[6vw]  sm:hidden flex flex-col items-center sm:gap-[8vw] gap-[3vw]  text-center">
         <h1
           className={`font_helvetica sm:hidden text-[4vw]  sm:text-[7vw] px-[7vw]  sm:px-[2vw] 
           leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}

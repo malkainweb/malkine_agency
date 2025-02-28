@@ -42,7 +42,6 @@ const Processes = ({
       top: "1vw",
       body: "After conducting a compressive assessment to understand project requirement, a tailored on-boarding plan would be created to obtain relevant information poignant to the successful completion of the project.",
       img: one,
-      
     },
     {
       step_text: "STEP 02: DESIGN",
@@ -88,7 +87,7 @@ const Processes = ({
           }}
           className={` font_helvetica sm:text-[8vw] sm:leading-[9vw] text-[5vw] py-[3vw] text-white`}
         >
-          Our Process
+          How We Work With You{" "}
         </h2>
         {/* the bottom process and the mapping function */}
         <div className=" w-[70vw] sm:w-[90vw]  flex flex-col items-center justify-between  gap-[8vw] sm:gap-[2.3vw] relative">

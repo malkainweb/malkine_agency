@@ -18,32 +18,13 @@ const WeBuild = () => {
   // the array function
   const [items, setitems] = useState([
     {
-      des: "Website & Platform Design",
+      des: "Websites",
     },
     {
-      des: "Software Design & Development",
+      des: "Landing Pages",
     },
     {
-      des: "Ecommerce Website Design & Development",
-    },
-
-    {
-      des: "User Management Systems",
-    },
-    {
-      des: "Custom API Development",
-    },
-    {
-      des: "Backend System Development",
-    },
-    {
-      des: "Web/Mobile App Development",
-    },
-    {
-      des: "UI/UX For Web Mobile Apps",
-    },
-    {
-      des: "UI/UX For Websites & Platforms",
+      des: "Custom Apps",
     },
   ]);
 
@@ -77,7 +58,7 @@ const WeBuild = () => {
         // style={{ height: `${items.length * 30}vh` }}
         ref={sectionRef}
       >
-        <div className="sticky top-0 left-0 w-full h-[45vh] sm:h-[30vh] z-[20] bg-gradient-to-b from-black via-[black]"></div>
+        <div className="sticky top-0 left-0 w-full h-[45vh]  z-[20] bg-gradient-to-b from-black via-[black]"></div>
 
         <div className="flex justify-center pb-[0vh] items-center  overflow-hidden flex-coln mb-[-0vh]  bottom-0 h-full bg-black  w-full ">
           <motion.div
@@ -103,7 +84,7 @@ const WeBuild = () => {
             })}
           </motion.div>
         </div>
-        <div className="sticky bottom-0 left-0 w-full h-[45vh] sm:h-[30vh] z-[20] bg-gradient-to-t from-black via-[black]"></div>
+        <div className="sticky bottom-0 left-0 w-full h-[45vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
       </div>
     </>
   );

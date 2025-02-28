@@ -65,7 +65,7 @@ const Mobile_Process = () => {
         <h2
           className={`sm:text-[10vw] relative w-fit sm:leading-[10.5vw]  text-[3.2vw] sm:mb-0   text-center ${NeueHaasDisplay_roman.className} `}
         >
-          Our Process
+          How We Work <br /> With You{" "}
         </h2>
 
         {/* now the main functions */}

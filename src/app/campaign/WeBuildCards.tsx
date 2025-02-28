@@ -33,7 +33,7 @@ const WeBuildCards = ({
   const fontsize = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    ["1.85rem", "1.9rem", "1.85rem"]
+    ["1.5rem", "2.8rem", "1.5rem"]
   );
 
   return (
@@ -46,7 +46,7 @@ const WeBuildCards = ({
       >
         {" "}
         <motion.p
-          style={{ fontSize: fontsize, opacity, transition: "0.5s ease-out" }}
+          style={{ fontSize: fontsize, opacity, transition: "0.3s ease-out" }}
           className=" text-center text-white"
         >
           {data.des}
