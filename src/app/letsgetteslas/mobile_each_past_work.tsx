@@ -254,7 +254,7 @@ const Mobile_Live_past_work = ({
                         <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
                           {e.demo && (
                             <div
-                              className={`${NeueHaasDisplay_roman.className} bg-[#fe2222dc] text-white px-[1.3rem] text-sm py-[0.4rem] rounded-full absolute top-[1rem] right-[1rem] `}
+                              className={`${NeueHaasDisplay_roman.className} bg-[black] text-white px-[1rem] text-sm py-[0.4rem] rounded-full absolute top-[1rem] right-[1rem] `}
                             >
                               Demo
                             </div>
@@ -355,7 +355,7 @@ const Mobile_Live_past_work = ({
                         <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
                           {e.demo && (
                             <div
-                              className={`${NeueHaasDisplay_roman.className} bg-[#fe2222dc] text-white px-[1.3rem] text-sm py-[0.4rem] rounded-full absolute top-[1rem] right-[1rem] `}
+                              className={`${NeueHaasDisplay_roman.className} bg-[black] text-white px-[1rem] text-sm py-[0.4rem] rounded-full absolute top-[1rem] right-[1rem] `}
                             >
                               Demo
                             </div>

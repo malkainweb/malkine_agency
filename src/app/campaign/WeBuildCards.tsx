@@ -24,7 +24,7 @@ const WeBuildCards = ({
   // Get scroll progress for the element
   const { scrollYProgress } = useScroll({
     target: ref, // Target the specific element
-    offset: ["60% 100%", "100% 0%"], // Start when 30% enters, end when 10% leaves
+    offset: ["20% 100%", "100% 0%"], // Start when 30% enters, end when 10% leaves
   });
 
   // Map scroll progress to a percentage value
@@ -33,11 +33,11 @@ const WeBuildCards = ({
   const fontsize = useTransform(
     scrollYProgress,
     [0, 0.5, 1],
-    ["1.4rem", "3rem", "1.4rem"]
+    ["2.4rem", "3rem", "2.4rem"]
   );
 
   return (
-    <div ref={ref} className={`  w-full px-[3%] `}>
+    <div ref={ref} className={`  w-full `}>
       {/* text that would be animated */}
       <motion.div
         ref={text_ref}
@@ -46,7 +46,7 @@ const WeBuildCards = ({
       >
         {" "}
         <motion.p
-          style={{ fontSize: fontsize, transition: "0.1s ease-out" }}
+          style={{ fontSize: fontsize, opacity, transition: "0.1s ease-out" }}
           className=" text-center text-white"
         >
           {data.des}

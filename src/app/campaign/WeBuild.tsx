@@ -31,13 +31,13 @@ const WeBuild = () => {
   const sectionRef = useRef(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
-    // offset: ["10% 100%", "100% 100%"], // Start when 30% enters, end when 10% leaves
+    offset: ["10% 100%", "100% 100%"], // Start when 30% enters, end when 10% leaves
   });
 
   const progressPercentage = useTransform(
     scrollYProgress,
     [0, 1],
-    ["50%", "-50%"]
+    ["80%", "-10%"]
   );
 
   const itemRefs = useRef<any>([]);
@@ -48,7 +48,7 @@ const WeBuild = () => {
     <>
       {/* the wrapper */}
       <div
-        className={`w-full  md:w-[100rem] z-[10000]  bg-black  md:max-w-full mx-auto   min-h-[60vh] relative `}
+        className={`w-full  md:w-[100rem] z-[10000]  bg-black  md:max-w-full mx-auto   h-[200vh] relative `}
         // style={{ height: `${items.length * 30}vh` }}
         ref={sectionRef}
       >
@@ -59,15 +59,13 @@ const WeBuild = () => {
           {" "}
           We BUILD{" "}
         </h2>
-        <div className="sticky top-0 left-0 w-full h-[40vh]   z-[20] bg-gradient-to-b from-black via-[black]"></div>
-        <div className="flex justify-center items-center mt-[-4vh]  overflow-hidden flex-coln  bottom-0 h-full bg-black  w-full ">
+        <div className="flex justify-center items-center h-[100vh] bg-black overflow-hidden flex-coln  top-0  sticky   w-full ">
+          <div className="absolute top-0 left-0 w-full h-[40vh]  z-[20] bg-gradient-to-b from-black via-[black]"></div>
           <motion.div
-            style={
-              {
-                // translateY: progressPercentage,
-                // transition: "0.5s ease-out",
-              }
-            }
+            style={{
+              translateY: progressPercentage,
+              // transition: "0.5s ease-out",
+            }}
             className=" gap-[5rem] h-fit flex flex-col  w-full"
           >
             {/* the customized scroll bar ends */}
@@ -83,8 +81,8 @@ const WeBuild = () => {
               );
             })}
           </motion.div>
+          <div className="absolute bottom-0 left-0 w-full h-[40vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
         </div>
-        <div className="sticky bottom-0 left-0 w-full h-[30vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
       </div>
     </>
   );
