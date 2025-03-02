@@ -60,13 +60,13 @@ const WeBuild = () => {
           We BUILD{" "}
         </h2>
         <div className="flex justify-center items-center h-[100vh] bg-black overflow-hidden flex-coln  top-0  sticky   w-full ">
-          <div className="absolute top-0 left-0 w-full h-[40vh]  z-[20] bg-gradient-to-b from-black via-[black]"></div>
+          <div className="absolute top-0 left-0 w-full h-[45vh]  z-[20] bg-gradient-to-b  from-black via-[black]"></div>
           <motion.div
             style={{
               translateY: progressPercentage,
               // transition: "0.5s ease-out",
             }}
-            className=" gap-[5rem] h-fit flex flex-col  w-full"
+            className=" gap-[2rem] h-fit flex flex-col  w-full"
           >
             {/* the customized scroll bar ends */}
             {items.map((e, index) => {
@@ -81,7 +81,7 @@ const WeBuild = () => {
               );
             })}
           </motion.div>
-          <div className="absolute bottom-0 left-0 w-full h-[40vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
+          <div className="absolute bottom-0 left-0 w-full h-[45vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
         </div>
       </div>
     </>
