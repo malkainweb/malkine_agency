@@ -46,21 +46,21 @@ const WeBuild = () => {
   useEffect(() => {}, []);
   return (
     <>
-      <h2
-        className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
-      >
-        {" "}
-        We BUILD{" "}
-      </h2>
       {/* the wrapper */}
       <div
-        className={`w-full  md:w-[100rem]  bg-black  md:max-w-full mx-auto flex items-end min-h-[100vh] relative  flex-col`}
+        className={`w-full  md:w-[100rem] z-[10000]  bg-black  md:max-w-full mx-auto   min-h-[60vh] relative `}
         // style={{ height: `${items.length * 30}vh` }}
         ref={sectionRef}
       >
-        <div className="sticky top-0 left-0 w-full h-[45vh]  z-[20] bg-gradient-to-b from-black via-[black]"></div>
-
-        <div className="flex justify-center pb-[0vh] items-center  overflow-hidden flex-coln mb-[-0vh]  bottom-0 h-full bg-black  w-full ">
+        {" "}
+        <h2
+          className={`pt-[4rem] pb-[2rem] text-white sticky top-0 z-[100] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
+        >
+          {" "}
+          We BUILD{" "}
+        </h2>
+        <div className="sticky top-0 left-0 w-full h-[40vh]   z-[20] bg-gradient-to-b from-black via-[black]"></div>
+        <div className="flex justify-center items-center mt-[-4vh]  overflow-hidden flex-coln  bottom-0 h-full bg-black  w-full ">
           <motion.div
             style={
               {
@@ -73,7 +73,7 @@ const WeBuild = () => {
             {/* the customized scroll bar ends */}
             {items.map((e, index) => {
               return (
-                <div key={index}>
+                <div key={index} className="">
                   <WeBuildCards
                     arr_ref={itemRefs.current[index]}
                     index={index}
@@ -84,7 +84,7 @@ const WeBuild = () => {
             })}
           </motion.div>
         </div>
-        <div className="sticky bottom-0 left-0 w-full h-[45vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
+        <div className="sticky bottom-0 left-0 w-full h-[30vh]  z-[20] bg-gradient-to-t from-black via-[black]"></div>
       </div>
     </>
   );

@@ -136,7 +136,7 @@ const MalkainIsForYouIf = () => {
                   index % 2
                     ? "md:flex-row-reverse flex-col-reverse"
                     : "md:flex-row flex-col"
-                }  flex rounded-[16px] bg-black/40  sm:bg-black/20 backdrop-blur-2xl text-white`}
+                }  flex rounded-[16px] bg-black/40  sm:bg-black/30 backdrop-blur-2xl text-white`}
               >
                 <p className={`${NeueHaasDisplay_roman.className} text-2xl`}>
                   {e.body}

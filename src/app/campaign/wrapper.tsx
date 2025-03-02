@@ -112,7 +112,7 @@ const Campaign_Home_wrapper = () => {
           setgo_high_level_start_anime={setgo_high_level_start_anime}
         />
       )}
-      <div className="sm:w-full sm:flex sm:justify-center sm:left-[50%]  z-[10000] sm:pb-[3vw]  right-[2vw] sm:translate-x-[-50%]  fixed bottom-[1vw] sm:bottom-[0]">
+      <div className="sm:w-full sm:flex sm:justify-center sm:left-[50%]  z-[1000000] sm:pb-[3vw]  right-[2vw] sm:translate-x-[-50%]  fixed bottom-[1vw] sm:bottom-[0]">
         <div className=" hidden h-full blur-[25px] sm:block border2 w-full bg-black  absolute bottom-0 left-0  "></div>
         <button
           onClick={() => {
