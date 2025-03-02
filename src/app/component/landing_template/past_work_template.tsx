@@ -171,6 +171,7 @@ const Past_work_template = ({
       title: "MalkainSpecial",
       body: [
         {
+          demo: true,
           img: katePerry,
           text: "katy perry collection",
           link: "https://kate-perry.vercel.app/",
