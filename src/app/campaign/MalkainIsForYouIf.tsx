@@ -107,15 +107,9 @@ const MalkainIsForYouIf = () => {
   }, [yvalue]);
   return (
     <>
-      <h2
-        className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
-      >
-        {" "}
-        Malkain is <br /> for you IF
-      </h2>
       {/* the wrapper */}
       <div
-        className={`w-full  md:w-[100rem] bg-black/40 md:max-w-full mx-auto flex items-end  relative`}
+        className={`w-full  md:w-[100rem]  z-[10000] bg-black/40 md:max-w-full mx-auto flex items-end  relative`}
         style={{ height: `${items.length * 100}vh` }}
         ref={sectionRef}
       >
@@ -125,6 +119,12 @@ const MalkainIsForYouIf = () => {
             alt="usp background image"
             className="w-full h-full hidden sm:block object-cover"
           />
+          <h2
+            className={`pt-[3rem] pb-[2rem] text-center text-white absolute top-0 ${NeueHaasDisplay_bold.className} text-4xl`}
+          >
+            {" "}
+            Malkain is <br /> for you IF
+          </h2>
 
           {/* the customized scroll bar ends */}
           {items.map((e, index) => {
