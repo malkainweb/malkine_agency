@@ -1,9 +1,9 @@
 "use client";
 import Image from "next/image";
-import copyPaste from "@/../public/campaign/MalkainIsForYouIf/CopyAndPaste.webp";
-import DontWantBeg from "@/../public/campaign/MalkainIsForYouIf/DontWantBeg.webp";
+import landingPage from "@/../public/campaign/weBuild/landingPage.jpeg";
+import apps from "@/../public/campaign/weBuild/apps.jpeg";
+import website from "@/../public/campaign/weBuild/website.jpeg";
 import bgLine from "@/../public/campaign/MalkainIsForYouIf/bgLine.png";
-import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/DontWantLeftBehind.webp";
 
 import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 import {
@@ -16,16 +16,16 @@ const MalkainIsForYouIf = () => {
   const items = [
     {
       heading: "Websites",
-      img: copyPaste,
+      img: landingPage,
     },
     {
       heading: "landing pages",
-      img: DontWantBeg,
+      img: website,
     },
 
     {
       heading: "Custom Apps",
-      img: DontWantLeftBehind,
+      img: apps,
     },
   ];
   return (
@@ -64,7 +64,7 @@ const MalkainIsForYouIf = () => {
               >
                 {e.img && (
                   <div
-                    className={`w-[50%]  rounded-[20px] overflow-hidden sm:w-full  ${
+                    className={`w-[50%]  rounded-[20px] overflow-hidden sm:w-full aspect-[1/0.9]  ${
                       e.reverse ? "justify-start" : "justify-end"
                     }  flex  `}
                   >
