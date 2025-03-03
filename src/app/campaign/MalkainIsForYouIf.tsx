@@ -1,146 +1,134 @@
 "use client";
-
-import { useMotionValueEvent, useScroll, useTransform } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
-import UspBackground from "@/../public/campaign/UspAnimation/UspBackground.webp";
-import small_logo from "../../../public/new_options/small_logo.webp";
-import { gsap } from "gsap";
-import { NeueHaasDisplay_bold, NeueHaasDisplay_roman } from "../utils/fonts";
+import copyPaste from "@/../public/campaign/MalkainIsForYouIf/CopyAndPaste.webp";
+import DontWantBeg from "@/../public/campaign/MalkainIsForYouIf/DontWantBeg.webp";
+import bgLine from "@/../public/campaign/MalkainIsForYouIf/bgLine.png";
+import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/DontWantLeftBehind.webp";
+
+import { scrollTo_calendy } from "../utils/scroll_to_calendy";
+import {
+  NeueHaasDisplay_bold,
+  NeueHaasDisplay_medium,
+  NeueHaasDisplay_roman,
+} from "../utils/fonts";
 
 const MalkainIsForYouIf = () => {
   const items = [
     {
-      body: "You want a website that is uniquely designed for your brand, not just another template.",
+      step_text: "STEP 01: GET STARTED",
+      heading: "No copy & paste",
+      top: "1vw",
+      body: "You don’t want to work with an agency that just copy & pastes templates",
+      img: copyPaste,
+      //   reverse: true,
     },
     {
-      body: "You need a high-performing site that loads fast and converts visitors into customers.",
+      step_text: "STEP 02: Search",
+      heading: "Don’t wanna beg ",
+      top: "1vw",
+
+      body: "You don’t want to work with an agency that you have to beg to do the work you’ve paid for.",
+      img: DontWantBeg,
+      reverse: true,
     },
+
     {
-      body: "You prefer working with a team that prioritizes strategy, design, and user experience.",
+      step_text: "STEP 03: Software",
+      heading: "Don’t wanna be left behind",
+      mobile_top: "10vw",
+      body: "You don’t want to be abandoned after the website is built.",
+      img: DontWantLeftBehind,
+      //   reverse: true,
     },
   ];
-
-  const sectionRef = useRef(null);
-  const { scrollYProgress } = useScroll({
-    target: sectionRef,
-    // offset: ["end start", "end 50%"],
-  });
-  const width = globalThis.innerWidth;
-  useEffect(() => {
-    setcalwidth(width);
-  }, [width]);
-  const [calwidth, setcalwidth] = useState(0);
-  const [yvalue, setyvalue] = useState(1);
-  const [scale_y2value, setscale_y2value] = useState(0);
-  const [height, setheight] = useState(1);
-
-  const y = useTransform(scrollYProgress, [0, 1], [1, items.length + 0.5]);
-  const scale_y = useTransform(scrollYProgress, [0, 1], [10, 1]);
-  const parent_height = useTransform(scrollYProgress, [0, 1], [1, 10]);
-
-  useMotionValueEvent(y, "change", (latest) => {
-    setyvalue(latest);
-    // console.log(latest);
-  });
-  useMotionValueEvent(scale_y, "change", (latest) => {
-    setscale_y2value(latest);
-  });
-  useMotionValueEvent(parent_height, "change", (latest) => {
-    setheight(latest);
-  });
-
-  // Dynamically creating an array with the same length as `items`
-
-  // this logic is what achieves styling on here
-  const dynamicArray_scaling = Array(items.length)
-    .fill("")
-    .map((_, index) => index);
-
-  const calculateScale = (index: number, data_array: any[], yvalue: number) => {
-    const minScale = Math.min(...data_array) / 2 + scale_y2value / 8;
-    const maxScale = 1;
-    const scaleFactor = (yvalue - (index + 1)) / 6; // adjust this value to control the scaling speed
-    const scale = maxScale - (maxScale - minScale) * scaleFactor;
-
-    return scale;
-  };
-
-  const itemRefs = useRef<any>([]);
-
-  // this is for using gsap
-  useEffect(() => {
-    itemRefs.current.forEach((ref: any, index: any) => {
-      gsap.to(ref, {
-        opacity:
-          index + 1 - yvalue >= 0 && index + 1 - yvalue <= 1
-            ? 1
-            : index + 1 - yvalue <= 0
-            ? 1
-            : 0,
-        transform:
-          index + 1 - yvalue >= 0 && index + 1 - yvalue <= 1
-            ? `translateY(${
-                (index + 2 - yvalue) * 100 - 150 * (-index + yvalue)
-              }%) translateX(-50%)`
-            : index + 1 - yvalue <= 0
-            ? `translateY(${
-                -50 -
-                (yvalue - (index + 1)) * (calwidth < 765 ? 15 / 1.1 : 15 / 1.2)
-              }%) translateX(-50%)  scale(${calculateScale(
-                index,
-                dynamicArray_scaling,
-                yvalue
-              )})
-`
-            : `translateY(${yvalue + 1 + index * 100}%) translateX(-50%)`,
-
-        filter:
-          index + 1 - yvalue >= 0 && index + 1 - yvalue <= 1
-            ? ``
-            : index + 1 - yvalue <= -0.8
-            ? `blur(${(yvalue - index) * 1.2}px)`
-            : ``,
-        duration: 0.4, // Adjust duration as needed
-      });
-    });
-  }, [yvalue]);
   return (
     <>
-      {/* the wrapper */}
-      <div
-        className={`w-full  md:w-[100rem]  z-[10000] bg-black/40 md:max-w-full mx-auto flex items-end  relative`}
-        style={{ height: `${items.length * 100}vh` }}
-        ref={sectionRef}
-      >
-        <div className="flex justify-center items-center  overflow-hidden  sticky bottom-0 h-[100vh]  w-full ">
-          <Image
-            src={UspBackground}
-            alt="usp background image"
-            className="w-full h-full hidden sm:block object-cover"
-          />
-          <h2
-            className={`pt-[3rem] pb-[2rem] text-center  absolute top-0 ${NeueHaasDisplay_bold.className} text-4xl`}
-          >
-            {" "}
-            Malkain is <br /> for you IF
-          </h2>
+      <div className="w-full flex   flex-col items-center mb-[4vw] sm:gap-[5vw] sm:my-[15vw] ">
+        <h2
+          className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
+        >
+          {" "}
+          Malkain is <br /> for you IF
+        </h2>
 
-          {/* the customized scroll bar ends */}
-          {items.map((e, index) => {
+        {/* the bottom process and the mapping function */}
+        <div className=" w-[70vw] sm:w-full sm:pl-[7vw] sm:pr-[3vw]   flex flex-col items-center justify-between  gap-[12vw] relative">
+          <Image
+            src={bgLine}
+            alt="line"
+            className="w-[4.2vw]  h-full  hidden sm:block absolute left-[1.5vw]"
+          />
+          {items.map((e: any, index: any) => {
             return (
               <div
                 key={index}
-                ref={(el: any) => (itemRefs.current[index] = el)}
-                className={`  absolute top-[50%] translate-x-[-50%] rounded-[30px] left-[50%] w-[50%]  sm:w-[90%] md:h-[30rem] md:gap-0 gap-[2rem] p-[3rem] sm:p-[10%] ${
-                  index % 2
-                    ? "md:flex-row-reverse flex-col-reverse"
-                    : "md:flex-row flex-col"
-                }  flex rounded-[16px] bg-black/40  sm:bg-black/30 backdrop-blur-2xl text-white`}
+                // style={{
+                //   marginTop:
+                //     window && window.innerWidth > 650 ? e.top : e.mobile_top,
+                // }}
+                className={` sm:h-auto   ${e.top ? `mt-[${e.top}] ` : ""} ${
+                  e.mobile_top ? `sm:mt-[${e.mobile_top}]` : ""
+                }  gap-[7vw] sm:gap-[5vw]  sm:flex-col sm:w-full  ${
+                  e.center
+                    ? "w-[26vw] h-[20vw]  sm:w-[96vw] sm:h-auto sm:pt-[14vw] sm:pb-[7vw] sm:px-[4vw] sm:rounded-[7vw] sm:translate-x-[-3%]  bg-[#F8F8F8] rounded-[2vw] items-center z-[99] px-[2vw]"
+                    : "w-full h-auto items-start"
+                }    flex justify-center  ${
+                  e.reverse ? "flex-row-reverse" : "flex-row"
+                }`}
               >
-                <p className={`${NeueHaasDisplay_roman.className} text-2xl`}>
-                  {e.body}
-                </p>
+                {e.img && (
+                  <div
+                    className={`w-[50%]  rounded-[20px] overflow-hidden sm:w-full  ${
+                      e.reverse ? "justify-start" : "justify-end"
+                    }  flex  `}
+                  >
+                    <Image
+                      src={e.img}
+                      alt={e.heading}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                )}
+
+                {/* the body  */}
+                <div
+                  className={`  sm:gap-[1rem]  sm:items-start  ${
+                    e.center
+                      ? "w-full b items-center text-center "
+                      : "w-[50%] sm:w-full"
+                  } flex flex-col gap-[0.7vw] ${
+                    e.reverse ? "items-end" : "items-start"
+                  }  `}
+                >
+                  {/* <div className="flex justify-center items-center w-[11.2vw] sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]   h-[2.2vw] border-[0.07vw] border-black rounded-[2.9vw]">
+                    <p
+                      className={`${NeueHaasDisplay_roman.className} text-[0.9vw] sm:text-[3.2vw] uppercase`}
+                    >
+                      {e.step_text}
+                    </p>
+                  </div> */}
+                  <h2
+                    className={`${NeueHaasDisplay_medium.className} ${
+                      e.reverse ? "text-end" : ""
+                    }  text-3xl sm:pr-[5rem]`}
+                  >
+                    {e.heading}
+                  </h2>
+
+                  <p
+                    className={`${
+                      NeueHaasDisplay_roman.className
+                    } text-lg opacity-50 sm:p-0 sm:text-start  ${
+                      e.center == true
+                        ? "p-0"
+                        : e.reverse
+                        ? "text-end pl-[6vw]"
+                        : "pr-[6rem]"
+                    }  `}
+                  >
+                    {e.body}
+                  </p>
+                </div>
               </div>
             );
           })}
