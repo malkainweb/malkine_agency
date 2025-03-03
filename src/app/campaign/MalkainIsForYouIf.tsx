@@ -120,7 +120,7 @@ const MalkainIsForYouIf = () => {
             className="w-full h-full hidden sm:block object-cover"
           />
           <h2
-            className={`pt-[3rem] pb-[2rem] text-center text- absolute top-0 ${NeueHaasDisplay_bold.className} text-4xl`}
+            className={`pt-[3rem] pb-[2rem] text-center  absolute top-0 ${NeueHaasDisplay_bold.className} text-4xl`}
           >
             {" "}
             Malkain is <br /> for you IF
