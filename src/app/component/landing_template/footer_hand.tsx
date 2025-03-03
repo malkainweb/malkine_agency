@@ -33,7 +33,7 @@ const Footer_hand = ({
             }}
             className={`font_helvetica text-white text-[5vw] sm:text-[10vw] text-center ${NeueHaasDisplay_light.className}`}
           >
-            Let{"'"}s Work together
+            {/* Let{"'"}s Work together */}
           </h3>
 
           {/* the button */}
@@ -53,7 +53,8 @@ const Footer_hand = ({
                 }}
                 className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
               >
-                Get Started <i className="bi bi-arrow-right"></i>
+                Let{"'"}s Work together{" "}
+                <i className="bi pl-[0.6rem] bi-arrow-right"></i>
               </button>
             </div>
           )}
