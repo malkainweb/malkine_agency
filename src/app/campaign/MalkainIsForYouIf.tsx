@@ -4,6 +4,7 @@ import copyPaste from "@/../public/campaign/MalkainIsForYouIf/CopyAndPaste.webp"
 import DontWantBeg from "@/../public/campaign/MalkainIsForYouIf/DontWantBeg.webp";
 import bgLine from "@/../public/campaign/MalkainIsForYouIf/bgLine.png";
 import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/DontWantLeftBehind.webp";
+import web_design from "@/../public/new_service/services/web_design.webp";
 
 import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 import {
@@ -16,15 +17,15 @@ const MalkainIsForYouIf = () => {
   const items = [
     {
       step_text: "STEP 01: GET STARTED",
-      heading: "No copy & paste",
+      heading: "You don't want a copy & paste",
       top: "1vw",
       body: "You don’t want to work with an agency that just copy & pastes templates",
-      img: copyPaste,
+      img: web_design,
       //   reverse: true,
     },
     {
       step_text: "STEP 02: Search",
-      heading: "Don’t wanna beg ",
+      heading: "Don’t want to  beg ",
       top: "1vw",
 
       body: "You don’t want to work with an agency that you have to beg to do the work you’ve paid for.",
@@ -48,7 +49,7 @@ const MalkainIsForYouIf = () => {
           className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
         >
           {" "}
-          Malkain is <br /> for you IF
+          Malkain is <br /> for you <span className="text-[#D01717]">if</span>
         </h2>
 
         {/* the bottom process and the mapping function */}
