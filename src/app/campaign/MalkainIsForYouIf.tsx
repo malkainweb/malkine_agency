@@ -82,7 +82,7 @@ const MalkainIsForYouIf = () => {
           <Image
             src={bgLine}
             alt="line"
-            className="w-[4.2vw]  h-full  hidden sm:block absolute left-[1.5vw]"
+            className="w-[5.3vw] shrink-0   h-  hidden sm:block absolute left-[1.5vw]"
           />
           {items.map((e: any, index: any) => {
             return (
@@ -136,7 +136,7 @@ const MalkainIsForYouIf = () => {
                   <h2
                     className={`${NeueHaasDisplay_medium.className} ${
                       e.reverse ? "text-end" : ""
-                    }  text-3xl sm:pr-[5rem]`}
+                    }  sm:text-start text-3xl sm:pr-[5rem]`}
                   >
                     {e.body}
                   </h2>
