@@ -1,6 +1,6 @@
 "use client";
 import Image from "next/image";
-import copyPaste from "@/../public/campaign/MalkainIsForYouIf/CopyAndPaste.webp";
+import copyPaste from "@/../public/campaign/MalkainIsForYouIf/noCopyAndPaste.webp";
 import DontWantBeg from "@/../public/campaign/MalkainIsForYouIf/DontWantBeg.webp";
 import bgLine from "@/../public/campaign/MalkainIsForYouIf/bgLine.png";
 import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/DontWantLeftBehind.webp";
@@ -29,7 +29,7 @@ const MalkainIsForYouIf = () => {
       ),
       top: "1vw",
       body: <>You don’t want a copy-and-paste website.</>,
-      img: web_design,
+      img: copyPaste,
     },
     {
       step_text: "STEP 02: Search",
@@ -144,7 +144,7 @@ const MalkainIsForYouIf = () => {
                   <p
                     className={`${
                       NeueHaasDisplay_roman.className
-                    } text-lg sm:text-sm opacity-50 sm:p-0 sm:text-start  ${
+                    } text-lg sm:text-sm  sm:p-0 sm:text-start  ${
                       e.center == true
                         ? "p-0"
                         : e.reverse
