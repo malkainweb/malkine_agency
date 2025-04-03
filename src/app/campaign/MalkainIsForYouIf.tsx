@@ -17,29 +17,54 @@ const MalkainIsForYouIf = () => {
   const items = [
     {
       step_text: "STEP 01: GET STARTED",
-      heading: "You don't want a copy & paste",
+      heading: (
+        <>
+          Most agencies recycle the same generic templates. At Malkain, we craft
+          <strong> custom, high-performance websites</strong> built to
+          <button> attract leads and convert visitors</button>. Our proprietary
+          design and development process optimizes user experience, SEO, and
+          engagement—so your site isn’t just another pretty page, but a growth
+          machine.
+        </>
+      ),
       top: "1vw",
-      body: "You don’t want to work with an agency that just copy & pastes templates",
+      body: <>You don’t want a copy-and-paste website.</>,
       img: web_design,
-      //   reverse: true,
     },
     {
       step_text: "STEP 02: Search",
-      heading: "Don’t want to  beg ",
+      heading: (
+        <>
+          Too many web design agencies <strong> ghost you after payment</strong>
+          , miss deadlines, and act like they’re doing you a favor. At Malkain,
+          we operate differently—we{" "}
+          <strong> deliver on time, every time</strong>. No excuses, no delays,
+          just results. You paid for a website, and we make sure you get it.
+        </>
+      ),
       top: "1vw",
-
-      body: "You don’t want to work with an agency that you have to beg to do the work you’ve paid for.",
+      body: <>You’re tired of agencies acting like they work for free.</>,
       img: DontWantBeg,
       reverse: true,
     },
-
     {
       step_text: "STEP 03: Software",
-      heading: "Don’t wanna be left behind",
+      heading: (
+        <>
+          The digital landscape is <strong> changing fast</strong>—AI,
+          automation, and new tech are redefining success online. If your
+          business isn’t software-driven and tech-savvy, you risk becoming
+          irrelevant.
+          <strong>
+            {" "}
+            We make sure your website isn’t just built for today, but
+            future-proofed for what’s next.
+          </strong>
+        </>
+      ),
       mobile_top: "10vw",
-      body: "You don’t want to be abandoned after the website is built.",
+      body: <>You don’t want to be left behind.</>,
       img: DontWantLeftBehind,
-      //   reverse: true,
     },
   ];
   return (
@@ -113,7 +138,7 @@ const MalkainIsForYouIf = () => {
                       e.reverse ? "text-end" : ""
                     }  text-3xl sm:pr-[5rem]`}
                   >
-                    {e.heading}
+                    {e.body}
                   </h2>
 
                   <p
@@ -127,7 +152,7 @@ const MalkainIsForYouIf = () => {
                         : "pr-[6rem]"
                     }  `}
                   >
-                    {e.body}
+                    {e.heading}
                   </p>
                 </div>
               </div>
