@@ -3,7 +3,7 @@ import Image from "next/image";
 import copyPaste from "@/../public/campaign/MalkainIsForYouIf/noCopyAndPaste.webp";
 import DontWantBeg from "@/../public/campaign/MalkainIsForYouIf/DontWantBeg.webp";
 import bgLine from "@/../public/campaign/MalkainIsForYouIf/bgLine.png";
-import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/DontWantLeftBehind.webp";
+import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/youDontWantToLeftOut.webp";
 import web_design from "@/../public/new_service/services/web_design.webp";
 
 import { scrollTo_calendy } from "../utils/scroll_to_calendy";
@@ -104,7 +104,7 @@ const MalkainIsForYouIf = () => {
               >
                 {e.img && (
                   <div
-                    className={`w-[50%]  rounded-[20px] overflow-hidden sm:w-full  ${
+                    className={`w-[50%]  aspect-video  rounded-[20px] overflow-hidden sm:w-full  ${
                       e.reverse ? "justify-start" : "justify-end"
                     }  flex  `}
                   >
