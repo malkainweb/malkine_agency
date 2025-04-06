@@ -78,7 +78,7 @@ const MalkainIsForYouIf = () => {
         </h2>
 
         {/* the bottom process and the mapping function */}
-        <div className=" w-[70vw] sm:w-full sm:pl-[7vw] sm:pr-[3vw]   flex flex-col items-center justify-between  gap-[12vw] relative">
+        <div className=" w-[60rem] max-w-[90%] sm:max-w-full sm:w-full sm:pl-[7vw] sm:pr-[3vw]   flex flex-col items-center justify-between  gap-[12vw] relative">
           <Image
             src={bgLine}
             alt="line"
