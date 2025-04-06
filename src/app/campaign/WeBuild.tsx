@@ -12,7 +12,7 @@ import {
   NeueHaasDisplay_roman,
 } from "../utils/fonts";
 
-const MalkainIsForYouIf = () => {
+const WeBuild = () => {
   const items = [
     {
       heading: "Websites",
@@ -124,4 +124,4 @@ const MalkainIsForYouIf = () => {
   );
 };
 
-export default MalkainIsForYouIf;
+export default WeBuild;

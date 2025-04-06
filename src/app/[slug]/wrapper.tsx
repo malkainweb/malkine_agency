@@ -33,6 +33,7 @@ import {
 } from "firebase/auth";
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "../utils/fire_base_config";
+import MalkainIsForYouIf from "../campaign/MalkainIsForYouIf";
 
 const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const process = [
@@ -194,7 +195,7 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
       {/* <Service_hero show_btn={true} /> */}
       <Campaign_hero show_btn={true} form_link={form_link} />
       <Campaign_New_scroll_hand />
-      {/* <Brands /> */}
+      <MalkainIsForYouIf />
       <Past_work_template sethide_nav={sethide_nav} />
       <div className="sm:block hidden">
         <Who_we_are />
