@@ -187,7 +187,7 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
         >
           <p className="w-full h-full flex justify-center items-center ">
             {" "}
-            Contact Us
+            Book a call
           </p>
         </button>
       </div>
