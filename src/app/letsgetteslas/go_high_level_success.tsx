@@ -9,13 +9,9 @@ import { useRouter } from "next/navigation";
 const Go_high_level_success = ({ checkbookcall }: any) => {
   const router = useRouter();
   useEffect(() => {
-    if (checkbookcall) {
-      setTimeout(() => {
-        router.push(
-          "https://api.leadconnectorhq.com/widget/booking/Gl4Yoz2lum9ORHgGCn9E"
-        );
-      }, 2000);
-    }
+    router.push(
+      "https://api.leadconnectorhq.com/widget/booking/Gl4Yoz2lum9ORHgGCn9E"
+    );
   }, []);
   return (
     <>
