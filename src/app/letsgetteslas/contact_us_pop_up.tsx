@@ -15,6 +15,7 @@ const Go_high_level_form = ({
   submit,
   setsubmit,
   form_link,
+  checkbookcall,
 }: any) => {
   const [start_modal, setstart_modal] = useState(false);
 
@@ -111,7 +112,7 @@ const Go_high_level_form = ({
             </>
           )}
 
-          {submit && <Go_high_level_success />}
+          {submit && <Go_high_level_success checkbookcall={checkbookcall} />}
         </div>
       </div>
       {/* External script */}

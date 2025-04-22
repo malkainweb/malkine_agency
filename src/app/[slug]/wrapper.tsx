@@ -86,14 +86,22 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
     useState(false);
 
   const [submit, setsubmit] = useState(false);
+  const [checkbookcall, setcheckbookcall] = useState(false);
 
   const searchParams = useSearchParams();
 
   const search = searchParams.get("success");
+  const bookcall = searchParams.get("bookcall");
 
   useEffect(() => {
+    if (bookcall) {
+      setcheckbookcall(true);
+    } else {
+      setcheckbookcall(false);
+    }
     if (search) {
       setsubmit(true);
+
       // console.log("tracking");
       setgo_high_level_start_anime(true);
       window.fbq("track", "GoHighLevelFormSubmit", {
@@ -153,6 +161,7 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
       {go_high_level_start_anime && (
         <Go_high_level_form
           submit={submit}
+          checkbookcall={checkbookcall}
           form_link={form_link}
           // sethide_nav={sethide_nav}
           setsubmit={setsubmit}
