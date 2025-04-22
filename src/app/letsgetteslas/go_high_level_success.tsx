@@ -4,11 +4,11 @@ import Image from "next/image";
 import success from "../../../public/contact/success.svg";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { useEffect } from "react";
+import { useEffect, useLayoutEffect } from "react";
 import { useRouter } from "next/navigation";
 const Go_high_level_success = ({ checkbookcall }: any) => {
   const router = useRouter();
-  useEffect(() => {
+  useLayoutEffect(() => {
     router.push(
       "https://api.leadconnectorhq.com/widget/booking/Gl4Yoz2lum9ORHgGCn9E"
     );
