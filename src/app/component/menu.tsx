@@ -133,7 +133,7 @@ const Menu = (props: any) => {
                     <>
                       <div
                         className="flex items-center gap-[5px] sm:gap-[1.25vw]"
-                        key={index}
+                        key={index + e}
                       >
                         <Link
                           href={e.link}
@@ -211,7 +211,7 @@ const Menu = (props: any) => {
                     <>
                       <div
                         className="flex items-center gap-[5px] sm:gap-[1.25vw]"
-                        key={index}
+                        key={index + e}
                       >
                         <Link
                           href={e.link}

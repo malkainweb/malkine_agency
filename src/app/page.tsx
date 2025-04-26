@@ -147,7 +147,7 @@ export default function Home() {
 
   return (
     <>
-      {/* {loader ? (
+      {loader ? (
         <Preloader
           setscale={setscale}
           scale={scale}
@@ -156,7 +156,7 @@ export default function Home() {
           beginlines={beginlines}
           setbeginlines={setbeginlines}
         />
-      ) : null} */}
+      ) : null}
       <Menu
         setleft={setleft}
         left={left}
@@ -169,7 +169,7 @@ export default function Home() {
       />
       <div className="w-full h-auto bg-black ">
         {/* <Client_logo /> */}
-        <Home_Header
+        {/* <Home_Header
           setleft={setleft}
           setright={setright}
           setopacity={setopacity}
@@ -179,7 +179,7 @@ export default function Home() {
         />
         <Home_hero />
         <Highlight />
-        <Home_Team />
+        <Home_Team /> */}
         {/* <Home_about /> */}
         <Services />
         <Hands />

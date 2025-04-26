@@ -22,77 +22,77 @@ const Contact_showcase = () => {
   const [err, seterr] = useState("");
   const [sending, setsending] = useState(false);
 
-  const handle_submit = () => {
-    if (
-      !prject_info ||
-      !email ||
-      !business ||
-      !name ||
-      !budget ||
-      !hear_us ||
-      !interest
-    ) {
-      seterr("Kindly provide your information below.");
-      // 👇️ scroll to top on page load
-      return;
-    } else {
-      seterr("");
-      setsending(true);
+  // const handle_submit = () => {
+  //   if (
+  //     !prject_info ||
+  //     !email ||
+  //     !business ||
+  //     !name ||
+  //     !budget ||
+  //     !hear_us ||
+  //     !interest
+  //   ) {
+  //     seterr("Kindly provide your information below.");
+  //     // 👇️ scroll to top on page load
+  //     return;
+  //   } else {
+  //     seterr("");
+  //     setsending(true);
 
-      //    setdisabled(!disabled);
-      window.gtag("event", "form_submission", {
-        event_category: "Contact Form",
-        event_label: "Submit",
-      });
+  //     //    setdisabled(!disabled);
+  //     window.gtag("event", "form_submission", {
+  //       event_category: "Contact Form",
+  //       event_label: "Submit",
+  //     });
 
-      window.fbq("trackCustom", "submit form");
-      let data = JSON.stringify({
-        name: name,
-        phone: phone,
-        email: email,
-        business: business,
-        project_info: prject_info,
-        interest: interest,
-        budget: budget,
-        hear_us: hear_us,
-      });
-      axios
-        .post("/api/contact_showcase", data, {
-          headers: { "Content-Type": "application/json" },
-        })
-        .then((response) => {
-          if (response.data.emailSent == true) {
-            // console.log(response.data.emailSent);
-            // setsendbtn("Submit");
-            setsending(false);
-            seterr(
-              "Thank you for reaching out. Your email has been received and will be reviewed promptly",
-            );
-            setname("");
-            setemail("");
-            setbusiness("");
-            setphone("");
-            setprject_info("");
-            setinterest("");
-            setbudget("");
-            sethear_us("");
-            // setstep(3);
-          } else {
-            seterr("Something went wrong. Please try again or reload the page");
-            console.log("something went wrong");
-            // setdisabled(!disabled);
-          }
-        })
-        .catch((err) => {
-          console.log(err);
-          setsending(false);
-          seterr(
-            "Something went wrong. Please try again or reload the page and try again",
-          );
-          //   setdisabled(!disabled);
-        });
-    }
-  };
+  //     window.fbq("trackCustom", "submit form");
+  //     let data = JSON.stringify({
+  //       name: name,
+  //       phone: phone,
+  //       email: email,
+  //       business: business,
+  //       project_info: prject_info,
+  //       interest: interest,
+  //       budget: budget,
+  //       hear_us: hear_us,
+  //     });
+  //     axios
+  //       .post("/api/contact_showcase", data, {
+  //         headers: { "Content-Type": "application/json" },
+  //       })
+  //       .then((response) => {
+  //         if (response.data.emailSent == true) {
+  //           // console.log(response.data.emailSent);
+  //           // setsendbtn("Submit");
+  //           setsending(false);
+  //           seterr(
+  //             "Thank you for reaching out. Your email has been received and will be reviewed promptly",
+  //           );
+  //           setname("");
+  //           setemail("");
+  //           setbusiness("");
+  //           setphone("");
+  //           setprject_info("");
+  //           setinterest("");
+  //           setbudget("");
+  //           sethear_us("");
+  //           // setstep(3);
+  //         } else {
+  //           seterr("Something went wrong. Please try again or reload the page");
+  //           console.log("something went wrong");
+  //           // setdisabled(!disabled);
+  //         }
+  //       })
+  //       .catch((err) => {
+  //         console.log(err);
+  //         setsending(false);
+  //         seterr(
+  //           "Something went wrong. Please try again or reload the page and try again",
+  //         );
+  //         //   setdisabled(!disabled);
+  //       });
+  //   }
+  // };
   return (
     <>
       <div
@@ -243,7 +243,7 @@ const Contact_showcase = () => {
                 // Add commas after every 3 digits
                 const formatted = numericValue.replace(
                   /\B(?=(\d{3})+(?!\d))/g,
-                  ",",
+                  ","
                 );
 
                 // Add .00 to the end
@@ -297,7 +297,7 @@ const Contact_showcase = () => {
             <button
               className="bg-[#D01717] text-[1.3vw] h-[3vw] w-full hover:bg-[#920808] transition duration-[0.5s] league mt-[0.5vw] flex justify-center items-center"
               type="submit"
-              onClick={handle_submit}
+              // onClick={handle_submit}
             >
               {" "}
               {sending ? (
