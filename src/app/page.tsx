@@ -169,7 +169,7 @@ export default function Home() {
       />
       <div className="w-full h-auto bg-black ">
         {/* <Client_logo /> */}
-        {/* <Home_Header
+        <Home_Header
           setleft={setleft}
           setright={setright}
           setopacity={setopacity}
@@ -177,9 +177,9 @@ export default function Home() {
           nav_ham={nav_ham}
           nav_menu={nav_menu}
         />
-        <Home_hero />
+        {/* <Home_hero /> */}
         <Highlight />
-        <Home_Team /> */}
+        <Home_Team />
         {/* <Home_about /> */}
         <Services />
         <Hands />
