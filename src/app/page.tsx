@@ -147,7 +147,7 @@ export default function Home() {
 
   return (
     <>
-      {loader ? (
+      {/* {loader ? (
         <Preloader
           setscale={setscale}
           scale={scale}
@@ -156,7 +156,7 @@ export default function Home() {
           beginlines={beginlines}
           setbeginlines={setbeginlines}
         />
-      ) : null}
+      ) : null} */}
       <Menu
         setleft={setleft}
         left={left}
