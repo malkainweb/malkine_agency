@@ -177,7 +177,7 @@ export default function Home() {
           nav_ham={nav_ham}
           nav_menu={nav_menu}
         />
-        {/* <Home_hero /> */}
+        <Home_hero />
         <Highlight />
         <Home_Team />
         {/* <Home_about /> */}
