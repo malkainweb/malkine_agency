@@ -87,35 +87,73 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
 
   const [submit, setsubmit] = useState(false);
   const [checkbookcall, setcheckbookcall] = useState(false);
+  const [checkbooking, setcheckbooking] = useState(false);
+  const [checkappointment, setcheckappointment] = useState(false);
 
   const searchParams = useSearchParams();
 
   const search = searchParams.get("success");
   const bookcall = searchParams.get("bookcall");
+  const booking = searchParams.get("booking");
+  const appointment = searchParams.get("appointment");
 
   useEffect(() => {
+    if (booking) {
+      setcheckbooking(true);
+      setgo_high_level_start_anime(true);
+      // console.log("tracking booking");
+      return; // Exit early if booking is true
+    }
+    if (appointment) {
+      setcheckappointment(true);
+      setsubmit(true);
+      setgo_high_level_start_anime(true);
+      // Facebook Pixel
+      window.fbq?.("track", "Book appointment", {
+        value: "Go High Level form successfully submitted",
+      });
+
+      // Google Analytics
+      window.gtag?.("event", "Book appointment", {
+        event_category: "Lead Generation",
+        event_label: "Go High Level form successfully submitted",
+      });
+      // console.log("tracking booking");
+      return; // Exit early if booking is true
+    }
     if (bookcall) {
       setcheckbookcall(true);
-    } else {
-      setcheckbookcall(false);
+      setsubmit(true);
+      setgo_high_level_start_anime(true);
+
+      // console.log("tracking booking");
+      return; // Exit early if booking is true
     }
+
+    // setcheckbookcall(!!bookcall); // ✅ Short way to set true/false based on bookcall
+
     if (search) {
       setsubmit(true);
-
-      // console.log("tracking");
       setgo_high_level_start_anime(true);
-      window.fbq("track", "GoHighLevelFormSubmit", {
-        value: "Go High Level form successfully submitted", // Optional, to track lead value
+
+      console.log("tracking form submit");
+
+      // Facebook Pixel
+      window.fbq?.("track", "GoHighLevelFormSubmit", {
+        value: "Go High Level form successfully submitted",
       });
-      window.gtag("event", "GoHighLevelFormSubmit", {
+
+      // Google Analytics
+      window.gtag?.("event", "GoHighLevelFormSubmit", {
         event_category: "Lead Generation",
         event_label: "Go High Level form successfully submitted",
       });
     } else {
       setgo_high_level_start_anime(false);
       setsubmit(false);
+      console.log("still playing out");
     }
-  }, [search]);
+  }, [booking, bookcall, search]);
 
   const [edit_text, setedit_text] = useState(false);
   const [edit_img, setedit_img] = useState(false);
@@ -161,7 +199,9 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
       {go_high_level_start_anime && (
         <Go_high_level_form
           submit={submit}
+          checkbooking={checkbooking}
           checkbookcall={checkbookcall}
+          checkappointment={checkappointment}
           form_link={form_link}
           // sethide_nav={sethide_nav}
           setsubmit={setsubmit}

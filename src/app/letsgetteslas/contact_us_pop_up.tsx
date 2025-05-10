@@ -16,9 +16,11 @@ const Go_high_level_form = ({
   setsubmit,
   form_link,
   checkbookcall,
+  checkbooking,
+  checkappointment,
 }: any) => {
   const [start_modal, setstart_modal] = useState(false);
-
+  // console.log(checkbooking);
   useEffect(() => {
     setstart_modal(true);
   }, []);
@@ -39,6 +41,8 @@ const Go_high_level_form = ({
   const handleLoad = () => {
     setIsLoading(false);
   };
+
+  const shouldShowForm = !submit && !checkbooking;
 
   return (
     <>
@@ -68,17 +72,17 @@ const Go_high_level_form = ({
           }}
           style={{
             transition: "0.5s ease",
-            backgroundColor: submit ? "#1A1A1A" : "",
+            backgroundColor: !shouldShowForm ? "#1A1A1A" : "",
             opacity: start_modal ? 1 : 0,
           }}
           className={`sm:w-full w-[50vw] bg-white h-[90%]   border-white border-x-[0.2vw] border-t-[0.2vw] sm:border-x-[1.1vw] sm:border-t-[1.1vw]  overflow-hidden relative ${
             start_modal ? "translate-y-0" : "translate-y-[0%]"
           } rounded-t-[2vw] sm:rounded-t-[7vw] gap-[1.8rem]`}
         >
-          {isLoading && !submit && <div className=" loader"></div>}
+          {isLoading && shouldShowForm && <div className="loader" />}
           {/* Go High Level Form */}
 
-          {!submit && (
+          {shouldShowForm && (
             <>
               {" "}
               <iframe
@@ -112,7 +116,13 @@ const Go_high_level_form = ({
             </>
           )}
 
-          {submit && <Go_high_level_success checkbookcall={checkbookcall} />}
+          {!shouldShowForm && (
+            <Go_high_level_success
+              checkbookcall={checkbookcall}
+              checkbooking={checkbooking}
+              checkappointment={checkappointment}
+            />
+          )}
         </div>
       </div>
       {/* External script */}
