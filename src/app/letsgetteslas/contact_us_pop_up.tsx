@@ -23,6 +23,24 @@ const Go_high_level_form = ({
   // console.log(checkbooking);
   useEffect(() => {
     setstart_modal(true);
+    if (checkbooking) {
+      const label = "Go High Level form successfully submitted";
+
+      // Facebook Pixel
+      window.fbq?.("track", "GoHighLevelFormSubmit", { value: label });
+      window.fbq?.("track", "Qualified lead", { value: label });
+
+      // Google Analytics
+      window.gtag?.("event", "GoHighLevelFormSubmit", {
+        event_category: "Lead Generation",
+        event_label: label,
+      });
+
+      window.gtag?.("event", "Qualified lead", {
+        event_category: "Lead Generation",
+        event_label: label,
+      });
+    }
   }, []);
 
   const hidenow = () => {

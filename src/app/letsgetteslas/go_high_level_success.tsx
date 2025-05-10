@@ -17,23 +17,6 @@ const Go_high_level_success = ({
     // if (!checkbooking) return;
 
     const trackEventsAndRedirect = async () => {
-      const label = "Go High Level form successfully submitted";
-
-      // Facebook Pixel
-      window.fbq?.("track", "GoHighLevelFormSubmit", { value: label });
-      window.fbq?.("track", "Qualified lead", { value: label });
-
-      // Google Analytics
-      window.gtag?.("event", "GoHighLevelFormSubmit", {
-        event_category: "Lead Generation",
-        event_label: label,
-      });
-
-      window.gtag?.("event", "Qualified lead", {
-        event_category: "Lead Generation",
-        event_label: label,
-      });
-
       // Wait a moment to ensure events fire before redirecting
       setTimeout(() => {
         router.push(
