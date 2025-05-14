@@ -61,6 +61,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       setloader(false);
     }, 5000);
+
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
