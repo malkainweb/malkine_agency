@@ -30,40 +30,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      {/* goggle trackginig */}
-      {/* <Script
-        strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} `}
-      /> */}
-      {/* 
-      <Script
-        id="google-analytics"
-        strategy="afterInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
-            `,
-        }}
-      /> */}
-      {/* ✅ Google Tag Manager */}
-      <Script
-        id="google-tag-manager"
-        strategy="beforeInteractive"
-        dangerouslySetInnerHTML={{
-          __html: `
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WF4KS3ZS')
-;
-          `,
-        }}
-      />
-
       {/* bing tracking  */}
       <Script
         id="Bing clarity"
@@ -97,20 +63,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           `,
         }}
       />
+      <body className=""> {children}</body>
       <GoogleTagManager gtmId="GTM-WF4KS3ZS" />
-      <body className="">
-        {" "}
-        {/* ✅ GTM noscript */}
-        <noscript
-          dangerouslySetInnerHTML={{
-            __html: `
-      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WF4KS3ZS"
-height="0" width="0" style="display:none;visibility:hidden"></iframe>
-            `,
-          }}
-        />
-        {children}
-      </body>
     </html>
   );
 }

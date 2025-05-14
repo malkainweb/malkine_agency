@@ -61,6 +61,7 @@ export default function Home() {
     const timer = setTimeout(() => {
       setloader(false);
     }, 5000);
+    console.log("GTM loaded? window.dataLayer = ", window.dataLayer);
 
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
