@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@analytics/google-analytics": "^1.0.7",
+    "@next/third-parties": "^15.3.2",
     "@sendgrid/mail": "^7.7.0",
     "@supabase/supabase-js": "^2.46.1",
     "@types/node": "20.4.4",
