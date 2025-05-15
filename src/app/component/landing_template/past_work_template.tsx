@@ -124,6 +124,7 @@ const Past_work_template = ({
   pastwork,
   text_color,
   sethide_nav,
+  goggle,
 }: any) => {
   const [start_anime, setstart_anime] = useState(false);
   const [path, setpath] = useState("");
@@ -540,7 +541,11 @@ const Past_work_template = ({
         src="https://unpkg.com/@ungap/custom-elements-builtin"
         strategy="afterInteractive"
       />
-      <div className="w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ">
+      <div
+        className={`w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ${
+          goggle ? "text-[white] sm:text-[black]" : ""
+        }`}
+      >
         {" "}
         <h3
           style={
@@ -599,7 +604,9 @@ const Past_work_template = ({
         </div>
         <div className="w-full flex  px-[3vw]  sm:gap-[6vw] sm:px-0 justify-center gap-[3vw] flex-wrap ">
           {/* DESKTOP DESIGN */}
-          <div className="w-full sm:w-full flex sm:hidden   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap ">
+          <div
+            className={`w-full sm:w-full flex sm:hidden   sm:gap-[6vw] sm:px-[3vw] justify-between gap-[3vw]  flex-wrap   `}
+          >
             {menu_arr.map((outer: any, outer_index: any) => {
               return (
                 <>

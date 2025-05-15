@@ -38,7 +38,7 @@ const mob_right_img = [
 ];
 const mob_left_img = [{ img: left_img2 }, { img: left_img4 }];
 
-const Campaign_New_scroll_hand = () => {
+const Campaign_New_scroll_hand = ({ goggle }: any) => {
   return (
     <>
       <div
@@ -169,7 +169,9 @@ const Campaign_New_scroll_hand = () => {
           />
         </div>{" "}
         <div
-          className={`w-full bg-gradient-to-t  from-white
+          className={`w-full bg-gradient-to-t ${
+            goggle ? "from-black sm:from-[white]" : ""
+          } 
             h-[20%] absolute bottom-0 left-0`}
         ></div>
       </div>
