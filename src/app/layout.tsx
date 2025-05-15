@@ -63,8 +63,9 @@ export default function RootLayout({
           `,
         }}
       />
+
       <body className=""> {children}</body>
-      <GoogleTagManager gtmId="GTM-WF4KS3ZS" />
+      <GoogleTagManager gtmId="GTM-WQB5G2DQ" />
     </html>
   );
 }
