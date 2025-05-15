@@ -11,6 +11,8 @@ import Script from "next/script";
 import { useEffect } from "react";
 import Head from "next/head";
 import { usePathname } from "next/navigation";
+import TagManager from "react-gtm-module";
+
 // import * as gtag from "../app/gtag";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -64,7 +66,7 @@ export default function RootLayout({
         }}
       />
 
-      <body className=""> {children}</body>
+      <body className="">{children}</body>
       <GoogleTagManager gtmId="GTM-WQB5G2DQ" />
     </html>
   );
