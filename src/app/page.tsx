@@ -48,11 +48,15 @@ export default function Home() {
 
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+  useEffect(() => {
+    console.log("window.dataLayer", window.dataLayer);
+  }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
       document.body.classList.remove("hide_now");
     }, 4650);
+
     return () => clearTimeout(timer);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);

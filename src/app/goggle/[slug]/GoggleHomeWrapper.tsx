@@ -116,10 +116,10 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
       });
 
       // Google Analytics
-      window.gtag?.("event", "Book appointment", {
-        event_category: "Lead Generation",
-        event_label: "Go High Level form successfully submitted",
-      });
+      // window.gtag?.("event", "Book appointment", {
+      //   event_category: "Lead Generation",
+      //   event_label: "Go High Level form successfully submitted",
+      // });
       // console.log("tracking booking");
       return; // Exit early if booking is true
     }
@@ -146,10 +146,10 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
       });
 
       // Google Analytics
-      window.gtag?.("event", "GoHighLevelFormSubmit", {
-        event_category: "Lead Generation",
-        event_label: "Go High Level form successfully submitted",
-      });
+      // window.gtag?.("event", "GoHighLevelFormSubmit", {
+      //   event_category: "Lead Generation",
+      //   event_label: "Go High Level form successfully submitted",
+      // });
     } else {
       setgo_high_level_start_anime(false);
       setsubmit(false);
@@ -229,10 +229,10 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
             window.fbq("track", "ContactUsClick", {
               value: "Customer clicked on Contact Us button", // Optional, to track a specific value
             });
-            window.gtag("event", "ContactUsClick", {
-              event_category: "Lead Generation",
-              event_label: "Customer clicked on Contact Us button",
-            });
+            // window.gtag("event", "ContactUsClick", {
+            //   event_category: "Lead Generation",
+            //   event_label: "Customer clicked on Contact Us button",
+            // });
           }}
           className={`${NeueHaasDisplay_roman.className} league sm:w-[85vw] z-[10]  shadow-sm w-[17vw] h-[3.6vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
         >

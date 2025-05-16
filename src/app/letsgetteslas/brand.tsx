@@ -73,10 +73,10 @@ const Brands = () => {
                 window.fbq("track", "ContactUsClick", {
                   value: "Customer clicked on Contact Us button", // Optional, to track a specific value
                 });
-                window.gtag("event", "ContactUsClick", {
-                  event_category: "Lead Generation",
-                  event_label: "Customer clicked on Contact Us button",
-                });
+                // window.gtag("event", "ContactUsClick", {
+                //   event_category: "Lead Generation",
+                //   event_label: "Customer clicked on Contact Us button",
+                // });
               }}
               className={` sm:w-[39vw] sm:block hidden sm:h-[11.2vw] w-[13.5vw] h-[4.5vw] rounded-[0.73vw] sm:rounded-[8.75vw] sm:text-[3.5vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
             >
@@ -89,10 +89,10 @@ const Brands = () => {
                   window.fbq("track", "ContactUsClick", {
                     value: "Customer clicked on Contact Us button", // Optional, to track a specific value
                   });
-                  window.gtag("event", "ContactUsClick", {
-                    event_category: "Lead Generation",
-                    event_label: "Customer clicked on Contact Us button",
-                  });
+                  // window.gtag("event", "ContactUsClick", {
+                  //   event_category: "Lead Generation",
+                  //   event_label: "Customer clicked on Contact Us button",
+                  // });
                 }}
                 className={` sm:w-[39vw] capitalize   sm:h-[11.2vw] w-[13.5vw] h-[4.2vw] rounded-[3vw] sm:rounded-[8.75vw] text-[1.1vw] ${NeueHaasDisplay_roman.className} bg-[#EE2020] text-white`}
               >

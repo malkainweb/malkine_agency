@@ -14,10 +14,10 @@ const Calendy = ({ text_color }: any) => {
       window.fbq("track", "Calendy", {
         value: "Calendy Date and time selected", // the value of the lead (optional)
       });
-      window.gtag("event", "Calendy ", {
-        event_category: "Calendy",
-        event_label: "Calendy Date and time selected",
-      });
+      // window.gtag("event", "Calendy ", {
+      //   event_category: "Calendy",
+      //   event_label: "Calendy Date and time selected",
+      // });
       console.log("Date and time selected");
     },
     onEventTypeViewed: () => console.log("onEventTypeViewed"),
@@ -26,10 +26,10 @@ const Calendy = ({ text_color }: any) => {
       window.fbq("track", "Calendy success", {
         value: "Calendy booking successfull", // the value of the lead (optional)
       });
-      window.gtag("event", "Calendy success", {
-        event_category: "Calendy",
-        event_label: "Calendy booking successfull",
-      });
+      // window.gtag("event", "Calendy success", {
+      //   event_category: "Calendy",
+      //   event_label: "Calendy booking successfull",
+      // });
 
       console.log("Booking.. successful");
     },

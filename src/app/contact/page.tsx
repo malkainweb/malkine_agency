@@ -59,10 +59,10 @@ export default function Contact() {
       seterr("");
       setsendbtn("Sending");
       setdisabled(!disabled);
-      window.gtag("event", "form_submission", {
-        event_category: "Contact Form",
-        event_label: "Submit",
-      });
+      // window.gtag("event", "form_submission", {
+      //   event_category: "Contact Form",
+      //   event_label: "Submit",
+      // });
 
       window.fbq("trackCustom", "submit form");
       let data = JSON.stringify({
@@ -93,7 +93,7 @@ export default function Contact() {
         .catch((err) => {
           console.log(err);
           seterr(
-            "Something went wrong. Please try again or reload the page and try again",
+            "Something went wrong. Please try again or reload the page and try again"
           );
           setdisabled(!disabled);
         });

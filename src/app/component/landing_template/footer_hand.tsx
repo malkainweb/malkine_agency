@@ -46,10 +46,10 @@ const Footer_hand = ({
                   window.fbq("track", "ContactUsClick", {
                     value: "Customer clicked on Contact Us button", // Optional, to track a specific value
                   });
-                  window.gtag("event", "ContactUsClick", {
-                    event_category: "Lead Generation",
-                    event_label: "Customer clicked on Contact Us button",
-                  });
+                  // window.gtag("event", "ContactUsClick", {
+                  //   event_category: "Lead Generation",
+                  //   event_label: "Customer clicked on Contact Us button",
+                  // });
                 }}
                 className="  text-[1.5vw] h-auto font[500]  rounded-[39px] px-[50px] py-[16px] bg-[#D01717] text-white hover:opacity-[70%] sm:text-[3.5vw] sm:mb-[18vw] sm:mt-[2vw]"
               >

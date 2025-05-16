@@ -121,10 +121,10 @@ const Campaign_hero = ({ show_btn, form_link, goggle }: any) => {
               window.fbq("track", "ContactUsClick", {
                 value: "Customer clicked on Contact Us button", // Optional, to track a specific value
               });
-              window.gtag("event", "ContactUsClick", {
-                event_category: "Lead Generation",
-                event_label: "Customer clicked on Contact Us button",
-              });
+              // window.gtag("event", "ContactUsClick", {
+              //   event_category: "Lead Generation",
+              //   event_label: "Customer clicked on Contact Us button",
+              // });
             }}
             className={`nova w-fit sm:hidden cursor-pointer text-[1.07vw] font[900] text-white rounded-[2.6vw] px-[3.3vw] py-[1.07vw] bg-[#D01717] hover:opacity-[70%]  sm:text-[3vw]  sm:rounded-[9.75vw] sm:px-[18vw] ${NeueHaasDisplay_roman.className}  sm:py-[4vw] font_helvetica  sm:text-white sm:mt-[2vw] `}
           >

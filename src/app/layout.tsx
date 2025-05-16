@@ -65,9 +65,9 @@ export default function RootLayout({
           `,
         }}
       />
-
+      {/* ✅ GTM should go here */}
+      <GoogleTagManager gtmId="GTM-NRXDVQZ" />
       <body className="">{children}</body>
-      <GoogleTagManager gtmId="GTM-WQB5G2DQ" />
     </html>
   );
 }
