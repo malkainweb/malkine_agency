@@ -1,3 +1,4 @@
+import { GoogleTagManager } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Script from "next/script";
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script
+      {/* <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID} `}
       />
@@ -32,7 +33,7 @@ export default function RootLayout({
               gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID}');
             `,
         }}
-      />
+      /> */}
 
       {/* bing tracking  */}
       <Script
@@ -66,6 +67,9 @@ export default function RootLayout({
              fbq('track', 'PageView');
           `,
         }}
+      />
+      <GoogleTagManager
+        gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""}
       />
       <body className={inter.className}>{children}</body>
     </html>

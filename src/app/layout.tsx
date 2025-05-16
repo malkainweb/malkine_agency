@@ -66,7 +66,9 @@ export default function RootLayout({
         }}
       />
       {/* ✅ GTM should go here */}
-      <GoogleTagManager gtmId="GTM-NRXDVQZ" />
+      <GoogleTagManager
+        gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""}
+      />
       <body className="">{children}</body>
     </html>
   );
