@@ -24,7 +24,7 @@ import { useEffect, useRef, useState } from "react";
 import { Typewriter } from "react-simple-typewriter";
 import { useInView } from "framer-motion";
 
-const New_service = () => {
+const New_service = ({ goggle }: any) => {
   const items = [
     {
       heading: "Web Design",
@@ -185,11 +185,25 @@ const New_service = () => {
       {/* THIS IS FOR DESKTOP  */}
       {/* THIS IS FOR DESKTOP  */}
       {/* THIS IS FOR DESKTOP  */}
-      <div className="w-full  sm:hidden px-[10vw] relative ">
+      <div
+        className={`w-full  sm:hidden px-[10vw] relative   ${
+          goggle ? "text-white sm:text-[black]" : ""
+        }  `}
+      >
         <div className="w-full  h-[100vh] sticky top-0 left-0 ">
-          <div className="w-full z-[5] absolute h-[25%] bg-gradient-to-b from-white top-0 left-0"></div>
-          <div className="w-full z-[5] absolute h-[25%] bg-gradient-to-t from-white bottom-0 left-0"></div>
-          <div className="w-[45%]  h-full flex gap-[3vw] flex-col z-[100]   justify-center">
+          <div
+            className={`w-full z-[5] absolute h-[25%] bg-gradient-to-b from-white top-0 left-0  ${
+              goggle ? " from-black" : " from-white"
+            } `}
+          ></div>
+          <div
+            className={`w-full z-[5] absolute h-[25%] bg-gradient-to-t  ${
+              goggle ? " from-black" : " from-white"
+            }  bottom-0 left-0`}
+          ></div>
+          <div
+            className={`w-[45%]  h-full flex gap-[3vw] flex-col z-[100]   justify-center `}
+          >
             <h2
               className={`${NeueHaasDisplay_roman.className} z-[10]  text-[4vw] `}
             >

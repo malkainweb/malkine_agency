@@ -247,17 +247,18 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
       <Campaign_hero goggle={true} show_btn={true} form_link={form_link} />
       <Past_work_template goggle={true} sethide_nav={sethide_nav} />
       <Campaign_New_scroll_hand goggle={true} />
-      <MalkainIsForYouIf />
+      <MalkainIsForYouIf goggle={true} />
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
       {/* <How_to_find_us /> */}
-      <New_service />
+      <New_service goggle={true} />
       <div className="sm:block hidden">
         <Mobile_Process />
       </div>
       <div className="sm:hidden block">
         <Processes
+          goggle={true}
           process={process}
           text_color={"#000000"}
           straight_line_image={line}
@@ -266,6 +267,7 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
       </div>
       {/* <Writing /> */}
       <Footer_hand
+        goggle={true}
         form_link={form_link}
         show_btn={true}
         text_color={"#000000"}

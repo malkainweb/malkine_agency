@@ -27,6 +27,7 @@ const Processes = ({
   straight_line_image,
   mobile_straight_line_image,
   show_btn,
+  goggle,
 }: any) => {
   const width = globalThis.innerWidth;
 
@@ -80,7 +81,9 @@ const Processes = ({
   ];
   return (
     <>
-      <div className="w-full flex sm:gap-[12vw]  flex-col items-center mb-[13vw] ">
+      <div
+        className={`w-full flex sm:gap-[12vw]  flex-col items-center mb-[13vw] `}
+      >
         <h2
           style={{
             color: text_color,
@@ -116,7 +119,7 @@ const Processes = ({
                   style={{ marginTop: calc_width > 700 ? e.top : "" }}
                   className={`   gap-[7vw]  ${
                     e.center
-                      ? `w-[26vw] h-[20vw] sm:w-full sm:h-auto  sm:rounded-[7vw]  ${
+                      ? `w-[26vw]  h-[20vw] sm:w-full sm:h-auto  sm:rounded-[7vw]  ${
                           btn_bg_color ? "bg-[#226DFF]" : "bg-[#D01717]"
                         }   rounded-[2vw] sm:mb-[4vw] items-center z-[99] px-[2vw] sm:py-[6vw] sm:px-[4vw]`
                       : "w-full h-auto sm:pb-[4vw] sm:text-center sm:flex-col sm:items-center items-start"
@@ -145,22 +148,25 @@ const Processes = ({
                       e.center
                         ? "w-full text-white  items-center text-center "
                         : "w-[50%]    sm:items-center"
-                    } flex flex-col gap-[0.7vw] ${
+                    } flex flex-col  gap-[0.7vw] ${
                       e.reverse ? "items-end " : "items-start"
                     }  `}
                   >
                     <div
                       style={{
                         color: !e.center && text_color,
-                        borderColor: !e.center && text_color,
+                        borderColor: goggle ? "white" : !e.center && text_color,
                         // border: e.center && "1px solid white",
                       }}
                       // className="flex  text-white justify-center items-center w-[11.2vw] h-[2.2vw] border-[0.07vw]  sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]"
                       className={`flex ${
                         e.center && "border-[0.07vw]"
-                      } text-white justify-center items-center w-[11.2vw] h-[2.2vw]   sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw]  border-white border-opacity-[50%] rounded-[2.9vw]`}
+                      } text-white justify-center items-center w-[11.2vw] h-[2.2vw]   sm:w-[40vw] sm:h-[7.9vw] sm:rounded-[10vw] border  border-white border-opacity-[50%] rounded-[2.9vw]`}
                     >
                       <p
+                        style={{
+                          color: goggle ? "white" : "",
+                        }}
                         className={`${CabinetGrotesk_medium.className} sm:text-[3.2vw]  text-[0.9vw] uppercase`}
                       >
                         {e.step_text}
@@ -168,7 +174,7 @@ const Processes = ({
                     </div>
                     <h2
                       style={{
-                        color: !e.center && text_color,
+                        color: goggle ? "" : !e.center && text_color,
                       }}
                       className={` text-white sm:text-[8vw] sm:text-center ${
                         NeueHaasDisplay_roman.className
@@ -181,7 +187,7 @@ const Processes = ({
 
                     <p
                       style={{
-                        color: !e.center && text_color,
+                        color: goggle ? "" : !e.center && text_color,
                       }}
                       className={` text-white sm:text-[4vw] sm:leading-[5.5vw] ${
                         NeueHaasDisplay_light.className

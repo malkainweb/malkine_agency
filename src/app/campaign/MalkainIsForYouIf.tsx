@@ -13,7 +13,7 @@ import {
   NeueHaasDisplay_roman,
 } from "../utils/fonts";
 
-const MalkainIsForYouIf = () => {
+const MalkainIsForYouIf = ({ goggle }: any) => {
   const items = [
     {
       step_text: "STEP 01: GET STARTED",
@@ -69,7 +69,11 @@ const MalkainIsForYouIf = () => {
   ];
   return (
     <>
-      <div className="w-full flex   flex-col items-center mb-[4vw] sm:gap-[5vw] sm:my-[15vw] ">
+      <div
+        className={`w-full flex  ${
+          goggle ? "text-white sm:text-[black]" : ""
+        }  flex-col items-center mb-[4vw] sm:gap-[5vw] sm:my-[15vw] `}
+      >
         <h2
           className={`pt-[3rem] pb-[2rem] text-center ${NeueHaasDisplay_bold.className} text-4xl`}
         >
