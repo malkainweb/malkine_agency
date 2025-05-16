@@ -5,7 +5,7 @@ import DontWantBeg from "@/../public/campaign/MalkainIsForYouIf/DontWantBeg.webp
 import bgLine from "@/../public/campaign/MalkainIsForYouIf/bgLine.png";
 import DontWantLeftBehind from "@/../public/campaign/MalkainIsForYouIf/youDontWantToLeftOut.webp";
 import web_design from "@/../public/new_service/services/web_design.webp";
-
+import malkainIsForYouIf from "@/../public/goggle/malkainIsforyou.png";
 import { scrollTo_calendy } from "../utils/scroll_to_calendy";
 import {
   NeueHaasDisplay_bold,
@@ -87,6 +87,11 @@ const MalkainIsForYouIf = ({ goggle }: any) => {
             src={bgLine}
             alt="line"
             className="w-[4.5vw]  h-full  hidden sm:block absolute left-[1.5vw]"
+          />
+          <Image
+            src={malkainIsForYouIf}
+            alt="line"
+            className="w-fit h-full  sm:hidden  absolute left-[50%] translate-x-[-50%] "
           />
           {items.map((e: any, index: any) => {
             return (

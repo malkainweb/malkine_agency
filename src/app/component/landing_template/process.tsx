@@ -6,6 +6,7 @@ import one from "../../../../public/landingpage_template/example1.webp";
 import two from "../../../../public/landingpage_template/example2.webp";
 import three from "../../../../public/landingpage_template/example3.webp";
 // import four from "../../../../public/landingpage_template/example.webp";
+import whiteLine from "@/../public/goggle/whiteImage.png";
 
 import blue_arrow from "../../../public/home/processes/blue_arrow.png";
 import { scrollTo_calendy } from "@/app/utils/scroll_to_calendy";
@@ -95,7 +96,13 @@ const Processes = ({
         {/* the bottom process and the mapping function */}
         <div className=" w-[70vw] sm:w-[90vw]  flex flex-col items-center justify-between  gap-[8vw] sm:gap-[2.3vw] relative">
           <Image
-            src={straight_line_image ? straight_line_image : line}
+            src={
+              goggle
+                ? whiteLine
+                : straight_line_image
+                ? straight_line_image
+                : line
+            }
             alt="line"
             className="w-fit  h-full sm:hidden absolute left-[50%] translate-x-[-50%] "
           />

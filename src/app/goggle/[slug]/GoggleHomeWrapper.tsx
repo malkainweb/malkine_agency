@@ -211,7 +211,7 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
           setgo_high_level_start_anime={setgo_high_level_start_anime}
         />
       )}
-      <div className="sm:w-full sm:flex sm:justify-center sm:left-[50%]  z-[10000] sm:pb-[3vw]  right-[2vw] sm:translate-x-[-50%]  fixed bottom-[1vw] sm:bottom-[0]">
+      <div className="sm:w-full w-fit flex  justify-center left-[50%]  z-[10000] sm:pb-[3vw] translate-x-[-50%]  fixed bottom-[1vw] sm:bottom-[0]">
         {isloggedin && (
           <Edit_text
             // record={"form_link"}
@@ -222,7 +222,7 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
             text={form_link}
           />
         )}{" "}
-        <div className=" hidden h-full blur-[25px] sm:block border2 w-full bg-black  absolute bottom-0 left-0  "></div>
+        <div className=" hidden h-full blur-[25px] sm:block  w-full bg-black  absolute bottom-0 left-0  "></div>
         <button
           onClick={() => {
             setgo_high_level_start_anime(true);
@@ -234,7 +234,7 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
               event_label: "Customer clicked on Contact Us button",
             });
           }}
-          className={`${NeueHaasDisplay_roman.className} league sm:w-[85vw] z-[10] border2 shadow-sm w-[12vw] h-[2.8vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
+          className={`${NeueHaasDisplay_roman.className} league sm:w-[85vw] z-[10]  shadow-sm w-[17vw] h-[3.6vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
         >
           <p className="w-full h-full flex justify-center items-center ">
             {" "}
@@ -243,15 +243,18 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
         </button>
       </div>
       <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
-      {/* <Service_hero show_btn={true} /> */}
       <Campaign_hero goggle={true} show_btn={true} form_link={form_link} />
+      <div className="sm:hidden ">
+        <Campaign_New_scroll_hand goggle={true} />
+      </div>
       <Past_work_template goggle={true} sethide_nav={sethide_nav} />
-      <Campaign_New_scroll_hand goggle={true} />
+      <div className="hidden sm:block">
+        <Campaign_New_scroll_hand goggle={true} />
+      </div>
       <MalkainIsForYouIf goggle={true} />
       <div className="sm:block hidden">
         <Who_we_are />
       </div>
-      {/* <How_to_find_us /> */}
       <New_service goggle={true} />
       <div className="sm:block hidden">
         <Mobile_Process />
@@ -265,15 +268,12 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
           mobile_straight_line_image={mobile_line}
         />
       </div>
-      {/* <Writing /> */}
       <Footer_hand
         goggle={true}
         form_link={form_link}
         show_btn={true}
         text_color={"#000000"}
       />
-      {/* <Calendy text_color={"#000000"} /> */}
-      {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}
     </div>
   );
 };
