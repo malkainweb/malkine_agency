@@ -5,6 +5,7 @@ import Footer_hand from "../../component/landing_template/footer_hand";
 import Landing_nav from "../../component/landing_template/landing_nav";
 import Processes from "../../component/landing_template/process";
 // import Service_hero from "../letsgetteslas/hero";
+import { sendGTMEvent } from "@next/third-parties/google";
 
 import line from "@/../../public/new_service/line.png";
 import mobile_line from "@/../../public/new_service/mobile.png";
@@ -36,6 +37,7 @@ import { firebaseConfig } from "../../utils/fire_base_config";
 import MalkainIsForYouIf from "../../campaign/MalkainIsForYouIf";
 import Modal_text_edit from "@/app/[slug]/modal_text_edit";
 import Edit_text from "@/app/[slug]/edit_text";
+import { GoogleTrack } from "@/app/utils/gtm";
 
 const GoggleHomeHero = ({ form_link, id }: any) => {
   const process = [
@@ -112,8 +114,9 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
       setgo_high_level_start_anime(true);
       // Facebook Pixel
       window.fbq?.("track", "Book appointment", {
-        value: "Go High Level form successfully submitted",
+        value: "appointment successfully submitted",
       });
+      GoogleTrack("Book appointment", "appointment successfully submitted");
 
       // Google Analytics
       // window.gtag?.("event", "Book appointment", {
@@ -144,6 +147,10 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
       window.fbq?.("track", "GoHighLevelFormSubmit", {
         value: "Go High Level form successfully submitted",
       });
+      GoogleTrack(
+        "GoHighLevelFormSubmit",
+        "Go High Level form successfully submitted"
+      );
 
       // Google Analytics
       // window.gtag?.("event", "GoHighLevelFormSubmit", {
@@ -229,6 +236,11 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
             window.fbq("track", "ContactUsClick", {
               value: "Customer clicked on Contact Us button", // Optional, to track a specific value
             });
+
+            GoogleTrack(
+              "ContactUsClick",
+              "Customer clicked on Contact Us button"
+            );
             // window.gtag("event", "ContactUsClick", {
             //   event_category: "Lead Generation",
             //   event_label: "Customer clicked on Contact Us button",
