@@ -66,11 +66,15 @@ export default function RootLayout({
         }}
       />
       {/* ✅ GTM should go here */}
-      <GoogleTagManager gtmId={"GTM-NRXDVQZ"} />
+      <GoogleTagManager
+        gtmId={process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""}
+      />
       <body className="">
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-NRXDVQZ"
+            src={`https://www.googletagmanager.com/ns.html?id=${
+              process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS_ID || ""
+            }`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
