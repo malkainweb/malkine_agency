@@ -98,6 +98,10 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const appointment = searchParams.get("appointment");
 
   useEffect(() => {
+    console.log("this is contactusclick");
+    window.dataLayer?.push({
+      event: "ContactUsClick",
+    });
     if (booking) {
       setcheckbooking(true);
       setgo_high_level_start_anime(true);
