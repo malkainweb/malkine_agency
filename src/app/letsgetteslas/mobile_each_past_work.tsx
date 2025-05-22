@@ -210,7 +210,7 @@ const Mobile_Live_past_work = ({
                       }}
                     >
                       <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
-                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
+                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] border border-black/20  ">
                           <Image
                             src={e.mob_img}
                             alt={e.text}
@@ -250,8 +250,8 @@ const Mobile_Live_past_work = ({
                         transition: "1s ease",
                       }}
                     >
-                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]    sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
-                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
+                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]    sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw] ">
+                        <div className="w-full     rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] border border-black/20 ">
                           {e.demo && (
                             <div
                               className={`${NeueHaasDisplay_roman.className} bg-[black] text-white px-[1rem] text-sm py-[0.4rem] rounded-full absolute top-[1rem] right-[1rem] `}
@@ -262,7 +262,7 @@ const Mobile_Live_past_work = ({
                           <Image
                             src={e.mob_img}
                             alt={e.text}
-                            className="w-full h-full object-cover"
+                            className="w-full  h-full object-cover"
                           />
                         </div>
 
@@ -312,8 +312,8 @@ const Mobile_Live_past_work = ({
                         transition: "0.7s ease",
                       }}
                     >
-                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
-                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
+                      <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw] ">
+                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] border border-black/20  ">
                           <Image
                             src={e.mob_img}
                             alt={e.text}
@@ -352,7 +352,7 @@ const Mobile_Live_past_work = ({
                       }}
                     >
                       <div className="sm:w-full w-[25vw]  z-[99] h-[32vw]   sm:pb-[8vw] flex flex-col sm:gap-[1vw]  overflow-hidden sm:h-fit   sm:rounded-[6vw]  border-[1.2vw] rounded-[1.2vw] border-[#EDEDED] bg-[#EDEDED] sm:border-[1.5vw]">
-                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] ">
+                        <div className="w-full    rounded-[1.2vw] relative  sm:rounded-[7vw] overflow-hidden h-[21vw] flex justify-center items-center  sm:h-[80vw] border border-black/20  ">
                           {e.demo && (
                             <div
                               className={`${NeueHaasDisplay_roman.className} bg-[black] text-white px-[1rem] text-sm py-[0.4rem] rounded-full absolute top-[1rem] right-[1rem] `}

@@ -23,6 +23,7 @@ import drop_down from "@/../public/new_service/drop_down.png";
 import vibes_only from "@/../public/past_work/eccomerce/vibes_only.webp";
 import katePerry from "@/../public/past_work/katePerry.webp";
 import cameo from "@/../public/past_work/cameo.webp";
+import brala from "@/../public/past_work/brala.webp";
 import Vazzi from "@/../public/past_work/eccomerce/vazzi.png";
 import Yulia from "@/../public/past_work/eccomerce/Yulia.png";
 import dailycomputer from "@/../public/past_work/eccomerce/dailycomputer.png";
@@ -172,12 +173,20 @@ const Past_work_template = ({
       title: "MalkainSpecial",
       body: [
         {
+          // demo: true,
+          img: brala,
+          text: "Brala's Best",
+          link: "https://brala.vercel.app",
+          mob_img: brala,
+        },
+        {
           demo: true,
           img: katePerry,
           text: "katy perry collection",
           link: "https://kate-perry.vercel.app/",
           mob_img: katePerry,
         },
+
         {
           img: q_department,
           text: "Q Department ",

@@ -34,6 +34,7 @@ import {
 import { initializeApp } from "firebase/app";
 import { firebaseConfig } from "../utils/fire_base_config";
 import MalkainIsForYouIf from "../campaign/MalkainIsForYouIf";
+import { GoogleTrack } from "../utils/gtm";
 
 const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const process = [
@@ -98,10 +99,12 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   const appointment = searchParams.get("appointment");
 
   useEffect(() => {
-    console.log("this is contactusclick");
-    window.dataLayer?.push({
-      event: "ContactUsClick",
-    });
+    // console.log("this is contactusclick");
+    // window.dataLayer?.push({
+    //   event: "ContactUsClick",
+    // });
+    // GoogleTrack("ContactUsClick", "appointment successfully submitted");
+
     if (booking) {
       setcheckbooking(true);
       setgo_high_level_start_anime(true);
