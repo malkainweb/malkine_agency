@@ -246,7 +246,7 @@ const GoggleHomeHero = ({ form_link, id }: any) => {
             //   event_label: "Customer clicked on Contact Us button",
             // });
           }}
-          className={`${NeueHaasDisplay_roman.className} league sm:w-[85vw] z-[10]  shadow-sm w-[17vw] h-[3.6vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-[1.5vw] sm:rounded-[9.75vw]`}
+          className={`${NeueHaasDisplay_roman.className} league sm:w-[85vw] z-[10]  shadow-sm w-[30vw] h-[5.6vw] sm:h-[13vw] text-[1.2vw] sm:text-[5vw] hover:bg-[#920808] bg-[#D01717] text-white  rounded-full sm:rounded-[9.75vw]`}
         >
           <p className="w-full h-full flex justify-center items-center ">
             {" "}
