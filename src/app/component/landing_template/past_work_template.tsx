@@ -173,6 +173,13 @@ const Past_work_template = ({
       title: "MalkainSpecial",
       body: [
         {
+          demo: true,
+          img: katePerry,
+          text: "katy perry collection",
+          link: "https://kate-perry.vercel.app/",
+          mob_img: katePerry,
+        },
+        {
           // demo: true,
           img: brala,
           text: "Brala's Best",
@@ -180,13 +187,11 @@ const Past_work_template = ({
           mob_img: brala,
         },
         {
-          demo: true,
-          img: katePerry,
-          text: "katy perry collection",
-          link: "https://kate-perry.vercel.app/",
-          mob_img: katePerry,
+          img: Tinypod,
+          text: "The Tinypod ",
+          link: "https://thetinypod.com/",
+          mob_img: Tinypod,
         },
-
         {
           img: q_department,
           text: "Q Department ",
@@ -197,12 +202,6 @@ const Past_work_template = ({
           mob_img: mob_q_department,
         },
 
-        {
-          img: Tinypod,
-          text: "The Tinypod ",
-          link: "https://thetinypod.com/",
-          mob_img: Tinypod,
-        },
         {
           img: exo,
           text: "exo",

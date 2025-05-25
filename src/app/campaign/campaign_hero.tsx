@@ -62,10 +62,16 @@ const Campaign_hero = ({ show_btn, form_link, goggle }: any) => {
             />
             <div className="bg-gradient-to-b rounded-[20px] overflow-hidden bg-white  bg-opacity-[5%] backdrop-blur-[100px]  py-[1.7rem]  flex-col  p-[2%] flex  gap-[1.5rem] ">
               <h1
-                className={`${NeueHaasDisplay_medium.className}  text-center  text-white z-[10] text-[8vw] leading-[8.3vw]`}
+                className={`${
+                  NeueHaasDisplay_medium.className
+                }  text-center  text-white z-[10] ${
+                  goggle
+                    ? "text-[7vw] leading-[7.3vw]"
+                    : "text-[8vw] leading-[8.3vw]"
+                } `}
               >
-                Websites built for yesterday, won{"'"}t convert today{"'"}s
-                customers
+                {goggle ? "Ecommerce websites" : "Websites"} built for
+                yesterday, won{"'"}t convert today{"'"}s customers
               </h1>{" "}
               <p
                 className={`${NeueHaasDisplay_light.className} relative text-center text-[5vw] leading-[6vw] text-white`}
@@ -92,8 +98,9 @@ const Campaign_hero = ({ show_btn, form_link, goggle }: any) => {
           leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}
           `}
         >
-          Websites built for yesterday, won{"'"}t <br /> convert today{"'"}s
-          customers <span className="text-[#FF0000]"> </span>
+          {goggle ? "Ecommerce websites" : "Websites"} built for yesterday, won
+          {"'"}t <br /> convert today{"'"}s customers{" "}
+          <span className="text-[#FF0000]"> </span>
         </h1>
         <p
           className={`${NeueHaasDisplay_light.className}  relative text-center text-[2vw] leading-[2.2vw] `}

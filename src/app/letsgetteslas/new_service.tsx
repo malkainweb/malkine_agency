@@ -192,7 +192,7 @@ const New_service = ({ goggle }: any) => {
       >
         <div className="w-full  h-[100vh] sticky top-0 left-0 ">
           <div
-            className={`w-full z-[5] absolute h-[25%] bg-gradient-to-b from-white top-0 left-0  ${
+            className={`w-full z-[5] absolute h-[25%] bg-gradient-to-b top-0 left-0  ${
               goggle ? " from-black" : " from-white"
             } `}
           ></div>
