@@ -117,18 +117,30 @@ export default function Contact() {
         opacity={opacity}
         setopacity={setopacity}
       />
-      <div className="w-full bg-black">
-        <Home_Header
-          setright={setright}
-          setleft={setleft}
-          setopacity={setopacity}
-          white={true}
-          nav_ham={true}
-          nav_menu={true}
-        />
+      <div className="w-full  sm:bg-white bg-black">
+        {globalThis.innerWidth < 760 ? (
+          <>
+            <Home_Header
+              setright={setright}
+              setleft={setleft}
+              setopacity={setopacity}
+            />
+          </>
+        ) : (
+          <>
+            <Home_Header
+              setright={setright}
+              setleft={setleft}
+              setopacity={setopacity}
+              white={true}
+              nav_ham={true}
+              nav_menu={true}
+            />
+          </>
+        )}
 
-        <div className="w-full  relative flex ">
-          <div className=" sticky left-0 h-[100vh] p-[1rem] top-0 w-full">
+        <div className="w-full pt-[8rem] sm:pt-[3rem] relative flex ">
+          <div className=" sticky sm:hidden left-0 h-[100vh] p-[1rem] top-0 w-full">
             <div className=" w-full h-full  bg-[#1A1A1A] flex justify-center items-center rounded-[2rem]">
               <Image
                 priority
@@ -138,13 +150,17 @@ export default function Contact() {
               />
             </div>
           </div>
-          <div className=" w-full">
-            {iframeLoading && <div className="loader" />}
+          <div className=" pt-[1rem] bg-white rounded-[2rem] sm:rounded-none overflow-hidden relative w-full">
+            {iframeLoading && (
+              <div className="h-[100vh]  relative">
+                <div className="loader" />
+              </div>
+            )}
             {/* <iframe
           src="https://api.leadconnectorhq.com/widget/form/vSYAkM7blj9WkgrgA7jt"
           className="w-full min-h-screen border-none"
         ></iframe> */}
-            <div className="w-full pt-[8rem] sm:pt-[3rem] min-h-screen flex flex-col">
+            <div className="w-full  min-h-screen flex flex-col">
               <iframe
                 src="https://api.leadconnectorhq.com/widget/form/vSYAkM7blj9WkgrgA7jt"
                 className="w-full flex-grow border-none"
