@@ -14,6 +14,9 @@ import Footer from "../component/fotter/footer";
 import Two from "../component/contact/two";
 import Menu from "../component/menu";
 import axios from "axios";
+import logo from "@/../public/logo.webp";
+import Logo from "../component/logo";
+import Image from "next/image";
 
 export default function Contact() {
   const width = globalThis.innerWidth;
@@ -100,6 +103,8 @@ export default function Contact() {
     }
   };
 
+  const [iframeLoading, setIframeLoading] = useState(true);
+
   return (
     <>
       <Menu
@@ -112,16 +117,56 @@ export default function Contact() {
         opacity={opacity}
         setopacity={setopacity}
       />
-      <div className="w-full h-auto  bg-[#1A1A1A] ">
+      <div className="w-full bg-black">
         <Home_Header
+          setright={setright}
+          setleft={setleft}
+          setopacity={setopacity}
+          white={true}
+          nav_ham={true}
+          nav_menu={true}
+        />
+
+        <div className="w-full  relative flex ">
+          <div className=" sticky left-0 h-[100vh] p-[1rem] top-0 w-full">
+            <div className=" w-full h-full  bg-[#1A1A1A] flex justify-center items-center rounded-[2rem]">
+              <Image
+                priority
+                src={logo}
+                alt="logo"
+                className="w-[10rem] h-fit sm:hidden"
+              />
+            </div>
+          </div>
+          <div className=" w-full">
+            {iframeLoading && <div className="loader" />}
+            {/* <iframe
+          src="https://api.leadconnectorhq.com/widget/form/vSYAkM7blj9WkgrgA7jt"
+          className="w-full min-h-screen border-none"
+        ></iframe> */}
+            <div className="w-full pt-[8rem] sm:pt-[3rem] min-h-screen flex flex-col">
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/vSYAkM7blj9WkgrgA7jt"
+                className="w-full flex-grow border-none"
+                style={{ minHeight: "2200px" }} // ← adjust as needed
+                onLoad={() => setIframeLoading(false)}
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="w-full h-auto  bg-[#1A1A1A] ">
+        {/* <Home_Header
           setright={setright}
           setleft={setleft}
           setopacity={setopacity}
           white={white}
           nav_ham={nav_ham}
           nav_menu={nav_menu}
-        />
-        <div className="w-full  pt-[10vw] sm:pt-[25vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
+        /> */}
+
+        {/* <div className="w-full  pt-[10vw] sm:pt-[25vw] flex justify-center nova text-[3.33vw] text-[#D9D9D9]  text-center">
           {step == 3 || step == 2 ? (
             ""
           ) : (
@@ -164,7 +209,7 @@ export default function Contact() {
             setdisabled={setdisabled}
           />
         ) : null}
-        {step == 3 ? <Success /> : null}
+        {step == 3 ? <Success /> : null} */}
 
         <Footer />
       </div>
