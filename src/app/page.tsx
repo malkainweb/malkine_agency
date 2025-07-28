@@ -26,6 +26,7 @@ import {
   useMotionValueEvent,
   useMotionValue,
 } from "framer-motion";
+import NewHomeHeader from "./component/home/NewHomeHeader";
 
 export default function Home() {
   const width = globalThis.innerWidth;
@@ -181,6 +182,7 @@ export default function Home() {
           nav_ham={nav_ham}
           nav_menu={nav_menu}
         />
+        <NewHomeHeader />
         <Home_hero />
         <Highlight />
         <Home_Team />

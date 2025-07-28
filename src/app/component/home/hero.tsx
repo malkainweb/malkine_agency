@@ -35,7 +35,7 @@ const Home_hero = () => {
       width >= 651 ? calcwidth / 5 : mob_calc_width / 10,
     ],
     // Into these values:
-    [1, 0],
+    [1, 0]
   );
 
   useMotionValueEvent(scrollY, "change", (latest) => {
@@ -152,7 +152,7 @@ const Home_hero = () => {
     <>
       {" "}
       <motion.div
-        className={`w-full sm:h-[700vw] sm:relative  h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
+        className={`w-full sm:h-[700vw] sm:relative sm:hidden h-[370vw] pt-[11.3vw]  flex flex-col items-center transition duration-[1.5s]`}
         // animate={{ backgroundColor: color }}
         transition={{ duration: 3 }}
         style={{ backgroundColor: color }}
