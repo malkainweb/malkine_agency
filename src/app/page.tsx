@@ -150,6 +150,24 @@ export default function Home() {
     }
   });
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    // Function to update screen size
+    const checkScreenSize = () => {
+      setIsMobile(window.innerWidth <= 650);
+    };
+
+    // Initial check
+    checkScreenSize();
+
+    // Add resize event listener
+    window.addEventListener("resize", checkScreenSize);
+
+    // Cleanup
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
+
   return (
     <>
       {loader ? (
@@ -182,8 +200,10 @@ export default function Home() {
           nav_ham={nav_ham}
           nav_menu={nav_menu}
         />
-        <NewHomeHeader />
-        <Home_hero />
+        {isMobile ? <NewHomeHeader /> : <Home_hero />}
+
+        {/* <NewHomeHeader />
+        <Home_hero /> */}
         <Highlight />
         <Home_Team />
         {/* <Home_about /> */}
