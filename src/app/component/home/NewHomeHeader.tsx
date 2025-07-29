@@ -18,8 +18,8 @@ const NewHomeHeader = () => {
   return (
     <>
       {/* mobile design */}
-      <div className=" p-[2%]  hidden  sm:flex flex-col mb-[5vw]    ">
-        <div className="relative  h-[32rem] rounded-[20px] overflow-hidden">
+      <div className=" p-[2%]    hidden  sm:flex flex-col mb-[5vw]    ">
+        <div className="relative border-white/80 border-2  h-[32rem] rounded-[20px] overflow-hidden">
           <div className="w-full h-full relative flex">
             <Image
               src={gif}
