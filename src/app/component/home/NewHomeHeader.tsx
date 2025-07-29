@@ -9,6 +9,8 @@ import {
   CabinetGrotesk_extrabold,
   CabinetGrotesk_light,
   CabinetGrotesk_medium,
+  NeueHaasDisplay_light,
+  NeueHaasDisplay_medium,
 } from "@/app/utils/fonts";
 import Link from "next/link";
 // import { scrollTo_calendy } from "../utils/scroll_to_calendy";
@@ -16,53 +18,40 @@ const NewHomeHeader = () => {
   return (
     <>
       {/* mobile design */}
-      <div className=" sm:flex flex-col hidden w-full  relative  ">
-        <div className="w-full flex absolute top-0 left-0  aspect-[1/1] overflow-hidden bg-white h-fit sm:rounded-t-[0vw]  ">
-          <Image
-            src={gif}
-            alt="hero "
-            className="w-full h-full z-[10] object-cover "
-          />
-          <Image
-            src={img}
-            alt="hero "
-            className="w-full absolute top-0 left-0 h-full object-cover "
-          />
-        </div>
-
-        <div className="aspect-[1/0.9] w-full"></div>
-
-        <div className="relative z-[10] sm:rounded-[5vw]  overflow-hidden">
-          <Image
-            src={gif}
-            alt="hero bottom"
-            className=" sm:h-[81vw]  sm:w-[95vw] sm:rounded-t-[5vw]  sm:rounded-[5vw]  left-[50%] sm:translate-x-[-50%]      absolute bottom-0"
-          />
-          {/* the bottom */}
-          <div
-            className="
-      items-center justify-center   py-[7vw]  left-[50%]  text-center overflow-hidden  sm:bottom-0 bg-white bg-opacity-[28%] backdrop-blur-3xl  flex sm:flex-col sm:gap-[6vw] "
-          >
-            <h2
-              className={`sm:text-[9vw] ${CabinetGrotesk_extrabold.className} capitalize sm:leading-[10vw] text-white`}
-            >
-              We build custom <br /> software that <br /> converts
-            </h2>
-
-            {/* <p
-              className={` ${CabinetGrotesk_medium.className}  text-white  sm:text-[3.75vw]`}
-            >
-              Create healing environments that marry <br /> functionality with
-              aesthetic appeal, promoting <br /> patient well-being.
-            </p> */}
-
-            <Link
-              href={"/contact"}
-              className={`sm:w-[81vw] sm:h-[17vw] capitalize sm:rounded-t-[8vw] sm:rounded-b-[4.5vw] sm:text-[4.3vw] bg-white text-black flex justify-center items-center ${CabinetGrotesk_bold.className} `}
-            >
-              Get Started
-            </Link>
-          </div>
+      <div className=" p-[2%]  hidden  sm:flex flex-col mb-[5vw]    ">
+        <div className="relative  h-[32rem] rounded-[20px] overflow-hidden">
+          <div className="w-full h-full relative flex">
+            <Image
+              src={gif}
+              alt="hero"
+              className="w-full h-full z-[10]  object-cover "
+            />
+            <Image
+              src={img}
+              alt="hero"
+              className="w-full h-full absolute top-0 left-0 object-cover "
+            />
+          </div>{" "}
+          <div className="absolute w-full  rounded-[20px] overflow-hidden bottom-0 left-0 z-[100] ">
+            <Image
+              src={img}
+              alt="hero"
+              className="w-full absolute h-full rounded-[20px]  top-0 left-0"
+            />
+            <div className="bg-gradient-to-b rounded-[20px] overflow-hidden bg-white  bg-opacity-[5%] backdrop-blur-[100px]  py-[1.7rem]  flex-col  p-[2%] flex  gap-[1.5rem] ">
+              <h1
+                className={`${NeueHaasDisplay_medium.className}   py-[0.4rem] capitalize text-center  text-white z-[10] text-[8vw] leading-[8.3vw] `}
+              >
+                We build custom <br /> software that <br />
+                converts
+              </h1>{" "}
+              {/* <p
+                className={`${NeueHaasDisplay_light.className} relative text-center text-[5vw] leading-[6vw] text-white`}
+              >
+                Let{"'"}s get you a website for your <br /> type of business.{" "}
+              </p> */}
+            </div>
+          </div>{" "}
         </div>
       </div>
 
