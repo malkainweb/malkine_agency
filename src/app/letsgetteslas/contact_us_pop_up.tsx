@@ -7,7 +7,7 @@ import { useEffect, useState } from "react";
 import Script from "next/script";
 import Success from "../component/contact/success";
 import Go_high_level_success from "./go_high_level_success";
-import { useSearchParams } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 
 const Go_high_level_form = ({
   setgo_high_level_start_anime,
@@ -20,7 +20,15 @@ const Go_high_level_form = ({
   checkappointment,
 }: any) => {
   const [start_modal, setstart_modal] = useState(false);
-  // console.log(checkbooking);
+  const searchParams = usePathname();
+  console.log(searchParams);
+  const pathname = usePathname();
+  const [isWidget, setIsWidget] = useState(false);
+
+  useEffect(() => {
+    setIsWidget(pathname?.endsWith("_survey") || false);
+  }, [pathname]);
+
   useEffect(() => {
     setstart_modal(true);
     if (checkbooking) {
@@ -104,7 +112,9 @@ const Go_high_level_form = ({
             <>
               {" "}
               <iframe
-                src={`https://api.leadconnectorhq.com/widget/form/${form_link}`}
+                src={`https://api.leadconnectorhq.com/${
+                  isWidget ? "widget/survey" : "widget/form"
+                }/${form_link}`}
                 style={{
                   width: "100%",
                   height: "100%",
