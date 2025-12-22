@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@analytics/google-analytics": "^1.0.7",
-    "@next/third-parties": "^16.0.0",
+    "@next/third-parties": "^15.3.2",
     "@sendgrid/mail": "^7.7.0",
     "@supabase/supabase-js": "^2.46.1",
     "@types/node": "20.4.4",
@@ -27,7 +27,7 @@
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.5",
     "helmet": "^7.0.0",
-    "next": "^16.0.8",
+    "next": "13.4.12",
     "nodemailer": "^6.9.5",
     "postcss": "8.4.27",
     "react": "18.2.0",
@@ -41,7 +41,7 @@
     "react-scroll": "^1.8.9",
     "react-simple-typewriter": "^5.0.1",
     "resend": "^0.16.0",
-    "sharp": "^0.34.5",
+    "sharp": "^0.32.4",
     "tailwindcss": "3.3.3",
     "typescript": "5.1.6",
     "typewriter-effect": "^2.21.0"
@@ -51,9 +51,5 @@
     "@types/nodemailer": "^6.4.10",
     "@types/react-gtm-module": "^2.0.4",
     "@types/react-helmet": "^6.1.6"
-  },
-  "optionalDependencies": {
-    "@tailwindcss/oxide-linux-x64-gnu": "^4.0.14",
-    "lightningcss-linux-x64-gnu": "^1.29"
   }
 }
