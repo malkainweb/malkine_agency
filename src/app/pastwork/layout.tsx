@@ -3,11 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
-import Script from "next/script";
-import { useEffect } from "react";
-import Head from "next/head";
-import { usePathname } from "next/navigation";
-import { GoogleTagManager } from "@next/third-parties/google";
 // import * as gtag from "../app/gtag";
 
 const inter = Inter({ subsets: ["latin"] });

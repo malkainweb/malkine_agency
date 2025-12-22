@@ -4,12 +4,6 @@ import { Inter } from "next/font/google";
 import "bootstrap-icons/font/bootstrap-icons.css";
 
 import Script from "next/script";
-import { useEffect } from "react";
-import Head from "next/head";
-import { usePathname } from "next/navigation";
-// import * as gtag from "../app/gtag";
-
-const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Malkain",

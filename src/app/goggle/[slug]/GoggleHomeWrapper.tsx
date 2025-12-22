@@ -7,11 +7,11 @@ import Processes from "../../component/landing_template/process";
 // import Service_hero from "../letsgetteslas/hero";
 import { sendGTMEvent } from "@next/third-parties/google";
 
-import line from "@/../../public/new_service/line.png";
-import mobile_line from "@/../../public/new_service/mobile.png";
-import architect_one from "@/../../public/new_service/process_1.webp";
-import architect_two from "@/../../public/new_service/process_2.webp";
-import architect_three from "@/../../public/new_service/process_3.webp";
+import line from "@/../public/new_service/line.png";
+import mobile_line from "@/../public/new_service/mobile.png";
+import architect_one from "@/../public/new_service/process_1.webp";
+import architect_two from "@/../public/new_service/process_2.webp";
+import architect_three from "@/../public/new_service/process_3.webp";
 import Writing from "../../component/landing_template/writing";
 import Past_work_template from "../../component/landing_template/past_work_template";
 import New_service from "../../letsgetteslas/new_service";

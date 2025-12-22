@@ -6,11 +6,6 @@ import { useState, useEffect } from "react";
 import Menu from "./component/menu";
 import Home_Header from "./component/navigation/home_header";
 import Footer from "./component/fotter/footer";
-import type { Metadata } from "next";
-export const metadata: Metadata = {
-  title: "Malkain",
-  description: "Malkain Designs and Deployment",
-};
 
 export default function NotFound() {
   const width = globalThis.innerWidth;
