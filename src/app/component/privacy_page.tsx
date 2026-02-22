@@ -4,230 +4,226 @@ const PrivacyPolicyPage = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-2xl mx-auto bg-white p-6 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold mb-6">
-          Malkain Designs Privacy Policy
-        </h1>
-        <p className="text-sm text-gray-500">Last updated: [[5 Sept 2023]]</p>
+        <h1 className="text-3xl font-bold mb-2">MALKAIN</h1>
+        <h2 className="text-2xl font-bold mb-4">Privacy Policy</h2>
 
+        {/* 1. Introduction */}
+        <h3 className="text-xl font-bold mt-6 mb-2">1. Introduction</h3>
         <p>
-          This Privacy Policy describes how Malkain Designs (the
-          {'"Site"'}
-          {'"we"'} {'"us"'} or {'"our"'}) collects, uses, and discloses your
-          personal information when you visit, use our services, or make a
-          purchase from malkain.com (the {"'Site'"}) or otherwise communicate
-          with us (collectively, the {'"Services"'}). For purposes of this
-          Privacy Policy, {'"you"'} and {'"your"'} means you as the user of the
-          Services, whether you are a customer, website visitor, or another
-          individual whose information we have collected pursuant to this
-          Privacy Policy.
+          Malkain (&quot;we,&quot; &quot;us,&quot; or &quot;our&quot;) is
+          committed to protecting the privacy of our clients, prospective
+          clients, and website visitors. This Privacy Policy explains how we
+          collect, use, disclose, and safeguard your personal information when
+          you interact with our services, website, or communications.
+        </p>
+        <p className="mt-3">
+          By providing your information to us or consenting to receive
+          communications from us, you agree to the terms of this Privacy Policy.
         </p>
 
-        <p className="mt-4">
-          Please read this Privacy Policy carefully. By using and accessing any
-          of the Services, you agree to the collection, use, and disclosure of
-          your information as described in this Privacy Policy. If you do not
-          agree to this Privacy Policy, please do not use or access any of the
-          Services.
-        </p>
+        {/* 2. Information We Collect */}
+        <h3 className="text-xl font-bold mt-6 mb-2">
+          2. Information We Collect
+        </h3>
+        <p>We may collect the following types of personal information:</p>
+        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+          <li>
+            Name and contact information (email address, phone number, business
+            name)
+          </li>
+          <li>
+            Project details and service inquiries submitted through our forms
+          </li>
+          <li>Appointment and scheduling information</li>
+          <li>Communication preferences</li>
+          <li>Website usage data (IP address, browser type, pages visited)</li>
+        </ul>
 
-        <hr className="my-6" />
+        {/* 3. How We Use Your Information */}
+        <h3 className="text-xl font-bold mt-6 mb-2">
+          3. How We Use Your Information
+        </h3>
+        <p>We use your personal information for the following purposes:</p>
+        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+          <li>
+            To respond to inquiries and provide information about our web design
+            services
+          </li>
+          <li>To schedule and confirm appointments and consultations</li>
+          <li>To send appointment reminders and follow-up communications</li>
+          <li>To deliver services and manage client projects</li>
+          <li>To improve our services and customer experience</li>
+          <li>To comply with applicable laws and regulations</li>
+        </ul>
 
-        <h2 className="text-2xl font-semibold">
-          Changes to This Privacy Policy
-        </h2>
-        <p>
-          We may update this Privacy Policy from time to time, including to
-          reflect changes to our practices or for other operational, legal, or
-          regulatory reasons. We will post the revised Privacy Policy on the
-          Site, update the {'"Last updated"'} date, and take any other steps
-          required by applicable law.
-        </p>
-
-        <h2 className="text-2xl font-semibold mt-6">
-          How We Collect and Use Your Personal Information
-        </h2>
-        <p>
-          To provide the Services, we collect and have collected over the past
-          12 months personal information about you from a variety of sources, as
-          set out below. The information that we collect and use varies
-          depending on how you interact with us.
-        </p>
-
-        <p>
-          In addition to the specific uses set out below, we may use information
-          we collect about you to communicate with you, provide the Services,
-          comply with any applicable legal obligations, enforce any applicable
-          terms of service, and to protect or defend the Services, our rights,
-          and the rights of our users or others.
-        </p>
-
-        <h3 className="text-xl font-semibold mt-4">
-          What Personal Information We Collect
+        {/* 4. SMS and Text Message Communications */}
+        <h3 className="text-xl font-bold mt-6 mb-2">
+          4. SMS and Text Message Communications
         </h3>
         <p>
-          The types of personal information we obtain about you depend on how
-          you interact with our Site and use our Services. When we use the term
-          {'    "personal information,"'} we are referring to information that
-          identifies, relates to, describes, or can be associated with you. The
-          following sections describe the categories and specific types of
-          personal information we collect.
+          By providing your mobile phone number and consenting to receive SMS
+          communications from Malkain, you agree to receive text messages
+          related to appointment confirmations, reminders, project updates, and
+          follow-up communications regarding our services.
+        </p>
+        <p className="mt-3">
+          <strong>Opt-In:</strong> You will only receive SMS messages from us if
+          you have expressly opted in by submitting your phone number and
+          consenting to receive text communications through our intake forms or
+          other consent mechanisms.
+        </p>
+        <p className="mt-3">
+          <strong>Opt-Out:</strong> You may opt out of receiving SMS messages at
+          any time by replying STOP to any message you receive from us. After
+          opting out, you will no longer receive SMS communications unless you
+          re-subscribe.
+        </p>
+        <p className="mt-3">
+          <strong>Message Frequency:</strong> Message frequency may vary
+          depending on your interaction with our services. Standard message and
+          data rates may apply.
+        </p>
+        <p className="mt-3 font-semibold">
+          Text messaging originator opt-in data and consent will not be shared
+          with any third parties, excluding aggregators and providers of the
+          Text Message services.
         </p>
 
-        <p className="font-semibold mt-2">
-          Information We Collect Directly from You
+        {/* 5. How We Share Your Information */}
+        <h3 className="text-xl font-bold mt-6 mb-2">
+          5. How We Share Your Information
+        </h3>
+        <p>
+          We do not sell, rent, or trade your personal information to third
+          parties. We may share your information only in the following
+          circumstances:
         </p>
-        <ul className="list-disc list-inside ml-6">
+        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
           <li>
-            Basic contact details including your name, address, phone number,
-            email.
+            With service providers who assist us in operating our business (such
+            as email and SMS delivery platforms, scheduling tools, and CRM
+            software), solely for the purpose of providing services on our
+            behalf
           </li>
+          <li>When required by law, regulation, or legal process</li>
           <li>
-            Order information including your name, billing address, shipping
-            address, payment confirmation, email address, phone number.
-          </li>
-          <li>
-            Account information including your username, password, security
-            questions.
-          </li>
-          <li>
-            Shopping information including the items you view, put in your cart,
-            or add to your wishlist.
-          </li>
-          <li>
-            Customer support information including the information you choose to
-            include in communications with us, for example, when sending a
-            message through the Services.
+            To protect the rights, property, or safety of Malkain, our clients,
+            or others
           </li>
         </ul>
 
-        <p className="mt-2">
-          Some features of the Services may require you to directly provide us
-          with certain information about yourself. You may elect not to provide
-          this information, but doing so may prevent you from using or accessing
-          these features.
+        {/* 6. Data Retention */}
+        <h3 className="text-xl font-bold mt-6 mb-2">6. Data Retention</h3>
+        <p>
+          We retain your personal information for as long as necessary to
+          fulfill the purposes outlined in this Privacy Policy, maintain our
+          business records, and comply with applicable legal obligations. When
+          your information is no longer needed, we will securely delete or
+          anonymize it.
         </p>
 
-        {/* More content sections go here as per your text */}
+        {/* 7. Data Security */}
+        <h3 className="text-xl font-bold mt-6 mb-2">7. Data Security</h3>
+        <p>
+          We implement reasonable administrative, technical, and physical
+          safeguards to protect your personal information from unauthorized
+          access, disclosure, alteration, or destruction. However, no method of
+          transmission over the internet or electronic storage is completely
+          secure, and we cannot guarantee absolute security.
+        </p>
 
-        <h3 className="text-xl font-semibold mt-6">
-          How We Use Your Personal Information
+        {/* 8. Your Rights */}
+        <h3 className="text-xl font-bold mt-6 mb-2">8. Your Rights</h3>
+        <p>
+          Depending on your location, you may have the following rights
+          regarding your personal information:
+        </p>
+        <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+          <li>
+            The right to access the personal information we hold about you
+          </li>
+          <li>The right to request correction of inaccurate information</li>
+          <li>The right to request deletion of your personal information</li>
+          <li>
+            The right to opt out of SMS communications at any time by replying
+            STOP
+          </li>
+          <li>
+            The right to withdraw consent where processing is based on consent
+          </li>
+        </ul>
+        <p className="mt-3">
+          To exercise any of these rights, please contact us using the
+          information provided below.
+        </p>
+
+        {/* 9. Cookies and Tracking Technologies */}
+        <h3 className="text-xl font-bold mt-6 mb-2">
+          9. Cookies and Tracking Technologies
         </h3>
         <p>
-          - Providing Products and Services. We use your personal information to
-          provide you with the Services in order to perform our contract with
-          you, including to process your payments, fulfill your orders, to send
-          notifications to you related to your account, purchases, returns,
-          exchanges, or other transactions, to create, maintain, and otherwise
-          manage your account, to arrange for shipping, facilitate any returns
-          and exchanges, and to enable you to post reviews.
+          Our website may use cookies and similar tracking technologies to
+          enhance your browsing experience, analyze site traffic, and understand
+          user behavior. You may disable cookies through your browser settings;
+          however, doing so may affect the functionality of certain features on
+          our website.
         </p>
 
+        {/* 10. Third-Party Links */}
+        <h3 className="text-xl font-bold mt-6 mb-2">10. Third-Party Links</h3>
         <p>
-          - Marketing and Advertising. We use your personal information for
-          marketing and promotional purposes, such as to send marketing,
-          advertising, and promotional communications by email, text message, or
-          postal mail, and to show you advertisements for products or services.
-          This may include using your personal information to better tailor the
-          Services and advertising on our Site and other websites.
+          Our website or communications may contain links to third-party
+          websites. We are not responsible for the privacy practices or content
+          of those websites. We encourage you to review the privacy policies of
+          any third-party sites you visit.
         </p>
 
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">Cookies</h2>
+        {/* 11. Changes to This Privacy Policy */}
+        <h3 className="text-xl font-bold mt-6 mb-2">
+          11. Changes to This Privacy Policy
+        </h3>
         <p>
-          Like many websites, we use Cookies on our Site. For specific
-          information about the Cookies that we use related to powering our
-          store with Shopify, see{" "}
-          <a
-            href="https://www.shopify.com/legal/cookies"
-            className="text-blue-500"
-          >
-            Shopify Cookies Policy
-          </a>
-          . We use Cookies to power and improve our Site and our Services
-          (including to remember your actions and preferences), to run analytics
-          and better understand user interaction with the Services (in our
-          legitimate interests to administer, improve, and optimize the
-          Services). We may also permit third parties and services providers to
-          use Cookies on our Site to better tailor the services, products, and
-          advertising on our Site and other websites.
+          We may update this Privacy Policy from time to time to reflect changes
+          in our practices or applicable laws. We will notify you of any
+          material changes by updating the effective date at the top of this
+          policy. Your continued use of our services after any changes
+          constitutes your acceptance of the updated policy.
         </p>
 
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">
-          How We Disclose Personal Information
-        </h2>
+        {/* 12. Contact Us */}
+        <h3 className="text-xl font-bold mt-6 mb-2">12. Contact Us</h3>
         <p>
-          In certain circumstances, we may disclose your personal information to
-          third parties for legitimate purposes subject to this Privacy Policy.
-          Such circumstances may include...
+          If you have any questions, concerns, or requests regarding this
+          Privacy Policy or the handling of your personal information, please
+          contact us:
         </p>
+        <div className="mt-3 ml-4">
+          <p className="font-semibold">Malkain</p>
+          <p>
+            Email:{" "}
+            <a
+              href="mailto:hello@malkain.com"
+              className="text-blue-600 underline"
+            >
+              hello@malkain.com
+            </a>
+          </p>
+          <p>
+            Website:{" "}
+            <a
+              href="https://www.malkain.com"
+              className="text-blue-600 underline"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              www.malkain.com
+            </a>
+          </p>
+        </div>
 
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">User Generated Content</h2>
-        <p>
-          The Services may enable you to post product reviews and other
-          user-generated content...
-        </p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">
-          Third Party Websites and Links
-        </h2>
-        <p>
-          Our Site may provide links to websites or other online platforms
-          operated by third parties...
-        </p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">{"Children's"} Data</h2>
-        <p>The Services are not intended to be used by children...</p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">
-          Security and Retention of Your Information
-        </h2>
-        <p>
-          Please be aware that no security measures are perfect or
-          impenetrable...
-        </p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">Your Rights and Choices</h2>
-        <p>
-          Depending on where you live, you may have some or all of the rights
-          listed below in relation to your personal information...
-        </p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">Complaints</h2>
-        <p>
-          If you have complaints about how we process your personal
-          information...
-        </p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">International Users</h2>
-        <p>
-          Please note that we may transfer, store, and process your personal
-          information outside the country you live in, including the United
-          States...
-        </p>
-
-        {/* The rest of the content continues here */}
-
-        <h2 className="text-2xl font-semibold mt-6">Contact</h2>
-        <p>
-          Should you have any questions about our privacy practices or this
-          Privacy Policy...
+        <hr className="my-8" />
+        <p className="text-sm text-gray-500 text-center">
+          © 2026 Malkain. All rights reserved.
         </p>
       </div>
     </div>
