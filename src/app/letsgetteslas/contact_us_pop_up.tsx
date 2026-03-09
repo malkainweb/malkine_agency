@@ -21,7 +21,7 @@ const Go_high_level_form = ({
 }: any) => {
   const [start_modal, setstart_modal] = useState(false);
   const searchParams = usePathname();
-  console.log(searchParams);
+  // console.log(searchParams);
   const pathname = usePathname();
   const [isWidget, setIsWidget] = useState(false);
 
@@ -31,12 +31,12 @@ const Go_high_level_form = ({
 
   useEffect(() => {
     setstart_modal(true);
-    if (checkbooking) {
+    if (false) {
       const label = "Go High Level form successfully submitted";
-
       // Facebook Pixel
+
       window.fbq?.("track", "GoHighLevelFormSubmit", { value: label });
-      window.fbq?.("track", "Qualified lead", { value: label });
+      // window.fbq?.("track", "Qualified lead", { value: label });
 
       // Google Analytics
       // window.gtag?.("event", "GoHighLevelFormSubmit", {
@@ -112,9 +112,7 @@ const Go_high_level_form = ({
             <>
               {" "}
               <iframe
-                src={`https://api.leadconnectorhq.com/${
-                  isWidget ? "widget/survey" : "widget/form"
-                }/${form_link}`}
+                src={form_link}
                 style={{
                   width: "100%",
                   height: "100%",

@@ -105,42 +105,9 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
     // });
     // GoogleTrack("ContactUsClick", "appointment successfully submitted");
 
-    if (booking) {
-      setcheckbooking(true);
-      setgo_high_level_start_anime(true);
-      // console.log("tracking booking");
-      return; // Exit early if booking is true
-    }
-    if (appointment) {
-      setcheckappointment(true);
-      setsubmit(true);
-      setgo_high_level_start_anime(true);
-      // Facebook Pixel
-      window.fbq?.("track", "Book appointment", {
-        value: "Go High Level form successfully submitted",
-      });
-
-      // Google Analytics
-      // window.gtag?.("event", "Book appointment", {
-      //   event_category: "Lead Generation",
-      //   event_label: "Go High Level form successfully submitted",
-      // });
-      // console.log("tracking booking");
-      return; // Exit early if booking is true
-    }
-    if (bookcall) {
-      setcheckbookcall(true);
-      setsubmit(true);
-      setgo_high_level_start_anime(true);
-
-      // console.log("tracking booking");
-      return; // Exit early if booking is true
-    }
-
-    // setcheckbookcall(!!bookcall); // ✅ Short way to set true/false based on bookcall
-
     if (search) {
       setsubmit(true);
+
       setgo_high_level_start_anime(true);
 
       console.log("tracking form submit");
@@ -149,6 +116,39 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
       window.fbq?.("track", "GoHighLevelFormSubmit", {
         value: "Go High Level form successfully submitted",
       });
+      if (booking) {
+        setcheckbooking(true);
+        setgo_high_level_start_anime(true);
+        // console.log("tracking booking");
+        return; // Exit early if booking is true
+      }
+      if (appointment) {
+        setcheckappointment(true);
+        setsubmit(true);
+        setgo_high_level_start_anime(true);
+        // Facebook Pixel
+        window.fbq?.("track", "Book appointment", {
+          value: "Go High Level form successfully submitted",
+        });
+
+        // Google Analytics
+        // window.gtag?.("event", "Book appointment", {
+        //   event_category: "Lead Generation",
+        //   event_label: "Go High Level form successfully submitted",
+        // });
+        // console.log("tracking booking");
+        return; // Exit early if booking is true
+      }
+      if (bookcall) {
+        setcheckbookcall(true);
+        setsubmit(true);
+        setgo_high_level_start_anime(true);
+
+        // console.log("tracking booking");
+        return; // Exit early if booking is true
+      }
+
+      // setcheckbookcall(!!bookcall); // ✅ Short way to set true/false based on bookcall
 
       // Google Analytics
       // window.gtag?.("event", "GoHighLevelFormSubmit", {
@@ -192,7 +192,7 @@ const Campaign_Home_wrapper = ({ form_link, id }: any) => {
   }, []);
   return (
     <>
-      {" "}
+      <iframe src={form_link} className="h-0 w-0 absolute top-0 left-0" />
       {edit_text && (
         <Modal_text_edit
           edit_text={edit_text}

@@ -67,7 +67,7 @@ const Modal_text_edit = ({
               onChange={(e) => {
                 settext(e.target.value);
               }}
-              className="border  md:rounded-[1vw] rounded-[1.5vw]  outline-none bg-[black] bg-opacity-[70%] placeholder:text-white capitalize text-white resize-none p-[2%] "
+              className="border  md:rounded-[1vw] rounded-[1.5vw]  outline-none bg-[black] bg-opacity-[70%] placeholder:text-white  text-white resize-none p-[2%] "
               placeholder="input text  here .."
             />
           </div>

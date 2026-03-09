@@ -19,9 +19,7 @@ const Go_high_level_success = ({
     const trackEventsAndRedirect = async () => {
       // Wait a moment to ensure events fire before redirecting
       setTimeout(() => {
-        window.location.replace(
-          "https://api.leadconnectorhq.com/widget/booking/Gl4Yoz2lum9ORHgGCn9E"
-        );
+        window.location.replace("https://calendly.com/emmanuel-malkain/30min");
       }, 1000); // Adjust timing if needed
     };
 

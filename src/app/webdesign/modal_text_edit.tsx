@@ -54,7 +54,7 @@ const Modal_text_edit = ({
           {" "}
           <p className="text-2xl text-center">edit text here</p>
           {/* title and image section */}
-          <div className="flex flex-col md:gap-[0.3vw] gap-[2vw]">
+          <div className="flex flex-col md:gap-[0.3vw]  gap-[2vw]">
             <label className="capitalize " htmlFor="description">
               Type Text here
             </label>

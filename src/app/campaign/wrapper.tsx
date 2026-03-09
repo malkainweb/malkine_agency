@@ -81,24 +81,27 @@ const Campaign_Home_wrapper = () => {
   const searchParams = useSearchParams();
 
   const search = searchParams.get("success");
+  const scheduled = searchParams.get("scheduled");
 
   useEffect(() => {
+    if (scheduled) {
+      window.fbq("track", "Scheduled", {
+        value: "User scheduled a call",
+      });
+      return;
+    }
+
     if (search) {
       setsubmit(true);
-      // console.log("tracking");
       setgo_high_level_start_anime(true);
       window.fbq("track", "GoHighLevelFormSubmit", {
-        value: "Go High Level form successfully submitted", // Optional, to track lead value
+        value: "Go High Level form successfully submitted",
       });
-      // window.gtag("event", "GoHighLevelFormSubmit", {
-      //   event_category: "Lead Generation",
-      //   event_label: "Go High Level form successfully submitted",
-      // });
     } else {
       setgo_high_level_start_anime(false);
       setsubmit(false);
     }
-  }, [search]);
+  }, [search, scheduled]); // 👈 add scheduled to the dependency array
   return (
     <>
       {" "}
