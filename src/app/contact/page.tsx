@@ -104,6 +104,13 @@ export default function Contact() {
   };
 
   const [iframeLoading, setIframeLoading] = useState(true);
+  const [isMobile, setIsMobile] = useState(false);
+  useEffect(() => {
+    const handleResize = () => setIsMobile(window.innerWidth < 760);
+    handleResize(); // run on mount
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <>
@@ -118,13 +125,9 @@ export default function Contact() {
         setopacity={setopacity}
       />
       <div className="w-full  sm:bg-white bg-black">
-        {globalThis.innerWidth < 760 ? (
+        {isMobile ? (
           <>
-            <Home_Header
-              setright={setright}
-              setleft={setleft}
-              setopacity={setopacity}
-            />
+            <Home_Header white={false} />
           </>
         ) : (
           <>
@@ -157,14 +160,14 @@ export default function Contact() {
               </div>
             )}
             {/* <iframe
-          src="https://api.leadconnectorhq.com/widget/form/vSYAkM7blj9WkgrgA7jt"
+          src="https://8i2ouuqe.paperform.co/"
           className="w-full min-h-screen border-none"
         ></iframe> */}
             <div className="w-full  min-h-screen flex flex-col">
               <iframe
-                src="https://api.leadconnectorhq.com/widget/form/vSYAkM7blj9WkgrgA7jt"
+                src="https://8i2ouuqe.paperform.co/"
                 className="w-full flex-grow border-none"
-                style={{ minHeight: "2200px" }} // ← adjust as needed
+                style={{ minHeight: "600px" }} // ← adjust as needed
                 onLoad={() => setIframeLoading(false)}
               ></iframe>
             </div>
