@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import { useRef } from "react";
 import { passion_one, inter_font, PPMoriRegular } from "../utils/fonts";
 
 const services = [
@@ -31,21 +32,34 @@ const services = [
 ];
 
 const ServicesScroll = () => {
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scrollLeft = () => {
+    scrollRef.current?.scrollBy({ left: -300, behavior: "smooth" });
+  };
+
+  const scrollRight = () => {
+    scrollRef.current?.scrollBy({ left: 300, behavior: "smooth" });
+  };
+
   return (
-    <div className="w-full bg-black flex flex-col gap-6 py-10">
+    <div className="w-full bg-black flex flex-col gap-10 sm:gap-8 py-14 sm:py-10">
       {/* Title */}
       <h2
-        className={`${passion_one.className} text-white text-center text-5xl uppercase`}
+        className={`${passion_one.className} text-[#F8F0E5] font-black text-center text-5xl uppercase leading-[0.8] tracking-[-1.61px]`}
       >
         Our Services
       </h2>
 
       {/* Scrolling cards */}
-      <div className="flex overflow-x-auto snap-x snap-mandatory gap-4 px-6 scrollbar-hide">
+      <div
+        ref={scrollRef}
+        className="sm:flex grid md:grid-cols-3 overflow-x-auto snap-x snap-mandatory gap-2 px-3 scrollbar-hide"
+      >
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative min-w-[75vw] h-[75vw] border border-white/10 aspect-[1.1/1] snap-center rounded-2xl overflow-hidden flex-shrink-0"
+            className="relative sm:w-[77vw] border border-white/10 aspect-[1/0.8] sm:aspect-[1.1/1] snap-center rounded-[20.89px] overflow-hidden flex-shrink-0"
           >
             <Image
               src={service.image}
@@ -54,11 +68,7 @@ const ServicesScroll = () => {
               unoptimized
               className="object-cover"
             />
-            {/* Gradient overlay */}
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
-            {/* Bottom blur overlay */}
-            {/* Bottom blur overlay */}
-            {/* Bottom blur overlay */}
             <div
               className="absolute bottom-0 left-0 w-full h-2/5 backdrop-blur-md"
               style={{
@@ -68,15 +78,29 @@ const ServicesScroll = () => {
                   "linear-gradient(to bottom, transparent, black 50%)",
               }}
             />
-
-            {/* Title */}
             <p
-              className={`${PPMoriRegular.className} absolute bottom-4  left-4 text-white text-xl font-medium leading-tight`}
+              className={`${PPMoriRegular.className} absolute bottom-4 left-4 text-white text-xl font-medium leading-tight`}
             >
               {service.title}
             </p>
           </div>
         ))}
+      </div>
+
+      {/* Arrows — mobile only */}
+      <div className="hidden sm:flex  text-4xl justify-center gap-4">
+        <button
+          onClick={scrollLeft}
+          className="w-12 h-12 rounded-full bg-[#2a2a2a] flex items-center justify-center text-white"
+        >
+          <i className=" bi bi-arrow-left-short"></i>
+        </button>
+        <button
+          onClick={scrollRight}
+          className="w-12 h-12 rounded-full bg-[#2a2a2a] flex items-center justify-center text-white"
+        >
+          <i className=" bi bi-arrow-right-short"></i>
+        </button>
       </div>
     </div>
   );
