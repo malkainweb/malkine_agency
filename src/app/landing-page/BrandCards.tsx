@@ -28,7 +28,7 @@ const AnimatedCard = ({ card }: { card: BrandCard }) => {
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["1 1", "0.6 1"],
+    offset: ["1 1", "0.3 1"],
   });
 
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
