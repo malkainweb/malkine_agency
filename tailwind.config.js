@@ -15,6 +15,8 @@ module.exports = {
     },
     screens: {
       sm: { max: "650px" },
+      md: "768px",
+      lg: "1024px",
       // => @media (min-height: 800px) { ... }
     },
   },

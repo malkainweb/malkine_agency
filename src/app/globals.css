@@ -517,3 +517,17 @@ input[type="number"] {
   opacity: 1;
   transform: translateY(0);
 }
+
+@keyframes floatHand {
+  0%,
+  100% {
+    transform: translateY(25px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.float-hand {
+  animation: floatHand 1.6s ease-in-out infinite;
+}

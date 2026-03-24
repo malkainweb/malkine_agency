@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+import { Passion_One, Inter } from "next/font/google";
 
 export const CabinetGrotesk_bold = localFont({
   src: "../../../public/fonts/cabinet_grotest/CabinetGrotesk-Bold.otf",
@@ -27,4 +28,30 @@ export const NeueHaasDisplay_medium = localFont({
 });
 export const aeonik_regular = localFont({
   src: "../../../public/fonts/aeonik/aeoniktrial-regular.otf",
+});
+
+export const passion_one = Passion_One({
+  weight: ["400", "700", "900"],
+  subsets: ["latin"],
+});
+
+export const inter_font = Inter({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+});
+
+export const PPMoriRegular = localFont({
+  src: "../../../public/fonts/pp-mori/PPMori-Regular.otf",
+});
+export const PPMoriLight = localFont({
+  src: "../../../public/fonts/pp-mori/PPMori-Extralight.otf",
+});
+export const PPMoriSemiBold = localFont({
+  src: "../../../public/fonts/pp-mori/PPMori-SemiBold.otf",
+});
+export const PPMoriLightItalic = localFont({
+  src: "../../../public/fonts/pp-mori/PPMori-ExtralightItalic.otf",
+});
+export const PPMoriRegularItalic = localFont({
+  src: "../../../public/fonts/pp-mori/PPMori-RegularItalic.otf",
 });
