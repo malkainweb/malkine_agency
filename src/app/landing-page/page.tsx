@@ -5,6 +5,7 @@ import FixedButton from "./fixedbutton";
 import LandingPageFooter from "./footer";
 import Landing_Services from "./Services";
 import TakeOff from "./TakeOff";
+import VideoHero from "./VideoHero";
 import ServicesScroll from "./we_offer";
 
 export default function Home() {
@@ -12,6 +13,8 @@ export default function Home() {
     <div className="bg-black pb-10">
       <Landing_nav />
       <FixedButton />
+
+      {/* <VideoHero /> */}
 
       <BrandCards />
       <ServicesScroll />

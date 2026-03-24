@@ -33,7 +33,7 @@ const TakeOff = () => {
           </p>
         </div>
       </div>
-      <div className="w-full flex  justify-center items-start sm:items-center  top-0  h-[200vh] sm:h-[200vh] z-10">
+      <div className="w-full flex  justify-center items-start sm:items-start  top-0  h-[200vh] sm:h-[150vh] z-10">
         {" "}
         <Image
           src={mobile_jet}
