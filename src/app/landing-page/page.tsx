@@ -4,6 +4,7 @@ import BrandCards from "./BrandCards";
 import FixedButton from "./fixedbutton";
 import LandingPageFooter from "./footer";
 import Landing_Services from "./Services";
+import TakeOff from "./TakeOff";
 import ServicesScroll from "./we_offer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
 
       <BrandCards />
       <ServicesScroll />
+      <TakeOff />
       <LandingAbout />
       <Landing_Services />
       <LandingPageFooter />

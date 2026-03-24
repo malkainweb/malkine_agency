@@ -91,13 +91,13 @@ const ServicesScroll = () => {
       <div className="hidden sm:flex  text-4xl justify-center gap-4">
         <button
           onClick={scrollLeft}
-          className="w-12 h-12 rounded-full bg-[#2a2a2a] flex items-center justify-center text-white"
+          className="w-12 h-12 rounded-full bg-[white]/20 flex items-center justify-center text-white"
         >
           <i className=" bi bi-arrow-left-short"></i>
         </button>
         <button
           onClick={scrollRight}
-          className="w-12 h-12 rounded-full bg-[#2a2a2a] flex items-center justify-center text-white"
+          className="w-12 h-12 rounded-full bg-[white]/20 flex items-center justify-center text-white"
         >
           <i className=" bi bi-arrow-right-short"></i>
         </button>
