@@ -4,13 +4,16 @@ import BrandCards from "./BrandCards";
 import FixedButton from "./fixedbutton";
 import LandingPageFooter from "./footer";
 import Landing_Services from "./Services";
+import ServicesScroll from "./we_offer";
 
 export default function Home() {
   return (
     <div className="bg-black pb-10">
       <Landing_nav />
       <FixedButton />
+
       <BrandCards />
+      <ServicesScroll />
       <LandingAbout />
       <Landing_Services />
       <LandingPageFooter />
