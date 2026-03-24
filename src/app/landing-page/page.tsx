@@ -16,8 +16,8 @@ export default function Home() {
       <BrandCards />
       <ServicesScroll />
       <TakeOff />
-      <LandingAbout />
-      <Landing_Services />
+      {/* <LandingAbout /> */}
+
       <LandingPageFooter />
     </div>
   );

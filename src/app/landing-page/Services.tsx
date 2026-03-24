@@ -19,7 +19,7 @@ const stats = [
 
 const Landing_Services = () => {
   return (
-    <div className="w-full bg-black sm:items-start items-center py-10 flex flex-col gap-5">
+    <div className="w-full bg-black sm:items-start z-10 items-center py-10 flex flex-col gap-5">
       {/* Title */}
       <h2
         className={`${passion_one.className} w-full   text-[#F3EBE0] tracking-[-1.91px] font-black text-center text-5xl uppercase`}

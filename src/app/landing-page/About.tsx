@@ -8,7 +8,7 @@ import right from "@/../public/malkain_landing_page/right.webp";
 
 const LandingAbout = () => {
   return (
-    <div className="w-full bg-black flex flex-col items-center py-16 sm:py-14 gap-10 px-6">
+    <div className="w-full bg-black z-10 flex flex-col items-center py-16 sm:py-20 gap-10 px-6">
       {/* Title */}
       <h2
         className={`${passion_one.className} text-[#F8F0E5] font-black text-center text-5xl uppercase leading-[0.8] tracking-[-1.61px]`}
