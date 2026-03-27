@@ -21,6 +21,14 @@ const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
     }, 700);
   };
 
+  useEffect(() => {
+    setstart_modal(true);
+    document.body.style.overflowY = "hidden";
+
+    return () => {
+      document.body.style.overflowY = "auto";
+    };
+  }, []);
   const [canLoadIframe, setCanLoadIframe] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {

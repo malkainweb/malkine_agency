@@ -25,7 +25,12 @@ interface BrandCard {
 const cards: BrandCard[] = [
   { title: "Brala's Best", image: brala, link: "https://bralasbest.com/" },
   { title: "Pawp Water", image: pawpwater, link: "https://pawpwater.com/" },
-  { title: "Anzza", image: anzaa, link: "https://6grqhe-iu.myshopify.com" },
+  {
+    title: "Anzza",
+    image: anzaa,
+    link: "https://6grqhe-iu.myshopify.com",
+    open_iframe: true,
+  },
   {
     title: "With Character",
     image: withcharacter,
@@ -44,7 +49,12 @@ const cards: BrandCard[] = [
     image: thirsty_bastard,
     link: "https://www.thirstybastardwater.com/",
   },
-  { title: "Koffiracha", image: koffiracha, link: "https://koffiracha.com/" },
+  {
+    title: "Koffiracha",
+    image: koffiracha,
+    link: "https://koffiracha.com/",
+    open_iframe: true,
+  },
 ];
 
 const AnimatedCard = ({
