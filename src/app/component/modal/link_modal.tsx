@@ -25,7 +25,7 @@ const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     setIsLoading(start_modal);
-    console.log(start_modal);
+    // console.log(start_modal);
   }, [start_modal]);
   const handleLoad = () => {
     setIsLoading(false);

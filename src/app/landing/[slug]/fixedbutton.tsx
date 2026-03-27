@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { inter_font } from "../utils/fonts";
+import { inter_font } from "../../utils/fonts";
 
 const FixedButton = () => {
   return (

@@ -1,12 +1,10 @@
 import Landing_nav from "../component/landing_template/landing_nav";
-import LandingAbout from "./About";
-import BrandCards from "./BrandCards";
-import FixedButton from "./fixedbutton";
-import LandingPageFooter from "./footer";
-import Landing_Services from "./Services";
-import TakeOff from "./TakeOff";
-import VideoHero from "./VideoHero";
-import ServicesScroll from "./we_offer";
+import LandingAbout from "./[slug]/About";
+import BrandCards from "./[slug]/BrandCards";
+import FixedButton from "./[slug]/fixedbutton";
+import LandingPageFooter from "./[slug]/footer";
+import TakeOff from "./[slug]/TakeOff";
+import ServicesScroll from "./[slug]/we_offer";
 
 export default function Home() {
   return (

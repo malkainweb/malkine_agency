@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { passion_one, inter_font, PPMoriRegular } from "../utils/fonts";
+import { passion_one, inter_font, PPMoriRegular } from "../../utils/fonts";
 import center from "@/../public/malkain_landing_page/center.webp";
 import left from "@/../public/malkain_landing_page/left.webp";
 import right from "@/../public/malkain_landing_page/right.webp";

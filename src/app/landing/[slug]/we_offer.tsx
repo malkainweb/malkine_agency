@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { passion_one, inter_font, PPMoriRegular } from "../utils/fonts";
+import { passion_one, inter_font, PPMoriRegular } from "../../utils/fonts";
 
 const services = [
   {

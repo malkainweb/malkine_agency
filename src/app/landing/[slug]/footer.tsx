@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { inter_font } from "../utils/fonts";
+import { inter_font } from "../../utils/fonts";
 import hand from "@/../public/malkain_landing_page/hand.webp";
 
 const LandingPageFooter = () => {

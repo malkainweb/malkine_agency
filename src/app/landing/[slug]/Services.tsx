@@ -1,6 +1,10 @@
 "use client";
 
-import { CabinetGrotesk_medium, inter_font, passion_one } from "../utils/fonts";
+import {
+  CabinetGrotesk_medium,
+  inter_font,
+  passion_one,
+} from "../../utils/fonts";
 
 const stats = [
   {
