@@ -40,6 +40,8 @@ import BrandCards from "./BrandCards";
 import ServicesScroll from "./we_offer";
 import TakeOff from "./TakeOff";
 import LandingPageFooter from "./footer";
+import Landing_past_work_template from "./landing_past_work_template";
+import Landing_Hero_section from "./Hero_section";
 
 const Landing_Home_wrapper = ({ form_link, id }: any) => {
   const process = [
@@ -266,7 +268,7 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
       {/* DESKTOP SCREENS  */}
       <div className=" md:block sm:hidden">
         <Campaign_hero show_btn={true} form_link={form_link} />
-        <Past_work_template sethide_nav={sethide_nav} />
+        <Landing_past_work_template sethide_nav={sethide_nav} />
         <Campaign_New_scroll_hand />
         <MalkainIsForYouIf />
         <div className="sm:block hidden">
@@ -303,12 +305,13 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
       {/* MOBILE SCREENS */}
 
       <div className="sm:block bg-black md:hidden">
+        <Landing_Hero_section />
         <BrandCards />
         <ServicesScroll />
         <TakeOff />
         {/* <LandingAbout /> */}
 
-        <LandingPageFooter />
+        <LandingPageFooter form_link={form_link} show_btn={true} />
       </div>
       {/* <Calendy text_color={"#000000"} /> */}
       {/* <Footer landing={true} btn_bg_color={"#D01717"} /> */}

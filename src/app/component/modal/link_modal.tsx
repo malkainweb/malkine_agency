@@ -18,17 +18,18 @@ const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
 
     setTimeout(() => {
       setstart_anime(false);
-    }, 700);
+    }, 300);
   };
 
   useEffect(() => {
     setstart_modal(true);
-    document.body.style.overflowY = "hidden";
+    document.body.classList.add("hide_now");
 
     return () => {
-      document.body.style.overflowY = "auto";
+      document.body.classList.remove("hide_now");
     };
   }, []);
+
   const [canLoadIframe, setCanLoadIframe] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
