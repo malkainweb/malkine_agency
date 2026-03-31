@@ -4,8 +4,8 @@ import {
   NeueHaasDisplay_medium,
   NeueHaasDisplay_roman,
 } from "@/app/utils/fonts";
-import onphone from "@/../public/malkain_landing_page/onphone.png";
-import offphone from "@/../public/malkain_landing_page/offphone.png";
+import onphone from "@/../public/malkain_landing_page/onphone.webp";
+import offphone from "@/../public/malkain_landing_page/offphone.webp";
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
