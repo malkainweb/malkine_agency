@@ -12,7 +12,7 @@ const Landing_Hero_section = () => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["0.7 1", "1.13 1"],
+    offset: ["0.7 1", "0.9 1"],
   });
 
   const scale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
