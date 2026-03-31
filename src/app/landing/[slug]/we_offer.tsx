@@ -3,31 +3,17 @@
 import Image from "next/image";
 import { useRef } from "react";
 import { passion_one, inter_font, PPMoriRegular } from "../../utils/fonts";
+import website from "@/../public/malkain_landing_page/website.webp";
+import ads from "@/../public/malkain_landing_page/ads.webp";
 
 const services = [
   {
-    title: "Ecommerce Web Design",
-    image: "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600",
+    title: "Website & Platform Design",
+    image: website,
   },
   {
-    title: "Web Development",
-    image: "https://images.unsplash.com/photo-1547658719-da2b51169166?w=600",
-  },
-  {
-    title: "Brand Identity",
-    image: "https://images.unsplash.com/photo-1634942537034-2531766767d1?w=600",
-  },
-  {
-    title: "Mobile App Design",
-    image: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=600",
-  },
-  {
-    title: "SEO & Marketing",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600",
-  },
-  {
-    title: "UI/UX Design",
-    image: "https://images.unsplash.com/photo-1561070791-2526d30994b5?w=600",
+    title: "Marketing ads design",
+    image: ads,
   },
 ];
 
@@ -59,13 +45,12 @@ const ServicesScroll = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative sm:w-[77vw] border border-white/10 aspect-[1/0.8] sm:aspect-[1.1/1] snap-center rounded-[20.89px] overflow-hidden flex-shrink-0"
+            className="relative sm:w-[83vw] border border-white/10 aspect-[1/0.8] sm:aspect-[1.1/1] snap-center rounded-[20.89px] overflow-hidden flex-shrink-0"
           >
             <Image
               src={service.image}
               alt={service.title}
               fill
-              unoptimized
               className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent" />
@@ -79,7 +64,7 @@ const ServicesScroll = () => {
               }}
             />
             <p
-              className={`${PPMoriRegular.className} absolute bottom-4 left-4 text-white text-xl font-medium leading-tight`}
+              className={`${PPMoriRegular.className} max-w-[70%] text-balance absolute bottom-4 left-4 text-white text-xl font-medium leading-tight`}
             >
               {service.title}
             </p>

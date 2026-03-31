@@ -68,21 +68,21 @@ const AnimatedCard = ({
 
   const { scrollYProgress } = useScroll({
     target: ref,
-    offset: ["1 1", "0.3 1"],
+    offset: ["1 1", "0.1 1"],
   });
 
   const rotate = useTransform(scrollYProgress, [0, 1], [0, 10]);
-  const y = useTransform(scrollYProgress, [0, 1], [0, 100]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, 80]);
   const x = useTransform(scrollYProgress, [0, 1], [0, 10]);
 
   return (
     <motion.div
       ref={ref}
       style={{ rotate, y, x, transition: "0.3s ease-out" }}
-      className="w-full bg-[#F2EDD8] p-1.5 rounded-[5.38px] flex flex-col gap-3"
+      className="w-full bg-[#F2EDD8] p-1.5 rounded-[30px] flex flex-col gap-3"
     >
       {/* Image */}
-      <div className="w-full aspect-[1.7/1] rounded-[5.38px] relative overflow-hidden">
+      <div className="w-full aspect-[1.7/1] rounded-[23px] relative overflow-hidden">
         <Image
           src={card.image}
           alt={card.title}
@@ -92,14 +92,14 @@ const AnimatedCard = ({
       </div>
 
       {/* Title */}
-      <h2 className="text-[#D01717] mt-3 text-center text-4xl leading-none font-normal uppercase">
+      <h2 className="text-[#EA541D] mt-3 text-center text-4xl leading-none font-normal uppercase">
         {card.title}
       </h2>
 
       {/* Button */}
       <button
         onClick={() => onViewMore(card)}
-        className={`${inter_font.className} w-full bg-[#D01717] text-white text-center py-4 rounded-lg sm:text-sm text-xs uppercase`}
+        className={`${inter_font.className} w-full bg-[#EA541D] text-white text-center py-4 rounded-full sm:text-sm text-xs uppercase`}
       >
         VIEW MORE
       </button>

@@ -531,3 +531,15 @@ input[type="number"] {
 .float-hand {
   animation: floatHand 1.6s ease-in-out infinite;
 }
+
+.inner-shadow-text {
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-color: rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(2px -1px 1.3px rgba(1, 49, 105, 0.34));
+}
+
+.text-balance {
+  text-wrap: balance;
+}

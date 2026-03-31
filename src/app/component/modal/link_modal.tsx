@@ -29,7 +29,6 @@ const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
       document.body.classList.remove("hide_now");
     };
   }, []);
-
   const [canLoadIframe, setCanLoadIframe] = useState<any>(null);
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {

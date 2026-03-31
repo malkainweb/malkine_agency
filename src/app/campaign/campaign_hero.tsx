@@ -17,7 +17,7 @@ import gif from "../../../public/campaign/hero/hero.gif";
 import img from "../../../public/campaign/hero/hero.webp";
 import Go_high_level_form from "../letsgetteslas/contact_us_pop_up";
 
-const Campaign_hero = ({ show_btn, form_link, goggle }: any) => {
+const Campaign_hero = ({ show_btn, form_link, goggle, text }: any) => {
   const width = globalThis.innerWidth;
 
   const [compt_width, setcompt_width] = useState(0);
@@ -70,8 +70,14 @@ const Campaign_hero = ({ show_btn, form_link, goggle }: any) => {
                     : "text-[8vw] leading-[8.3vw]"
                 } `}
               >
-                {goggle ? "Ecommerce websites" : "Websites"} built for
-                yesterday, won{"'"}t convert today{"'"}s customers
+                {text ? (
+                  <></>
+                ) : (
+                  <>
+                    {goggle ? "Ecommerce websites" : "Websites"} built for
+                    yesterday, won{"'"}t convert today{"'"}s customers
+                  </>
+                )}
               </h1>{" "}
               <p
                 className={`${NeueHaasDisplay_light.className} relative text-center text-[5vw] leading-[6vw] text-white`}
@@ -98,15 +104,26 @@ const Campaign_hero = ({ show_btn, form_link, goggle }: any) => {
           leading-[4.5vw] sm:leading-[7.5vw] ${NeueHaasDisplay_roman.className}
           `}
         >
-          {goggle ? "Ecommerce websites" : "Websites"} built for yesterday, won
-          {"'"}t <br /> convert today{"'"}s customers{" "}
-          <span className="text-[#FF0000]"> </span>
+          {text ? (
+            <>
+              We build CRO <br /> e-commerce
+              <span className="text-[#FF0000]"> websites</span>{" "}
+            </>
+          ) : (
+            <>
+              {goggle ? "Ecommerce websites" : "Websites"} built for yesterday,
+              won
+              {"'"}t <br /> convert today{"'"}s customers{" "}
+            </>
+          )}
         </h1>
-        <p
-          className={`${NeueHaasDisplay_light.className}  relative text-center text-[2vw] leading-[2.2vw] `}
-        >
-          Let{"'"}s get you a website for your type of business.{" "}
-        </p>
+        {!text && (
+          <p
+            className={`${NeueHaasDisplay_light.className}  relative text-center text-[2vw] leading-[2.2vw] `}
+          >
+            Let{"'"}s get you a website for your type of business.
+          </p>
+        )}
         {/* <div className="flex flex-col sm:gap-[6vw] gap-[1vw] ">
           <p
             className={`${NeueHaasDisplay_medium.className} sm:text-[12vw] text-[3vw] sm:leading-[11vw]`}

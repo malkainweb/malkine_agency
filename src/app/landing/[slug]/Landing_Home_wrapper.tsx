@@ -267,7 +267,7 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
       {/* DESKTOP SCREENS  */}
       {/* DESKTOP SCREENS  */}
       <div className=" md:block sm:hidden">
-        <Campaign_hero show_btn={true} form_link={form_link} />
+        <Campaign_hero text={true} show_btn={true} form_link={form_link} />
         <Landing_past_work_template sethide_nav={sethide_nav} />
         <Campaign_New_scroll_hand />
         <MalkainIsForYouIf />

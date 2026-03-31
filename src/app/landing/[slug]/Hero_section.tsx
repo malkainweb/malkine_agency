@@ -1,8 +1,11 @@
 "use client";
 
-import { NeueHaasDisplay_medium } from "@/app/utils/fonts";
-import phone_onlyimg from "@/../public/malkain_landing_page/phone_only.webp";
-import fullhandimg from "@/../public/malkain_landing_page/fullhand.webp";
+import {
+  NeueHaasDisplay_medium,
+  NeueHaasDisplay_roman,
+} from "@/app/utils/fonts";
+import onphone from "@/../public/malkain_landing_page/onphone.png";
+import offphone from "@/../public/malkain_landing_page/offphone.png";
 import Image from "next/image";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -12,43 +15,61 @@ const Landing_Hero_section = () => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["0.7 1", "0.9 1"],
+    offset: ["0.35 1", "1 1"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 1], [1.5, 1]);
-  const y = useTransform(scrollYProgress, [0, 1], ["27%", "0%"]);
-  const x = useTransform(scrollYProgress, [0, 1], ["10%", "0%"]);
-  const rotate = useTransform(scrollYProgress, [0, 1], [-12, 0]);
+  const scale = useTransform(scrollYProgress, [0, 0.9], [1, 12]);
+  const onPhoneOpacity = useTransform(scrollYProgress, [0, 0.95], [1, 0]);
+  const offPhoneOpacity = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
 
+  // style={{ scale, y, x, rotate, transition: "0.2s ease-out" }}
   return (
     <>
       <div
         ref={containerRef}
-        className="w-full flex flex-col gap-6 relative h-[160vh] pt-32 text-white"
+        className="w-full flex overflow-clip flex-col gap-6 relative h-[300vh] text-white"
       >
         <h1
-          className={`${NeueHaasDisplay_medium.className} text-4xl leading-[1] text-center`}
+          className={`text-white/50 ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl text-center absolute top-32 z-10`}
+          // style={{
+          //   textShadow: "2px -1px 1.3px rgba(1, 49, 105, 0.84) inset",
+          // }}
         >
-          We build Websites <br />
-          that <span className="text-[#EA1F2E]">convert</span> & tell your{" "}
-          <br /> brand{"'"}s story
+          We build CRO E-Commerce{" "}
+          <span className="text-[#EA1D2F]">Websites</span>
         </h1>
-
-        <motion.div
-          style={{ scale, y, x, rotate, transition: "0.2s ease-out" }}
-          className="sticky top-40 z-10 left-0 w-full"
-        >
-          <Image src={phone_onlyimg} alt="hand" className="w-full" />
-        </motion.div>
-
-        <Image
-          src={fullhandimg}
-          alt="hand"
-          className="absolute bottom-0 left-0 w-full"
-        />
-        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black via-10% h-20" />
+        <div className=" sticky top-0 h-screen bg-gradient-to-b from-[#021A49] to-[#0166B0]">
+          <motion.div
+            style={{
+              scale,
+              originX: "27.85%",
+              originY: "46.7%",
+            }}
+            className="w-full flex justify-end h-full items-end   relative"
+          >
+            <motion.div
+              style={{ opacity: onPhoneOpacity }}
+              className="w-full z-10 max-h-[76vh]"
+            >
+              <Image
+                src={onphone}
+                alt="onphone"
+                className="w-full max-h-[76vh] object-contain"
+              />
+            </motion.div>
+            <motion.div
+              style={{ opacity: offPhoneOpacity }}
+              className="w-full absolute bottom-0 opacity-0 left-0 max-h-[76vh]"
+            >
+              <Image
+                src={offphone}
+                alt="offphone"
+                className="w-full absolute bottom-0 left-0 max-h-[76vh]  object-contain "
+              />
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
-      <div className="h-24"></div>
     </>
   );
 };

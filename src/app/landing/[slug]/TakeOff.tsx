@@ -14,22 +14,21 @@ const TakeOff = () => {
         <div className=" absolute top-0 left-0 w-full h-[30%] sm:h-[20%] bg-gradient-to-b to-transparent from-black" />
         {/* Title */}
         <h2
-          className={`${passion_one.className} text-[#2D150A] md:max-w-sm tracking-[-3.3px] sm:text-center sm:text-[13vw] md:text-7xl font-normal sm:leading-tight`}
+          className={`${passion_one.className} text-[#2D150A] md:max-w-sm tracking-[-1px] sm:text-center sm:text-[13vw] md:text-7xl font-normal sm:leading-[10vw]`}
         >
-          We help you take off.
+          Websites Built For Takeoff. Optimized To Land Your Next 100,000 Sales
         </h2>
 
         {/* Bottom */}
         <div className="flex flex-col gap-6">
           <hr className="border-[#2D150A] sm:block hidden" />
           <p
-            className={`${PPMoriRegular.className} md:max-w-md w-full text-[#1a0f00] text-sm leading-relaxed`}
+            className={`${PPMoriRegular.className} text-center  md:max-w-md w-full text-[#1a0f00] text-sm leading-relaxed`}
           >
-            At Malkain, we design and build websites that drive results. Each
-            project is crafted for performance, aesthetics, and seamless user
-            experience. At Malkain, we design and build websites that drive
-            results. Each project is crafted for performance, aesthetics, and
-            seamless user experience.
+            Getting traffic to your landing page is just the runway. We make
+            sure it takes off. Every page we build is CRO-optimized from the
+            first headline to the final call to action — engineered to turn
+            clicks into customers."
           </p>
         </div>
       </div>

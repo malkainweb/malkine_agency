@@ -28,7 +28,7 @@ const Landing_Services = () => {
       <h2
         className={`${passion_one.className} w-full   text-[#F3EBE0] tracking-[-1.91px] font-black text-center text-5xl uppercase`}
       >
-        Our Services
+        about Us
       </h2>
 
       {/* Scrolling cards */}
