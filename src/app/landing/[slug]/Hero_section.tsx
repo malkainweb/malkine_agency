@@ -15,7 +15,7 @@ const Landing_Hero_section = () => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["0.35 1", "1 1"],
+    offset: ["0.5 1", "1 1"],
   });
 
   const scale = useTransform(scrollYProgress, [0, 0.9], [1, 12.5]);
@@ -27,7 +27,7 @@ const Landing_Hero_section = () => {
     <>
       <div
         ref={containerRef}
-        className="w-full flex overflow-clip flex-col gap-6 relative h-[300vh] text-white"
+        className="w-full flex overflow-clip flex-col gap-6 relative h-[200vh] text-white"
       >
         <h1
           className={`text-white/50 w-full  text-center mx-auto ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl  absolute top-32 z-10`}
