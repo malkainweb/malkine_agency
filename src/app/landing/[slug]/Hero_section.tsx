@@ -18,7 +18,7 @@ const Landing_Hero_section = () => {
     offset: ["0.35 1", "1 1"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.9], [1, 12]);
+  const scale = useTransform(scrollYProgress, [0, 0.9], [1, 12.5]);
   const onPhoneOpacity = useTransform(scrollYProgress, [0, 0.95], [1, 0]);
   const offPhoneOpacity = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
 
@@ -42,7 +42,7 @@ const Landing_Hero_section = () => {
           <motion.div
             style={{
               scale,
-              originX: "27.85%",
+              originX: "29.5%",
               originY: "46.7%",
             }}
             className="w-full flex justify-end h-full items-end   relative"
