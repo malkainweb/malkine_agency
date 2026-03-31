@@ -30,13 +30,13 @@ const Landing_Hero_section = () => {
         className="w-full flex overflow-clip flex-col gap-6 relative h-[300vh] text-white"
       >
         <h1
-          className={`text-white/50 ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl text-center absolute top-32 z-10`}
+          className={`text-white/50 w-full  text-center mx-auto ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl  absolute top-32 z-10`}
           // style={{
           //   textShadow: "2px -1px 1.3px rgba(1, 49, 105, 0.84) inset",
           // }}
         >
-          We build CRO E-Commerce{" "}
-          <span className="text-[#EA1D2F]">Websites</span>
+          We build CRO E- <br />
+          Commerce <span className="text-[#EA1D2F]">Websites</span>
         </h1>
         <div className=" sticky top-0 h-screen bg-gradient-to-b from-[#021A49] to-[#0166B0]">
           <motion.div
