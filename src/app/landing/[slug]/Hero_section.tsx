@@ -18,7 +18,7 @@ const Landing_Hero_section = () => {
     offset: ["0.48 1", "1 1"],
   });
 
-  const scale = useTransform(scrollYProgress, [0, 0.9], [3, 12.5]);
+  const scale = useTransform(scrollYProgress, [0, 0.9], [1, 13.5]);
   const onPhoneOpacity = useTransform(scrollYProgress, [0, 0.95], [1, 0]);
   // const offPhoneOpacity = useTransform(scrollYProgress, [0, 0.95], [0, 1]);
 
