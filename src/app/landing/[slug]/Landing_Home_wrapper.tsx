@@ -209,7 +209,7 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
           record_id={record_id}
         />
       )}
-      {hide_nav && <Landing_nav />}
+      {/* {hide_nav && <Landing_nav />} */}
       {go_high_level_start_anime && (
         <Go_high_level_form
           submit={submit}
@@ -234,8 +234,8 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
             text={form_link}
           />
         )}{" "}
-        <div className=" hidden h-full blur-[25px] sm:block border2 w-full bg-black  absolute bottom-0 left-0  "></div>
-        <button
+        {/* <div className=" hidden h-full blur-[25px] sm:block border2 w-full bg-black  absolute bottom-0 left-0  "></div> */}
+        {/* <button
           onClick={() => {
             setgo_high_level_start_anime(true);
             window.fbq("track", "ContactUsClick", {
@@ -252,7 +252,7 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
             {" "}
             Book a call
           </p>
-        </button>
+        </button> */}
       </div>
       {/* this is because of what we are implementing on there tha'ts why i am changing this  */}
       <div className="h-[6vw] sm:h-[25vw] sm:hidden "></div>
