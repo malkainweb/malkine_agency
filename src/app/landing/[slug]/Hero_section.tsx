@@ -89,8 +89,8 @@ const Landing_Hero_section = () => {
         </h1>
 
         <div
-          style={{ height: vh ? `${vh}px` : "100dvh" }}
-          className="sticky bottom-0 flex items-center justify-center bg-gradient-to-b from-[#021A49] to-[#0166B0]"
+          // style={{ height: vh ? `${vh}px` : "100dvh" }}
+          className="sticky bottom-0 h-screen flex items-center justify-center bg-gradient-to-b from-[#021A49] to-[#0166B0]"
         >
           <canvas ref={canvasRef} className="w-full h-full object-cover" />
         </div>
