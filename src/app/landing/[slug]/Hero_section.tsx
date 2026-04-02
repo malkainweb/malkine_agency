@@ -14,6 +14,7 @@ const Landing_Hero_section = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const framesRef = useRef<HTMLImageElement[]>([]);
   const [vh, setVh] = useState(0);
+  const [allLoaded, setAllLoaded] = useState(false);
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
@@ -28,19 +29,24 @@ const Landing_Hero_section = () => {
   // Preload all frames
   useEffect(() => {
     const frames: HTMLImageElement[] = [];
+    let loadedCount = 0;
 
     for (let i = 1; i <= TOTAL_FRAMES; i++) {
       const img = new window.Image();
       img.src = getFrameSrc(i);
+
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === TOTAL_FRAMES) {
+          setAllLoaded(true);
+          drawFrame(0);
+        }
+      };
+
       frames.push(img);
     }
 
     framesRef.current = frames;
-
-    // Draw first frame once loaded
-    frames[0].onload = () => {
-      drawFrame(0);
-    };
   }, []);
 
   const drawFrame = (index: number) => {
@@ -58,6 +64,8 @@ const Landing_Hero_section = () => {
 
   // Scrub frames on scroll
   useEffect(() => {
+    if (!allLoaded) return;
+
     let rafId: number;
 
     const unsubscribe = scrollYProgress.on("change", (v) => {
@@ -72,7 +80,7 @@ const Landing_Hero_section = () => {
       unsubscribe();
       cancelAnimationFrame(rafId);
     };
-  }, [scrollYProgress]);
+  }, [scrollYProgress, allLoaded]);
 
   return (
     <>
@@ -81,17 +89,19 @@ const Landing_Hero_section = () => {
         className="w-full flex flex-col justify-end overflow-clip gap-6 relative h-[200vh] text-white"
       >
         <h1
-          className={`text-white/50 w-full  text-center mx-auto ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl absolute top-32 z-10`}
+          className={`text-white/50 w-full text-center mx-auto ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl absolute top-32 z-10`}
         >
           We build CRO E-
           <br />
           Commerce <span className="text-[#EA1D2F]">Websites</span>
         </h1>
 
-        <div
-          // style={{ height: vh ? `${vh}px` : "100dvh" }}
-          className="sticky bottom-0 h-screen flex items-center justify-center bg-gradient-to-b from-[#021A49] to-[#0166B0]"
-        >
+        <div className="sticky bottom-0 h-screen flex items-center justify-center bg-gradient-to-b from-[#021A49] to-[#0166B0]">
+          {!allLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="loader" />
+            </div>
+          )}
           <canvas ref={canvasRef} className="w-full h-full object-cover" />
         </div>
       </div>
