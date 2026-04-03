@@ -102,10 +102,7 @@ const Landing_Hero_section = () => {
               <div className="loader" />
             </div>
           )}
-          <canvas
-            ref={canvasRef}
-            className="w-full h-full  object-cover bg-gradient-to-b from-[#B0B2AF]"
-          />
+          <canvas ref={canvasRef} className="w-full h-full  object-cover " />
         </div>
       </div>
     </>
