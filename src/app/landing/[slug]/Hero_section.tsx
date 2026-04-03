@@ -1,10 +1,15 @@
 "use client";
 
-import { NeueHaasDisplay_roman } from "@/app/utils/fonts";
+import {
+  NeueHaasDisplay_medium,
+  NeueHaasDisplay_roman,
+} from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
 import { useScroll } from "framer-motion";
 
-const TOTAL_FRAMES = 70;
+const START_FRAME = 36;
+const END_FRAME = 70;
+const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 35 frames
 
 const getFrameSrc = (index: number) =>
   `/malkain_landing_page/frames2/frame_${String(index).padStart(4, "0")}.jpg`;
@@ -18,42 +23,12 @@ const Landing_Hero_section = () => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    // offset: ["0.23 1", "1 1"],
-    offset: ["0.6 1", "1 1"],
+    offset: ["0.62 1", "1 1"],
   });
 
   // Lock viewport height on mount
   useEffect(() => {
     setVh(window.innerHeight);
-  }, []);
-
-  // Preload all frames
-  useEffect(() => {
-    const frames: HTMLImageElement[] = [];
-    let loadedCount = 0;
-
-    for (let i = 1; i <= TOTAL_FRAMES; i++) {
-      const img = new window.Image();
-      img.src = getFrameSrc(i);
-
-      img.onload = () => {
-        loadedCount++;
-        if (loadedCount === TOTAL_FRAMES) {
-          setAllLoaded(true);
-          // Draw the correct frame based on current scroll position
-          const currentProgress = scrollYProgress.get();
-          const index = Math.min(
-            Math.floor(currentProgress * TOTAL_FRAMES),
-            TOTAL_FRAMES - 1
-          );
-          drawFrame(index);
-        }
-      };
-
-      frames.push(img);
-    }
-
-    framesRef.current = frames;
   }, []);
 
   const drawFrame = (index: number) => {
@@ -68,6 +43,34 @@ const Landing_Hero_section = () => {
     canvas.height = frame.naturalHeight;
     ctx.drawImage(frame, 0, 0);
   };
+
+  // Preload all frames
+  useEffect(() => {
+    const frames: HTMLImageElement[] = [];
+    let loadedCount = 0;
+
+    for (let i = START_FRAME; i <= END_FRAME; i++) {
+      const img = new window.Image();
+      img.src = getFrameSrc(i);
+
+      img.onload = () => {
+        loadedCount++;
+        if (loadedCount === TOTAL_FRAMES) {
+          setAllLoaded(true);
+          const currentProgress = scrollYProgress.get();
+          const index = Math.min(
+            Math.floor(currentProgress * TOTAL_FRAMES),
+            TOTAL_FRAMES - 1
+          );
+          drawFrame(index);
+        }
+      };
+
+      frames.push(img);
+    }
+
+    framesRef.current = frames;
+  }, []);
 
   // Scrub frames on scroll
   useEffect(() => {
@@ -93,23 +96,25 @@ const Landing_Hero_section = () => {
     <>
       <div
         ref={containerRef}
-        className="w-full flex flex-col justify-end overflow-clip gap-6 bg-white  relative h-[160vh] text-white"
+        className="w-full flex flex-col justify-end overflow-clip gap-6 bg-white relative h-[160vh] text-white"
       >
         <h1
-          className={`text-black/70 w-full text-center mx-auto ${NeueHaasDisplay_roman.className}  text-4xl absolute top-32 z-10`}
+          className={`text-black/90 w-full text-center mx-auto ${NeueHaasDisplay_medium.className} text-4xl absolute top-32 z-10`}
         >
-          We build CRO E-
-          <br />
-          Commerce <span className="text-[#EA1D2F]">Websites</span>
+          We build CRO <br /> E-Commerce{" "}
+          <span className="text-[#EA1D2F]">Websites</span>
         </h1>
 
-        <div className="sticky bottom-0 h-screen flex items-center  bg-white justify-center bg-gradient-to-b ">
+        <div
+          style={{ height: vh ? `${vh}px` : "100dvh" }}
+          className="sticky bottom-0 flex items-center bg-white justify-center"
+        >
           {!allLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="loader" />
             </div>
           )}
-          <canvas ref={canvasRef} className="w-full h-full  object-cover " />
+          <canvas ref={canvasRef} className="w-full h-full object-cover" />
         </div>
       </div>
     </>
