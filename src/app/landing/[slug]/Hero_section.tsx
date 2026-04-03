@@ -19,7 +19,7 @@ const Landing_Hero_section = () => {
   const { scrollYProgress } = useScroll({
     target: containerRef,
     // offset: ["0.23 1", "1 1"],
-    offset: ["0.49 1", "1 1"],
+    offset: ["0.6 1", "1 1"],
   });
 
   // Lock viewport height on mount
@@ -40,7 +40,13 @@ const Landing_Hero_section = () => {
         loadedCount++;
         if (loadedCount === TOTAL_FRAMES) {
           setAllLoaded(true);
-          drawFrame(0);
+          // Draw the correct frame based on current scroll position
+          const currentProgress = scrollYProgress.get();
+          const index = Math.min(
+            Math.floor(currentProgress * TOTAL_FRAMES),
+            TOTAL_FRAMES - 1
+          );
+          drawFrame(index);
         }
       };
 
