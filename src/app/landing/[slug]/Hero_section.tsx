@@ -86,7 +86,7 @@ const Landing_Hero_section = () => {
     <>
       <div
         ref={containerRef}
-        className="w-full flex flex-col justify-end overflow-clip gap-6  relative h-[200vh] text-white"
+        className="w-full flex flex-col justify-end overflow-clip gap-6 bg-white  relative h-[160vh] text-white"
       >
         <h1
           className={`text-black/70 w-full text-center mx-auto ${NeueHaasDisplay_roman.className}  text-4xl absolute top-32 z-10`}
@@ -96,7 +96,7 @@ const Landing_Hero_section = () => {
           Commerce <span className="text-[#EA1D2F]">Websites</span>
         </h1>
 
-        <div className="sticky bottom-0 h-screen flex items-center   justify-center bg-gradient-to-b ">
+        <div className="sticky bottom-0 h-screen flex items-center  bg-white justify-center bg-gradient-to-b ">
           {!allLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="loader" />
