@@ -4,10 +4,10 @@ import { NeueHaasDisplay_roman } from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
 import { useScroll } from "framer-motion";
 
-const TOTAL_FRAMES = 48;
+const TOTAL_FRAMES = 70;
 
 const getFrameSrc = (index: number) =>
-  `/malkain_landing_page/frames/frame_${String(index).padStart(4, "0")}.jpg`;
+  `/malkain_landing_page/frames2/frame_${String(index).padStart(4, "0")}.jpg`;
 
 const Landing_Hero_section = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -86,23 +86,26 @@ const Landing_Hero_section = () => {
     <>
       <div
         ref={containerRef}
-        className="w-full flex flex-col justify-end overflow-clip gap-6 relative h-[200vh] text-white"
+        className="w-full flex flex-col justify-end overflow-clip gap-6  relative h-[200vh] text-white"
       >
         <h1
-          className={`text-white/50 w-full text-center mx-auto ${NeueHaasDisplay_roman.className} inner-shadow-text text-4xl absolute top-32 z-10`}
+          className={`text-black/70 w-full text-center mx-auto ${NeueHaasDisplay_roman.className}  text-4xl absolute top-32 z-10`}
         >
           We build CRO E-
           <br />
           Commerce <span className="text-[#EA1D2F]">Websites</span>
         </h1>
 
-        <div className="sticky bottom-0 h-screen flex items-center justify-center bg-gradient-to-b from-[#021A49] to-[#0166B0]">
+        <div className="sticky bottom-0 h-screen flex items-center   justify-center bg-gradient-to-b ">
           {!allLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="loader" />
             </div>
           )}
-          <canvas ref={canvasRef} className="w-full h-full object-cover" />
+          <canvas
+            ref={canvasRef}
+            className="w-full h-full  object-cover bg-gradient-to-b from-[#B0B2AF]"
+          />
         </div>
       </div>
     </>
