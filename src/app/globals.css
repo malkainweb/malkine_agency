@@ -543,3 +543,8 @@ input[type="number"] {
 .text-balance {
   text-wrap: balance;
 }
+
+.hero-sticky {
+  height: 100vh;
+  height: 100dvh;
+}

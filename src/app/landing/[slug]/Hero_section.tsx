@@ -106,8 +106,8 @@ const Landing_Hero_section = () => {
         </h1>
 
         <div
-          style={{ height: vh ? `${vh}px` : "100dvh" }}
-          className="sticky bottom-0 flex items-center bg-white justify-center"
+          // style={{ height: vh ? `${vh}px` : "100dvh" }}
+          className=" bottom-0  h-screen sticky flex items-center bg-white justify-center"
         >
           {!allLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">

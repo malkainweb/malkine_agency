@@ -4,6 +4,7 @@ import {
   CabinetGrotesk_medium,
   inter_font,
   passion_one,
+  SFProDisplay_medium,
 } from "../../utils/fonts";
 
 const stats = [
@@ -26,7 +27,7 @@ const Landing_Services = () => {
     <div className="w-full bg-black sm:items-start z-10 items-center py-10 flex flex-col gap-5">
       {/* Title */}
       <h2
-        className={`${passion_one.className} w-full   text-[#F3EBE0] tracking-[-1.91px] font-black text-center text-5xl uppercase`}
+        className={`${SFProDisplay_medium.className} w-full   text-[#F3EBE0] font-black text-center text-4xl uppercase`}
       >
         about Us
       </h2>

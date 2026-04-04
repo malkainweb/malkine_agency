@@ -1,7 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { passion_one, inter_font, PPMoriRegular } from "../../utils/fonts";
+import {
+  passion_one,
+  inter_font,
+  PPMoriRegular,
+  SFProDisplay_medium,
+} from "../../utils/fonts";
 import center from "@/../public/malkain_landing_page/center.webp";
 import left from "@/../public/malkain_landing_page/left.webp";
 import right from "@/../public/malkain_landing_page/right.webp";
@@ -11,7 +16,7 @@ const LandingAbout = () => {
     <div className="w-full bg-black z-10 flex flex-col items-center py-16 sm:py-20 gap-10 px-6">
       {/* Title */}
       <h2
-        className={`${passion_one.className} text-[#F8F0E5] font-black text-center text-5xl uppercase leading-[0.8] tracking-[-1.61px]`}
+        className={`${SFProDisplay_medium.className} text-[#F8F0E5] font-black text-center text-4xl uppercase leading-[0.8]`}
       >
         Our TEAM
       </h2>

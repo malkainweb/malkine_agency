@@ -2,7 +2,12 @@
 
 import Image from "next/image";
 import { useRef } from "react";
-import { passion_one, inter_font, PPMoriRegular } from "../../utils/fonts";
+import {
+  passion_one,
+  inter_font,
+  PPMoriRegular,
+  SFProDisplay_medium,
+} from "../../utils/fonts";
 import website from "@/../public/malkain_landing_page/website.webp";
 import ads from "@/../public/malkain_landing_page/ads.webp";
 
@@ -32,7 +37,7 @@ const ServicesScroll = () => {
     <div className="w-full bg-black flex flex-col gap-10 sm:gap-8 py-14 sm:py-10">
       {/* Title */}
       <h2
-        className={`${passion_one.className} text-[#F8F0E5] font-black text-center text-5xl uppercase leading-[0.8] tracking-[-1.61px]`}
+        className={`${SFProDisplay_medium.className} text-[#F8F0E5] font-black text-center text-4xl uppercase leading-[0.8] `}
       >
         Our Services
       </h2>

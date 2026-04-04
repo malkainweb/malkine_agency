@@ -1,6 +1,11 @@
 "use client";
 
-import { passion_one, PPMoriRegular } from "../../utils/fonts";
+import {
+  passion_one,
+  PPMoriRegular,
+  SFProDisplay_bold,
+  SFProDisplay_medium,
+} from "../../utils/fonts";
 import mobile_jet from "@/../public/malkain_landing_page/mobile_jet.webp";
 import destop_jet from "@/../public/malkain_landing_page/destop_jet.webp";
 import Image from "next/image";
@@ -14,7 +19,7 @@ const TakeOff = () => {
         <div className=" absolute top-0 left-0 w-full h-[30%] sm:h-[20%] bg-gradient-to-b to-transparent from-black" />
         {/* Title */}
         <h2
-          className={`${passion_one.className} text-[#2D150A] md:max-w-sm tracking-[-1px] sm:text-center sm:text-[13vw] md:text-7xl font-normal sm:leading-[10vw]`}
+          className={`${SFProDisplay_bold.className} text-[#2D150A] md:max-w-sm  sm:text-center sm:text-[10vw] md:text-7xl font-normal sm:leading-[10vw]`}
         >
           Websites Built For Takeoff. Optimized To Land Your Next 100,000 Sales
         </h2>

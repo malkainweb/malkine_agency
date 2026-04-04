@@ -55,3 +55,14 @@ export const PPMoriLightItalic = localFont({
 export const PPMoriRegularItalic = localFont({
   src: "../../../public/fonts/pp-mori/PPMori-RegularItalic.otf",
 });
+export const SFProDisplay_regular = localFont({
+  src: "../../../public/fonts/sf-pro-display/SFPRODISPLAYREGULAR.otf",
+});
+
+export const SFProDisplay_medium = localFont({
+  src: "../../../public/fonts/sf-pro-display/SFPRODISPLAYMEDIUM.otf",
+});
+
+export const SFProDisplay_bold = localFont({
+  src: "../../../public/fonts/sf-pro-display/SFPRODISPLAYBOLD.otf",
+});
