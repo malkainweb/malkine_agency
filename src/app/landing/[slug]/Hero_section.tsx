@@ -1,15 +1,11 @@
 "use client";
 
-import {
-  NeueHaasDisplay_medium,
-  NeueHaasDisplay_roman,
-} from "@/app/utils/fonts";
+import { NeueHaasDisplay_medium } from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
-import { useScroll } from "framer-motion";
 
 const START_FRAME = 36;
 const END_FRAME = 70;
-const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 35 frames
+const TOTAL_FRAMES = END_FRAME - START_FRAME + 1;
 
 const getFrameSrc = (index: number) =>
   `/malkain_landing_page/frames2/frame_${String(index).padStart(4, "0")}.jpg`;
@@ -18,27 +14,14 @@ const Landing_Hero_section = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const framesRef = useRef<HTMLImageElement[]>([]);
-  const [vh, setVh] = useState(0);
   const [allLoaded, setAllLoaded] = useState(false);
-
-  const { scrollYProgress } = useScroll({
-    target: containerRef,
-    offset: ["0.62 1", "1 1"],
-  });
-
-  // Lock viewport height on mount
-  useEffect(() => {
-    setVh(window.innerHeight);
-  }, []);
 
   const drawFrame = (index: number) => {
     const canvas = canvasRef.current;
     const frame = framesRef.current[index];
     if (!canvas || !frame) return;
-
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-
     canvas.width = frame.naturalWidth;
     canvas.height = frame.naturalHeight;
     ctx.drawImage(frame, 0, 0);
@@ -57,9 +40,18 @@ const Landing_Hero_section = () => {
         loadedCount++;
         if (loadedCount === TOTAL_FRAMES) {
           setAllLoaded(true);
-          const currentProgress = scrollYProgress.get();
+          // Draw correct frame based on current scroll position
+          const container = containerRef.current;
+          if (!container) return;
+          const rect = container.getBoundingClientRect();
+          const containerHeight = container.offsetHeight;
+          const screenHeight = window.screen.height;
+          const progress = Math.max(
+            0,
+            Math.min(1, -rect.top / (containerHeight - screenHeight))
+          );
           const index = Math.min(
-            Math.floor(currentProgress * TOTAL_FRAMES),
+            Math.floor(progress * TOTAL_FRAMES),
             TOTAL_FRAMES - 1
           );
           drawFrame(index);
@@ -72,31 +64,48 @@ const Landing_Hero_section = () => {
     framesRef.current = frames;
   }, []);
 
-  // Scrub frames on scroll
+  // Scroll scrubbing
   useEffect(() => {
     if (!allLoaded) return;
 
+    const container = containerRef.current;
+    if (!container) return;
+
     let rafId: number;
 
-    const unsubscribe = scrollYProgress.on("change", (v) => {
+    const handleScroll = () => {
       cancelAnimationFrame(rafId);
       rafId = requestAnimationFrame(() => {
-        const index = Math.min(Math.floor(v * TOTAL_FRAMES), TOTAL_FRAMES - 1);
+        const rect = container.getBoundingClientRect();
+        const containerHeight = container.offsetHeight;
+        const screenHeight = window.screen.height;
+
+        const progress = Math.max(
+          0,
+          Math.min(1, -rect.top / (containerHeight - screenHeight))
+        );
+
+        const index = Math.min(
+          Math.floor(progress * TOTAL_FRAMES),
+          TOTAL_FRAMES - 1
+        );
         drawFrame(index);
       });
-    });
+    };
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
 
     return () => {
-      unsubscribe();
+      window.removeEventListener("scroll", handleScroll);
       cancelAnimationFrame(rafId);
     };
-  }, [scrollYProgress, allLoaded]);
+  }, [allLoaded]);
 
   return (
     <>
       <div
         ref={containerRef}
-        className="w-full flex flex-col justify-end overflow-clip gap-6 bg-white relative h-[160vh] text-white"
+        className="hero-container w-full flex flex-col justify-end overflow-clip gap-6 bg-white relative text-white"
       >
         <h1
           className={`text-black/90 w-full text-center mx-auto ${NeueHaasDisplay_medium.className} text-4xl absolute top-32 z-10`}
@@ -105,10 +114,7 @@ const Landing_Hero_section = () => {
           <span className="text-[#EA1D2F]">Websites</span>
         </h1>
 
-        <div
-          // style={{ height: vh ? `${vh}px` : "100dvh" }}
-          className=" bottom-0  h-screen sticky flex items-center bg-white justify-center"
-        >
+        <div className="hero-sticky flex items-center bg-white justify-center">
           {!allLoaded && (
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="loader" />

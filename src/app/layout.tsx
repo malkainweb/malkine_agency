@@ -25,6 +25,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* bing tracking  */}
+
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+      document.documentElement.style.setProperty(
+        '--locked-vh',
+      window.screen.height + 'px'
+      );
+    `,
+        }}
+      />
+
       <Script
         id="Bing clarity"
         strategy="afterInteractive"

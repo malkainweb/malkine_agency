@@ -545,6 +545,11 @@ input[type="number"] {
 }
 
 .hero-sticky {
-  height: 100vh;
-  height: 100dvh;
+  position: sticky;
+  bottom: 0;
+  height: var(--locked-vh, 100dvh);
+}
+
+.hero-container {
+  height: calc(var(--locked-vh, 100dvh) * 1.6);
 }
