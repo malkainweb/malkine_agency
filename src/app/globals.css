@@ -549,7 +549,20 @@ input[type="number"] {
   bottom: 0;
   height: var(--locked-vh, 100dvh);
 }
+.hero-sticky-bottom {
+  position: sticky;
+  top: 0;
+  height: var(--locked-vh, 100dvh);
+}
 
 .hero-container {
   height: calc(var(--locked-vh, 100dvh) * 1.6);
+}
+
+.full_height {
+  min-height: calc(var(--locked-vh, 100dvh) * 2);
+}
+
+.half_height {
+  height: calc(var(--locked-vh, 100dvh) * 1.5);
 }

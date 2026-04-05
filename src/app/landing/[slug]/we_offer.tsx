@@ -8,17 +8,19 @@ import {
   PPMoriRegular,
   SFProDisplay_medium,
 } from "../../utils/fonts";
-import website from "@/../public/malkain_landing_page/website.webp";
+import web_design from "@/../public/new_service/services/web_design.webp";
+
 import ads from "@/../public/malkain_landing_page/ads.webp";
+import eccomerce from "@/../public/new_service/services/eccomerce.webp";
 
 const services = [
   {
     title: "Website & Platform Design",
-    image: website,
+    image: web_design,
   },
   {
-    title: "Marketing ads design",
-    image: ads,
+    title: "Landing page design",
+    image: eccomerce,
   },
 ];
 

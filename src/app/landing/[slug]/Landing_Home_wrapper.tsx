@@ -42,6 +42,7 @@ import TakeOff from "./TakeOff";
 import LandingPageFooter from "./footer";
 import Landing_past_work_template from "./landing_past_work_template";
 import Landing_Hero_section from "./Hero_section";
+import Landing_Hero_section_Second_hero from "./secondhero";
 
 const Landing_Home_wrapper = ({ form_link, id }: any) => {
   const process = [
@@ -197,6 +198,8 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
     return () => unsubscribe();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  const hero = searchParams.get("hero");
   return (
     <>
       <iframe src={form_link} className="h-0 w-0 absolute top-0 left-0" />
@@ -305,7 +308,12 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
       {/* MOBILE SCREENS */}
 
       <div className="sm:block bg-black md:hidden">
-        <Landing_Hero_section />
+        {hero === "true" ? (
+          <Landing_Hero_section />
+        ) : (
+          <Landing_Hero_section_Second_hero />
+        )}
+
         <BrandCards />
         <ServicesScroll />
         <TakeOff />

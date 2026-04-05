@@ -22,26 +22,39 @@ const LandingAbout = () => {
       </h2>
 
       {/* Fanned cards */}
-      <div className="relative w-full max-w-4xl  grid grid-cols-3 gap-8 sm:flex justify-center items-center">
-        {/* Left card */}
+      {/* <div className="relative w-full max-w-4xl  grid grid-cols-3 gap-8 sm:flex justify-center items-center">
+       
         <div className="sm:absolute sm:left-[20%] sm:w-[52%] rounded-2xl overflow-hidden origin-center sm:-rotate-6 sm:translate-y-1 sm:translate-x-[-35%]">
           <Image src={left} alt="left" className="w-full h-auto" />
         </div>
 
-        {/* Center card */}
+       
         <div className=" sm:w-[57%] rounded-2xl  overflow-hidden z-10">
           <Image src={center} alt="center" className="w-full h-auto" />
         </div>
 
-        {/* Right card */}
+
         <div className="sm:absolute sm:right-[20%] sm:w-[52%] rounded-2xl overflow-hidden origin-center sm:rotate-6 sm:translate-y-1 sm:translate-x-[35%]">
           <Image src={right} alt="right" className="w-full h-auto" />
         </div>
+      </div> */}
+
+      {/* Video */}
+      <div className="relative w-full rounded-xl overflow-hidden">
+        <video
+          src="/malkain_landing_page/team_video_compressed.mp4"
+          className="w-full h-auto object-cover"
+          autoPlay
+          loop
+          muted
+          playsInline
+          preload="auto"
+        />
       </div>
 
       {/* Body text */}
       <p
-        className={`${PPMoriRegular.className} text-white max-w-md text-center text-sm leading-[1.2]`}
+        className={`${PPMoriRegular.className} text-white max-w-md text-center text-base leading-[1.2]`}
       >
         We don{"'"}t build websites to win design awards. We build them to make
         you money. Every layout, every button, every pixel on your store is

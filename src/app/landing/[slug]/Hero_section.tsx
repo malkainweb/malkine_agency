@@ -1,14 +1,14 @@
 "use client";
 
-import { NeueHaasDisplay_medium } from "@/app/utils/fonts";
+import { NeueHaasDisplay_medium, SFProDisplay_medium } from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
 
-const START_FRAME = 36;
-const END_FRAME = 70;
-const TOTAL_FRAMES = END_FRAME - START_FRAME + 1;
+const START_FRAME = 1;
+const END_FRAME = 120;
+const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 120 frames
 
 const getFrameSrc = (index: number) =>
-  `/malkain_landing_page/frames2/frame_${String(index).padStart(4, "0")}.jpg`;
+  `/malkain_landing_page/frames3/frame_${String(index).padStart(4, "0")}.jpg`;
 
 const Landing_Hero_section = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -22,8 +22,13 @@ const Landing_Hero_section = () => {
     if (!canvas || !frame) return;
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
-    canvas.width = frame.naturalWidth;
-    canvas.height = frame.naturalHeight;
+
+    // Only set dimensions once — setting them clears the canvas
+    if (canvas.width !== frame.naturalWidth) {
+      canvas.width = frame.naturalWidth;
+      canvas.height = frame.naturalHeight;
+    }
+
     ctx.drawImage(frame, 0, 0);
   };
 
@@ -108,9 +113,9 @@ const Landing_Hero_section = () => {
         className="hero-container w-full flex flex-col justify-end overflow-clip gap-6 bg-white relative text-white"
       >
         <h1
-          className={`text-black/90 w-full text-center mx-auto ${NeueHaasDisplay_medium.className} text-4xl absolute top-32 z-10`}
+          className={`text-black/90 w-full text-center mx-auto ${SFProDisplay_medium.className} text-4xl absolute top-32 z-10`}
         >
-          We build CRO <br /> E-Commerce{" "}
+          We build conversion optimized E-Commerce{" "}
           <span className="text-[#EA1D2F]">Websites</span>
         </h1>
 

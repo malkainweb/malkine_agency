@@ -15,17 +15,17 @@ import Landing_Services from "./Services";
 const TakeOff = () => {
   return (
     <div className="w-full min-h-[200vh]  flex flex-col  ">
-      <div className="w-full h-screen sticky flex flex-row sm:flex-col  items-center sm:items-start justify-between top-0 bg-gradient-to-b py-[16vh] px-10  sm:px-3  from-[#AEA49C] to-[#FFF8EC] left-0">
+      <div className="w-full h-screen sticky flex flex-row sm:flex-col  items-center sm:items-start  top-0 bg-gradient-to-b py-[16vh] px-10  sm:px-3  from-[#AEA49C] to-[#FFF8EC] left-0">
         <div className=" absolute top-0 left-0 w-full h-[30%] sm:h-[20%] bg-gradient-to-b to-transparent from-black" />
         {/* Title */}
         <h2
-          className={`${SFProDisplay_bold.className} text-[#2D150A] md:max-w-sm  sm:text-center sm:text-[10vw] md:text-7xl font-normal sm:leading-[10vw]`}
+          className={`${SFProDisplay_medium.className} text-[#2D150A] md:max-w-sm  sm:text-center sm:text-[8vw] md:text-7xl font-normal sm:leading-[1]`}
         >
-          Websites Built For Takeoff. Optimized To Land Your Next 100,000 Sales
+          Optimized To Land Your Next 100,000 Sales
         </h2>
 
         {/* Bottom */}
-        <div className="flex flex-col gap-6">
+        <div className="flex flex-col  sm:mt-10 md:mt-0 gap-10">
           <hr className="border-[#2D150A] sm:block hidden" />
           <p
             className={`${PPMoriRegular.className} text-center  md:max-w-md w-full text-[#1a0f00] text-sm leading-relaxed`}
