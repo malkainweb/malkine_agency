@@ -4,8 +4,8 @@ import { NeueHaasDisplay_medium, SFProDisplay_medium } from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
 
 const START_FRAME = 1;
-const END_FRAME = 120;
-const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 120 frames
+const END_FRAME = 207;
+const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 207 frames
 
 const getFrameSrc = (index: number) =>
   `/malkain_landing_page/frames3/frame_${String(index).padStart(4, "0")}.jpg`;

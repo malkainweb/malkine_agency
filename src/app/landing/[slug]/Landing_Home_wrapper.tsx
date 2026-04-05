@@ -308,7 +308,7 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
       {/* MOBILE SCREENS */}
 
       <div className="sm:block bg-black md:hidden">
-        {hero === "true" ? (
+        {hero !== "true" ? (
           <Landing_Hero_section />
         ) : (
           <Landing_Hero_section_Second_hero />
