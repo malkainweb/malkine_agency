@@ -96,7 +96,7 @@ const AnimatedCard = ({
       </div>
 
       {/* Title */}
-      <h2 className="text-[#EA541D] mt-3 text-center text-4xl leading-none font-normal uppercase">
+      <h2 className="text-[#EA541D] mt-3 text-center sm:text-[8vw] leading-none font-normal uppercase">
         {card.title}
       </h2>
 
@@ -128,7 +128,7 @@ const BrandCards = () => {
     <div
       className={`w-full pt-20 pb-6 flex items-center flex-col gap-12 ${SFProDisplay_medium.className}`}
     >
-      <h2 className="font-bold text-center text-4xl  text-[#EA541D] uppercase">
+      <h2 className="font-bold text-center sm:text-[8vw] leading-[1]  text-[#EA541D] uppercase">
         Our past work
       </h2>
       <div className="grid lg:grid-cols-4 w-full md:grid-cols-2 sm:flex flex-col items-center gap-3 px-6 sm:px-2">

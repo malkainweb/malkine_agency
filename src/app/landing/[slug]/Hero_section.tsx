@@ -4,7 +4,7 @@ import { NeueHaasDisplay_medium, SFProDisplay_medium } from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
 
 const START_FRAME = 1;
-const END_FRAME = 248;
+const END_FRAME = 242;
 const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 207 frames
 
 const getFrameSrc = (index: number) =>
@@ -23,13 +23,27 @@ const Landing_Hero_section = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Only set dimensions once — setting them clears the canvas
     if (canvas.width !== frame.naturalWidth) {
       canvas.width = frame.naturalWidth;
       canvas.height = frame.naturalHeight;
     }
 
-    ctx.drawImage(frame, 0, 0);
+    // Center the image on the canvas
+    const scale = Math.max(
+      canvas.width / frame.naturalWidth,
+      canvas.height / frame.naturalHeight
+    );
+    const x = (canvas.width - frame.naturalWidth * scale) / 2;
+    const y = (canvas.height - frame.naturalHeight * scale) / 2;
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.drawImage(
+      frame,
+      x,
+      y,
+      frame.naturalWidth * scale,
+      frame.naturalHeight * scale
+    );
   };
 
   // Preload all frames
