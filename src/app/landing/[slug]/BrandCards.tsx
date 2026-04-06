@@ -27,8 +27,9 @@ interface BrandCard {
 }
 
 const cards: BrandCard[] = [
-  { title: "Brala's Best", image: brala, link: "https://bralasbest.com/" },
   { title: "Pawp Water", image: pawpwater, link: "https://pawpwater.com/" },
+  { title: "Brala's Best", image: brala, link: "https://bralasbest.com/" },
+
   {
     title: "Anzza",
     image: anzaa,
@@ -96,14 +97,14 @@ const AnimatedCard = ({
       </div>
 
       {/* Title */}
-      <h2 className="text-[#EA541D] mt-3 text-center sm:text-[7vw] leading-none font-normal  capitalize mb-1">
+      <h2 className="text-[#D01717] mt-3 text-center sm:text-[7vw] leading-none font-normal  capitalize mb-1">
         {card.title}
       </h2>
 
       {/* Button */}
       <button
         onClick={() => onViewMore(card)}
-        className={`${inter_font.className} w-full bg-[#EA541D] text-white text-center py-4 rounded-full sm:text-sm text-xs uppercase`}
+        className={`${inter_font.className} w-full bg-[#D01717] text-white text-center py-4 rounded-full sm:text-sm text-xs uppercase`}
       >
         VIEW MORE
       </button>
@@ -128,7 +129,7 @@ const BrandCards = () => {
     <div
       className={`w-full pt-20 pb-6 flex items-center flex-col gap-12 ${SFProDisplay_medium.className}`}
     >
-      <h2 className="font-bold text-center sm:text-[7vw] leading-[1]  text-[#EA541D]  capitalize">
+      <h2 className="font-bold text-center sm:text-[7vw] leading-[1]  text-[#D01717]  capitalize">
         Our past work
       </h2>
       <div className="grid lg:grid-cols-4 w-full md:grid-cols-2 sm:flex flex-col items-center gap-3 px-6 sm:px-2">
