@@ -3,7 +3,11 @@
 import Image, { StaticImageData } from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef, useState } from "react";
-import { inter_font, passion_one } from "@/app/utils/fonts";
+import {
+  inter_font,
+  passion_one,
+  SFProDisplay_medium,
+} from "@/app/utils/fonts";
 import Link_modal from "@/app/component/modal/link_modal";
 import anzaa from "@/../public/malkain_landing_page/anzza.webp";
 import brala from "@/../public/malkain_landing_page/brala.webp";
@@ -122,9 +126,9 @@ const BrandCards = () => {
 
   return (
     <div
-      className={`w-full py-6 flex items-center flex-col gap-4 ${passion_one.className}`}
+      className={`w-full pt-20 pb-6 flex items-center flex-col gap-12 ${SFProDisplay_medium.className}`}
     >
-      <h2 className="font-bold text-center text-4xl text-[#EA1D2F] uppercase tracking-[-5%]">
+      <h2 className="font-bold text-center text-4xl  text-[#EA541D] uppercase">
         Our past work
       </h2>
       <div className="grid lg:grid-cols-4 w-full md:grid-cols-2 sm:flex flex-col items-center gap-3 px-6 sm:px-2">

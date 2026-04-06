@@ -36,7 +36,7 @@ const ServicesScroll = () => {
   };
 
   return (
-    <div className="w-full bg-black flex flex-col gap-10 sm:gap-8 py-14 sm:py-10">
+    <div className="w-full bg-black flex flex-col gap-10 sm:gap-12 py-14 pt-20 sm:pb-10">
       {/* Title */}
       <h2
         className={`${SFProDisplay_medium.className} text-[#F8F0E5] font-black text-center text-4xl uppercase leading-[0.8] `}
@@ -52,7 +52,7 @@ const ServicesScroll = () => {
         {services.map((service, index) => (
           <div
             key={index}
-            className="relative sm:w-[83vw] border border-white/10 aspect-[1/0.8] sm:aspect-[1.1/1] snap-center rounded-[20.89px] overflow-hidden flex-shrink-0"
+            className="relative sm:w-[83vw] border border-white/10 aspect-[1/0.8] sm:aspect-[1.1/1] snap-center rounded-[30px] overflow-hidden flex-shrink-0"
           >
             <Image
               src={service.image}
