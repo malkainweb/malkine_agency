@@ -4,7 +4,7 @@ import { NeueHaasDisplay_medium, SFProDisplay_medium } from "@/app/utils/fonts";
 import { useEffect, useRef, useState } from "react";
 
 const START_FRAME = 1;
-const END_FRAME = 207;
+const END_FRAME = 248;
 const TOTAL_FRAMES = END_FRAME - START_FRAME + 1; // 207 frames
 
 const getFrameSrc = (index: number) =>
