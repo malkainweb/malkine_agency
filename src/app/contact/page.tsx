@@ -160,12 +160,12 @@ export default function Contact() {
               </div>
             )}
             {/* <iframe
-          src="https://8i2ouuqe.paperform.co/"
+          src="https://form.typeform.com/to/zZeW3qUY"
           className="w-full min-h-screen border-none"
         ></iframe> */}
             <div className="w-full  min-h-screen flex flex-col">
               <iframe
-                src="https://8i2ouuqe.paperform.co/"
+                src="https://form.typeform.com/to/zZeW3qUY"
                 className="w-full flex-grow border-none"
                 style={{ minHeight: "600px" }} // ← adjust as needed
                 onLoad={() => setIframeLoading(false)}
