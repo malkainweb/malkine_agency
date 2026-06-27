@@ -15,6 +15,7 @@ import koffiracha from "@/../public/malkain_landing_page/Koffiracha.webp";
 import mimio from "@/../public/malkain_landing_page/mimio.webp";
 import pawpwater from "@/../public/malkain_landing_page/pawpwater.webp";
 import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.webp";
+import rooz from "@/../public/malkain_landing_page/rooz.png";
 import unity from "@/../public/malkain_landing_page/unity.webp";
 import withcharacter from "@/../public/malkain_landing_page/withcharacter.webp";
 
@@ -30,12 +31,12 @@ const cards: BrandCard[] = [
   { title: "Pawp Water", image: pawpwater, link: "https://pawpwater.com/" },
   { title: "Brala's Best", image: brala, link: "https://bralasbest.com/" },
 
-  {
-    title: "Anzza",
-    image: anzaa,
-    link: "https://6grqhe-iu.myshopify.com",
-    open_iframe: true,
-  },
+  // {
+  //   title: "Anzza",
+  //   image: anzaa,
+  //   link: "https://6grqhe-iu.myshopify.com",
+  //   open_iframe: true,
+  // },
   {
     title: "With Character",
     image: withcharacter,
@@ -50,10 +51,15 @@ const cards: BrandCard[] = [
     open_iframe: true,
   },
   {
-    title: "Thirsty Bast****S",
-    image: thirsty_bastard,
-    link: "https://www.thirstybastardwater.com/",
+    title: "My Rooz",
+    image: rooz,
+    link: "https://www.myrooz.com/",
   },
+  // {
+  //   title: "Thirsty Bast****S",
+  //   image: thirsty_bastard,
+  //   link: "https://www.thirstybastardwater.com/",
+  // },
   {
     title: "Koffiracha",
     image: koffiracha,
