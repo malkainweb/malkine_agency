@@ -10,8 +10,16 @@ import { Inter } from "next/font/google";
 import Script from "next/script";
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.malkain.com"),
   title: "Malkain",
   description: "Malkain Designs and Deployment",
+  openGraph: {
+    siteName: "Malkain",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+  },
   other: {
     "msvalidate.01": "7F19A1D05342FB69BD2941A0E771D847",
   },
