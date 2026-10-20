@@ -4,9 +4,9 @@ import Image from "next/image";
 
 import exit from "../../../../public/exit.png";
 import { useEffect, useState } from "react";
-import Script from "next/script";
+import { framed } from "@/app/utils/framed";
 
-const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
+const Link_modal = ({ nav_items, path, setstart_anime }: any) => {
   const [start_modal, setstart_modal] = useState(false);
 
   useEffect(() => {
@@ -58,30 +58,13 @@ const Link_modal = ({ nav_items, path, setstart_anime, open_iframe }: any) => {
             start_modal ? "translate-y-0" : "translate-y-[120%]"
           } rounded-t-[2vw] sm:rounded-t-[7vw] gap-[1.8rem]`}
         >
-          {isLoading && !open_iframe && <div className=" loader"></div>}
-          {open_iframe && (
-            <iframe
-              src={path}
-              is="x-frame-bypass"
-              // frameBorder="0"
-              width="100%"
-              height="100%"
-              className=" "
-              // allowFullScreen
-            ></iframe>
-          )}
-          {!open_iframe && (
-            <iframe
-              src={path}
-              // is="x-frame-bypass"
-              // frameBorder="0"
-              onLoad={handleLoad}
-              width="100%"
-              height="100%"
-              className=""
-              // allowFullScreen
-            ></iframe>
-          )}
+          {isLoading && <div className=" loader"></div>}
+          <iframe
+            src={framed(path)}
+            onLoad={handleLoad}
+            width="100%"
+            height="100%"
+          ></iframe>
           {/* <iframe
             src={path}
             // is="x-frame-bypass"
