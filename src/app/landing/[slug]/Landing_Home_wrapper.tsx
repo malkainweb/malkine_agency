@@ -40,7 +40,6 @@ import BrandCards from "./BrandCards";
 import ServicesScroll from "./we_offer";
 import TakeOff from "./TakeOff";
 import LandingPageFooter from "./footer";
-import Landing_past_work_template from "./landing_past_work_template";
 import Landing_Hero_section from "./Hero_section";
 import Landing_Hero_section_Second_hero from "./secondhero";
 
@@ -271,7 +270,7 @@ const Landing_Home_wrapper = ({ form_link, id }: any) => {
       {/* DESKTOP SCREENS  */}
       <div className=" md:block sm:hidden">
         <Campaign_hero text={true} show_btn={true} form_link={form_link} />
-        <Landing_past_work_template sethide_nav={sethide_nav} />
+        <Past_work_template sethide_nav={sethide_nav} />
         <Campaign_New_scroll_hand />
         <MalkainIsForYouIf />
         <div className="sm:block hidden">

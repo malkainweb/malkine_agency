@@ -5,7 +5,7 @@ import img1 from "../../../../public/landingpage_template/port1.webp";
 import { Typewriter } from "react-simple-typewriter";
 import { useEffect, useRef, useState } from "react";
 import Link from "next/link";
-import Link_modal from "../modal/link_modal";
+
 import {
   NeueHaasDisplay_bold,
   NeueHaasDisplay_light,
@@ -23,7 +23,7 @@ import drop_down from "@/../public/new_service/drop_down.png";
 import vibes_only from "@/../public/past_work/eccomerce/vibes_only.webp";
 import katePerry from "@/../public/past_work/katePerry.webp";
 import cameo from "@/../public/past_work/cameo.webp";
-import brala from "@/../public/past_work/brala.webp";
+// import brala from "@/../public/past_work/brala.webp";
 import Vazzi from "@/../public/past_work/eccomerce/vazzi.png";
 import Yulia from "@/../public/past_work/eccomerce/Yulia.png";
 import dailycomputer from "@/../public/past_work/eccomerce/dailycomputer.png";
@@ -118,6 +118,24 @@ import mob_hovn_studio from "@/../public/past_work/portfolio/mob_hovn_studio.web
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
 import Mobile_Live_past_work from "@/app/letsgetteslas/mobile_each_past_work";
 import { noSSR } from "next/dynamic";
+import Link_modal from "@/app/component/modal/link_modal";
+
+import anzaa from "@/../public/malkain_landing_page/anzza.webp";
+import rooz from "@/../public/malkain_landing_page/rooz.png";
+import brala from "@/../public/malkain_landing_page/brala.webp";
+import koffiracha from "@/../public/malkain_landing_page/Koffiracha.webp";
+import mimio from "@/../public/malkain_landing_page/mimio.webp";
+import pawpwater from "@/../public/malkain_landing_page/pawpwater.webp";
+// import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.webp";
+import unity from "@/../public/malkain_landing_page/unity.webp";
+import withcharacter from "@/../public/malkain_landing_page/withcharacter.webp";
+import derulo from "@/../public/malkain_landing_page/derulo.webp";
+import muse from "@/../public/malkain_landing_page/muse.webp";
+import kindchaos from "@/../public/malkain_landing_page/kindchaos.webp";
+import livreal from "@/../public/malkain_landing_page/livreal.webp";
+import owlchemi from "@/../public/malkain_landing_page/owlchemi.webp";
+import vitera from "@/../public/malkain_landing_page/vitera.webp";
+
 // import Typewriter from "typewriter-effect";
 const Past_work_template = ({
   heading,
@@ -173,74 +191,103 @@ const Past_work_template = ({
       body: [
         {
           demo: true,
-          img: katePerry,
-          text: "katy perry collection",
-          link: "https://kate-perry.vercel.app/",
-          mob_img: katePerry,
-        },
-        {
-          // demo: true,
           img: brala,
           text: "Brala's Best",
-          link: "https://brala.vercel.app",
+          link: "https://bralasbest.com/",
           mob_img: brala,
         },
         {
-          img: Tinypod,
-          text: "The Tinypod ",
-          link: "https://thetinypod.com/",
-          mob_img: Tinypod,
+          img: derulo,
+          text: "Jason Derulo",
+          link: "https://shopderulo.com/",
+          mob_img: derulo,
         },
         {
-          img: q_department,
-          text: "Q Department ",
-          link: "https://www.qdepartment.com/",
-          video: true,
-          video_link: "/showcase/q.mp4",
-          scale: true,
-          mob_img: mob_q_department,
+          // demo: true,
+          img: pawpwater,
+          text: "Pawp Water",
+          link: "https://pawpwater.com/",
+          mob_img: pawpwater,
+        },
+        {
+          img: kindchaos,
+          text: "Kind Chaos",
+          link: "https://kindchaos.com/",
+          mob_img: kindchaos,
+        },
+        {
+          img: livreal,
+          text: "LivReal",
+          link: "https://livrealco.com/",
+          mob_img: livreal,
+        },
+        {
+          img: muse,
+          text: "Muse",
+          link: "https://musepodcasts.com/",
+          mob_img: muse,
+        },
+        {
+          img: owlchemi,
+          text: "OWLchemi",
+          link: "https://owlchemi.com/",
+          mob_img: owlchemi,
+        },
+        {
+          img: vitera,
+          text: "Vitera Labs",
+          link: "https://viteralabs.com/",
+          mob_img: vitera,
+        },
+        // {
+        //   img: anzaa,
+        //   text: "Anzza",
+        //   link: "https://6grqhe-iu.myshopify.com",
+        //   mob_img: anzaa,
+        //   open_iframe: true,
+        // },
+        {
+          img: withcharacter,
+          text: "With Character",
+          link: "https://withcharacter.com/",
+          //   video: true,
+          //   video_link: "/showcase/q.mp4",
+          //   scale: true,
+          mob_img: with_character,
+          open_iframe: true,
         },
 
         {
-          img: exo,
-          text: "exo",
-          link: "https://www.exo.inc/",
+          img: unity,
+          text: "Unity",
+          link: "https://www.getunity.com/",
           mob_img: mob_exo,
         },
         {
-          img: orbit_law,
-          link: "https://orbit.law",
-          text: "orbit law",
+          img: mimio,
+          link: "https://mimiohealth.com/",
+          text: "Mimio Health",
           open_false: true,
-          mob_img: mob_orbit_law,
-        },
-
-        {
-          img: west,
-          text: "53 West 53 ",
-          link: "https://53w53.com/",
-          mob_img: mob_west,
+          mob_img: mimio,
         },
         {
-          img: cameo,
-          text: "Cameo Surgery ",
-          link: "https://www.cameosurgerycenter.com/",
-          mob_img: cameo,
+          img: rooz,
+          text: "My Rooz",
+          link: "https://www.myrooz.com/",
+          mob_img: rooz,
         },
-
+//         {
+//           img: thirsty_bastard,
+//           text: "Thirsty Bast****S",
+//           link: "https://www.thirstybastardwater.com/",
+//           mob_img: thirsty_bastard,
+//         },
         {
-          img: good_juuju,
-          text: "Good Juju",
-          link: "https://heygoodjuju.com/",
-          open_false: true,
-          mob_img: mob_good_juuju,
-        },
-
-        {
-          img: hovn_studio,
-          text: "Hovn Studios",
-          link: "https://hovnstudios.com/",
-          mob_img: mob_hovn_studio,
+          img: koffiracha,
+          text: "Koffiracha",
+          link: "https://koffiracha.com/",
+          open_iframe: true,
+          mob_img: koffiracha,
         },
       ],
     },
