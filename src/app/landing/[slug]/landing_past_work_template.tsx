@@ -116,19 +116,25 @@ import mob_echo_nate from "@/../public/past_work/portfolio/mob_echo_nate.webp";
 import mob_hovn_studio from "@/../public/past_work/portfolio/mob_hovn_studio.webp";
 
 import Each_past_work from "@/app/letsgetteslas/each_past_work";
-import Script from "next/script";
 import Mobile_Live_past_work from "@/app/letsgetteslas/mobile_each_past_work";
 import { noSSR } from "next/dynamic";
 import Link_modal from "@/app/component/modal/link_modal";
 
 import anzaa from "@/../public/malkain_landing_page/anzza.webp";
+import rooz from "@/../public/malkain_landing_page/rooz.png";
 import brala from "@/../public/malkain_landing_page/brala.webp";
 import koffiracha from "@/../public/malkain_landing_page/Koffiracha.webp";
 import mimio from "@/../public/malkain_landing_page/mimio.webp";
 import pawpwater from "@/../public/malkain_landing_page/pawpwater.webp";
-import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.webp";
+// import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.webp";
 import unity from "@/../public/malkain_landing_page/unity.webp";
 import withcharacter from "@/../public/malkain_landing_page/withcharacter.webp";
+import derulo from "@/../public/malkain_landing_page/derulo.webp";
+import muse from "@/../public/malkain_landing_page/muse.webp";
+import kindchaos from "@/../public/malkain_landing_page/kindchaos.webp";
+import livreal from "@/../public/malkain_landing_page/livreal.webp";
+import owlchemi from "@/../public/malkain_landing_page/owlchemi.webp";
+import vitera from "@/../public/malkain_landing_page/vitera.webp";
 
 // import Typewriter from "typewriter-effect";
 const Landing_past_work_template = ({
@@ -191,6 +197,12 @@ const Landing_past_work_template = ({
           mob_img: brala,
         },
         {
+          img: derulo,
+          text: "Jason Derulo",
+          link: "https://shopderulo.com/",
+          mob_img: derulo,
+        },
+        {
           // demo: true,
           img: pawpwater,
           text: "Pawp Water",
@@ -198,12 +210,42 @@ const Landing_past_work_template = ({
           mob_img: pawpwater,
         },
         {
-          img: anzaa,
-          text: "Anzza",
-          link: "https://6grqhe-iu.myshopify.com",
-          mob_img: anzaa,
-          open_iframe: true,
+          img: kindchaos,
+          text: "Kind Chaos",
+          link: "https://kindchaos.com/",
+          mob_img: kindchaos,
         },
+        {
+          img: livreal,
+          text: "LivReal",
+          link: "https://livrealco.com/",
+          mob_img: livreal,
+        },
+        {
+          img: muse,
+          text: "Muse",
+          link: "https://musepodcasts.com/",
+          mob_img: muse,
+        },
+        {
+          img: owlchemi,
+          text: "OWLchemi",
+          link: "https://owlchemi.com/",
+          mob_img: owlchemi,
+        },
+        {
+          img: vitera,
+          text: "Vitera Labs",
+          link: "https://viteralabs.com/",
+          mob_img: vitera,
+        },
+        // {
+        //   img: anzaa,
+        //   text: "Anzza",
+        //   link: "https://6grqhe-iu.myshopify.com",
+        //   mob_img: anzaa,
+        //   open_iframe: true,
+        // },
         {
           img: withcharacter,
           text: "With Character",
@@ -228,13 +270,18 @@ const Landing_past_work_template = ({
           open_false: true,
           mob_img: mimio,
         },
-
         {
-          img: thirsty_bastard,
-          text: "Thirsty Bast****S",
-          link: "https://www.thirstybastardwater.com/",
-          mob_img: thirsty_bastard,
+          img: rooz,
+          text: "My Rooz",
+          link: "https://www.myrooz.com/",
+          mob_img: rooz,
         },
+//         {
+//           img: thirsty_bastard,
+//           text: "Thirsty Bast****S",
+//           link: "https://www.thirstybastardwater.com/",
+//           mob_img: thirsty_bastard,
+//         },
         {
           img: koffiracha,
           text: "Koffiracha",
@@ -538,16 +585,6 @@ const Landing_past_work_template = ({
   }, [start_anime]);
   return (
     <>
-      <Script
-        type="module"
-        // src="https://unpkg.com/x-frame-bypass"
-        src="/x-iframe-bypass.js"
-        strategy="afterInteractive" // ensures the script is loaded after the page is interactive
-      />
-      <Script
-        src="https://unpkg.com/@ungap/custom-elements-builtin"
-        strategy="afterInteractive"
-      />
       <div
         className={`w-full flex flex-col  pb-[4vw] sm:pb-[15vw] pt-[7vw] gap-[4vw] ${
           goggle ? "text-[white] sm:text-[black]" : ""
