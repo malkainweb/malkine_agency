@@ -126,7 +126,7 @@ import brala from "@/../public/malkain_landing_page/brala.webp";
 import koffiracha from "@/../public/malkain_landing_page/Koffiracha.webp";
 import mimio from "@/../public/malkain_landing_page/mimio.webp";
 import pawpwater from "@/../public/malkain_landing_page/pawpwater.webp";
-import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.webp";
+// import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.webp";
 import unity from "@/../public/malkain_landing_page/unity.webp";
 import withcharacter from "@/../public/malkain_landing_page/withcharacter.webp";
 import derulo from "@/../public/malkain_landing_page/derulo.webp";
@@ -276,12 +276,12 @@ const Landing_past_work_template = ({
           link: "https://www.myrooz.com/",
           mob_img: rooz,
         },
-        {
-          img: thirsty_bastard,
-          text: "Thirsty Bast****S",
-          link: "https://www.thirstybastardwater.com/",
-          mob_img: thirsty_bastard,
-        },
+//         {
+//           img: thirsty_bastard,
+//           text: "Thirsty Bast****S",
+//           link: "https://www.thirstybastardwater.com/",
+//           mob_img: thirsty_bastard,
+//         },
         {
           img: koffiracha,
           text: "Koffiracha",
