@@ -18,6 +18,12 @@ import thirsty_bastard from "@/../public/malkain_landing_page/thirsty_bastard.we
 import rooz from "@/../public/malkain_landing_page/rooz.png";
 import unity from "@/../public/malkain_landing_page/unity.webp";
 import withcharacter from "@/../public/malkain_landing_page/withcharacter.webp";
+import derulo from "@/../public/malkain_landing_page/derulo.webp";
+import muse from "@/../public/malkain_landing_page/muse.webp";
+import kindchaos from "@/../public/malkain_landing_page/kindchaos.webp";
+import livreal from "@/../public/malkain_landing_page/livreal.webp";
+import owlchemi from "@/../public/malkain_landing_page/owlchemi.webp";
+import vitera from "@/../public/malkain_landing_page/vitera.webp";
 
 interface BrandCard {
   title: string;
@@ -29,7 +35,13 @@ interface BrandCard {
 
 const cards: BrandCard[] = [
   { title: "Pawp Water", image: pawpwater, link: "https://pawpwater.com/" },
+  { title: "Jason Derulo", image: derulo, link: "https://shopderulo.com/" },
   { title: "Brala's Best", image: brala, link: "https://bralasbest.com/" },
+  { title: "Kind Chaos", image: kindchaos, link: "https://kindchaos.com/" },
+  { title: "LivReal", image: livreal, link: "https://livrealco.com/" },
+  { title: "Muse", image: muse, link: "https://musepodcasts.com/" },
+  { title: "OWLchemi", image: owlchemi, link: "https://owlchemi.com/" },
+  { title: "Vitera Labs", image: vitera, link: "https://viteralabs.com/" },
 
   // {
   //   title: "Anzza",
@@ -55,11 +67,11 @@ const cards: BrandCard[] = [
     image: rooz,
     link: "https://www.myrooz.com/",
   },
-  // {
-  //   title: "Thirsty Bast****S",
-  //   image: thirsty_bastard,
-  //   link: "https://www.thirstybastardwater.com/",
-  // },
+  {
+    title: "Thirsty Bast****S",
+    image: thirsty_bastard,
+    link: "https://www.thirstybastardwater.com/",
+  },
   {
     title: "Koffiracha",
     image: koffiracha,
